@@ -24,7 +24,7 @@
       
       <guid>https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/</guid>
       <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
-1. Install Software  Install appropriate software for your needs. An overview of our open-srouce APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances. To download explorepy, please consult our explorepy Installation Guide, or download our Windows installer.</description>
+1. Install Software  Install appropriate software for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances. To download explorepy, please consult our explorepy Installation Guide, or download our Windows installer.</description>
     </item>
     
     <item>
