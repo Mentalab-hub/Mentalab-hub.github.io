@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://Mentalab-hub.github.io/user-guide/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide//button-guide/">
 
     <title>
         
-        User Guide | Mentalab Wiki
+        Button Command Guide | Mentalab Wiki
         
     </title>
 
@@ -56,7 +55,7 @@
                 <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
             </form>
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/user-guide/" class="nav-item my-1 parent active haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
@@ -79,7 +78,7 @@
                     LED Light Guide
                 </a>
         </li>
-        <li data-nav-id="/user-guide//button-guide/" class="nav-item my-1">
+        <li data-nav-id="/user-guide//button-guide/" class="nav-item my-1 active">
                 
                  <a href="/user-guide//button-guide/" class="nav-link p-0">
                     Button Command Guide
@@ -125,44 +124,56 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#before-recording">Before recording</a></li>
-    <li><a href="#during-recording">During recording</a></li>
-    <li><a href="#after-recording">After recording</a></li>
-    <li><a href="#advanced-resources">Advanced Resources</a></li>
-  </ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>User Guide</h1>
+<h1>Button Command Guide</h1>
 
-<p>To get up and running quickly, please consult the <a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/Mentalab-Explore-Quick-Start-Guide.pdf">Quick Start Guide</a> included with your Mentalab Explore system, or watch the video below.</p>
-<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/zjXDUO0axVE" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<h2 id="before-recording">Before recording</h2>
-<ol>
-<li>
-<p>Before recording EEG data, please do consult our <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">EEG Checklist</a>. This will ensure you get the best performance out of your system.</p>
-</li>
-<li>
-<p>Working with dry electrodes can be challenging. As such, we compiled a <a href="https://Mentalab-hub.github.io/user-guide//dry-electrode-guide/" title="User Guide/Dry Electrode Guide">dry electrode guide</a> to help you setup and improve the impedances of your dry electrodes.</p>
-</li>
-<li>
-<p>We have a host of <a href="https://fyi.cpg.mybluehost.me/software-integrations/">software APIs</a> for you to integrate with your Explore system. Our flagship, is <code>explorepy</code> a Python library. To install <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a> or use our <a href="https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0">Windows installer</a>.
-For an overview of <code>explorepy</code> commands, please see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html">documentation</a>, or watch our short <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU"><code>explorepy</code> tutorials on YouTube</a>.</p>
-</li>
-</ol>
-<h2 id="during-recording">During recording</h2>
-<p>To aid your research, we&rsquo;ve created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an <a href="https://Mentalab-hub.github.io/user-guide//led-light-guide/" title="User Guide/LED Light Guide">LED light guide</a>, which explains how the Explore device will communicate with you. The other is a <a href="https://Mentalab-hub.github.io/user-guide//button-guide/" title="User Guide/Button Command Guide">button command table</a>, which you can use to control the Explore device.</p>
-<h2 id="after-recording">After recording</h2>
-<p>To maximise the lifespan of your ExG system, it is important to prevent damage to your equipment.</p>
-<p>We have compiled a list of <a href="https://Mentalab-hub.github.io/user-guide//led-light-guide/" title="User Guide/LED Light Guide">dos and don’ts</a> to help you do this.</p>
-<h2 id="advanced-resources">Advanced Resources</h2>
-<p>For users with advanced software needs, check out our <a href="https://github.com/Mentalab-hub/">GitHub Repo</a>!</p>
-<p>All our APIs are open-source and well documented. For more information, please contact us at: <a href="mailto:contact@mentalab.com">contact@mentalab.com</a>.</p>
+<p>The Mentalab Explore device was designed to provide maxmimum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.</p>
+<table>
+<thead>
+<tr>
+<th>  Action</th>
+<th>  State</th>
+<th>  Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single click</td>
+<td>Device off</td>
+<td>Device will turn on</td>
+</tr>
+<tr>
+<td>Double click</td>
+<td>Memory full (LED blinking pink)</td>
+<td>Delete flash memory.<br> Return to advertising mode.</td>
+</tr>
+<tr>
+<td>Double click</td>
+<td>Device in startup</td>
+<td>Skip advertising.<br> Go to offline mode.</td>
+</tr>
+<tr>
+<td>Double click</td>
+<td>Device in offline  mode</td>
+<td>Start advertising mode.<br> Keep recording to flash.</td>
+</tr>
+<tr>
+<td>Single click</td>
+<td>Device recording (online or offline)</td>
+<td>Generate marker timestamped at button press.</td>
+</tr>
+<tr>
+<td>Press &amp; hold</td>
+<td>All states</td>
+<td>Terminate recording. Turn off.<br> Device will blink red three times.</td>
+</tr>
+</tbody>
+</table>
 
 
     

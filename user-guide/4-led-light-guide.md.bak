@@ -1,0 +1,19 @@
+---
+title: "LED Light Guide"
+date: 2022-01-25T16:17:02+01:00
+weight: 4
+description:Here is a guide to the light patterns your Mentalab Explore device will use to communicate with you
+slug: \led-light-guide
+---
+
+The Mentalab Explore device was designed to provide maxmimum flexibility, with minimal size. This page lists how the device communicates with the user via the LED Diode.
+
+| &nbsp; LED Light | &nbsp; Blinking Pattern | &nbsp; Description | 
+| ----------- | ----------- | ----------- |
+| Red / Yellow / Green | Solid at device start-up. <br> Flashes for 3 secs | Start-up in progress. <br>Colour indicates battery status. |
+| Blue | Blinks twice a second | Bluetooth visible and advertising. |
+| Blue | Blinks once a second | Bluetooth visible and connected. <br>Online mode. |
+| Green | Blinks once a second | Bluetooth invisible. <br>Offline mode. |
+| Magenta | Blinks once a second | Insufficient memory. |
+| Light Pink | One-time flash | Button pressed, and marker set. |
+| Red | Flashes three times | Button pressed and held. <br>Turn off. |
