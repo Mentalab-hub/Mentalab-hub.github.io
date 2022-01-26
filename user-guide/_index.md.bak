@@ -9,7 +9,7 @@ slug: user-guide
 To get up and running quickly, please consult the [Quick Start Guide](https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/Mentalab-Explore-Quick-Start-Guide.pdf) included with your Mentalab Explore system, or watch the video below.
 
 <div class="video-container">
-<iframe height="350" src="https://www.youtube-nocookie.com/embed/zjXDUO0axVE" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe src="https://www.youtube-nocookie.com/embed/zjXDUO0axVE" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ## Before recording
@@ -17,7 +17,7 @@ To get up and running quickly, please consult the [Quick Start Guide](https://fy
 
 2. Working with dry electrodes can be challenging. As such, we compiled a [dry electrode guide]({{< ref "/User Guide/3-dry-electrode-guide" >}} "User Guide/Dry Electrode Guide") to help you setup and improve the impedances of your dry electrodes.
 
-3. We have a host of [software APIs](https://fyi.cpg.mybluehost.me/software-integrations/) for you to integrate with your Explore system. Our flagship, is `explorepy` a Python library. To install `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html) or use our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
+3. We have a host of [software APIs](https://fyi.cpg.mybluehost.me/software-integrations/) for you to integrate with your Explore system. Our flagship API is `explorepy`, a Python library. To install `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html) or use our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
 For an overview of `explorepy` commands, please see our [documentation](https://explorepy.readthedocs.io/en/latest/usage.html), or watch our short [`explorepy` tutorials on YouTube](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU).
 
 ## During recording
