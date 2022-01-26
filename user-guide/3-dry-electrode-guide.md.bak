@@ -1,0 +1,79 @@
+---
+title: "Dry electrode Guide"
+date: 2022-01-26T10:25:19+00:00
+weight: 3
+description: Here is a guide to choosing, using, and caring for dry electrodes with your Mentalab Explore System
+slug: dry-electrode-guide
+---
+
+## Dry Electrodes Types
+Mentalab currently offers three types of dry electrodes.
+
+### Flat Electrodes
+For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
+
+### Brush Electrodes 
+<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width="400"/>
+For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. 
+
+### XL Brush Electrodes
+For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.
+
+### Snap Electrodes
+Our clip cables also work well with disposable “stick 'n' peel” (or, "snap") electrodes. Snap electrodes are commonly used in EOG, ECG, and EMG paradigms, alongside dry EEG, or to ensure a stable reference electrode (for areas not covered in hair).
+
+### Summary Table
+These types of electrodes are interchangeable, but we recommend following these suggestions for maximum comfort and data quality:
+
+| &nbsp; Position | &nbsp; Electrode Type |
+| ----------- | ----------- |
+| No hair | Flat |
+| Some hair | Brush |
+| A Lot of hair | Brush XL |
+| EMG/ECG/EOG | Snap |
+
+## Before Attaching Dry Electrodes
+<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
+If you are not using gel, but still want to ensure stable data transmission and lower impedances, choose a position free of hair for the unipolar reference. Common locations are: the Mastoid behind the ear, tip of the nose, earlobe, forehead.
+
+<br>Before applying any electrodes to bare-skin, it is a good idea to clean the site with abrasive gel and alcohol.
+
+To reduce motion artifacts, it is best to thread the cables through the larger holes in the EEG cap. Do ensure that there is no tension on the cables when connecting the dry electrodes and the device, as this can lead to the clips disconnecting. Try repositioning the device to alleviate cable tension if needed.
+
+## Connecting Cables to Dry Electrodes
+We recommend fully preparing the cap before putting it on the participant. This saves the participant time and reduces discomfort. 
+
+After threading the cables through the cap holes, place a dry electrode on the inside of the cap at the chosen 10-10 position. Push the electrode knob through the cap's little hole. Connect the clip cable to the knob on the outside of the cap and tighten. Repeat for remaining electrodes.
+<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/iVsMfb17dNw" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+Alternatively, you can connect the cables while the participant wears the cap. To do this, carefully lift the cap at the chosen 10-10 position, and place the electrode directly underneath. The electrode knob should be sticking out, so that you can attach the clip cable to it on the outside. Repeat for the remaining electrodes.
+<br><br>
+<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/Sr2hDZWvS8A" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Ensuring Good Skin Contact
+For flat reference electrodes, it can be a good idea to connect the electrode directly to the clip, and tuck it under the cap. This is particularly true if you choose to place the electrode at the mastoid.
+
+For brush electrodes, be sure that the pins reach the scalp through the hair. Pinch the clip, and wiggle it around (side to side, or in circular motion) until the bristles have found their way through the hair and are touching the scalp. Subjects should not feel discomfort at any point. 
+<br><br>
+<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/q1MekhoAkBI" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Dry Electrode Impedances
+Achieving low impedances with dry electrodes can be challenging. 
+
+Use `explorepy` to measure impedance values. 
+<br><br>
+<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/3nCB0MYXMx0" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br><br>
+
+For more guidance on minimizing impedances, please have a read of our [Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences") page.
+
+## After Recording with Dry Electrodes
+1. Remove the cap from the participant's head, before removing all electrodes from the cap.
+2. Detach the electrode cable from the Explore device carefully by pressing down on the connector’s click-lock. Do not pull on the cables themselves.
+3. Wash the cap with regular soap and water. If needed, disinfect with alcohol. For more details, see our page on [Cleaning, disinfecting, and storing Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware").
+4. Clean the electrodes under running water. Use cotton pads or a soft brush to remove residue between pins if needed. Disinfect with Isopropanol. Be careful not to scratch the metal, and do not to get water on the connector. 
+5. Let cap and electrodes air dry.
+6. Turn off and charge your Explore device before your next recording.
+
+## Troubleshooting
+If you have any trouble or questions while setting up your dry EEG equipment, please do not hesitate to contact our team. We are always happy to assist: [support@mentalab.com](support@mentalab.com). 
