@@ -1,5 +1,5 @@
 ---
-title: "Dry electrode Guide"
+title: "Dry Electrode Guide"
 date: 2022-01-26T10:25:19+00:00
 weight: 3
 description: Here is a guide to choosing, using, and caring for dry electrodes with your Mentalab Explore System
@@ -12,8 +12,8 @@ Mentalab currently offers three types of dry electrodes.
 ### Flat Electrodes
 For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
 
-### Brush Electrodes 
-<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width="400"/>
+### Brush Electrodes
+<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width="400"/>
 For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. 
 
 ### XL Brush Electrodes
@@ -44,26 +44,32 @@ To reduce motion artifacts, it is best to thread the cables through the larger h
 We recommend fully preparing the cap before putting it on the participant. This saves the participant time and reduces discomfort. 
 
 After threading the cables through the cap holes, place a dry electrode on the inside of the cap at the chosen 10-10 position. Push the electrode knob through the cap's little hole. Connect the clip cable to the knob on the outside of the cap and tighten. Repeat for remaining electrodes.
-<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/iVsMfb17dNw" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><br>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/iVsMfb17dNw" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div><br><br>
 Alternatively, you can connect the cables while the participant wears the cap. To do this, carefully lift the cap at the chosen 10-10 position, and place the electrode directly underneath. The electrode knob should be sticking out, so that you can attach the clip cable to it on the outside. Repeat for the remaining electrodes.
 <br><br>
-<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/Sr2hDZWvS8A" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/Sr2hDZWvS8A" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Ensuring Good Skin Contact
 For flat reference electrodes, it can be a good idea to connect the electrode directly to the clip, and tuck it under the cap. This is particularly true if you choose to place the electrode at the mastoid.
 
 For brush electrodes, be sure that the pins reach the scalp through the hair. Pinch the clip, and wiggle it around (side to side, or in circular motion) until the bristles have found their way through the hair and are touching the scalp. Subjects should not feel discomfort at any point. 
 <br><br>
-<iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/q1MekhoAkBI" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/q1MekhoAkBI" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 ## Dry Electrode Impedances
 Achieving low impedances with dry electrodes can be challenging. 
 
 Use `explorepy` to measure impedance values. 
 <br><br>
+<div class="video-container">
 <iframe width="880" height="350" src="https://www.youtube-nocookie.com/embed/3nCB0MYXMx0" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br><br>
+</div><br><br>
 
 For more guidance on minimizing impedances, please have a read of our [Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences") page.
 

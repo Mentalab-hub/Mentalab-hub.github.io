@@ -76,7 +76,7 @@ Gel Electrodes  Apply conductive gel through the openings at the back of the ele
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
       <guid>https://Mentalab-hub.github.io/user-guide/explorepy-commands/</guid>
-      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to comunicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
+      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
     Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
     </item>
     
