@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.92.0" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://Mentalab-hub.github.io/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://Mentalab-hub.github.io/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/7-explorepy-commands/">
 
     <title>
         
-         | Mentalab Wiki
+        explorepy Command Guide | Mentalab Wiki
         
     </title>
 
@@ -57,7 +55,7 @@
                 <input class="form-control mr-sm-2 w-100" data-search-input id="search-by" type="text" placeholder="Search">
             </form>
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
@@ -92,7 +90,7 @@
                     Improving Impedances
                 </a>
         </li>
-        <li data-nav-id="/user-guide/7-explorepy-commands/" class="nav-item my-1">
+        <li data-nav-id="/user-guide/7-explorepy-commands/" class="nav-item my-1 active">
                 
                  <a href="/user-guide/7-explorepy-commands/" class="nav-link p-0">
                     explorepy Command Guide
@@ -131,16 +129,67 @@
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
-	
 
-	<h1></h1>
+<h1>explorepy Command Guide</h1>
 
-	<h1 id="welcome-to-mentalab-wiki">Welcome to Mentalab Wiki</h1>
-<br>
-<p>Here is everything you need to use your Mentalab Explore device. Whether you are just getting started, or looking to integrate our software or hardware with third-party applications, you&rsquo;ll find everything you need here.</p>
-<p>Feel free to look around using the navigation bar on the left. If you have any queries, do not hesitate to get in contact with us at: <a href="mailto:contact@mentalab.com">contact@mentalab.com</a>.</p>
+<p>Mentalab’s flagship API, <code>explorepy</code> is written in Python. It is the most direct way to comunicate with your Explore device. An overview of common command line inputs is listed below. For more information on <code>explorepy</code>, please refer to the <a href="https://explorepy.readthedocs.io/en/latest/readme.html">docs</a>.</p>
+<table>
+<thead>
+<tr>
+<th>  Action</th>
+<th>  Command Line Input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data acquisition</td>
+<td><code>explorepy acquire -n Explore_XXXX</code></td>
+</tr>
+<tr>
+<td>Record data</td>
+<td><code>explorepy record-data -n Explore_XXXX</code></td>
+</tr>
+<tr>
+<td>Push data to lsl</td>
+<td><code>explorepy push2lsl -n Explore_XXXX</code></td>
+</tr>
+<tr>
+<td>Convert a binary file to csv</td>
+<td><code>explorepy bin2csv -f input_file.BIN</code></td>
+</tr>
+<tr>
+<td>Convert a binary file to EDF and overwrite if files exist already</td>
+<td><code>explorepy bin2edf -f input_file.BIN -ow</code></td>
+</tr>
+<tr>
+<td>Visualize in real-time</td>
+<td><code>explorepy visualize -n Explore_XXXX -lf .5 -hf 40 -nf 50</code></td>
+</tr>
+<tr>
+<td>Impedance measurement</td>
+<td><code>explorepy impedance -n Explore_XXXX</code></td>
+</tr>
+<tr>
+<td>Format the memory</td>
+<td><code>explorepy format-memory -n Explore_XXXX</code></td>
+</tr>
+<tr>
+<td>Set sampling rate</td>
+<td><code>explorepy set-sampling-rate -n Explore_XXXX -sr 500</code></td>
+</tr>
+<tr>
+<td>Set channel mask</td>
+<td><code>explorepy set-channels -n Explore_XXXX -m 15</code></td>
+</tr>
+<tr>
+<td>See the full list of available commands</td>
+<td><code>explorepy -h</code></td>
+</tr>
+</tbody>
+</table>
 
-	
+
+    
 
 
 

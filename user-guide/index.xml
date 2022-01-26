@@ -1,20 +1,84 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>User guides on Mentalab Wiki</title>
+    <title>User Guide on Mentalab Wiki</title>
     <link>https://Mentalab-hub.github.io/user-guide/</link>
-    <description>Recent content in User guides on Mentalab Wiki</description>
+    <description>Recent content in User Guide on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 25 Jan 2022 16:17:02 +0100</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>EEG Pre-Experiment Checklist</title>
+      <link>https://Mentalab-hub.github.io/user-guide/2-eeg-checklist/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/2-eeg-checklist/</guid>
+      <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
+1. Install Software  Install appropriate software for your needs. An overview of our open-srouce APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances. To download explorepy, please consult our explorepy Installation Guide, or download our Windows installer.</description>
+    </item>
+    
+    <item>
+      <title>Dry electrode Guide</title>
+      <link>https://Mentalab-hub.github.io/user-guide/3-dry-electrode-guide/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/3-dry-electrode-guide/</guid>
+      <description>Dry Electrodes Types Mentalab currently offers three types of dry electrodes.
+Flat Electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
+Brush Electrodes For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL Brush Electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+    </item>
+    
     <item>
       <title>LED Light Guide</title>
-      <link>https://Mentalab-hub.github.io/user-guide/led/</link>
+      <link>https://Mentalab-hub.github.io/user-guide/4-led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/led/</guid>
+      <guid>https://Mentalab-hub.github.io/user-guide/4-led-light-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maxmimum flexibility, with minimal size. This page lists how the device communicates with the user via the LED Diode.
     LED Light  Blinking Pattern  Description     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.   Blue Blinks twice a second Bluetooth visible and advertising.</description>
+    </item>
+    
+    <item>
+      <title>Button Command Guide</title>
+      <link>https://Mentalab-hub.github.io/user-guide/5-button-guide/</link>
+      <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/5-button-guide/</guid>
+      <description>The Mentalab Explore device was designed to provide maxmimum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.
+    Action  State  Effect     Single click Device off Device will turn on   Double click Memory full (LED blinking pink) Delete flash memory.
+Return to advertising mode.   Double click Device in startup Skip advertising.</description>
+    </item>
+    
+    <item>
+      <title>Improving Impedances</title>
+      <link>https://Mentalab-hub.github.io/user-guide/6-improving-impedences/</link>
+      <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/6-improving-impedences/</guid>
+      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
+General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float.
+Gel Electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+    </item>
+    
+    <item>
+      <title>explorepy Command Guide</title>
+      <link>https://Mentalab-hub.github.io/user-guide/7-explorepy-commands/</link>
+      <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/7-explorepy-commands/</guid>
+      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to comunicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
+    Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
+    </item>
+    
+    <item>
+      <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
+      <link>https://Mentalab-hub.github.io/user-guide/8-cleaning-storage-guide/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/8-cleaning-storage-guide/</guid>
+      <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
+Cleaning Electrodes and Caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
+Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     
   </channel>
