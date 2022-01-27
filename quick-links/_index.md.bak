@@ -15,5 +15,7 @@ Here are some quick links for you to get to where you need to go quickly.
 - [`explorepy` documentation](https://explorepy.readthedocs.io/en/latest/)
 - [YouTube Tutorial Playlist](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU)
 - [Book a Meeting](https://calendly.com/eduard-deneke/mentalab?)
+- [LED Light Guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide")
+- [Button Command Guide]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide")
 
 For more information, or for any queries, do not hesitate to get in contact at: <contact@mentalab.com>.

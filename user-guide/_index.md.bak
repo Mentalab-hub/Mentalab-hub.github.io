@@ -18,7 +18,7 @@ To get up and running quickly, please consult the [Quick Start Guide](https://fy
 2. Working with dry electrodes can be challenging. As such, we compiled a [dry electrode guide]({{< ref "/User Guide/3-dry-electrode-guide" >}} "User Guide/Dry Electrode Guide") to help you setup and improve the impedances of your dry electrodes.
 
 3. We have a host of [software APIs](https://fyi.cpg.mybluehost.me/software-integrations/) for you to integrate with your Explore system. Our flagship API is `explorepy`, a Python library. To install `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html) or use our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
-For an overview of `explorepy` commands, please see our [documentation](https://explorepy.readthedocs.io/en/latest/usage.html), or watch our short [`explorepy` tutorials on YouTube](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU).
+For an overview of `explorepy` commands, please see our [documentation](https://explorepy.readthedocs.io/en/latest/usage.html), or watch our short [tutorials on YouTube](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU).
 
 ## During recording
 To aid your research, we've created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an [LED light guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide"), which explains how the Explore device will communicate with you. The other is a [button command table]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide"), which you can use to control the Explore device.
