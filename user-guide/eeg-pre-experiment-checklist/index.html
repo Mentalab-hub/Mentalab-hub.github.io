@@ -7,10 +7,14 @@
     <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/">
 
     <title>
-        
-        EEG Pre-Experiment Checklist | Mentalab Wiki
-        
+        Mentalab Wiki
     </title>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="theme-color" content="#ffffff">
 
     
     <link href="https://Mentalab-hub.github.io/css/fontawesome.min.css" rel="stylesheet">
@@ -30,7 +34,7 @@
     <div class="container">
         <div>
             <a class="navbar-brand" href="/">
-                
+                <img style="padding:10px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cropped-Mentalab-Icon-CMYK.png" />
                 Mentalab Wiki
             </a>
         </div>
@@ -167,14 +171,22 @@
 <h2 id="4-check-impedances">4. Check Impedances</h2>
 <ol>
 <li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. Use the <code>impedance</code> function in <code>explorepy</code>. For moe on this function, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, or see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.
-<br><br> <strong>Note:</strong></li>
-</ol>
-<ul>
-<li>It is normal for dry electrodes to show high (coded red), or no (coded black), impedance values (in version 1.6. This will be adjusted in the new GUI).</li>
-<li>Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15kΩ per channel, aim for about 30kΩ (REF + half channel).</li>
-<li>If you are having trouble identifying which channel you are looking at, move a single electrode. This will allow you to identify the signal in the dashboard.</li>
-</ul>
-<ol start="2">
+<br><br> 
+
+<div class="alert alert-info" role="alert">
+    It is normal for dry electrodes to show high (coded red), or no (coded black), impedance values (in version 1.6. This will be adjusted in the new GUI).
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15kΩ per channel, aim for about 30kΩ (REF + half channel).
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    If you are having trouble identifying which channel you are looking at, move a single electrode. This will allow you to identify the signal in the dashboard.
+</div>
+</li>
 <li>If you need to improve your impedances, please have a read of our <a href="https://Mentalab-hub.github.io/user-guide/improving-impedences/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</li>
 <li>Once impedances are as desired, end the impedance function (Ctrl + C in command prompt/Python console).</li>
 </ol>
