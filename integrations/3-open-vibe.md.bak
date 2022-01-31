@@ -18,6 +18,6 @@ Here is a step-by-Step guide on using `explorepy` and [Openvibe](http://openvibe
 
 5. Open the __Openvibe Designer__ and start new project. Add two acquisition clients from the "Boxes" menu. Make sure that their port numbers match the port numbers you set in the Acquisition servers.
 
-6. Add a signal merger to combine the signals and add a signal display. Connect the two acquisition clients into the merger and the merger to the display (connect the pink triangles on the edges of the boxes). 
+6. Add a signal merger to combine the signals and add a signal display. Connect the two acquisition clients into the merger, and then add the merger to the display (connect the pink triangles on the edges of the boxes).
 
-7. Click play and admire your signal streams from multiple devices
+7. Click "play" and enjoy!

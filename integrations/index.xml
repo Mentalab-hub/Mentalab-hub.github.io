@@ -23,7 +23,7 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/integrations/openvibe/</guid>
-      <description>Here is a step-by-Step guide on using explorepy and Openvibe to visualize multiple Mentalab Explore systems simultaneously.
+      <description>Here is a step-by-step guide on using explorepy and Openvibe to visualize multiple Mentalab Explore systems simultaneously.
   Start two Python consoles and activate a virtual environment for explorepy in both.
   Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
   Open an Openvibe Acquisition server and select &amp;ldquo;Driver: LabStreamingLayer&amp;rdquo;. Go to the driver properties and select &amp;ldquo;EXG stream&amp;rdquo; and &amp;ldquo;marker signal&amp;rdquo; from one of the connected Explore devices.</description>
