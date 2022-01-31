@@ -1,0 +1,23 @@
+---
+title: "OpenVibe"
+date: 2022-01-26T10:25:19+00:00
+weight: 3
+description: Here is how to integrate the Mentalab Explore system with OpenVibe
+slug: openvibe
+---
+
+Here is a step-by-Step guide on using `explorepy` and [Openvibe](http://openvibe.inria.fr/) to visualize multiple Mentalab Explore systems simultaneously.
+
+1. Start two Python consoles and activate a virtual environment for `explorepy` in both. 
+
+2. Use the `push2lsl` command to stream data from your Explore device to [lab streaming layer](https://labstreaminglayer.readthedocs.io/info/intro.html) (one device per console).
+
+3. Open an __Openvibe Acquisition__ server and select "Driver: LabStreamingLayer". Go to the driver properties and select "EXG stream" and "marker signal" from one of the connected Explore devices. Click "Connect". 
+
+4. Open an __Openvibe Acquisition__ server again, select "Driver: LabStreamingLayer". Go to the driver properties and select "EXG stream" and "marker signal" from the other connected Explore device. Use a different connection port this time by opening preferences and changing the `TCP_Tagging_Port`. Click "Connect". 
+
+5. Open the __Openvibe Designer__ and start new project. Add two acquisition clients from the "Boxes" menu. Make sure that their port numbers match the port numbers you set in the Acquisition servers.
+
+6. Add a signal merger to combine the signals and add a signal display. Connect the two acquisition clients into the merger and the merger to the display (connect the pink triangles on the edges of the boxes). 
+
+7. Click play and admire your signal streams from multiple devices

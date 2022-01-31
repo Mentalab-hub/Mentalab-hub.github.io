@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/button-guide/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/integrations/openvibe/">
 
     <title>
         Mentalab Wiki
@@ -55,7 +55,7 @@
         
         <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
     </li>
-    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
@@ -78,7 +78,7 @@
                     LED Light Guide
                 </a>
         </li>
-        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1 active">
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
                 
                  <a href="/user-guide/button-guide/" class="nav-link p-0">
                     Button Command Guide
@@ -123,7 +123,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -134,7 +134,7 @@
                     LabChart Lightning
                 </a>
         </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
+        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1 active">
                 
                  <a href="/integrations/openvibe/" class="nav-link p-0">
                     OpenVibe
@@ -166,50 +166,32 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Button Command Guide</h1>
+<h1>OpenVibe</h1>
 
-<p>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.</p>
-<table>
-<thead>
-<tr>
-<th>  Action</th>
-<th>  State</th>
-<th>  Effect</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Single click</td>
-<td>Device off</td>
-<td>Device will turn on</td>
-</tr>
-<tr>
-<td>Double click</td>
-<td>Memory full (LED blinking pink)</td>
-<td>Delete flash memory.<br> Return to advertising mode.</td>
-</tr>
-<tr>
-<td>Double click</td>
-<td>Device in startup</td>
-<td>Skip advertising.<br> Go to offline mode.</td>
-</tr>
-<tr>
-<td>Double click</td>
-<td>Device in offline  mode</td>
-<td>Start advertising mode.<br> Keep recording to flash.</td>
-</tr>
-<tr>
-<td>Single click</td>
-<td>Device recording (online or offline)</td>
-<td>Generate marker timestamped at button press.</td>
-</tr>
-<tr>
-<td>Press &amp; hold</td>
-<td>All states</td>
-<td>Terminate recording. Turn off.<br> Device will blink red three times.</td>
-</tr>
-</tbody>
-</table>
+<p>Here is a step-by-Step guide on using <code>explorepy</code> and <a href="http://openvibe.inria.fr/">Openvibe</a> to visualize multiple Mentalab Explore systems simultaneously.</p>
+<ol>
+<li>
+<p>Start two Python consoles and activate a virtual environment for <code>explorepy</code> in both.</p>
+</li>
+<li>
+<p>Use the <code>push2lsl</code> command to stream data from your Explore device to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> (one device per console).</p>
+</li>
+<li>
+<p>Open an <strong>Openvibe Acquisition</strong> server and select &ldquo;Driver: LabStreamingLayer&rdquo;. Go to the driver properties and select &ldquo;EXG stream&rdquo; and &ldquo;marker signal&rdquo; from one of the connected Explore devices. Click &ldquo;Connect&rdquo;.</p>
+</li>
+<li>
+<p>Open an <strong>Openvibe Acquisition</strong> server again, select &ldquo;Driver: LabStreamingLayer&rdquo;. Go to the driver properties and select &ldquo;EXG stream&rdquo; and &ldquo;marker signal&rdquo; from the other connected Explore device. Use a different connection port this time by opening preferences and changing the <code>TCP_Tagging_Port</code>. Click &ldquo;Connect&rdquo;.</p>
+</li>
+<li>
+<p>Open the <strong>Openvibe Designer</strong> and start new project. Add two acquisition clients from the &ldquo;Boxes&rdquo; menu. Make sure that their port numbers match the port numbers you set in the Acquisition servers.</p>
+</li>
+<li>
+<p>Add a signal merger to combine the signals and add a signal display. Connect the two acquisition clients into the merger, and then add the merger to the display (connect the pink triangles on the edges of the boxes).</p>
+</li>
+<li>
+<p>Click &ldquo;play&rdquo; and enjoy!</p>
+</li>
+</ol>
 
 
     
