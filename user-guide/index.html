@@ -51,19 +51,6 @@
 
      <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/product-guide/" class="nav-item my-1 haschildren
-        ">
-        
-        <a class="nav-link p-0" href="/product-guide/"><h6>Product Guide</h6></a>
-        <ul class="list-unstyled ml-2">
-        <li data-nav-id="/product-guide/cap-size-guide/" class="nav-item my-1">
-                
-                 <a href="/product-guide/cap-size-guide/" class="nav-link p-0">
-                    Cap Size Guide
-                </a>
-        </li>
-        </ul>
-    </li>
     <li data-nav-id="/quick-links/" class="nav-item my-1
         ">
         
@@ -116,7 +103,36 @@
                     Cleaning, Disinfecting and Storing Mentalab Hardware
                 </a>
         </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
         </ul>
+    </li>
+    <li data-nav-id="/product-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/product-guide/"><h6>Product Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/product-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/product-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
     </li>
         </ul>
     </div>
@@ -147,24 +163,24 @@
 <h2 id="before-recording">Before recording</h2>
 <ol>
 <li>
-<p>Before recording EEG data, please do consult our <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">EEG Checklist</a>. This will ensure you get the best performance out of your system.</p>
+<p>Before recording EEG data, please consult our <a href="https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/" title="User Guide/EEG Pre-Experiment Checklist">EEG Checklist</a>. This will ensure you get the best performance out of your system.</p>
 </li>
 <li>
 <p>Working with dry electrodes can be challenging. As such, we compiled a <a href="https://Mentalab-hub.github.io/user-guide/dry-electrode-guide/" title="User Guide/Dry Electrode Guide">dry electrode guide</a> to help you setup and improve the impedances of your dry electrodes.</p>
 </li>
 <li>
-<p>We have a host of <a href="https://fyi.cpg.mybluehost.me/software-integrations/">software APIs</a> for you to integrate with your Explore system. Our flagship API is <code>explorepy</code>, a Python library. To install <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a> or use our <a href="https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0">Windows installer</a>.
+<p>We have multiple <a href="https://fyi.cpg.mybluehost.me/software-integrations/">software APIs</a> for you to integrate with your Explore system. Our main API is <code>explorepy</code>, a Python library. To install <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a> or use our <a href="https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0">Windows installer</a>.
 For an overview of <code>explorepy</code> commands, please see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html">documentation</a>, or watch our short <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">tutorials on YouTube</a>.</p>
 </li>
 </ol>
 <h2 id="during-recording">During recording</h2>
-<p>To aid your research, we&rsquo;ve created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an <a href="https://Mentalab-hub.github.io/user-guide/led-light-guide/" title="User Guide/LED Light Guide">LED light guide</a>, which explains how the Explore device will communicate with you. The other is a <a href="https://Mentalab-hub.github.io/user-guide/button-guide/" title="User Guide/Button Command Guide">button command table</a>, which you can use to control the Explore device.</p>
+<p>To facilitate your research, we&rsquo;ve created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an <a href="https://Mentalab-hub.github.io/user-guide/led-light-guide/" title="User Guide/LED Light Guide">LED light guide</a>, which explains how the Explore device will communicate with you. The other is a <a href="https://Mentalab-hub.github.io/user-guide/button-guide/" title="User Guide/Button Command Guide">button command table</a>, which you can use to control the Explore device.</p>
 <h2 id="after-recording">After recording</h2>
 <p>To maximise the lifespan of your ExG system, it is important to prevent damage to your equipment.</p>
 <p>We have compiled instructions on <a href="https://Mentalab-hub.github.io/user-guide/cleaning-disinfection-storage/" title="User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware">caring for your Mentalab Hardware</a> to help you do this.</p>
 <h2 id="advanced-resources">Advanced Resources</h2>
 <p>For users with advanced software needs, check out our <a href="https://github.com/Mentalab-hub/">GitHub Repo</a>!</p>
-<p>All our APIs are open-source and well documented. For more information, please contact us at: <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
+<p>All our APIs are open-source and well documented. For more information, please contact us at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
