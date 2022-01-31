@@ -7,5 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/integrations/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>LabChart Lightning</title>
+      <link>https://Mentalab-hub.github.io/integrations/lightning-installation/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/integrations/lightning-installation/</guid>
+      <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.
+ Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
+    </item>
+    
   </channel>
 </rss>
