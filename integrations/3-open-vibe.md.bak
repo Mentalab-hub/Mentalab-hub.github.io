@@ -1,12 +1,12 @@
 ---
-title: "OpenVibe"
+title: "Multi-device syncing with LSL"
 date: 2022-01-26T10:25:19+00:00
 weight: 3
 description: Here is how to integrate the Mentalab Explore system with OpenVibe
 slug: openvibe
 ---
 
-Here is a step-by-Step guide on using `explorepy` and [Openvibe](http://openvibe.inria.fr/) to visualize multiple Mentalab Explore systems simultaneously.
+Here is a step-by-step guide on using `explorepy` and [Openvibe](http://openvibe.inria.fr/) to visualize multiple Mentalab Explore systems simultaneously.
 
 1. Start two Python consoles and activate a virtual environment for `explorepy` in both. 
 

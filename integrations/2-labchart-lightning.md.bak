@@ -13,10 +13,11 @@ If you wish to use Mentalab Explore with LabChart Lightning, please follow the i
 3. Unzip the plugin and save to ```Documents/LabChart Lightning/Plugins/Devices```.
 4. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer's Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX). Windows users may need to use a Bluetooth dongle.
 5. Start LabChart Lightning and add your Mentalab Explore device under the devices tab:
-    - Select '+ Add Device'
-    - Click the checkbox for Mentalab Explore 
-    - Choose 'add selected devices'
+    - Select __+ Add Devices__
+    - Click the checkbox for Mentalab Explore
+    - Choose __Add Selected Devices__
 
+<figure>
 <div class="row">
   <div class="column">
     <img style="width:90%; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/5.Add_device_Lightning_addDevices.png" alt="LabChart Lightning add devices 1">
@@ -28,9 +29,12 @@ If you wish to use Mentalab Explore with LabChart Lightning, please follow the i
     <img style="width:90%; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/5.Add_device_Lightning_AddSelected.png	" alt="LabChart Lightning add devices 3">
   </div>
 </div>
+<figcaption style="color:gray;text-align:center;">In LabChart Lightning, select __+ Add Devices__, check your Mentalab Explore device, and choose __Add Selected Devices__.</figcaption>
+</figure>
 
 <br>
 Congratulations, you have successfully added Mentalab Explore to you LabChart Lightning software!
+<br><br>
 
 If you run into problems with this installation process, please contact [ADInstruments Technical Support](https://www.adinstruments.com/contact/technical-support?utm_source=Mentalab+Website&utm_medium=link&utm_content=Technical+Support+for+SDK&utm_campaign=GLB-OTH-Mentalab_LCL_Integration_Launch-SEP20).
 

@@ -29,12 +29,15 @@ These types of electrodes are interchangeable, but we recommend following these 
 | ----------- | ----------- |
 | No hair | Flat |
 | Some hair | Brush |
-| A Lot of hair | Brush XL |
+| Very dense hair | Brush XL |
 | EMG/ECG/EOG | Snap |
 
 ## Before Attaching Dry Electrodes
-<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
-If you are not using gel, but still want to ensure stable data transmission and lower impedances, choose a position free of hair for the unipolar reference. Common locations are: the Mastoid behind the ear, tip of the nose, earlobe, forehead.
+<figure style="float:right;">
+<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
+<figcaption style="color:gray;text-align:center;"> Thread cables through the cap to minimize noise.</figcaption>
+</figure>
+If you are not using gel, but still want to ensure stable data transmission and lower impedances, choose a position free of hair for the unipolar reference. Common locations are: the mastoid behind the ear, tip of the nose, earlobe, forehead.
 
 <br>Before applying any electrodes to bare-skin, it is a good idea to clean the site with abrasive gel and alcohol.
 
@@ -77,9 +80,9 @@ For more guidance on minimizing impedances, please have a read of our [Improving
 1. Remove the cap from the participant's head, before removing all electrodes from the cap.
 2. Detach the electrode cable from the Explore device carefully by pressing down on the connector’s click-lock. Do not pull on the cables themselves.
 3. Wash the cap with regular soap and water. If needed, disinfect with alcohol. For more details, see our page on [Cleaning, disinfecting, and storing Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware").
-4. Clean the electrodes under running water. Use cotton pads or a soft brush to remove residue between pins if needed. Disinfect with Isopropanol. Be careful not to scratch the metal, and do not to get water on the connector. 
+4. Clean the electrodes under running water. Use cotton pads or a soft brush to remove residue between pins if needed. Disinfect with Isopropanol. Be careful not to scratch the metal, and do not to get water on the cable connector. 
 5. Let cap and electrodes air dry.
 6. Turn off and charge your Explore device before your next recording.
 
 ## Troubleshooting
-If you have any trouble or questions while setting up your dry EEG equipment, please do not hesitate to contact our team. We are always happy to assist: [support@mentalab.com](support@mentalab.com). 
+If you have any trouble or questions while setting up your dry EEG equipment, please do not hesitate to contact our team. We are always happy to assist: <support@mentalab.com>

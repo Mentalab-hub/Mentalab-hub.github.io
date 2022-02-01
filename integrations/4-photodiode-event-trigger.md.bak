@@ -1,9 +1,10 @@
 ---
-title: "Event Triggers"
+title: "Photodiode Event Triggers"
 date: 2022-01-26T10:25:19+00:00
 weight: 4
-description: Here is how a step-by-step guide to creating event triggers as you acquire data using Mentalab Explore
-slug: event-trigger
+description: Here is how a step-by-step guide to creating event triggers using a photodiode as you acquire data using Mentalab Explore
+slug: photodiode-event-trigger
+hidden = "true"
 ---
 
 Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers. 
@@ -15,7 +16,10 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
 The current version of the Explore system does not have a trigger input pin. Therefore, one of ExG channels has to be used for trigger input. In some experiments where visual stimuli are presented on a screen, a photosensor can be used to transmit triggers and synchronize the ExG signal with visual stimuli very precisely. In this tutorial, we demonstrate how we can setup such a system.
 
 ## Set-up
-<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figure style="float:right;">
+<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figcaption style="color:gray;text-align:center;"> OPT101 photosensor.</figcaption>
+</figure>
 
 Obtain a [OPT101 photosensor](https://www.amazon.de/-/en/Ba30DEllylelly-OPT101-analogue-intensity-monolithic/dp/B08FYJV12J/ref=sr_1_11?dchild=1&keywords=Fotodiode&qid=1634715575&sr=8-11), or any other photosensor that has a short rise/fall time.
 
@@ -60,7 +64,7 @@ We can then use the on-screen color change created by the stimulus as an event t
 {{< alert style="info" >}} The visualization in the recorded video applies a notch filter which causes some distortion in the signal. When you are recording raw data, the square wave is cleaner. {{< /alert >}}
 
 ## Delay and jitter measurements
-The following code snippet allows you to measure the delay and jitter of your software event markers.
+The following code snippet allows you to measure the delay and jitter of your event markers as they are recorded by your device.
 
 ```
 import time
@@ -91,7 +95,7 @@ explore.stop_recording()
 ```
 
 ## Experiment
-This experiment will record the data in CSV files. The files can be imported in python and the delay i.e. time distance between the rise of the signal of ch1 and the event marker can be computed (following code).
+Finally, we can create an experiment and record CSV files to drive. The files can be imported in Python and the delay i.e. time distance between the rise of the signal of channel 1 and the event marker can be computed as follows.
 
 ```
 import pandas as pd
@@ -135,5 +139,5 @@ plt.ylabel('Delay (ms)')
 plt.show()
 ```
 
-For more information or suppport, do not hesitate to get in contact at: <support@mentalab.com>
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
 

@@ -137,13 +137,7 @@
         <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
                 
                  <a href="/integrations/openvibe/" class="nav-link p-0">
-                    OpenVibe
-                </a>
-        </li>
-        <li data-nav-id="/integrations/photodiode-event-trigger/" class="nav-item my-1 active">
-                
-                 <a href="/integrations/photodiode-event-trigger/" class="nav-link p-0">
-                    Photodiode Event Triggers
+                    Device syncing with LSL
                 </a>
         </li>
         </ul>
@@ -180,7 +174,10 @@
 <p>Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device). This means your Mentalab Explore system is no longer fully wireless (although presenting stimuli on a mobile can mitigate this).</p>
 <p>The current version of the Explore system does not have a trigger input pin. Therefore, one of ExG channels has to be used for trigger input. In some experiments where visual stimuli are presented on a screen, a photosensor can be used to transmit triggers and synchronize the ExG signal with visual stimuli very precisely. In this tutorial, we demonstrate how we can setup such a system.</p>
 <h2 id="set-up">Set-up</h2>
-<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figure style="float:right;">
+<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figcaption style="color:gray;text-align:center;"> OPT101 photosensor.</figcaption>
+</figure>
 <p>Obtain a <a href="https://www.amazon.de/-/en/Ba30DEllylelly-OPT101-analogue-intensity-monolithic/dp/B08FYJV12J/ref=sr_1_11?dchild=1&amp;keywords=Fotodiode&amp;qid=1634715575&amp;sr=8-11">OPT101 photosensor</a>, or any other photosensor that has a short rise/fall time.</p>
 <p>Connect the photosensor using the following connection combinations.</p>
 <table>
@@ -307,7 +304,7 @@ plt.title(f'Delays: mean={np.array(delays).mean()*1000:.1f} ms, Std={np.array(de
 plt.xlabel('Trial')
 plt.ylabel('Delay (ms)')
 plt.show()
-</code></pre><p>For more information or suppport, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+</code></pre><p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
