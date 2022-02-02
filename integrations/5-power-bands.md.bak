@@ -54,9 +54,12 @@ Here, is an [OpenViBE](http://openvibe.inria.fr/) pipeline that breaks down raw 
 14. Run the EOG-calibration scenario in OpenViBE. Go to "File" --> "Open" --> `EOG-calibration.xml`. Click on the keyboard simulator window and press `a` to start the calibration. Run the scenario until `b-Matrix-EEG.cfg` is generated (check the log). Usually 30-40 seconds are sufficient here. Do blink during the recording and press `u` to end the data calibration.
 
 ### Visualize frequency bands with EOG artifacts removed
-15. Open the “Power_bands.xml” scenario and run it. You will see EEG signals before and after EOG denoising:
-16. You can test the performance of the EOG artifact removal by blinking and checking both signals.
-17. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted. 
- 
+<figure style="float:right; margin: 15px;" >
+<img width="200" style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=100%/>
+<figcaption style="color:gray;text-align:center;"> Frequency bands after signal processing.</figcaption>
+</figure>
+
+Open the `Power_bands.xml` scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted. 
+
 For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
 
