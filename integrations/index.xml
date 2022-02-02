@@ -23,10 +23,10 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/integrations/openvibe/</guid>
-      <description>Here is a step-by-step guide on using explorepy and Openvibe to visualize multiple Mentalab Explore systems simultaneously.
+      <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
   Start two Python consoles and activate a virtual environment for explorepy in both.
   Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
-  Open an Openvibe Acquisition server and select &amp;ldquo;Driver: LabStreamingLayer&amp;rdquo;. Go to the driver properties and select &amp;ldquo;EXG stream&amp;rdquo; and &amp;ldquo;marker signal&amp;rdquo; from one of the connected Explore devices.</description>
+  Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
     </item>
     
     <item>
@@ -38,6 +38,18 @@
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
 Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
 Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
+    </item>
+    
+    <item>
+      <title>EOG Artifact Removal</title>
+      <link>https://Mentalab-hub.github.io/integrations/power-bands/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/integrations/power-bands/</guid>
+      <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
+Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
+Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
+    Explore Channel  Cap Location  OpenViBE Channel     Ch1 F3 1   Ch2 C3 2   Ch3 Forehead (mid) 3   Ch4 C4 4   Ch7 Right eye (beside outer canthus) 5   Ch8 F4 6       Disable unnecessary channels using explorepy set-channels command:</description>
     </item>
     
   </channel>

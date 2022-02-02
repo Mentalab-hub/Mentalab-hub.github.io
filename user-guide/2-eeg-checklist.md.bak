@@ -9,30 +9,28 @@ slug: eeg-pre-experiment-checklist
 We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
 
 ## 1. Install Software
-1. Install appropriate software for your needs. An overview of our open-source APIs can be found on the [software page](https://fyi.cpg.mybluehost.me/software-integrations/) of our website or in our [GitHub Repo](https://github.com/Mentalab-hub). 
+1. Install the software appropriate for your needs. An overview of our open-source APIs can be found on the [software page](https://fyi.cpg.mybluehost.me/software-integrations/) of our website or in our [GitHub Repo](https://github.com/Mentalab-hub). 
 2. Regardless which software you use to record with, you will need `explorepy` to verify impedances. To download `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html), or download our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
 
 ## 2. Set Up Equipment
 1. Clip your electrodes into your desired 10-10 positions on the EEG cap. Use the cables we provide to connect the Explore device to the electrodes. Ensure there is no tension on the cables as this can cause the electrodes to disconnect. Reposition your Explore device to alleviate cable tension if needed. 
 2. Thread the electrode cables through the cap’s larger holes to reduce cable movement artifacts (we've written a blog post on [reducing signal noise](https://fyi.cpg.mybluehost.me/how-to-reduce-noise-in-eeg-recordings-4-2021/) when carrying out experiments, have a read!).
-3. Attach the Explore device to the EEG cap using velcro stickers / straps. You can pulled straps through the small latch on back of the device.
-4. Ensure that the EEG cap is pulled over your participant's head correctly. Their ears should be sticking through the cut outs, and the chin strap should close comfortably. In sum: the cap should feel tight but comfortable. Please consult our [cap size guide]({{< ref "/Product Guide/1-cap-size-guide" >}} "Product Guide/Cap Size Guide") for more.
+3. Attach the Explore device to the EEG cap using velcro stickers / straps / clips. You can pull straps through the small latch on the back of the device.
+4. Ensure that the EEG cap is pulled over your participant's head correctly. Their ears should be sticking through the cut outs and the chin strap should close comfortably over or under the chin. In sum: the cap should feel tight but comfortable. Please consult our [cap size guide]({{< ref "/Product Guide/1-cap-size-guide" >}} "Product Guide/Cap Size Guide") for more.
 
 ## 3. Place the REF Electrode
 1. Position: For most EEG applications, we recommend placing the REF on the mastoid (TP9 or TP10). This will minimize artifacts from non-relevant brain activity, EMG, and ECG activity.
-2. Application: Clean the mastoid location with alcohol and abrasive gel to remove any oil and dead skin cells. Either tuck the REF electrode under the EEG cap behind ear (you can use tape here), or use the TP9 or TP10 positions in the EEG cap.
+2. Application: Prepare the mastoid location with alcohol and abrasive gel for clean skin. Either tuck the REF electrode under the EEG cap behind the ear (you can use tape here), or use the TP9 or TP10 positions in the EEG cap.
    - Gel electrodes: Apply a generous amount of conductive gel onto the REF electrode.
-   - Dry electrodes: You can apply a little conductive gel or paste to the REF electrode, to lower overall impedances, but you do not have to.
+   - Dry electrodes: Apply some disinfectant onto the electrode. If you have trouble lowering overall impedances, you can apply a little conductive gel or paste to the REF electrode.
    
 ## 4. Check Impedances
-1. The lower the impedances, the higher the signal quality. Verify good impedances *before* recording. Use the `impedance` function in `explorepy`. For moe on this function, please watch our [video guide](https://www.youtube.com/watch?v=3nCB0MYXMx0), or see our [`explorepy` documentation](https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement).
+1. The lower the impedances, the higher the signal quality. Verify good impedances *before* recording. Use the `impedance` function in `explorepy`. For more on this function, please watch our [video guide](https://www.youtube.com/watch?v=3nCB0MYXMx0), or see our [`explorepy` documentation](https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement).
 <br><br> 
 {{< alert style="info" >}} It is normal for dry electrodes to show high (coded red), or no (coded black), impedance values (in version 1.6. This will be adjusted in the new GUI). {{< /alert >}}
-{{< alert style="info" >}} Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15k&#x2126; per channel, aim for about 30kΩ (REF + half channel). {{< /alert >}}
+{{< alert style="info" >}} Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15k&#x2126; per channel, aim for about 30k&#x2126; (REF + half channel). (in version 1.6. This will be adjusted in the new GUI & new explorepy version) {{< /alert >}}
 {{< alert style="info" >}} If you are having trouble identifying which channel you are looking at, move a single electrode. This will allow you to identify the signal in the dashboard. {{< /alert >}}
 2. If you need to improve your impedances, please have a read of our [Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences") page.
 3. Once impedances are as desired, end the impedance function (Ctrl + C in command prompt/Python console). 
 
 You are now ready to start recording EEG data. For information on how to visualize and record data using ExplorePy: [documentation](https://explorepy.readthedocs.io/en/latest/) and [videos](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU).
-
-For any questions or concerns, please contact your Mentalab representative or send a message at: <support@mentalab.com>.

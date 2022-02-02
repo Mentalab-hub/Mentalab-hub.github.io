@@ -24,7 +24,7 @@
       
       <guid>https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/</guid>
       <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
-1. Install Software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
+1. Install software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
     </item>
     
     <item>
@@ -43,10 +43,10 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/integrations/openvibe/</guid>
-      <description>Here is a step-by-step guide on using explorepy and Openvibe to visualize multiple Mentalab Explore systems simultaneously.
+      <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
   Start two Python consoles and activate a virtual environment for explorepy in both.
   Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
-  Open an Openvibe Acquisition server and select &amp;ldquo;Driver: LabStreamingLayer&amp;rdquo;. Go to the driver properties and select &amp;ldquo;EXG stream&amp;rdquo; and &amp;ldquo;marker signal&amp;rdquo; from one of the connected Explore devices.</description>
+  Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
     </item>
     
     <item>
@@ -55,9 +55,9 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/user-guide/dry-electrode-guide/</guid>
-      <description>Dry Electrodes Types Mentalab currently offers three types of dry electrodes.
-Flat Electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
-Brush Electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL Brush Electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
+Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
+Brush electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     
     <item>
@@ -82,6 +82,18 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
     </item>
     
     <item>
+      <title>EOG Artifact Removal</title>
+      <link>https://Mentalab-hub.github.io/integrations/power-bands/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/integrations/power-bands/</guid>
+      <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
+Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
+Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
+    Explore Channel  Cap Location  OpenViBE Channel     Ch1 F3 1   Ch2 C3 2   Ch3 Forehead (mid) 3   Ch4 C4 4   Ch7 Right eye (beside outer canthus) 5   Ch8 F4 6       Disable unnecessary channels using explorepy set-channels command:</description>
+    </item>
+    
+    <item>
       <title>Button Command Guide</title>
       <link>https://Mentalab-hub.github.io/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
@@ -100,7 +112,7 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
       <guid>https://Mentalab-hub.github.io/user-guide/improving-impedences/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
-Gel Electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
     </item>
     
     <item>
@@ -120,7 +132,7 @@ Gel Electrodes  Apply conductive gel through the openings at the back of the ele
       
       <guid>https://Mentalab-hub.github.io/user-guide/cleaning-disinfection-storage/</guid>
       <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
-Cleaning Electrodes and Caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
+Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
 Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     
@@ -130,9 +142,9 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/user-guide/safety-recommendations/</guid>
-      <description>Intended Use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
-Product Certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
- 2014/30/EU 2014/53/EU 2015/863/EU  Preventing Misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
+      <description>Intended use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
+Product certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
+ 2014/30/EU 2014/53/EU 2015/863/EU  Preventing misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
     </item>
     
   </channel>

@@ -14,7 +14,7 @@
       
       <guid>https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/</guid>
       <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
-1. Install Software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
+1. Install software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
     </item>
     
     <item>
@@ -23,9 +23,9 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/user-guide/dry-electrode-guide/</guid>
-      <description>Dry Electrodes Types Mentalab currently offers three types of dry electrodes.
-Flat Electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
-Brush Electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL Brush Electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
+Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
+Brush electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     
     <item>
@@ -57,7 +57,7 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
       <guid>https://Mentalab-hub.github.io/user-guide/improving-impedences/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
-Gel Electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
     </item>
     
     <item>
@@ -77,7 +77,7 @@ Gel Electrodes  Apply conductive gel through the openings at the back of the ele
       
       <guid>https://Mentalab-hub.github.io/user-guide/cleaning-disinfection-storage/</guid>
       <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
-Cleaning Electrodes and Caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
+Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
 Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     
@@ -87,9 +87,9 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://Mentalab-hub.github.io/user-guide/safety-recommendations/</guid>
-      <description>Intended Use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
-Product Certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
- 2014/30/EU 2014/53/EU 2015/863/EU  Preventing Misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
+      <description>Intended use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
+Product certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
+ 2014/30/EU 2014/53/EU 2015/863/EU  Preventing misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
     </item>
     
   </channel>

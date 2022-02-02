@@ -12,7 +12,7 @@ While regularly disinfecting materials prevents contamination, please bear in mi
 Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
 
 ### Electrodes
-Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry. Rinse electrodes under warm water and use cotton as needed to carefully remove gel residue.If gel residue is hard to remove, particularly in the circular hole of the ring electrodes, use a soft brush to remove it.
+Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry. Rinse electrodes under warm water and use cotton as needed to carefully remove gel residue. If gel residue is hard to remove, particularly in the circular hole of the ring electrodes, use a soft brush to remove it.
 
 {{< alert style="danger" >}} Avoid scratching the surface of your electrodes. {{< /alert >}}
 
@@ -21,16 +21,16 @@ Since most conductive gels are water based, you shouldn't need to use soap. If r
 ### EEG Caps
 Clean EEG Caps with water and a mild detergent (not shampoo). Remove all the electrodes before cleaning. Soak the caps in warm water and detergent, before massaging the material. This will allow the cleaning solution to soak through the material. Rinse thoroughly with water until the run-off contains no more soap. 
 
-To dry the cap, hang it up or spread it out on a flat surface in a well-ventilated area. Alternatively, rub it dry with a soft towel. Do not store your cap if it is still damp as mold will form.
+To dry the cap, hang it up or spread it out on a flat surface in a well-ventilated area. Alternatively, rub it dry with a soft towel. Do not store your cap if it is still damp as mold can form.
 
 ## Disinfection
-Dry air is in fact a good disinfectant. Most viruses and bacteria will not survive in a dry environment at room temperature for more than a few minutes. However, do disinfect your equipment properly if you intend to use it with multiple people in a single day. 
+Dry air is in fact a good disinfectant. Most viruses and bacteria will not survive in a dry environment at room temperature for more than a few minutes. However, do disinfect your equipment properly if you intend to use it with multiple people in a single day. Do not disinfect the Explore device itself.
 
 Please note, staff applying the EEG caps to participants face a substantially higher risk of infection from contaminated equipment than a participant. Electrodes can be disinfected after cleaning by applying a disinfecting solution. We recommend [Gigasept FF](https://www.schuelke.com/intl-en/products/gigasept-FF-new.php) or [Korsolex plus](https://westdeutscher-medizin-service.de/upload/53435533-1126700-korsolex-plus.pdf). In either case, apply the solution with a soft applicator, like a cotton swab, to prevent scratching.
 
-__Do not use Acetone based cleaning solutions.__
+{{< alert style="danger" >}} Do not use Acetone based cleaning solutions. {{< /alert >}}
 
-__Do not disinfect with heat-based processes such as steam.__
+{{< alert style="danger" >}} Do not disinfect with heat-based processes such as steam. {{< /alert >}}
 
 After disinfecting your equipment, thoroughly rinse them with water and let them air dry. Some additional recommendations to minimize the risk of infection:
 - Do not work with open injuries on your fingers, nail beds, or any mucous membranes.

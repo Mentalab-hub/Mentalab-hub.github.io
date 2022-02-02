@@ -6,23 +6,26 @@ description: Here is a guide to choosing, using, and caring for dry electrodes w
 slug: dry-electrode-guide
 ---
 
-## Dry Electrodes Types
+## Dry electrodes types
 Mentalab currently offers three types of dry electrodes.
 
-### Flat Electrodes
+### Flat electrodes
 For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
 
-### Brush Electrodes
-<img style="float:right; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width="400"/>
+### Brush electrodes
+<figure style="float:right;">
+<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width=400/>
+<figcaption style="color:gray;text-align:center;"> Dry brush electrodes.</figcaption>
+</figure>
 For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. 
 
-### XL Brush Electrodes
+### XL brush electrodes
 For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.
 
-### Snap Electrodes
+### Snap electrodes
 Our clip cables also work well with disposable “stick 'n' peel” (or, "snap") electrodes. Snap electrodes are commonly used in EOG, ECG, and EMG paradigms, alongside dry EEG, or to ensure a stable reference electrode (for areas not covered in hair).
 
-### Summary Table
+### Summary table
 These types of electrodes are interchangeable, but we recommend following these suggestions for maximum comfort and data quality:
 
 | &nbsp; Position | &nbsp; Electrode Type |
@@ -32,7 +35,7 @@ These types of electrodes are interchangeable, but we recommend following these 
 | Very dense hair | Brush XL |
 | EMG/ECG/EOG | Snap |
 
-## Before Attaching Dry Electrodes
+## Before attaching dry electrodes
 <figure style="float:right;">
 <img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
 <figcaption style="color:gray;text-align:center;"> Thread cables through the cap to minimize noise.</figcaption>
