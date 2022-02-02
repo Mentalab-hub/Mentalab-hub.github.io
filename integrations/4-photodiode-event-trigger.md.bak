@@ -2,7 +2,7 @@
 title: "Photodiode Event Triggers"
 date: 2022-01-26T10:25:19+00:00
 weight: 4
-description: Here is how a step-by-step guide to creating event triggers using a photodiode as you acquire data using Mentalab Explore
+description: Here is a step-by-step guide to creating event triggers using a photodiode as you acquire data using Mentalab Explore
 slug: photodiode-event-trigger
 hidden: "true"
 ---
