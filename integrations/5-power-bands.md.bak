@@ -55,7 +55,7 @@ Here, is an [OpenViBE](http://openvibe.inria.fr/) pipeline that breaks down raw 
 
 ### Visualize frequency bands with EOG artifacts removed
 <figure style="float:right;" >
-<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px; margin: 15px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
+<img class="mobile" style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; padding: 5px; margin: 15px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
 <figcaption style="color:gray;text-align:center;"> Frequency bands after signal processing.</figcaption>
 </figure>
 
@@ -63,3 +63,10 @@ Open the `Power_bands.xml` scenario and run it. You will see EEG signals before 
 
 For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
 
+<style>
+@media (max-width:992px){
+    .mobile { 
+	    width:100% !important;
+	}  
+}
+</style>
