@@ -62,11 +62,3 @@ Here, is an [OpenViBE](http://openvibe.inria.fr/) pipeline that breaks down raw 
 Open the `Power_bands.xml` scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted. 
 
 For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
-
-<style>
-@media (max-width:992px){
-    .mobile { 
-	    width:100% !important;
-	}  
-}
-</style>

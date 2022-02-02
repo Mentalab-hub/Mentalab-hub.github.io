@@ -14,7 +14,7 @@ For electrode positions not covered by hair (e.g. on the forehead, mastoid…), 
 
 ### Brush electrodes
 <figure style="float:right;">
-<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width=400/>
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2021/12/brush-electrodes-1.jpg" alt="brush electrode" width=400/>
 <figcaption style="color:gray;text-align:center;"> Dry brush electrodes.</figcaption>
 </figure>
 For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. 
@@ -37,8 +37,8 @@ These types of electrodes are interchangeable, but we recommend following these 
 
 ## Before attaching dry electrodes
 <figure style="float:right;">
-<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
-<figcaption style="color:gray;text-align:center;"> Thread cables through the cap to minimize noise.</figcaption>
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/cables-in-cap.jpg" alt="brush electrode" width="400"/>
+<figcaption> Thread cables through the cap to minimize noise.</figcaption>
 </figure>
 If you are not using gel, but still want to ensure stable data transmission and lower impedances, choose a position free of hair for the unipolar reference. Common locations are: the mastoid behind the ear, tip of the nose, earlobe, forehead.
 
@@ -46,7 +46,7 @@ If you are not using gel, but still want to ensure stable data transmission and 
 
 To reduce motion artifacts, it is best to thread the cables through the larger holes in the EEG cap. Do ensure that there is no tension on the cables when connecting the dry electrodes and the device, as this can lead to the clips disconnecting. Try repositioning the device to alleviate cable tension if needed.
 
-## Connecting Cables to Dry Electrodes
+## Connecting cables to dry electrodes
 We recommend fully preparing the cap before putting it on the participant. This saves the participant time and reduces discomfort. 
 
 After threading the cables through the cap holes, place a dry electrode on the inside of the cap at the chosen 10-10 position. Push the electrode knob through the cap's little hole. Connect the clip cable to the knob on the outside of the cap and tighten. Repeat for remaining electrodes.
@@ -59,7 +59,7 @@ Alternatively, you can connect the cables while the participant wears the cap. T
 <iframe src="https://www.youtube-nocookie.com/embed/Sr2hDZWvS8A" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Ensuring Good Skin Contact
+## Ensuring good skin contact
 For flat reference electrodes, it can be a good idea to connect the electrode directly to the clip, and tuck it under the cap. This is particularly true if you choose to place the electrode at the mastoid.
 
 For brush electrodes, be sure that the pins reach the scalp through the hair. Pinch the clip, and wiggle it around (side to side, or in circular motion) until the bristles have found their way through the hair and are touching the scalp. Subjects should not feel discomfort at any point. 
@@ -68,7 +68,7 @@ For brush electrodes, be sure that the pins reach the scalp through the hair. Pi
 <iframe src="https://www.youtube-nocookie.com/embed/q1MekhoAkBI" title="Quick Start Video" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 
-## Dry Electrode Impedances
+## Dry electrode impedances
 Achieving low impedances with dry electrodes can be challenging. 
 
 Use `explorepy` to measure impedance values. 
@@ -79,7 +79,7 @@ Use `explorepy` to measure impedance values.
 
 For more guidance on minimizing impedances, please have a read of our [Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences") page.
 
-## After Recording with Dry Electrodes
+## After recording with dry electrodes
 1. Remove the cap from the participant's head, before removing all electrodes from the cap.
 2. Detach the electrode cable from the Explore device carefully by pressing down on the connector’s click-lock. Do not pull on the cables themselves.
 3. Wash the cap with regular soap and water. If needed, disinfect with alcohol. For more details, see our page on [Cleaning, disinfecting, and storing Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware").
