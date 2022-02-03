@@ -105,6 +105,16 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
     </item>
     
     <item>
+      <title>PsychoPy Builder</title>
+      <link>https://Mentalab-hub.github.io/integrations/psychopy/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/integrations/psychopy/</guid>
+      <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
+Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
+    </item>
+    
+    <item>
       <title>Improving Impedances</title>
       <link>https://Mentalab-hub.github.io/user-guide/improving-impedences/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>

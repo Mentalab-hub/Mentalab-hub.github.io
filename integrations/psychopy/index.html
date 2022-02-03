@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://Mentalab-hub.github.io/integrations/power-bands/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/integrations/psychopy/">
 
     <title>
         Mentalab Wiki
@@ -140,13 +140,13 @@
                     Device syncing with LSL
                 </a>
         </li>
-        <li data-nav-id="/integrations/power-bands/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/power-bands/" class="nav-item my-1">
                 
                  <a href="/integrations/power-bands/" class="nav-link p-0">
                     EOG Artifact Removal
                 </a>
         </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1 active">
                 
                  <a href="/integrations/psychopy/" class="nav-link p-0">
                     PsychoPy Builder
@@ -168,12 +168,18 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#set-up">Set-up</a></li>
-    <li><a href="#run-the-script">Run the script</a>
+    <li><a href="#install-software">Install software</a>
       <ul>
-        <li><a href="#start-streaming">Start streaming</a></li>
-        <li><a href="#calibrate-eog-data">Calibrate EOG data</a></li>
-        <li><a href="#visualize-frequency-bands-with-eog-artifacts-removed">Visualize frequency bands with EOG artifacts removed</a></li>
+        <li><a href="#download-explorepy">Download explorepy</a></li>
+        <li><a href="#edit-explorepy">Edit explorepy</a></li>
+        <li><a href="#download-psychopy">Download PsychoPy</a></li>
+      </ul>
+    </li>
+    <li><a href="#how-to-use-explorepy-in-psychopy-builder">How to use explorepy in PsychoPy builder</a>
+      <ul>
+        <li><a href="#initialize">Initialize</a></li>
+        <li><a href="#set-an-event-marker">Set an event marker</a></li>
+        <li><a href="#example">Example</a></li>
       </ul>
     </li>
   </ul>
@@ -183,102 +189,93 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>EOG Artifact Removal</h1>
+<h1>PsychoPy Builder</h1>
 
-<p>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.</p>
-<p>Here, is an <a href="http://openvibe.inria.fr/">OpenViBE</a> pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.</p>
-<h2 id="set-up">Set-up</h2>
+<p>Here is a guide to running <code><a href="https://explorepy.readthedocs.io/">explorepy</a></code> inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer (LSL)</a>.</p>
+<h2 id="install-software">Install software</h2>
+<h3 id="download-explorepy">Download explorepy</h3>
 <ol>
-<li>Prepare an 8-channel <a href="https://fyi.cpg.mybluehost.me/explore-device/">Mentalab Explore system</a> using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
-<table>
-<thead>
-<tr>
-<th>  Explore Channel</th>
-<th>  Cap Location</th>
-<th>  OpenViBE Channel</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Ch1</td>
-<td>F3</td>
-<td>1</td>
-</tr>
-<tr>
-<td>Ch2</td>
-<td>C3</td>
-<td>2</td>
-</tr>
-<tr>
-<td>Ch3</td>
-<td>Forehead (mid)</td>
-<td>3</td>
-</tr>
-<tr>
-<td>Ch4</td>
-<td>C4</td>
-<td>4</td>
-</tr>
-<tr>
-<td>Ch7</td>
-<td>Right eye (beside outer canthus)</td>
-<td>5</td>
-</tr>
-<tr>
-<td>Ch8</td>
-<td>F4</td>
-<td>6</td>
-</tr>
-</tbody>
-</table>
-</li>
+<li>Download <a href="https://www.anaconda.com/products/individual#download-section">Anaconda</a>.</li>
+<li>Open the Anaconda prompt and create a virtual environment: <code>conda create -n psychopyenv python=3.6</code></li>
+<li>Activate the virtual environment: <code>conda activate psychopyenv</code></li>
+<li>Download <code><a href="https://github.com/Mentalab-hub/explorepy/archive/refs/tags/v1.6.0.zip">explorepy</a></code>, and extract the files.</li>
 </ol>
-<br>
-<ol start="2">
-<li>
-<p>Disable unnecessary channels using <code><a href="explorepy.readthedocs.io/">explorepy set-channels</a></code> command:</p>
-<pre tabindex="0"><code>explorepy set-channels -n Explore_XXXX -m 207
-</code></pre>
+<h3 id="edit-explorepy">Edit explorepy</h3>
+<figure style="float:right;">
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/comment-out-line.png" alt="How the explorepy code should look" width="400"/>
+<figcaption> Comment out line 215. </figcaption>
+</figure>
+<ol start="5">
+<li>Open the <code>explorepy-1.6.0\src\explorepy\stream_processor.py</code> script using a text editor (e.g. right-click → open with → Notepad).</li>
+<li>Comment out line 215: <code>logger.info(f&quot;Setting a marker with code: {code}&quot;)</code>. (To do this add a <code>#</code> at the beginning of this line.)</li>
+<li>Save your changes, the code should look like the figure.</li>
+<li>Navigate to the <code>explorepy-1.6.0</code> directory in your terminal: <code>cd &lt;PATH-TO-EXPLOREPY&gt;</code></li>
+<li>Install <code>explorepy</code>: <code>pip install .</code></li>
+</ol>
+<h3 id="download-psychopy">Download PsychoPy</h3>
+<ol start="10">
+<li>Download the <a href="https://github.com/psychopy/psychopy/releases/download/2021.2.3/PsychoPy-2021.2.3.zip">PsychoPy source code</a> and extract the files.</li>
+<li>Navigate to the extracted folder (i.e. PsychoPy-2021.2.3) in your terminal: <code>cd &lt;PATH-TO-PSYCHOPY&gt;</code></li>
+<li>Install PsychoPy: <code>pip install .</code></li>
+<li>Run PsychoPy: <code>python psychopy\app\psychopyApp.py</code></li>
+</ol>
+
 <div class="alert alert-info" role="alert">
-    Here, you will need to convert a string of binary values to a number. The binary numbers correspond to the channels in reverse order. So <code>11111101</code> means channel 2 will be off. This binary string converts to <code>253</code>.
+    To open PsychoPy next time:<br>
+1. Open Anaconda prompt<br>
+2. Navigate to the PsychoPy folder (step 11 above)<br>
+3. Run PsychoPy: <code>python psychopy\app\psychopyApp.py</code> (step 12 above)<br>
 </div>
 
-<p>To convert a binary string to a decimal number, you can use <a href="https://www.rapidtables.com/convert/number/binary-to-decimal.html">this tool</a>.</p>
-</li>
-<li>
-<p>Check impedances using the <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement">explorepy measure_imp</a></code> command. Aim for &lt;20 kΩ for wet electrodes, and &lt;150 kΩ for dry electrodes. For more on this function, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>.</p>
-</li>
-<li>
-<p>Visualize your data using the <code>explorepy visualize</code> command, and check your signal quality. Make sure there is no obvious noise.</p>
-</li>
-<li>
-<p>If you are using the dashboard, click the &ldquo;Push2lsl&rdquo; button, or else run the <code>explorepy push2lsl</code> command.</p>
-</li>
-</ol>
-<h2 id="run-the-script">Run the script</h2>
-<ol start="6">
-<li>Download this <a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-EEG_Power_Bands.zip">ZIP folder</a> and extract the contents.</li>
-<li><a href="http://openvibe.inria.fr/downloads/">Install OpenViBE</a>.</li>
-</ol>
-<h3 id="start-streaming">Start streaming</h3>
-<ol start="8">
-<li>Open an OpenViBE <strong>acquisition server</strong> and select &ldquo;LabStreamingLayer&rdquo; as the driver.</li>
-<li>Under &ldquo;Driver Properties&rdquo;, select your Explore device&rsquo;s &ldquo;ExG&rdquo; and &ldquo;Marker&rdquo; streams.</li>
-<li>Press &ldquo;Apply&rdquo; &ndash;&gt; &ldquo;Connect&rdquo; &ndash;&gt; &ldquo;Play&rdquo; to start acquiring a Mentlab Explore stream in OpenViBE via lab streaming layer.</li>
-</ol>
-<h3 id="calibrate-eog-data">Calibrate EOG data</h3>
-<ol start="11">
-<li>Open the OpenViBE <strong>designer</strong> and go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo;.</li>
-<li>Choose the <code>recorder.xml</code> file (extracted from the ZIP file you downloaded earlier) and run the scenario for at least 60 seconds. Blink and turn your eyes to different directions during the recording. A <code>GDF</code> file will be created in the same folder as the contents of your ZIP file.</li>
-<li>Run the EOG-calibration scenario in OpenViBE <strong>designer</strong>. Go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo;, and then choose the <code>EOG-calibration.xml</code> file extracted earlier. Double click on the <code>GDF</code> file reader and select the file generated in the previous step as source.</li>
-<li>Run the EOG-calibration scenario in OpenViBE. Go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo; &ndash;&gt; <code>EOG-calibration.xml</code>. Click on the keyboard simulator window and press <code>a</code> to start the calibration. Run the scenario until <code>b-Matrix-EEG.cfg</code> is generated (check the log). Usually 30-40 seconds are sufficient here. Do blink during the recording and press <code>u</code> to end the data calibration.</li>
-</ol>
-<h3 id="visualize-frequency-bands-with-eog-artifacts-removed">Visualize frequency bands with EOG artifacts removed</h3>
-<figure style="float:right;" >
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
-<figcaption> Frequency bands after signal processing.</figcaption>
+<h2 id="how-to-use-explorepy-in-psychopy-builder">How to use explorepy in PsychoPy builder</h2>
+<h3 id="initialize">Initialize</h3>
+<p>In order to run <code>explorepy</code>, you will need to add a <strong>Code</strong> component to your experiment. In the &ldquo;Begin Experiment&rdquo; section, setup and initialize streaming, recording (optional) or push to LSL (optional).</p>
+<figure>
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
+<figcaption> Look for add <b>Code</b> option. </figcaption>
 </figure>
-<p>Open the <code>Power_bands.xml</code> scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted.</p>
+<p>To do this, add the following code to your <strong>Code</strong> file:</p>
+<pre tabindex="0"><code>from explorepy import Explore
+
+explore = Explore()
+explore.connect(device_name='Explore_XXXX')
+explore.push2lsl()
+explore.record_data(file_name='recorded_trial_02', file_type='csv', do_overwrite=False)
+</code></pre><p>
+<div class="alert alert-danger" role="alert">
+    If you have multiple code components in your experiment, this initialization script should be only in one of them.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    Line 4: enter your device’s ID, which is the last 4 digits on the label on the back of your Mentalab Explore device. E.g., <code>Explore_CA52</code>.<br>
+Line 6: remember to set the filename; the file type can be <code>csv</code> or <code>edf</code> (CSV recommended).
+</div>
+</p>
+<h3 id="set-an-event-marker">Set an event marker</h3>
+<figure style="float:right;">
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-begin-routine.png" alt="Begin routine in PsychoPy" width="400"/>
+<figcaption> If you need a marker at the start of a loop, <br>use the "Begin Routine" tab. </figcaption>
+</figure>
+<p>To set an event marker in your recorded data, use the <code>set_marker</code> method. For instance, if there is a loop and the beginning of each iteration should be marked, call <code>set_marker</code> in the &ldquo;Begin Routine&rdquo; section of your <strong>Code</strong> component.</p>
+<p>If instead you would like to mark multiple event types, you can assign specific codes to each type of marker using the following pattern:</p>
+<pre tabindex="0"><code>if cond == 'left':
+    explore.set_marker(10)
+elif cond == 'right':
+    explore.set_marker(11)
+elif cond == 'up':
+    explore.set_marker(12)
+elif cond == 'down':
+    explore.set_marker(13)
+</code></pre><h3 id="example">Example</h3>
+<p><a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-psychopy-experiment-example.zip">Here</a>, you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time.</p>
+<p>To change the name of the Mentalab Explore device and the recorded file:</p>
+<ol>
+<li>Click on &ldquo;trial&rdquo; in the <strong>Flow</strong> section</li>
+<li>Click &ldquo;code&rdquo; in the <strong>Routines</strong> section</li>
+<li>Change the relevant arguments in the script in the &ldquo;Begin Experiment&rdquo; tab
+<br><br></li>
+</ol>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
