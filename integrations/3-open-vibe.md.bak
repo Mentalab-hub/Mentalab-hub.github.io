@@ -6,18 +6,18 @@ description: Here is how to integrate the Mentalab Explore system with OpenVibe
 slug: openvibe
 ---
 
-Here is a step-by-step guide on using `explorepy` and [Openvibe](http://openvibe.inria.fr/) to visualize multiple Mentalab Explore systems simultaneously.
+Here is a step-by-step guide on using `explorepy` and [OpenViBE](http://openvibe.inria.fr/) to visualize multiple Mentalab Explore systems simultaneously.
 
 1. Start two Python consoles and activate a virtual environment for `explorepy` in both. 
 
 2. Use the `push2lsl` command to stream data from your Explore device to [lab streaming layer](https://labstreaminglayer.readthedocs.io/info/intro.html) (one device per console).
 
-3. Open an __Openvibe Acquisition__ server and select "Driver: LabStreamingLayer". Go to the driver properties and select "EXG stream" and "marker signal" from one of the connected Explore devices. Click "Connect". 
+3. Open an OpenViBE __acquisition server__ and select "LabStreamingLayer" as the driver. Under "Driver Properties", select your Explore device's "ExG" and "Marker" streams, selecting only one of the connected Explore devices. Click "Apply" and "Connect". 
 
-4. Open an __Openvibe Acquisition__ server again, select "Driver: LabStreamingLayer". Go to the driver properties and select "EXG stream" and "marker signal" from the other connected Explore device. Use a different connection port this time by opening preferences and changing the `TCP_Tagging_Port`. Click "Connect". 
+4. Open an OpenViBE __acquisition server__ server again, and select "LabStreamingLayer" as the driver again. Under "Driver Properties", select the "ExG" and "Marker" streams from your other connected Explore device. Use a different connection port this time by opening "Preferences" and changing the `TCP_Tagging_Port`. Click "Apply" and "Connect". 
 
-5. Open the __Openvibe Designer__ and start new project. Add two acquisition clients from the "Boxes" menu. Make sure that their port numbers match the port numbers you set in the Acquisition servers.
+5. Open the OpenViBE __designer__ and start a "New Project". Add two __acquisition clients__ from the "Boxes" menu. Make sure that their port numbers match the port numbers you set in the __acquisition servers__.
 
-6. Add a signal merger to combine the signals and add a signal display. Connect the two acquisition clients into the merger, and then add the merger to the display (connect the pink triangles on the edges of the boxes).
+6. Add a "Signal Merger" to combine the signals and add a "Signal Display". Connect the two __acquisition clients__ into the merger, and then add the merger to the display (connect the pink triangles on the edges of the boxes).
 
-7. Click "play" and enjoy!
+7. Click "Play" and enjoy!

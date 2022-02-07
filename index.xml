@@ -38,7 +38,7 @@
     </item>
     
     <item>
-      <title>Device syncing with LSL</title>
+      <title>Device Syncing With LSL</title>
       <link>https://Mentalab-hub.github.io/integrations/openvibe/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
@@ -123,6 +123,17 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
 Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+    </item>
+    
+    <item>
+      <title>SSVEP Experiments</title>
+      <link>https://Mentalab-hub.github.io/integrations/ssvep/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/integrations/ssvep/</guid>
+      <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.
+SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.
+Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
     
     <item>
