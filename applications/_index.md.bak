@@ -1,0 +1,16 @@
+---
+title: "Applications"
+date: 2022-01-26T10:25:19+00:00
+weight: 6
+description: Here are a series of application pipelines that use the Mentalab Explore device, Mentalab software, and third-party software and hardware
+slug: applications
+---
+
+Here are a series of application pipelines, integrating Mentalab Explore hardware with third-party solutions to solve common neuroimaging paradigms.
+
+### Contents
+[EOG Artifact Removal]({{< ref "/Applications/5-power-bands" >}} "Applications/EOG Artifact Removal")<br>
+[SSVEP Experiments]({{< ref "/Applications/7-ssvep" >}} "Applications/SSVEP Experiments")<br>
+[Easi ECG]({{< ref "/Applications/8-easi-ecg" >}} "Applications/Easi ECG")<br>
+
+For more information or queries, please contact <support@mentalab.com>

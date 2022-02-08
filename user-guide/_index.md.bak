@@ -6,6 +6,16 @@ description: Here is an outline of the user guide with links to different parts 
 slug: user-guide
 ---
 
+### Contents
+[EEG Pre-Experiment Checklist]({{< ref "/User Guide/2-eeg-checklist" >}} "User Guide/EEG Checklist")<br>
+[Dry Electrode Guide]({{< ref "/User Guide/3-dry-electrode-guide" >}} "User Guide/Dry Electrode Guide")<br>
+[LED Light Guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide")<br>
+[Button Command Guide]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide")<br>
+[Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences")<br>
+[explorepy Command Guide]({{< ref "/User Guide/7-explorepy-commands" >}} "User Guide/explorepy Command Guide")<br>
+[Cleaning, Disinfecting and Storing Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware")<br>
+[Safety Recommendations]({{< ref "/User Guide/9-safety-recommendations" >}} "User Guide/Safety Recommendations")<br>
+
 To get up and running quickly, please consult the [Quick Start Guide](https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/Mentalab-Explore-Quick-Start-Guide.pdf) included with your Mentalab Explore system, or watch the video below.
 
 <div class="video-container">
@@ -28,7 +38,7 @@ To maximise the lifespan of your ExG system, it is important to prevent damage t
 
 We have compiled instructions on [caring for your Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware") to help you do this.
 
-## Advanced Resources
+## Advanced resources
 For users with advanced software needs, check out our [GitHub Repo](https://github.com/Mentalab-hub/)! 
 
 All our APIs are open-source and well documented. For more information, please contact us at: <support@mentalab.com>

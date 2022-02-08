@@ -1,0 +1,60 @@
+---
+title: "EASI ECG"
+date: 2022-01-26T10:25:19+00:00
+weight: 8
+description: How to record 12 lead ECG with only 4 ECG channels using Mentalab Explore
+slug: easi-ecg
+---
+
+<figure style="float:right;text-align:center;">
+<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/ECG_Placement_of_Electrodes.png" alt="12 lead configuration" width="200"/>
+<figcaption> The 12 lead electrode configuration. <br>Source: <a href="https://www.cardiosecur.com/magazine/specialist-articles-on-the-heart/lead-systems-how-an-ecg-works">CardioSecur</a> </figcaption>
+</figure>
+
+Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs' extremities). 
+
+Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.
+
+Summary of 12-lead ECG drawbacks:
+- Large number of electrodes required
+- Complicated configuration
+- Prone to noise
+- Not suitable for long-term use
+
+## Introduction
+Because of these challenges, [Dower et al., 1988](https://doi.org/10.1016/0022-0736(88)90090-8) proposed a modified set-up that can derive 12-lead ECG signals from only 5 ECG channels. This set-up is called the EASI method.
+
+The EASI method benefits from:
+- High reproducibility (because landmarks for electrode placement are easy to identify)
+- High signal-to-noise ratios (less movement artefacts)
+- High sensitivity to electrical events in lateral, anteroposterior and vertical directions
+- Increased patient comfort
+- Increased technical convenience
+
+The only true drawback of EASI ECG is that two of the electrodes are difficult to place as they sit in an awkward location on the chest. With a little practice, however, it is possible for patient's to place this electrode themselves.
+
+Although the FDA approved the EASI method for use in the assessment of normal, abnormal, and paced cardiac rhythms, the method is not often used in clinical practice. As such, this article serves as an example of data processing, rather than a clinical ECG protocol.
+
+## Set-up
+<figure style="float:right;">
+<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/easipositions.jpg" alt="EASI configuration" width="250"/>
+<figcaption> The EASI electrode configuration. <br>Source: <a href="https://www.routledgehandbooks.com/doi/10.1201/b17831-4">The Physiological Measurement Handbook</a> </figcaption>
+</figure>
+
+Mentalab Explore is well suited to EASI ECG recordings. To record ECG data using the EASI method: 
+
+1. Attach your Mentalab Explore device to a velcro strap on or around the participant's chest.
+2. Attach the electrodes in the following configuration.
+    - __E__: On lower sternum at level of 5th intercostal space
+    - __A__: On the same level as E, on left midaxillary line
+    - __S__: On upper sternum
+    - __I__: Same level as E and A, on right midaxillary line
+    - __G__: Ground anywhere below 6th rib
+3. Transform the EASI channels to 12-lead channels using the table below, which lists the coefficients of a linear transform.
+
+<figure>
+<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/EASI5to12conversion.png" alt="EASI coefficients table" width="90%"/>
+<figcaption> EASI coefficients for standard limb leads. </figcaption>
+</figure>
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

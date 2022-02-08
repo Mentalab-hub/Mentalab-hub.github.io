@@ -1,0 +1,64 @@
+---
+title: "EOG Artifact Removal"
+date: 2022-01-26T10:25:19+00:00
+weight: 5
+description: Here is how a step-by-step guide to identifying frequency bands in real-time and removing blinking artifacts from data you acquire with Mentalab Explore
+slug: power-bands
+---
+
+Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
+
+Here, is an [OpenViBE](http://openvibe.inria.fr/) pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
+
+## Set-up
+1. Prepare an 8-channel [Mentalab Explore system](https://fyi.cpg.mybluehost.me/explore-device/) using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
+
+
+    | &nbsp; Explore Channel | &nbsp; Cap Location | &nbsp; OpenViBE Channel | 
+    | ----------- | ----------- | ----------- |
+    | Ch1 | F3 | 1 |
+    | Ch2 | C3 | 2 |
+    | Ch3 | Forehead (mid) | 3 |
+    | Ch4 | C4 | 4 |
+    | Ch7 | Right eye (beside outer canthus) | 5 |
+    | Ch8 | F4 | 6 |
+
+<br>
+
+2. Disable unnecessary channels using <code>[explorepy set-channels](explorepy.readthedocs.io/)</code> command:
+    ```
+    explorepy set-channels -n Explore_XXXX -m 207
+    ```
+
+    {{< alert style="info" >}} Here, you will need to convert a string of binary values to a number. The binary numbers correspond to the channels in reverse order. So `11111101` means channel 2 will be off. This binary string converts to `253`. {{< /alert >}}
+
+    To convert a binary string to a decimal number, you can use [this tool](https://www.rapidtables.com/convert/number/binary-to-decimal.html).
+
+3. Check impedances using the <code>[explorepy measure_imp](https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement)</code> command. Aim for <20 k&#x2126; for wet electrodes, and <150 k&#x2126; for dry electrodes. For more on this function, please watch our [video guide](https://www.youtube.com/watch?v=3nCB0MYXMx0).
+4. Visualize your data using the `explorepy visualize` command, and check your signal quality. Make sure there is no obvious noise.
+5. If you are using the dashboard, click the "Push2lsl" button, or else run the `explorepy push2lsl` command.
+
+## Run the script
+6. Download this [ZIP folder](https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-EEG_Power_Bands.zip) and extract the contents.
+7. [Install OpenViBE](http://openvibe.inria.fr/downloads/).
+
+### Start streaming
+8. Open an OpenViBE __acquisition server__ and select "LabStreamingLayer" as the driver.
+9. Under "Driver Properties", select your Explore device's "ExG" and "Marker" streams.
+10. Press "Apply" --> "Connect" --> "Play" to start acquiring a Mentlab Explore stream in OpenViBE via lab streaming layer.
+
+### Calibrate EOG data
+11. Open the OpenViBE __designer__ and go to "File" --> "Open".
+12. Choose the `recorder.xml` file (extracted from the ZIP file you downloaded earlier) and run the scenario for at least 60 seconds. Blink and turn your eyes to different directions during the recording. A `GDF` file will be created in the same folder as the contents of your ZIP file.
+13. Run the EOG-calibration scenario in OpenViBE __designer__. Go to "File" --> "Open", and then choose the `EOG-calibration.xml` file extracted earlier. Double click on the `GDF` file reader and select the file generated in the previous step as source.
+14. Run the EOG-calibration scenario in OpenViBE. Go to "File" --> "Open" --> `EOG-calibration.xml`. Click on the keyboard simulator window and press `a` to start the calibration. Run the scenario until `b-Matrix-EEG.cfg` is generated (check the log). Usually 30-40 seconds are sufficient here. Do blink during the recording and press `u` to end the data calibration.
+
+### Visualize frequency bands with EOG artifacts removed
+<figure style="float:right;" >
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
+<figcaption style="color:gray;text-align:center;"> Frequency bands after signal processing.</figcaption>
+</figure>
+
+Open the `Power_bands.xml` scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted. 
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

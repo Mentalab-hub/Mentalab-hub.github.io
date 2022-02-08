@@ -30,29 +30,6 @@
     </item>
     
     <item>
-      <title>Photodiode Event Triggers</title>
-      <link>https://Mentalab-hub.github.io/integrations/photodiode-event-trigger/</link>
-      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
-      <guid>https://Mentalab-hub.github.io/integrations/photodiode-event-trigger/</guid>
-      <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
-Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
-Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
-    </item>
-    
-    <item>
-      <title>EOG Artifact Removal</title>
-      <link>https://Mentalab-hub.github.io/integrations/power-bands/</link>
-      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
-      <guid>https://Mentalab-hub.github.io/integrations/power-bands/</guid>
-      <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
-Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
-Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
-    Explore Channel  Cap Location  OpenViBE Channel     Ch1 F3 1   Ch2 C3 2   Ch3 Forehead (mid) 3   Ch4 C4 4   Ch7 Right eye (beside outer canthus) 5   Ch8 F4 6       Disable unnecessary channels using explorepy set-channels command:</description>
-    </item>
-    
-    <item>
       <title>PsychoPy Builder</title>
       <link>https://Mentalab-hub.github.io/integrations/psychopy/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
@@ -60,17 +37,6 @@ Set-up  Prepare an 8-channel Mentalab Explore system using the following configu
       <guid>https://Mentalab-hub.github.io/integrations/psychopy/</guid>
       <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
 Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
-    </item>
-    
-    <item>
-      <title>SSVEP Experiments</title>
-      <link>https://Mentalab-hub.github.io/integrations/ssvep/</link>
-      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
-      <guid>https://Mentalab-hub.github.io/integrations/ssvep/</guid>
-      <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.
-SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.
-Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
     
   </channel>

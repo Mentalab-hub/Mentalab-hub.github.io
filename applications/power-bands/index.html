@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://Mentalab-hub.github.io/integrations/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://Mentalab-hub.github.io/integrations/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/applications/power-bands/">
 
     <title>
         Mentalab Wiki
@@ -124,7 +123,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 parent active haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -149,12 +148,12 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1 active">
                 
                  <a href="/applications/power-bands/" class="nav-link p-0">
                     EOG Artifact Removal
@@ -188,9 +187,12 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
+    <li><a href="#set-up">Set-up</a></li>
+    <li><a href="#run-the-script">Run the script</a>
       <ul>
-        <li><a href="#contents">Contents</a></li>
+        <li><a href="#start-streaming">Start streaming</a></li>
+        <li><a href="#calibrate-eog-data">Calibrate EOG data</a></li>
+        <li><a href="#visualize-frequency-bands-with-eog-artifacts-removed">Visualize frequency bands with EOG artifacts removed</a></li>
       </ul>
     </li>
   </ul>
@@ -200,14 +202,103 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Integrations</h1>
+<h1>EOG Artifact Removal</h1>
 
-<p>Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.</p>
-<h3 id="contents">Contents</h3>
-<p><a href="https://Mentalab-hub.github.io/integrations/lightning-installation/" title="Integrations/LabChart Lightning">LabChart Lightning</a><br>
-<a href="https://Mentalab-hub.github.io/integrations/openvibe/" title="Integrations/Device Syncing With LSL">Device Syncing With LSL</a><br>
-<a href="https://Mentalab-hub.github.io/integrations/psychopy/" title="Integrations/PsychoPy Builder">PsychoPy Builder</a><br></p>
-<p>For more information or queries, please contact <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<p>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.</p>
+<p>Here, is an <a href="http://openvibe.inria.fr/">OpenViBE</a> pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.</p>
+<h2 id="set-up">Set-up</h2>
+<ol>
+<li>Prepare an 8-channel <a href="https://fyi.cpg.mybluehost.me/explore-device/">Mentalab Explore system</a> using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
+<table>
+<thead>
+<tr>
+<th>  Explore Channel</th>
+<th>  Cap Location</th>
+<th>  OpenViBE Channel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ch1</td>
+<td>F3</td>
+<td>1</td>
+</tr>
+<tr>
+<td>Ch2</td>
+<td>C3</td>
+<td>2</td>
+</tr>
+<tr>
+<td>Ch3</td>
+<td>Forehead (mid)</td>
+<td>3</td>
+</tr>
+<tr>
+<td>Ch4</td>
+<td>C4</td>
+<td>4</td>
+</tr>
+<tr>
+<td>Ch7</td>
+<td>Right eye (beside outer canthus)</td>
+<td>5</td>
+</tr>
+<tr>
+<td>Ch8</td>
+<td>F4</td>
+<td>6</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<br>
+<ol start="2">
+<li>
+<p>Disable unnecessary channels using <code><a href="explorepy.readthedocs.io/">explorepy set-channels</a></code> command:</p>
+<pre tabindex="0"><code>explorepy set-channels -n Explore_XXXX -m 207
+</code></pre>
+<div class="alert alert-info" role="alert">
+    Here, you will need to convert a string of binary values to a number. The binary numbers correspond to the channels in reverse order. So <code>11111101</code> means channel 2 will be off. This binary string converts to <code>253</code>.
+</div>
+
+<p>To convert a binary string to a decimal number, you can use <a href="https://www.rapidtables.com/convert/number/binary-to-decimal.html">this tool</a>.</p>
+</li>
+<li>
+<p>Check impedances using the <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement">explorepy measure_imp</a></code> command. Aim for &lt;20 kΩ for wet electrodes, and &lt;150 kΩ for dry electrodes. For more on this function, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>.</p>
+</li>
+<li>
+<p>Visualize your data using the <code>explorepy visualize</code> command, and check your signal quality. Make sure there is no obvious noise.</p>
+</li>
+<li>
+<p>If you are using the dashboard, click the &ldquo;Push2lsl&rdquo; button, or else run the <code>explorepy push2lsl</code> command.</p>
+</li>
+</ol>
+<h2 id="run-the-script">Run the script</h2>
+<ol start="6">
+<li>Download this <a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-EEG_Power_Bands.zip">ZIP folder</a> and extract the contents.</li>
+<li><a href="http://openvibe.inria.fr/downloads/">Install OpenViBE</a>.</li>
+</ol>
+<h3 id="start-streaming">Start streaming</h3>
+<ol start="8">
+<li>Open an OpenViBE <strong>acquisition server</strong> and select &ldquo;LabStreamingLayer&rdquo; as the driver.</li>
+<li>Under &ldquo;Driver Properties&rdquo;, select your Explore device&rsquo;s &ldquo;ExG&rdquo; and &ldquo;Marker&rdquo; streams.</li>
+<li>Press &ldquo;Apply&rdquo; &ndash;&gt; &ldquo;Connect&rdquo; &ndash;&gt; &ldquo;Play&rdquo; to start acquiring a Mentlab Explore stream in OpenViBE via lab streaming layer.</li>
+</ol>
+<h3 id="calibrate-eog-data">Calibrate EOG data</h3>
+<ol start="11">
+<li>Open the OpenViBE <strong>designer</strong> and go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo;.</li>
+<li>Choose the <code>recorder.xml</code> file (extracted from the ZIP file you downloaded earlier) and run the scenario for at least 60 seconds. Blink and turn your eyes to different directions during the recording. A <code>GDF</code> file will be created in the same folder as the contents of your ZIP file.</li>
+<li>Run the EOG-calibration scenario in OpenViBE <strong>designer</strong>. Go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo;, and then choose the <code>EOG-calibration.xml</code> file extracted earlier. Double click on the <code>GDF</code> file reader and select the file generated in the previous step as source.</li>
+<li>Run the EOG-calibration scenario in OpenViBE. Go to &ldquo;File&rdquo; &ndash;&gt; &ldquo;Open&rdquo; &ndash;&gt; <code>EOG-calibration.xml</code>. Click on the keyboard simulator window and press <code>a</code> to start the calibration. Run the scenario until <code>b-Matrix-EEG.cfg</code> is generated (check the log). Usually 30-40 seconds are sufficient here. Do blink during the recording and press <code>u</code> to end the data calibration.</li>
+</ol>
+<h3 id="visualize-frequency-bands-with-eog-artifacts-removed">Visualize frequency bands with EOG artifacts removed</h3>
+<figure style="float:right;" >
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
+<figcaption> Frequency bands after signal processing.</figcaption>
+</figure>
+<p>Open the <code>Power_bands.xml</code> scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted.</p>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     

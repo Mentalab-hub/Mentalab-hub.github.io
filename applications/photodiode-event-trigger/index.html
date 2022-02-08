@@ -4,8 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://Mentalab-hub.github.io/integrations/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://Mentalab-hub.github.io/integrations/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/applications/photodiode-event-trigger/">
 
     <title>
         Mentalab Wiki
@@ -124,7 +123,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 parent active haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -149,7 +148,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -188,11 +187,10 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#contents">Contents</a></li>
-      </ul>
-    </li>
+    <li><a href="#set-up">Set-up</a></li>
+    <li><a href="#create-stimuli">Create stimuli</a></li>
+    <li><a href="#delay-and-jitter-measurements">Delay and jitter measurements</a></li>
+    <li><a href="#experiment">Experiment</a></li>
   </ul>
 </nav>
 </div>
@@ -200,14 +198,144 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Integrations</h1>
+<h1>Photodiode Event Triggers</h1>
 
-<p>Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.</p>
-<h3 id="contents">Contents</h3>
-<p><a href="https://Mentalab-hub.github.io/integrations/lightning-installation/" title="Integrations/LabChart Lightning">LabChart Lightning</a><br>
-<a href="https://Mentalab-hub.github.io/integrations/openvibe/" title="Integrations/Device Syncing With LSL">Device Syncing With LSL</a><br>
-<a href="https://Mentalab-hub.github.io/integrations/psychopy/" title="Integrations/PsychoPy Builder">PsychoPy Builder</a><br></p>
-<p>For more information or queries, please contact <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<p>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.</p>
+<p>Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.</p>
+<p>Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device). This means your Mentalab Explore system is no longer fully wireless (although presenting stimuli on a mobile can mitigate this).</p>
+<p>The current version of the Explore system does not have a trigger input pin. Therefore, one of ExG channels has to be used for trigger input. In some experiments where visual stimuli are presented on a screen, a photosensor can be used to transmit triggers and synchronize the ExG signal with visual stimuli very precisely. In this tutorial, we demonstrate how we can setup such a system.</p>
+<h2 id="set-up">Set-up</h2>
+<figure style="float:right;">
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figcaption> OPT101 photosensor.</figcaption>
+</figure>
+<p>Obtain a <a href="https://www.amazon.de/-/en/Ba30DEllylelly-OPT101-analogue-intensity-monolithic/dp/B08FYJV12J/ref=sr_1_11?dchild=1&amp;keywords=Fotodiode&amp;qid=1634715575&amp;sr=8-11">OPT101 photosensor</a>, or any other photosensor that has a short rise/fall time.</p>
+<p>Connect the photosensor using the following connection combinations.</p>
+<table>
+<thead>
+<tr>
+<th>  In</th>
+<th>  Out</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OPT101 pins</td>
+<td>Explore / power supply</td>
+</tr>
+<tr>
+<td>Vcc</td>
+<td>5V on power supply</td>
+</tr>
+<tr>
+<td>-V and COM</td>
+<td>Explore Ground and power supply Ground</td>
+</tr>
+<tr>
+<td>1M and OUT</td>
+<td>CH1 of Explore device</td>
+</tr>
+</tbody>
+</table>
+<h2 id="create-stimuli">Create stimuli</h2>
+<p>The following is a simple code snippet in Python to show a black rectangle on the screen every second using <a href="https://www.psychopy.org/">PsychoPy</a>.</p>
+<pre tabindex="0"><code>import time
+from psychopy import visual
+
+isi = .5
+
+win = visual.Window(size=(600, 800), fullscr=True, screen=1, color=[1, 1, 1])
+stim = visual.Rect(win, size=(.5, .5), fillColor='black', pos=(-.75, -.75))
+
+time.sleep(1)
+delays = []
+for i in range(500):
+    stim.draw()
+    win.flip()
+    time.sleep(isi)
+    win.flip()
+    time.sleep(isi)
+
+time.sleep(5)
+</code></pre><p>We can then use the on-screen color change created by the stimulus as an event trigger. The following video shows how the on-screen stimulus corresponds to changes in the channel 1 signal.</p>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/KPlwJewogJ4" title="Photodiode trigger" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+<br>
+
+<div class="alert alert-info" role="alert">
+    The visualization in the recorded video applies a notch filter which causes some distortion in the signal. When you are recording raw data, the square wave is cleaner.
+</div>
+
+<h2 id="delay-and-jitter-measurements">Delay and jitter measurements</h2>
+<p>The following code snippet allows you to measure the delay and jitter of your event markers as they are recorded by your device.</p>
+<pre tabindex="0"><code>import time
+from psychopy import visual
+from explorepy import Explore
+
+isi = .5
+
+explore = Explore()
+explore.connect('Explore_CA12')
+explore.record_data(file_name='rec_01', file_type='csv', do_overwrite=False)
+
+win = visual.Window(size=(600, 800), fullscr=True, screen=1, color=[1, 1, 1])
+stim = visual.Rect(win, size=(.5, .5), fillColor='black', pos=(-.75, -.75))
+
+time.sleep(1)
+delays = []
+for i in range(500):
+    stim.draw()
+    win.flip()
+    explore.set_marker(10)
+    time.sleep(isi)
+    win.flip()
+    time.sleep(isi)
+
+time.sleep(5)
+explore.stop_recording()
+</code></pre><h2 id="experiment">Experiment</h2>
+<p>Finally, we can create an experiment and record CSV files to drive. The files can be imported in Python and the delay i.e. time distance between the rise of the signal of channel 1 and the event marker can be computed as follows.</p>
+<pre tabindex="0"><code>import pandas as pd
+import matplotlib.pyplot as plt
+import numpy as np
+import scipy.signal as signal
+
+fs = 250  # Sampling rate
+n_max = int(fs/3)
+exg_filename = 'FILENAME_ExG.csv'
+marker_filename = 'FILENAME_Marker.csv'
+
+exg = pd.read_csv(exg_filename)
+markers = pd.read_csv(marker_filename)
+
+sig = exg['ch1'].to_numpy()
+ts_sig = exg['TimeStamp'].to_numpy()
+ts_marker = markers['TimeStamp'].to_numpy()
+sig_diff = -1*np.diff(sig)
+peaks, _ = signal.find_peaks(sig_diff, threshold=1000)
+
+epochs = np.zeros((500, n_max))
+epochs_sig = np.zeros((500, n_max))
+delays = []
+for i, event_ts in enumerate(ts_marker):
+    idx = np.argmax(ts_sig &gt; event_ts)
+    ind_jump = np.argmax(sig_diff[idx:idx+n_max]&gt;1)
+    if ts_sig[idx+ind_jump]-event_ts &lt; 0:
+        print('error')
+    delays.append(ts_sig[idx+ind_jump]-event_ts)
+    print(i, ind_jump, ts_sig[idx+ind_jump]-event_ts)
+    epochs[i, :] = sig_diff[idx:idx+n_max]
+    epochs_sig[i, :] = sig[idx:idx+n_max]
+
+print(np.array(delays).mean(), np.array(delays).std())
+
+plt.plot(np.array(delays)*1000)
+plt.title(f'Delays: mean={np.array(delays).mean()*1000:.1f} ms, Std={np.array(delays).std()*1000:.1f} ms')
+plt.xlabel('Trial')
+plt.ylabel('Delay (ms)')
+plt.show()
+</code></pre><p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
