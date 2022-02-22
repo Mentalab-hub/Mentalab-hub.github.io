@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/led-light-guide/">
+    <link rel="canonical" href="https://Mentalab-hub.github.io/user-guide/technical-specifications/">
 
     <title>
         Mentalab Wiki
@@ -72,7 +72,7 @@
                     Dry Electrode Guide
                 </a>
         </li>
-        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1 active">
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
                 
                  <a href="/user-guide/led-light-guide/" class="nav-link p-0">
                     LED Light Guide
@@ -191,55 +191,75 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>LED Light Guide</h1>
+<h1>Technical Specifications</h1>
 
-<p>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.</p>
+<p>Here, you can find the technical details related to Explore&rsquo;s hardware.</p>
 <table>
 <thead>
 <tr>
-<th>  LED Light</th>
-<th>  Blinking Pattern</th>
-<th>  Description</th>
+<th>  Specification</th>
+<th>  Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Red / Yellow / Green</td>
-<td>Solid at device start-up. <br> Flashes for 3 secs</td>
-<td>Start-up in progress. <br>Colour indicates battery status.</td>
+<td>No. channels</td>
+<td>4, 8</td>
 </tr>
 <tr>
-<td>Blue</td>
-<td>Blinks twice a second</td>
-<td>Bluetooth visible and advertising.</td>
+<td>Sampling rates</td>
+<td>250 (default), 500, 1000 Hz</td>
 </tr>
 <tr>
-<td>Blue</td>
-<td>Blinks once a second</td>
-<td>Bluetooth visible and connected. <br>Online mode.</td>
+<td>Dimensions</td>
+<td>41 x 42 x 17 mm</td>
 </tr>
 <tr>
-<td>Green</td>
-<td>Blinks once a second</td>
-<td>Bluetooth invisible. <br>Offline mode.</td>
+<td>Battery life</td>
+<td>Up to 8 hr online, 12 hr offline</td>
 </tr>
 <tr>
-<td>Pink</td>
-<td>Blinks once a second</td>
-<td>Insufficient memory.</td>
+<td>Differential input range</td>
+<td>± 400 mV</td>
 </tr>
 <tr>
-<td>Light pink</td>
-<td>One-time flash</td>
-<td>Button pressed, and marker set.</td>
+<td>Input impedance</td>
+<td>1 GΩ</td>
 </tr>
 <tr>
-<td>Red</td>
-<td>Flashes three times</td>
-<td>Button pressed and held. <br>Turn off.</td>
+<td>Resolution</td>
+<td>24 bit</td>
+</tr>
+<tr>
+<td>Output interface</td>
+<td>USB 2.0</td>
+</tr>
+<tr>
+<td>Sensors</td>
+<td>Gyro-, Accelero- and Magnetometer: 20 Hz <br>Device Temperature, Battery: 1 Hz</td>
+</tr>
+<tr>
+<td>Flash memory</td>
+<td>512 MB</td>
+</tr>
+<tr>
+<td>Bluetooth range</td>
+<td>10 m</td>
+</tr>
+<tr>
+<td>Input-referred noise<sup><a href="#IRN">1</a></sup></td>
+<td>1 uV at 250 sps <br> 1.5 uV at 500 sps <br> 2 uV at 1000 sps</td>
+</tr>
+<tr>
+<td>CMRR<sup><a href="#CMRR">2</a></sup></td>
+<td>106 dB at 250 sps <br> 106 dB at 500 sps <br> 100 dB at 1000 sps</td>
 </tr>
 </tbody>
 </table>
+<br>
+<br>
+<p style="font-size: small;"><a name="IRN">1</a>: The data are representative of typical noise performance at room temperature <i>T</i> = 25°C. The measurements are the result of readings from multiple devices with inputs shorted together. A minimum of 1000 consecutive readings were used to calculate the RMS and peak-to-peak noise for each reading. We report the average input-referred noise.</p>
+<p style="font-size: small;"><a name="CMRR">2</a>: The data are representative of typical CMRR performance at room temperature <i>T</i> = 25°C. The measurements are the result of a common mode signal with amplitude 300 mV applied to the ExG channels with a frequency in the range of 10 - 60 Hz. The projected noise in the output is then measured and the CMRR calculated. The CMRR was calculated from 1000 consecutive samples. The experiment was repeated at 10, 20, 30, 40, 50, and 60Hz. We report the average.</p>
 
 
     

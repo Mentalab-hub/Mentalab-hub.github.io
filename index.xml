@@ -6,7 +6,7 @@
     <description>Recent content on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cap Size Guide</title>
       <link>https://Mentalab-hub.github.io/product-guide/cap-size-guide/</link>
@@ -176,6 +176,16 @@ Although it provides comprehensive information about electrical processes inside
       <description>Intended use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
 Product certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
  2014/30/EU 2014/53/EU 2015/863/EU  Preventing misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
+    </item>
+    
+    <item>
+      <title>Technical Specifications</title>
+      <link>https://Mentalab-hub.github.io/user-guide/technical-specifications/</link>
+      <pubDate>Tue, 22 Feb 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://Mentalab-hub.github.io/user-guide/technical-specifications/</guid>
+      <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.
+    Specification  Value     No. channels 4, 8   Sampling rates 250 (default), 500, 1000 Hz   Dimensions 41 x 42 x 17 mm   Battery life Up to 8 hr online, 12 hr offline   Differential input range ± 400 mV   Input impedance 1 GΩ   Resolution 24 bit   Output interface USB 2.</description>
     </item>
     
   </channel>
