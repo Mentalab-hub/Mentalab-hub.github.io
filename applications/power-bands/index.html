@@ -208,7 +208,7 @@
 <p>Here, is an <a href="http://openvibe.inria.fr/">OpenViBE</a> pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.</p>
 <h2 id="set-up">Set-up</h2>
 <ol>
-<li>Prepare an 8-channel <a href="https://fyi.cpg.mybluehost.me/explore-device/">Mentalab Explore system</a> using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
+<li>Prepare an 8-channel <a href="https://mentalab.com?page_id=625">Mentalab Explore system</a> using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
 <table>
 <thead>
 <tr>
@@ -255,7 +255,7 @@
 <br>
 <ol start="2">
 <li>
-<p>Disable unnecessary channels using <code><a href="explorepy.readthedocs.io/">explorepy set-channels</a></code> command:</p>
+<p>Disable unnecessary channels using <code><a href="https://explorepy.readthedocs.io/">explorepy set-channels</a></code> command:</p>
 <pre tabindex="0"><code>explorepy set-channels -n Explore_XXXX -m 207
 </code></pre>
 <div class="alert alert-info" role="alert">
@@ -276,7 +276,7 @@
 </ol>
 <h2 id="run-the-script">Run the script</h2>
 <ol start="6">
-<li>Download this <a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-EEG_Power_Bands.zip">ZIP folder</a> and extract the contents.</li>
+<li>Download this <a href="/files/Mentalab-EEG_Power_Bands.zip">ZIP folder</a> and extract the contents.</li>
 <li><a href="http://openvibe.inria.fr/downloads/">Install OpenViBE</a>.</li>
 </ol>
 <h3 id="start-streaming">Start streaming</h3>
@@ -294,7 +294,7 @@
 </ol>
 <h3 id="visualize-frequency-bands-with-eog-artifacts-removed">Visualize frequency bands with EOG artifacts removed</h3>
 <figure style="float:right;" >
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
+<img class="mobile" src="/img/Applications/openvibe-eog-screenshot.png" alt="EOG artifact removal in OpenViBE" width=400/>
 <figcaption> Frequency bands after signal processing.</figcaption>
 </figure>
 <p>Open the <code>Power_bands.xml</code> scenario and run it. You will see EEG signals before and after EOG denoising. You can test the performance of the EOG artifact removal by blinking and checking both signals. In the other tabs, the power bands (Alpha, Beta and Theta) are plotted.</p>
