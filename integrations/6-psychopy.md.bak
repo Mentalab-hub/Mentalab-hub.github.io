@@ -17,7 +17,7 @@ Here is a guide to running <code>[explorepy](https://explorepy.readthedocs.io/)<
 
 ### Edit explorepy
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/comment-out-line.png" alt="How the explorepy code should look" width="400"/>
+<img class="mobile" src="/img/Integrations/comment-out-line.png" alt="How the explorepy code should look" width="400"/>
 <figcaption> Comment out line 215. </figcaption>
 </figure>
 
@@ -40,12 +40,12 @@ To open PsychoPy next time:<br>
     3. Run PsychoPy: `python psychopy\app\psychopyApp.py` (step 12 above)<br>
 {{< /alert >}}
 
-## How to use explorepy in PsychoPy builder
+## Use explorepy in PsychoPy builder
 
 ### Initialize
 In order to run `explorepy`, you will need to add a __Code__ component to your experiment. In the "Begin Experiment" section, setup and initialize streaming, recording (optional) or push to LSL (optional).
 <figure>
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
+<img class="mobile" src="/img/Integrations/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
 <figcaption> Look for add <b>Code</b> option. </figcaption>
 </figure>
 
@@ -70,7 +70,7 @@ Line 6: remember to set the filename; the file type can be `csv` or `edf` (CSV r
 
 ### Set an event marker
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-begin-routine.png" alt="Begin routine in PsychoPy" width="400"/>
+<img class="mobile" src="/img/Integrations/psychopy-begin-routine.png" alt="Begin routine in PsychoPy" width="400"/>
 <figcaption> If you need a marker at the start of a loop, <br>use the "Begin Routine" tab. </figcaption>
 </figure>
 

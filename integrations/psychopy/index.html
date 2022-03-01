@@ -221,7 +221,7 @@
 </ol>
 <h3 id="edit-explorepy">Edit explorepy</h3>
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/comment-out-line.png" alt="How the explorepy code should look" width="400"/>
+<img class="mobile" src="/img/Integrations/comment-out-line.png" alt="How the explorepy code should look" width="400"/>
 <figcaption> Comment out line 215. </figcaption>
 </figure>
 <ol start="5">
@@ -250,7 +250,7 @@
 <h3 id="initialize">Initialize</h3>
 <p>In order to run <code>explorepy</code>, you will need to add a <strong>Code</strong> component to your experiment. In the &ldquo;Begin Experiment&rdquo; section, setup and initialize streaming, recording (optional) or push to LSL (optional).</p>
 <figure>
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
+<img class="mobile" src="/img/Integrations/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
 <figcaption> Look for add <b>Code</b> option. </figcaption>
 </figure>
 <p>To do this, add the following code to your <strong>Code</strong> file:</p>
@@ -273,7 +273,7 @@ Line 6: remember to set the filename; the file type can be <code>csv</code> or <
 </p>
 <h3 id="set-an-event-marker">Set an event marker</h3>
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/psychopy-begin-routine.png" alt="Begin routine in PsychoPy" width="400"/>
+<img class="mobile" src="/img/Integrations/psychopy-begin-routine.png" alt="Begin routine in PsychoPy" width="400"/>
 <figcaption> If you need a marker at the start of a loop, <br>use the "Begin Routine" tab. </figcaption>
 </figure>
 <p>To set an event marker in your recorded data, use the <code>set_marker</code> method. For instance, if there is a loop and the beginning of each iteration should be marked, call <code>set_marker</code> in the &ldquo;Begin Routine&rdquo; section of your <strong>Code</strong> component.</p>
@@ -287,7 +287,7 @@ elif cond == 'up':
 elif cond == 'down':
     explore.set_marker(13)
 </code></pre><h3 id="example">Example</h3>
-<p><a href="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-psychopy-experiment-example.zip">Here</a>, you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time.</p>
+<p><a href="/files/Mentalab-psychopy-experiment-example.zip">Here</a>, you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time.</p>
 <p>To change the name of the Mentalab Explore device and the recorded file:</p>
 <ol>
 <li>Click on &ldquo;trial&rdquo; in the <strong>Flow</strong> section</li>
