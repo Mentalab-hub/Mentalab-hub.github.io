@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applications on Mentalab Wiki</title>
-    <link>https://Mentalab-hub.github.io/applications/</link>
+    <link>https://wiki.mentalab.com/applications/</link>
     <description>Recent content in Applications on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/applications/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photodiode Event Triggers</title>
-      <link>https://Mentalab-hub.github.io/applications/photodiode-event-trigger/</link>
+      <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/photodiode-event-trigger/</guid>
+      <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
 Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
 Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
@@ -20,10 +20,10 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
     
     <item>
       <title>EOG Artifact Removal</title>
-      <link>https://Mentalab-hub.github.io/applications/power-bands/</link>
+      <link>https://wiki.mentalab.com/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/power-bands/</guid>
+      <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
 Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
 Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
@@ -32,10 +32,10 @@ Set-up  Prepare an 8-channel Mentalab Explore system using the following configu
     
     <item>
       <title>SSVEP Experiments</title>
-      <link>https://Mentalab-hub.github.io/applications/ssvep/</link>
+      <link>https://wiki.mentalab.com/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/ssvep/</guid>
+      <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
       <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.
 SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.
 Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
@@ -43,10 +43,10 @@ Here, we show you how to use Mentalab Explore with SSVEP-based classification ta
     
     <item>
       <title>EASI ECG</title>
-      <link>https://Mentalab-hub.github.io/applications/easi-ecg/</link>
+      <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/easi-ecg/</guid>
+      <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
       <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&#39; extremities).
 Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</description>
     </item>

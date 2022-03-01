@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Integrations on Mentalab Wiki</title>
-    <link>https://Mentalab-hub.github.io/integrations/</link>
+    <link>https://wiki.mentalab.com/integrations/</link>
     <description>Recent content in Integrations on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/integrations/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/integrations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>LabChart Lightning</title>
-      <link>https://Mentalab-hub.github.io/integrations/lightning-installation/</link>
+      <link>https://wiki.mentalab.com/integrations/lightning-installation/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/lightning-installation/</guid>
+      <guid>https://wiki.mentalab.com/integrations/lightning-installation/</guid>
       <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.
  Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
     </item>
     
     <item>
       <title>Device Syncing With LSL</title>
-      <link>https://Mentalab-hub.github.io/integrations/openvibe/</link>
+      <link>https://wiki.mentalab.com/integrations/openvibe/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/openvibe/</guid>
+      <guid>https://wiki.mentalab.com/integrations/openvibe/</guid>
       <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
   Start two Python consoles and activate a virtual environment for explorepy in both.
   Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
@@ -31,10 +31,10 @@
     
     <item>
       <title>PsychoPy Builder</title>
-      <link>https://Mentalab-hub.github.io/integrations/psychopy/</link>
+      <link>https://wiki.mentalab.com/integrations/psychopy/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/psychopy/</guid>
+      <guid>https://wiki.mentalab.com/integrations/psychopy/</guid>
       <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
 Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
     </item>

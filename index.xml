@@ -2,47 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mentalab Wiki</title>
-    <link>https://Mentalab-hub.github.io/</link>
+    <link>https://wiki.mentalab.com/</link>
     <description>Recent content on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://Mentalab-hub.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Cap Size Guide</title>
-      <link>https://Mentalab-hub.github.io/product-guide/cap-size-guide/</link>
+      <link>https://wiki.mentalab.com/product-guide/cap-size-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/product-guide/cap-size-guide/</guid>
+      <guid>https://wiki.mentalab.com/product-guide/cap-size-guide/</guid>
       <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
     Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    </description>
     </item>
     
     <item>
       <title>EEG Pre-Experiment Checklist</title>
-      <link>https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/</link>
+      <link>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/eeg-pre-experiment-checklist/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</guid>
       <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
 1. Install software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
     </item>
     
     <item>
       <title>LabChart Lightning</title>
-      <link>https://Mentalab-hub.github.io/integrations/lightning-installation/</link>
+      <link>https://wiki.mentalab.com/integrations/lightning-installation/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/lightning-installation/</guid>
+      <guid>https://wiki.mentalab.com/integrations/lightning-installation/</guid>
       <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.
  Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
     </item>
     
     <item>
       <title>Device Syncing With LSL</title>
-      <link>https://Mentalab-hub.github.io/integrations/openvibe/</link>
+      <link>https://wiki.mentalab.com/integrations/openvibe/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/openvibe/</guid>
+      <guid>https://wiki.mentalab.com/integrations/openvibe/</guid>
       <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
   Start two Python consoles and activate a virtual environment for explorepy in both.
   Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
@@ -51,10 +51,10 @@
     
     <item>
       <title>Dry Electrode Guide</title>
-      <link>https://Mentalab-hub.github.io/user-guide/dry-electrode-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/dry-electrode-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
       <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
 Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
 Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
@@ -62,10 +62,10 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
     
     <item>
       <title>Photodiode Event Triggers</title>
-      <link>https://Mentalab-hub.github.io/applications/photodiode-event-trigger/</link>
+      <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/photodiode-event-trigger/</guid>
+      <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
 Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
 Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
@@ -73,20 +73,20 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
     
     <item>
       <title>LED Light Guide</title>
-      <link>https://Mentalab-hub.github.io/user-guide/led-light-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/led-light-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.
     LED Light  Blinking Pattern  Description     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.   Blue Blinks twice a second Bluetooth visible and advertising.</description>
     </item>
     
     <item>
       <title>EOG Artifact Removal</title>
-      <link>https://Mentalab-hub.github.io/applications/power-bands/</link>
+      <link>https://wiki.mentalab.com/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/power-bands/</guid>
+      <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
 Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
 Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
@@ -95,10 +95,10 @@ Set-up  Prepare an 8-channel Mentalab Explore system using the following configu
     
     <item>
       <title>Button Command Guide</title>
-      <link>https://Mentalab-hub.github.io/user-guide/button-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/button-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.
     Action  State  Effect     Single click Device off Device will turn on   Double click Memory full (LED blinking pink) Delete flash memory.
 Return to advertising mode.   Double click Device in startup Skip advertising.</description>
@@ -106,20 +106,20 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
     
     <item>
       <title>PsychoPy Builder</title>
-      <link>https://Mentalab-hub.github.io/integrations/psychopy/</link>
+      <link>https://wiki.mentalab.com/integrations/psychopy/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/integrations/psychopy/</guid>
+      <guid>https://wiki.mentalab.com/integrations/psychopy/</guid>
       <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
 Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
     </item>
     
     <item>
       <title>Improving Impedances</title>
-      <link>https://Mentalab-hub.github.io/user-guide/improving-impedences/</link>
+      <link>https://wiki.mentalab.com/user-guide/improving-impedences/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/improving-impedences/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/improving-impedences/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
 Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
@@ -127,10 +127,10 @@ Gel electrodes  Apply conductive gel through the openings at the back of the ele
     
     <item>
       <title>SSVEP Experiments</title>
-      <link>https://Mentalab-hub.github.io/applications/ssvep/</link>
+      <link>https://wiki.mentalab.com/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/ssvep/</guid>
+      <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
       <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.
 SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.
 Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
@@ -138,20 +138,20 @@ Here, we show you how to use Mentalab Explore with SSVEP-based classification ta
     
     <item>
       <title>explorepy Command Guide</title>
-      <link>https://Mentalab-hub.github.io/user-guide/explorepy-commands/</link>
+      <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/explorepy-commands/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
       <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
     Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
     </item>
     
     <item>
       <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
-      <link>https://Mentalab-hub.github.io/user-guide/cleaning-disinfection-storage/</link>
+      <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/cleaning-disinfection-storage/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
       <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
 Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
 Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
@@ -159,20 +159,20 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
     
     <item>
       <title>EASI ECG</title>
-      <link>https://Mentalab-hub.github.io/applications/easi-ecg/</link>
+      <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/applications/easi-ecg/</guid>
+      <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
       <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&#39; extremities).
 Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</description>
     </item>
     
     <item>
       <title>Safety Recommendations</title>
-      <link>https://Mentalab-hub.github.io/user-guide/safety-recommendations/</link>
+      <link>https://wiki.mentalab.com/user-guide/safety-recommendations/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/safety-recommendations/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
       <description>Intended use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
 Product certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
  2014/30/EU 2014/53/EU 2015/863/EU  Preventing misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
@@ -180,10 +180,10 @@ Product certification The Mentalab Explore device is in accordance with the requ
     
     <item>
       <title>Technical Specifications</title>
-      <link>https://Mentalab-hub.github.io/user-guide/technical-specifications/</link>
+      <link>https://wiki.mentalab.com/user-guide/technical-specifications/</link>
       <pubDate>Tue, 22 Feb 2022 10:25:19 +0000</pubDate>
       
-      <guid>https://Mentalab-hub.github.io/user-guide/technical-specifications/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/technical-specifications/</guid>
       <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.
     Specification  Value     No. channels 4, 8   Sampling rates 250 (default), 500, 1000 Hz   Dimensions 41 x 42 x 17 mm   Battery life Up to 8 hr online, 12 hr offline   Differential input range ± 400 mV   Input impedance 1 GΩ   Resolution 24 bit   Output interface USB 2.</description>
     </item>
