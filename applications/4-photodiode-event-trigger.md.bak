@@ -17,8 +17,8 @@ The current version of the Explore system does not have a trigger input pin. The
 
 ## Set-up
 <figure style="float:right;">
-<img style="border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
-<figcaption style="color:gray;text-align:center;"> OPT101 photosensor.</figcaption>
+<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/photodiode.png" alt="OPT101 photosensor" width="400"/>
+<figcaption> OPT101 photosensor.</figcaption>
 </figure>
 
 Obtain a [OPT101 photosensor](https://www.amazon.de/-/en/Ba30DEllylelly-OPT101-analogue-intensity-monolithic/dp/B08FYJV12J/ref=sr_1_11?dchild=1&keywords=Fotodiode&qid=1634715575&sr=8-11), or any other photosensor that has a short rise/fall time.
