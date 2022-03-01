@@ -42,7 +42,7 @@ In both cases, the classifier determines which stimulus a participant is looking
     ```
 
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/ssvep-stimuli.png" alt="SSVEP experiment stimuli" width="400"/>
+<img class="mobile" src="/img/Applications/ssvep-stimuli.png" alt="SSVEP experiment stimuli" width="400"/>
 <figcaption> SSVEP experiment stimuli. </figcaption>
 </figure>
 
@@ -59,7 +59,7 @@ Once the experiment has run, navigate back to your Python console and hit `Ctrl+
 
 ### Interpret the results
 <figure style="float:right;">
-<img class="mobile" src="https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/SSVEP-frame-duration.png" alt="Frame durations for the SSVEP experiment" width="400"/>
+<img class="mobile" src="/img/Applications/SSVEP-frame-duration.png" alt="Frame durations for the SSVEP experiment" width="400"/>
 <figcaption> Frame durations for the SSVEP experiment stimuli. </figcaption>
 </figure>
 
@@ -101,7 +101,7 @@ To undertake offline SSVEP analysis:
 The offline SSVEP experiment will automatically generate two plots.
 
 #### System accuracy
-The first figure indicates that within approximately 0.8 seconds, the system can differentiate between stimulus response signals approximately 90% of the time. After 1 second, it was 98% accurate; and within 1.2 seconds it was 100% accurate.
+The first figure indicates that within approximately 0.8 seconds, the system can differentiate between stimulus response signals approximately 90% of the time. After 1 second, the system is 98% accurate; and within 1.2 seconds it is 100% accurate.
 
 #### Time-frequency representation
 <figure style="clear: right; display: inline-block; float:right;">
