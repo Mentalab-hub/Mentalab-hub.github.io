@@ -7,7 +7,7 @@ slug: easi-ecg
 ---
 
 <figure style="float:right;text-align:center;">
-<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/ECG_Placement_of_Electrodes.png" alt="12 lead configuration" width="200"/>
+<img class="mobile" src="/img/Applications/ECG_Placement_of_Electrodes.png" alt="12 lead configuration" width="200"/>
 <figcaption> The 12 lead electrode configuration. <br>Source: <a href="https://www.cardiosecur.com/magazine/specialist-articles-on-the-heart/lead-systems-how-an-ecg-works">CardioSecur</a> </figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ The only true drawback of EASI ECG is that two of the electrodes are difficult t
 Although the FDA approved the EASI method for use in the assessment of normal, abnormal, and paced cardiac rhythms, the method is not often used in clinical practice. As such, this article serves as an example of data processing, rather than a clinical ECG protocol.
 
 ## Set-up
-<figure style="float:right;">
+<figure style="float:right;text-align:center;">
 <img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/easipositions.jpg" alt="EASI configuration" width="250"/>
 <figcaption> The EASI electrode configuration. <br>Source: <a href="https://www.routledgehandbooks.com/doi/10.1201/b17831-4">The Physiological Measurement Handbook</a> </figcaption>
 </figure>
