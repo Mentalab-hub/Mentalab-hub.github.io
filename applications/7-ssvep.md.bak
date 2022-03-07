@@ -80,7 +80,7 @@ To undertake offline SSVEP analysis:
 1. Prepare the cap and electrodes as in the online SSVEP experiment.
 2. Turn on the device and run the following command in your terminal (replace #### with your device ID e.g Explore_1438):
     ```
-	python offline_experiment.py --filename test_rec
+	python offline_experiment.py --name Explore_#### --filename test_rec
     ```
     
 	The experiment runs 100 trials in 20 blocks of 5. You can change the number of runs, however, by navigating to `offline_experiment.py` and altering the value assigned to the variables `n_blocks` and `trials_per_block` (lines 16/17).
@@ -90,7 +90,7 @@ To undertake offline SSVEP analysis:
 3. Once the experiment is complete, the recorded data can be analyzed. To do this, run `offline_analysis.py`.
     {{< alert style="info" >}} Ensure you use the same filename here as you did in Step 1 {{< /alert >}}
 	```
-	python offline_analysis.py --name Explore_#### --filename test_rec
+	python offline_analysis.py --filename test_rec
     ```
 
 ### Interpret the results

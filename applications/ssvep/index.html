@@ -288,8 +288,8 @@
 <p>Prepare the cap and electrodes as in the online SSVEP experiment.</p>
 </li>
 <li>
-<p>Turn on the device and run the following command in your terminal:</p>
-<pre tabindex="0"><code>python offline_experiment.py --filename test_rec
+<p>Turn on the device and run the following command in your terminal (replace #### with your device ID e.g Explore_1438):</p>
+<pre tabindex="0"><code>python offline_experiment.py --name Explore_#### --filename test_rec
 </code></pre><p>The experiment runs 100 trials in 20 blocks of 5. You can change the number of runs, however, by navigating to <code>offline_experiment.py</code> and altering the value assigned to the variables <code>n_blocks</code> and <code>trials_per_block</code> (lines 16/17).</p>
 <p>At the beginning of each trial, an arrow will indicate where the participant should look. Shortly after its appearance, a flickering stimulus will appear in the indicated position.</p>
 </li>
@@ -297,10 +297,10 @@
 <p>Once the experiment is complete, the recorded data can be analyzed. To do this, run <code>offline_analysis.py</code>.
 
 <div class="alert alert-info" role="alert">
-    Ensure you use the same filename here as you did in Step 1
+    Ensure you use the same filename here as you did in Step 2
 </div>
 </p>
-<pre tabindex="0"><code>python offline_analysis.py --name Explore_#### --filename test_rec
+<pre tabindex="0"><code>python offline_analysis.py --filename test_rec
 </code></pre></li>
 </ol>
 <h3 id="interpret-the-results-1">Interpret the results</h3>
