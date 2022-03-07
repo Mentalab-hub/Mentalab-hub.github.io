@@ -95,7 +95,7 @@ To undertake offline SSVEP analysis:
 
 ### Interpret the results
 <figure style="display: inline-block; float:right;">
-<img class="mobile" src="https://mentalab.com/wp-content/uploads/2021/10/SSVEPoff1results.png" alt="SSVEP accuracy over trial duration" width="400"/>
+<img class="mobile" src="/img/Applications/SSVEPoff1results.png" alt="SSVEP accuracy over trial duration" width="400"/>
 <figcaption> Accuracy over trial duration. </figcaption>
 </figure>
 The offline SSVEP experiment will automatically generate two plots.
@@ -105,7 +105,7 @@ The first figure indicates that within approximately 0.8 seconds, the system can
 
 #### Time-frequency representation
 <figure style="clear: right; display: inline-block; float:right;">
-<img class="mobile" src="https://mentalab.com/wp-content/uploads/2021/10/SSVEPTFREDsep24.png" alt="SSVEP time-frequency representation for each channel" width="400"/>
+<img class="mobile" src="/img/Applications/SSVEPTFREDsep24.png" alt="SSVEP time-frequency representation for each channel" width="400"/>
 <figcaption> Time-frequency representation for each channel. </figcaption>
 </figure>
 
