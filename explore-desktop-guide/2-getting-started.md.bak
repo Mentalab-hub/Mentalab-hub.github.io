@@ -1,0 +1,56 @@
+---
+title: "Getting Started"
+date: 2022-01-26T10:25:19+00:00
+weight: 2
+description: Here is how to install and use the Explore Desktop app 
+slug: getting-started
+---
+
+## Installation
+<figure style="float:right;">
+<img class="mobile" src="/img/Desktop/installer.PNG" alt="The Explore Desktop installer" width="400"/>
+<figcaption> Download the Explore Desktop installer. </figcaption>
+</figure>
+
+1. Download the [Explore Desktop installer](https://mentalab.com). For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
+
+2. Double click on the installer to launch and follow the on-screen instructions.
+
+3. Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).
+
+## Starting Explore Desktop
+Once Explore Desktop is installed, locate it on your Launchpad, Start Menu, or Application Menu. Click to launch.
+
+When first opened, Explore Desktop will display the Home page. This page contains instructions on how to use the app.
+
+The Home page also asks for data sharing permissions. Selecting the checkbox will allow Explore Desktop to send error logs to Mentalab so that errors can be properly fixed.
+
+You can change your permission settings at any time.
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/homepage.PNG" alt="The Explore Desktop Home page" width="90%"/>
+<figcaption> After installation, you will first be presented with the Home page. </figcaption>
+</figure>
+
+Explore Desktop has three main components: 
+
+- the navigation menu
+- status bar
+- main visualization pane.
+
+The navigation menu on the left contains the following options: 
+- Home
+- Connection
+- Settings
+- Visualization
+- Impedance Measurement
+- Integration
+
+The status bar at the bottom of Explore Desktop contains:
+- The connection status of Explore Desktop
+- The firmware version of your Mentalab Explore device
+- The battery level of your Mentalab Explore device
+- The temperature of your Mentalab Explore device
+- The Explore Desktop version
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

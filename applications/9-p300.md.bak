@@ -1,0 +1,56 @@
+---
+title: "P300 Oddball Experiment"
+date: 2022-01-26T10:25:19+00:00
+weight: 9
+description: How to elicit a P300 signal response using Mentalab Explore
+slug: p300
+---
+
+P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
+
+Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available [here](https://github.com/Mentalab-hub/explorepy/tree/master/examples/p300_demo). You can run it as is or use it to build your own P300 based applications.
+
+In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval. The red oval is the so-called "oddball". The participant must press `space` whenever the red stimulus appears.
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/p300-stimuli.jpg" alt="P300 visual stimuli" width="90%"/>
+<figcaption> A blue rectangle is the standard stimulus. The red oval is the "oddball". When presented with the oddball, participants must press <code>space</code>.</figcaption>
+</figure>
+
+
+## Preparation
+### Software
+1. Install <code>[explorepy](https://explorepy.readthedocs.io/)</code>. Choose Option 2 (Python) if you are installing `explorepy` on a Windows system.
+2. Download the [`explorepy` code](https://github.com/Mentalab-hub/explorepy) directly from GitHub. To do this, click on the green `Code` button, and "Download ZIP". Remember where you extract the files, you will need this location later.
+3. Activate your Anaconda virtual environment: `conda activate myenv`
+4. Install the required packages: `pip install scikit-learn matplotlib psychopy mne`
+5. In the Conda terminal, navigate to the `p300_demo` folder in the `examples` directory of `explorepy`.
+
+### Hardware
+6. Setup the cap and electrodes. Place EEG electrodes in the desired locations (e.g. Cz, Pz, CP1, CP2, P3, P4, Oz, etc.) and the ground electrode on mastoid (or any other location far enough from other electrodes).
+
+## P300 Experiment
+
+7. Turn on the device, ensure it is advertising, and then run the following command in your terminal (replace #### with your device ID, e.g. Explore_1438):
+    ```
+	python experiment.py -n Explore_#### -f rec_file_name
+    ```
+
+	The experiment has 10 blocks and there are 5 trials in each block (50 trials in total). You can change this in the `experiment.py` script. Just look out variables: `n_blocks` and `n_trials_per_block variables`.
+
+	The experiment produces three csv files in the working directory; one for ExG data, one for motion data, and one for markers.
+
+## Results
+8. To analyse the recorded data and generate plots, run the command in your terminal:
+    ```    
+	python analysis_csv.py -f rec_file_name
+    ```
+	
+	This analysis will generate P300 waveform plots that look similar to those shown below.
+	
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/p300-waveforms.jpg" alt="P300 wave forms" width="90%"/>
+<figcaption> Waveforms produced from the P300 oddball experiment using the Mentalab Explore device and <code>explorepy</code>.</figcaption>
+</figure>
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

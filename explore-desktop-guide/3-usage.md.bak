@@ -1,0 +1,63 @@
+---
+title: "Usage"
+date: 2022-01-26T10:25:19+00:00
+weight: 3
+description: Here is how to use the Explore Desktop app 
+slug: usage
+---
+
+## Connect
+Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
+
+<figure style="float:right;">
+<img class="mobile" src="/img/Desktop/connectclose.png" alt="Connect option of Explore Desktop" width="350"/>
+<figcaption> Scan and connect to a Mentalab Explore device. </figcaption>
+</figure>
+
+There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.
+
+In either case, ensure that your device is in advertising mode. In Explore Desktop, the device will display under: Explore_XXXX.
+
+Click Scan and wait for nearby devices to list.
+
+Once you have selected a device from the list, or written your device name in the input line, click Connect.
+
+The connection process can take a few seconds. Once your device is connected, the status bar will change.
+
+{{< alert style="danger" >}} On Windows, all paired devices will be listed when scanning. {{< /alert >}}
+
+If your device is not found, you will receive an error.
+
+## Configuration
+Once your Mentalab Explore device is connected, the Settings page will become accessible. This page will display the name of your connected device and set of configuration options for that device.
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/settingspage.PNG" alt="The Explore Desktop Settings page" width="90%"/>
+<figcaption> Use the Settings page to configure your Mentalab Explore device. </figcaption>
+</figure>
+
+Select the number of channels your device has using the ‘Number of channels’ drop-down.
+
+### Active channels
+To enable and disable ExG channels on your Mentalab Explore device, select and deselect the channel’s associated checkbox and click ‘Apply changes’.
+
+Only active channels, i.e. those whose checkbox is selected, will display in the Visualization and Impedance Measurement pages.
+
+### Sampling rate
+To set the sampling rate of your Mentalab Explore device, select either 250, 500, or 1000 from the sampling rate drop-down menu. Sampling rates are measured in Hertz. Click ‘Apply changes’ to confirm.
+
+{{< alert style="danger" >}} Please note that our 1000 Hz sampling rate is in beta phase. {{< /alert >}}
+{{< alert style="info" >}} Channel masks and sampling rate cannot be changed while recording or streaming to LSL. {{< /alert >}}
+{{< alert style="info" >}} You can change the sampling rate and active channels of your device simultaneously. {{< /alert >}}
+
+### Format memory
+To format the memory of your Mentalab Explore device, select ‘Format MEM’. A confirmation pop-up will appear. 
+
+Please note that after confirming you want to format the memory of your device, all binary files stored on that device will be deleted and cannot be recovered.
+
+### Reset settings
+To reset the settings of your Mentalab Explore device, select ‘Reset settings’. The device will disconnect, and all settings will return to their default values:
+- Sampling rate: 250 Hz
+- Channel mask: all channels active
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

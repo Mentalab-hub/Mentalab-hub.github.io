@@ -9,11 +9,12 @@ slug: quick-links
 Here are links to our key resources:
 
 - [Mentalab Explore Quick Start Guide](/pdfs/Mentalab_Explore_Quick_Start_Guide.pdf)
-- [Mentalab Explore Product Sheet](https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/01/Mentalab-Explore-Technical-Brochure.pdf)
+- [Explore Desktop User Manual](/pdfs/Explore_Desktop_User_Manual.pdf)
+- [Mentalab Explore Product Sheet](/pdfs/Mentalab_Explore_Product_Sheet.pdf) <br><br>
 - [Mentalab GitHub Repo](https://github.com/Mentalab-hub)
 - [`explorepy` Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0)
 - [`explorepy` documentation](https://explorepy.readthedocs.io/en/latest/)
-- [YouTube Tutorial Playlist](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU)
+- [YouTube Tutorial Playlist](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU) <br>
 - [LED Light Guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide")
 - [Button Command Guide]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide")
 

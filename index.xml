@@ -28,6 +28,17 @@
     </item>
     
     <item>
+      <title>Getting Started</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
+      <description>Installation  Download the Explore Desktop installer.   Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
+  Double click on the installer to launch and follow the on-screen instructions.
+  Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).</description>
+    </item>
+    
+    <item>
       <title>LabChart Lightning</title>
       <link>https://wiki.mentalab.com/integrations/lightning-installation/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
@@ -61,6 +72,17 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
     </item>
     
     <item>
+      <title>Usage</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/usage/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
+      <description>Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
+ Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.
+In either case, ensure that your device is in advertising mode.</description>
+    </item>
+    
+    <item>
       <title>Photodiode Event Triggers</title>
       <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
@@ -69,6 +91,18 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
 Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
 Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
+    </item>
+    
+    <item>
+      <title>Visualization</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/visualize/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
+      <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.
+You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.
+ Use the settings at the top of Visualization page to configure your visualization. Settings include:
+ Signal – EEG or ECG mode.  EEG provides the spectral analysis plot of the signal. ECG mode detects heartbeats and calculates heart rate from the RR-intervals.</description>
     </item>
     
     <item>
@@ -94,6 +128,18 @@ Set-up  Prepare an 8-channel Mentalab Explore system using the following configu
     </item>
     
     <item>
+      <title>Recording</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/record/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/record/</guid>
+      <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
+A pop-up will allow you to configure your recording.
+Settings include:
+ File format – select the output file type (EDF or CSV):  CSV mode generates an extra file for the marker events EDF mode records data in BDF+ format (in 24-bit resolution)   Folder and name prefix – select where to store files and the file prefix.</description>
+    </item>
+    
+    <item>
       <title>Button Command Guide</title>
       <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
@@ -102,6 +148,17 @@ Set-up  Prepare an 8-channel Mentalab Explore system using the following configu
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.
     Action  State  Effect     Single click Device off Device will turn on   Double click Memory full (LED blinking pink) Delete flash memory.
 Return to advertising mode.   Double click Device in startup Skip advertising.</description>
+    </item>
+    
+    <item>
+      <title>Impedance</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
+      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
+Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
+&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen  Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black  50  7GrayInactive channel / Device not connected / Impedance too high (250 kHz for wet electrodes) Impedance values depend on the impedance of the reference electrode.</description>
     </item>
     
     <item>
@@ -123,6 +180,17 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
 Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+    </item>
+    
+    <item>
+      <title>Lab Streaming Layer</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/lsl/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/lsl/</guid>
+      <description>You can push data to LSL by navigating to the Integration page and selecting ‘Push’. To stop streaming to LSL, select ‘Stop’. If your device loses connection, Explore Desktop will try to reconnect automatically.
+When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.
+Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++. See the Integrations section for more.</description>
     </item>
     
     <item>
@@ -163,8 +231,29 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
-      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&#39; extremities).
+      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).
 Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
+      <description>Unstable Bluetooth connection Possible causes are:
+ An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range.  No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
+    </item>
+    
+    <item>
+      <title>P300 Experiment</title>
+      <link>https://wiki.mentalab.com/applications/p300/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/applications/p300/</guid>
+      <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
+Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.
+In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     
     <item>

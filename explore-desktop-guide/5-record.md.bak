@@ -1,0 +1,36 @@
+---
+title: "Recording"
+date: 2022-01-26T10:25:19+00:00
+weight: 5
+description: Here is how to record your data using the Explore Desktop app 
+slug: record
+---
+
+<figure style="float:right;">
+<img class="mobile" src="/img/Desktop/recorddialog.PNG" alt="The recording settings of Explore Desktop" width="350"/>
+<figcaption> Configure your recording using the pop-up. </figcaption>
+</figure>
+
+Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
+
+A pop-up will allow you to configure your recording.
+
+Settings include:
+- File format – select the output file type (EDF or CSV):
+	- CSV mode generates an extra file for the marker events
+	- EDF mode records data in BDF+ format (in 24-bit resolution)
+- Folder and name prefix – select where to store files and the file prefix.	For example, if the prefix is ‘test’, data will record in 	three separate files: ‘test_ExG.csv’, ‘test_ORN.csv’, and ‘test_Marker.csv’. These files will contain ExG data, orientation data, and event markers.
+- Recording time (in seconds) – set the duration of the recording. You can stop recording at any time by clicking ‘Stop’.- Filters.
+
+{{< alert style="info" >}} Because environmental factors, like temperature, can affect your sampling rate, we recommend computing the sampling rate of your recorded data. If you find a deviation between the sampling rate you calculate and Explore Desktop’s sampling rate, resample your signal to correct for drifts. The timestamps in the CSV/EDF file can be used to compute the resampling factor. {{< /alert >}}
+
+{{< alert style="info" >}} If you are setting markers in your recording, record to CSV. Alternatively, push data to LSL and record with LabRecorder. EDF cannot guarantee precise marker timings. {{< /alert >}}
+
+## Event markers
+One method to generate a marker event is to press the button on your Mentalab Explore device. Alternatively, you can set event markers using the ‘Set’ button. 
+
+Marker events display as vertical dashed lines in the Visualize page. A corresponding event code will display.
+
+{{< alert style="danger" >}} Marker codes between 0 and 7 are reserved for hardware. Please use any other integer (from 8 to 65535) as a code for your marker. {{< /alert >}}
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

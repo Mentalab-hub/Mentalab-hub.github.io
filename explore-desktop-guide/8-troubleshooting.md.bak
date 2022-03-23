@@ -1,0 +1,20 @@
+---
+title: "Troubleshooting"
+date: 2022-01-26T10:25:19+00:00
+weight: 8
+description: If you are having problems with Explore Desktop, try our troubleshooting section
+slug: troubleshooting
+---
+
+You can push data to LSL by navigating to the Integration page and selecting ‘Push’. To stop streaming to LSL, select ‘Stop’. If your device loses connection, Explore Desktop will try to reconnect automatically.
+
+When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.
+
+Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++. See the [Integrations section](/integrations) for more.
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/pushpage.PNG" alt="The Explore Desktop Integration page" width="90%"/>
+<figcaption> Use the Integration page to stream data from your Mentalab Explore device to Lab Streaming Layer. </figcaption>
+</figure>
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

@@ -1,0 +1,65 @@
+---
+title: "Impedance"
+date: 2022-01-26T10:25:19+00:00
+weight: 6
+description: Here is how to measure the impedances of your Mentalab Explore electrodes using the Explore Desktop app 
+slug: impedance
+---
+
+To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
+
+Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
+
+<div style="text-align:center;">
+<table>
+    <thead>
+        <tr>
+            <th>&nbsp; Color</th>
+            <td colspan="2" style="font-weight: bold;">Range (kΩ)</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td></td>
+            <td>Wet electrodes</td>
+			<td>Dry electrodes</td>
+        </tr>
+		<tr>
+			<td>Green</td>
+			<td> < 10</td>
+			<td> < 20</td>
+		</tr>
+		<tr>
+			<td>Yellow</td>
+			<td>10 – 20</td>
+			<td>20 – 35</td>
+		</tr>
+		<tr>
+			<td>Orange</td>
+			<td>20 – 30</td>
+			<td>35 – 50</td>
+		</tr>
+		<tr>
+			<td>Red</td>
+			<td>30 – 50</td>
+			<td>50 – 70</td>
+		</tr>
+		<tr>
+			<td>Black</td>
+			<td> > 50</td>
+			<td> > 7</td>
+		</tr>
+		<tr>
+			<td>Gray</td>
+			<td colspan="2">Inactive channel / Device not connected</td>
+		</tr>
+    </tbody>
+</table>
+</div>
+
+<br>
+
+{{< alert style="danger" >}} Impedance values depend on the impedance of the reference electrode. The value shown for each electrode is the average of the ground and ExG electrodes’ impedances. <br><br> If all channel impedances are high, try cleaning the skin under the reference electrode more thoroughly using, e.g., alcohol, abrasive gel, or EEG. {{< /alert >}}
+{{< alert style="info" >}} Impedance values are subject to environmental conditions like noise and temperature. Aim for regular room temperatures (~15-25°C) {{< /alert >}}
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

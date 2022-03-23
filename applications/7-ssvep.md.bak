@@ -29,7 +29,7 @@ In both cases, the classifier determines which stimulus a participant is looking
 3. Activate your Anaconda virtual environment: `conda activate myenv`
 4. Install the required packages: `pip install scikit-learn matplotlib psychopy mne`
 ### Hardware
-5. Setup the cap and electrodes. Place EEG electrodes on the occipital visual cortex (Oz, O1, O2, POz, etc.) and the ground electrode on Fpz or Mastoid (or any other location far enough from other electrodes). 
+5. Setup the cap and electrodes. Place EEG electrodes on the occipital visual cortex (Oz, O1, O2, POz, etc.) and the ground electrode on Fpz or the mastoid (or any other location far enough from other electrodes). 
 
     {{< alert style="info" >}}The analysis presented here is based on this configuration. The channel numbers are hardcoded. If you would like to use a different setup, modify the channel positions in line 70 of the `offline_analysis.py` file.{{< /alert >}}
 6. Run an [impedance check](https://www.youtube.com/watch?v=3nCB0MYXMx0) to verify that you will produce instructuve signals. For more information on achieving low impedances, please have a read of our [Improving Impedances]({{< ref "/User Guide/6-improving-impedences" >}} "User Guide/Improving Impedences") page.
@@ -88,7 +88,7 @@ To undertake offline SSVEP analysis:
     At the beginning of each trial, an arrow will indicate where the participant should look. Shortly after its appearance, a flickering stimulus will appear in the indicated position.
 	
 3. Once the experiment is complete, the recorded data can be analyzed. To do this, run `offline_analysis.py`.
-    {{< alert style="info" >}} Ensure you use the same filename here as you did in Step 1 {{< /alert >}}
+    {{< alert style="info" >}} Ensure you use the same filename here as you did in Step 2 {{< /alert >}}
 	```
 	python offline_analysis.py --filename test_rec
     ```

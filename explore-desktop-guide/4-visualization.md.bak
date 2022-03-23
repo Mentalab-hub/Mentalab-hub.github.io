@@ -1,0 +1,65 @@
+---
+title: "Visualization"
+date: 2022-01-26T10:25:19+00:00
+weight: 4
+description: Here is how to visualize your data using the Explore Desktop app 
+slug: visualize
+---
+
+Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.
+
+You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/settings.PNG" alt="The visualization settings of Explore Desktop" width="90%"/>
+<figcaption> Use the settings at the top of Visualization page to configure your visualization. </figcaption>
+</figure>
+
+Settings include:
+- Signal – EEG or ECG mode.
+	- EEG provides the spectral analysis plot of the signal. ECG mode detects heartbeats and calculates heart rate from the RR-intervals.
+- Y-axis scale – change the range of the y-axis.
+	- 1 uV to 100 mV range.
+- Time window – change the time interval of the x-axis.
+	- 5, 10, or 20 second range.
+- Heart rate – if in ECG mode, heart rates will be computed and displayed.
+- Record (see Recording Section).
+- Event markers (see Event Markers).
+- Filters.
+
+## ExG example
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/exg.PNG" alt="Example of Explore Desktop's ExG plot" width="90%"/>
+<figcaption> Example of an Explore Desktop ExG plot. </figcaption>
+</figure>
+
+## Motion sensor example
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/orn.PNG" alt="Example of Explore Desktop's motion sensor plot" width="90%"/>
+<figcaption> Example of an Explore Desktop motion sensor plot. </figcaption>
+</figure>
+
+## Spectral analysis example
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/spectral.PNG" alt="Example of Explore Desktop's spectral analysis plot" width="90%"/>
+<figcaption> Example of an Explore Desktop spectral analysis plot. </figcaption>
+</figure>
+
+## Filters
+The Visualization page will prompt you to define your visualization filters. Explore Desktop will begin streaming data once you have selected your filters.
+
+<figure style="float:right;">
+<img class="mobile" src="/img/Desktop/vissettings.PNG" alt="The visualization filters of Explore Desktop" width="350"/>
+<figcaption> Set the visualization filters using the pop-up. </figcaption>
+</figure>
+
+You will still be able to filter signals while the device is streaming. To do so, select ‘Filters’.
+
+The following filters are available:
+- Baseline correction – removes the signal’s DC offset, based on previous signal values.
+- Notch filter (band stop filter) – rejects signals that fall outside some frequency band.
+- Low cutoff frequency – rejects signals with frequencies below some threshold.
+- High cutoff frequency – rejects signals with frequencies above some threshold.
+
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

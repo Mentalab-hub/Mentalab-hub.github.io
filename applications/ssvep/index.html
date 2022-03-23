@@ -171,6 +171,61 @@
                     EASI ECG
                 </a>
         </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
         </ul>
     </li>
     <li data-nav-id="/faqs/" class="nav-item my-1
@@ -235,7 +290,7 @@
 <h3 id="hardware">Hardware</h3>
 <ol start="5">
 <li>
-<p>Setup the cap and electrodes. Place EEG electrodes on the occipital visual cortex (Oz, O1, O2, POz, etc.) and the ground electrode on Fpz or Mastoid (or any other location far enough from other electrodes).</p>
+<p>Setup the cap and electrodes. Place EEG electrodes on the occipital visual cortex (Oz, O1, O2, POz, etc.) and the ground electrode on Fpz or the mastoid (or any other location far enough from other electrodes).</p>
 
 <div class="alert alert-info" role="alert">
     The analysis presented here is based on this configuration. The channel numbers are hardcoded. If you would like to use a different setup, modify the channel positions in line 70 of the <code>offline_analysis.py</code> file.
@@ -249,7 +304,7 @@
 <h2 id="online-ssvep-classifier">Online SSVEP classifier</h2>
 <ol start="7">
 <li>Navigate to the folder in which you extracted the files in step 2. There will be a sub-directory called <code>/examples/ssvep</code>. Move into this path from your Python console: <code>cd &lt;PATH-TO-SSVEP&gt;</code></li>
-<li>Turn on the device and run the following command in your terminal (replace #### with your device ID e.g Explore_1438):
+<li>Turn on the device and run the following command in your terminal (replace #### with your device ID, e.g. Explore_1438):
 <pre tabindex="0"><code>python online_ssvep.py --name Explore_#### --duration 100
 </code></pre></li>
 </ol>

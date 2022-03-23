@@ -1,0 +1,22 @@
+---
+title: "Explore Desktop Guide"
+date: 2022-01-26T10:25:19+00:00
+weight: 7
+description: Here is a quick reference section on using the Explore Desktop application
+slug: explore-desktop
+
+---
+
+Explore Desktop is provided by Mentalab GmbH free of charge. It contains functions to visualize and record ExG signals with a Mentalab Explore device.
+
+Here is a quick reference section on using the Explore Desktop application.
+
+### Contents
+[Getting Started]({{< ref "/Explore Desktop Guide/2-getting-started" >}} "Explore Desktop Guide/Getting Started")<br>
+[Usage]({{< ref "/Explore Desktop Guide/3-usage" >}} "Explore Desktop Guide/Usage")<br>
+[Visualization]({{< ref "/Explore Desktop Guide/4-visualization" >}} "Explore Desktop Guide/Visualization")<br>
+[Recording]({{< ref "/Explore Desktop Guide/5-record" >}} "Explore Desktop Guide/Record")<br>
+[Impedance]({{< ref "/Explore Desktop Guide/6-impedance" >}} "Explore Desktop Guide/Impedance")<br>
+[Lab Streaming Layer]({{< ref "/Explore Desktop Guide/7-lsl" >}} "Explore Desktop Guide/Lab Streaming Layer")<br>
+
+For more information or queries, please contact <support@mentalab.com>

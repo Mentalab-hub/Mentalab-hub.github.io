@@ -89,7 +89,7 @@ elif cond == 'down':
 ```
 
 ### Example
-[Here](https://fyi.cpg.mybluehost.me/wp-content/uploads/2022/02/Mentalab-psychopy-experiment-example.zip), you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time. 
+[Here](/files/Mentalab-psychopy-experiment-example.zip), you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time. 
 
 To change the name of the Mentalab Explore device and the recorded file:
 

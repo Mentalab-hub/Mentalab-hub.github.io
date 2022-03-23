@@ -37,7 +37,7 @@ Although the FDA approved the EASI method for use in the assessment of normal, a
 
 ## Set-up
 <figure style="float:right;text-align:center;">
-<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/easipositions.jpg" alt="EASI configuration" width="250"/>
+<img class="mobile" src="/img/Applications/easipositions.jpg" alt="EASI configuration" width="250"/>
 <figcaption> The EASI electrode configuration. <br>Source: <a href="https://www.routledgehandbooks.com/doi/10.1201/b17831-4">The Physiological Measurement Handbook</a> </figcaption>
 </figure>
 
@@ -53,7 +53,7 @@ Mentalab Explore is well suited to EASI ECG recordings. To record ECG data using
 3. Transform the EASI channels to 12-lead channels using the table below, which lists the coefficients of a linear transform.
 
 <figure>
-<img class="mobile" src="https://mentalab.com/wp-content/uploads/2022/02/EASI5to12conversion.png" alt="EASI coefficients table" width="90%"/>
+<img class="mobile" src="/img/Applications/EASI5to12conversion.png" alt="EASI coefficients table" width="90%"/>
 <figcaption> EASI coefficients for standard limb leads. </figcaption>
 </figure>
 
