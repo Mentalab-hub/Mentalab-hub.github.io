@@ -1,13 +1,28 @@
 ---
 title: "Explore Desktop Guide"
 date: 2022-01-26T10:25:19+00:00
-weight: 7
+weight: 6
 description: Here is a quick reference section on using the Explore Desktop application
 slug: explore-desktop
 
 ---
 
-Explore Desktop is provided by Mentalab GmbH free of charge. It contains functions to visualize and record ExG signals with a Mentalab Explore device.
+Explore Desktop is provided by Mentalab free of charge. It contains functions to visualize and record ExG signals with a Mentalab Explore device. To download Explore Desktop for Windows and Ubuntu use the links below.
+
+<figure>
+<div class="row">
+  <div class="column">
+    <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/download/0.2.3/ExploreDesktopInstaller.exe">
+		<img style="padding: 20px; width: 90%;" src="/img/ExploreDesktopGuide/download-windows-3.svg" alt="Download Explore Desktop for Windows">
+	</a>
+  </div>
+  <div class="column">
+	<a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/download/0.2.3/ExploreDesktopInstaller_x64.run">
+		<img style="padding: 20px; width: 90%;" src="/img/ExploreDesktopGuide/download-ubuntu-3.svg" alt="Download Explore Desktop for Ubuntu">
+	</a>
+  </div>
+</div>
+</figure> 
 
 Here is a quick reference section on using the Explore Desktop application.
 
@@ -20,3 +35,23 @@ Here is a quick reference section on using the Explore Desktop application.
 [Lab Streaming Layer]({{< ref "/Explore Desktop Guide/7-lsl" >}} "Explore Desktop Guide/Lab Streaming Layer")<br>
 
 For more information or queries, please contact <support@mentalab.com>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 5px;
+}
+
+img:hover {
+	drop-shadow: 0px 0px 5px gray;
+}
+</style>
