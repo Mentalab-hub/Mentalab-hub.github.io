@@ -61,7 +61,7 @@ Settings include:
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
       <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
 Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
-&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen  Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black  50  7GrayInactive channel / Device not connected / Impedance too high (250 kHz for wet electrodes) Impedance values depend on the impedance of the reference electrode.</description>
+&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen  Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black  50  70GrayInactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
     </item>
     
     <item>

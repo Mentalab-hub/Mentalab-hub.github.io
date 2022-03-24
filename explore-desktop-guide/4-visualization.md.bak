@@ -56,10 +56,12 @@ The Visualization page will prompt you to define your visualization filters. Exp
 You will still be able to filter signals while the device is streaming. To do so, select ‘Filters’.
 
 The following filters are available:
-- Baseline correction – removes the signal’s DC offset, based on previous signal values.
-- Notch filter (band stop filter) – rejects signals that fall outside some frequency band.
-- Low cutoff frequency – rejects signals with frequencies below some threshold.
-- High cutoff frequency – rejects signals with frequencies above some threshold.
+- Baseline correction – removes the signal’s DC offset, based on a moving average.
+- Notch filter (band stop filter) – attenuates the power line noise at 50 or 60 Hz.
+- Low cutoff frequency – rejects signals with frequencies above this threshold.
+- High cutoff frequency – rejects signals with frequencies below this threshold.
 
+<br><br>
+{{< alert style="info" >}} Filters do not affect raw data, only what is visualised. {{< /alert >}}
 
 For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

@@ -52,6 +52,6 @@ For more information or queries, please contact <support@mentalab.com>
 }
 
 img:hover {
-	drop-shadow: 0px 0px 5px gray;
+	filter: drop-shadow(0px 0px 5px gray);
 }
 </style>

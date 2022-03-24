@@ -47,11 +47,11 @@ Select which type of electrodes you are using from the drop-down menu. Then, cli
 		<tr>
 			<td>Black</td>
 			<td> > 50</td>
-			<td> > 7</td>
+			<td> > 70</td>
 		</tr>
 		<tr>
 			<td>Gray</td>
-			<td colspan="2">Inactive channel / Device not connected</td>
+			<td colspan="2">Inactive channel / Device not connected / <br> Impedance too high (250 kHz for wet electrodes) </td>
 		</tr>
     </tbody>
 </table>
