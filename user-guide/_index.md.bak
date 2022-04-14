@@ -15,18 +15,18 @@ To get up and running quickly, please consult the [Quick Start Guide](/pdfs/Ment
 ## Before recording
 1. Before recording EEG data, please consult our [EEG Checklist]({{< ref "/User Guide/2-eeg-checklist" >}} "User Guide/EEG Pre-Experiment Checklist"). This will ensure you get the best performance out of your system.
 
-2. Working with dry electrodes can be challenging. As such, we compiled a [dry electrode guide]({{< ref "/User Guide/3-dry-electrode-guide" >}} "User Guide/Dry Electrode Guide") to help you setup and improve the impedances of your dry electrodes.
+2. Working with dry electrodes can be challenging. As such, we compiled a [Dry Electrode Guide]({{< ref "/User Guide/3-dry-electrode-guide" >}} "User Guide/Dry Electrode Guide") to help you setup and improve the impedances of your dry electrodes.
 
-3. We have multiple [software APIs](https://fyi.cpg.mybluehost.me/software-integrations/) for you to integrate with your Explore system. Our main API is `explorepy`, a Python library. To install `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html) or use our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
+3. We have multiple [software APIs](https://mentalab.com/?page_id=935) for you to integrate with your Explore system. Our main API is `explorepy`, a Python library. To install `explorepy`, please consult our [`explorepy` Installation Guide](https://explorepy.readthedocs.io/en/latest/installation.html) or use our [Windows installer](https://github.com/Mentalab-hub/explorepy/releases/tag/v1.6.0).
 For an overview of `explorepy` commands, please see our [documentation](https://explorepy.readthedocs.io/en/latest/usage.html), or watch our short [tutorials on YouTube](https://www.youtube.com/watch?v=K3ZD1WwE140&list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU).
 
 ## During recording
-To facilitate your research, we've created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an [LED light guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide"), which explains how the Explore device will communicate with you. The other is a [button command table]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide"), which you can use to control the Explore device.
+To facilitate your research, we've created some Mentalab Explore cheat sheets, which you can refer to as you experiment. One is an [LED light guide]({{< ref "/User Guide/4-led-light-guide" >}} "User Guide/LED Light Guide"), which explains how the Explore device will communicate with you. The other is a [Button Command Guide]({{< ref "/User Guide/5-button-guide" >}} "User Guide/Button Command Guide"), which you can use to control the Explore device.
 
 ## After recording
 To maximise the lifespan of your ExG system, it is important to prevent damage to your equipment. 
 
-We have compiled instructions on [caring for your Mentalab Hardware]({{< ref "/User Guide/8-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware") to help you do this.
+We have compiled instructions on [caring for your Mentalab Hardware]({{< ref "/User Guide/9-cleaning-storage-guide" >}} "User Guide/Cleaning, Disinfecting and Storing Mentalab Hardware") to help you do this.
 
 ## Advanced resources
 For users with advanced software needs, check out our [GitHub Repo](https://github.com/Mentalab-hub/)! 

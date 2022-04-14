@@ -5,9 +5,6 @@
     <loc>https://wiki.mentalab.com/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/product-guide/cap-size-guide/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
     <loc>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
@@ -24,9 +21,6 @@
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/product-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
@@ -65,7 +59,7 @@
     <loc>https://wiki.mentalab.com/integrations/psychopy/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
+    <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/faqs/</loc>
@@ -77,16 +71,19 @@
     <loc>https://wiki.mentalab.com/applications/ssvep/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/explorepy-commands/</loc>
+    <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</loc>
+    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/user-guide/explorepy-commands/</loc>
+    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/p300/</loc>

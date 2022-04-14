@@ -8,16 +8,6 @@
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Cap Size Guide</title>
-      <link>https://wiki.mentalab.com/product-guide/cap-size-guide/</link>
-      <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
-      <guid>https://wiki.mentalab.com/product-guide/cap-size-guide/</guid>
-      <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
-    Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    </description>
-    </item>
-    
-    <item>
       <title>EEG Pre-Experiment Checklist</title>
       <link>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
@@ -172,14 +162,13 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
     </item>
     
     <item>
-      <title>Improving Impedances</title>
-      <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
+      <title>Cap Size Guide</title>
+      <link>https://wiki.mentalab.com/user-guide/cap-size-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
-      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
-General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
-Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+      <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
+      <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
+    Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    </description>
     </item>
     
     <item>
@@ -205,24 +194,14 @@ Here, we show you how to use Mentalab Explore with SSVEP-based classification ta
     </item>
     
     <item>
-      <title>explorepy Command Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
+      <title>Improving Impedances</title>
+      <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
-      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
-    Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
-    </item>
-    
-    <item>
-      <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
-      <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
-      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
-      <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
-      <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
-Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
-Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
+      <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
+      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
+General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
+Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
     </item>
     
     <item>
@@ -243,6 +222,27 @@ Although it provides comprehensive information about electrical processes inside
       <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
       <description>Unstable Bluetooth connection Possible causes are:
  An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range.  No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
+    </item>
+    
+    <item>
+      <title>explorepy Command Guide</title>
+      <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
+      <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
+      
+      <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
+      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
+    Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
+    </item>
+    
+    <item>
+      <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
+      <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
+      <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
+Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
+Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     
     <item>

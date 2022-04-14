@@ -36,7 +36,7 @@ In both cases, the classifier determines which stimulus a participant is looking
 
 ## Online SSVEP classifier
 7. Navigate to the folder in which you extracted the files in step 2. There will be a sub-directory called `/examples/ssvep`. Move into this path from your Python console: <code>cd &#60;PATH-TO-SSVEP&#62;</code>
-8. Turn on the device and run the following command in your terminal (replace #### with your device ID e.g Explore_1438):
+8. Turn on the device and run the following command in your terminal (replace #### with your device ID, e.g. Explore_1438):
     ```
 	python online_ssvep.py --name Explore_#### --duration 100
     ```
