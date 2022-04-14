@@ -57,7 +57,7 @@ Please note that after confirming you want to format the memory of your device, 
 
 ### Reset settings
 To reset the settings of your Mentalab Explore device, select ‘Reset settings’. The device will disconnect, and all settings will return to their default values:
-- Sampling rate: 250 Hz
-- Channel mask: all channels active
+- 250 Hz sampling rate
+- All channels active
 
 For more information or support, do not hesitate to get in contact at: <support@mentalab.com>

@@ -77,9 +77,9 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
-      <description>Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
- Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.
-In either case, ensure that your device is in advertising mode.</description>
+      <description>To get up and running quickly, why not check out our quick tutorial video.
+Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
+ Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.</description>
     </item>
     
     <item>
@@ -173,10 +173,10 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
     
     <item>
       <title>Improving Impedances</title>
-      <link>https://wiki.mentalab.com/user-guide/improving-impedences/</link>
+      <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       
-      <guid>https://wiki.mentalab.com/user-guide/improving-impedences/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
 Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>

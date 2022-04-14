@@ -11,13 +11,13 @@ Since the impedance at the REF electrode affects signal quality for all EEG chan
 ## General
 Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float". 
 
-## Gel Electrodes
+## Gel electrodes
 1. Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.
 2. Move the syringe in a circular motion to push hair away from the electrode. This will allow the gel to form a conductive bridge between the electrode and the scalp.
 3. Apply more gel as needed. However, do avoid gel pools, as this can introduce cross-talk between channels.
 4. Good gel electrode impedances are ~10 k&#x2126;
 
-## Dry Electrodes
+## Dry electrodes
 1. Use flat electrodes for bare skin, like the mastoid and forehead. Ensure that there are no stray hairs between the electrode and skin.
 2. Use brush electrodes for areas covered in hair. For thick hair, XL brush electrodes can penetrate the hair better.
 3. Twist brush electrodes back and forth while gently pushing them into scalp. This allows the bristles to penetrate hair more easily. Ideally, all bristles should touch the scalp.
