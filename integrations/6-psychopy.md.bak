@@ -44,7 +44,7 @@ To open PsychoPy next time:<br>
 
 ### Initialize
 In order to run `explorepy`, you will need to add a __Code__ component to your experiment. In the "Begin Experiment" section, setup and initialize streaming, recording (optional) or push to LSL (optional).
-<figure>
+<figure style="text-align:center;">
 <img class="mobile" src="/img/Integrations/psychopy-code.png" alt="PsychoPy add code screenshot" width="90%"/>
 <figcaption> Look for add <b>Code</b> option. </figcaption>
 </figure>

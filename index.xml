@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Mentalab Wiki</title>
+    <title>Welcome on Mentalab Wiki</title>
     <link>https://wiki.mentalab.com/</link>
-    <description>Recent content on Mentalab Wiki</description>
+    <description>Recent content in Welcome on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 02 Jun 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EEG Pre-Experiment Checklist</title>
       <link>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</link>
@@ -169,6 +169,17 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
       <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
       <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
     Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    </description>
+    </item>
+    
+    <item>
+      <title>EEGLab</title>
+      <link>https://wiki.mentalab.com/integrations/eeglab/</link>
+      <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
+      <description>Here is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
+Ensure that you have downloaded the latest version of EEGLab here.Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
+Install via Extension Manager  Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal. A new EEGLab session will open.</description>
     </item>
     
     <item>

@@ -1,0 +1,77 @@
+---
+title: "EEGLab"
+date: 2022-06-02T10:25:19+00:00
+weight: 7
+description: Here is how to import Mentalab Explore data into an EEGLab structure
+slug: eeglab
+---
+
+Here is a guide to importing [Mentalab Explore](https://mentalab.com/mobile-eeg/) CSV and BIN files into an [EEGLab](https://sccn.ucsd.edu/eeglab/index.php) structure using the [Mentalab EEGLab Plugin](https://github.com/Mentalab-hub/Mentalab-EEGLab-Plugin).
+
+{{< alert style="info" >}} Ensure that you have downloaded the latest version of EEGLab <a href="https://sccn.ucsd.edu/eeglab/download.php">here</a>. {{< /alert >}}
+
+## Installation
+To install the Mentalab EEGLab plugin, we recommend using EEGLab's Extension Manager.
+
+### Install via Extension Manager
+
+1. Once you have installed EEGLab, following these [instructions](https://eeglab.org/others/How_to_download_EEGLAB.html), open MATLAB and type `eeglab` into the command line terminal.
+2. A new EEGLab session will open. Visit the Extension Manager under `File > Manage EEGLAB extensions`.
+3. Locate the Mentalab EEGLab Plugin, titled "Mentalab v0.2" in the list, and select "Install/Update".
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/extension-manager.png" alt="The EEGLab Extension Manager" width="90%"/>
+<figcaption> The EEGLab Extension Manager. </figcaption>
+</figure>
+
+### Install manually
+The Mentalab EEGLAB plugin can also be installed manually. To do this:
+
+1. Clone or download [the GitHub repository](https://github.com/Mentalab-hub/Mentalab-EEGLab-Plugin) directly from GitHub.
+2. Unzip the package and move the folder "mentalab-explore" into the EEGLab plugins folder.
+3. Restart EEGLab by closing any open sessions and typing `eeglab` into the MATLAB command line terminal.
+
+## Using the Mentalab EEGLab Plugin
+<figure style="float:right; text-align:center;">
+<img class="mobile" src="/img/Integrations/name-channels.png" alt="Dialog to name each of your channels" width="150"/>
+<figcaption> You can name each channel if desired. </figcaption>
+</figure>
+
+1. To use the Mentalab EEGLAB plugin, begin a new EEGLab session and select "Import Mentalab Explore data", under `File > Import Data > Using EEGLAB functions and plugins`.
+2. Your file manager will display only CSV and BIN files.
+3. Navigate to the file you wish to import, select, and open. You will be asked to name each ExG channel. If this is not important to you, select OK to continue.
+
+### Importing CSV files
+
+If you are importing a CSV file, ensure that the current directory contains three files called:
+`<FILENAME>_ExG.csv`<br>
+`<FILENAME>_ORN.csv`<br>
+`<FILENAME>_Marker.csv`
+
+That is, each file should have the same name, but one should have suffix `_ExG`, one should have suffix `_ORN`, and the other `_Marker`. These files should hold ExG, motion, and marker data respectively.
+
+{{< alert style="error" >}}If one of these files is not present, the plugin will not work. However, your Mentalab Explore device will always record data for these three files. {{< /alert >}}
+
+### Selecting ExG or Motion data
+
+The Mentalab EEGLab plugin will always import ExG and motion data, regardless of which file you select.
+
+For instance, if you select motion data (e.g., "myData_ORN.csv") in your File Explorer, the ExG data (e.g., "myData_ExG.csv") will also import. Both motion and ExG data will have markers linked to them.
+
+To select the ExG or Motion dataset (`_ExG` or `_ORN`), navigate to the EEGLab drop-down menu "Datasets".
+
+## Troubleshooting
+<figure style="float:right; text-align:center;">
+<img class="mobile" src="/img/Integrations/eeglab-warning.png" alt="EEGLab error dialog" width="400"/>
+<figcaption> You may have a path problem if you see this error. </figcaption>
+</figure>
+
+- If you have imported your data but cannot see its plot (under `Plot > Channel data (scroll)`), you may have a scaling issue. Set the scaling factor to `0.00001`. Also consider selecting `Display > Remove DC offset`.
+- If you are having trouble downloading any plugin, and receive an error starting "Could not download extension. Host site might be unavailable,", then you may have an issue with your paths. That is, your EEGLab folder may be located in a folder that requires admin permission to write/edit its files, for instance "Program Files/MATLAB". To remedy this, move your EEGLab folder to another location (e.g., Documents/MATLAB) and reset the paths using `pathtool` (select "Default", then select your chosen folder).
+
+
+
+
+<br><br>
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
