@@ -9,8 +9,8 @@ slug: integrations
 Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.
 
 ### Contents
-[LabChart Lightning]({{< ref "/Integrations/2-labchart-lightning" >}} "User Guide/LabChart Lightning")<br>
-[Device Syncing With LSL]({{< ref "/Integrations/3-open-vibe" >}} "User Guide/Device Syncing With LSL")<br>
-[PsychoPy Builder]({{< ref "/Integrations/6-psychopy" >}} "User Guide/PsychoPy Builder")<br>
+[LabChart Lightning]({{< ref "/Integrations/2-labchart-lightning" >}} "Integrations/LabChart Lightning")<br>
+[Device Syncing With LSL]({{< ref "/Integrations/3-open-vibe" >}} "Integrations/Device Syncing With LSL")<br>
+[PsychoPy Builder]({{< ref "/Integrations/6-psychopy" >}} "Integrations/PsychoPy Builder")<br>
 
 For more information or queries, please contact <support@mentalab.com>
