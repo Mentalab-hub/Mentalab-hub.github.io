@@ -2,18 +2,18 @@
 title: "LED Light Guide"
 date: 2022-01-25T16:17:02+01:00
 weight: 4
-description:Here is a guide to the light patterns your Mentalab Explore device will use to communicate with you
-slug: \led-light-guide
+description: Here is a guide to the light patterns your Mentalab Explore device will use to communicate with you
+slug: led-light-guide
 ---
 
-The Mentalab Explore device was designed to provide maxmimum flexibility, with minimal size. This page lists how the device communicates with the user via the LED Diode.
+The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.
 
-| &nbsp; LED Light | &nbsp; Blinking Pattern | &nbsp; Description | 
-| ----------- | ----------- | ----------- |
-| Red / Yellow / Green | Solid at device start-up. <br> Flashes for 3 secs | Start-up in progress. <br>Colour indicates battery status. |
-| Blue | Blinks twice a second | Bluetooth visible and advertising. |
-| Blue | Blinks once a second | Bluetooth visible and connected. <br>Online mode. |
-| Green | Blinks once a second | Bluetooth invisible. <br>Offline mode. |
-| Magenta | Blinks once a second | Insufficient memory. |
-| Light Pink | One-time flash | Button pressed, and marker set. |
-| Red | Flashes three times | Button pressed and held. <br>Turn off. |
+| &nbsp; LED Light | &nbsp; Blinking  Pattern | &nbsp; Description | Example |
+| ----------- | ----------- | ----------- | ----------- |
+| Red / Yellow / Green | Solid at device start-up. <br> Flashes for 3 secs | Start-up in progress. <br>Colour indicates battery status. | <svg version="1.1" width="60" height="40"><circle fill="#fcc203" stroke="none" cx="30" cy="25" r="6"></circle></svg> |
+| Blue | Blinks twice a second | Bluetooth visible and advertising. | <svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg> |
+| Blue | Blinks once a second | Bluetooth visible and connected. <br>Online mode. | <svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg> |
+| Green | Blinks once a second | Bluetooth invisible. <br>Offline mode. | <svg version="1.1" width="60" height="40"><circle fill="#03fc20" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg> |
+| Pink | Blinks once a second | Insufficient memory. | <svg version="1.1" width="60" height="40"><circle fill="#fc03d2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg> |
+| Light pink | One-time flash | Button pressed, and marker set. | <svg version="1.1" width="60" height="40"><circle fill="#ff8ff6" stroke="none" cx="30" cy="25" r="6"></circle></svg> |
+| Red | Flashes three times | Button pressed and held. <br>Turn off. | <svg version="1.1" width="60" height="40"><circle fill="red" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.9;1" dur="3s" values="0;1;0;1;0;1;1;0" repeatCount="indefinite" begin="0.1" /></circle></svg> |

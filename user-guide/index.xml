@@ -35,7 +35,7 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
       
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.
-    LED Light  Blinking Pattern  Description     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.   Blue Blinks twice a second Bluetooth visible and advertising.</description>
+    LED Light  Blinking Pattern  Description Example     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.    Blue Blinks twice a second Bluetooth visible and advertising.</description>
     </item>
     
     <item>
