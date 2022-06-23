@@ -102,7 +102,7 @@ You can configure the visualization via the drop-down menus at the top of the Vi
       
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.
-    LED Light  Blinking Pattern  Description     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.   Blue Blinks twice a second Bluetooth visible and advertising.</description>
+    LED Light  Blinking Pattern  Description Example     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.    Blue Blinks twice a second Bluetooth visible and advertising.</description>
     </item>
     
     <item>
@@ -177,9 +177,10 @@ Install software Download explorepy  Download Anaconda. Open the Anaconda prompt
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
-      <description>Here is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
-Ensure that you have downloaded the latest version of EEGLab here.Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
-Install via Extension Manager  Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal. A new EEGLab session will open.</description>
+      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
+Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
+Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
+Install via Extension Manager  Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
     
     <item>
