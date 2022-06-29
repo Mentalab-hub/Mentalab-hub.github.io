@@ -70,7 +70,7 @@ Some EEG analysis platforms do not rely on MATLAB, nor LabStreaming Layer. They 
 
 | &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
 | ----------- | ----------- | ----------- | ----------- | ----------- |
-| Cartool | <span style="display: inline-block; width:290px">[Cartool](https://sites.google.com/site/cartoolcommunity/home) is an EEG analysis tool developed at the Functional Brain Mapping Lab (FBMLab), in Geneva, Switzerland. Cartool has been entirely programmed by Denis Brunet in C++, and doesn't rely on any other dependency to run. </span> | <ul><li>Reading and visualizing data<li>Artifact rejection<li>Sampling<li>Interpolation<li>Statistics<li>Inverse solutions<li>Fitting / Back projection<li>Segmentation</ul> | Partially | [Download page](https://sites.google.com/site/cartoolcommunity/files) |
+| Cartool | <span style="display: inline-block; width:290px">[Cartool](https://sites.google.com/site/cartoolcommunity/home) is an EEG analysis tool developed at the Functional Brain Mapping Lab (FBMLab), in Geneva, Switzerland. Cartool is developed entirely by Denis Brunet in C++, and doesn't rely on any other dependency to run. </span> | <ul><li>Reading and visualizing data<li>Artifact rejection<li>Sampling<li>Interpolation<li>Statistics<li>Inverse solutions<li>Fitting / Back projection<li>Segmentation</ul> | Partially | [Download page](https://sites.google.com/site/cartoolcommunity/files) |
 
 <br>
 
