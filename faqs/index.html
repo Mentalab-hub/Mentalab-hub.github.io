@@ -142,6 +142,12 @@
                     EEGLab
                 </a>
         </li>
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
         </ul>
     </li>
     <li data-nav-id="/applications/" class="nav-item my-1 haschildren
@@ -238,15 +244,25 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#general">General</a></li>
+    <li><a href="#general">General</a>
+      <ul>
+        <li><a href="#science">Science</a></li>
+      </ul>
+    </li>
     <li><a href="#hardware">Hardware</a>
       <ul>
+        <li><a href="#usage">Usage</a></li>
         <li><a href="#integration">Integration</a></li>
         <li><a href="#connection">Connection</a></li>
         <li><a href="#accessories">Accessories</a></li>
       </ul>
     </li>
-    <li><a href="#software">Software</a></li>
+    <li><a href="#software">Software</a>
+      <ul>
+        <li><a href="#explorepy">Explorepy</a></li>
+        <li><a href="#explore-desktop">Explore Desktop</a></li>
+      </ul>
+    </li>
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
@@ -287,13 +303,13 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7628d3930c" aria-expanded="false">
-    Can one channel act as a reference for a subset of other channels?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2d23575b4e" aria-expanded="false">
+    Can I use my standard ECG or EMG electrodes with the device?
 </button>
 
-<div class="collapse" id="collapse_7628d3930c">
+<div class="collapse" id="collapse_2d23575b4e">
   <div class="card card-body">
-     <p>Yes, <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> can perform custom calculations like this live. This cannot be done in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.</p> 
+     Yes, our Clip9 and Clip5 cables can connect to standard stick and peel electrodes as long as they have a little conductive knob on the back. 
   </div>
 </div>
 <br>
@@ -310,25 +326,157 @@
   </div>
 </div>
 <br>
-<h2 id="hardware">Hardware</h2>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2d23575b4e" aria-expanded="false">
-    Can I use my standard ECG or EMG electrodes with the device?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_ccfea49052" aria-expanded="false">
+    Where are my recorded files stored?
 </button>
 
-<div class="collapse" id="collapse_2d23575b4e">
+<div class="collapse" id="collapse_ccfea49052">
   <div class="card card-body">
-     Yes, our Clip9 and Clip5 cables can connect to standard stick and peel electrodes as long as they have a little conductive knob on the back. 
+     <p>Recorded files are saved in the current command line folder. The default locations are: </p> <p> <ul><li>Windows: <code>C:\Users\USER_NAME</code> <li>Ubuntu: <code>/home/USER_NAME</code> <li>Mac OSX: <code>/Users/USER_NAME</code></ul></p> 
   </div>
 </div>
 <br>
 <br>
 
 
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7628d3930c" aria-expanded="false">
+    Can one channel act as a reference for a subset of other channels?
+</button>
+
+<div class="collapse" id="collapse_7628d3930c">
+  <div class="card card-body">
+     <p>Yes, <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> can perform custom calculations like this live. This cannot be done in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.</p> 
+  </div>
+</div>
+<br><br>
+<h3 id="science">Science</h3>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_13d9ecb061" aria-expanded="false">
+    How can I use my Explore device with infants?
+</button>
+
+<div class="collapse" id="collapse_13d9ecb061">
+  <div class="card card-body">
+     <p> Choose a XS, XS/S, or S cap, as there is a lot of variability between infants. Remove the chin strap for added comfort, and use tights, stretched out over EEG cap, to keep electrodes in place if need be. For more on infant EEG research, check out our <a href="https://mentalab.com/infant-eeg-markers/">blog post</a> on the subject.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f0d7917d7e" aria-expanded="false">
+    I want to remove artifacts from muscle/gait/ocular research, where ICA doesn&#39;t work. Any advice?
+</button>
+
+<div class="collapse" id="collapse_f0d7917d7e">
+  <div class="card card-body">
+     <p> Unfortunately, we cannot help with data processing, as this is the responsibility of the research group. However, we can provide resources as needed. For instance, have a look at <a href="https://sccn.ucsd.edu/wiki/Artifact_Subspace_Reconstruction_(ASR)">Artifact Subspace Reconstruction</a> and automated correction methods like <a href="http://pub.ist.ac.at/~schloegl/publications/schloegl2007eog.pdf">this</a>. For more information on noise removal, check out our <a href="https://mentalab.com/reduce-noise-in-eeg-recordings/">blog post</a> on the subject. </p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f90303c37b" aria-expanded="false">
+    How can I create a bipolar montage with my system, when it has a unipolar reference?
+</button>
+
+<div class="collapse" id="collapse_f90303c37b">
+  <div class="card card-body">
+     <p> With ease! Simply subtract your second reference channel from the other channels. This can be done in <a href="http://openvibe.inria.fr/">OpenViBE</a> or a Python script. For more, please reach out to us at <a href="support@mentalab.com">support@mentalab.com</a> </p> 
+  </div>
+</div>
+<br><br>
+<h2 id="hardware">Hardware</h2>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_b433c3237e" aria-expanded="false">
+    What is the size of the internal storage and can I record offline?
+</button>
+
+<div class="collapse" id="collapse_b433c3237e">
+  <div class="card card-body">
+     The internal storage has 512MB. When recording with 8 channels, you can record for the following times:<br> ~13.7 hours at 250 Hz<br>~8.8 hours at 500 Hz<br>~3.98 hours at 1 kHz
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1c54701d49" aria-expanded="false">
+    What sampling rates does Explore offer?
+</button>
+
+<div class="collapse" id="collapse_1c54701d49">
+  <div class="card card-body">
+     ExG data is recorded at 250/500/1000 Hz (users' choice), but visualized at 125 Hz; orientation data is both recorded and visualized at 20 Hz.
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_0d112fdab1" aria-expanded="false">
+    What hardware filters are used in the Explore system?
+</button>
+
+<div class="collapse" id="collapse_0d112fdab1">
+  <div class="card card-body">
+     ADS applies a 3rd order sinc filter as an anti-aliasing filter. The cut-off frequencies depend on the sampling rate.
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_e960c74d35" aria-expanded="false">
+    The participant&#39;s head is not moving, but one line of the accelerometer at -1000 and not 0. Why is this?
+</button>
+
+<div class="collapse" id="collapse_e960c74d35">
+  <div class="card card-body">
+     <p> The accelerometer measures <a href="https://en.wikipedia.org/wiki/Gravitational_acceleration">gravitational acceleration</a> (<i>G</i>: ~9.8 m/s/s) and the device's relative acceleration. Most of the time, the acceleration of the device relative to <i>G</i> is tiny, which means one accelerometer line will be offset by <i>G</i>. Which of the three lines is offset depends on the orientation of the device.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_5a7678e0f4" aria-expanded="false">
+    How does the magnetometer work?
+</button>
+
+<div class="collapse" id="collapse_5a7678e0f4">
+  <div class="card card-body">
+     The magnetometer is a piezoelectric sensor. To be more explicit, Mentalab Explore has a built-in magnet which, like a compass, measures the external magnetic field applied to it. Earth's magnetic field creates a coordinate system that moves with the device (since the magnetometer is located in the device). We are interested in the orientation of this magnetic field so that we can build a fixed coordinate system. 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_9683a0a0ec" aria-expanded="false">
+    Is my Mentalab Explore device DC coupled?
+</button>
+
+<div class="collapse" id="collapse_9683a0a0ec">
+  <div class="card card-body">
+     Yes. The Mentalab Explore device is always DC-coupled. However, do note that its working range is ±400mV.  
+  </div>
+</div>
+<br><br>
+<h3 id="usage">Usage</h3>
+<br>
+
+
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_cd6e023ad3" aria-expanded="false">
-    What do all the LED colors mean on my Mentalab Explore device
+    What do all the LED colors mean on my Mentalab Explore device?
 </button>
 
 <div class="collapse" id="collapse_cd6e023ad3">
@@ -353,45 +501,6 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_b433c3237e" aria-expanded="false">
-    What is the size of the internal storage and can I record offline?
-</button>
-
-<div class="collapse" id="collapse_b433c3237e">
-  <div class="card card-body">
-     The internal storage has 512MB. When recording with 8 channels, you can record for the following times:<br> ~13.7 hours at 250 Hz<br>~8.8 hours at 500 Hz<br>~3.98 hours at 1 kHz
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_0d112fdab1" aria-expanded="false">
-    What hardware filters are used in the Explore system?
-</button>
-
-<div class="collapse" id="collapse_0d112fdab1">
-  <div class="card card-body">
-     ADS applies a 3rd order sinc filter as an anti-aliasing filter. The cut-off frequencies depend on the sampling rate.
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1c54701d49" aria-expanded="false">
-    What sampling rates does Explore offer?
-</button>
-
-<div class="collapse" id="collapse_1c54701d49">
-  <div class="card card-body">
-     ExG data is recorded at 250/500/1000 Hz (users' choice), but visualized at 125 Hz; orientation data is both recorded and visualized at 20 Hz.
-  </div>
-</div>
-<br>
-<br>
-
-
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_bdc803840f" aria-expanded="false">
     How long does it take to fully charge the battery?
 </button>
@@ -399,6 +508,32 @@
 <div class="collapse" id="collapse_bdc803840f">
   <div class="card card-body">
      A full charge takes about 2 hours depending on the charger and environmental conditions. 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_63729bdc47" aria-expanded="false">
+    If I leave my device plugged in and charging for weeks, will it damage the battery?
+</button>
+
+<div class="collapse" id="collapse_63729bdc47">
+  <div class="card card-body">
+     <p>If you leave your Explore device plugged in when it is fully charged, there will be some decline in its battery capacity. We recommend unplugging your device after each full charge, which normally takes 2 hours. If your battery has declined so much that it is unusable, please contact us at <a href="support@mentalab.com">support@mentalab.com</a> and we can repair or replace your device's battery.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_cf0ba4e96c" aria-expanded="false">
+    Is there a way to measure impedances?
+</button>
+
+<div class="collapse" id="collapse_cf0ba4e96c">
+  <div class="card card-body">
+     <p><a href="https://explorepy.readthedocs.io">explorepy </a>our free in-house software, offers a feature that will indicate impedance values for individual channels to verify good signal quality before you start recording.</p>
   </div>
 </div>
 <br><br>
@@ -455,7 +590,8 @@
      Some computer Bluetooth modules (e.g. Realtek 8821C) are known to have issues with the serial port profile (SPP). If you face connection issues, please use an external Bluetooth dongle (of "plug & play" type) instead.
   </div>
 </div>
-<br><br>
+<br>
+<br>
 
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_021f8ef150" aria-expanded="false">
@@ -520,8 +656,8 @@
      Mentalab Explore uses Bluetooth Classic 2.1 embedded SPP profile to maximize data throughput and provide higher sampling rates.
   </div>
 </div>
+<br><br>
 <h2 id="software">Software</h2>
-<br>
 <br>
 
 
@@ -532,58 +668,6 @@
 <div class="collapse" id="collapse_168bea5bcb">
   <div class="card card-body">
      <p>Please see the <a href="../integrations/"> Integrations</a> section for a complete list of analysis software that works with Mentalab Explore. As a general guideline, our open source API <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data directly to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a>, and we have integrations for Java, MATLAB, and C++. We are also fully integrated with <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. If you would like to build your own integration, we provide an open source SDK and our technical team is always happy to help.</p> 
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_4becbde678" aria-expanded="false">
-    How do I use explorepy’s command line input to communicate with the device?
-</button>
-
-<div class="collapse" id="collapse_4becbde678">
-  <div class="card card-body">
-     <p>You can find an overview as well as a detailed list of available command line inputs in our <a href="../user-guide/explorepy-commands/">explorepy Command Guide</a>. </p>
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_31557af402" aria-expanded="false">
-    Why is the visualization in explorepy not working properly?
-</button>
-
-<div class="collapse" id="collapse_31557af402">
-  <div class="card card-body">
-     <p>To use the <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> dashboard, use Chrome as your default browser and make sure that your computer meets the minimum requirements for real-time<code> explorepy </code>visualization. These are: Dual-core CPU with 2.5 GHz or faster and 1GB+ of available RAM (6GB recommended). </p>
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1c98b9e396" aria-expanded="false">
-    How is recorded data stored?
-</button>
-
-<div class="collapse" id="collapse_1c98b9e396">
-  <div class="card card-body">
-     <p>All data is stored in CSV or EDF format. Filters that are applied in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> only affect visualization. The recorded data files will always contain raw data. Files recorded with<code> explorepy </code>are saved in the current command line folder. By default this is <code>C:\Users\&#10094;USER_NAME&#10095;</code> on Windows; <code>/home/&#10094;USER_NAME&#10095;</code> on Ubuntu; and <code>/Users/&#10094;USER_NAME&#10095;</code> on Mac. You can record data in other formats using and other third-party software solutions that supports <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> (e.g. LabRecorder, OpenVibe etc.). </p>
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_cf0ba4e96c" aria-expanded="false">
-    Is there a way to measure impedances?
-</button>
-
-<div class="collapse" id="collapse_cf0ba4e96c">
-  <div class="card card-body">
-     <p><a href="https://explorepy.readthedocs.io">explorepy </a>our free in-house software, offers a feature that will indicate impedance values for individual channels to verify good signal quality before you start recording.</p>
   </div>
 </div>
 <br>
@@ -616,6 +700,73 @@
 <br>
 
 
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1c98b9e396" aria-expanded="false">
+    How is recorded data stored?
+</button>
+
+<div class="collapse" id="collapse_1c98b9e396">
+  <div class="card card-body">
+     <p>All data is stored in CSV or EDF format. Filters that are applied in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> only affect visualization. The recorded data files will always contain raw data. Files recorded with<code> explorepy </code>are saved in the current command line folder. By default this is <code>C:\Users\&#10094;USER_NAME&#10095;</code> on Windows; <code>/home/&#10094;USER_NAME&#10095;</code> on Ubuntu; and <code>/Users/&#10094;USER_NAME&#10095;</code> on Mac. You can record data in other formats using and other third-party software solutions that supports <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> (e.g. LabRecorder, OpenVibe etc.). </p>
+  </div>
+</div>
+<br><br>
+<h3 id="explorepy">Explorepy</h3>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_4becbde678" aria-expanded="false">
+    How do I use explorepy’s command line input to communicate with the device?
+</button>
+
+<div class="collapse" id="collapse_4becbde678">
+  <div class="card card-body">
+     <p>You can find an overview as well as a detailed list of available command line inputs in our <a href="../user-guide/explorepy-commands/">explorepy Command Guide</a>. </p>
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_31557af402" aria-expanded="false">
+    Why is the visualization in explorepy not working properly?
+</button>
+
+<div class="collapse" id="collapse_31557af402">
+  <div class="card card-body">
+     <p>To use the <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> dashboard, use Chrome as your default browser and make sure that your computer meets the minimum requirements for real-time<code> explorepy </code>visualization. These are: Dual-core CPU with 2.5 GHz or faster and 1GB+ of available RAM (6GB recommended). </p>
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_ab18d91890" aria-expanded="false">
+    What command line terminals are compatible with explorepy?
+</button>
+
+<div class="collapse" id="collapse_ab18d91890">
+  <div class="card card-body">
+     <p>You can use <code>explorepy</code> from most Python command terminals. However, we do recommend using <a href="https://www.anaconda.com/">Anaconda</a> to manage your virtual environment dependencies, and <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Anaconda prompt</a> to run custom Python scripts. If you use the executable installer, you can also operate <code>explorepy</code> from a Windows command prompt. </p><p>We have heard reports that some terminals do not run <code>explorepy</code> smoothly. These terminals include:<ul><li>Spyder Shell<li>Jupyter Notebook Shell</ul></p> 
+  </div>
+</div>
+<br><br>
+<h3 id="explore-desktop">Explore Desktop</h3>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f593ace6e4" aria-expanded="false">
+    What does the baseline correction checkbox do?
+</button>
+
+<div class="collapse" id="collapse_f593ace6e4">
+  <div class="card card-body">
+     It computes a moving average over time and subtracts this average from the signal. It helps keeping the signal around zero. 
+  </div>
+</div>
+<br>
+<br>
+
+
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_492d71f48d" aria-expanded="false">
     I&#39;m having trouble with Explore Desktop, what should I do?
 </button>
@@ -625,6 +776,7 @@
      <p>Have a look at the <a href="/explore-desktop-guide/troubleshooting">Troubleshooting section</a> of the Explore Desktop section of the wiki!</p>
   </div>
 </div>
+<br><br>
 <h2 id="contact">Contact</h2>
 <p>Can&rsquo;t find what you&rsquo;re looking for? Please don&rsquo;t hesitate to get in contact us directly at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 

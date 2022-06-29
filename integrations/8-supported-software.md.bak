@@ -1,0 +1,82 @@
+---
+title: "Supported Software"
+date: 2022-06-02T10:25:19+00:00
+weight: 8
+description: A guide on importing Mentalab Explore data into third-party EEG analysis software
+slug: supported-software
+---
+
+This list contains EEG analysis software that can import [Mentalab Explore](https://mentalab.com/mobile-eeg/) data.
+
+In general, many EEG analysis pipelines use [EDF file formats](https://www.edfplus.info/). To convert your Mentalab Explore data to EDF, please use the [`bin2edf`](https://explorepy.readthedocs.io/en/latest/usage.html#bin2edf) command available in our open source API `explorepy`. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.  
+
+For more information on `explorepy`, please consult the [`explorepy` documentation](https://explorepy.readthedocs.io/en/latest/).
+
+## Commercial software integrations
+<br>
+
+| &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| LabChart Lightning | <span style="display: inline-block; width:290px">[LabChart Lightning](https://www.adinstruments.com/products/labchart/lightning) is the latest iteration of a 34 year history of creating easy to use data acquisition and analysis software. The perfect software for ECG, EMG and EEG data acquisition and analysis, LabChart Lightning is a powerful tool for biosignal recording and both quantitative and qualitative data analysis. <br><br> See our [LabChart Lightning integration page](/integrations/lightning-installation) for more. </span> | <ul><li>Data management<li>Cross recording analysis<li>Unlimited channels<li>Overlaid signals<li>Custom calculations<li>Annotations<li>Start and stop recording</ul> | No | [Request quote](https://www.adinstruments.com/flag/flag/product_inquiry/16807?destination=node/16725&token=3d04c9460d714247c2633cb753616fca&has_js=1) |
+| encevis | <span style="display: inline-block; width:290px">[encevis](https://www.encevis.com/) is high-performance, medically-certified EEG analysis software, making EEG diagnostics more efficient. </span> | <ul><li>EEG viewer<li>Seizure detection<li>Spike detection<li>Artifact reduction<li>Source localization<li>EEG trending<li>Amplitude-integrated EEG<li>Burst suppression</ul> | No | [Free trial page](https://www.encevis.com/contact/contact-form/) |
+
+## LabStreaming Layer integrations
+<br>
+
+LabStreaming Layer (LSL) can be used to collect time series in research experiments. It handles networking and time-synchronization, and can be used to collect and view data. 
+
+
+`explorepy` can push data directly to LSL, where it will be time-synced with other data streams. Once time-synced, data can be forwarded to different visualization and analysis platforms. For more, see the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code></a> function in `explorepy`, or refer to the <a href="http://localhost:1313/pdfs/Explore_Desktop_User_Manual.pdf">Explore Desktop Guide</a> to use our user-friendly program.
+
+| &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| LabRecorder | <span style="display: inline-block; width:290px">[LabRecorder](https://github.com/labstreaminglayer/App-LabRecorder) is the default recording program for LSL. It allows you to record all data streams on the LSL network into a single, time-synchronized file. </span> | <ul><li>Data stream management<li>Robust network recovery system<li>Start and stop recording</ul> | Yes | [Installation guide](https://github.com/labstreaminglayer/App-LabRecorder#getting-labrecorder) |
+| NeuroPype | <span style="display: inline-block; width:290px">[NeuroPype](https://www.neuropype.io) is a powerful platform for real-time brain-computer interfacing, neuroimaging, and bio/neural signal processing. The NeuroPype Suite is a collection of applications that, in addition to NeuroPype, includes an open-source visual pipeline designer and tools for interfacing with diverse sensor hardware, recording data, and other functions. </span> | <ul><li>Noise removal<li>ERP and spectral analysis<li>Spatial and temporal filtering<li>3D brain mapping and connectivity<li>Statistics<li>Neural state classification<li>Cardiac signal analysis<li>Gaze detection<li>Pipeline designer<li>Real-time neurofeedback<li>Cloud ready<li>Developer-friendly</ul> | Partially | [Free trial page](https://www.neuropype.io/purchase) |
+| E-Prime | <span style="display: inline-block; width:290px">[E-Prime](https://pstnet.com/products/e-prime/) is the most comprehensive stimulus presentation software available. Over 100,000 users adopt E-Prime’s intuitive interface to design experiments. </span> | <ul><li>Drag and drop design<li>Pre-built experiment library<li>Millisecond precision<li>Unlimited data collection<li>Filter and analyze data<li>Scripting<li>Support team<li>Many hardware integrations</ul> | No | [Purchase page](https://psychology-software-tools.mybigcommerce.com/?_ga=2.14332919.1171143420.1655986328-2129246063.1655986328) |
+| OpenViBE | <span style="display: inline-block; width:290px"> [OpenViBE](http://openvibe.inria.fr/) is a software platform dedicated to designing, testing and using brain-computer interfaces. The software is designed for real-time neurosciences (that is, for real-time processing of brain signals). It can be used to acquire, filter, process, classify and visualize brain signals in real time. <br><br> See our [device syncing guide](/integrations/openvibe) for more.</span> | <ul><li>Supports many hardware solutions<li>User-friendly GUI<li>Signal processing<li>Offline analysis<li>Python processing<li>MATLAB processing<li>Scripting<li>BCI examples</ul> | Yes | [Download page](http://openvibe.inria.fr/downloads/) |
+	
+## MATLAB-based analysis tools
+<br>
+
+MATLAB is a computing platform that offers abundant features and open toolboxes for many specific applications.
+
+MATLAB is used by millions and has several EEG analysis solutions that work with Mentalab Explore. Some of these solutions can be downloaded as compiled programs that run without Matlab.
+
+| &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| EEGLAB | <span style="display: inline-block; width:290px">[EEGLab](https://sccn.ucsd.edu/eeglab/index.php) is an interactive MATLAB toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data incorporating many analysis tools, and several useful visualization modes of the averaged and single-trial data. <br><br> For more, see the [Mentalab Explore EEGLab Plugin page](/integrations/eeglab). </span> | <ul><li>Multiformat data importing<li>Interactive plotting functions<li>High-density data scrolling<li>Independent component analysis (ICA)<li>Time-frequency analysis<li>Artifact rejection<li>Event-related statistics<li>Semi-automated artifact removal<li>Event & channel location handling<li>Over 120 advanced plugins</ul> | Yes | [Download page](https://sccn.ucsd.edu/eeglab/download.php) |
+| ERPLAB | <span style="display: inline-block; width:290px">[ERPLab](https://erpinfo.org/erplab) is is a free, open-source MATLAB package for analyzing ERP data. It is tightly integrated with EEGLAB Toolbox, extending EEGLAB’s capabilities to provide robust, industrial-strength tools for ERP processing, visualization, and analysis. </span> | <ul><li>User-friendly GUI<li>Epoching<li>Artifact detection and rejection<li>Behavioral analyses<li>Computing averaged ERPs<li>Filtering & plotting<li>Topographic mapping<li>Data management<li>ERP measurement<li>Current source density<li>Data quality metrics</ul> | Yes | [Download page](https://github.com/lucklab/erplab/releases) |
+| Brainstorm | <span style="display: inline-block; width:290px"> [Brainstorm](https://neuroimage.usc.edu/brainstorm/) is a collaborative, open-source application dedicated to the analysis of brain recordings: MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology. </span> | <ul><li>Electrode mapping<li>Data import<li>Artifact detection<li>Artifact correction<li>Independent component analysis<li>Bad trial detection<li>Power spectrum density<li>Epoching and filtering<li>3D data mapping<li>Source localization<li>Machine learning<li>Functional connectivity</ul> | Yes | [Installation guide](https://neuroimage.usc.edu/brainstorm/Installation) |
+| Mass Univariate ERP Toolbox | <span style="display: inline-block; width:290px"> [Mass Univariate ERP Toolbox](https://openwetware.org/wiki/Mass_Univariate_ERP_Toolbox) is a freely available set of MATLAB functions for performing mass univariate analyses of event-related brain potentials. </span> | <ul><li>Mass univariate analyses</ul> | Yes | [Download page](https://uk.mathworks.com/matlabcentral/fileexchange/29274-dmgroppe-mass_univariate_erp_toolbox) |
+| FieldTrip | <span style="display: inline-block; width:290px"> [FieldTrip](https://www.fieldtriptoolbox.org/) is a MATLAB software toolbox for MEG, EEG and iEEG analysis. It is particuularly suited to the joint analysis of EEG data with other modalities (e.g., MEG). </span> | <ul><li>Preprocessing<li>Artifact rejection<li>ERP computation<li>Time-frequency analysis<li>Brain state calculation<li>3D mapping<li>Source reconstruction<li>Beamforming combined EEG/MEG<li>Dipole fitting EEG/MEG<li>Statistics</ul> | Yes | [Download page](https://www.fieldtriptoolbox.org/download.php) |
+| BCILAB  | <span style="display: inline-block; width:290px"> [BCILAB](https://www.nitrc.org/projects/bcilab/) is a MATLAB toolbox for Brain-Computer Interface (BCI) research. It facilitates the design and development of new methods for cognitive state estimation and their use in both offline data analysis and real-time applications. </span> | <ul><li>Signal processing<li>Feature extraction<li>Machine learning<li>BCI paradigms<li>Many online plugins<li>Plugin framework<li>GUI<li>Scripting<li>Standard, advanced & cross-validation analyses</ul> | Yes | [Download page](https://www.nitrc.org/frs/downloadlink.php/4957) |
+| BioSig  | <span style="display: inline-block; width:290px"> [BioSig](http://biosig.sourceforge.net/) is an open source software library for biomedical signal processing, featuring for example the analysis of biosignals such as the electroencephalogram (EEG), electrocorticogram (ECoG), etc. </span> | <ul><li>Preprocessing<li>Quality control<li>Artifact processing<li>Signal processing<li>Feature extraction<li>Event-related synchronization<li>Classification & statistics<li>Visualization<li>Time-series analysis<li>GUI<li></ul> | Yes | [Download page](http://biosig.sourceforge.net/download.html) |
+| Bioelectromagnetism Matlab Toolbox  | <span style="display: inline-block; width:290px"> [Bioelectromagnetism Matlab Toolbox](http://eeg.sourceforge.net/bioelectromagnetism.html) facilitates quick and easy import, visualisation and measurement for ERP data. It is not a signal processing toolbox. </span> | <ul><li>Visualize ERP data<li>Visualize 2D/3D electrode coordinates<li>3D mapping<li>GUI<li>Interactive ERP topographic mapping</ul> | Yes | [Installation guide](http://eeg.sourceforge.net/bioelectromagnetism.html#CVS) |
+
+## Python-based analysis tools
+<br>
+
+| &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| mne | <span style="display: inline-block; width:290px">[MNE-Python software](https://mne.tools/dev/) is an open-source Python  package for exploring, visualizing, and analyzing human neurophysiological data such as MEG, EEG, sEEG, ECoG, and more.</span> | <ul><li>Preprocessing <li>Visualization <li>Source estimation <li>Time-frequency analysis <li>Connectivity analysis <li>Machine learning <li>Statistics</ul> | Yes | [Installation guide](https://mne.tools/dev/install/index.html) |
+| pyEDFlib | <span style="display: inline-block; width:290px">[pyEDFlib](https://github.com/holgern/pyedflib) is a python library to read/write EDF+/BDF+ files based on EDFlib.</span> | <ul><li>Read-write EDF/BDF</ul> | Yes | [Installation guide](https://github.com/holgern/pyedflib#id3) |
+| PsychoPy | <span style="display: inline-block; width:290px"> [PsychoPy](https://www.psychopy.org/) is a free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics...). <br><br> See our [PsychoPy Builder integration page](/integrations/psychopy) for more.</span> | <ul><li>Flexible intuitive GUI<li>Millisecond precision<li>Online experiments<li>Neuroimaging and eye tracking</ul> | Yes | [Download page](https://www.psychopy.org/download.html) |
+| PyEEG | <span style="display: inline-block; width:290px"> [PyEEG](https://github.com/forrestbao/pyeeg) is a Python module with many functions for time series analysis, including brain physiological signals. It can work with any time series: biomedical or financial. </span> | <ul><li>Visualization<li>Preprocessing<li>Feature extraction<li>Feature export</ul> | Yes | [Installation guide](https://github.com/forrestbao/pyeeg#installation) |
+
+## Other integrations
+<br>
+
+Some EEG analysis platforms do not rely on MATLAB, nor LabStreaming Layer. They are independent programs.
+
+| &nbsp; Name | <span style="display: inline-block; width:290px"> &nbsp; Description </span> | <span style="display: inline-block; width:150px"> &nbsp; Features </span> | <span style="display: inline-block; width:80px"> &nbsp; FOSS[^1] </span> | &nbsp; Download |
+| ----------- | ----------- | ----------- | ----------- | ----------- |
+| Cartool | <span style="display: inline-block; width:290px">[Cartool](https://sites.google.com/site/cartoolcommunity/home) is an EEG analysis software developed at the Functional Brain Mapping Lab (FBMLab), in Geneva, Switzerland. Cartool has been entirely programmed by Denis Brunet in C++, and doesn't rely on any other dependency to run. </span> | <ul><li>Reading and visualizing data<li>Artifact rejection<li>Sampling<li>Interpolation<li>Statistics<li>Inverse solutions<li>Fitting / Back projection<li>Segmentation</ul> | Partially | [Download page](https://sites.google.com/site/cartoolcommunity/files) |
+
+<br>
+
+[^1]: Stands for [free and open-source software](https://en.wikipedia.org/wiki/Free_and_open-source_software). Basically you can use this software today and pay nothing!
+<br>
+
+For more information or support, do not hesitate to get in contact at: <support@mentalab.com>
+<br>
+<br>

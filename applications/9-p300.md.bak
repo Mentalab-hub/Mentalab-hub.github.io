@@ -1,5 +1,5 @@
 ---
-title: "P300 Oddball Experiment"
+title: "P300 Experiment"
 date: 2022-01-26T10:25:19+00:00
 weight: 9
 description: How to elicit a P300 signal response using Mentalab Explore
@@ -10,6 +10,11 @@ P300 signals are brain signals that occur in response to a visual stimulus. They
 
 Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available [here](https://github.com/Mentalab-hub/explorepy/tree/master/examples/p300_demo). You can run it as is or use it to build your own P300 based applications.
 
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/ncVuE96Chck" title="SSVEP Experiment" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<br>
 In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval. The red oval is the so-called "oddball". The participant must press `space` whenever the red stimulus appears.
 
 <figure style="text-align:center;">

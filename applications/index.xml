@@ -59,7 +59,7 @@ Although it provides comprehensive information about electrical processes inside
       <guid>https://wiki.mentalab.com/applications/p300/</guid>
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
 Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.
-In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
+In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     
   </channel>
