@@ -24,9 +24,6 @@ slug: faqs
 <br>
 <br>
 {{< collapse title="Can one channel act as a reference for a subset of other channels?" >}} <p>Yes, <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> can perform custom calculations like this live. This cannot be done in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.</p> {{< /collapse >}}
-<br>
-<br>
-{{< collapse title="My computer doesn't have Bluetooth. How can I connect to my device?" >}} <p> Bluetooth dongles are inexpensive devices that plug into your computer and provide it with a Bluetooth connection. Most dongles work fine, however, we recommend <a href="https://www.amazon.com/TP-Link-Bluetooth-Receiver-Controllers-UB400/dp/B07V1SZCY6">this one</a> as it tends to work without issue. </p> {{< /collapse >}}
 <br><br>
 
 ### Science
@@ -91,7 +88,8 @@ slug: faqs
 <br>
 <br>
 {{< collapse title="Why can't my computer connect to my Explore device?" >}} Some computer Bluetooth modules (e.g. Realtek 8821C) are known to have issues with the serial port profile (SPP). If you face connection issues, please use an external Bluetooth dongle (of "plug & play" type) instead.{{< /collapse >}}
-<br><br>
+<br>
+<br>
 {{< collapse title="Why does the internal memory of Explore not appear on my computer?" >}} Please check whether your device has an in-built flash memory. To do this, look at your device's Bluetooth ID. This can be found on the sticker at the back of the device. The Bluetooth ID should have a code that contains a 1 in the 6th digit: xxxxx1/CCCC. <br> Check that you are using a USB cable that can transmit data. Use the cable provided by Mentalab and try different USB ports on your machine. The memory should appear as an external drive. Should the problem persist, please contact us at <a href="mailto:support@mentalab.com">support@mentalab.com </a>{{< /collapse >}}
 <br><br>
 
