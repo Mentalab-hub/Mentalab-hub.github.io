@@ -8,6 +8,16 @@
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Supported Software</title>
+      <link>https://wiki.mentalab.com/integrations/supported-software/</link>
+      <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
+      <description>This list contains EEG analysis software that can import Mentalab Explore data.
+In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
+    </item>
+    
+    <item>
       <title>EEG Pre-Experiment Checklist</title>
       <link>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
@@ -214,16 +224,6 @@ Here, we show you how to use Mentalab Explore with SSVEP-based classification ta
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
 Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
-    </item>
-    
-    <item>
-      <title>Supported Software</title>
-      <link>https://wiki.mentalab.com/integrations/supported-software/</link>
-      <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      
-      <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
-      <description>This list contains EEG analysis software that can import Mentalab Explore data.
-In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
     </item>
     
     <item>
