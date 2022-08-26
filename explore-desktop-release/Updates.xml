@@ -12,14 +12,14 @@
   <Script>installscript.qs</Script>
   <ForcedInstallation>true</ForcedInstallation>
   <RequiresAdminRights>true</RequiresAdminRights>
-  <UpdateFile CompressedSize="65158187" UncompressedSize="279646357" OS="Any"/>
+  <UpdateFile OS="Any" UncompressedSize="279646357" CompressedSize="65154765"/>
   <DownloadableArchives>ExploreDesktop.7z,content.7z</DownloadableArchives>
   <Licenses>
-   <License file="license.txt" name="ExploreDesktop License"/>
-   <License file="license3party.txt" name="Third Party Code Licenses"/>
+   <License name="ExploreDesktop License" file="license.txt"/>
+   <License name="Third Party Code Licenses" file="license3party.txt"/>
   </Licenses>
-  <SHA1>3c9d21935979be8aad94af38f6f07b744e4e09c4</SHA1>
+  <SHA1>b9f6c8f44242ee02f946360ef13142a33b33670c</SHA1>
  </PackageUpdate>
- <SHA1>3c9d21935979be8aad94af38f6f07b744e4e09c4</SHA1>
- <MetadataName>2022-08-26-1524_meta.7z</MetadataName>
+ <SHA1>b9f6c8f44242ee02f946360ef13142a33b33670c</SHA1>
+ <MetadataName>2022-08-26-1551_meta.7z</MetadataName>
 </Updates>
