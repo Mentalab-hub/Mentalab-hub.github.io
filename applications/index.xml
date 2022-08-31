@@ -26,8 +26,8 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
       <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
 Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
-Set-up Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
-Explore Channel Cap Location OpenViBE Channel Ch1 F3 1 Ch2 C3 2 Ch3 Forehead (mid) 3 Ch4 C4 4 Ch7 Right eye (beside outer canthus) 5 Ch8 F4 6 Disable unnecessary channels using explorepy set-channels command:</description>
+Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
+    Explore Channel  Cap Location  OpenViBE Channel     Ch1 F3 1   Ch2 C3 2   Ch3 Forehead (mid) 3   Ch4 C4 4   Ch7 Right eye (beside outer canthus) 5   Ch8 F4 6       Disable unnecessary channels using explorepy set-channels command:</description>
     </item>
     
     <item>
@@ -47,9 +47,8 @@ Here, we show you how to use Mentalab Explore with SSVEP-based classification ta
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
-      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).
-Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.
-Summary of 12-lead ECG drawbacks:</description>
+      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).
+Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</description>
     </item>
     
     <item>
@@ -60,7 +59,7 @@ Summary of 12-lead ECG drawbacks:</description>
       <guid>https://wiki.mentalab.com/applications/p300/</guid>
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
 Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.
-In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
+In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     
   </channel>
