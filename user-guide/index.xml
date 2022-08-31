@@ -14,7 +14,7 @@
       
       <guid>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</guid>
       <description>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.
-1. Install software  Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances.</description>
+1. Install software Install the software appropriate for your needs. An overview of our open-source APIs can be found on the software page of our website or in our GitHub Repo. Regardless which software you use to record with, you will need explorepy to verify impedances. To download explorepy, please consult our explorepy Installation Guide, or download our Windows installer.</description>
     </item>
     
     <item>
@@ -25,7 +25,7 @@
       <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
       <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
 Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
-Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+Brush electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     
     <item>
@@ -35,7 +35,7 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
       
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the device communicates with the user via the LED diode.
-    LED Light  Blinking Pattern  Description Example     Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.    Blue Blinks twice a second Bluetooth visible and advertising.</description>
+LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at device start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks twice a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
     </item>
     
     <item>
@@ -45,8 +45,9 @@ Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend
       
       <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
       <description>The Mentalab Explore device was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the device using the button.
-    Action  State  Effect     Single click Device off Device will turn on   Double click Memory full (LED blinking pink) Delete flash memory.
-Return to advertising mode.   Double click Device in startup Skip advertising.</description>
+Action State Effect Single click Device off Device will turn on Double click Memory full (LED blinking pink) Delete flash memory.
+Return to advertising mode. Double click Device in startup Skip advertising.
+Go to offline mode. Double click Device in offline mode Start advertising mode.</description>
     </item>
     
     <item>
@@ -56,7 +57,7 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
       
       <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
       <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
-    Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
+Cap Size Head Circumference XS 36-42 cm S/XS 39-45 cm S 42-48 cm M 48-54 cm L 54-60 cm XL 60-66 cm Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
     </item>
     
     <item>
@@ -67,7 +68,7 @@ Return to advertising mode.   Double click Device in startup Skip advertising.</
       <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
 General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
-Gel electrodes  Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
+Gel electrodes Apply conductive gel through the openings at the back of the electrodes with a blunt syringe.</description>
     </item>
     
     <item>
@@ -77,7 +78,7 @@ Gel electrodes  Apply conductive gel through the openings at the back of the ele
       
       <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
       <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore device. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
-    Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
+Action Command Line Input Data acquisition explorepy acquire -n Explore_XXXX Record data explorepy record-data -n Explore_XXXX Push data to lsl explorepy push2lsl -n Explore_XXXX Convert a binary file to csv explorepy bin2csv -f input_file.</description>
     </item>
     
     <item>
@@ -99,7 +100,7 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
       <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
       <description>Intended use Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
 Product certification The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
- 2014/30/EU 2014/53/EU 2015/863/EU  Preventing misuse  Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
+2014/30/EU 2014/53/EU 2015/863/EU Preventing misuse Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.</description>
     </item>
     
     <item>
@@ -109,7 +110,7 @@ Product certification The Mentalab Explore device is in accordance with the requ
       
       <guid>https://wiki.mentalab.com/user-guide/technical-specifications/</guid>
       <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.
-    Specification  Value     No. channels 4, 8   Sampling rates 250 (default), 500, 1000 Hz   Dimensions 41 x 42 x 17 mm   Battery life Up to 8 hr online, 12 hr offline   Differential input range ± 400 mV   Input impedance 1 GΩ   Resolution 24 bit   Output interface USB 2.</description>
+Specification Value No. channels 4, 8 Sampling rates 250 (default), 500, 1000 Hz Dimensions 41 x 42 x 17 mm Battery life Up to 8 hr online, 12 hr offline Differential input range ± 400 mV Input impedance 1 GΩ Resolution 24 bit Output interface USB 2.0 Sensors Gyro-, Accelero- and Magnetometer: 20 Hz Device Temperature, Battery: 1 Hz Flash memory 512 MB Bluetooth range 10 m Input-referred noise1 1 uV at 250 sps 1.</description>
     </item>
     
   </channel>
