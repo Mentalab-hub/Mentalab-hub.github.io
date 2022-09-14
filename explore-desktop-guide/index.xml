@@ -13,10 +13,9 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
-      <description>Installation Download the Explore Desktop installer. Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
-Double click on the installer to launch and follow the on-screen instructions.
-Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).
-Starting Explore Desktop Once Explore Desktop is installed, locate it on your Launchpad, Start Menu, or Application Menu.</description>
+      <description>Installation  Download the Explore Desktop installer.   Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
+  Double click on the installer to launch and follow the on-screen instructions.
+  Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).</description>
     </item>
     
     <item>
@@ -26,8 +25,8 @@ Starting Explore Desktop Once Explore Desktop is installed, locate it on your La
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
       <description>To get up and running quickly, why not check out our quick tutorial video.
-Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
-Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.</description>
+Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
+ Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.</description>
     </item>
     
     <item>
@@ -38,8 +37,8 @@ Scan and connect to a Mentalab Explore device. There are two ways to connect to 
       <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
       <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.
 You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.
-Use the settings at the top of Visualization page to configure your visualization. Settings include:
-Signal – EEG or ECG mode. EEG provides the spectral analysis plot of the signal. ECG mode detects heartbeats and calculates heart rate from the RR-intervals.</description>
+ Use the settings at the top of Visualization page to configure your visualization. Settings include:
+ Signal – EEG or ECG mode.  EEG provides the spectral analysis plot of the signal. ECG mode detects heartbeats and calculates heart rate from the RR-intervals.</description>
     </item>
     
     <item>
@@ -48,10 +47,10 @@ Signal – EEG or ECG mode. EEG provides the spectral analysis plot of the signa
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/record/</guid>
-      <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
+      <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
 A pop-up will allow you to configure your recording.
 Settings include:
-File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events EDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
+ File format – select the output file type (EDF or CSV):  CSV mode generates an extra file for the marker events EDF mode records data in BDF+ format (in 24-bit resolution)   Folder and name prefix – select where to store files and the file prefix.</description>
     </item>
     
     <item>
@@ -62,7 +61,7 @@ File format – select the output file type (EDF or CSV): CSV mode generates an 
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
       <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
 Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
-&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen&lt; 10&lt; 20Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black&gt; 50&gt; 70GrayInactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
+&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen  Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black  50  70GrayInactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
     </item>
     
     <item>
@@ -83,7 +82,7 @@ Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB,
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
       <description>Unstable Bluetooth connection Possible causes are:
-An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
+ An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range.  No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
     </item>
     
   </channel>
