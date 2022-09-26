@@ -56,7 +56,7 @@ Install software Download explorepy Download Anaconda. Open the Anaconda prompt 
       
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
       <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
-Ensure that you have downloaded the latest version of EEGLab here. To get up and running quickly, here is a quick tutorial video.
+Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
 Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
 Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>

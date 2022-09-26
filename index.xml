@@ -69,7 +69,7 @@ Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;
       <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
       <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
 Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
-Brush electrodes Dry brush electrodes. For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+Brush electrodes Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     
     <item>
@@ -160,7 +160,7 @@ Go to offline mode. Double click Device in offline mode Start advertising mode.<
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
       <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
 Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
-&amp;nbsp; Color Range (kΩ) Wet electrodes Dry electrodes Green &lt; 10 &lt; 20 Yellow 10 – 20 20 – 35 Orange 20 – 30 35 – 50 Red 30 – 50 50 – 70 Black &gt; 50 &gt; 70 Gray Inactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
+&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen&lt; 10&lt; 20Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black&gt; 50&gt; 70GrayInactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
     </item>
     
     <item>
@@ -190,7 +190,7 @@ Cap Size Head Circumference XS 36-42 cm S/XS 39-45 cm S 42-48 cm M 48-54 cm L 54
       
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
       <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
-Ensure that you have downloaded the latest version of EEGLab here. To get up and running quickly, here is a quick tutorial video.
+Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
 Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
 Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
