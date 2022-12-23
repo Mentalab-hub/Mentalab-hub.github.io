@@ -36,7 +36,7 @@ In general, many EEG analysis pipelines use EDF file formats. To convert your Me
       <description>Installation Download the Explore Desktop installer. Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
 Double click on the installer to launch and follow the on-screen instructions.
 Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).
-Starting Explore Desktop Once Explore Desktop is installed, locate it on your Launchpad, Start Menu, or Application Menu.</description>
+On Windows, we recommend using ExploreDesktop with the 100% scale.</description>
     </item>
     
     <item>
@@ -103,7 +103,7 @@ Meanwhile, hardware triggers are much more precise but involve connecting a wire
       <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.
 You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.
 Use the settings at the top of Visualization page to configure your visualization. Settings include:
-Signal – EEG or ECG mode. EEG provides the spectral analysis plot of the signal. ECG mode detects heartbeats and calculates heart rate from the RR-intervals.</description>
+Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis.</description>
     </item>
     
     <item>
@@ -201,9 +201,19 @@ Install via Extension Manager Once you have installed EEGLab, following these in
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       
       <guid>https://wiki.mentalab.com/explore-desktop-guide/lsl/</guid>
-      <description>You can push data to LSL by navigating to the Integration page and selecting ‘Push’. To stop streaming to LSL, select ‘Stop’. If your device loses connection, Explore Desktop will try to reconnect automatically.
+      <description>You can push data to LSL by navigating to the Visualization page and clicking on the ‘LSL’ button. To stop streaming to LSL, click again on ‘LSL’. If your device loses connection, Explore Desktop will try to reconnect automatically.
 When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.
-Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++. See the Integrations section for more.</description>
+Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++.</description>
+    </item>
+    
+    <item>
+      <title>Other</title>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/other/</link>
+      <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/other/</guid>
+      <description>Export EEGLAB dataset .edf and .bdf files can be exported to .set files compatible with Matlab&amp;rsquo;s EEGLab plugin. In the Menu Bar select &amp;lsquo;File&amp;rsquo; &amp;gt; &amp;lsquo;Export&amp;rsquo; &amp;gt; &amp;lsquo;EEGLab Dataset&amp;rsquo;. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called &amp;lsquo;datasets&amp;rsquo; placed in the selected directory.
+Convert BIN You can convert the binary files into CSV or EDF files.</description>
     </item>
     
     <item>
