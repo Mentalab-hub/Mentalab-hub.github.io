@@ -253,6 +253,7 @@
       <ul>
         <li><a href="#export-eeglab-dataset">Export EEGLAB dataset</a></li>
         <li><a href="#convert-bin">Convert BIN</a></li>
+        <li><a href="#data-repair">Data repair</a></li>
       </ul>
     </li>
   </ul>
@@ -276,6 +277,9 @@ In the Menu Bar select &lsquo;File&rsquo; &gt; &lsquo;Convert BIN&rsquo;. This w
     If you change your device’s sampling rate or channel mask during recording, the conversion will create a new CSV/EDF file for ExG data with the given file name plus the time the setting changed.
 </div>
 
+<h3 id="data-repair">Data repair</h3>
+<p>If some packets are dropped during recording, the binary file can be used to repair the recorded csv file. For this purpose, both the recorded csv and the .BIN file must be located at the same folder.</p>
+<p>In the Menu Bar select &lsquo;Tools&rsquo; &gt; &lsquo;Data Repair&rsquo;. A pop-up will open to select the file to repair. The repaired file will be stored in the same folder containing the file selected, adding _recovered_ExG to the original name.</p>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 

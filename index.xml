@@ -80,7 +80,7 @@ Brush electrodes Dry brush electrodes.For areas covered in hair, we recommend u
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
       <description>To get up and running quickly, why not check out our quick tutorial video.
 Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
-Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or write the name of your device in the input line.</description>
+Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown.</description>
     </item>
     
     <item>
@@ -137,7 +137,7 @@ Explore Channel Cap Location OpenViBE Channel Ch1 F3 1 Ch2 C3 2 Ch3 Forehead (mi
       <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
 A pop-up will allow you to configure your recording.
 Settings include:
-File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events EDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
+File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events BDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
     </item>
     
     <item>
