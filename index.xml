@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Mentalab Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 02 Jun 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supported Software</title>
       <link>https://wiki.mentalab.com/integrations/supported-software/</link>
@@ -286,6 +286,16 @@ Electrodes Clean electrodes with warm water and a soft material such as cotton o
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
 Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.
 In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
+    </item>
+    
+    <item>
+      <title>Sleep Recording Protocol</title>
+      <link>https://wiki.mentalab.com/applications/sleep-recording-protocl/</link>
+      <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/applications/sleep-recording-protocl/</guid>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.
+Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.Setting up your Mentalab system  Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
     
     <item>

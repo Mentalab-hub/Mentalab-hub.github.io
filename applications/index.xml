@@ -62,5 +62,15 @@ Here, we show you how to use Mentalab Explore and an oddball experiment to elici
 In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     
+    <item>
+      <title>Sleep Recording Protocol</title>
+      <link>https://wiki.mentalab.com/applications/sleep-recording-protocl/</link>
+      <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
+      
+      <guid>https://wiki.mentalab.com/applications/sleep-recording-protocl/</guid>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.
+Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.Setting up your Mentalab system  Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+    </item>
+    
   </channel>
 </rss>

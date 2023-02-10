@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html><head>
-	<meta name="generator" content="Hugo 0.92.0" />
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://wiki.mentalab.com/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://wiki.mentalab.com/">
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/sleep-recording-protocl/">
 
     <title>
         
-        Welcome | Mentalab Wiki
+        Sleep Recording Protocol | Mentalab Wiki
         
     </title>
 
@@ -151,7 +149,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -180,7 +178,7 @@
                     P300 Experiment
                 </a>
         </li>
-        <li data-nav-id="/applications/sleep-recording-protocl/" class="nav-item my-1">
+        <li data-nav-id="/applications/sleep-recording-protocl/" class="nav-item my-1 active">
                 
                  <a href="/applications/sleep-recording-protocl/" class="nav-link p-0">
                     Sleep Recording Protocol
@@ -255,19 +253,60 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#setting-up-your-mentalab-system">Setting up your Mentalab system</a></li>
+    <li><a href="#exporting-your-data">Exporting your data</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
-	
 
-	<h1>Welcome</h1>
+<h1>Sleep Recording Protocol</h1>
 
-	<p>Here is everything you need to use your Mentalab <a href="https://mentalab.com?page_id=625">Explore device</a>. Whether you are just getting started, or looking to integrate our software or hardware with third-party applications, you&rsquo;ll find everything you need here.</p>
-<p>Feel free to look around using the navigation bar on the left. If you have any queries, do not hesitate to get in contact with us at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<p>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.</p>
 
-	
+<div class="alert alert-info" role="alert">
+    Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.
+</div>
+
+<h2 id="setting-up-your-mentalab-system">Setting up your Mentalab system</h2>
+<ol>
+<li>Fully charge your amplifier then disconnect it from the USB port.</li>
+<li>Set up your participant&rsquo;s cap and electrodes.</li>
+<li>Open <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> and connect your amplifier to your computer via Bluetooth.</li>
+<li>Check your system&rsquo;s impedances using Explore Desktop. If you need to improve your impedances, please consult: our guide on <a href="https://wiki.mentalab.com/user-guide/improving-impedances/">improving impedances</a>, our <a href="https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/">pre-experiment checklist</a>, and our <a href="https://wiki.mentalab.com/user-guide/dry-electrode-guide/">dry electrode guide</a>.</li>
+<li>End Explore Desktop&rsquo;s impedance mode and go to the <a href="https://wiki.mentalab.com/explore-desktop-guide/usage/#configuration">Configuration page</a>. Name your channels and apply the changes.</li>
+<li>Format your memory, and disconnect from Bluetooth. Your device should be blinking green. This indicates that it is recording in offline mode.</li>
+<li>Go to sleep! (And try to avoid moving the electrodes.)</li>
+</ol>
+<h2 id="exporting-your-data">Exporting your data</h2>
+<ol>
+<li>Ensure that your amplifier is turned off (no blinking of any kind).</li>
+</ol>
+
+<div class="alert alert-danger" role="alert">
+    Connecting your amplifier to a USB port while it is still recording will corrupt the data. Always make sure your device is powered off before connecting it via USB to another system.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    If your amplifier is still recording (offline), it will blink green intermittently. Hold the amplifier&rsquo;s button to power off (you will see three red blinks followed by no blinks at all).
+</div>
+
+<ol start="2">
+<li>Disconnect the electrodes from your amplifier.</li>
+<li>Connect your amplifier to a computer using the provided USB cable.</li>
+<li>Export the largest <code>BIN</code> file you can see on the internal memory.</li>
+<li>Convert the <code>BIN</code> file to an appropriate file type using Explore Desktop&rsquo;s File menu (top left corner).</li>
+<li>Finally, charge your amplifier and clean your cap and electrodes thoroughly. For more on cleaning, see our <a href="https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/">cleaning guide</a>.</li>
+</ol>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+
+
+    
 
 
                 </div>
