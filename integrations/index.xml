@@ -24,7 +24,7 @@ In general, many EEG analysis pipelines use EDF file formats. To convert your Me
       
       <guid>https://wiki.mentalab.com/integrations/lightning-installation/</guid>
       <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.
-Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
+ Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
     </item>
     
     <item>
@@ -34,9 +34,9 @@ Install LabChart Lightning. Start the program and enter your license key. Then c
       
       <guid>https://wiki.mentalab.com/integrations/openvibe/</guid>
       <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
-Start two Python consoles and activate a virtual environment for explorepy in both.
-Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
-Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
+  Start two Python consoles and activate a virtual environment for explorepy in both.
+  Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
+  Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
     </item>
     
     <item>
@@ -46,7 +46,7 @@ Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;
       
       <guid>https://wiki.mentalab.com/integrations/psychopy/</guid>
       <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
-Install software Download explorepy Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files. Edit explorepy Comment out line 215. Open the explorepy-1.6.0\src\explorepy\stream_processor.py script using a text editor (e.</description>
+Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.6 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
     </item>
     
     <item>
@@ -56,9 +56,9 @@ Install software Download explorepy Download Anaconda. Open the Anaconda prompt 
       
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
       <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
-Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
-Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
-Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
+Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
+Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
+Install via Extension Manager  Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
     
   </channel>
