@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://wiki.mentalab.com/quick-links/index.xml" title="Mentalab Wiki" />
-    <link rel="canonical" href="https://wiki.mentalab.com/quick-links/">
+    <link rel="alternate" type="application/rss+xml" href="https://wiki.mentalab.com/event-triggers/index.xml" title="Mentalab Wiki" />
+    <link rel="canonical" href="https://wiki.mentalab.com/event-triggers/">
 
     <title>
         
-        Quick Links | Mentalab Wiki
+        Event Triggers | Mentalab Wiki
         
     </title>
 
@@ -47,7 +47,7 @@
 
      <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
          <ul class="navbar-nav flex-column pt-3">
-    <li data-nav-id="/quick-links/" class="nav-item my-1 active
+    <li data-nav-id="/quick-links/" class="nav-item my-1
         ">
         
         <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
@@ -150,7 +150,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/event-triggers/" class="nav-item my-1
+    <li data-nav-id="/event-triggers/" class="nav-item my-1 active
         ">
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
@@ -259,25 +259,36 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#software-generated-markers">Software generated markers</a></li>
+    <li><a href="#hardware-generated-markers">Hardware generated markers</a></li>
+    <li><a href="#ttl-triggers">TTL triggers</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Quick Links</h1>
+<h1>Event Triggers</h1>
 
-<p>Here are links to our key resources:</p>
+<p>Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.</p>
+<h2 id="software-generated-markers">Software generated markers</h2>
 <ul>
-<li><a href="/pdfs/Mentalab_Explore_Quick_Start_Guide.pdf">Mentalab Explore Quick Start Guide</a></li>
-<li><a href="/pdfs/Explore_Desktop_User_Manual.pdf">Explore Desktop User Manual</a></li>
-<li><a href="/pdfs/Mentalab_Explore_Product_Sheet.pdf">Mentalab Explore Product Sheet</a> <br><br></li>
-<li><a href="https://github.com/Mentalab-hub">Mentalab GitHub Repo</a></li>
-<li><a href="https://github.com/Mentalab-hub/explorepy/releases/latest"><code>explorepy</code> Windows installer</a></li>
-<li><a href="https://explorepy.readthedocs.io/en/latest/"><code>explorepy</code> documentation</a></li>
-<li><a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">YouTube Tutorial Playlist</a> <br><br></li>
-<li><a href="https://wiki.mentalab.com/user-guide/led-light-guide/" title="User Guide/LED Light Guide">LED Light Guide</a></li>
-<li><a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a></li>
+<li>From dashboard(s)- range 0-65535: saved in CSV file with “sw_” prefix and marker code.</li>
+<li>String markers from any external software via LSL: saved in CSV file with “ext_” prefix and the string marker.</li>
+</ul>
+<h2 id="hardware-generated-markers">Hardware generated markers</h2>
+<ul>
+<li>Records an instant trigger on hardware button press.</li>
+<li>Saved with “pb_0” in CSV file.</li>
+</ul>
+<h2 id="ttl-triggers">TTL triggers</h2>
+<ul>
+<li>Required components: Trigger isolator, USB to TTL pulse generator.</li>
+<li>Trigger details: active high with 10uS pulse.</li>
+<li>Saved with “in_0” in CSV file.</li>
 </ul>
 <p>For more information or queries, please contact <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
