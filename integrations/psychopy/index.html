@@ -288,7 +288,7 @@
 <h3 id="download-explorepy">Download explorepy</h3>
 <ol>
 <li>Download <a href="https://www.anaconda.com/products/individual#download-section">Anaconda</a>.</li>
-<li>Open the Anaconda prompt and create a virtual environment: <code>conda create -n psychopyenv python=3.6</code></li>
+<li>Open the Anaconda prompt and create a virtual environment: <code>conda create -n psychopyenv python=3.8</code></li>
 <li>Activate the virtual environment: <code>conda activate psychopyenv</code></li>
 <li>Download <code><a href="https://github.com/Mentalab-hub/explorepy/archive/refs/tags/v1.6.0.zip">explorepy</a></code>, and extract the files.</li>
 </ol>
@@ -298,16 +298,16 @@
 <figcaption> Comment out line 215. </figcaption>
 </figure>
 <ol start="5">
-<li>Open the <code>explorepy-1.6.0\src\explorepy\stream_processor.py</code> script using a text editor (e.g. right-click → open with → Notepad).</li>
+<li>Open the <code>explorepy-1.8.0\src\explorepy\stream_processor.py</code> script using a text editor (e.g. right-click → open with → Notepad).</li>
 <li>Comment out line 215: <code>logger.info(f&quot;Setting a marker with code: {code}&quot;)</code>. (To do this add a <code>#</code> at the beginning of this line.)</li>
 <li>Save your changes, the code should look like the figure.</li>
-<li>Navigate to the <code>explorepy-1.6.0</code> directory in your terminal: <code>cd &lt;PATH-TO-EXPLOREPY&gt;</code></li>
+<li>Navigate to the <code>explorepy-1.8.0</code> directory in your terminal: <code>cd &lt;PATH-TO-EXPLOREPY&gt;</code></li>
 <li>Install <code>explorepy</code>: <code>pip install .</code></li>
 </ol>
 <h3 id="download-psychopy">Download PsychoPy</h3>
 <ol start="10">
 <li>Download the <a href="https://github.com/psychopy/psychopy/releases/download/2021.2.3/PsychoPy-2021.2.3.zip">PsychoPy source code</a> and extract the files.</li>
-<li>Navigate to the extracted folder (i.e. PsychoPy-2021.2.3) in your terminal: <code>cd &lt;PATH-TO-PSYCHOPY&gt;</code></li>
+<li>Navigate to the extracted folder (i.e. PsychoPy-2023.1.0) in your terminal: <code>cd &lt;PATH-TO-PSYCHOPY&gt;</code></li>
 <li>Install PsychoPy: <code>pip install .</code></li>
 <li>Run PsychoPy: <code>python psychopy\app\psychopyApp.py</code></li>
 </ol>
@@ -330,9 +330,9 @@
 <pre tabindex="0"><code>from explorepy import Explore
 
 explore = Explore()
-explore.connect(device_name='Explore_XXXX')
+explore.connect(device_name=&#39;Explore_XXXX&#39;)
 explore.push2lsl()
-explore.record_data(file_name='recorded_trial_02', file_type='csv', do_overwrite=False)
+explore.record_data(file_name=&#39;recorded_trial_02&#39;, file_type=&#39;csv&#39;, do_overwrite=False)
 </code></pre><p>
 <div class="alert alert-danger" role="alert">
     If you have multiple code components in your experiment, this initialization script should be only in one of them.
@@ -351,13 +351,13 @@ Line 6: remember to set the filename; the file type can be <code>csv</code> or <
 </figure>
 <p>To set an event marker in your recorded data, use the <code>set_marker</code> method. For instance, if there is a loop and the beginning of each iteration should be marked, call <code>set_marker</code> in the &ldquo;Begin Routine&rdquo; section of your <strong>Code</strong> component.</p>
 <p>If instead you would like to mark multiple event types, you can assign specific codes to each type of marker using the following pattern:</p>
-<pre tabindex="0"><code>if cond == 'left':
+<pre tabindex="0"><code>if cond == &#39;left&#39;:
     explore.set_marker(10)
-elif cond == 'right':
+elif cond == &#39;right&#39;:
     explore.set_marker(11)
-elif cond == 'up':
+elif cond == &#39;up&#39;:
     explore.set_marker(12)
-elif cond == 'down':
+elif cond == &#39;down&#39;:
     explore.set_marker(13)
 </code></pre><h3 id="example">Example</h3>
 <p><a href="/files/Mentalab-psychopy-experiment-example.zip">Here</a>, you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time.</p>
