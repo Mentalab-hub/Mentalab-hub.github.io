@@ -150,6 +150,11 @@
         </li>
         </ul>
     </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
+    </li>
     <li data-nav-id="/event-triggers/" class="nav-item my-1 active
         ">
         
@@ -278,7 +283,7 @@
 <h2 id="button-press-hardware">Button press (Hardware)</h2>
 <p>You can create an event marker in your ExG recording by pressing your Explore device’s button. Button press markers have numbered codes between 0 and 7. The event marker whose code is 7 will be followed by an event marker whose code is 0. For more information, see the <a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a>.</p>
 <h2 id="ttl-pulse-hardware">TTL pulse (Hardware)</h2>
-<p>You can use TTL pulses to generate event markers. These event markers can synchronize ExG data without any significant delay. To do this, you will need three pieces of hardware:</p>
+<p>You can use TTL pulses to generate event markers with around 200 microseconds latency. These event markers can synchronize ExG data without any significant delay. To do this, you will need three pieces of hardware:</p>
 <ul>
 <li>A USB to TTL pulse generator, called the <b>Mentalab trigger stick</b><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
 <li>A trigger isolator: a specialized piece of hardware that prevents sudden noise.</li>
@@ -287,7 +292,12 @@
 <p>The trigger stick connects to the USB port of your host machine. The isolator connects to Explore’s USB-C port.</p>
 
 <div class="alert alert-info" role="alert">
-    Contact the Mentalab team to purchase a set-up.
+    We will also release 8 bit trigger solution very soon. Contact the Mentalab team to purchase a set-up.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    Triggerstick is active low, this means it triggers the amplifier when the pulse goes from high to low.
 </div>
 
 <p>Once configured, you can use any serial library, such as Python’s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your Explore device.</p>
