@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/explore-desktop-guide/usage/">
+    <link rel="canonical" href="https://wiki.mentalab.com/user-guide/operating-instructions/">
 
     <title>
         
-        Usage | Mentalab Wiki
+        Operating Instructions | Mentalab Wiki
         
     </title>
 
@@ -51,12 +51,12 @@
         
         <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
     </li>
-    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1 active">
                 
                  <a href="/user-guide/operating-instructions/" class="nav-link p-0">
                     Operating Instructions
@@ -201,7 +201,7 @@
         
         <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
-    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
@@ -212,7 +212,7 @@
                     Getting Started
                 </a>
         </li>
-        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1 active">
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
                 
                  <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
                     Usage
@@ -265,18 +265,12 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#connect">Connect</a></li>
-    <li><a href="#configuration">Configuration</a>
-      <ul>
-        <li><a href="#active-channels">Active channels</a></li>
-        <li><a href="#channels-names">Channels' names</a></li>
-        <li><a href="#sampling-rate">Sampling rate</a></li>
-        <li><a href="#export-settings">Export settings</a></li>
-        <li><a href="#import-settings">Import settings</a></li>
-        <li><a href="#format-memory">Format memory</a></li>
-        <li><a href="#reset-settings">Reset settings</a></li>
-      </ul>
-    </li>
+    <li><a href="#operating-modes">Operating modes</a></li>
+    <li><a href="#pre-experiment-checklist">Pre-experiment checklist</a></li>
+    <li><a href="#1-install-software">1. Install software</a></li>
+    <li><a href="#2-set-up-equipment">2. Set-up equipment</a></li>
+    <li><a href="#3-place-the-ref-electrode">3. Place the REF electrode</a></li>
+    <li><a href="#4-check-impedances">4. Check impedances</a></li>
   </ul>
 </nav>
 </div>
@@ -284,73 +278,69 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Usage</h1>
+<h1>Operating Instructions</h1>
 
-<p>To get up and running quickly, why not check out our quick tutorial video.</p>
-<div class="video-container">
-<iframe src="https://www.youtube-nocookie.com/embed/MY-52cSTXAY" title="Explore Desktop Tutorial" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<h2 id="connect">Connect</h2>
-<p>Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.</p>
-<figure style="float:right;">
-<img class="mobile" src="/img/Desktop/connectclose.png" alt="Connect option of Explore Desktop" width="350"/>
-<figcaption> Scan and connect to a Mentalab Explore device. </figcaption>
-</figure>
-<p>There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown. If it is the first time connecting to your device, you can write write its name in the dropdown&rsquo;s input line.</p>
-<p>In either case, ensure that your device is in advertising mode. In Explore Desktop, the device will display under: Explore_XXXX.</p>
-<p>Click Scan and wait for nearby devices to list.</p>
-<p>Once you have selected a device from the list, or written your device name in the input line, click Connect.</p>
-<p>The connection process can take a few seconds. Once your device is connected, the status bar will change.</p>
-
-<div class="alert alert-danger" role="alert">
-    On Windows, all paired devices will be listed when scanning.
-</div>
-
-<p>If your device is not found, you will receive an error.</p>
-<h2 id="configuration">Configuration</h2>
-<p>Once your Mentalab Explore device is connected, the Settings page will become accessible. This page will display the name of your connected device and set of configuration options for that device.</p>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/settingspage.PNG" alt="The Explore Desktop Settings page" width="90%"/>
-<figcaption> Use the Settings page to configure your Mentalab Explore device. </figcaption>
-</figure>
-<h3 id="active-channels">Active channels</h3>
-<p>To enable and disable ExG channels on your Mentalab Explore device, select and deselect the channel’s associated checkbox under the <em>Enable</em> column and click ‘Apply changes’.</p>
-<p>Only active channels, i.e. those whose checkbox is selected, will display in the Visualization and Impedance Measurement pages.</p>
-<h3 id="channels-names">Channels' names</h3>
-<p>To change the name of a channel, change the name under the column <em>Name</em> and click &lsquo;Apply changes&rsquo;.</p>
-<p>This name will be used in the Visualization and Impedance Measurement pages, as well as in the recorded files.</p>
-<h3 id="sampling-rate">Sampling rate</h3>
-<p>To set the sampling rate of your Mentalab Explore device, select either 250, 500, or 1000 from the sampling rate drop-down menu. Sampling rates are measured in Hertz. Click ‘Apply changes’ to confirm.</p>
-<p>
-<div class="alert alert-danger" role="alert">
-    Please note that our 1000 Hz sampling rate is in beta phase.
-</div>
-
-
-<div class="alert alert-info" role="alert">
-    Channel masks and sampling rate cannot be changed while recording or streaming to LSL.
-</div>
-
-
-<div class="alert alert-info" role="alert">
-    You can change the sampling rate and active channels of your device simultaneously.
-</div>
-</p>
-<h3 id="export-settings">Export settings</h3>
-<p>In the Menu Bar, click on &lsquo;File&rsquo; &gt; &lsquo;Export&rsquo; &gt; &lsquo;Device Settings&rsquo;. Select the name and location where to save the settings file and click on &lsquo;Save&rsquo;.</p>
-<p>Device settings will be saved using the .yaml format</p>
-<h3 id="import-settings">Import settings</h3>
-<p>In the Menu Bar, click on &lsquo;File&rsquo; &gt; &lsquo;Import&rsquo; &gt; &lsquo;Device Settings&rsquo;. Select the file to import and click on &lsquo;Open&rsquo;. The settings from the selected file will be imported and applied. Alternatively, the settings from the latest session can also be imported by clicking on &lsquo;File&rsquo; &gt; &lsquo;Import&rsquo; &gt; &lsquo;Last Session Settings&rsquo;.</p>
-<h3 id="format-memory">Format memory</h3>
-<p>To format the memory of your Mentalab Explore device, select ‘Format MEM’. A confirmation pop-up will appear.</p>
-<p>Please note that after confirming you want to format the memory of your device, all binary files stored on that device will be deleted and cannot be recovered.</p>
-<h3 id="reset-settings">Reset settings</h3>
-<p>To reset the settings of your Mentalab Explore device, select ‘Reset settings’. The device will disconnect, and all settings will return to their default values:</p>
+<h2 id="operating-modes">Operating modes</h2>
 <ul>
-<li>250 Hz sampling rate</li>
-<li>All channels active</li>
+<li>Mentalab Explore+ has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.</li>
+<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with explorepy and exploreAndroid. In online mode, the Explore+ amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
+<li>We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery. After charging, unplug your amplifier from the power source.</li>
 </ul>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="pre-experiment-checklist">Pre-experiment checklist</h2>
+<p>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore+ system.</p>
+<h2 id="1-install-software">1. Install software</h2>
+<ol>
+<li>Install the software appropriate for your needs. An overview of our open-source APIs can be found on the <a href="https://mentalab.com/?page_id=935">software page</a> of our website or in our <a href="https://github.com/Mentalab-hub">GitHub Repo</a>.</li>
+<li>To verify impedances, you will need <code>explorepy</code> or <code>explore-android</code>. To download <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a>, or download our <a href="https://github.com/Mentalab-hub/explorepy/releases/latest">Windows installer</a>. To download <code>explore-android</code>, please consult the <a href="https://github.com/Mentalab-hub/explore-android"><code>explore-android</code> GitHub repository</a>. Alternatively, use our user-friendly application: <a href="https://wiki.mentalab.com/explore-desktop-guide/" title="Explore Desktop Guide">Explore Desktop</a>.</li>
+</ol>
+<h2 id="2-set-up-equipment">2. Set-up equipment</h2>
+<ol>
+<li>Place the measurement electrodes on your subject in your preferred configuration. Each channel (1 – 8; 1 – 16; 1 – 32) is recorded against the reference electrode. For convenience, channel names are marked with tags.</li>
+<li>Push the button to turn on your Explore+ system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining).</li>
+<li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore+ will keep recording data to internal memory.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    If you press the amplifier’s button once during recording, a marker, with timestamp, will be sent to the host machine and written to internal memory. This can be used for labeling certain events, for example the beginning and end of recording periods.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    To turn off the amplifier, keep the button pressed until the LED turns red. The amplifier will shut down with three red blinks.
+</div>
+
+<h2 id="3-place-the-ref-electrode">3. Place the REF electrode</h2>
+<ol>
+<li>Position: For most EEG applications, we recommend placing the REF on the mastoid (TP9 or TP10). This will minimize artifacts from non-relevant brain activity, EMG, and ECG activity.</li>
+<li>Application: Clean the mastoid with alcohol and abrasive gel. Either tuck the REF electrode under the EEG cap behind the ear (you can use tape here), or use the TP9 or TP10 positions in the EEG cap.
+<ul>
+<li>Gel electrodes: Apply a generous amount of conductive gel onto the REF electrode.</li>
+<li>Dry electrodes: Apply some disinfectant onto the electrode. If you have trouble lowering overall impedances, you can apply a little conductive gel or paste to the REF electrode.</li>
+</ul>
+</li>
+</ol>
+<h2 id="4-check-impedances">4. Check impedances</h2>
+<ol>
+<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. For detailed information on the impedance measurement, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, and see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.
+<br><br> 
+
+<div class="alert alert-info" role="alert">
+    It is normal for dry electrodes to show high impedance values.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15kΩ per channel, aim for about 30kΩ (REF + half channel).
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    If you are having trouble identifying which channel you are testing, move a single electrode. This will allow you to identify the signal.
+</div>
+</li>
+<li>If you need to improve your impedances, please have a read of our <a href="https://wiki.mentalab.com/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</li>
+</ol>
+<p>You are now ready to start recording EEG data. For information on how to visualize and record data using <code>explorepy</code> see our <a href="https://explorepy.readthedocs.io/en/latest/">documentation</a> and <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">videos</a>.</p>
 
 
     
