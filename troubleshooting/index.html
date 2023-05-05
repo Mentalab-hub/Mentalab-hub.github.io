@@ -266,11 +266,7 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li></li>
-      </ul>
-    </li>
+    <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 </div>
@@ -280,32 +276,71 @@
 
 <h1>Troubleshooting</h1>
 
-<h5 id="1-can-not-connect-to-explore-device-in-windows">1. Can not connect to Explore device in Windows</h5>
-<p>Problem description:</p>
-<ul>
-<li>Device blinks blue at 2Hz</li>
-<li>Connection is successful in first attempt</li>
-<li>Connection is successful when the device is removed from windows bluetooth menu</li>
-</ul>
-<p>Start with removing the device from bluetooth menu once again.</p>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_e960c74d35" aria-expanded="false">
+    My participant&#39;s head is not moving, but one line of the accelerometer at -1000 and not 0. Why is this?
+</button>
+
+<div class="collapse" id="collapse_e960c74d35">
+  <div class="card card-body">
+     <p> The accelerometer measures <a href="https://en.wikipedia.org/wiki/Gravitational_acceleration">gravitational acceleration</a> (<i>G</i>: ~9.8 m/s/s) and the device's relative acceleration. Most of the time, the acceleration of the device relative to <i>G</i> is tiny, which means one accelerometer line will be offset by <i>G</i>. Which of the three lines is offset depends on the orientation of the device.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_4fd38e97c5" aria-expanded="false">
+    My device won&#39;t turn on - it just flashes and turns off! What should I do?
+</button>
+
+<div class="collapse" id="collapse_4fd38e97c5">
+  <div class="card card-body">
+     <p>The internal memory of your Explore device is full. The Explore device will refuse to record any more data while its memory is full. To solve this, either transfer the data from your Explore device to a computer, or double click your Explore device. Double-clicking the button will delete the internal memory of your Explore device and allow you to start recording. See our <a href="/user-guide/led-light-guide">Light Guide</a> and <a href="/user-guide/button-guide">Button Guide</a> for more.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_e8b4fb483a" aria-expanded="false">
+    My computer doesn&#39;t have Bluetooth. How can I connect to my Explore device?
+</button>
+
+<div class="collapse" id="collapse_e8b4fb483a">
+  <div class="card card-body">
+     <p>You can add Bluetooth capability to your computer using an inexpensive Bluetooth dongle that plugs into the computer's USB port. We provide a Bluetooth dongle with every shipment. However, if you would like to purchase one independently, we recommend <a href="https://www.amazon.com/TP-Link-Bluetooth-Receiver-Controllers-UB400/dp/B07V1SZCY6">this one</a>.</p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_0a4e8d697f" aria-expanded="false">
+    My Explore device is blinking blue, but I can&#39;t connect it to my Windows system. What should I do?
+</button>
+
+<div class="collapse" id="collapse_0a4e8d697f">
+  <div class="card card-body">
+     <p>Sometimes an Explore device won't connect to a Windows system without the user disconnecting and reconnecting it. Doing this everytime you want to use your Explore device is of course highly irritating. As such, we provide users with a Bluetooth dongle to circumvent this problem. To use the dongle, first remove your Explore device from the Windows Bluetooth menu.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Troubleshooting/remove_bt_device.png" alt="Remove bt device" width="90%"/>
-<figcaption> Remove bluetooth device </figcaption>
+<img class="mobile" src="/img/Troubleshooting/remove_bt_device.png" alt="Screenshot of someone removing their Explore device from the Windows Bluetooth menu." width="90%"/>
+<figcaption>Remove your device from the windows Bluetooth menu.</figcaption>
 </figure>
-<p>Once the device is removed, you can try the following:</p>
-<ol>
-<li>Go to Device Manager from Windows menu(you can also search &ldquo;Device Manager&rdquo; from windows search menu).</li>
-<li>Go to Bluetooth section and right-click on the entry corresponding to your bluetooth chip.</li>
-<li>Select disable device.</li>
-</ol>
+<p>Now, go to your <a href="https://support.microsoft.com/en-us/windows/open-device-manager-a7f2db46-faaf-24f0-8b7b-9e4a6032fc8c">Device Manager</a>, navigate to the Bluetooth section, and right click on your Bluetooth drive. Select: <b>Disable device</b>.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Troubleshooting/disable.png" alt="Disable default bluetooth adapter" width="90%"/>
-<figcaption> Remove bluetooth device. Hardware name/model will vary for different laptops </figcaption>
+<img class="mobile" src="/img/Troubleshooting/disable.png" alt="Screenshot of someone disabling the default Bluetooth driver from their Windows system." width="90%"/>
+<figcaption>Disable your Bluetooth drive. The name of this drive will vary according to your system configuration.</figcaption>
 </figure>
-<p>Your in-built bluetooth should now be disabled. You can quickly verify this by trying to turn bluetooth on from bluetooth menu. A successful disable should remove on/off option.</p>
-<p>Now you can simply plug in the bluetooth dongle shipped with your Mentalab device.</p>
-<h5 id="2-my-computer-doesnt-have-bluetooth-how-can-i-connect-the-explore-device">2. My computer doesn&rsquo;t have Bluetooth. How can I connect the Explore device?</h5>
-<p>You can add Bluetooth capability to your computer using an inexpensive Bluetooth dongle that plugs into the computer&rsquo;s USB port. We recommend <a href="https://www.amazon.com/TP-Link-Bluetooth-Receiver-Controllers-UB400/dp/B07V1SZCY6">this one</a>.</p>
+<p>Your in-built Bluetooth drive should now be disabled. The on/off option in the Bluetooth menu should now be disabled.</p><p>Plug in your Bluetooth dongle and connect your Explore device via the Bluetooth dongle.</p>
+  </div>
+</div>
+<br><br>
+<h2 id="contact">Contact</h2>
+<p>Can&rsquo;t find what you&rsquo;re looking for? Please don&rsquo;t hesitate to get in contact us directly at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
