@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/explore-desktop-guide/record/">
+    <link rel="canonical" href="https://wiki.mentalab.com/user-guide/operating-instructions/">
 
     <title>
         
-        Recording | Mentalab Wiki
+        Operating Instructions | Mentalab Wiki
         
     </title>
 
@@ -51,12 +51,12 @@
         
         <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
     </li>
-    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1 active">
                 
                  <a href="/user-guide/operating-instructions/" class="nav-link p-0">
                     Operating Instructions
@@ -201,7 +201,7 @@
         
         <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
-    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
@@ -224,7 +224,7 @@
                     Visualization
                 </a>
         </li>
-        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1 active">
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
                 
                  <a href="/explore-desktop-guide/record/" class="nav-link p-0">
                     Recording
@@ -265,7 +265,12 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#event-markers">Event markers</a></li>
+    <li><a href="#operating-modes">Operating modes</a></li>
+    <li><a href="#pre-experiment-checklist">Pre-experiment checklist</a></li>
+    <li><a href="#1-install-software">1. Install software</a></li>
+    <li><a href="#2-set-up-equipment">2. Set-up equipment</a></li>
+    <li><a href="#3-place-the-ref-electrode">3. Place the REF electrode</a></li>
+    <li><a href="#4-check-impedances">4. Check impedances</a></li>
   </ul>
 </nav>
 </div>
@@ -273,44 +278,69 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Recording</h1>
+<h1>Operating Instructions</h1>
 
-<figure style="float:right;">
-<img class="mobile" src="/img/Desktop/recorddialog.PNG" alt="The recording settings of Explore Desktop" width="350"/>
-<figcaption> Configure your recording using the pop-up. </figcaption>
-</figure>
-<p>Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.</p>
-<p>A pop-up will allow you to configure your recording.</p>
-<p>Settings include:</p>
+<h2 id="operating-modes">Operating modes</h2>
 <ul>
-<li>File format – select the output file type (EDF or CSV):
+<li>Mentalab Explore+ has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.</li>
+<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with <code>explorepy</code> and <code>exploreAndroid</code>. In online mode, the Explore+ amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
+<li>We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery. After charging, unplug your amplifier from the power source.</li>
+</ul>
+<h2 id="pre-experiment-checklist">Pre-experiment checklist</h2>
+<p>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore+ system.</p>
+<h2 id="1-install-software">1. Install software</h2>
+<ol>
+<li>Install the software appropriate for your needs. An overview of our open-source APIs can be found on the <a href="https://mentalab.com/?page_id=935">software page</a> of our website or in our <a href="https://github.com/Mentalab-hub">GitHub Repo</a>.</li>
+<li>To verify impedances, you will need <code>explorepy</code> or <code>explore-android</code>. To download <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a>, or download our <a href="https://github.com/Mentalab-hub/explorepy/releases/latest">Windows installer</a>. To download <code>explore-android</code>, please consult the <a href="https://github.com/Mentalab-hub/explore-android"><code>explore-android</code> GitHub repository</a>. Alternatively, use our user-friendly application: <a href="https://wiki.mentalab.com/explore-desktop-guide/" title="Explore Desktop Guide">Explore Desktop</a>.</li>
+</ol>
+<h2 id="2-set-up-equipment">2. Set-up equipment</h2>
+<ol>
+<li>Place the measurement electrodes on your subject in your preferred configuration. Each channel (1 – 8; 1 – 16; 1 – 32) is recorded against the reference electrode. For convenience, channel names are marked with tags.</li>
+<li>Push the button to turn on your Explore+ system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining).</li>
+<li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore+ will keep recording data to internal memory.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    If you press the amplifier’s button once during recording, a marker, with timestamp, will be sent to the host machine and written to internal memory. This can be used for labeling certain events, for example the beginning and end of recording periods.
+</div>
+
+
+<div class="alert alert-info" role="alert">
+    To turn off the amplifier, keep the button pressed until the LED turns red. The amplifier will shut down with three red blinks.
+</div>
+
+<h2 id="3-place-the-ref-electrode">3. Place the REF electrode</h2>
+<ol>
+<li>Position: For most EEG applications, we recommend placing the REF on the mastoid (TP9 or TP10). This will minimize artifacts from non-relevant brain activity, EMG, and ECG activity.</li>
+<li>Application: Clean the mastoid with alcohol and abrasive gel. Either tuck the REF electrode under the EEG cap behind the ear (you can use tape here), or use the TP9 or TP10 positions in the EEG cap.
 <ul>
-<li>CSV mode generates an extra file for the marker events</li>
-<li>BDF mode records data in BDF+ format (in 24-bit resolution)</li>
+<li>Gel electrodes: Apply a generous amount of conductive gel onto the REF electrode.</li>
+<li>Dry electrodes: Apply some disinfectant onto the electrode. If you have trouble lowering overall impedances, you can apply a little conductive gel or paste to the REF electrode.</li>
 </ul>
 </li>
-<li>Folder and name prefix – select where to store files and the file prefix.	For example, if the prefix is ‘test’, data will record in 	three separate files: ‘test_ExG.csv’, ‘test_ORN.csv’, and ‘test_Marker.csv’. These files will contain ExG data, orientation data, and event markers.</li>
-<li>Recording time (in seconds) – set the duration of the recording. You can stop recording at any time by clicking ‘Stop’.- Filters.</li>
-</ul>
+</ol>
+<h2 id="4-check-impedances">4. Check impedances</h2>
+<ol>
+<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. For detailed information on the impedance measurement, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, and see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.
+<br><br>
 
 <div class="alert alert-info" role="alert">
-    Because environmental factors, like temperature, can affect your sampling rate, we recommend computing the sampling rate of your recorded data. If you find a deviation between the sampling rate you calculate and Explore Desktop’s sampling rate, resample your signal to correct for drifts. The timestamps in the CSV/EDF file can be used to compute the resampling factor.
+    It is normal for dry electrodes to show high impedance values.
 </div>
 
 
 <div class="alert alert-info" role="alert">
-    If you are setting markers in your recording, record to CSV. Alternatively, push data to LSL and record with LabRecorder. EDF cannot guarantee precise marker timings.
+    Impedance values are the sum of the impedances on the REF electrode and each individual channel.  E.g. If your goal impedance is 15kΩ per channel, aim for about 30kΩ (REF + half channel).
 </div>
 
 
-<div class="alert alert-danger" role="alert">
-    If the Bluetooth connection is unstable, data may not arrive in order. Timestamps are saved by the Mentalab Explore device and can be used to sort recorded samples.
+<div class="alert alert-info" role="alert">
+    If you are having trouble identifying which channel you are testing, move a single electrode. This will allow you to identify the signal.
 </div>
-
-<h2 id="event-markers">Event markers</h2>
-<p>One method to generate a marker event is to press the button on your Mentalab Explore device. Alternatively, you can set event markers using the ‘Set’ button.</p>
-<p>Marker events display as vertical dashed lines in the Visualize page. A corresponding event code will display.</p>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+</li>
+<li>If you need to improve your impedances, please have a read of our <a href="https://wiki.mentalab.com/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</li>
+</ol>
+<p>You are now ready to start recording EEG data. For information on how to visualize and record data using <code>explorepy</code> see our <a href="https://explorepy.readthedocs.io/en/latest/">documentation</a> and <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">videos</a>.</p>
 
 
     

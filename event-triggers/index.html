@@ -57,10 +57,10 @@
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/user-guide/eeg-pre-experiment-checklist/" class="nav-item my-1">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
                 
-                 <a href="/user-guide/eeg-pre-experiment-checklist/" class="nav-link p-0">
-                    EEG Pre-Experiment Checklist
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
                 </a>
         </li>
         <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
@@ -113,48 +113,6 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
-        ">
-        
-        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
-        <ul class="list-unstyled ml-2">
-        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
-                
-                 <a href="/integrations/supported-software/" class="nav-link p-0">
-                    Supported Software
-                </a>
-        </li>
-        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
-                
-                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
-                    LabChart Lightning
-                </a>
-        </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
-                
-                 <a href="/integrations/openvibe/" class="nav-link p-0">
-                    Device Syncing With LSL
-                </a>
-        </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
-                
-                 <a href="/integrations/psychopy/" class="nav-link p-0">
-                    PsychoPy Builder
-                </a>
-        </li>
-        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
-                
-                 <a href="/integrations/eeglab/" class="nav-link p-0">
-                    EEGLab
-                </a>
-        </li>
-        </ul>
-    </li>
-    <li data-nav-id="/troubleshooting/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
-    </li>
     <li data-nav-id="/event-triggers/" class="nav-item my-1 active
         ">
         
@@ -196,6 +154,53 @@
                 </a>
         </li>
         </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
+                
+                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
+                    LabChart Lightning
+                </a>
+        </li>
+        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
+                
+                 <a href="/integrations/openvibe/" class="nav-link p-0">
+                    Device Syncing With LSL
+                </a>
+        </li>
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/psychopy/" class="nav-link p-0">
+                    PsychoPy Builder
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLab
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -252,11 +257,6 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/faqs/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
-    </li>
         </ul>
     </div>
 </nav>
@@ -278,10 +278,10 @@
 
 <h1>Event Triggers</h1>
 
-<p>Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.</p>
+<p>Here is a quick reference section on integrating Mentalab Explore+ hardware with third-party solutions.</p>
 <p>Event markers allow you to timestamp important points in your ExG signal. There are three kinds of event markers. The first two are hardware-generated. The third is software-generated.</p>
 <h2 id="button-press-hardware">Button press (Hardware)</h2>
-<p>You can create an event marker in your ExG recording by pressing your Explore device’s button. Button press markers have numbered codes between 0 and 7. The event marker whose code is 7 will be followed by an event marker whose code is 0. For more information, see the <a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a>.</p>
+<p>You can create an event marker in your ExG recording by pressing your Explore+ amplifier’s button. Button press markers have numbered codes between 0 and 7. The event marker whose code is 7 will be followed by an event marker whose code is 0. For more information, see the <a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a>.</p>
 <h2 id="ttl-pulse-hardware">TTL pulse (Hardware)</h2>
 <p>You can use TTL pulses to generate event markers. These markers have a latency of around 200 microseconds. To do this, you will need three pieces of hardware:</p>
 <ul>
@@ -297,11 +297,11 @@
 
 
 <div class="alert alert-info" role="alert">
-    Triggerstick is active low, this means it triggers the amplifier when the pulse goes from high to low.
+    The Mentalab trigger stick is active low, this means it triggers the amplifier when the pulse goes from high to low.
 </div>
 
-<p>Once configured, you can use any serial library, such as Python’s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your Explore device.</p>
-<p>TTL pulses are recorded in your device’s marker file with code <code>in_0</code>. These markers will behave the same as push button markers.</p>
+<p>Once configured, you can use any serial library, such as Python’s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your Explore+ amplifier.</p>
+<p>TTL pulses are recorded in your amplifier’s marker file with code <code>in_0</code>. These markers will behave the same as push button markers.</p>
 <h2 id="software-marker">Software marker</h2>
 <p>You can generate event markers using Mentalab software (Explore Desktop and the APIs), or using external software, like LSL, OpenViBE, and <code>psychopy</code>.</p>
 <p>Explore Desktop, <code>explorepy</code>, and <code>exploreAndroid</code> generate markers with numbered codes between 0 and 65535. These markers are recorded in the marker file with <code>sw_</code> prefixed to the numbered marker code.</p>

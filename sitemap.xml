@@ -8,17 +8,20 @@
     <loc>https://wiki.mentalab.com/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/eeg-pre-experiment-checklist/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/lightning-installation/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/user-guide/operating-instructions/</loc>
+    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/user-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/event-triggers/</loc>
+    <lastmod>2023-02-28T13:00:19+01:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/openvibe/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
@@ -29,7 +32,7 @@
     <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/</loc>
+    <loc>https://wiki.mentalab.com/applications/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/photodiode-event-trigger/</loc>
@@ -44,22 +47,16 @@
     <loc>https://wiki.mentalab.com/applications/power-bands/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/integrations/</loc>
+    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/record/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/user-guide/button-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/troubleshooting/</loc>
-    <lastmod>2023-03-24T19:00:19+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/event-triggers/</loc>
-    <lastmod>2023-02-28T13:00:19+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/</loc>
+    <loc>https://wiki.mentalab.com/faqs/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/impedance/</loc>
@@ -71,11 +68,11 @@
     <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/troubleshooting/</loc>
+    <lastmod>2023-03-24T19:00:19+01:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/integrations/eeglab/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/faqs/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/lsl/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
@@ -90,6 +87,9 @@
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
+    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/explore-desktop-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</loc>
