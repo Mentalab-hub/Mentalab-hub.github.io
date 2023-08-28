@@ -2,8 +2,8 @@
  <ApplicationName>{AnyApplication}</ApplicationName>
  <ApplicationVersion>1.0.0</ApplicationVersion>
  <Checksum>true</Checksum>
- <SHA1>718d59ed617f9bba112075ceab28c2d1103af625</SHA1>
- <MetadataName>2023-08-28-1308_meta.7z</MetadataName>
+ <SHA1>225a23d8b54c9fad66012c767eaa2d0a7ad5d70d</SHA1>
+ <MetadataName>2023-08-28-1348_meta.7z</MetadataName>
  <PackageUpdate>
   <Name>com.Mentalab.ExploreDesktop</Name>
   <DisplayName>ExploreDesktop</DisplayName>
@@ -14,12 +14,12 @@
   <Script>installscript.qs</Script>
   <ForcedInstallation>true</ForcedInstallation>
   <RequiresAdminRights>true</RequiresAdminRights>
-  <UpdateFile CompressedSize="79354623" OS="Any" UncompressedSize="329263914"/>
+  <UpdateFile UncompressedSize="329263901" OS="Any" CompressedSize="79381658"/>
   <DownloadableArchives>ExploreDesktop.7z,content.7z</DownloadableArchives>
   <Licenses>
-   <License file="license.txt" name="ExploreDesktop License"/>
-   <License file="license3party.txt" name="Third Party Code Licenses"/>
+   <License name="ExploreDesktop License" file="license.txt"/>
+   <License name="Third Party Code Licenses" file="license3party.txt"/>
   </Licenses>
-  <SHA1>1e3269ea2a1586ab90d587c8cf2d1224c8e7624a</SHA1>
+  <SHA1>6f04abcdf6dd5ccd0d1cb077f107abcf557a19fc</SHA1>
  </PackageUpdate>
 </Updates>
