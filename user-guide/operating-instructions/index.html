@@ -300,6 +300,11 @@
 <li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore+ will keep recording data to internal memory.</li>
 </ol>
 
+<div class="alert alert-danger" role="alert">
+    Remember to remove all other Bluetooth devices from your Windows menu if you are using Windows OS. Disconnecting is not enough, they must be completely removed. Corded accessories, like mouse and keyboard, even if they have a Bluetooth adaptor, are fine.
+</div>
+
+
 <div class="alert alert-info" role="alert">
     If you press the amplifier’s button once during recording, a marker, with timestamp, will be sent to the host machine and written to internal memory. This can be used for labeling certain events, for example the beginning and end of recording periods.
 </div>
@@ -321,9 +326,18 @@
 </ol>
 <h2 id="4-check-impedances">4. Check impedances</h2>
 <ol>
-<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. For detailed information on the impedance measurement, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, and see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.
-<br><br> 
+<li>Before anything, if you are using the Explore Desktop application, ensure that you first view the signal using the signal pane before moving to the impedance measurement.</li>
+</ol>
 
+<div class="alert alert-danger" role="alert">
+    <p>Unlike your raw ExG data, impedance measurements are fully online and so are prone to Bluetooth errors. Bluetooth uses the same frequency band as WiFi and ISM (Industrial Scientific and Medical). Additionally, old electronic devices can radiate disturbing frequencies.</p>
+<p>If there is too much noise, your impedance measurements will be wrong. Aim to reduce noisy signals.</p>
+</div>
+
+<ol start="2">
+<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. For detailed information on the impedance measurement, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, and see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.</li>
+</ol>
+<p>
 <div class="alert alert-info" role="alert">
     It is normal for dry electrodes to show high impedance values.
 </div>
@@ -337,9 +351,13 @@
 <div class="alert alert-info" role="alert">
     If you are having trouble identifying which channel you are testing, move a single electrode. This will allow you to identify the signal.
 </div>
-</li>
-<li>If you need to improve your impedances, please have a read of our <a href="https://wiki.mentalab.com/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</li>
-</ol>
+
+3. If you need to improve your impedances, please have a read of our <a href="https://wiki.mentalab.com/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</p>
+
+<div class="alert alert-info" role="alert">
+    On the lower left corner of the Explore Desktop application, black text will indicate if the connection is stable during your impedance measurement. If not, consider the impedance measurement incorrect.
+</div>
+
 <p>You are now ready to start recording EEG data. For information on how to visualize and record data using <code>explorepy</code> see our <a href="https://explorepy.readthedocs.io/en/latest/">documentation</a> and <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">videos</a>.</p>
 
 
