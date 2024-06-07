@@ -325,7 +325,7 @@ from psychopy import visual
 isi = .5
 
 win = visual.Window(size=(600, 800), fullscr=True, screen=1, color=[1, 1, 1])
-stim = visual.Rect(win, size=(.5, .5), fillColor='black', pos=(-.75, -.75))
+stim = visual.Rect(win, size=(.5, .5), fillColor=&#39;black&#39;, pos=(-.75, -.75))
 
 time.sleep(1)
 delays = []
@@ -356,11 +356,11 @@ from explorepy import Explore
 isi = .5
 
 explore = Explore()
-explore.connect('Explore_CA12')
-explore.record_data(file_name='rec_01', file_type='csv', do_overwrite=False)
+explore.connect(&#39;Explore_CA12&#39;)
+explore.record_data(file_name=&#39;rec_01&#39;, file_type=&#39;csv&#39;, do_overwrite=False)
 
 win = visual.Window(size=(600, 800), fullscr=True, screen=1, color=[1, 1, 1])
-stim = visual.Rect(win, size=(.5, .5), fillColor='black', pos=(-.75, -.75))
+stim = visual.Rect(win, size=(.5, .5), fillColor=&#39;black&#39;, pos=(-.75, -.75))
 
 time.sleep(1)
 delays = []
@@ -383,15 +383,15 @@ import scipy.signal as signal
 
 fs = 250  # Sampling rate
 n_max = int(fs/3)
-exg_filename = 'FILENAME_ExG.csv'
-marker_filename = 'FILENAME_Marker.csv'
+exg_filename = &#39;FILENAME_ExG.csv&#39;
+marker_filename = &#39;FILENAME_Marker.csv&#39;
 
 exg = pd.read_csv(exg_filename)
 markers = pd.read_csv(marker_filename)
 
-sig = exg['ch1'].to_numpy()
-ts_sig = exg['TimeStamp'].to_numpy()
-ts_marker = markers['TimeStamp'].to_numpy()
+sig = exg[&#39;ch1&#39;].to_numpy()
+ts_sig = exg[&#39;TimeStamp&#39;].to_numpy()
+ts_marker = markers[&#39;TimeStamp&#39;].to_numpy()
 sig_diff = -1*np.diff(sig)
 peaks, _ = signal.find_peaks(sig_diff, threshold=1000)
 
@@ -402,7 +402,7 @@ for i, event_ts in enumerate(ts_marker):
     idx = np.argmax(ts_sig &gt; event_ts)
     ind_jump = np.argmax(sig_diff[idx:idx+n_max]&gt;1)
     if ts_sig[idx+ind_jump]-event_ts &lt; 0:
-        print('error')
+        print(&#39;error&#39;)
     delays.append(ts_sig[idx+ind_jump]-event_ts)
     print(i, ind_jump, ts_sig[idx+ind_jump]-event_ts)
     epochs[i, :] = sig_diff[idx:idx+n_max]
@@ -411,9 +411,9 @@ for i, event_ts in enumerate(ts_marker):
 print(np.array(delays).mean(), np.array(delays).std())
 
 plt.plot(np.array(delays)*1000)
-plt.title(f'Delays: mean={np.array(delays).mean()*1000:.1f} ms, Std={np.array(delays).std()*1000:.1f} ms')
-plt.xlabel('Trial')
-plt.ylabel('Delay (ms)')
+plt.title(f&#39;Delays: mean={np.array(delays).mean()*1000:.1f} ms, Std={np.array(delays).std()*1000:.1f} ms&#39;)
+plt.xlabel(&#39;Trial&#39;)
+plt.ylabel(&#39;Delay (ms)&#39;)
 plt.show()
 </code></pre><p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 

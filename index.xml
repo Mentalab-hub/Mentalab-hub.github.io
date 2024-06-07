@@ -6,317 +6,210 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Mar 2023 19:00:19 +0100</lastBuildDate><atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 26 Jan 2023 10:25:19 +0000</lastBuildDate>
+    <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supported Software</title>
       <link>https://wiki.mentalab.com/integrations/supported-software/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
-      <description>This list contains EEG analysis software that can import Mentalab Explore data.
-In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
+      <description>This list contains EEG analysis software that can import Mentalab Explore data.&#xA;In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
     </item>
-    
     <item>
       <title>Getting Started</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
-      <description>Installation  Download the Explore Desktop installer.   Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.
-  Double click on the installer to launch and follow the on-screen instructions.
-  Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).</description>
+      <description>Installation Download the Explore Desktop installer. Download the Explore Desktop installer. For Ubuntu users, right-click on the installer, select ‘Permissions’ and check ‘Allow executing file as program’.&#xA;Double click on the installer to launch and follow the on-screen instructions.&#xA;Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory. It will also show in the Start Menu (Windows), Launchpad (MacOS), and Applications Menu (Ubuntu).&#xA;On Windows, we recommend using ExploreDesktop with the 100% scale.</description>
     </item>
-    
     <item>
       <title>LabChart Lightning</title>
       <link>https://wiki.mentalab.com/integrations/lightning-installation/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/integrations/lightning-installation/</guid>
-      <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.
- Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
+      <description>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.&#xA;Install LabChart Lightning. Start the program and enter your license key. Then close the program. Download the Mentalab Explore LabChart Lightning plugin. Unzip the plugin and save to Documents/LabChart Lightning/Plugins/Devices. Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&amp;rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX).</description>
     </item>
-    
     <item>
       <title>Operating Instructions</title>
       <link>https://wiki.mentalab.com/user-guide/operating-instructions/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/operating-instructions/</guid>
-      <description>Operating modes  Mentalab Explore+ has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording. In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with explorepy and exploreAndroid.</description>
+      <description>Operating modes Mentalab Explore+ has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording. In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with explorepy and exploreAndroid.</description>
     </item>
-    
     <item>
       <title>Device Syncing With LSL</title>
       <link>https://wiki.mentalab.com/integrations/openvibe/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/integrations/openvibe/</guid>
-      <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.
-  Start two Python consoles and activate a virtual environment for explorepy in both.
-  Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).
-  Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
+      <description>Here is a step-by-step guide on using explorepy and OpenViBE to visualize multiple Mentalab Explore systems simultaneously.&#xA;Start two Python consoles and activate a virtual environment for explorepy in both.&#xA;Use the push2lsl command to stream data from your Explore device to lab streaming layer (one device per console).&#xA;Open an OpenViBE acquisition server and select &amp;ldquo;LabStreamingLayer&amp;rdquo; as the driver. Under &amp;ldquo;Driver Properties&amp;rdquo;, select your Explore device&amp;rsquo;s &amp;ldquo;ExG&amp;rdquo; and &amp;ldquo;Marker&amp;rdquo; streams, selecting only one of the connected Explore devices.</description>
     </item>
-    
     <item>
       <title>Dry Electrode Guide</title>
       <link>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
-      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.
-Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.
-Brush electrodes  Dry brush electrodes.For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.&#xA;Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.&#xA;Brush electrodes Dry brush electrodes.&#xD;For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
-    
     <item>
       <title>Usage</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/usage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
-      <description>To get up and running quickly, why not check out our quick tutorial video.
-Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.
- Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown.</description>
+      <description>To get up and running quickly, why not check out our quick tutorial video.&#xA;Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.&#xA;Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown.</description>
     </item>
-    
     <item>
       <title>Photodiode Event Triggers</title>
       <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
-      <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.
-Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.
-Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
+      <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.&#xA;Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.&#xA;Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
     </item>
-    
     <item>
       <title>Visualization</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/visualize/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
-      <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.
-You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.
- Use the settings at the top of Visualization page to configure your visualization. Settings include:
- Y-axis scale – change the range of the y-axis.  1 uV to 100 mV range.   Time window – change the time interval of the x-axis.</description>
+      <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.&#xA;You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.&#xA;Use the settings at the top of Visualization page to configure your visualization. Settings include:&#xA;Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis.</description>
     </item>
-    
     <item>
       <title>LED Light Guide</title>
       <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
-      <description>The Mentalab Explore+ amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.
-    LED Light  Blinking Pattern  Description Example     Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status.    Blue Blinks twice a second Bluetooth visible and advertising.</description>
+      <description>The Mentalab Explore+ amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks twice a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
     </item>
-    
     <item>
       <title>EOG Artifact Removal</title>
       <link>https://wiki.mentalab.com/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
-      <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.
-Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.
-Set-up  Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.
-    Explore Channel  Cap Location  OpenViBE Channel     Ch1 F3 1   Ch2 C3 2   Ch3 Forehead (mid) 3   Ch4 C4 4   Ch7 Right eye (beside outer canthus) 5   Ch8 F4 6       Disable unnecessary channels using explorepy set-channels command:</description>
+      <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.&#xA;Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.&#xA;Set-up Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.&#xA;Explore Channel Cap Location OpenViBE Channel Ch1 F3 1 Ch2 C3 2 Ch3 Forehead (mid) 3 Ch4 C4 4 Ch7 Right eye (beside outer canthus) 5 Ch8 F4 6 Disable unnecessary channels using explorepy set-channels command:</description>
     </item>
-    
     <item>
       <title>Recording</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/record/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/record/</guid>
-      <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.
-A pop-up will allow you to configure your recording.
-Settings include:
- File format – select the output file type (EDF or CSV):  CSV mode generates an extra file for the marker events BDF mode records data in BDF+ format (in 24-bit resolution)   Folder and name prefix – select where to store files and the file prefix.</description>
+      <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.&#xA;A pop-up will allow you to configure your recording.&#xA;Settings include:&#xA;File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events BDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
     </item>
-    
     <item>
       <title>Button Command Guide</title>
       <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
-      <description>The Mentalab Explore+ amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.
-    Action  State  Effect     Single click Amplifier off Amplifier will turn on   Double click Memory full (LED blinking pink) Delete flash memory.
-Return to advertising mode.   Double click Amplifier in startup Skip advertising.</description>
+      <description>The Mentalab Explore+ amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Double click Amplifier in offline mode Start advertising mode.</description>
     </item>
-    
     <item>
       <title>Impedance</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
-      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.
-Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.
-&amp;nbsp; ColorRange (kΩ)Wet electrodesDry electrodesGreen  Yellow10 – 2020 – 35Orange20 – 3035 – 50Red30 – 5050 – 70Black  50  70GrayInactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
+      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color&#xD;Range (kΩ)&#xD;Wet electrodes&#xD;Dry electrodes&#xD;Green&#xD;&lt; 10&#xD;&lt; 20&#xD;Yellow&#xD;10 – 20&#xD;20 – 35&#xD;Orange&#xD;20 – 30&#xD;35 – 50&#xD;Red&#xD;30 – 50&#xD;50 – 70&#xD;Black&#xD;&gt; 50&#xD;&gt; 70&#xD;Gray&#xD;Inactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
     </item>
-    
     <item>
       <title>PsychoPy Builder</title>
       <link>https://wiki.mentalab.com/integrations/psychopy/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/integrations/psychopy/</guid>
-      <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).
-Install software Download explorepy  Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.8 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files.  Edit explorepy  Comment out line 215. Open the explorepy-1.</description>
+      <description>Here is a guide to running explorepy inside PsychoPy experiments. We will demonstrate how to record data, set markers, and push to lab streaming layer (LSL).&#xA;Install software Download explorepy Download Anaconda. Open the Anaconda prompt and create a virtual environment: conda create -n psychopyenv python=3.8 Activate the virtual environment: conda activate psychopyenv Download explorepy, and extract the files. Edit explorepy Comment out line 215. Open the explorepy-1.8.0\src\explorepy\stream_processor.py script using a text editor (e.</description>
     </item>
-    
     <item>
       <title>Cap Size Guide</title>
       <link>https://wiki.mentalab.com/user-guide/cap-size-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
-      <description>The Mentalab Explore+ system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.
-    Cap Size  Head Circumference     XS 36-42 cm   S/XS 39-45 cm   S 42-48 cm   M 48-54 cm   L 54-60 cm   XL 60-66 cm    Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
+      <description>The Mentalab Explore+ system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.&#xA;Cap Size Head Circumference XS 36-42 cm S/XS 39-45 cm S 42-48 cm M 48-54 cm L 54-60 cm XL 60-66 cm Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
     </item>
-    
     <item>
       <title>EEGLab</title>
       <link>https://wiki.mentalab.com/integrations/eeglab/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
-      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.
-Ensure that you have downloaded the latest version of EEGLab here.To get up and running quickly, here is a quick tutorial video.
-Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.
-Install via Extension Manager  Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
+      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.&#xA;Ensure that you have downloaded the latest version of EEGLab here.&#xD;To get up and running quickly, here is a quick tutorial video.&#xA;Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.&#xA;Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
-    
     <item>
       <title>Lab Streaming Layer</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/lsl/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/lsl/</guid>
-      <description>You can push data to LSL by navigating to the Visualization page and clicking on the ‘LSL’ button. To stop streaming to LSL, click again on ‘LSL’. If your device loses connection, Explore Desktop will try to reconnect automatically.
-When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.
-Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++.</description>
+      <description>You can push data to LSL by navigating to the Visualization page and clicking on the ‘LSL’ button. To stop streaming to LSL, click again on ‘LSL’. If your device loses connection, Explore Desktop will try to reconnect automatically.&#xA;When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.&#xA;Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++.</description>
     </item>
-    
     <item>
       <title>Other</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/other/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/other/</guid>
-      <description>Export EEGLAB dataset .edf and .bdf files can be exported to .set files compatible with Matlab&amp;rsquo;s EEGLab plugin. In the Menu Bar select &amp;lsquo;File&amp;rsquo; &amp;gt; &amp;lsquo;Export&amp;rsquo; &amp;gt; &amp;lsquo;EEGLab Dataset&amp;rsquo;. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called &amp;lsquo;datasets&amp;rsquo; placed in the selected directory.
-Convert BIN You can convert the binary files into CSV or EDF files.</description>
+      <description>Export EEGLAB dataset .edf and .bdf files can be exported to .set files compatible with Matlab&amp;rsquo;s EEGLab plugin. In the Menu Bar select &amp;lsquo;File&amp;rsquo; &amp;gt; &amp;lsquo;Export&amp;rsquo; &amp;gt; &amp;lsquo;EEGLab Dataset&amp;rsquo;. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called &amp;lsquo;datasets&amp;rsquo; placed in the selected directory.&#xA;Convert BIN You can convert the binary files into CSV or EDF files.</description>
     </item>
-    
     <item>
       <title>SSVEP Experiments</title>
       <link>https://wiki.mentalab.com/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
-      <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.
-SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.
-Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
+      <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.&#xA;SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.&#xA;Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
-    
     <item>
       <title>Improving Impedances</title>
       <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
-      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.
-General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.
-A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
+      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
     </item>
-    
     <item>
       <title>EASI ECG</title>
       <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
-      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&#39; extremities).
-Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</description>
+      <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).&#xA;Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.&#xA;Summary of 12-lead ECG drawbacks:</description>
     </item>
-    
     <item>
       <title>Troubleshooting</title>
       <link>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
-      <description>Unstable Bluetooth connection Possible causes are:
- An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range.  No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
+      <description>Unstable Bluetooth connection Possible causes are:&#xA;An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
     </item>
-    
     <item>
       <title>explorepy Command Guide</title>
       <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
-      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore+ amplifier. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.
-    Action  Command Line Input     Data acquisition explorepy acquire -n Explore_XXXX   Record data explorepy record-data -n Explore_XXXX   Push data to lsl explorepy push2lsl -n Explore_XXXX   Convert a binary file to csv explorepy bin2csv -f input_file.</description>
+      <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore+ amplifier. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.&#xA;Action Command Line Input Data acquisition explorepy acquire -n Explore_XXXX Record data explorepy record-data -n Explore_XXXX Push data to lsl explorepy push2lsl -n Explore_XXXX Convert a binary file to csv explorepy bin2csv -f input_file.</description>
     </item>
-    
     <item>
       <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
       <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
-      <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.
-Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.
-Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
+      <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.&#xA;Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.&#xA;Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
-    
     <item>
       <title>P300 Experiment</title>
       <link>https://wiki.mentalab.com/applications/p300/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/p300/</guid>
-      <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.
-Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.
-In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
+      <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.&#xA;Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.&#xA;In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
-    
     <item>
       <title>Sleep Recording Protocol</title>
       <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
-      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.
-Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.Setting up your Mentalab system  Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
-    
     <item>
       <title>Safety Recommendations</title>
       <link>https://wiki.mentalab.com/user-guide/safety-recommendations/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
-      <description>Intended use Mentalab Explore+ is a biosignal acquisition amplifier developed for research, development, and educational purposes. It is not intended nor certified for medical use. Mentalab Explore+ is used by scientists, developers, innovators, and students around the world in custom applications.
-Product certification The Mentalab Explore+ amplifier is in accordance with the requirements and relevant provisions of EU directives:
- RED 2104/53/EU RoHS WEEE PPW  In the conformity assessment procedure, the following standards were used:</description>
+      <description>Intended use Mentalab Explore+ is a biosignal acquisition amplifier developed for research, development, and educational purposes. It is not intended nor certified for medical use. Mentalab Explore+ is used by scientists, developers, innovators, and students around the world in custom applications.&#xA;Product certification The Mentalab Explore+ amplifier is in accordance with the requirements and relevant provisions of EU directives:&#xA;RED 2104/53/EU RoHS WEEE PPW In the conformity assessment procedure, the following standards were used:</description>
     </item>
-    
     <item>
       <title>Technical Specifications</title>
       <link>https://wiki.mentalab.com/user-guide/technical-specifications/</link>
       <pubDate>Tue, 22 Feb 2022 10:25:19 +0000</pubDate>
-      
       <guid>https://wiki.mentalab.com/user-guide/technical-specifications/</guid>
-      <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.
-    Specification  Value     No. channels 4, 8   Sampling rates 250 (default), 500, 1000 Hz   Dimensions 41 x 42 x 17 mm   Battery life Up to 8 hr online, 12 hr offline   Differential input range ± 400 mV   Input impedance 1 GΩ   Resolution 24 bit   Output interface USB 2.</description>
+      <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.&#xA;Specification Value No. channels 4, 8 Sampling rates 250 (default), 500, 1000 Hz Dimensions 41 x 42 x 17 mm Battery life Up to 8 hr online, 12 hr offline Differential input range ± 400 mV Input impedance 1 GΩ Resolution 24 bit Output interface USB 2.0 Sensors Gyro-, Accelero- and Magnetometer: 20 Hz Device Temperature, Battery: 1 Hz Flash memory 512 MB Bluetooth range 10 m Input-referred noise1 1 uV at 250 sps 1.</description>
     </item>
-    
   </channel>
 </rss>
