@@ -1,4 +1,1 @@
-explore-desktop-pro-release/2024-05-24-1707_meta.7z filter=lfs diff=lfs merge=lfs -text
-explore-desktop-pro-release/com.Mentalab.ExploreDesktop/1.0.0content.7z filter=lfs diff=lfs merge=lfs -text
-explore-desktop-pro-release/com.Mentalab.ExploreDesktop/1.0.0ExploreDesktop.7z filter=lfs diff=lfs merge=lfs -text
-explore-desktop-pro-release/com.Mentalab.ExploreDesktop/1.0.0meta.7z filter=lfs diff=lfs merge=lfs -text
+
