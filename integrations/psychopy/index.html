@@ -337,9 +337,9 @@
 <pre tabindex="0"><code>from explorepy import Explore
 
 explore = Explore()
-explore.connect(device_name='Explore_XXXX')
+explore.connect(device_name=&#39;Explore_XXXX&#39;)
 explore.push2lsl()
-explore.record_data(file_name='recorded_trial_02', file_type='csv', do_overwrite=False)
+explore.record_data(file_name=&#39;recorded_trial_02&#39;, file_type=&#39;csv&#39;, do_overwrite=False)
 </code></pre><p>
 <div class="alert alert-danger" role="alert">
     If you have multiple code components in your experiment, this initialization script should be only in one of them.
@@ -358,13 +358,13 @@ Line 6: remember to set the filename; the file type can be <code>csv</code> or <
 </figure>
 <p>To set an event marker in your recorded data, use the <code>set_marker</code> method. For instance, if there is a loop and the beginning of each iteration should be marked, call <code>set_marker</code> in the &ldquo;Begin Routine&rdquo; section of your <strong>Code</strong> component.</p>
 <p>If instead you would like to mark multiple event types, you can assign specific codes to each type of marker using the following pattern:</p>
-<pre tabindex="0"><code>if cond == 'left':
+<pre tabindex="0"><code>if cond == &#39;left&#39;:
     explore.set_marker(10)
-elif cond == 'right':
+elif cond == &#39;right&#39;:
     explore.set_marker(11)
-elif cond == 'up':
+elif cond == &#39;up&#39;:
     explore.set_marker(12)
-elif cond == 'down':
+elif cond == &#39;down&#39;:
     explore.set_marker(13)
 </code></pre><h3 id="example">Example</h3>
 <p><a href="/files/Mentalab-psychopy-experiment-example.zip">Here</a>, you find an PsychoPy experiment. The file iterates over 4 conditions (left, right, up and down) while recording the data. As each trial begins, a marker event is set in the recorded data. The data and event markers are pushed to LSL at the same time.</p>
