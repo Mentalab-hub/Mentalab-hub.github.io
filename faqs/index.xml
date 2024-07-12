@@ -4,8 +4,9 @@
     <title>FAQs on Wiki</title>
     <link>https://wiki.mentalab.com/faqs/</link>
     <description>Recent content in FAQs on Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate><atom:link href="https://wiki.mentalab.com/faqs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate></lastBuildDate>
+    <atom:link href="https://wiki.mentalab.com/faqs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
