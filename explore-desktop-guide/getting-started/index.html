@@ -290,82 +290,79 @@
 <h3 id="windows">Windows</h3>
 <ol>
 <li>
-<p>Download the <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop installer</a>.</p>
+<p>If you haven&rsquo;t already, download the appropriate <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop installer</a> from GitHub. Select the file ending <code>_Win64.exe</code>.</p>
 </li>
 <li>
-<p>Double-click on the installer to launch and follow the on-screen instructions.</p>
+<p>Double-click on the installer and follow the on-screen instructions.</p>
 </li>
 <li>
-<p>Once installed, Explore Desktop will reside in the Explore Desktop folder in the installation directory.
+<p>Once installed, Explore Desktop will reside in the <code>Explore Desktop</code> folder in your installation directory.</p>
+</li>
+</ol>
 
 <div class="alert alert-info" role="alert">
-    On Windows, we recommend using ExploreDesktop with the 100% scale. If you change the resolution, content might appear blurry or pixelated.
+    On Windows, we recommend using Explore Desktop with the 100% scale. If you change the resolution, content can appear blurry or pixelated.
 </div>
-</p>
+
+<h3 id="mac-osx">Mac OSX</h3>
+<ol>
+<li>
+<p>If you haven&rsquo;t already, download the appropriate <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop installer</a> from GitHub. The file you should select depends on your Mac <a href="https://support.apple.com/en-gb/guide/mac-help/syspr35536/mac">chip</a>. If your Mac uses an M1 chip, download the file ending <code>_mac_chip_m1.zip</code>. Otherwise, download the file ending <code>_mac_chip_intel.zip </code>.</p>
+</li>
+<li>
+<p>Right-click on the downloaded file and click on <code>Show Package Contents</code>.</p>
 </li>
 </ol>
-<h3 id="mac-osx">Mac OSX</h3>
-<p>Make sure to <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">download</a> appropriate version based on your <a href="https://support.apple.com/en-gb/guide/mac-help/syspr35536/mac">chip</a>.</p>
-<ol>
-<li>Right-click on the downloaded file and click on Show package contents.</li>
-</ol>
-<figure style="float:center;">
-<img class="mobile" src="/img/Desktop/1.png" width="450"/>
-<figcaption> Step 1. </figcaption>
-</figure>
-<ol start="2">
-<li>Navigate to Mac OSX folder and open a terminal.</li>
-</ol>
-<figure style="float:center;">
-<img class="mobile" src="/img/Desktop/2.png" width="450"/>
-<figcaption> Step 2. </figcaption>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/1.png" width="700"/>
+<figcaption>Once you have downloaded the installer, right click to open its package contents.</figcaption>
 </figure>
 <ol start="3">
-<li>Set appropriate permission with chmod +x command(see screenshot).</li>
+<li>Navigate to Mac OSX folder and open a terminal.</li>
 </ol>
-<figure style="float:center;">
-<img class="mobile" src="/img/Desktop/3.png" width="450"/>
-<figcaption> Step 3. </figcaption>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/2.png" width="700"/>
+<figcaption>Open a terminal in your Mac OSX folder</figcaption>
 </figure>
 <ol start="4">
-<li>Now you can right-click the ExploreDesktopInstaller_x64 file and install Explore Desktop.</li>
-<li>Open Explore Desktop file by right click and then select Open.</li>
+<li>Set the appropriate permission using the <code>chmod +x ExploreDesktopInstaller_x64</code> command. The screenshot demonstrates this below. Doing this will give Explore Desktop permission to install.</li>
 </ol>
-<figure style="float:center;">
-<img class="mobile" src="/img/Desktop/4.png" width="450"/>
-<figcaption> Step 5. </figcaption>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/3.png" width="700"/>
+<figcaption>Use the `chmod +x ExploreDesktopInstaller_x64` command to set appropriate permissions.</figcaption>
 </figure>
-<ol start="6">
-<li>If you have trouble opening the file, please allow to run the app from privacy and security.</li>
-<li>Make sure Bluetooth permission is enabled from privacy and security menu.</li>
+<ol start="5">
+<li>
+<p>Right-click on the <code>ExploreDesktopInstaller_x64</code> file and install <code>ExploreDesktop</code>.</p>
+</li>
+<li>
+<p>Now right-click on the installed <code>ExploreDesktop</code> file and select <code>Open</code>.</p>
+</li>
 </ol>
-<figure style="float:center;">
-<img class="mobile" src="/img/Desktop/5.png" width="450"/>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/4.png" width="700"/>
+<figcaption>Right-click on `ExploreDesktop` to open.</figcaption>
+</figure>
+<ol start="7">
+<li>If you are having trouble, head to <code>Privacy &amp; Security</code> and ensure that the Bluetooth permission for <code>ExploreDesktop</code> is enabled.</li>
+</ol>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/5.png" width="500"/>
 <figcaption> Step 7. </figcaption>
 </figure>
-Explore Desktop has four main components:
+
+<div class="alert alert-info" role="alert">
+    <p>The status bar at the bottom of Explore Desktop contains:</p>
 <ul>
-<li>menu bar</li>
-<li>navigation menu</li>
-<li>status bar</li>
-<li>main visualization pane</li>
-</ul>
-<p>The navigation menu on the left contains the following options:</p>
-<ul>
-<li>Home</li>
-<li>Connection</li>
-<li>Settings</li>
-<li>Visualization</li>
-<li>Impedance Measurement</li>
-</ul>
-<p>The status bar at the bottom of Explore Desktop contains:</p>
-<ul>
-<li>The connection status of Explore Desktop</li>
-<li>The firmware version of your Mentalab Explore device</li>
-<li>The battery level of your Mentalab Explore device</li>
-<li>The temperature of your Mentalab Explore device</li>
+<li>The connection status of your Explore hardware</li>
+<li>The firmware version of your Mentalab Explore Pro or Mentalab Explore+ amplifier</li>
+<li>The battery level of your Mentalab Explore Pro or Mentalab Explore+ amplifier</li>
+<li>The temperature of your Mentalab Explore or Mentalab Explore+ amplifier</li>
 <li>The Explore Desktop version</li>
 </ul>
+
+</div>
+
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
