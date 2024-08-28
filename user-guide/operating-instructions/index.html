@@ -284,12 +284,12 @@
 
 <h2 id="operating-modes">Operating modes</h2>
 <ul>
-<li>Mentalab Explore+ has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.</li>
-<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with <code>explorepy</code> and <code>exploreAndroid</code>. In online mode, the Explore+ amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
-<li>We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery. After charging, unplug your amplifier from the power source.</li>
+<li>Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.</li>
+<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>, <code>explorepy</code>, or <code>exploreAndroid</code>. In online mode, the Explore amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
+<li>We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery (&gt; 60% charge). After charging, unplug your amplifier from the power source.</li>
 </ul>
 <h2 id="pre-experiment-checklist">Pre-experiment checklist</h2>
-<p>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore+ system.</p>
+<p>We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.</p>
 <h2 id="1-install-software">1. Install software</h2>
 <ol>
 <li>Install the software appropriate for your needs. An overview of our open-source APIs can be found on the <a href="https://mentalab.com/?page_id=935">software page</a> of our website or in our <a href="https://github.com/Mentalab-hub">GitHub Repo</a>.</li>
@@ -298,8 +298,8 @@
 <h2 id="2-set-up-equipment">2. Set-up equipment</h2>
 <ol>
 <li>Place the measurement electrodes on your subject in your preferred configuration. Each channel (1 – 8; 1 – 16; 1 – 32) is recorded against the reference electrode. For convenience, channel names are marked with tags.</li>
-<li>Push the button to turn on your Explore+ system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining).</li>
-<li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore+ will keep recording data to internal memory.</li>
+<li>Push the button to turn on your Explore system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining). Use <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> or <a href="https://explorepy.readthedocs.io/en/latest/"><code>explorepy</code></a> to check the exact battery charge.</li>
+<li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore will keep recording data to internal memory.</li>
 </ol>
 
 <div class="alert alert-danger" role="alert">
