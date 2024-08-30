@@ -272,7 +272,7 @@
       <ul>
         <li><a href="#active-channels">Active channels</a></li>
         <li><a href="#channels-names">Channels&rsquo; names</a></li>
-        <li><a href="#sampling-rate">Sampling rate</a></li>
+        <li><a href="#sampling-rate-online-and-offline">Sampling rate: online and offline</a></li>
         <li><a href="#export-settings">Export settings</a></li>
         <li><a href="#import-settings">Import settings</a></li>
         <li><a href="#format-memory">Format memory</a></li>
@@ -288,26 +288,10 @@
 
 <h1>Usage</h1>
 
-<p>To get up and running quickly, why not check out our quick tutorial video.</p>
-<div class="video-container">
-<iframe src="https://www.youtube-nocookie.com/embed/MY-52cSTXAY" title="Explore Desktop Tutorial" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
 <h2 id="connect">Connect</h2>
 <p>Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.</p>
-<figure style="float:right;">
-<img class="mobile" src="/img/Desktop/connectclose.png" alt="Connect option of Explore Desktop" width="350"/>
-<figcaption> Scan and connect to a Mentalab Explore device. </figcaption>
-</figure>
-<p>There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown. If it is the first time connecting to your device, you can write write its name in the dropdown&rsquo;s input line.</p>
-<p>In either case, ensure that your device is in advertising mode. In Explore Desktop, the device will display under: Explore_XXXX.</p>
-<p>Click Scan and wait for nearby devices to list.</p>
-<p>Once you have selected a device from the list, or written your device name in the input line, click Connect.</p>
-<p>The connection process can take a few seconds. Once your device is connected, the status bar will change.</p>
-
-<div class="alert alert-danger" role="alert">
-    On Windows, all paired devices will be listed when scanning.
-</div>
-
+<p>Ensure that your device is in advertising mode. You can verify with <a href="https://wiki.mentalab.com/user-guide/led-light-guide/" title="User Guide/LED Light Guide">LED Light Guide</a>. Simply write the device ID in the dropdown input line and press connect. The device will connect is a few seconds.</p>
+<p>Once your device is connected, the status bar will change.</p>
 <p>If your device is not found, you will receive an error.</p>
 <h2 id="configuration">Configuration</h2>
 <p>Once your Mentalab Explore device is connected, the Settings page will become accessible. This page will display the name of your connected device and set of configuration options for that device.</p>
@@ -319,18 +303,13 @@
 <p>To enable and disable ExG channels on your Mentalab Explore device, select and deselect the channel’s associated checkbox under the <em>Enable</em> column and click ‘Apply changes’.</p>
 <p>Only active channels, i.e. those whose checkbox is selected, will display in the Visualization and Impedance Measurement pages.</p>
 <h3 id="channels-names">Channels&rsquo; names</h3>
-<p>To change the name of a channel, change the name under the column <em>Name</em> and click &lsquo;Apply changes&rsquo;.</p>
+<p>To change the name of a channel, change the name under the column <em>Name</em> and click &lsquo;Apply changes&rsquo;. You can change names by either selecting a standar position from dropdown list of input your custom name by double-clicking on the channel name-</p>
 <p>This name will be used in the Visualization and Impedance Measurement pages, as well as in the recorded files.</p>
-<h3 id="sampling-rate">Sampling rate</h3>
-<p>To set the sampling rate of your Mentalab Explore device, select either 250, 500, or 1000 from the sampling rate drop-down menu. Sampling rates are measured in Hertz. Click ‘Apply changes’ to confirm.</p>
-<p>
-<div class="alert alert-danger" role="alert">
-    Please note that our 1000 Hz sampling rate is in beta phase.
-</div>
-
+<h3 id="sampling-rate-online-and-offline">Sampling rate: online and offline</h3>
+<p>To set the sampling rate of your Mentalab Explore device, select either 250, 500, or 1000 from the sampling rate drop-down menu. Sampling rates are measured in Hertz. Click ‘Apply changes’ to confirm.
 
 <div class="alert alert-info" role="alert">
-    Channel masks and sampling rate cannot be changed while recording or streaming to LSL.
+    Explore desktop allows selection of online and offline sampling rates! In an offline sampling rate, visualization of ExG data is not possible. However, you can change device settings in offline sampling rate.
 </div>
 
 

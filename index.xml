@@ -55,7 +55,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/usage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
-      <description>To get up and running quickly, why not check out our quick tutorial video.&#xA;Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.&#xA;Scan and connect to a Mentalab Explore device. There are two ways to connect to your Mentalab Explore device. Either scan for nearby devices and select your device, or select the name of your device from the dropdown.</description>
+      <description>Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.&#xA;Ensure that your device is in advertising mode. You can verify with LED Light Guide. Simply write the device ID in the dropdown input line and press connect. The device will connect is a few seconds.&#xA;Once your device is connected, the status bar will change.</description>
     </item>
     <item>
       <title>Photodiode Event Triggers</title>
@@ -69,7 +69,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/visualize/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
-      <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.&#xA;You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.&#xA;Use the settings at the top of Visualization page to configure your visualization. Settings include:&#xA;Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis.</description>
+      <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.&#xA;You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.&#xA;Settings include:&#xA;Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis. 5, 10, or 20 second range. Record (see Recording Section).</description>
     </item>
     <item>
       <title>LED Light Guide</title>
@@ -104,7 +104,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
-      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color&#xD;Range (kΩ)&#xD;Wet electrodes&#xD;Dry electrodes&#xD;Green&#xD;&lt; 10&#xD;&lt; 20&#xD;Yellow&#xD;10 – 20&#xD;20 – 35&#xD;Orange&#xD;20 – 30&#xD;35 – 50&#xD;Red&#xD;30 – 50&#xD;50 – 70&#xD;Black&#xD;&gt; 50&#xD;&gt; 70&#xD;Gray&#xD;Inactive channel / Device not connected Impedance values depend on the impedance of the reference electrode.</description>
+      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color&#xD;Range (kΩ)&#xD;Wet electrodes&#xD;Dry electrodes&#xD;Green&#xD;&lt; 10&#xD;&lt; 20&#xD;Yellow&#xD;10 – 20&#xD;20 – 35&#xD;Orange&#xD;20 – 30&#xD;35 – 50&#xD;Red&#xD;30 – 50&#xD;50 – 70&#xD;Black&#xD;&gt; 50&#xD;&gt; 70&#xD;Gray&#xD;Inactive channel / Device not connected You can also visualize impedances on an EEG montage.</description>
     </item>
     <item>
       <title>PsychoPy Builder</title>
@@ -167,7 +167,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
-      <description>Unstable Bluetooth connection Possible causes are:&#xA;An HDMI cable connected to a second display can make the connection unstable. If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode (blinking blue once a second).</description>
+      <description>Unstable Bluetooth connection Possible causes are:&#xA;If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode. Consult with LED Light Guide.&#xA;For more information or support, do not hesitate to get in contact at: support@mentalab.</description>
     </item>
     <item>
       <title>explorepy Command Guide</title>
