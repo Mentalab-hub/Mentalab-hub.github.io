@@ -2,53 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applications on Wiki</title>
-    <link>https://wiki.mentalab.com/applications/</link>
+    <link>http://localhost:1313/applications/</link>
     <description>Recent content in Applications on Wiki</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 26 Jan 2023 10:25:19 +0000</lastBuildDate>
-    <atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photodiode Event Triggers</title>
-      <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
+      <link>http://localhost:1313/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
+      <guid>http://localhost:1313/applications/photodiode-event-trigger/</guid>
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.&#xA;Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.&#xA;Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
     </item>
     <item>
       <title>EOG Artifact Removal</title>
-      <link>https://wiki.mentalab.com/applications/power-bands/</link>
+      <link>http://localhost:1313/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
+      <guid>http://localhost:1313/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.&#xA;Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.&#xA;Set-up Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.&#xA;Explore Channel Cap Location OpenViBE Channel Ch1 F3 1 Ch2 C3 2 Ch3 Forehead (mid) 3 Ch4 C4 4 Ch7 Right eye (beside outer canthus) 5 Ch8 F4 6 Disable unnecessary channels using explorepy set-channels command:</description>
     </item>
     <item>
       <title>SSVEP Experiments</title>
-      <link>https://wiki.mentalab.com/applications/ssvep/</link>
+      <link>http://localhost:1313/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
+      <guid>http://localhost:1313/applications/ssvep/</guid>
       <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.&#xA;SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.&#xA;Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
     <item>
       <title>EASI ECG</title>
-      <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
+      <link>http://localhost:1313/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
+      <guid>http://localhost:1313/applications/easi-ecg/</guid>
       <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).&#xA;Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.&#xA;Summary of 12-lead ECG drawbacks:</description>
     </item>
     <item>
       <title>P300 Experiment</title>
-      <link>https://wiki.mentalab.com/applications/p300/</link>
+      <link>http://localhost:1313/applications/p300/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/p300/</guid>
+      <guid>http://localhost:1313/applications/p300/</guid>
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.&#xA;Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.&#xA;In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     <item>
       <title>Sleep Recording Protocol</title>
-      <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
+      <link>http://localhost:1313/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
-      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz. Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+      <guid>http://localhost:1313/applications/sleep-recording-protocol/</guid>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
   </channel>
 </rss>
