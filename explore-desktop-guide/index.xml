@@ -13,7 +13,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
-      <description>Installation Download the Explore Desktop installer. Windows If you haven&amp;rsquo;t already, download the appropriate Explore Desktop installer from GitHub. Select the file ending _Win64.exe.&#xA;Double-click on the installer and follow the on-screen instructions.&#xA;Once installed, Explore Desktop will reside in the Explore Desktop folder in your installation directory.&#xA;On Windows, we recommend using Explore Desktop with the 100% scale. If you change the resolution, content can appear blurry or pixelated.&#xD;Mac OSX If you haven&amp;rsquo;t already, download the appropriate Explore Desktop installer from GitHub.</description>
+      <description>Installation Download the Explore Desktop installer. Windows If you haven&amp;rsquo;t already, download the appropriate Explore Desktop Pro version 1.0.1 or Explore Desktop Legacy version 0.7.3 from GitHub. Select the .exe file.&#xA;Double-click on the installer and follow the on-screen instructions.&#xA;Once installed, Explore Desktop will reside in the Explore Desktop folder in your installation directory.&#xA;On Windows, we recommend using Explore Desktop with the 100% scale. If you change the resolution, content can appear blurry or pixelated.</description>
     </item>
     <item>
       <title>Usage</title>
