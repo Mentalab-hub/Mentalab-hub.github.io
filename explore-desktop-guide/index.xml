@@ -4,7 +4,7 @@
     <title>Explore Desktop Guide on Wiki</title>
     <link>https://wiki.mentalab.com/explore-desktop-guide/</link>
     <description>Recent content in Explore Desktop Guide on Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/explore-desktop-guide/index.xml" rel="self" type="application/rss+xml" />
@@ -41,7 +41,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
-      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color&#xD;Range (kΩ)&#xD;Wet electrodes&#xD;Dry electrodes&#xD;Green&#xD;&lt; 10&#xD;&lt; 20&#xD;Yellow&#xD;10 – 20&#xD;20 – 35&#xD;Orange&#xD;20 – 30&#xD;35 – 50&#xD;Red&#xD;30 – 50&#xD;50 – 70&#xD;Black&#xD;&gt; 50&#xD;&gt; 70&#xD;Gray&#xD;Inactive channel / Device not connected You can also visualize impedances on an EEG montage.</description>
+      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color Range (kΩ) Wet electrodes Dry electrodes Green &lt; 10 &lt; 20 Yellow 10 – 20 20 – 35 Orange 20 – 30 35 – 50 Red 30 – 50 50 – 70 Black &gt; 50 &gt; 70 Gray Inactive channel / Device not connected You can also visualize impedances on an EEG montage.</description>
     </item>
     <item>
       <title>Lab Streaming Layer</title>

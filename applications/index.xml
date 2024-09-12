@@ -4,9 +4,9 @@
     <title>Applications on Wiki</title>
     <link>https://wiki.mentalab.com/applications/</link>
     <description>Recent content in Applications on Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Jan 2023 10:25:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 14:29:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Photodiode Event Triggers</title>
@@ -48,7 +48,14 @@
       <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
-      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz. Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+    </item>
+    <item>
+      <title>Sleep EEG Analysis</title>
+      <link>https://wiki.mentalab.com/applications/sleep-analysis/</link>
+      <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
+      <description>Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&#xA;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source yasa toolbox. We will perform automatic sleep staging by applying the yasa classifier [1] to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles.</description>
     </item>
   </channel>
 </rss>

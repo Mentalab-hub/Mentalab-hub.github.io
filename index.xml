@@ -4,9 +4,9 @@
     <title>Welcome on Wiki</title>
     <link>https://wiki.mentalab.com/</link>
     <description>Recent content in Welcome on Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Jan 2023 10:25:19 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Aug 2024 14:29:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supported Software</title>
@@ -48,7 +48,7 @@
       <link>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
-      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.&#xA;Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.&#xA;Brush electrodes Dry brush electrodes.&#xD;For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
+      <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.&#xA;Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.&#xA;Brush electrodes Dry brush electrodes. For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     <item>
       <title>Usage</title>
@@ -104,7 +104,7 @@
       <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
-      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color&#xD;Range (kΩ)&#xD;Wet electrodes&#xD;Dry electrodes&#xD;Green&#xD;&lt; 10&#xD;&lt; 20&#xD;Yellow&#xD;10 – 20&#xD;20 – 35&#xD;Orange&#xD;20 – 30&#xD;35 – 50&#xD;Red&#xD;30 – 50&#xD;50 – 70&#xD;Black&#xD;&gt; 50&#xD;&gt; 70&#xD;Gray&#xD;Inactive channel / Device not connected You can also visualize impedances on an EEG montage.</description>
+      <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. Channel impedances will display their value and corresponding color code as in the table below.&#xA;&amp;nbsp; Color Range (kΩ) Wet electrodes Dry electrodes Green &lt; 10 &lt; 20 Yellow 10 – 20 20 – 35 Orange 20 – 30 35 – 50 Red 30 – 50 50 – 70 Black &gt; 50 &gt; 70 Gray Inactive channel / Device not connected You can also visualize impedances on an EEG montage.</description>
     </item>
     <item>
       <title>PsychoPy Builder</title>
@@ -125,7 +125,7 @@
       <link>https://wiki.mentalab.com/integrations/eeglab/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
-      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.&#xA;Ensure that you have downloaded the latest version of EEGLab here.&#xD;To get up and running quickly, here is a quick tutorial video.&#xA;Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.&#xA;Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
+      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.&#xA;Ensure that you have downloaded the latest version of EEGLab here. To get up and running quickly, here is a quick tutorial video.&#xA;Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.&#xA;Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
     <item>
       <title>Lab Streaming Layer</title>
@@ -195,7 +195,7 @@
       <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
-      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
+      <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz. Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
     <item>
       <title>Safety Recommendations</title>
@@ -203,6 +203,13 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
       <description>Intended use Mentalab Explore is a biosignal acquisition amplifier developed for research, development, and educational purposes. It is not intended nor certified for medical use. Mentalab Explore is used by scientists, developers, innovators, and students around the world in custom applications.&#xA;Product certification The Mentalab Explore amplifier is in accordance with the requirements and relevant provisions of EU directives:&#xA;RED 2104/53/EU RoHS WEEE PPW In the conformity assessment procedure, the following standards were used:</description>
+    </item>
+    <item>
+      <title>Sleep EEG Analysis</title>
+      <link>https://wiki.mentalab.com/applications/sleep-analysis/</link>
+      <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
+      <description>Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&#xA;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source yasa toolbox. We will perform automatic sleep staging by applying the yasa classifier [1] to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles.</description>
     </item>
     <item>
       <title>Technical Specifications</title>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/sleep-analysis/">
+
+    <title>
+        
+        Sleep EEG Analysis | Wiki
+        
+    </title>
+
+    
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1 active">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
+                
+                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
+                    LabChart Lightning
+                </a>
+        </li>
+        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
+                
+                 <a href="/integrations/openvibe/" class="nav-link p-0">
+                    Device Syncing With LSL
+                </a>
+        </li>
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/psychopy/" class="nav-link p-0">
+                    PsychoPy Builder
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLab
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#data-acquisition">Data acquisition</a></li>
+    <li><a href="#sleep-data-analysis">Sleep data analysis</a>
+      <ul>
+        <li><a href="#software-preparation">Software preparation</a></li>
+        <li><a href="#data-processing">Data processing</a></li>
+        <li><a href="#detecting-sleep-stages">Detecting sleep stages</a></li>
+        <li><a href="#inspecting-band-power">Inspecting band power</a></li>
+        <li><a href="#spectrogram-and-hypnogram">Spectrogram and hypnogram</a></li>
+        <li><a href="#slow-wave-and-sleep-spindles-detection">Slow wave and sleep spindles detection</a></li>
+      </ul>
+    </li>
+    <li><a href="#closing-words">Closing words</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Sleep EEG Analysis</h1>
+
+<p>Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.</p>
+<p>Here, we demonstrate how EEG data recorded during a full night&rsquo;s sleep using Mentalab Explore can be analysed with the free and open source <a href="https://raphaelvallat.com/yasa/build/html/index.html">yasa toolbox</a>. We will perform automatic sleep staging by applying the yasa classifier <a href="#references">[1]</a> to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles. The application example follows the excellent <a href="https://github.com/raphaelvallat/yasa/tree/master/notebooks">yasa notebooks</a>.</p>
+<h2 id="data-acquisition">Data acquisition</h2>
+<p>Our volunteer recorded their sleep using an 8-channel Mentalab Explore device.
+The following montage was applied:</p>
+<pre><code>Channel Type    Electrode   Position
+0       REF     adhesive    TP10 (right mastoid)
+1       EOG     adhesive    above right eye
+2       EOG     adhesive    outer canthus right eye
+3       EMG     adhesive    submental (below chin)
+4       EEG     dry         O2
+5       EEG     dry         C2
+6       EEG     dry         F2
+7       EEG     adhesive    C1
+8       EEG     wet         Fc1
+</code></pre>
+<p>Clip cables were used to connect to adhesive and dry electrodes. Dry electrodes use flexble brushes to establish connection. Impedances were not lowered after positioning the electrodes. Refer to our <a href="https://wiki.mentalab.com/applications/sleep-recording-protocol/">sleep recording protocol</a>, for detailed reccomendations on preparation, data transfer, and on how to convert the recorded <code>BIN</code> file to <code>.csv</code> or <code>.bdf</code> files.</p>
+<h2 id="sleep-data-analysis">Sleep data analysis</h2>
+<h3 id="software-preparation">Software preparation</h3>
+<p>First, we prepare a conda virtual Python environment to house our project.</p>
+<ol start="0">
+<li><a href="https://docs.anaconda.com/anaconda/install/">(Install anaconda)</a></li>
+<li>Create a virtual python environment using conda: <code>conda create -n myenv python=3.10</code></li>
+<li>Activate your conda environment: <code>conda activate myenv</code></li>
+<li>Install the required packages: <code>pip install numpy mne yasa</code></li>
+</ol>
+<h3 id="data-processing">Data processing</h3>
+<p>We then load the required packages in python.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> mne
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> yasa
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span></code></pre></div><p>We will load a CSV file containing the sleep data recorded using Mentalab Explore and convert it to an <a href="https://mne.tools/stable/index.html">mne</a> raw data object. The code example expects data recorded at 250 Hz with an 8-channel device. It is important to note that mne expects data in Volt (V), whereas Mentalab Explore stores data in Microvolt (µV).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ch_names <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;EOG-above&#39;</span>, <span style="color:#e6db74">&#39;EOG-canthus&#39;</span>, <span style="color:#e6db74">&#39;EMG-chin&#39;</span>, <span style="color:#e6db74">&#39;Dry-O2&#39;</span>, <span style="color:#e6db74">&#39;Dry-C2&#39;</span>, <span style="color:#e6db74">&#39;Dry-F2&#39;</span>, <span style="color:#e6db74">&#39;Sticky-C1&#39;</span>, <span style="color:#e6db74">&#39;Wet-Fc1&#39;</span>]
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>loadtxt(<span style="color:#e6db74">&#34;./data/wiki-sleep-analysis-data/Mentalab-sleep-analysis_ExG.csv&#34;</span>,skiprows<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;,&#39;</span>)<span style="color:#f92672">.</span>transpose()[<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">9</span>]
+</span></span><span style="display:flex;"><span>sf <span style="color:#f92672">=</span> <span style="color:#ae81ff">250</span>
+</span></span><span style="display:flex;"><span>ch_types <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;eog&#34;</span>, <span style="color:#e6db74">&#34;eog&#34;</span>, <span style="color:#e6db74">&#34;emg&#34;</span>, <span style="color:#e6db74">&#34;eeg&#34;</span>, <span style="color:#e6db74">&#34;eeg&#34;</span>, <span style="color:#e6db74">&#34;eeg&#34;</span>, <span style="color:#e6db74">&#34;eeg&#34;</span>, <span style="color:#e6db74">&#34;eeg&#34;</span>]
+</span></span><span style="display:flex;"><span>info <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>create_info(ch_names <span style="color:#f92672">=</span> ch_names, sfreq <span style="color:#f92672">=</span> sf, ch_types <span style="color:#f92672">=</span> ch_types)
+</span></span><span style="display:flex;"><span>raw <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>io<span style="color:#f92672">.</span>RawArray(data, info)
+</span></span><span style="display:flex;"><span>raw<span style="color:#f92672">.</span>apply_function(<span style="color:#66d9ef">lambda</span> x: x <span style="color:#f92672">*</span> <span style="color:#ae81ff">1e-6</span>) <span style="color:#75715e"># scale muV to V</span>
+</span></span></code></pre></div><p>Next, we apply a band-pass filter with a low cutoff of 0.1 Hz and a high cutoff of 40 Hz.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>raw<span style="color:#f92672">.</span>filter(<span style="color:#ae81ff">0.1</span>, <span style="color:#ae81ff">40</span>) <span style="color:#75715e"># Apply a bandpass filter from 0.1 to 40 Hz</span>
+</span></span></code></pre></div><h3 id="detecting-sleep-stages">Detecting sleep stages</h3>
+<p>Next, we apply the yasa sleep stage classification algorithm <a href="#references">[1]</a>. The only required input is one channel of EEG data. While the algorithm can additionally receive one channel of EOG data, one channel of EMG data, and the age and gender of the participant, these additional inputs are not required. In fact, the EEG channel accounts for almost all of the classifier&rsquo;s performance <a href="#references">[1]</a>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sls <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>SleepStaging(raw, eeg_name<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Sticky-C1&#34;</span>)
+</span></span><span style="display:flex;"><span>y_pred <span style="color:#f92672">=</span> sls<span style="color:#f92672">.</span>predict() <span style="color:#75715e"># Get the predicted sleep stages</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>hypno <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>Hypnogram(y_pred) <span style="color:#75715e"># Getting a hypnogram for later</span>
+</span></span><span style="display:flex;"><span>hypno_int <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>hypno_str_to_int(y_pred)
+</span></span><span style="display:flex;"><span>hypno_up <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>hypno_upsample_to_data(hypno<span style="color:#f92672">=</span>hypno_int, sf_hypno<span style="color:#f92672">=</span>(<span style="color:#ae81ff">1</span><span style="color:#f92672">/</span><span style="color:#ae81ff">30</span>), data<span style="color:#f92672">=</span>data, sf_data<span style="color:#f92672">=</span>sf)
+</span></span></code></pre></div><h3 id="inspecting-band-power">Inspecting band power</h3>
+<p>Sleep stages are typically associated with brain activity in specific EEG frequency bands. For instance, N3 sleep is defined by slow waves in the delta band, whereas REM sleep is associated with increased alpha frequency power. We compute the relative power for each sleep stage (Wake, N1, N2, N3, REM) in six common frequency bands (delta, theta, alpha, sigma, beta).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data_filt <span style="color:#f92672">=</span> raw<span style="color:#f92672">.</span>get_data() <span style="color:#f92672">*</span> <span style="color:#ae81ff">1e6</span>
+</span></span><span style="display:flex;"><span>data_c1_uV <span style="color:#f92672">=</span> data_filt[<span style="color:#ae81ff">6</span>]
+</span></span><span style="display:flex;"><span>bandpower_stages <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>bandpower(data_c1_uV, sf <span style="color:#f92672">=</span> <span style="color:#ae81ff">100</span>, win_sec<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, relative<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>, hypno<span style="color:#f92672">=</span>hypno_up, include<span style="color:#f92672">=</span>(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">2</span>, <span style="color:#ae81ff">3</span>, <span style="color:#ae81ff">4</span>))
+</span></span><span style="display:flex;"><span>bandpower_avg <span style="color:#f92672">=</span> bandpower_stages<span style="color:#f92672">.</span>groupby(<span style="color:#e6db74">&#39;Stage&#39;</span>)[[<span style="color:#e6db74">&#39;Delta&#39;</span>, <span style="color:#e6db74">&#39;Theta&#39;</span>, <span style="color:#e6db74">&#39;Alpha&#39;</span>, <span style="color:#e6db74">&#39;Sigma&#39;</span>, <span style="color:#e6db74">&#39;Beta&#39;</span>, <span style="color:#e6db74">&#39;Gamma&#39;</span>]]<span style="color:#f92672">.</span>mean()
+</span></span><span style="display:flex;"><span>bandpower_avg<span style="color:#f92672">.</span>index <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#39;Wake&#39;</span>, <span style="color:#e6db74">&#39;N1&#39;</span>, <span style="color:#e6db74">&#39;N2&#39;</span>, <span style="color:#e6db74">&#39;N3&#39;</span>, <span style="color:#e6db74">&#39;REM&#39;</span>]
+</span></span></code></pre></div><p>Inspecting the relative band power, we observe increased delta and decreased theta activity in N3 sleep compared to being awake. Further, increased alpha activity is observed in N1 and REM sleep compared to the deeper N2 and N3 sleep stages.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>print(bandpower_avg)
+</span></span></code></pre></div><pre><code>      Delta     Theta     Alpha     Sigma     Beta      Gamma
+Wake  0.689047  0.252754  0.041008  0.013561  0.003619  0.000011
+N1    0.805558  0.156776  0.026298  0.008975  0.002385  0.000009
+N2    0.860466  0.122272  0.011644  0.004467  0.001142  0.000010
+N3    0.934785  0.058335  0.004424  0.001922  0.000521  0.000014
+REM   0.848217  0.115585  0.025746  0.008503  0.001937  0.000010
+</code></pre>
+<h3 id="spectrogram-and-hypnogram">Spectrogram and hypnogram</h3>
+<p>A hypnogram is a visual representation of the sleep stages over the course of the night. In Figure 1 the hypnogram is combined with a spectrogram displaying the frequency content over time.
+The hypnogram exhibits a typical pattern of deeper sleep stages in the first half of night and longer REM stages in the second half of the night. The spectrogram reveals power in specific frequency bands that the sleep stages are associated with. Note that usually, clinical sleep recordings are tagged by trained professionals according to the AASM guidelines (American Academy of Sleep Medicine), whereas the hypnogram shown here is based on the classifier&rsquo;s automatic sleep detection.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>plot_spectrogram(data_c1_uV, sf, hypno<span style="color:#f92672">=</span>hypno_up, fmax<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>, cmap<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Spectral_r&#39;</span>, trimperc<span style="color:#f92672">=</span><span style="color:#ae81ff">5</span>)
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/Sleep-Analysis-hypno-spectro-stickyC1-only.png" alt="Average Slow Wave" width="90%"/>
+<figcaption> Figure 1. Hypnogram derived from the sleep stage classification of the yasa classifier (top). Spectrogram displaying frequency content of the corresponding electrode over time. Data were recorded using Mentalab Explore.</figcaption>
+</figure>
+<h3 id="slow-wave-and-sleep-spindles-detection">Slow wave and sleep spindles detection</h3>
+<p>Slow waves are a hallmark of the N3 sleep stage (also known as slow wave sleep) and, with frequencies between 0.5 and 3 Hz, are part of the delta frequency band. The yasa toolbox provides an <a href="https://raphaelvallat.com/yasa/build/html/generated/yasa.sw_detect.html">slow wave detection algorithm</a> (based on <a href="#references">[2, 3]</a>) that allows to inspect individual and averaged slow waves.</p>
+<p>Calling the slow wave summary function yields an overview of the timing and properties of the detected slow waves.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sw <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>sw_detect(data_c1_uV, sf, hypno<span style="color:#f92672">=</span>hypno_up)
+</span></span><span style="display:flex;"><span>sw<span style="color:#f92672">.</span>summary()
+</span></span></code></pre></div><pre><code>        Start    NegPeak  MidCrossing    PosPeak        End  Duration  ValNegPeak  ValPosPeak         PTP       Slope  Frequency  Stage  Channel  IdxChannel
+0     1579.324   1579.600     1579.860   1580.076   1580.400     1.076 -110.009728   70.868551  180.878280  695.685692   0.929368      2  CHAN000           0
+1     1833.080   1833.328     1833.560   1833.844   1834.144     1.064  -43.119826   50.537236   93.657062  403.694232   0.939850      2  CHAN000           0
+2     1834.144   1834.452     1834.736   1834.896   1835.060     0.916  -64.484388   26.909410   91.393798  321.809148   1.091703      2  CHAN000           0
+3     1895.844   1896.224     1896.560   1896.808   1897.060     1.216  -55.624535   42.378489   98.003024  291.675667   0.822368      2  CHAN000           0
+4     1935.872   1936.280     1936.700   1936.832   1936.984     1.112  -83.590539   10.574031   94.164569  224.201355   0.899281      2  CHAN000           0
+..         ...        ...          ...        ...        ...       ...         ...         ...         ...         ...        ...    ...      ...         ...
+966  29275.144  29275.496    29275.784  29276.000  29276.756     1.612 -123.916814   68.232216  192.149031  667.184134   0.620347      2  CHAN000           0
+967  29276.756  29277.024    29277.292  29277.484  29277.780     1.024  -80.189417   37.322052  117.511469  438.475632   0.976562      2  CHAN000           0
+968  29351.656  29351.996    29352.252  29352.468  29352.712     1.056  -80.538877   63.521518  144.060395  562.735919   0.946970      2  CHAN000           0
+969  29353.720  29354.168    29354.448  29354.660  29354.980     1.260  -60.494303   36.531033   97.025336  346.519058   0.793651      2  CHAN000           0
+970  29444.048  29444.400    29444.704  29444.924  29445.248     1.200 -166.011564   85.047673  251.059236  825.852751   0.833333      2  CHAN000           0
+</code></pre>
+<p>Figure 2 shows the average slow wave, computed from 971 detected slow wave events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sw<span style="color:#f92672">.</span>plot_average(time_before<span style="color:#f92672">=</span><span style="color:#ae81ff">0.4</span>, time_after<span style="color:#f92672">=</span><span style="color:#ae81ff">0.8</span>, center<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;NegPeak&#34;</span>);
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;C1&#39;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/Sleep-Analysis-average_SW.png" alt="Average Slow Wave" width="40%"/>
+<figcaption> Figure 2. Average of the slow waves detected by the yasa toolbox. Data were recorded using Mentalab Explore.</figcaption>
+</figure>
+<p>Sleep spindles are a short oscillatory bursts that typically occur during N2 sleep and fall in the frequency range between 11 and 16 Hz. Using the same workflow as before we run the <a href="https://raphaelvallat.com/yasa/build/html/generated/yasa.spindles_detect.html">spindle detection algorithm</a> (based on <a href="#references">[4]</a>). Calling the sleep spindle summary function yields an overview of the timing and properties of the detected sleep spindles.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sp <span style="color:#f92672">=</span> yasa<span style="color:#f92672">.</span>spindles_detect(data_c1_uV, sf)
+</span></span><span style="display:flex;"><span>sp<span style="color:#f92672">.</span>summary()
+</span></span></code></pre></div><pre><code>        Start       Peak        End  Duration   Amplitude        RMS  AbsPower  RelPower  Frequency  Oscillations  Symmetry  Channel  IdxChannel
+0        8.720      8.864      9.396     0.676   56.961351  11.090094  2.100221  0.322695  11.315217           8.0  0.211765  CHAN000           0
+1       53.476     53.532     54.152     0.676  147.736709  28.034810  2.648341  0.305501  12.936249           8.0  0.082353  CHAN000           0
+2     1399.952   1400.424   1400.636     0.684   58.795353  11.988885  1.960096  0.266393  13.047958           8.0  0.686047  CHAN000           0
+3     1444.672   1444.860   1445.176     0.504   49.023655  11.592732  2.043340  0.243198  13.838615           7.0  0.370079  CHAN000           0
+4     1496.024   1496.072   1496.672     0.648   37.978448  10.030894  1.689857  0.238392  13.444519           8.0  0.073620  CHAN000           0
+..         ...        ...        ...       ...         ...        ...       ...       ...        ...           ...       ...      ...         ...
+519  29412.916  29413.096  29413.660     0.744   37.617005   8.592611  1.851378  0.323409  12.606909           8.0  0.240642  CHAN000           0
+520  29418.196  29419.088  29419.892     1.696   73.779483  14.525022  2.380002  0.519697  12.552197          21.0  0.524706  CHAN000           0
+521  29423.800  29425.016  29425.484     1.684   58.250863  11.203151  1.982496  0.389862  12.449155          21.0  0.720379  CHAN000           0
+522  29451.216  29452.136  29452.268     1.052   46.337193  10.750559  2.002255  0.438899  12.765855          13.0  0.871212  CHAN000           0
+523  29467.156  29467.684  29468.148     0.992   49.976640   9.770195  1.971178  0.429425  12.662866          12.0  0.530120  CHAN000           0
+</code></pre>
+<p>Figure 3 shows the average sleep spindle, computed from 524 detected spindle events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>sp<span style="color:#f92672">.</span>plot_average(time_before<span style="color:#f92672">=</span><span style="color:#ae81ff">0.6</span>, time_after<span style="color:#f92672">=</span><span style="color:#ae81ff">0.6</span>);
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>legend([<span style="color:#e6db74">&#39;C1&#39;</span>])
+</span></span><span style="display:flex;"><span>plt<span style="color:#f92672">.</span>show()
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/Sleep-Analysis-average_Spindle.png" alt="Average Spindle" width="40%"/>
+<figcaption> Figure 3. Average of the sleep spindles detected by the yasa toolbox. Data were recorded using Mentalab Explore.</figcaption>
+</figure>
+<h2 id="closing-words">Closing words</h2>
+<p>Whether conducting research in a controlled laboratory environment, studying sleep in an in-home setting, or building a sleep monitoring application, our Mentalab Explore system provides research-grade data quality and the efficiency needed to extract meaningful insights from sleep ExG data. For previous applications of Mentalab Explore in sleep science, we recommend the work by Biller et al. <a href="#references">[5]</a> who conduct a longitudinal sleep study and Hainke et al. <a href="#references">[6]</a>, who investigated gamma oscillations and consciousness during sleep using steady-state visually evoked potentials (SSVEPs) during sleep.</p>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="references">References</h2>
+<p>[1] Vallat, R., &amp; Walker, M. P. (2021). An open-source, high-performance tool for automated sleep staging. eLife, 10, e70092. <a href="https://doi.org/10.7554/eLife.70092">https://doi.org/10.7554/eLife.70092</a></p>
+<p>[2] Carrier, J., Viens, I., Poirier, G., Robillard, R., Lafortune, M., Vandewalle, G., Martin, N., Barakat, M., Paquet, J., &amp; Filipini, D. (2011). Sleep slow wave changes during the middle years of life. European Journal of Neuroscience, 33(4), 758–766. <a href="https://doi.org/10.1111/j.1460-9568.2010.07543.x">https://doi.org/10.1111/j.1460-9568.2010.07543.x</a></p>
+<p>[3] Massimini, M., Huber, R., Ferrarelli, F., Hill, S., &amp; Tononi, G. (2004). The Sleep Slow Oscillation as a Traveling Wave. Journal of Neuroscience, 24(31), 6862–6870. <a href="https://doi.org/10.1523/JNEUROSCI.1318-04.2004">https://doi.org/10.1523/JNEUROSCI.1318-04.2004</a></p>
+<p>[4] Lacourse, K., Delfrate, J., Beaudry, J., Peppard, P., &amp; Warby, S. C. (2019). A sleep spindle detection algorithm that emulates human expert spindle scoring. Journal of Neuroscience Methods, 316, 3–11. <a href="https://doi.org/10.1016/j.jneumeth.2018.08.014">https://doi.org/10.1016/j.jneumeth.2018.08.014</a></p>
+<p>[5] Biller, A. M., Fatima, N., Hamberger, C., Hainke, L., Plankl, V., Nadeem, A., Kramer, A., Hecht, M., &amp; Spitschan, M. (2024). The Ecology of Human Sleep (EcoSleep) Project: Protocol for a longitudinal cohort repeated-measurement-burst study to assess the relationship between sleep determinants and sleep outcomes under real-world conditions across time of year (p. 2024.02.09.24302573). medRxiv. <a href="https://doi.org/10.1101/2024.02.09.24302573">https://doi.org/10.1101/2024.02.09.24302573</a></p>
+<p>[6] Hainke, L., Herberger, S., Taylor, P., &amp; Dowsett, J. (2022). Studying Gamma oscillations and consciousness during sleep using SSVEPs. <a href="https://doi.org/10.13140/RG.2.2.35554.81609">https://doi.org/10.13140/RG.2.2.35554.81609</a></p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/wiki.mentalab.com\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

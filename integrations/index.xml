@@ -4,7 +4,7 @@
     <title>Integrations on Wiki</title>
     <link>https://wiki.mentalab.com/integrations/</link>
     <description>Recent content in Integrations on Wiki</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2022 10:25:19 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/integrations/index.xml" rel="self" type="application/rss+xml" />
@@ -41,7 +41,7 @@
       <link>https://wiki.mentalab.com/integrations/eeglab/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/eeglab/</guid>
-      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.&#xA;Ensure that you have downloaded the latest version of EEGLab here.&#xD;To get up and running quickly, here is a quick tutorial video.&#xA;Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.&#xA;Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
+      <description>This is a guide to importing Mentalab Explore CSV and BIN files into an EEGLab structure using the Mentalab EEGLab Plugin.&#xA;Ensure that you have downloaded the latest version of EEGLab here. To get up and running quickly, here is a quick tutorial video.&#xA;Installation To install the Mentalab EEGLab plugin, we recommend using EEGLab&amp;rsquo;s Extension Manager.&#xA;Install via Extension Manager Once you have installed EEGLab, following these instructions, open MATLAB and type eeglab into the command line terminal.</description>
     </item>
   </channel>
 </rss>
