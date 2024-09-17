@@ -48,7 +48,7 @@
       <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
-      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled into the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
+      <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled onto the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
     </item>
     <item>
       <title>explorepy Command Guide</title>
