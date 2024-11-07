@@ -2,66 +2,66 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Explore Desktop Guide on Wiki</title>
-    <link>http://localhost:1313/explore-desktop-guide/</link>
+    <link>https://wiki.mentalab.com/explore-desktop-guide/</link>
     <description>Recent content in Explore Desktop Guide on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 26 Jan 2022 10:25:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/explore-desktop-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/explore-desktop-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Getting Started</title>
-      <link>http://localhost:1313/explore-desktop-guide/getting-started/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/getting-started/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
       <description>Installation Download the Explore Desktop installer. Windows If you haven&amp;rsquo;t already, download the appropriate Explore Desktop Pro version 1.0.1 or Explore Desktop Legacy version 0.7.3 from GitHub. Select the .exe file.&#xA;Double-click on the installer and follow the on-screen instructions.&#xA;Once installed, Explore Desktop will reside in the Explore Desktop folder in your installation directory.&#xA;On Windows, we recommend using Explore Desktop with the 100% scale. If you change the resolution, content can appear blurry or pixelated.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-desktop-guide/usage/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/usage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/usage/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
       <description>Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device, or to import recorded data.&#xA;Ensure that your device is in advertising mode. You can verify with LED Light Guide. Simply write the device ID in the dropdown input line and press connect. The device will connect is a few seconds.&#xA;Once your device is connected, the status bar will change.</description>
     </item>
     <item>
       <title>Visualization</title>
-      <link>http://localhost:1313/explore-desktop-guide/visualize/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/visualize/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/visualize/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
       <description>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.&#xA;You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.&#xA;Settings include:&#xA;Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis. 5, 10, or 20 second range. Record (see Recording Section).</description>
     </item>
     <item>
       <title>Recording</title>
-      <link>http://localhost:1313/explore-desktop-guide/record/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/record/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/record/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/record/</guid>
       <description>Configure your recording using the pop-up. Record data in real time to EDF (BDF+) or CSV by selecting ‘Record’ on the Visualization page.&#xA;A pop-up will allow you to configure your recording.&#xA;Settings include:&#xA;File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events BDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
     </item>
     <item>
       <title>Impedance</title>
-      <link>http://localhost:1313/explore-desktop-guide/impedance/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/impedance/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
       <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on ‘Measure Impedances’. For wet electrodes, channel impedances will display their value and corresponding color code as in the table below. Good dry electrode impedances are less than 100kΩ for flat electrodes placed on bare skin, and less than 300kΩ for brush electrodes placed on hair.</description>
     </item>
     <item>
       <title>Lab Streaming Layer</title>
-      <link>http://localhost:1313/explore-desktop-guide/lsl/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/lsl/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/lsl/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/lsl/</guid>
       <description>You can push data to LSL by navigating to the Visualization page and clicking on the ‘LSL’ button. To stop streaming to LSL, click again on ‘LSL’. If your device loses connection, Explore Desktop will try to reconnect automatically.&#xA;When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.&#xA;Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++.</description>
     </item>
     <item>
       <title>Other</title>
-      <link>http://localhost:1313/explore-desktop-guide/other/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/other/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/other/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/other/</guid>
       <description>Export EEGLAB dataset .edf and .bdf files can be exported to .set files compatible with Matlab&amp;rsquo;s EEGLab plugin. In the Menu Bar select &amp;lsquo;File&amp;rsquo; &amp;gt; &amp;lsquo;Export&amp;rsquo; &amp;gt; &amp;lsquo;EEGLab Dataset&amp;rsquo;. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called &amp;lsquo;datasets&amp;rsquo; placed in the selected directory.&#xA;Convert BIN You can convert the binary files into CSV or EDF files.</description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>http://localhost:1313/explore-desktop-guide/troubleshooting/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/troubleshooting/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
       <description>Unstable Bluetooth connection Possible causes are:&#xA;If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode. Consult with LED Light Guide.&#xA;For more information or support, do not hesitate to get in contact at: support@mentalab.</description>
     </item>
   </channel>
