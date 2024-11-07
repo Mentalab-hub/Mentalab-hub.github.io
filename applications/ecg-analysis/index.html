@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/ecg-analysis/">
+
+    <title>
+        
+        ECG Analysis | Wiki
+        
+    </title>
+
+    
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1 active">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
+                
+                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
+                    LabChart Lightning
+                </a>
+        </li>
+        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
+                
+                 <a href="/integrations/openvibe/" class="nav-link p-0">
+                    Device Syncing With LSL
+                </a>
+        </li>
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/psychopy/" class="nav-link p-0">
+                    PsychoPy Builder
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLab
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#software-preparation">Software preparation</a></li>
+    <li><a href="#visualisation">Visualisation</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>ECG Analysis</h1>
+
+<p>Mentalab Explore is designed to record all kinds of ExG data. In this guide, we demonstrate how to use the <a href="https://neuropsychology.github.io/NeuroKit/">Neurokit2</a> toolbox to analyse electrocardiography (ECG) data <a href="#references">[1]</a>. See the list of neurokit <a href="https://neuropsychology.github.io/NeuroKit/examples/index.html">examples</a> on which this tutorial is based for further resources.</p>
+<h1 id="data-acquisition">Data acquisition</h1>
+<p>We used two medical adhesive single-use electrodes to record the ECG. One electrode was placed on the left mastoid bone, whereas the second electrode was placed close to the heart on our volunteer&rsquo;s chest. Using <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>, we recorded data for 5 minutes in a resting state, where the participant sat down. Data were saved in *.bdf format (European data format in 24 bit resolution).</p>
+<h1 id="ecg-analysis">ECG analysis</h1>
+<h2 id="software-preparation">Software preparation</h2>
+<p>First, we prepare a conda virutal python environment, to house our project.</p>
+<ol start="0">
+<li><a href="https://docs.anaconda.com/anaconda/install/">(Install anaconda)</a></li>
+<li>Create a virtual python environment using conda: <code>conda create -n myenv python=3.10</code></li>
+<li>Activate your conda environment: <code>conda activate myenv</code></li>
+<li>Install the required packages: <code>conda install neurokit2 pandas numpy matplotlib pyedflib</code></li>
+</ol>
+<p>We then load the required packages in python and define a function to convert the .bdf file to a numpy array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> neurokit2 <span style="color:#66d9ef">as</span> nk
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> numpy <span style="color:#66d9ef">as</span> np
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> matplotlib.pyplot <span style="color:#66d9ef">as</span> plt
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pyedflib
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">edf_to_arr</span>(edf_path):
+</span></span><span style="display:flex;"><span>    f <span style="color:#f92672">=</span> pyedflib<span style="color:#f92672">.</span>EdfReader(edf_path)
+</span></span><span style="display:flex;"><span>    n <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>signals_in_file
+</span></span><span style="display:flex;"><span>    signal_labels <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>getSignalLabels()
+</span></span><span style="display:flex;"><span>    sigbufs <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>zeros((n, f<span style="color:#f92672">.</span>getNSamples()[<span style="color:#ae81ff">0</span>]))
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> np<span style="color:#f92672">.</span>arange(n):
+</span></span><span style="display:flex;"><span>        sigbufs[i, :] <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>readSignal(i)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> sigbufs
+</span></span></code></pre></div><p>Next up, we load the edf file and convert it to the neurokit file format. We also take a subset of the data, to remove noisy data at the beginning of the recording period. Inspecting the info object, we can see that neurokit automatically detected peaks in the ECG signal.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>data <span style="color:#f92672">=</span> edf_to_arr(<span style="color:#e6db74">&#34;wiki-ECG-resting_ExG.bdf&#34;</span>) <span style="color:#75715e"># read in bdf file</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">=</span> data[<span style="color:#ae81ff">1</span>] <span style="color:#75715e"># channel 1 holds ECG data</span>
+</span></span><span style="display:flex;"><span>data <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1e-3</span>   <span style="color:#75715e"># scale uV to mV for ECG analysis in neurokit</span>
+</span></span><span style="display:flex;"><span>ecg_signals, info <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>ecg_process(data[<span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">25000</span>], sampling_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>) <span style="color:#75715e"># take a subset from the middle of recording and read into neurokit </span>
+</span></span></code></pre></div><p>The peaks and cleaned ECG signal can be accessed using square bracket notation.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>rpeaks <span style="color:#f92672">=</span> info[<span style="color:#e6db74">&#34;ECG_R_Peaks&#34;</span>]
+</span></span><span style="display:flex;"><span>cleaned_ecg <span style="color:#f92672">=</span> ecg_signals[<span style="color:#e6db74">&#34;ECG_Clean&#34;</span>]
+</span></span></code></pre></div><p>A plethora of heart rate variability features can be extrated from the ecg signals.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>intervalrelated <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>ecg_intervalrelated(ecg_signals)
+</span></span><span style="display:flex;"><span>intervalrelated<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>:<span style="color:#ae81ff">83</span>]
+</span></span></code></pre></div><pre><code>HRV_MeanNN    [[204.81944444444446]]
+HRV_SDNN       [[8.914818157741777]]
+HRV_SDANN1                   [[nan]]
+HRV_SDNNI1                   [[nan]]
+HRV_SDANN2                   [[nan]]
+                    ...          
+HRV_RCMSEn    [[0.7611306094308559]]
+HRV_CD        [[2.0228390744800744]]
+HRV_HFD       [[1.7543219260453518]]
+HRV_KFD       [[2.1402217265672414]]
+HRV_LZC       [[1.1140142363715286]]
+Name: 0, Length: 82, dtype: object
+</code></pre>
+<h2 id="visualisation">Visualisation</h2>
+<p>From here on, neurokit provides us with various functions to visualize data, compute relevant ECG metrics, and find peaks and waves of the  ECG. The first visualization shows heart rate and beat shapes of the resting state ECG (Figure 1).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>nk<span style="color:#f92672">.</span>ecg_plot(ecg_signals, info)
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>gcf()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>set_size_inches(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">12</span>, forward<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;resting_ecg.png&#34;</span>)
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/ECG-Analysis-resting_ecg.png" alt="ECG (Resting State)" width="90%"/>
+<figcaption> Figure 1. ECG signal over time (top left), heart rate over time (bottom left), and average heart beat shape overlaid with individual heart beats and annotations of the P-, Q-, S-, and T- waves (right).</figcaption>
+</figure>
+<p>Next up, we look at the R-peaks of a smaller section of the data.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>ecg_signals, info <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>ecg_process(data[<span style="color:#ae81ff">18000</span>:<span style="color:#ae81ff">20000</span>] , sampling_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>) <span style="color:#75715e"># take a subset from the middle of recording and apply neurokit</span>
+</span></span><span style="display:flex;"><span>rpeaks <span style="color:#f92672">=</span> info[<span style="color:#e6db74">&#34;ECG_R_Peaks&#34;</span>]
+</span></span><span style="display:flex;"><span>cleaned_ecg <span style="color:#f92672">=</span> ecg_signals[<span style="color:#e6db74">&#34;ECG_Clean&#34;</span>]
+</span></span><span style="display:flex;"><span>plot <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>events_plot(rpeaks, cleaned_ecg[<span style="color:#ae81ff">0</span>:cleaned_ecg<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]])
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>gcf()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>set_size_inches(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">12</span>, forward<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;resting_rpeaks.png&#34;</span>)
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/ECG-Analysis-resting_rpeaks.png" alt="ECG R-peaks" width="90%"/>
+<figcaption> Figure 1. R-peaks of the ECG.</figcaption>
+</figure>
+<p>Lastly, we can visualise the distribution of the R-R intervals, yielding a measure of heart rate variability.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>peaks, info <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>ecg_peaks(data[<span style="color:#ae81ff">5000</span>:<span style="color:#ae81ff">25000</span>], sampling_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>)
+</span></span><span style="display:flex;"><span>hrv_time <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>hrv_time(peaks, sampling_rate<span style="color:#f92672">=</span><span style="color:#ae81ff">250</span>, show<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>hrv_time
+</span></span><span style="display:flex;"><span>fig <span style="color:#f92672">=</span> plt<span style="color:#f92672">.</span>gcf()
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>set_size_inches(<span style="color:#ae81ff">20</span>, <span style="color:#ae81ff">12</span>, forward<span style="color:#f92672">=</span><span style="color:#66d9ef">True</span>)
+</span></span><span style="display:flex;"><span>fig<span style="color:#f92672">.</span>savefig(<span style="color:#e6db74">&#34;sv_ecg_time.png&#34;</span>)
+</span></span></code></pre></div><figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/ECG-Analysis-rr_intervals.png" alt="ECG R-R intervals" width="90%"/>
+<figcaption> Figure 1. Distribution of R-R intervals (heart rate variability).</figcaption>
+</figure>
+<h1 id="closing-words">Closing words</h1>
+<p>The above analyses are just a glimpse at the wide range of ECG analyses that can be achieved with neurokit. Mentalab&rsquo;s Explore amplifier is ideally suited to record biosignals like ECG where it can play to its strength of low weight and size. Importantly, Mentalab Explore can record several ExG modalities at the same time, allowing for synchronous recording of ECG, EMG, EEG and more. For instance, Friman et al. (2022) used Mentalab Explore to record ECG and EMG at the same time in a study evaluating heart rate accuracy of smartwatches <a href="#references">[2]</a>. See our <a href="https://mentalab.com/selected-publications/">selected publications</a> for more inspiration. For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h1 id="references">References</h1>
+<p>[1] Makowski D, Pham T, Lau ZJ, et al. NeuroKit2: A Python toolbox for neurophysiological signal processing. Behav Res. 2021;53(4):1689-1696. <a href="https://doi.org/10.3758/s13428-020-01516-y">https://doi.org/10.3758/s13428-020-01516-y</a></p>
+<p>[2] Friman, S., Vehkaoja, A., Perez-Macias, J. M. (2022). The Use of Wrist EMG Increases the PPG Heart Rate Accuracy in Smartwatches. In 2022 IEEE Sensors. 2022 IEEE Sensors. IEEE. <a href="https://doi.org/10.1109/JSEN.2022.3219297">https://doi.org/10.1109/JSEN.2022.3219297</a></p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+<script type="text/javascript">
+  
+      var baseurl = "https:\/\/wiki.mentalab.com\/";
+  
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

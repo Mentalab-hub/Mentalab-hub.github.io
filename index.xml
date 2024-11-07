@@ -156,6 +156,13 @@
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled onto the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
     </item>
     <item>
+      <title>ECG Analysis</title>
+      <link>https://wiki.mentalab.com/applications/ecg-analysis/</link>
+      <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/ecg-analysis/</guid>
+      <description>Mentalab Explore is designed to record all kinds of ExG data. In this guide, we demonstrate how to use the Neurokit2 toolbox to analyse electrocardiography (ECG) data [1]. See the list of neurokit examples on which this tutorial is based for further resources.&#xA;Data acquisition We used two medical adhesive single-use electrodes to record the ECG. One electrode was placed on the left mastoid bone, whereas the second electrode was placed close to the heart on our volunteer&amp;rsquo;s chest.</description>
+    </item>
+    <item>
       <title>EASI ECG</title>
       <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
