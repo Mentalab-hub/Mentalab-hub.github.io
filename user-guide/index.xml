@@ -27,14 +27,14 @@
       <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
-      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks four times a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
+      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks twice a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
     </item>
     <item>
       <title>Button Command Guide</title>
       <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
-      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Single click Amplifier recording (online or offline) Generate marker timestamped at button press.</description>
+      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Double click Amplifier in offline mode Start advertising mode.</description>
     </item>
     <item>
       <title>Cap Size Guide</title>
