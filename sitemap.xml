@@ -2,128 +2,128 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wiki.mentalab.com/integrations/supported-software/</loc>
+    <loc>http://localhost:1313/integrations/supported-software/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/quick-links/</loc>
+    <loc>http://localhost:1313/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/getting-started/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/lightning-installation/</loc>
+    <loc>http://localhost:1313/integrations/lightning-installation/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/operating-instructions/</loc>
+    <loc>http://localhost:1313/user-guide/operating-instructions/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/</loc>
+    <loc>http://localhost:1313/user-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/event-triggers/</loc>
+    <loc>http://localhost:1313/event-triggers/</loc>
     <lastmod>2023-02-28T13:00:19+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/openvibe/</loc>
+    <loc>http://localhost:1313/integrations/openvibe/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</loc>
+    <loc>http://localhost:1313/user-guide/dry-electrode-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/usage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/</loc>
+    <loc>http://localhost:1313/applications/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/photodiode-event-trigger/</loc>
+    <loc>http://localhost:1313/applications/photodiode-event-trigger/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/visualize/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/visualize/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/led-light-guide/</loc>
+    <loc>http://localhost:1313/user-guide/led-light-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/power-bands/</loc>
+    <loc>http://localhost:1313/applications/power-bands/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/</loc>
+    <loc>http://localhost:1313/integrations/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/record/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/record/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/button-guide/</loc>
+    <loc>http://localhost:1313/user-guide/button-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/faqs/</loc>
+    <loc>http://localhost:1313/faqs/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/impedance/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/impedance/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/psychopy/</loc>
+    <loc>http://localhost:1313/integrations/psychopy/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
+    <loc>http://localhost:1313/user-guide/cap-size-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/troubleshooting/</loc>
+    <loc>http://localhost:1313/troubleshooting/</loc>
     <lastmod>2023-03-24T19:00:19+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/eeglab/</loc>
+    <loc>http://localhost:1313/integrations/eeglab/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/lsl/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/lsl/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/other/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/other/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/ssvep/</loc>
+    <loc>http://localhost:1313/applications/ssvep/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
+    <loc>http://localhost:1313/user-guide/improving-impedances/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/ecg-analysis/</loc>
+    <loc>http://localhost:1313/applications/ecg-analysis/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
+    <loc>http://localhost:1313/applications/easi-ecg/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/troubleshooting/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/explorepy-commands/</loc>
+    <loc>http://localhost:1313/user-guide/explorepy-commands/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</loc>
+    <loc>http://localhost:1313/user-guide/cleaning-disinfection-storage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/p300/</loc>
+    <loc>http://localhost:1313/applications/p300/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-recording-protocol/</loc>
+    <loc>http://localhost:1313/applications/sleep-recording-protocol/</loc>
     <lastmod>2023-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/safety-recommendations/</loc>
+    <loc>http://localhost:1313/user-guide/safety-recommendations/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-analysis/</loc>
+    <loc>http://localhost:1313/applications/sleep-analysis/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/technical-specifications/</loc>
+    <loc>http://localhost:1313/user-guide/technical-specifications/</loc>
     <lastmod>2022-02-22T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>

@@ -2,80 +2,80 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>User Guide on Wiki</title>
-    <link>https://wiki.mentalab.com/user-guide/</link>
+    <link>http://localhost:1313/user-guide/</link>
     <description>Recent content in User Guide on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Feb 2022 10:25:19 +0000</lastBuildDate>
-    <atom:link href="https://wiki.mentalab.com/user-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/user-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Operating Instructions</title>
-      <link>https://wiki.mentalab.com/user-guide/operating-instructions/</link>
+      <link>http://localhost:1313/user-guide/operating-instructions/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/operating-instructions/</guid>
+      <guid>http://localhost:1313/user-guide/operating-instructions/</guid>
       <description>Operating modes Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording. In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with Explore Desktop, explorepy, or exploreAndroid.</description>
     </item>
     <item>
       <title>Dry Electrode Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</link>
+      <link>http://localhost:1313/user-guide/dry-electrode-guide/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
+      <guid>http://localhost:1313/user-guide/dry-electrode-guide/</guid>
       <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.&#xA;Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.&#xA;Brush electrodes Dry brush electrodes. For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     <item>
       <title>LED Light Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
+      <link>http://localhost:1313/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
+      <guid>http://localhost:1313/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks four times a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
     </item>
     <item>
       <title>Button Command Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
+      <link>http://localhost:1313/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
+      <guid>http://localhost:1313/user-guide/button-guide/</guid>
       <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Single click Amplifier recording (online or offline) Generate marker timestamped at button press.</description>
     </item>
     <item>
       <title>Cap Size Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/cap-size-guide/</link>
+      <link>http://localhost:1313/user-guide/cap-size-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
+      <guid>http://localhost:1313/user-guide/cap-size-guide/</guid>
       <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.&#xA;Cap Size Head Circumference XS 36-42 cm S/XS 39-45 cm S 42-48 cm M 48-54 cm L 54-60 cm XL 60-66 cm Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
     </item>
     <item>
       <title>Improving Impedances</title>
-      <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
+      <link>http://localhost:1313/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
+      <guid>http://localhost:1313/user-guide/improving-impedances/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled onto the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
     </item>
     <item>
       <title>explorepy Command Guide</title>
-      <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
+      <link>http://localhost:1313/user-guide/explorepy-commands/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
+      <guid>http://localhost:1313/user-guide/explorepy-commands/</guid>
       <description>Mentalab’s flagship API, explorepy is written in Python. It is the most direct way to communicate with your Explore amplifier. An overview of common command line inputs is listed below. For more information on explorepy, please refer to the docs.&#xA;Action Command Line Input Data acquisition explorepy acquire -n Explore_XXXX Record data explorepy record-data -n Explore_XXXX Push data to lsl explorepy push2lsl -n Explore_XXXX Convert a binary file to csv explorepy bin2csv -f input_file.</description>
     </item>
     <item>
       <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
-      <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
+      <link>http://localhost:1313/user-guide/cleaning-disinfection-storage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
+      <guid>http://localhost:1313/user-guide/cleaning-disinfection-storage/</guid>
       <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.&#xA;Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.&#xA;Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     <item>
       <title>Safety Recommendations</title>
-      <link>https://wiki.mentalab.com/user-guide/safety-recommendations/</link>
+      <link>http://localhost:1313/user-guide/safety-recommendations/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
+      <guid>http://localhost:1313/user-guide/safety-recommendations/</guid>
       <description>Intended use Mentalab Explore is a biosignal acquisition amplifier developed for research, development, and educational purposes. It is not intended nor certified for medical use. Mentalab Explore is used by scientists, developers, innovators, and students around the world in custom applications.&#xA;Product certification The Mentalab Explore amplifier is in accordance with the requirements and relevant provisions of EU directives:&#xA;RED 2104/53/EU RoHS WEEE PPW In the conformity assessment procedure, the following standards were used:</description>
     </item>
     <item>
       <title>Technical Specifications</title>
-      <link>https://wiki.mentalab.com/user-guide/technical-specifications/</link>
+      <link>http://localhost:1313/user-guide/technical-specifications/</link>
       <pubDate>Tue, 22 Feb 2022 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/user-guide/technical-specifications/</guid>
+      <guid>http://localhost:1313/user-guide/technical-specifications/</guid>
       <description>Here, you can find the technical details related to Explore&amp;rsquo;s hardware.&#xA;Specification Value No. channels 4, 8 Sampling rates 250 (default), 500, 1000 Hz Dimensions 41 x 42 x 17 mm Battery life Up to 8 hr online, 12 hr offline Differential input range ± 400 mV Input impedance 1 GΩ Resolution 24 bit Output interface USB 2.0 Sensors Gyro-, Accelero- and Magnetometer: 20 Hz Device Temperature, Battery: 1 Hz Flash memory 512 MB Bluetooth range 10 m Input-referred noise1 1 uV at 250 sps 1.</description>
     </item>
   </channel>
