@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Explore Mobile App on Wiki</title>
+    <link>https://wiki.mentalab.com/explore-mobile-guide/</link>
+    <description>Recent content in Explore Mobile App on Wiki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Nov 2024 14:00:00 +0000</lastBuildDate>
+    <atom:link href="https://wiki.mentalab.com/explore-mobile-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download and Installation</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</guid>
+      <description>For Android, you can download the .apk file from here: Android&#xA;For iOS, we provide an app file on request.&#xA;For any information or assistance, please contact support@mentalab.com and we will assist you further.</description>
+    </item>
+    <item>
+      <title>Usage</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/usage/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/usage/</guid>
+      <description>Please note that currently the app only supports Mentalab Explore Pro 8-channel devices at 250Hz.&#xA;Homepage:&#xA;Scan and connect to nearby Explore Devices. Cog menu:&#xA;Change visulization Filter settings Disconnect Check app version Impedance tab:&#xA;Inspect impedance values. Assign channel positions. EXG tab:&#xA;Visualize ExG data. Dot menu: Adapt visulization settings (y-axis scaling). Record raw ExG data in CSV format. Bottom bar:&#xA;Inspect device name, temperature, battery charge </description>
+    </item>
+    <item>
+      <title>Tests</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/testing/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/testing/</guid>
+      <description>Following are the devices we used to testing:&#xA;Device OS version Lenovo Tab M9 Android 13 Samsung S23 Ultra Android 14 Zenfone 10 Android 14 iPhone 15 iOS 18 iPhone 13 iOS 17 iPhone SE (gen 3) iOS 17 Known bugs: Denying bluetooth and nearby devices permissions can result on connection failure.</description>
+    </item>
+  </channel>
+</rss>

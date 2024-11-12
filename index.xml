@@ -6,14 +6,28 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2024 14:29:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 12 Nov 2024 14:00:00 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Download and Installation</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</guid>
+      <description>For Android, you can download the .apk file from here: Android&#xA;For iOS, we provide an app file on request.&#xA;For any information or assistance, please contact support@mentalab.com and we will assist you further.</description>
+    </item>
     <item>
       <title>Supported Software</title>
       <link>https://wiki.mentalab.com/integrations/supported-software/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
       <description>This list contains EEG analysis software that can import Mentalab Explore data.&#xA;In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
+    </item>
+    <item>
+      <title>Usage</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/usage/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/usage/</guid>
+      <description>Please note that currently the app only supports Mentalab Explore Pro 8-channel devices at 250Hz.&#xA;Homepage:&#xA;Scan and connect to nearby Explore Devices. Cog menu:&#xA;Change visulization Filter settings Disconnect Check app version Impedance tab:&#xA;Inspect impedance values. Assign channel positions. EXG tab:&#xA;Visualize ExG data. Dot menu: Adapt visulization settings (y-axis scaling). Record raw ExG data in CSV format. Bottom bar:&#xA;Inspect device name, temperature, battery charge </description>
     </item>
     <item>
       <title>Getting Started</title>
@@ -35,6 +49,13 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/operating-instructions/</guid>
       <description>Operating modes Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording. In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with Explore Desktop, explorepy, or exploreAndroid.</description>
+    </item>
+    <item>
+      <title>Tests</title>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/testing/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/testing/</guid>
+      <description>Following are the devices we used to testing:&#xA;Device OS version Lenovo Tab M9 Android 13 Samsung S23 Ultra Android 14 Zenfone 10 Android 14 iPhone 15 iOS 18 iPhone 13 iOS 17 iPhone SE (gen 3) iOS 17 Known bugs: Denying bluetooth and nearby devices permissions can result on connection failure.</description>
     </item>
     <item>
       <title>Device Syncing With LSL</title>
@@ -76,7 +97,7 @@
       <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
-      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks twice a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
+      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status. Blue Blinks four times a second Bluetooth visible and advertising. Blue Blinks once a second Bluetooth visible and connected.</description>
     </item>
     <item>
       <title>EOG Artifact Removal</title>
@@ -97,7 +118,7 @@
       <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
-      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Double click Amplifier in offline mode Start advertising mode.</description>
+      <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Single click Amplifier recording (online or offline) Generate marker timestamped at button press.</description>
     </item>
     <item>
       <title>Impedance</title>
