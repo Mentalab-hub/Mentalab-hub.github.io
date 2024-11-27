@@ -64,5 +64,12 @@
       <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
       <description>&lt;p&gt;Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&lt;/p&gt;&#xA;&lt;p&gt;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source &lt;a href=&#34;https://raphaelvallat.com/yasa/build/html/index.html&#34;&gt;yasa toolbox&lt;/a&gt;. We will perform automatic sleep staging by applying the yasa classifier &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt; to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles. The application example follows the excellent &lt;a href=&#34;https://github.com/raphaelvallat/yasa/tree/master/notebooks&#34;&gt;yasa notebooks&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
+    <item>
+      <title>EEGSynth</title>
+      <link>https://wiki.mentalab.com/applications/eegsynth/</link>
+      <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/eegsynth/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://www.eegsynth.org/&#34;&gt;EEGSynth&lt;/a&gt; is a software project aiming at connecting brain signals to electronic music instruments. EEGSynth is taking inspiration from &lt;a href=&#34;https://en.wikipedia.org/wiki/Modular_synthesizer&#34;&gt;modular synthesizers&lt;/a&gt;. In a modular synth, each module performs a specific function (generating sound, modulating sound, generating control voltages, etc.) and outputs from one module can be connected to the inputs of another module using patch cables. The entirety of the connected modules is referred to as a patch.&#xA;Similarly, EEGSynth modules can, among many other things, take in real-time EEG signals, process them and extract useful information such as bandpower, and use these to send instruction messages to electronic music instruments using the MIDI standard.&lt;/p&gt;</description>
+    </item>
   </channel>
 </rss>

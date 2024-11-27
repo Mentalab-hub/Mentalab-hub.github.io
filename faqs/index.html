@@ -167,6 +167,12 @@
                     Sleep EEG Analysis
                 </a>
         </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
         </ul>
     </li>
     <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
@@ -305,16 +311,13 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#general">General</a>
-      <ul>
-        <li><a href="#science">Science</a></li>
-      </ul>
-    </li>
+    <li><a href="#general">General</a></li>
     <li><a href="#hardware">Hardware</a>
       <ul>
         <li><a href="#usage">Usage</a></li>
         <li><a href="#integration">Integration</a></li>
         <li><a href="#accessories">Accessories</a></li>
+        <li><a href="#montages">Montages</a></li>
       </ul>
     </li>
     <li><a href="#software">Software</a>
@@ -349,83 +352,17 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8ca883c390" aria-expanded="false">
-    Can the Mentalab Explore amplifier record EEG and ECG at the same time?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_23d8808319" aria-expanded="false">
+    What are the recording modes of Mentalab Explore?
 </button>
 
-<div class="collapse" id="collapse_8ca883c390">
+<div class="collapse" id="collapse_23d8808319">
   <div class="card card-body">
-     Combining ECG and EEG recording is possible. However, both electrograms must share the same reference electrode, which may affect EEG signal quality. To minimize this effect, put the ground electrode on the scalp (not chest) and measure ECG with respect to that. The remaining cross talk will be: <br>10Hz input : -64dB <br>25Hz input : -75dB 
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2d23575b4e" aria-expanded="false">
-    Can I use my standard ECG or EMG electrodes with the amplifier?
-</button>
-
-<div class="collapse" id="collapse_2d23575b4e">
-  <div class="card card-body">
-     Yes, our Clip9 and Clip5 cables can connect to standard stick and peel electrodes as long as they have a little conductive knob on the back. 
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7d613ebbcc" aria-expanded="false">
-    My amplifier won&#39;t turn on - it just flashes and turns off! What should I do?
-</button>
-
-<div class="collapse" id="collapse_7d613ebbcc">
-  <div class="card card-body">
-     <p>The internal memory of your Explore amplifier is full. The Explore amplifier will refuse to record any more data while its memory is full. To solve this, either transfer the data from your Explore amplifier to a computer, or double click your Explore amplifier. Double-clicking the button will delete the internal memory of your Explore amplifier and allow you to start recording. See our <a href="/user-guide/led-light-guide">Light Guide</a> and <a href="/user-guide/button-guide">Button Guide</a> for more.</p> 
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_ccfea49052" aria-expanded="false">
-    Where are my recorded files stored?
-</button>
-
-<div class="collapse" id="collapse_ccfea49052">
-  <div class="card card-body">
-     <p>Recorded files are saved in the current command line folder. The default locations are: </p> <p> <ul><li>Windows: <code>C:\Users\USER_NAME</code> <li>Ubuntu: <code>/home/USER_NAME</code> <li>Mac OSX: <code>/Users/USER_NAME</code></ul></p> 
-  </div>
-</div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2d4b279c86" aria-expanded="false">
-    Can one channel act as a reference for a subset of other channels?
-</button>
-
-<div class="collapse" id="collapse_2d4b279c86">
-  <div class="card card-body">
-     <p>Yes, <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> can perform custom calculations like this live. This cannot be done in <a href="https://explorepy.readthedocs.io"><code>explorepy</code></a> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.</p> 
+     Mentalab Explore devices support three recording modes: <br> 1. Offline recording to internal memory <br> 2. Wireless Streaming via Bluetooth <br> 3. High-bandwidth streaming via USB 
   </div>
 </div>
 <br><br>
-<h3 id="science">Science</h3>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_13d9ecb061" aria-expanded="false">
-    How can I use my Explore amplifier with infants?
-</button>
-
-<div class="collapse" id="collapse_13d9ecb061">
-  <div class="card card-body">
-     <p> Choose a XS, XS/S, or S cap, as there is a lot of variability between infants. Remove the chin strap for added comfort, and use tights, stretched out over EEG cap, to keep electrodes in place if need be. For more on infant EEG research, check out our <a href="https://mentalab.com/infant-eeg-markers/">blog post</a> on the subject.</p> 
-  </div>
-</div>
-<br>
-<br>
+<!-- <br>
 
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f0d7917d7e" aria-expanded="false">
@@ -437,44 +374,44 @@
      <p> Unfortunately, we cannot help with data processing, as this is the responsibility of the research group. However, we can provide resources as needed. For instance, have a look at <a href="https://sccn.ucsd.edu/wiki/Artifact_Subspace_Reconstruction_(ASR)">Artifact Subspace Reconstruction</a> and automated correction methods like <a href="http://pub.ist.ac.at/~schloegl/publications/schloegl2007eog.pdf">this</a>. For more information on noise removal, check out our <a href="https://mentalab.com/reduce-noise-in-eeg-recordings/">blog post</a> on the subject. </p> 
   </div>
 </div>
-<br>
-<br>
-
-
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f90303c37b" aria-expanded="false">
-    How can I create a bipolar montage with my system, when it has a unipolar reference?
-</button>
-
-<div class="collapse" id="collapse_f90303c37b">
-  <div class="card card-body">
-     <p> With ease! Simply subtract your second reference channel from the other channels. This can be done in <a href="http://openvibe.inria.fr/">OpenViBE</a> or a Python script. For more, please reach out to us at <a href="support@mentalab.com">support@mentalab.com</a> </p> 
-  </div>
-</div>
-<br><br>
+<br> -->
 <h2 id="hardware">Hardware</h2>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_3a226958fe" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_d989d92824" aria-expanded="false">
     What is the size of the internal storage and can I record offline?
 </button>
 
-<div class="collapse" id="collapse_3a226958fe">
+<div class="collapse" id="collapse_d989d92824">
   <div class="card card-body">
-     The internal storage has 8 GB. When recording with 8 channels, you can record for the following times:<br> ~13.7 hours at 250 Hz<br>~8.8 hours at 500 Hz<br>~3.98 hours at 1 kHz
+     The internal storage has 8 GB. An 8-channel sleep recording of 8 hours will at 250 Hz result in a ~275 MB file in internal memory.
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_9d1af2a6ac" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_335c8dec84" aria-expanded="false">
+    How long does the battery last?
+</button>
+
+<div class="collapse" id="collapse_335c8dec84">
+  <div class="card card-body">
+     Battery live depends on recording mode and sampling rate. For our latest Explore Pro devices, battery life at 250 Hz is up to ten hours.
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_b58bd82420" aria-expanded="false">
     What sampling rates does Explore offer?
 </button>
 
-<div class="collapse" id="collapse_9d1af2a6ac">
+<div class="collapse" id="collapse_b58bd82420">
   <div class="card card-body">
-     ExG data is recorded at up to 8000 Hz (users' choice; maximum sampling rate dependend on recording mode and channel count), but visualized at 125 Hz; orientation data is both recorded and visualized at 20 Hz.
+     ExG data is recorded at up to 8000 Hz (users' choice; maximum sampling rate dependend on recording mode and channel count). Explore Desktop visualizes ExG data at 125 Hz. Orientation data is both recorded and visualized at 20 Hz.
   </div>
 </div>
 <br>
@@ -495,8 +432,26 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_54c073b334" aria-expanded="false">
+    How do the orientation sensors work?
+</button>
+
+<div class="collapse" id="collapse_54c073b334">
+  <div class="card card-body">
+     <p>
+Mentalab Explore devices have a built in IMU (inertial measurement unit) containing an accelerometer, a gyroscope, and a magentometer with three axes each.<br><br>
+1. The accelerometer measures acceleration of the device in three directions (front to back, side to side, up and down).<br>
+2. The gyroscope measures angular velocity, i.e., the speed at which the device is moving along three axes (<a href="https://en.wikipedia.org/wiki/Aircraft_principal_axes">pitch, yaw, and roll</a>).<br>
+3. The magnetometer measures absolute orientation (pitch, yaw, and roll) of the device with regard to the earth's magnetic field.<br><br>
+Try moving and turning the device while visualizing the orientation data in <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> to get a feel for the three sensors.</p>
+  </div>
+</div>
+<br>
+<br>
+
+
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_79f14a1c65" aria-expanded="false">
-    The participant&#39;s head is not moving, but one line of the accelerometer at -1000 and not 0. Why is this?
+    The participant&#39;s head is not moving, but one line of the accelerometer at -1000 and not 0. Why?
 </button>
 
 <div class="collapse" id="collapse_79f14a1c65">
@@ -508,29 +463,43 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_fbf4b73c1f" aria-expanded="false">
-    How does the magnetometer work?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_54778f1a19" aria-expanded="false">
+    Is the Mentalab Explore amplifier DC coupled?
 </button>
 
-<div class="collapse" id="collapse_fbf4b73c1f">
+<div class="collapse" id="collapse_54778f1a19">
   <div class="card card-body">
-     The magnetometer is a piezoelectric sensor. To be more explicit, Mentalab Explore has a built-in magnet which, like a compass, measures the external magnetic field applied to it. Earth's magnetic field creates a coordinate system that moves with the amplifier (since the magnetometer is located in the amplifier). We are interested in the orientation of this magnetic field so that we can build a fixed coordinate system. 
+     Yes, the Mentalab Explore amplifier is DC-coupled. However, do note that its working range is ±400mV.  
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_22e863d17c" aria-expanded="false">
-    Is my Mentalab Explore amplifier DC coupled?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8e816f74a3" aria-expanded="false">
+    How does combining REF and GND into a single electrode work?
 </button>
 
-<div class="collapse" id="collapse_22e863d17c">
+<div class="collapse" id="collapse_8e816f74a3">
   <div class="card card-body">
-     Yes. The Mentalab Explore amplifier is always DC-coupled. However, do note that its working range is ±400mV.  
+     The Mentalab Explore system combines REF and GND electrodes into a single channel. This is possible because the amplifier is so mobile, which means it doesn't draw heavy noise from the power line. Since we have short cable lengths, we can afford not to use a bias current and connect the ground to the "mass" shield of the PCB.
   </div>
 </div>
-<br><br>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_98053e2342" aria-expanded="false">
+    Which Bluetooth version does the Explore Pro system use?
+</button>
+
+<div class="collapse" id="collapse_98053e2342">
+  <div class="card card-body">
+     Mentalab Explore Pro uses Bluetooth Low Energy (BLE), allowing for long battery life.
+  </div>
+</div>
+<br>
+<br>
 <h3 id="usage">Usage</h3>
 <br>
 
@@ -587,40 +556,57 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_cf0ba4e96c" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2fd81040eb" aria-expanded="false">
     Is there a way to measure impedances?
 </button>
 
-<div class="collapse" id="collapse_cf0ba4e96c">
+<div class="collapse" id="collapse_2fd81040eb">
   <div class="card card-body">
-     <p><a href="https://explorepy.readthedocs.io">explorepy </a>our free in-house software, offers a feature that will indicate impedance values for individual channels to verify good signal quality before you start recording.</p>
+     <p> Impedance measurement is supported through our graphical user software
+<a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>,
+<a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile</a>, as well as through
+our open-source Python API <a href="https://explorepy.readthedocs.io">explorepy</a>.</p>
   </div>
 </div>
-<br><br>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_403c51683f" aria-expanded="false">
+    My amplifier won&#39;t turn on - it just flashes the pink LED and turns off! What should I do?
+</button>
+
+<div class="collapse" id="collapse_403c51683f">
+  <div class="card card-body">
+     <p>The internal memory of your Explore amplifier is full. The Explore amplifier will refuse to record any more data while its memory is full. To solve this, either transfer the data from your Explore amplifier to a computer using a USB-C cable, or, if you no longer need the data stored on the amplifier, double click your Explore amplifier while it is flashing the pink LED. Double-clicking the button will delete the internal memory of your Explore amplifier and allow you to start recording. See our <a href="/user-guide/led-light-guide">Light Guide</a> and <a href="/user-guide/button-guide">Button Guide</a> for more.</p> 
+  </div>
+</div>
+<br>
+<br>
 <h3 id="integration">Integration</h3>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_59f87001c3" aria-expanded="false">
-    How do I combine Mentalab Explore with other hardware while using a single trigger across all amplifiers?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2999b21c51" aria-expanded="false">
+    How can I send a single trigger to several different, mobile recording devices?
 </button>
 
-<div class="collapse" id="collapse_59f87001c3">
+<div class="collapse" id="collapse_2999b21c51">
   <div class="card card-body">
-     <p>If you want synchronize data streams from different hardware components, we recommend using software platforms specifically designed for this. <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> and <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> has built-in multi amplifier support. </p>
+     <p>If you want synchronize data streams from different hardware components, we recommend using software platforms specifically designed for this. <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a>. </p>
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_367f65fa91" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_757688d5f3" aria-expanded="false">
     Can more than one amplifier be used simultaneously with the same receiver?
 </button>
 
-<div class="collapse" id="collapse_367f65fa91">
+<div class="collapse" id="collapse_757688d5f3">
   <div class="card card-body">
-     <p>Yes, if you use <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. Other software solutions support multiple amplifiers but it requires a few additional steps. A step-by-step guide using <code><a href="https://explorepy.readthedocs.io">explorepy</a></code>, <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a>, and <a href="http://openvibe.inria.fr/">Openvibe</a> can be found under the <a href="../integrations/"> Integrations</a> section.</p>
+     <p> We generally reccomend using separate receiver devices (computer or mobile) for each amplifier. Also see our <a href="../integrations/">integrations</a> section for various software solutions.</p>
   </div>
 </div>
 <br><br>
@@ -641,39 +627,80 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_0747fb492a" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_417ca1b02f" aria-expanded="false">
     What is the life expectancy of my cables and electrodes?
 </button>
 
-<div class="collapse" id="collapse_0747fb492a">
+<div class="collapse" id="collapse_417ca1b02f">
   <div class="card card-body">
-     The life expectancy of your equipment depends on how you care for it. Under optimal conditions, you can use your materials for 10 years or longer. We provide a 2 year warranty on both cables and electrodes, and have tested these components for 200 sessions without degredation.
+     The life expectancy of your equipment depends on how you care for it. Under optimal conditions, you can use your materials for 10 years or longer. We provide a 2 year warranty on both cables and electrodes, and have tested these components for 200 sessions without degradation.
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8e816f74a3" aria-expanded="false">
-    How does combining REF and GND into a single electrode work?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_40726a6d3d" aria-expanded="false">
+    Can I use my standard ECG or EMG electrodes with the amplifier?
 </button>
 
-<div class="collapse" id="collapse_8e816f74a3">
+<div class="collapse" id="collapse_40726a6d3d">
   <div class="card card-body">
-     The Mentalab Explore system combines REF and GND electrodes into a single channel. This is possible because the amplifier is so mobile, which means it doesn't draw heavy noise from the power line. Since we have short cable lengths, we can afford not to use a bias current and connect the ground to the "mass" shield of the PCB.
+     <p>Yes, our alligator and button connector cables can connect to standard stick and peel electrodes as long as they have a conductive knob on the back. We can provide compatible, adhesive stick and peel electrode. </p> 
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_4a935af7d9" aria-expanded="false">
-    Which Bluetooth version does the Explore&#43; system use?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_80a73b9f24" aria-expanded="false">
+    Can I use the Mentalab Explore system for developmental research?
 </button>
 
-<div class="collapse" id="collapse_4a935af7d9">
+<div class="collapse" id="collapse_80a73b9f24">
   <div class="card card-body">
-     Mentalab Explore+ uses Bluetooth Classic 2.1 embedded SPP profile to maximize data throughput and provide higher sampling rates.
+     <p> Choose an appropriate XS, XS/S, or S cap, as there is a lot of variability in head size between babies, toddlers, and infants. Experiment with removing the chin strap for added comfort. For more on infant EEG research, check out our <a href="https://mentalab.com/infant-eeg-markers/">blog post</a> on the subject.</p> 
+  </div>
+</div>
+<br><br>
+<h3 id="montages">Montages</h3>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_79a30f1c0d" aria-expanded="false">
+    Can one channel act as a reference for a subset of other channels?
+</button>
+
+<div class="collapse" id="collapse_79a30f1c0d">
+  <div class="card card-body">
+     <p>This cannot be done in <a href="https://explorepy.readthedocs.io"><code>explorepy</code></a> and <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.
+A real-time visualization can be achieved using <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. </p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f90303c37b" aria-expanded="false">
+    How can I create a bipolar montage with my system, when it has a unipolar reference?
+</button>
+
+<div class="collapse" id="collapse_f90303c37b">
+  <div class="card card-body">
+     <p> With ease! Simply subtract your second reference channel from the other channels. This can be done in <a href="http://openvibe.inria.fr/">OpenViBE</a> or a Python script. For more, please reach out to us at <a href="support@mentalab.com">support@mentalab.com</a> </p> 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8ca883c390" aria-expanded="false">
+    Can the Mentalab Explore amplifier record EEG and ECG at the same time?
+</button>
+
+<div class="collapse" id="collapse_8ca883c390">
+  <div class="card card-body">
+     Combining ECG and EEG recording is possible. However, both electrograms must share the same reference electrode, which may affect EEG signal quality. To minimize this effect, put the ground electrode on the scalp (not chest) and measure ECG with respect to that. The remaining cross talk will be: <br>10Hz input : -64dB <br>25Hz input : -75dB 
   </div>
 </div>
 <br><br>
@@ -681,13 +708,13 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_24d6715d21" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_979f0453fd" aria-expanded="false">
     Will your amplifier work with my software?
 </button>
 
-<div class="collapse" id="collapse_24d6715d21">
+<div class="collapse" id="collapse_979f0453fd">
   <div class="card card-body">
-     <p>Please see the <a href="../integrations/"> Integrations</a> section for a complete list of analysis software that works with Mentalab Explore. As a general guideline, our open source API <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data directly to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a>, and we have integrations for Java and MATLAB. We are also fully integrated with <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. If you would like to build your own integration, we provide an open source SDK and our technical team is always happy to help.</p> 
+     <p>Please see the <a href="../integrations/"> Integrations</a> section for a complete list of analysis software that works with Mentalab Explore. As a general guideline, our open source Python API <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data directly to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> and we are also integrating with [Brainflow](https://brainflow.org/). Please feel free to reach out if you would like to discuss your integration needs. If you would like to build your own integration, we provide an open source SDK and our technical team is always happy to help.</p> 
   </div>
 </div>
 <br>
@@ -707,40 +734,41 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_9a737dd472" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_e96902b442" aria-expanded="false">
     How do event triggers work? Can they be synchronized with other amplifiers?
 </button>
 
-<div class="collapse" id="collapse_9a737dd472">
+<div class="collapse" id="collapse_e96902b442">
   <div class="card card-body">
-     <p>The time stamps generated by the Mentalab Explore+ amplifier are very precise. There is a slight yet consistent delay of ~50ms because of how Bluetooth works. Syncing with other amplifiers can be done using third-party software, like <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> and <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. Please contact support for more detailed information on the topic. </p>
+     <p>The time stamps generated by the Mentalab Explore Pro amplifier are very precise. You should expect a slight yet consistent delay of ~50ms in data transmission via bluetooth. Syncing with other amplifiers can be done using third-party software, like <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a>. Please contact support for more detailed information on the topic.</p>
   </div>
 </div>
 <br>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1c98b9e396" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f2c84cb39f" aria-expanded="false">
     How is recorded data stored?
 </button>
 
-<div class="collapse" id="collapse_1c98b9e396">
+<div class="collapse" id="collapse_f2c84cb39f">
   <div class="card card-body">
-     <p>All data is stored in CSV or EDF format. Filters that are applied in <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> only affect visualization. The recorded data files will always contain raw data. Files recorded with<code> explorepy </code>are saved in the current command line folder. By default this is <code>C:\Users\&#10094;USER_NAME&#10095;</code> on Windows; <code>/home/&#10094;USER_NAME&#10095;</code> on Ubuntu; and <code>/Users/&#10094;USER_NAME&#10095;</code> on Mac. You can record data in other formats using and other third-party software solutions that supports <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> (e.g. LabRecorder, OpenVibe etc.). </p>
+     <p>All data is stored in CSV or BDF format. Filters that are applied in our software (explorepy, Explore Desktop, Explore Mobile) only affect visualization. The recorded data files will always contain raw data. You can record data in other formats using and other third-party software solutions that supports <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> (e.g. LabRecorder, OpenVibe etc.). We are happy to support you in converting your files to the format you need.</p>
   </div>
 </div>
-<br><br>
+<br>
+<br>
 <h3 id="explorepy">explorepy</h3>
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_4becbde678" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7b30237e78" aria-expanded="false">
     How do I use explorepy’s command line input to communicate with the amplifier?
 </button>
 
-<div class="collapse" id="collapse_4becbde678">
+<div class="collapse" id="collapse_7b30237e78">
   <div class="card card-body">
-     <p>You can find an overview as well as a detailed list of available command line inputs in our <a href="../user-guide/explorepy-commands/">explorepy Command Guide</a>. </p>
+     <p>You can find an overview as well as a detailed list of available command line inputs in our <a href="../user-guide/explorepy-commands/">explorepy command guide</a>. Check out our full <a href="https://explorepy.readthedocs.io/en/latest/index.html">explorepy documentation</a> as well. </p>
   </div>
 </div>
 <br>
@@ -756,7 +784,11 @@ Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut
      <p>You can use <code>explorepy</code> from most Python command terminals. However, we do recommend using <a href="https://www.anaconda.com/">Anaconda</a> to manage your virtual environment dependencies, and <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Anaconda prompt</a> to run custom Python scripts. If you use the executable installer, you can also operate <code>explorepy</code> from a Windows command prompt. </p><p>We have heard reports that some terminals do not run <code>explorepy</code> smoothly. These terminals include:<ul><li>Spyder Shell<li>Jupyter Notebook Shell</ul></p> 
   </div>
 </div>
-<br><br>
+<br>
+<br>
+<!-- ### Explore Desktop
+
+### Explore Mobile -->
 <h2 id="contact">Contact</h2>
 <p>Can&rsquo;t find what you&rsquo;re looking for? Please don&rsquo;t hesitate to get in contact us directly at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 

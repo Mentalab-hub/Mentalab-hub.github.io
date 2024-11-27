@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="http://localhost:1313/applications/eegsynth/">
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/eegsynth/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
 
     
 
@@ -311,9 +311,19 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#setting-up-required-software">Setting up required software</a></li>
-    <li><a href="#setting-up-eegsynth">Setting up EEGSynth</a></li>
-    <li><a href="#setting-up-midi-loopback">Setting up MIDI Loopback</a></li>
+    <li><a href="#setting-up-eegsynth">Setting up EEGSynth</a>
+      <ul>
+        <li><a href="#running-redis-server">Running redis server</a></li>
+        <li><a href="#push-exg-data-to-lsl">Push ExG data to LSL</a></li>
+      </ul>
+    </li>
+    <li><a href="#setting-up-midi-loopback">Setting up MIDI loopback</a>
+      <ul>
+        <li><a href="#start-your-eegsynth-patch">Start your EEGSynth patch</a></li>
+      </ul>
+    </li>
     <li><a href="#setting-up-vcv-rack">Setting up VCV Rack</a></li>
+    <li><a href="#enjoy-your-brain-controlled-synthesizer">Enjoy your brain controlled synthesizer</a></li>
   </ul>
 </nav>
 </div>
@@ -323,39 +333,63 @@
 
 <h1>EEGSynth</h1>
 
-<p><a href="https://www.eegsynth.org/">EEGSynth</a> is a software project aiming at connecting brain signals to electronic music instruments.
-In a nutshell, EEGSynth can, among many other things, take in real-time EEG signals, process them and extract useful information such as bandpower, and use these to send instruction messages to electronic music instruments using the MIDI standard.
-In this application example, we show how to set up Mentalab Explore for EEGSynth and create a patch that uses EEG bandpower to control a patch in VCV Rack - a virtual modular synthesizer coming with a fully functional free version.</p>
-<p>The following instructions were tested on MacOS running on an M1 chip. If you need instructions specific to your operating system, please get in touch with us at <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
+<p><a href="https://www.eegsynth.org/">EEGSynth</a> is a software project aiming at connecting brain signals to electronic music instruments. EEGSynth is taking inspiration from <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizers</a>. In a modular synth, each module performs a specific function (generating sound, modulating sound, generating control voltages, etc.) and outputs from one module can be connected to the inputs of another module using patch cables. The entirety of the connected modules is referred to as a patch.
+Similarly, EEGSynth modules can, among many other things, take in real-time EEG signals, process them and extract useful information such as bandpower, and use these to send instruction messages to electronic music instruments using the MIDI standard.</p>
+<p>In this application example, we show how to set up Mentalab Explore for EEGSynth and create a patch that uses EEG bandpower to control a patch in VCV Rack - a virtual modular synthesizer coming with a fully functional free version.</p>
+<div class="video-container">
+<iframe src="https://www.youtube-nocookie.com/embed/cqH6Yi0aS_Y" title="EEGSynth Patch" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 <h2 id="setting-up-required-software">Setting up required software</h2>
-<p>First, we create a new virtual python environment and install eegsynth and some other libraries. Create a new folder for the project, navigate to it and run the following commands on the command line.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>conda create -n eegsynth python<span style="color:#f92672">=</span>3.12
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>conda activate eegsynth
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>git clone https://github.com/eegsynth/eegsynth.git
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>port install redis
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>port install portaudio
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">#pip install eegsynth</span>
-</span></span></code></pre></div><h2 id="setting-up-eegsynth">Setting up EEGSynth</h2>
-<p>EEGSynth is taking inspiration from <a href="https://en.wikipedia.org/wiki/Modular_synthesizer">modular synthesizers</a> by organising its components into modules that can be &ldquo;patched&rdquo; together, i.e., their inputs and outputs can be connected in many different ways.</p>
-<p>The general workflow is to run a module from the src/modules folder and provide it with an .ini file that contains the users configuration parameters. Generally, you should only need to edit the .ini files but not the modules themselves. Below is one example that assumes a buffer.ini file has been placed in the new mypatches/MentalabExplore directory. Hint: each module directory contains an example .ini file that you can copy to your own patch directory and edit there.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir mypatches
-</span></span><span style="display:flex;"><span>mkdir mypatches/MentalabExplore
-</span></span><span style="display:flex;"><span>cp src/modules/buffer/buffer.ini mypatches/MentalabExplore
-</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python src/modules/buffer/buffer.py -i mypatches/MentalabExplore/buffer.ini
-</span></span></code></pre></div><h2 id="setting-up-midi-loopback">Setting up MIDI Loopback</h2>
+<p>Follow the <a href="https://github.com/eegsynth/eegsynth/blob/master/doc/installation.md">official guidelines</a> on how to install eegsynth, making sure to also follow the platform-specific instructions for your operating system.
+In addition to several python packages, you will also need to have <a href="https://redis.io/docs/latest/operate/oss_and_stack/install/install-redis/">redis server</a> installed on your machine.</p>
+<h2 id="setting-up-eegsynth">Setting up EEGSynth</h2>
+<h3 id="running-redis-server">Running redis server</h3>
+<p>Redis is used by EEGSynth to communicate information between individual modules of your EEGSynth patch.
+One the command line, use the first command to start the server. Using the second command, you can monitor the messages that are communicated over redis.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>redis-server
+</span></span><span style="display:flex;"><span>redis-cli monitor
+</span></span></code></pre></div><h3 id="push-exg-data-to-lsl">Push ExG data to LSL</h3>
+<p>We have set up an 8-channel Explore Pro device with channel 1 on Oz, suitable for recording alpha waves, and channel 2 on Fz, suitable for recording frontal theta and beta activity.
+Next, will use <a href="https://labstreaminglayer.readthedocs.io/">lab streaming layer</a> to make the stream of EEG data available for further processing in EEGSynth. You can either use the <code>LSL</code> button in Explore Desktop, or use the following lines of python code to push to lsl using explorepy.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> explorepy
+</span></span><span style="display:flex;"><span>expdev <span style="color:#f92672">=</span> explorepy<span style="color:#f92672">.</span>Explore()
+</span></span><span style="display:flex;"><span>expdev<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#34;Explore_XXXX&#34;</span>) <span style="color:#75715e"># REPLACE STRING WITH YOUR DEVICE NAME</span>
+</span></span><span style="display:flex;"><span>expdev<span style="color:#f92672">.</span>push2lsl()
+</span></span></code></pre></div><h2 id="setting-up-midi-loopback">Setting up MIDI loopback</h2>
 <p>In our example, we are going to use MIDI loopback, meaning that eegsynth will send out MIDI commands and another software (VCV Rack) running on the same computer uses these messages as input.</p>
 <p>On MacOS, start the Audio MIDI Setup application, which is installed by default on your system. In the top menu, click Window &gt; Show MIDI Studio. Double click the IAC Driver module and check the &ldquo;Device is online&rdquo; box. Add a bus to the ports section using the + icon if needed.
 You should not have a MIDI loopback device that can receive input from an EEGSynth outputmidi module and send the midi messages to a VCV Rack MIDI&gt;CV module.</p>
+<h3 id="start-your-eegsynth-patch">Start your EEGSynth patch</h3>
+<p>The general workflow is to run a module from the <code>src/modules</code> folder and provide it with an <code>.ini</code> file that contains your own configuration parameters. Generally, you should only need to edit the <code>.ini</code> files but not the modules themselves. Below is one example that assumes a <code>buffer.ini</code> file has been placed in the new <code>mypatches/MentalabExplore</code> directory. Hint: each module directory contains an example .ini file that you can copy to your own patch directory and edit there.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir mypatches
+</span></span><span style="display:flex;"><span>mkdir mypatches/MentalabExplore
+</span></span><span style="display:flex;"><span>cp src/module/buffer/buffer.ini mypatches/MentalabExplore
+</span></span></code></pre></div><p>You can either run each module individually using the following syntax:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python src/module/buffer/buffer.py -i mypatches/MentalabExplore/buffer.ini
+</span></span></code></pre></div><p>Or, once you are happy with your patch, navigate to your patch directory, type <code>eegsynth *.ini</code>, and use tab to autocomplete to all <code>.ini</code> files. Pressing enter will then start all the corresponding modules.</p>
+<p>We have created a patch that takes in EEG data via LSL, extracts alpha power on Oz and theta/beta ratio on Fz, and uses the resulting values to send MIDI messages. The patch is derived from the <a href="https://github.com/eegsynth/eegsynth/tree/3a604adef00fa03971b958ad4e46b13f4fde3e70/patches/LSLbandpower">LSLbandpower</a> patch available in the EEGSynth repository.
+All of our patch files are available from our <a href="https://github.com/Mentalab-hub/explorepy/tree/0af8e3241d58472b1b8d973c5f18c1bb2fc35bbb/examples">explorepy repository</a>.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/EEGSynth-Patch.png" alt="VCVRack Patch for EEGSynth" width="90%"/>
+<figcaption> Our EEGSynth patch files.</figcaption>
+</figure>
 <h2 id="setting-up-vcv-rack">Setting up VCV Rack</h2>
-<p>VCV Rack is a virtual modular synthesizer. Each module performs a specific function (generating sound, modulating sound, generating control voltages, etc.) and outputs from one module can be connected to the inputs of another module using patch cables. The entirety of the connected modules is referred to as a patch.
-<a href="https://vcvrack.com/Rack">Download the free version of VCV Rack 2</a> and install it on your machine. When starting the software, a default patch should be opened. You should be able to control the patch using your computer keyboard as input device (using the MIDI&gt;CV module) and hear sound (send to the AUDIO module). If you can&rsquo;t hear anything, make sure to select your audio output device in the AUDIO module.</p>
-<p>Next, load up the provided example patch from here.</p>
-<p>In the MIDI&gt;CV module, select the IAC Driver as MIDI input device. [INSERT  screenshot]</p>
+<p>VCV Rack is a virtual modular synthesizer.
+<a href="https://vcvrack.com/Rack">Download the free version of VCV Rack 2</a> and install it on your machine.
+When starting the software, a default patch should be opened.
+Next, load up the provided example patch from the file menu.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/EEGSynth-VCVRack.png" alt="VCVRack Patch for EEGSynth" width="90%"/>
+<figcaption> Our VCV Rack patch, controlling oscillator pitch and filter cutoff using EEG bandpower features.</figcaption>
+</figure>
+<p>In the two <b>MIDI&gt;CV</b> modules, select the <code>IAC Driver Bus 1</code> and <code>IAC Driver Bus 2</code> as MIDI input devices.
+In the <b>AUDIO module</b>, select our desired sound output device.</p>
+<p>The patch is using note pitch (V/OCT) from MIDI Bus 1 (alpha power on Oz) to control the pitch of two sound generators (VCO).
+In this patch, we have different oscilators on the left and right audio channel, which get slightly different pitch information leading to cool stereo effects.
+The sound is then passed through a low pass filter (VCF), whose cutoff frequency is controlled by theta/beta power on Fz.
+Finally the sound is passed through a delay module to add echo effects to the sound.</p>
+<h2 id="enjoy-your-brain-controlled-synthesizer">Enjoy your brain controlled synthesizer</h2>
+<p>We uploaded a snippet of our EEGsynth patch <a href="https://youtu.be/cqH6Yi0aS_Y?feature=shared">here</a>. Almost reminiscent of the legendary <a href="https://www.youtube.com/watch?v=zIqS5_bh4nM">Laurie Spiegel</a>. Check out our <a href="https://mentalab.com/music-with-eeg/">blog post</a> written by Stephen Whitmarsh of the EEGSynth team as well. Happy patching!</p>
 
 
     
@@ -367,19 +401,18 @@ You should not have a MIDI loopback device that can receive input from an EEGSyn
 
         </div> 
 <p style="text-align: center;">Copyright © 2024 Mentalab</p>
-<script src="http://localhost:1313/lib/jquery.min.js"></script> 
-<script src="http://localhost:1313/lib/popper.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 
-<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
 <script type="text/javascript" src="/plugins/auto-complete.js"></script>
 <link href="/plugins/auto-complete.css" rel="stylesheet">
+
 <script type="text/javascript">
-  
-      var baseurl = "http:\/\/localhost:1313\/";
-  
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
