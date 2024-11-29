@@ -418,14 +418,14 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8304456125" aria-expanded="false">
-    What hardware filters are used in the Explore system?
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_9b4b598282" aria-expanded="false">
+    What hardware signal filters are used in the Explore system?
 </button>
 
-<div class="collapse" id="collapse_8304456125">
+<div class="collapse" id="collapse_9b4b598282">
   <div class="card card-body">
      
-Our hardware applies a 3rd order sinc filter as an anti-aliasing filter. The cut-off frequencies depend on the sampling rate.
+Our hardware applies a first order differential low-pass filter as an anti-aliasing filter with a cut-off frequency of 3.6kHz. The noise-shaping converter includes a digital third-order, low-pass, sinc filter with variable-decimation rate depending on the data rate. Its -3dB-Bandwidth is roughly a quarter of the output data rate. ExG data are always recorded as raw data, giving you full flexibility for applying further filters in post- or real-time processing.
   </div>
 </div>
 <br>
@@ -476,13 +476,13 @@ Try moving and turning the device while visualizing the orientation data in <a h
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_8e816f74a3" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_6f2030b465" aria-expanded="false">
     How does combining REF and GND into a single electrode work?
 </button>
 
-<div class="collapse" id="collapse_8e816f74a3">
+<div class="collapse" id="collapse_6f2030b465">
   <div class="card card-body">
-     The Mentalab Explore system combines REF and GND electrodes into a single channel. This is possible because the amplifier is so mobile, which means it doesn't draw heavy noise from the power line. Since we have short cable lengths, we can afford not to use a bias current and connect the ground to the "mass" shield of the PCB.
+     The Mentalab Explore system combines REF and GND electrodes into a single channel. This is possible because the amplifier is so mobile, which means it is battery powered and small. In addition, the electrode cables are very short which allow us to use a single reference electrode. 
   </div>
 </div>
 <br>
