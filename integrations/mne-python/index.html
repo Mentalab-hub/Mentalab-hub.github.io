@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/mne-python/">
+
+    <title>
+        
+        MNE Python | Wiki
+        
+    </title>
+
+    
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
+                
+                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
+                    LabChart Lightning
+                </a>
+        </li>
+        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
+                
+                 <a href="/integrations/openvibe/" class="nav-link p-0">
+                    Device Syncing With LSL
+                </a>
+        </li>
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/psychopy/" class="nav-link p-0">
+                    PsychoPy Builder
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLab
+                </a>
+        </li>
+        <li data-nav-id="/integrations/mne-python/" class="nav-item my-1 active">
+                
+                 <a href="/integrations/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#csv-and-bdf-files">CSV and BDF files</a></li>
+    <li><a href="#xdf-files">XDF files</a></li>
+    <li><a href="#bin-files">BIN files</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>MNE Python</h1>
+
+<h1 id="loading-mentalab-data-into-mne">Loading Mentalab data into MNE</h1>
+<p><a href="https://mne.tools/stable/index.html">MNE Python</a> is an excellent, open-source choice for EEG (and MEG) data visualization and analysis.</p>
+<h2 id="csv-and-bdf-files">CSV and BDF files</h2>
+<p>The below script can be used to create an mne raw data object from a .csv or .bdf file recorded with Explore Desktop. For CSV, the mne object is created from a simple pandas data_frame. Reading bdf files uses the <a href="https://mne.tools/stable/generated/mne.io.read_raw_bdf.html#mne.io.read_raw_bdf">bdf file loader</a> provided by mne.</p>
+<h2 id="xdf-files">XDF files</h2>
+<p>The function can also be used to read in an xdf file recorded with LabRecorder (relying on the <a href="https://github.com/xdf-modules/pyxdf">pyxdf</a> library).
+Loading xdf files selects the first stream in the file by default.
+Change it by adjusting the stream_num variable.
+Make sure to select the correct ExG stream, as there may be several ExG, ORN, and Marker streams in one xdf file.</p>
+<h2 id="bin-files">BIN files</h2>
+<p>To load a Mentalab binary (*.BIN) taken from the amplifiers flash memory, convert it to csv or bdf using Explore Dekstop (File &gt; Convert BIN) first and then continue with the below function.</p>
+<hr>
+<p>In all cases, the function will automatically determine the number of channels, channel names, and sampling rate for you.</p>
+<p>Do note that Mentalab ExG data is always recorded raw, meaning that after creating the mne raw object, you have free choice of processing in terms of filtering, artefact rejection, and so on.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#75715e">###########################</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">### Mentalab MNE Loader ###</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">###########################</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># The below script can be used to create an mne raw data object </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># from a csv or bdf file recorded with Explore Desktop,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># or an xdf file recorded with LabRecorder.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Loading xdf files selects the first stream in the file by default.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Change it by adjusting the stream_num variable.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Make sure to select the correct ExG stream, as there may be several ExG, </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># ORN, and Marker streams in one xdf file.</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># To load a Mentalab binary (*.BIN) taken from the amplifiers flash memory,</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># convert it to csv or bdf using Explore Dekstop (File &gt; Convert BIN) first </span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># and then continue with the below function.</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pandas <span style="color:#66d9ef">as</span> pd
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> pyxdf
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> mne
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">mne_load_mentalab</span>(file_name):
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># CSV</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> file_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;csv&#34;</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Creating mne raw object from csv.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        file_name_root <span style="color:#f92672">=</span> file_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">0</span>][:<span style="color:#f92672">-</span><span style="color:#ae81ff">4</span>]
+</span></span><span style="display:flex;"><span>        sampling_freq <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_name_root <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;_Meta.csv&#39;</span>, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;,&#39;</span>)[<span style="color:#e6db74">&#39;sr&#39;</span>][<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        data_frame <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(file_name, delimiter<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;,&#39;</span>)
+</span></span><span style="display:flex;"><span>        data_frame <span style="color:#f92672">=</span> data_frame<span style="color:#f92672">.</span>drop(<span style="color:#e6db74">&#39;TimeStamp&#39;</span>, axis <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        n_channels <span style="color:#f92672">=</span> len(data_frame<span style="color:#f92672">.</span>columns)
+</span></span><span style="display:flex;"><span>        ch_types <span style="color:#f92672">=</span> [<span style="color:#e6db74">&#34;eeg&#34;</span>] <span style="color:#f92672">*</span> n_channels
+</span></span><span style="display:flex;"><span>        ch_names <span style="color:#f92672">=</span> list(data_frame<span style="color:#f92672">.</span>columns)
+</span></span><span style="display:flex;"><span>        
+</span></span><span style="display:flex;"><span>        info <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>create_info(ch_names<span style="color:#f92672">=</span>ch_names,
+</span></span><span style="display:flex;"><span>                            sfreq<span style="color:#f92672">=</span>sampling_freq,
+</span></span><span style="display:flex;"><span>                            ch_types<span style="color:#f92672">=</span>ch_types)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># convert from muVolt to Volt because MNE expects data in Volt units</span>
+</span></span><span style="display:flex;"><span>        data_frame <span style="color:#f92672">=</span> data_frame<span style="color:#f92672">.</span>div(<span style="color:#ae81ff">1e6</span>) 
+</span></span><span style="display:flex;"><span>        data_frame <span style="color:#f92672">=</span> data_frame<span style="color:#f92672">.</span>transpose()
+</span></span><span style="display:flex;"><span>        raw_data <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>io<span style="color:#f92672">.</span>RawArray(data_frame, info)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> raw_data
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># BDF</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> file_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;bdf&#39;</span>:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Creating mne raw object from bdf.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        raw_data <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>io<span style="color:#f92672">.</span>read_raw_bdf(file_name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> raw_data
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># XDF</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">elif</span> file_name<span style="color:#f92672">.</span>split(<span style="color:#e6db74">&#39;.&#39;</span>)[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;xdf&#39;</span>:
+</span></span><span style="display:flex;"><span>        streams, header <span style="color:#f92672">=</span> pyxdf<span style="color:#f92672">.</span>load_xdf(file_name)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># THIS SELECTS THE FIRST STREAM</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># CHANGE INDEX TO SWITCH STREAM</span>
+</span></span><span style="display:flex;"><span>        stream_num <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Creating mne raw object from xdf. Selected stream: </span><span style="color:#e6db74">{</span>stream_num<span style="color:#e6db74">}</span><span style="color:#e6db74">.&#34;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        ch_names <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">for</span> x <span style="color:#f92672">in</span> streams[stream_num][<span style="color:#e6db74">&#39;info&#39;</span>][<span style="color:#e6db74">&#39;desc&#39;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#39;channels&#39;</span>][<span style="color:#ae81ff">0</span>][<span style="color:#e6db74">&#39;channel&#39;</span>]:
+</span></span><span style="display:flex;"><span>            ch_names<span style="color:#f92672">.</span>append(x[<span style="color:#e6db74">&#39;name&#39;</span>][<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> streams[stream_num][<span style="color:#e6db74">&#34;time_series&#34;</span>]<span style="color:#f92672">.</span>T
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        n_channels <span style="color:#f92672">=</span> data<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>        sampling_freq <span style="color:#f92672">=</span> float(streams[stream_num][<span style="color:#e6db74">&#34;info&#34;</span>][<span style="color:#e6db74">&#34;nominal_srate&#34;</span>][<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># convert from muVolt to Volt because MNE expects data in Volt units</span>
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">*=</span> <span style="color:#ae81ff">1e-6</span>  <span style="color:#75715e"># uV -&gt; V</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        info <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>create_info(ch_names, sampling_freq, [<span style="color:#e6db74">&#34;eeg&#34;</span>] <span style="color:#f92672">*</span> n_channels)
+</span></span><span style="display:flex;"><span>        raw_data <span style="color:#f92672">=</span> mne<span style="color:#f92672">.</span>io<span style="color:#f92672">.</span>RawArray(data, info)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> raw_data
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Usage example calls</span>
+</span></span><span style="display:flex;"><span>raw_data <span style="color:#f92672">=</span> mne_load_mentalab(<span style="color:#e6db74">&#34;data/8channel_ExG.csv&#34;</span>)
+</span></span><span style="display:flex;"><span>raw_data <span style="color:#f92672">=</span> mne_load_mentalab(<span style="color:#e6db74">&#34;data/16channel_ExG.bdf&#34;</span>)
+</span></span><span style="display:flex;"><span>raw_data <span style="color:#f92672">=</span> mne_load_mentalab(<span style="color:#e6db74">&#34;data/32channel_ExG.xdf&#34;</span>)
+</span></span></code></pre></div><p><br><br></p>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

@@ -177,6 +177,13 @@
       <description>&lt;p&gt;Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&lt;/p&gt;&#xA;&lt;h2 id=&#34;general&#34;&gt;General&lt;/h2&gt;&#xA;&lt;p&gt;Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled onto the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&lt;/p&gt;&#xA;&lt;p&gt;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>MNE Python</title>
+      <link>https://wiki.mentalab.com/integrations/mne-python/</link>
+      <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/mne-python/</guid>
+      <description>&lt;h1 id=&#34;loading-mentalab-data-into-mne&#34;&gt;Loading Mentalab data into MNE&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://mne.tools/stable/index.html&#34;&gt;MNE Python&lt;/a&gt; is an excellent, open-source choice for EEG (and MEG) data visualization and analysis.&lt;/p&gt;&#xA;&lt;h2 id=&#34;csv-and-bdf-files&#34;&gt;CSV and BDF files&lt;/h2&gt;&#xA;&lt;p&gt;The below script can be used to create an mne raw data object from a .csv or .bdf file recorded with Explore Desktop. For CSV, the mne object is created from a simple pandas data_frame. Reading bdf files uses the &lt;a href=&#34;https://mne.tools/stable/generated/mne.io.read_raw_bdf.html#mne.io.read_raw_bdf&#34;&gt;bdf file loader&lt;/a&gt; provided by mne.&lt;/p&gt;&#xA;&lt;h2 id=&#34;xdf-files&#34;&gt;XDF files&lt;/h2&gt;&#xA;&lt;p&gt;The function can also be used to read in an xdf file recorded with LabRecorder (relying on the &lt;a href=&#34;https://github.com/xdf-modules/pyxdf&#34;&gt;pyxdf&lt;/a&gt; library).&#xA;Loading xdf files selects the first stream in the file by default.&#xA;Change it by adjusting the stream_num variable.&#xA;Make sure to select the correct ExG stream, as there may be several ExG, ORN, and Marker streams in one xdf file.&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>EASI ECG</title>
       <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
