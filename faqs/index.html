@@ -186,24 +186,6 @@
                     Supported Software
                 </a>
         </li>
-        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
-                
-                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
-                    LabChart Lightning
-                </a>
-        </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
-                
-                 <a href="/integrations/openvibe/" class="nav-link p-0">
-                    Device Syncing With LSL
-                </a>
-        </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
-                
-                 <a href="/integrations/psychopy/" class="nav-link p-0">
-                    PsychoPy Builder
-                </a>
-        </li>
         <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
                 
                  <a href="/integrations/eeglab/" class="nav-link p-0">
@@ -222,11 +204,6 @@
         ">
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
-    </li>
-    <li data-nav-id="/troubleshooting/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -398,13 +375,13 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_335c8dec84" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_cdd088d98a" aria-expanded="false">
     How long does the battery last?
 </button>
 
-<div class="collapse" id="collapse_335c8dec84">
+<div class="collapse" id="collapse_cdd088d98a">
   <div class="card card-body">
-     Battery live depends on recording mode and sampling rate. For our latest Explore Pro devices, battery life at 250 Hz is up to ten hours.
+     Battery life depends on recording mode and sampling rate. For our latest Explore Pro devices, battery life at 250 Hz is up to ten hours.
   </div>
 </div>
 <br>
@@ -438,18 +415,19 @@ Our hardware applies a first order differential low-pass filter as an anti-alias
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_fea25e7905" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_a9bf3dcee4" aria-expanded="false">
     How do the orientation sensors work?
 </button>
 
-<div class="collapse" id="collapse_fea25e7905">
+<div class="collapse" id="collapse_a9bf3dcee4">
   <div class="card card-body">
      <p>
-Mentalab Explore devices have a built in IMU (inertial measurement unit) containing an accelerometer, a gyroscope, and a magentometer with three axes each.<br><br>
+Mentalab Explore devices have a built in IMU (inertial measurement unit) containing an accelerometer, a gyroscope, and a magnetometer with three axes each. Additionally, the Explore devices calculate and stream quaternions based on the accelerometer and gyroscope data.<br><br>
 1. The accelerometer measures acceleration of the device in three directions (front to back, side to side, up and down).<br>
 2. The gyroscope measures angular velocity, i.e., the speed at which the device is moving along three axes (<a href="https://en.wikipedia.org/wiki/Aircraft_principal_axes">pitch, yaw, and roll</a>).<br>
-3. The magnetometer measures the earth's magentic field along three axes. This can be used to determine the absolute orientation of the device within the magnetic field.<br><br>
-Try moving and turning the device while visualizing the orientation data in <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> to get a feel for the three sensors. The orientation data are useful for determining the head position of the participant or for actigraphy measurements of physical activity.</p>
+3. The magnetometer measures the earth's magentic field along three axes. This can be used to determine the absolute orientation of the device within the magnetic field.<br>
+4. The quaternions encode the orientation of the device in relation to its starting position, similarly to rotation matrices. Unlike rotation matrices, quaternions do not suffer from gimbal lock, which occurs when two gimbal axes align to be parallel to each other and causes the loss of a degree of freedom.<br><br>
+Try moving and turning the device while visualizing the orientation data in <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> to get a feel for the three sensors. The box visualises the device’s orientation based on streamed quaternions. The orientation data are useful for determining the head position of the participant or for actigraphy measurements of physical activity.</p>
   </div>
 </div>
 <br>
@@ -457,7 +435,7 @@ Try moving and turning the device while visualizing the orientation data in <a h
 
 
 <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_79f14a1c65" aria-expanded="false">
-    The participant&#39;s head is not moving, but one line of the accelerometer at -1000 and not 0. Why?
+    Why is one of the accelerometer axes not at zero?
 </button>
 
 <div class="collapse" id="collapse_79f14a1c65">
@@ -589,6 +567,32 @@ our open-source Python API <a href="https://explorepy.readthedocs.io">explorepy<
 </div>
 <br>
 <br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_f89a38ad6c" aria-expanded="false">
+    I think I&#39;m having connection problems
+</button>
+
+<div class="collapse" id="collapse_f89a38ad6c">
+  <div class="card card-body">
+     <p>Make sure that no other Bluetooth accessories, such as Bluetooth headphones, are connected. Corded accessories, like mouse and keyboard, even if they have a Bluetooth adaptor, are fine. 
+  </div>
+</div>
+<br>
+<br>
+
+
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_54538b0703" aria-expanded="false">
+    My Explore amplifier is blinking blue, but I can&#39;t connect it to my Windows system. What should I do?
+</button>
+
+<div class="collapse" id="collapse_54538b0703">
+  <div class="card card-body">
+     <p>To establish connection to your Explore Pro amplifier, toggle Bluetooth off and on in your Windows settings.</p> 
+  </div>
+</div>
+<br>
+<br>
 <h3 id="integration">Integration</h3>
 <br>
 
@@ -606,13 +610,13 @@ our open-source Python API <a href="https://explorepy.readthedocs.io">explorepy<
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_757688d5f3" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_5e6a7483a0" aria-expanded="false">
     Can more than one amplifier be used simultaneously with the same receiver?
 </button>
 
-<div class="collapse" id="collapse_757688d5f3">
+<div class="collapse" id="collapse_5e6a7483a0">
   <div class="card card-body">
-     <p> We generally reccomend using separate receiver devices (computer or mobile) for each amplifier. Also see our <a href="../integrations/">integrations</a> section for various software solutions.</p>
+     <p> We generally reccomend using separate receiver devices (computer or mobile) for each amplifier. A single recording file can be made by using <code><a href="/integrations/supported-software/#labstreaming-layer-integrations">Lab Streaming Layer</a></code> and recording the different streams with LabRecorder.</p>
   </div>
 </div>
 <br><br>
@@ -714,13 +718,13 @@ A real-time visualization can be achieved using <a href="https://www.adinstrumen
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_979f0453fd" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7dac68d90b" aria-expanded="false">
     Will your amplifier work with my software?
 </button>
 
-<div class="collapse" id="collapse_979f0453fd">
+<div class="collapse" id="collapse_7dac68d90b">
   <div class="card card-body">
-     <p>Please see the <a href="../integrations/"> Integrations</a> section for a complete list of analysis software that works with Mentalab Explore. As a general guideline, our open source Python API <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data directly to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> and we are also integrating with [Brainflow](https://brainflow.org/). Please feel free to reach out if you would like to discuss your integration needs. If you would like to build your own integration, we provide an open source SDK and our technical team is always happy to help.</p> 
+     <p>Please see the <a href="../integrations/"> Integrations</a> section for a complete list of analysis software that works with Mentalab Explore. As a general guideline, our open source Python API <code><a href="https://explorepy.readthedocs.io">explorepy</a></code> can push data directly to <a href="https://labstreaminglayer.readthedocs.io/info/intro.html">lab streaming layer</a> and we are also integrated with <code><a href="https://brainflow.org/">BrainFlow</a></code> and <code><a href="https://neuropype.io">NeuroPype</a></code>. Please feel free to reach out if you would like to discuss your integration needs. If you would like to build your own integration, we provide an open source SDK and our technical team is always happy to help.</p> 
   </div>
 </div>
 <br>
@@ -781,13 +785,13 @@ A real-time visualization can be achieved using <a href="https://www.adinstrumen
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_ab18d91890" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_c388e8047e" aria-expanded="false">
     What command line terminals are compatible with explorepy?
 </button>
 
-<div class="collapse" id="collapse_ab18d91890">
+<div class="collapse" id="collapse_c388e8047e">
   <div class="card card-body">
-     <p>You can use <code>explorepy</code> from most Python command terminals. However, we do recommend using <a href="https://www.anaconda.com/">Anaconda</a> to manage your virtual environment dependencies, and <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Anaconda prompt</a> to run custom Python scripts. If you use the executable installer, you can also operate <code>explorepy</code> from a Windows command prompt. </p><p>We have heard reports that some terminals do not run <code>explorepy</code> smoothly. These terminals include:<ul><li>Spyder Shell<li>Jupyter Notebook Shell</ul></p> 
+     <p>You can use <code>explorepy</code> from most Python command terminals. However, we do recommend using <a href="https://www.anaconda.com/">Anaconda</a> to manage your virtual environment dependencies, and <a href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Anaconda prompt</a> to run custom Python scripts. </p><p>We have heard reports that some terminals do not run <code>explorepy</code> smoothly. These terminals include:<ul><li>Spyder Shell<li>Jupyter Notebook Shell</ul></p> 
   </div>
 </div>
 <br>
@@ -807,7 +811,7 @@ A real-time visualization can be achieved using <a href="https://www.adinstrumen
             </div> 
 
         </div> 
-<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
 <script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
 <script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 

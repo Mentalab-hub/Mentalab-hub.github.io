@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/applications/ssvep/">
+    <link rel="canonical" href="http://localhost:1313/integrations/attic/lightning-installation/">
 
     <title>
         
-        SSVEP Experiments | Wiki
+        LabChart Lightning | Wiki
         
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -119,7 +119,7 @@
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -130,7 +130,7 @@
                     EOG Artifact Removal
                 </a>
         </li>
-        <li data-nav-id="/applications/ssvep/" class="nav-item my-1 active">
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
                 
                  <a href="/applications/ssvep/" class="nav-link p-0">
                     SSVEP Experiments
@@ -174,7 +174,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -183,6 +183,18 @@
                 
                  <a href="/integrations/supported-software/" class="nav-link p-0">
                     Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/attic/lightning-installation/" class="nav-item my-1 active">
+                
+                 <a href="/integrations/attic/lightning-installation/" class="nav-link p-0">
+                    LabChart Lightning
+                </a>
+        </li>
+        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/psychopy/" class="nav-link p-0">
+                    PsychoPy Builder
                 </a>
         </li>
         <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
@@ -203,6 +215,11 @@
         ">
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/troubleshooting/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -291,140 +308,61 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#preparation">Preparation</a>
-      <ul>
-        <li><a href="#software">Software</a></li>
-        <li><a href="#hardware">Hardware</a></li>
-      </ul>
-    </li>
-    <li><a href="#online-ssvep-classifier">Online SSVEP classifier</a>
-      <ul>
-        <li><a href="#interpret-the-results">Interpret the results</a></li>
-      </ul>
-    </li>
-    <li><a href="#offline-ssvep-classifier">Offline SSVEP classifier</a>
-      <ul>
-        <li><a href="#interpret-the-results-1">Interpret the results</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>SSVEP Experiments</h1>
+<h1>LabChart Lightning</h1>
 
-<p>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.</p>
-<p>SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.</p>
-<p>Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available <a href="https://github.com/Mentalab-hub/explorepy/tree/master/examples/ssvep_demo">here</a>. You can run it as is or use it to build your own SSVEP based applications.</p>
-<div class="video-container">
-<iframe src="https://www.youtube-nocookie.com/embed/k4rQK9F9Y34" title="SSVEP Experiment" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<p>There are two classifiers:</p>
-<ul>
-<li>A real-time, online SSVEP classifier</li>
-<li>An offline classifier</li>
-</ul>
-<p>In both cases, the classifier determines which stimulus a participant is looking at by analyzing EEG signals. The stimulus whose frequency most closely matches the frequency of EEG signals is considered the target stimulus - and the one the participant is looking at.</p>
-<h2 id="preparation">Preparation</h2>
-<h3 id="software">Software</h3>
+<p>If you wish to use Mentalab Explore with LabChart Lightning, please follow the instructions below.</p>
 <ol>
-<li>Install <code><a href="https://explorepy.readthedocs.io/">explorepy</a></code>. Choose Option 2 (Python) if you are installing <code>explorepy</code> on a Windows system.</li>
-<li>Download the <a href="https://github.com/Mentalab-hub/explorepy"><code>explorepy</code> code</a> directly from GitHub. To do this, click on the green <code>Code</code> button, and &ldquo;Download ZIP&rdquo;. Remember where you extract the files, you will need this location later.</li>
-<li>Activate your Anaconda virtual environment: <code>conda activate myenv</code></li>
-<li>Install the required packages: <code>pip install scikit-learn matplotlib psychopy mne</code></li>
-</ol>
-<h3 id="hardware">Hardware</h3>
-<ol start="5">
-<li>
-<p>Setup the cap and electrodes. Place EEG electrodes on the occipital visual cortex (Oz, O1, O2, POz, etc.) and the ground electrode on Fpz or the mastoid (or any other location far enough from other electrodes).</p>
-
-<div class="alert alert-info" role="alert">
-    The analysis presented here is based on this configuration. The channel numbers are hardcoded. If you would like to use a different setup, modify the channel positions in line 70 of the <code>offline_analysis.py</code> file.
-</div>
-
-</li>
-<li>
-<p>Run an <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">impedance check</a> to verify that you will produce instructuve signals. For more information on achieving low impedances, please have a read of our <a href="https://wiki.mentalab.com/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</p>
-</li>
-</ol>
-<h2 id="online-ssvep-classifier">Online SSVEP classifier</h2>
-<ol start="7">
-<li>Navigate to the folder in which you extracted the files in step 2. There will be a sub-directory called <code>/examples/ssvep</code>. Move into this path from your Python console: <code>cd &lt;PATH-TO-SSVEP&gt;</code></li>
-<li>Turn on the device and run the following command in your terminal (replace #### with your device ID, e.g. Explore_1438):
-<pre tabindex="0"><code>python online_ssvep.py --name Explore_#### --duration 100
-</code></pre></li>
-</ol>
-<figure style="float:right;">
-<img class="mobile" src="/img/Applications/ssvep-stimuli.png" alt="SSVEP experiment stimuli" width="400"/>
-<figcaption> SSVEP experiment stimuli. </figcaption>
-</figure>
-<p>A new browser window will open. In it, four flickering stimuli will display. The stimuli are flickering at the following frequencies:</p>
+<li>Install <a href="https://www.adinstruments.com/support/labchart-lightning#software-downloads">LabChart Lightning</a>. Start the program and enter your license key. Then close the program.</li>
+<li>Download the <a href="https://mentalab.com/mentalabexplore-labchartlightning/">Mentalab Explore LabChart Lightning plugin</a>.</li>
+<li>Unzip the plugin and save to <code>Documents/LabChart Lightning/Plugins/Devices</code>.</li>
+<li>Ensure that your Mentalab Explore device is in pairing mode and blinking blue and that your computer&rsquo;s Bluetooth is on. Then pair your Explore device to the computer through Bluetooth settings (Explore_XXXX). Windows users may need to use a Bluetooth dongle.</li>
+<li>Start LabChart Lightning and add your Mentalab Explore device under the devices tab:
 <ul>
-<li>Bottom-left: 12 Hz</li>
-<li>Top-left: 10 Hz</li>
-<li>Bottom-right: 7.5 Hz</li>
-<li>Top-right: 8.6 Hz</li>
+<li>Select <strong>+ Add Devices</strong></li>
+<li>Click the checkbox for Mentalab Explore</li>
+<li>Choose <strong>Add Selected Devices</strong></li>
 </ul>
-<p>Based on the subject&rsquo;s real-time EEG, the arrow in the center will point to one of the 4 circles. The quicker the arrow points to the target stimulus, the higher the accuracy of the EEG signal.</p>
-<p>Once the experiment has run, navigate back to your Python console and hit <code>Ctrl+C</code> to exit.
-
-<div class="alert alert-info" role="alert">
-    The experiment is set to run for 100 seconds. You can modify this by changing the number after <code>--duration</code>
-</div>
-</p>
-<h3 id="interpret-the-results">Interpret the results</h3>
-<figure style="float:right;">
-<img class="mobile" src="/img/Applications/SSVEP-frame-duration.png" alt="Frame durations for the SSVEP experiment" width="400"/>
-<figcaption> Frame durations for the SSVEP experiment stimuli. </figcaption>
-</figure>
-<p>The key takeaway is that the quicker the arrow follows the participant&rsquo;s focus, the more efficient and accurate the classifier.</p>
-<p>All screens have a different refresh rate, which can cause frames to drop, reducing the classifier’s performance. The experiment script auto-generates stimuli by calculating frame duration over experiment time.</p>
-<p>In the figure below, longer vertical lines indicate longer frame displays. We can see that one frame dropped early in the experiment, and a few frames displayed longer than others. Overall, however, the classifier was successful.</p>
-<h2 id="offline-ssvep-classifier">Offline SSVEP classifier</h2>
-<p>An offline SSVEP classifier can be used to measure the accuracy of your EEG set-up.</p>
-<p>In this experiment, we record EEG data while the participant looks at specified target stimuli. We run an offline analysis of the recorded data to compute the accuracy of the system. Finally, we visualize the Time-Frequency-Representations (TFR) of the recorded EEG signal.</p>
-<p>To undertake offline SSVEP analysis:</p>
-<ol>
-<li>
-<p>Prepare the cap and electrodes as in the online SSVEP experiment.</p>
 </li>
-<li>
-<p>Turn on the device and run the following command in your terminal (replace #### with your device ID e.g Explore_1438):</p>
-<pre tabindex="0"><code>python offline_experiment.py --name Explore_#### --filename test_rec
-</code></pre><p>The experiment runs 100 trials in 20 blocks of 5. You can change the number of runs, however, by navigating to <code>offline_experiment.py</code> and altering the value assigned to the variables <code>n_blocks</code> and <code>trials_per_block</code> (lines 16/17).</p>
-<p>At the beginning of each trial, an arrow will indicate where the participant should look. Shortly after its appearance, a flickering stimulus will appear in the indicated position.</p>
-</li>
-<li>
-<p>Once the experiment is complete, the recorded data can be analyzed. To do this, run <code>offline_analysis.py</code>.
-
-<div class="alert alert-info" role="alert">
-    Ensure you use the same filename here as you did in Step 2
-</div>
-</p>
-<pre tabindex="0"><code>python offline_analysis.py --filename test_rec
-</code></pre></li>
 </ol>
-<h3 id="interpret-the-results-1">Interpret the results</h3>
-<figure style="display: inline-block; float:right;">
-<img class="mobile" src="/img/Applications/SSVEPoff1results.png" alt="SSVEP accuracy over trial duration" width="400"/>
-<figcaption> Accuracy over trial duration. </figcaption>
+<figure>
+<div class="row">
+  <div class="column">
+    <img style="width:90%; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="/img/Integrations/5.Add_device_Lightning_addDevices.png" alt="LabChart Lightning add devices 1">
+  </div>
+  <div class="column">
+    <img style="width:90%; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="/img/Integrations/5.Add_device_Lightning_CheckExplore.png" alt="LabChart Lightning add devices 2">
+  </div>
+  <div class="column">
+    <img style="width:90%; border: 1px solid #ddd; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); border-radius: 4px; margin: 15px; padding: 5px;" src="/img/Integrations/5.Add_device_Lightning_AddSelected.png	" alt="LabChart Lightning add devices 3">
+  </div>
+</div>
+<figcaption>In LabChart Lightning, select <b>+ Add Devices</b>, check your Mentalab Explore device, and choose <b>Add Selected Devices</b>.</figcaption>
 </figure>
-The offline SSVEP experiment will automatically generate two plots.
-<h4 id="system-accuracy">System accuracy</h4>
-<p>The first figure indicates that within approximately 0.8 seconds, the system can differentiate between stimulus response signals approximately 90% of the time. After 1 second, the system is 98% accurate; and within 1.2 seconds it is 100% accurate.</p>
-<h4 id="time-frequency-representation">Time-frequency representation</h4>
-<figure style="clear: right; display: inline-block; float:right;">
-<img class="mobile" src="/img/Applications/SSVEPTFREDsep24.png" alt="SSVEP time-frequency representation for each channel" width="400"/>
-<figcaption> Time-frequency representation for each channel. </figcaption>
-</figure>
-<p>In the second plot, we see the time-frequency representations for each channel. These representations clearly show the entrainment of the EEG signal for the two target frequencies (look at the dark red bands!). The left-most plots correspond to the stimulus flickering at 10 Hz, and the right-most plots for the stimulus flickering at 7.5 Hz.</p>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<br>
+Congratulations, you have successfully added Mentalab Explore to your LabChart Lightning software!
+<br><br>
+<p>If you run into problems with this installation process, please contact <a href="https://www.adinstruments.com/contact/technical-support?utm_source=Mentalab+Website&amp;utm_medium=link&amp;utm_content=Technical+Support+for+SDK&amp;utm_campaign=GLB-OTH-Mentalab_LCL_Integration_Launch-SEP20">ADInstruments Technical Support</a>.</p>
+<style>
+* {
+  box-sizing: border-box;
+}
 
+.row {
+  display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}
+</style>
 
     
 
@@ -434,11 +372,11 @@ The offline SSVEP experiment will automatically generate two plots.
             </div> 
 
         </div> 
-<p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -446,7 +384,7 @@ The offline SSVEP experiment will automatically generate two plots.
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 

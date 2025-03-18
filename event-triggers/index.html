@@ -186,24 +186,6 @@
                     Supported Software
                 </a>
         </li>
-        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
-                
-                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
-                    LabChart Lightning
-                </a>
-        </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
-                
-                 <a href="/integrations/openvibe/" class="nav-link p-0">
-                    Device Syncing With LSL
-                </a>
-        </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
-                
-                 <a href="/integrations/psychopy/" class="nav-link p-0">
-                    PsychoPy Builder
-                </a>
-        </li>
         <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
                 
                  <a href="/integrations/eeglab/" class="nav-link p-0">
@@ -222,11 +204,6 @@
         ">
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
-    </li>
-    <li data-nav-id="/troubleshooting/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -318,8 +295,10 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#button-press-hardware">Button press (Hardware)</a></li>
-    <li><a href="#ttl-pulse-hardware">TTL pulse (Hardware)</a></li>
     <li><a href="#software-marker">Software marker</a></li>
+    <li><a href="#8-bit-trigger">8-bit trigger</a></li>
+    <li><a href="#ttl-pulse">TTL pulse</a></li>
+    <li><a href="#wireless-trigger">Wireless Trigger</a></li>
   </ul>
 </nav>
 </div>
@@ -332,34 +311,32 @@
 <p>Here is a quick reference section on integrating Mentalab Explore hardware with third-party solutions.</p>
 <p>Event markers allow you to timestamp important points in your EEG signal. There are three kinds of event markers presented in the diagram below. The first two are hardware-generated. The third is software-generated.</p>
 <figure style="text-align:center;">
-    <img style="padding:20px;" class="mobile" src="/img/EventTriggers/trigger-infographic.jpg" alt="Mentalab trigger diagram" width="90%"/>
+    <img style="padding:20px;" class="mobile" src="/img/EventTriggers/trigger-infographic.png" alt="Mentalab trigger diagram" width="90%"/>
     <figcaption>Diagram outlining trigger options available with Mentalab hardware.</figcaption>
 </figure>
 <h2 id="button-press-hardware">Button press (Hardware)</h2>
 <p>You can create an event marker in your EEG recording by pressing your amplifier’s button. Button press markers have numbered codes between 0 and 7. The event marker whose code is 7 will be followed by an event marker whose code is 0. For more information, see the <a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a>.</p>
-<h2 id="ttl-pulse-hardware">TTL pulse (Hardware)</h2>
+<h2 id="software-marker">Software marker</h2>
+<p>You can generate event markers using Mentalab software (Explore Desktop and the APIs), or using external software, like LSL, OpenViBE, and <code>psychopy</code>.</p>
+<p>Explore Desktop, <code>explorepy</code> can generate software markers containing text values. These markers are recorded in the marker file with <code>sw_</code> prefixed to the numbered marker code.</p>
+<h2 id="8-bit-trigger">8-bit trigger</h2>
+<h2 id="ttl-pulse">TTL pulse</h2>
 <p>You can use TTL pulses to generate event markers. These markers have a latency of around 200 microseconds. To do this, you will need three pieces of hardware:</p>
 <ul>
-<li>A USB to TTL pulse generator, called the <b>Mentalab trigger stick</b><sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</li>
+<li>A USB to TTL pulse generator, called the <b>Mentalab trigger stick</b>.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
 <li>A trigger isolator: a specialized piece of hardware that prevents sudden noise.</li>
 <li>A USB to USB-C cable. This will connect the trigger stick to the trigger isolator.</li>
 </ul>
 <p>The trigger stick connects to the USB port of your host machine. The isolator connects to your amplifier’s USB-C port.</p>
 
 <div class="alert alert-info" role="alert">
-    We will also release 8 bit trigger solution very soon. Contact the Mentalab team to purchase a set-up.
-</div>
-
-
-<div class="alert alert-info" role="alert">
     The Mentalab trigger stick is active low, this means it triggers the amplifier when the pulse goes from high to low.
 </div>
 
-<p>Once configured, you can use any serial library, such as Python’s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your amplifier.</p>
+<p>Once configured, you can use any serial library, such as Python&rsquo;s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your amplifier.</p>
 <p>TTL pulses are recorded in your amplifier’s marker file with code <code>in_0</code>. These markers will behave the same as push button markers.</p>
-<h2 id="software-marker">Software marker</h2>
-<p>You can generate event markers using Mentalab software (Explore Desktop and the APIs), or using external software, like LSL, OpenViBE, and <code>psychopy</code>.</p>
-<p>Explore Desktop, <code>explorepy</code> can generate software markers containing text values. These markers are recorded in the marker file with <code>sw_</code> prefixed to the numbered marker code.</p>
+<h2 id="wireless-trigger">Wireless Trigger</h2>
+<p>We also have a new wireless trigger option in the works. Please contact us to learn more!</p>
 <br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 <div class="footnotes" role="doc-endnotes">
@@ -380,7 +357,7 @@
             </div> 
 
         </div> 
-<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
 <script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
 <script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 

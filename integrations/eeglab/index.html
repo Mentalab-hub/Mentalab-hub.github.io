@@ -185,24 +185,6 @@
                     Supported Software
                 </a>
         </li>
-        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
-                
-                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
-                    LabChart Lightning
-                </a>
-        </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
-                
-                 <a href="/integrations/openvibe/" class="nav-link p-0">
-                    Device Syncing With LSL
-                </a>
-        </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
-                
-                 <a href="/integrations/psychopy/" class="nav-link p-0">
-                    PsychoPy Builder
-                </a>
-        </li>
         <li data-nav-id="/integrations/eeglab/" class="nav-item my-1 active">
                 
                  <a href="/integrations/eeglab/" class="nav-link p-0">
@@ -221,11 +203,6 @@
         ">
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
-    </li>
-    <li data-nav-id="/troubleshooting/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -314,23 +291,7 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#installation">Installation</a>
-      <ul>
-        <li><a href="#install-via-extension-manager">Install via Extension Manager</a></li>
-        <li><a href="#install-manually">Install manually</a></li>
-      </ul>
-    </li>
-    <li><a href="#using-the-mentalab-eeglab-plugin">Using the Mentalab EEGLab Plugin</a>
-      <ul>
-        <li><a href="#importing-csv-files">Importing CSV files</a></li>
-        <li><a href="#selecting-exg-or-motion-data">Selecting ExG or Motion data</a></li>
-      </ul>
-    </li>
-    <li><a href="#troubleshooting">Troubleshooting</a></li>
-  </ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
@@ -338,69 +299,17 @@
 
 <h1>EEGLab</h1>
 
-<p>This is a guide to importing <a href="https://mentalab.com/mobile-eeg/">Mentalab Explore</a> CSV and BIN files into an <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLab</a> structure using the <a href="https://github.com/Mentalab-hub/Mentalab-EEGLab-Plugin">Mentalab EEGLab Plugin</a>.</p>
-
-<div class="alert alert-info" role="alert">
-    Ensure that you have downloaded the latest version of EEGLab <a href="https://sccn.ucsd.edu/eeglab/download.php">here</a>.
-</div>
-
-<p>To get up and running quickly, here is a quick tutorial video.</p>
-<div class="video-container">
-<iframe src="https://www.youtube-nocookie.com/embed/ZhrOEUE2GCw" title="EEGLab Tutorial" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<h2 id="installation">Installation</h2>
-<p>To install the Mentalab EEGLab plugin, we recommend using EEGLab&rsquo;s Extension Manager.</p>
-<h3 id="install-via-extension-manager">Install via Extension Manager</h3>
-<ol>
-<li>Once you have installed EEGLab, following these <a href="https://eeglab.org/others/How_to_download_EEGLAB.html">instructions</a>, open MATLAB and type <code>eeglab</code> into the command line terminal.</li>
-<li>A new EEGLab session will open. Visit the Extension Manager under <code>File &gt; Manage EEGLAB extensions</code>.</li>
-<li>Locate the Mentalab EEGLab Plugin, titled &ldquo;Mentalab v0.2&rdquo; in the list, and select &ldquo;Install/Update&rdquo;.</li>
-</ol>
+<p>This is a guide to converting <a href="https://mentalab.com/products/">Mentalab Explore</a> CSV, BDF, and BIN files into an <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLab</a> dataset using <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>.</p>
+<p>Start Explore Desktop and do not connect to a device. From top menu, select <code>File&gt;Export&gt;EEGLAB Dataset</code>.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/extension-manager.png" alt="The EEGLab Extension Manager" width="90%"/>
-<figcaption> The EEGLab Extension Manager. </figcaption>
+<img class="mobile" src="/img/Integrations/EEGLAB1.png" alt="EEGLAB Dataset export" width="40%"/>
+<figcaption> EEGLAB Dataset export.</figcaption>
 </figure>
-<h3 id="install-manually">Install manually</h3>
-<p>The Mentalab EEGLAB plugin can also be installed manually. To do this:</p>
-<ol>
-<li>Clone or download <a href="https://github.com/Mentalab-hub/Mentalab-EEGLab-Plugin">the GitHub repository</a> directly from GitHub.</li>
-<li>Unzip the package and move the folder &ldquo;mentalab-explore&rdquo; into the EEGLab plugins folder.</li>
-<li>Restart EEGLab by closing any open sessions and typing <code>eeglab</code> into the MATLAB command line terminal.</li>
-</ol>
-<h2 id="using-the-mentalab-eeglab-plugin">Using the Mentalab EEGLab Plugin</h2>
-<figure style="float:right; text-align:center;">
-<img class="mobile" src="/img/Integrations/name-channels.png" alt="Dialog to name each of your channels" width="150"/>
-<figcaption> You can name each channel if desired. </figcaption>
+<p>After this, select the folder with the ExG data to be converted. A new <code>datasets</code> folder will be generated in the selected folder, containing the EEGLAB datasets.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/EEGLAB2.png" alt="VCVRack Patch for EEGSynth" width="80%"/>
+<figcaption> Our EEGSynth patch files.</figcaption>
 </figure>
-<ol>
-<li>To use the Mentalab EEGLAB plugin, begin a new EEGLab session and select &ldquo;Import Mentalab Explore data&rdquo;, under <code>File &gt; Import Data &gt; Using EEGLAB functions and plugins</code>.</li>
-<li>Your file manager will display only CSV and BIN files.</li>
-<li>Navigate to the file you wish to import, select, and open. You will be asked to name each ExG channel. If this is not important to you, select OK to continue.</li>
-</ol>
-<h3 id="importing-csv-files">Importing CSV files</h3>
-<p>If you are importing a CSV file, ensure that the current directory contains three files called:
-<code>&lt;FILENAME&gt;_ExG.csv</code><br>
-<code>&lt;FILENAME&gt;_ORN.csv</code><br>
-<code>&lt;FILENAME&gt;_Marker.csv</code></p>
-<p>That is, each file should have the same name, but one should have suffix <code>_ExG</code>, one should have suffix <code>_ORN</code>, and the other <code>_Marker</code>. These files should hold ExG, motion, and marker data respectively.</p>
-
-<div class="alert alert-danger" role="alert">
-    If one of these files is not present, the plugin will not work. However, your Mentalab Explore device will always record data for these three files.
-</div>
-
-<h3 id="selecting-exg-or-motion-data">Selecting ExG or Motion data</h3>
-<p>The Mentalab EEGLab plugin will always import ExG and motion data, regardless of which file you select.</p>
-<p>For instance, if you select motion data (e.g., &ldquo;myData_ORN.csv&rdquo;) in your File Explorer, the ExG data (e.g., &ldquo;myData_ExG.csv&rdquo;) will also import. Both motion and ExG data will have markers linked to them.</p>
-<p>To select the ExG or Motion dataset (<code>_ExG</code> or <code>_ORN</code>), navigate to the EEGLab drop-down menu &ldquo;Datasets&rdquo;.</p>
-<h2 id="troubleshooting">Troubleshooting</h2>
-<figure style="float:right; text-align:center;">
-<img class="mobile" src="/img/Integrations/eeglab-warning.png" alt="EEGLab error dialog" width="400"/>
-<figcaption> You may have a path problem if you see this error. </figcaption>
-</figure>
-<ul>
-<li>If you have imported your data but cannot see its plot (under <code>Plot &gt; Channel data (scroll)</code>), you may have a scaling issue. Set the scaling factor to <code>0.00001</code>. Also consider selecting <code>Display &gt; Remove DC offset</code>.</li>
-<li>If you are having trouble downloading any plugin, and receive an error starting &ldquo;Could not download extension. Host site might be unavailable,&rdquo;, then you may have an issue with your paths. That is, your EEGLab folder may be located in a folder that requires admin permission to write/edit its files, for instance &ldquo;Program Files/MATLAB&rdquo;. To remedy this, move your EEGLab folder to another location (e.g., Documents/MATLAB) and reset the paths using <code>pathtool</code> (select &ldquo;Default&rdquo;, then select your chosen folder).</li>
-</ul>
 <p><br><br></p>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
@@ -413,7 +322,7 @@
             </div> 
 
         </div> 
-<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
 <script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
 <script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 

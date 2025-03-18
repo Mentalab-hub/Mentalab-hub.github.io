@@ -185,24 +185,6 @@
                     Supported Software
                 </a>
         </li>
-        <li data-nav-id="/integrations/lightning-installation/" class="nav-item my-1">
-                
-                 <a href="/integrations/lightning-installation/" class="nav-link p-0">
-                    LabChart Lightning
-                </a>
-        </li>
-        <li data-nav-id="/integrations/openvibe/" class="nav-item my-1">
-                
-                 <a href="/integrations/openvibe/" class="nav-link p-0">
-                    Device Syncing With LSL
-                </a>
-        </li>
-        <li data-nav-id="/integrations/psychopy/" class="nav-item my-1">
-                
-                 <a href="/integrations/psychopy/" class="nav-link p-0">
-                    PsychoPy Builder
-                </a>
-        </li>
         <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
                 
                  <a href="/integrations/eeglab/" class="nav-link p-0">
@@ -221,11 +203,6 @@
         ">
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
-    </li>
-    <li data-nav-id="/troubleshooting/" class="nav-item my-1
-        ">
-        
-        <a class="nav-link p-0" href="/troubleshooting/"><h6>Troubleshooting</h6></a>
     </li>
     <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
@@ -316,11 +293,10 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#commercial-software-integrations">Commercial software integrations</a></li>
     <li><a href="#labstreaming-layer-integrations">LabStreaming Layer integrations</a></li>
-    <li><a href="#matlab-based-analysis-tools">MATLAB-based analysis tools</a></li>
-    <li><a href="#python-based-analysis-tools">Python-based analysis tools</a></li>
-    <li><a href="#other-integrations">Other integrations</a></li>
+    <li><a href="#matlab-based-tools">MATLAB-based tools</a></li>
+    <li><a href="#python-based-tools">Python-based tools</a></li>
+    <li><a href="#standalone-software">Standalone software</a></li>
   </ul>
 </nav>
 </div>
@@ -333,8 +309,10 @@
 <p>This list contains EEG analysis software that can import <a href="https://mentalab.com/mobile-eeg/">Mentalab Explore</a> data.</p>
 <p>In general, many EEG analysis pipelines use <a href="https://www.edfplus.info/">EDF file formats</a>. To convert your Mentalab Explore data to EDF, please use the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#bin2edf"><code>bin2edf</code></a> command available in our open source API <code>explorepy</code>. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</p>
 <p>For more information on <code>explorepy</code>, please consult the <a href="https://explorepy.readthedocs.io/en/latest/"><code>explorepy</code> documentation</a>.</p>
-<h2 id="commercial-software-integrations">Commercial software integrations</h2>
+<h2 id="labstreaming-layer-integrations">LabStreaming Layer integrations</h2>
 <br>
+LabStreaming Layer (LSL) handles networking and time-synchronization, and can be used to collect and view data.  
+`explorepy` can push data directly to LSL, where it will be time-synced with other data streams. Once time-synced, data can be forwarded to different visualization and analysis platforms. For more, see the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code></a> function in `explorepy`, or, to use our Desktop application, refer to the <a href="https://wiki.mentalab.com/pdfs/Explore_Desktop_User_Manual.pdf">Explore Desktop Guide</a>.
 <table>
   <thead>
       <tr>
@@ -342,37 +320,6 @@
           <th><span style="display: inline-block; width:290px">   Description </span></th>
           <th><span style="display: inline-block; width:150px">   Features </span></th>
           <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
-          <th>  Download</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>LabChart Lightning</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a> is the latest iteration of a 34 year history of creating easy to use data acquisition and analysis software. The perfect software for ECG, EMG and EEG data acquisition and analysis, LabChart Lightning is a powerful tool for biosignal recording and both quantitative and qualitative data analysis. <br><br> See our <a href="/integrations/lightning-installation">LabChart Lightning integration page</a> for more. </span></td>
-          <td><ul><li>Data management<li>Cross recording analysis<li>Unlimited channels<li>Overlaid signals<li>Custom calculations<li>Annotations<li>Start and stop recording</ul></td>
-          <td>No</td>
-          <td><p><a href="https://www.adinstruments.com/products/labchart/lightning">Request quote</a><br><a href="https://go.adinstruments.com/l/21302/2020-09-29/5qsglv">30-day trial</a></p></td>
-      </tr>
-      <tr>
-          <td>encevis</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://www.encevis.com/">encevis</a> is high-performance, medically-certified EEG analysis software, making EEG diagnostics more efficient. </span></td>
-          <td><ul><li>EEG viewer<li>Seizure detection<li>Spike detection<li>Artifact reduction<li>Source localization<li>EEG trending<li>Amplitude-integrated EEG<li>Burst suppression</ul></td>
-          <td>No</td>
-          <td><a href="https://www.encevis.com/contact/contact-form/">Free trial page</a></td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="labstreaming-layer-integrations">LabStreaming Layer integrations</h2>
-<br>
-<p>LabStreaming Layer (LSL) can be used to collect time series in research experiments. It handles networking and time-synchronization, and can be used to collect and view data.</p>
-<p><code>explorepy</code> can push data directly to LSL, where it will be time-synced with other data streams. Once time-synced, data can be forwarded to different visualization and analysis platforms. For more, see the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code></a> function in <code>explorepy</code>, or, to use our Desktop application, refer to the <a href="https://wiki.mentalab.com/pdfs/Explore_Desktop_User_Manual.pdf">Explore Desktop Guide</a>.</p>
-<table>
-  <thead>
-      <tr>
-          <th>  Name</th>
-          <th><span style="display: inline-block; width:290px">   Description </span></th>
-          <th><span style="display: inline-block; width:150px">   Features </span></th>
-          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
           <th>  Download</th>
       </tr>
   </thead>
@@ -386,10 +333,10 @@
       </tr>
       <tr>
           <td>NeuroPype</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://www.neuropype.io">NeuroPype</a> is a powerful platform for real-time brain-computer interfacing, neuroimaging, and bio/neural signal processing. The NeuroPype Suite is a collection of applications that, in addition to NeuroPype, includes an open-source visual pipeline designer and tools for interfacing with diverse sensor hardware, recording data, and other functions. </span></td>
+          <td><span style="display: inline-block; width:290px"><a href="https://www.neuropype.io">NeuroPype</a> is a powerful platform for real-time brain-computer interfacing, neuroimaging, and bio/neural signal processing. It comes with a free academic edition. The NeuroPype Suite is a collection of applications that, in addition to NeuroPype, includes an open-source visual pipeline designer and tools for interfacing with diverse sensor hardware, recording data, and other functions. </span></td>
           <td><ul><li>Noise removal<li>ERP and spectral analysis<li>Spatial and temporal filtering<li>3D brain mapping and connectivity<li>Statistics<li>Neural state classification<li>Cardiac signal analysis<li>Gaze detection<li>Pipeline designer<li>Real-time neurofeedback<li>Cloud ready<li>Developer-friendly</ul></td>
           <td>Partially</td>
-          <td><a href="https://www.neuropype.io/purchase">Free trial page</a></td>
+          <td><a href="https://www.neuropype.io/#editions">Plans</a></td>
       </tr>
       <tr>
           <td>E-Prime</td>
@@ -407,24 +354,22 @@
       </tr>
   </tbody>
 </table>
-<h2 id="matlab-based-analysis-tools">MATLAB-based analysis tools</h2>
+<h2 id="matlab-based-tools">MATLAB-based tools</h2>
 <br>
-<p>MATLAB is a computing platform that offers abundant features and open toolboxes for many specific applications.</p>
-<p>MATLAB is used by millions and has several EEG analysis solutions that work with Mentalab Explore. Some of these solutions can be downloaded as compiled programs that run without Matlab.</p>
 <table>
   <thead>
       <tr>
           <th>  Name</th>
           <th><span style="display: inline-block; width:290px">   Description </span></th>
           <th><span style="display: inline-block; width:150px">   Features </span></th>
-          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
+          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref1:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
           <th>  Download</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>EEGLAB</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> is an interactive MATLAB toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data incorporating many analysis tools, and several useful visualization modes of the averaged and single-trial data. <br><br> For more, see the <a href="/integrations/eeglab">Mentalab Explore EEGLab Plugin page</a>. </span></td>
+          <td><span style="display: inline-block; width:290px"><a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> is an interactive MATLAB toolbox for processing continuous and event-related EEG, MEG and other electrophysiological data incorporating many analysis tools, and several useful visualization modes of the averaged and single-trial data. <br><br> For more, see the <a href="/integrations/eeglab">Mentalab Explore EEGLAB Dataset export page</a>. </span></td>
           <td><ul><li>Multiformat data importing<li>Interactive plotting functions<li>High-density data scrolling<li>Independent component analysis (ICA)<li>Time-frequency analysis<li>Artifact rejection<li>Event-related statistics<li>Semi-automated artifact removal<li>Event &amp; channel location handling<li>Over 120 advanced plugins</ul></td>
           <td>Yes</td>
           <td><a href="https://sccn.ucsd.edu/eeglab/download.php">Download page</a></td>
@@ -480,7 +425,7 @@
       </tr>
   </tbody>
 </table>
-<h2 id="python-based-analysis-tools">Python-based analysis tools</h2>
+<h2 id="python-based-tools">Python-based tools</h2>
 <br>
 <table>
   <thead>
@@ -488,14 +433,14 @@
           <th>  Name</th>
           <th><span style="display: inline-block; width:290px">   Description </span></th>
           <th><span style="display: inline-block; width:150px">   Features </span></th>
-          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref3:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
+          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref2:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
           <th>  Download</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>mne</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://mne.tools/dev/">MNE-Python software</a> is an open-source Python  package for exploring, visualizing, and analyzing human neurophysiological data such as MEG, EEG, sEEG, ECoG, and more.</span></td>
+          <td><span style="display: inline-block; width:290px"><a href="https://mne.tools/dev/">MNE-Python software</a> is an open-source Python  package for exploring, visualizing, and analyzing human neurophysiological data such as MEG, EEG, sEEG, ECoG, and more.<br><br> See our <a href="/integrations/mne-python/">MNE Loader</a> function for seamless importing of Mentalab recordings formats (CSV, BDF, XDF).</span></td>
           <td><ul><li>Preprocessing <li>Visualization <li>Source estimation <li>Time-frequency analysis <li>Connectivity analysis <li>Machine learning <li>Statistics</ul></td>
           <td>Yes</td>
           <td><a href="https://mne.tools/dev/install/index.html">Installation guide</a></td>
@@ -509,7 +454,7 @@
       </tr>
       <tr>
           <td>PsychoPy</td>
-          <td><span style="display: inline-block; width:290px"> <a href="https://www.psychopy.org/">PsychoPy</a> is a free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics&hellip;). <br><br> See our <a href="/integrations/psychopy">PsychoPy Builder integration page</a> for more.</span></td>
+          <td><span style="display: inline-block; width:290px"> <a href="https://www.psychopy.org/">PsychoPy</a> is a free cross-platform package allowing you to run a wide range of experiments in the behavioral sciences (neuroscience, psychology, psychophysics, linguistics&hellip;).</span></td>
           <td><ul><li>Flexible intuitive GUI<li>Millisecond precision<li>Online experiments<li>Neuroimaging and eye tracking</ul></td>
           <td>Yes</td>
           <td><a href="https://www.psychopy.org/download.html">Download page</a></td>
@@ -523,26 +468,32 @@
       </tr>
   </tbody>
 </table>
-<h2 id="other-integrations">Other integrations</h2>
+<h2 id="standalone-software">Standalone software</h2>
 <br>
-<p>Some EEG analysis platforms do not rely on MATLAB, nor LabStreaming Layer. They are independent programs.</p>
 <table>
   <thead>
       <tr>
           <th>  Name</th>
           <th><span style="display: inline-block; width:290px">   Description </span></th>
           <th><span style="display: inline-block; width:150px">   Features </span></th>
-          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref4:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
+          <th><span style="display: inline-block; width:80px">   FOSS<sup id="fnref3:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> </span></th>
           <th>  Download</th>
       </tr>
   </thead>
   <tbody>
       <tr>
           <td>Cartool</td>
-          <td><span style="display: inline-block; width:290px"><a href="https://sites.google.com/site/cartoolcommunity/home">Cartool</a> is an EEG analysis tool developed at the Functional Brain Mapping Lab (FBMLab), in Geneva, Switzerland. Cartool is developed entirely by Denis Brunet in C++, and doesn&rsquo;t rely on any other dependency to run. </span></td>
+          <td><span style="display: inline-block; width:290px"><a href="https://denisbrunet.github.io/Cartool/index.html">Cartool</a> is an EEG analysis tool developed at the Functional Brain Mapping Lab (FBMLab), in Geneva, Switzerland. Cartool is developed entirely by Denis Brunet in C++, and doesn&rsquo;t rely on any other dependency to run.<br><br> To use your Mentalab data with Cartool, record to <strong>bdf</strong>. </span></td>
           <td><ul><li>Reading and visualizing data<li>Artifact rejection<li>Sampling<li>Interpolation<li>Statistics<li>Inverse solutions<li>Fitting / Back projection<li>Segmentation</ul></td>
           <td>No</td>
-          <td><a href="https://sites.google.com/site/cartoolcommunity/downloads">Download page</a></td>
+          <td><a href="https://denisbrunet.github.io/Cartool/installation.html">Download page</a></td>
+      </tr>
+      <tr>
+          <td>encevis</td>
+          <td><span style="display: inline-block; width:290px"><a href="https://www.encevis.com/">encevis</a> is high-performance, medically-certified EEG analysis software, making EEG diagnostics more efficient.<br><br> To use your Mentalab data with encevis, record to <strong>bdf</strong>. </span></td>
+          <td><ul><li>EEG viewer<li>Seizure detection<li>Spike detection<li>Artifact reduction<li>Source localization<li>EEG trending<li>Amplitude-integrated EEG<li>Burst suppression</ul></td>
+          <td>No</td>
+          <td><a href="https://www.encevis.com/contact/contact-form/">Free trial page</a></td>
       </tr>
   </tbody>
 </table>
@@ -555,7 +506,7 @@
 <ol>
 <li id="fn:1">
 <p>Stands for <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">free and open-source software</a>. Basically you can use this software today and pay nothing!
-<br>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref4:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<br>&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref1:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref2:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a>&#160;<a href="#fnref3:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -569,7 +520,7 @@
             </div> 
 
         </div> 
-<p style="text-align: center;">Copyright © 2024 Mentalab</p>
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
 <script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
 <script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 
