@@ -334,9 +334,23 @@
       </tr>
   </tbody>
 </table>
-<h2 id="known-bugs">Known bugs</h2>
-<p>Denying bluetooth and nearby devices permissions can result on connection failure.</p>
+<h3 id="recording-tests">Recording Tests</h3>
+<p>The following tests were performed to ensure the recording functionality is working as expected.</p>
+<ul>
+    <li>
+        <p>Conducted on Lenovo Tab M9 (Android 13) for 2 hours:</p>
+        <ul>
+          <li>16 channels at 500 Hz sampling rate</li>
+          <li>16 channels at 250 Hz sampling rate</li>
+        </ul>
+    </li>
+</ul>
 
+
+<h2 id="known-bugs and limitations">Known bugs and limitations</h2>
+<p>When assigning channels in the impedance view and then disconnecting/reconnecting, the existing head montage remains instead of being cleared.</p>
+<p>The following sampling rates are supported only in Android: 8 channels 1000Hz, 16 channels at 500 Hz, 32 channels at 250 Hz.</p>
+<p>The time window of the ExG visualization is not affected by changes in the sampling rate.</p>
 
     
 
