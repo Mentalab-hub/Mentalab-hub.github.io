@@ -293,6 +293,11 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
+    <li>
+      <ul>
+        <li><a href="#recording-tests">Recording Tests</a></li>
+      </ul>
+    </li>
     <li><a href="#known-bugs">Known bugs</a></li>
   </ul>
 </nav>
@@ -337,20 +342,20 @@
 <h3 id="recording-tests">Recording Tests</h3>
 <p>The following tests were performed to ensure the recording functionality is working as expected.</p>
 <ul>
-    <li>
-        <p>Conducted on Lenovo Tab M9 (Android 13) for 2 hours:</p>
-        <ul>
-          <li>16 channels at 500 Hz sampling rate</li>
-          <li>16 channels at 250 Hz sampling rate</li>
-        </ul>
-    </li>
+<li>Conducted on Lenovo Tab M9 (Android 13) for 2 hours:
+<ul>
+<li>16 channels at 500 Hz sampling rate</li>
+<li>16 channels at 250 Hz sampling rate</li>
+</ul>
+</li>
+</ul>
+<h2 id="known-bugs">Known bugs</h2>
+<ul>
+<li>When assigning channels in the impedance view and then disconnecting/reconnecting, the existing head montage remains instead of being cleared.</li>
+<li>The following sampling rates are supported only in Android: 8 channels 1000Hz, 16 channels at 500 Hz, 32 channels at 250 Hz.</li>
+<li>The time window of the ExG visualization is not affected by changes in the sampling rate.</li>
 </ul>
 
-
-<h2 id="known-bugs and limitations">Known bugs and limitations</h2>
-<p>When assigning channels in the impedance view and then disconnecting/reconnecting, the existing head montage remains instead of being cleared.</p>
-<p>The following sampling rates are supported only in Android: 8 channels 1000Hz, 16 channels at 500 Hz, 32 channels at 250 Hz.</p>
-<p>The time window of the ExG visualization is not affected by changes in the sampling rate.</p>
 
     
 
