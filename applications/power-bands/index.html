@@ -314,6 +314,8 @@
 <p>Here, is an <a href="http://openvibe.inria.fr/">OpenViBE</a> pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.</p>
 <h2 id="set-up">Set-up</h2>
 <ol>
+<li>Install Explorepy using <a href="https://explorepy.readthedocs.io/en/latest/installation.html">Explorepy installation guide</a>.</li>
+<li>Install Explore Desktop from <a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop Github page</a>.</li>
 <li>Prepare an 8-channel <a href="https://mentalab.com/products/">Mentalab Explore system</a> using the following configuration. You can use wet or dry electrodes for this, and modify as needed.<br><br>
 <table>
   <thead>
@@ -359,39 +361,24 @@
 </li>
 </ol>
 <br>
-<ol start="2">
-<li>
-<p>Disable unnecessary channels using <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#set-channels">explorepy set-channels</a></code> command:</p>
-<pre tabindex="0"><code>explorepy set-channels -n Explore_XXXX -m 11001111
-</code></pre>
-<div class="alert alert-danger" role="alert">
-    The binary number must be in reverse order. So <code>11111101</code> means channel 2 will be off.
-</div>
-
-</li>
-<li>
-<p>Check impedances using the <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance">explorepy impedance</a></code> command. Aim for &lt;20 kΩ for wet electrodes, and &lt;150 kΩ for dry electrodes. For more on this function, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>.</p>
-</li>
-<li>
-<p>To visualize your data, consider using <a href="../../explore-desktop-guide/">Explore Desktop</a>. By visualizing your data, you can ensure there is no obvious noise.</p>
-</li>
-<li>
-<p>Finally, push your data stream to LSL using the <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl">explorepy push2lsl</a></code> command. In Explore Desktop, simply click the <code>LSL</code> button in the main visualization menu.</p>
-</li>
+<ol start="4">
+<li>Check impedances using <a href="../../explore-desktop-guide/">Explore Desktop</a>. Aim for &lt;20 kΩ for wet electrodes, and &lt;150 kΩ for dry electrodes. For more on this function, please watch our <a href="https://youtu.be/Q237Ny20SDI?t=152&amp;si=g-e5j_K3likP7-Xo">video guide</a>.</li>
+<li>To visualize your data, consider using <a href="../../explore-desktop-guide/">Explore Desktop</a>. By visualizing your data, you can ensure there is no obvious noise. <a href="https://youtu.be/Q237Ny20SDI?t=213&amp;si=uyRLScOAreZfL1jw">video guide</a>.</li>
+<li>Finally, push your data stream to LSL using the <code><a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl">explorepy push2lsl</a></code> command. In Explore Desktop, simply click the <code>LSL</code> button in the main visualization menu.</li>
 </ol>
 <h2 id="run-the-script">Run the script</h2>
-<ol start="6">
+<ol start="7">
 <li>Download this <a href="/files/Mentalab-EEG_Power_Bands.zip">ZIP folder</a> and extract the contents.</li>
 <li><a href="http://openvibe.inria.fr/downloads/">Install OpenViBE</a>.</li>
 </ol>
 <h3 id="start-streaming">Start streaming</h3>
-<ol start="8">
+<ol start="9">
 <li>Open an OpenViBE <code>acquisition server</code> and select <code>LabStreamingLayer</code> as the driver.</li>
 <li>Under <code>Driver Properties</code> select Explore&rsquo;s <code>ExG</code> and <code>Marker</code> streams.</li>
 <li>Press <code>Apply</code>, then <code>Connect</code>, then <code>Play</code> to start acquiring an Explore stream in OpenViBE via Lab Streaming Layer.</li>
 </ol>
 <h3 id="calibrate-eog-data">Calibrate EOG data</h3>
-<ol start="11">
+<ol start="12">
 <li>Open the OpenViBE <code>designer</code> and go to <code>File</code> &ndash;&gt; <code>Open</code>.</li>
 <li>Choose the <code>recorder.xml</code> file (extracted from the ZIP file you downloaded earlier) and run the scenario for at least 60 seconds. Blink and turn your eyes to different directions during the recording. A <code>GDF</code> file will be created in the same folder as the contents of your ZIP file.</li>
 <li>Run the EOG-calibration scenario in OpenViBE <code>designer</code>. Go to <code>File</code> &ndash;&gt; <code>Open</code>, and then choose the <code>EOG-calibration.xml</code> file extracted earlier. Double click on the <code>GDF</code> file reader and select the file generated in the previous step as source.</li>
