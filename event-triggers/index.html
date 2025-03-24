@@ -301,10 +301,14 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#button-press-hardware">Button press (Hardware)</a></li>
-    <li><a href="#software-marker">Software marker</a></li>
-    <li><a href="#8-bit-trigger">8-bit trigger</a></li>
-    <li><a href="#ttl-pulse">TTL pulse</a></li>
-    <li><a href="#wireless-trigger">Wireless Trigger</a></li>
+    <li><a href="#11-8-bit-trigger">1.1 8-bit trigger</a>
+      <ul>
+        <li><a href="#reccomendations">Reccomendations</a></li>
+      </ul>
+    </li>
+    <li><a href="#12-ttl-pulse">1.2 TTL pulse</a></li>
+    <li><a href="#2-wireless-trigger">2. Wireless Trigger</a></li>
+    <li><a href="#3-software-markers">3. Software Markers</a></li>
   </ul>
 </nav>
 </div>
@@ -322,37 +326,36 @@
 </figure>
 <h2 id="button-press-hardware">Button press (Hardware)</h2>
 <p>You can create an event marker in your EEG recording by pressing your amplifier’s button. Button press markers have numbered codes between 0 and 7. The event marker whose code is 7 will be followed by an event marker whose code is 0. For more information, see the <a href="https://wiki.mentalab.com/user-guide/button-guide/" title="User Guide/Button Command Guide">Button Command Guide</a>.</p>
-<h2 id="software-marker">Software marker</h2>
+<h2 id="11-8-bit-trigger">1.1 8-bit trigger</h2>
+<p>Explore device can receive 8-bit triggers, which  allows sub-ms precise synchronization via a USB cable. This can be used to encode different trials in numerical format. The trigger information is readily available in recordings in CSV, BDF and XDF format.</p>
+<p>Conenction is very straightforward. You can simply turn on your amplifier, connect via Bluetooth to the recording computer, connect via USB cable to the presentation PC, and send trigger information on demand. This trigger can be used in both Bluetooth streaming and recording mode. We are providing a simple <a href="https://github.com/Mentalab-hub/explorepy/blob/master/examples/markers_examples/send_8_bit_marker_independently.py">Python script</a> that demonstrates the usage.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> explorepy
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># for independent markers to be stored only in binary file, we only need to instantiate Explore class!</span>
+</span></span><span style="display:flex;"><span>exp_device <span style="color:#f92672">=</span> explorepy<span style="color:#f92672">.</span>Explore()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>n_markers <span style="color:#f92672">=</span> <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>interval <span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n_markers):
+</span></span><span style="display:flex;"><span>        exp_device<span style="color:#f92672">.</span>send_8_bit_trigger(i)
+</span></span><span style="display:flex;"><span>        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">2</span>)
+</span></span></code></pre></div><p>It is also possible to send USB triggers to the serial port, e.g. in <a href="https://www.psychopy.org/hardware/serialPortInstr.html">PsychoPy</a>.</p>
+<h3 id="reccomendations">Reccomendations</h3>
+<ol>
+<li>We recommend not using 8-bit triggers in USB streaming mode as it not not always possible to guarantee low latency in such a scenario.</li>
+<li>We recommend keeping a low load on the presentation PC to ensure low USB latency.</li>
+</ol>
+<p>For any questions please contact us at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="12-ttl-pulse">1.2 TTL pulse</h2>
+<p>We can provide compatibility for 1-bit TTL triggers. Please contact us for a solution: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="2-wireless-trigger">2. Wireless Trigger</h2>
+<p>We also have a new wireless trigger option in the works. Please contact us to learn more: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="3-software-markers">3. Software Markers</h2>
 <p>You can generate event markers using Mentalab software (Explore Desktop and the APIs), or using external software, like LSL, OpenViBE, and <code>psychopy</code>.</p>
 <p>Explore Desktop, <code>explorepy</code> can generate software markers containing text values. These markers are recorded in the marker file with <code>sw_</code> prefixed to the numbered marker code.</p>
-<h2 id="8-bit-trigger">8-bit trigger</h2>
-<h2 id="ttl-pulse">TTL pulse</h2>
-<p>You can use TTL pulses to generate event markers. These markers have a latency of around 200 microseconds. To do this, you will need three pieces of hardware:</p>
-<ul>
-<li>A USB to TTL pulse generator, called the <b>Mentalab trigger stick</b>.<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
-<li>A trigger isolator: a specialized piece of hardware that prevents sudden noise.</li>
-<li>A USB to USB-C cable. This will connect the trigger stick to the trigger isolator.</li>
-</ul>
-<p>The trigger stick connects to the USB port of your host machine. The isolator connects to your amplifier’s USB-C port.</p>
-
-<div class="alert alert-info" role="alert">
-    The Mentalab trigger stick is active low, this means it triggers the amplifier when the pulse goes from high to low.
-</div>
-
-<p>Once configured, you can use any serial library, such as Python&rsquo;s <code>pyserial</code>, to generate 10 μs pulses from your host machine to your amplifier.</p>
-<p>TTL pulses are recorded in your amplifier’s marker file with code <code>in_0</code>. These markers will behave the same as push button markers.</p>
-<h2 id="wireless-trigger">Wireless Trigger</h2>
-<p>We also have a new wireless trigger option in the works. Please contact us to learn more!</p>
 <br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
-<div class="footnotes" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn:1">
-<p>Other TTL pulse generators are available for custom set-ups.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
-</li>
-</ol>
-</div>
 
 
     
