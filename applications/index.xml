@@ -6,8 +6,15 @@
     <description>Recent content in Applications on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 22 Aug 2024 14:29:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 24 Mar 2025 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Motor Imagery BCI</title>
+      <link>https://wiki.mentalab.com/applications/motor-imagery-bci/</link>
+      <pubDate>Mon, 24 Mar 2025 10:00:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/motor-imagery-bci/</guid>
+      <description>&lt;h3 id=&#34;overview&#34;&gt;Overview&lt;/h3&gt;&#xA;&lt;p&gt;This application is a Brain-Computer Interface (BCI) system designed to classify motor imagery tasks (left hand, right hand, and neutral state) using EEG data. The system connects to Explore Pro device via the Lab Streaming Layer (LSL) protocol, processes the EEG signals, and classifies the data using machine learning models, including a Transformer-based neural network.&lt;/p&gt;&#xA;&lt;p&gt;The application supports real-time classification. It includes tools for data collection, preprocessing, model training, and evaluation. The code for the application can be found in our &lt;a href=&#34;https://github.com/Mentalab-hub/explorepy/tree/master/examples&#34;&gt;explorepy/examples section on github&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Photodiode Event Triggers</title>
       <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>

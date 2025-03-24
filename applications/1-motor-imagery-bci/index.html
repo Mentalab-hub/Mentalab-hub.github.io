@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/user-guide/led-light-guide/">
+    <link rel="canonical" href="http://localhost:1313/applications/1-motor-imagery-bci/">
 
     <title>
         
-        LED Light Guide | Wiki
+         | Wiki
         
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -53,7 +53,7 @@
         
         <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
     </li>
-    <li data-nav-id="/user-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
@@ -70,7 +70,7 @@
                     Dry Electrode Guide
                 </a>
         </li>
-        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1 active">
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
                 
                  <a href="/user-guide/led-light-guide/" class="nav-link p-0">
                     LED Light Guide
@@ -119,17 +119,11 @@
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
-                
-                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
-                    Motor Imagery BCI
-                </a>
-        </li>
         <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
                 
                  <a href="/applications/power-bands/" class="nav-link p-0">
@@ -176,6 +170,12 @@
                 
                  <a href="/applications/eegsynth/" class="nav-link p-0">
                     EEGSynth
+                </a>
+        </li>
+        <li data-nav-id="/applications/1-motor-imagery-bci/" class="nav-item my-1 active">
+                
+                 <a href="/applications/1-motor-imagery-bci/" class="nav-link p-0">
+                    
                 </a>
         </li>
         </ul>
@@ -297,63 +297,164 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#motor-imagery-bci-application">Motor Imagery BCI Application</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#requirements">Requirements</a></li>
+        <li><a href="#usage">Usage</a></li>
+        <li><a href="#file-structure">File Structure</a></li>
+        <li><a href="#classifiers">Classifiers</a></li>
+        <li><a href="#customizing-the-transformer-model">Customizing the Transformer Model</a></li>
+        <li><a href="#data-preprocessing">Data Preprocessing</a></li>
+        <li><a href="#real-time-operation">Real-Time Operation</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+      </ul>
+    </li>
+    <li><a href="#future-improvements">Future Improvements</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>LED Light Guide</h1>
+<h1></h1>
 
-<p>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.</p>
-<table>
-  <thead>
-      <tr>
-          <th>  LED Light</th>
-          <th>  Blinking Pattern</th>
-          <th>  Description</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Red / Yellow / Green</td>
-          <td>Solid at amplifier start-up. <br> Flashes for 3 secs</td>
-          <td>Start-up in progress. <br>Colour indicates battery status.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#fcc203" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Blue</td>
-          <td>Blinks four times a second</td>
-          <td>Bluetooth visible and advertising.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="0.25s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Blue</td>
-          <td>Blinks once a second</td>
-          <td>Bluetooth visible and connected. <br>Online mode.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Pink</td>
-          <td>Blinks once a second</td>
-          <td>Insufficient memory.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#fc03d2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Light pink</td>
-          <td>One-time flash</td>
-          <td>Button pressed, and marker set.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#ff8ff6" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Red</td>
-          <td>Flashes three times</td>
-          <td>Button pressed and held. <br>Turn off.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="red" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.9;1" dur="3s" values="0;1;0;1;0;1;1;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-  </tbody>
-</table>
+<h2 id="motor-imagery-bci-application">Motor Imagery BCI Application</h2>
+<h3 id="overview">Overview</h3>
+<p>This application is a Brain-Computer Interface (BCI) system designed to classify motor imagery tasks (left hand, right hand, and neutral state) using EEG data. The system connects to Explore Pro device via the Lab Streaming Layer (LSL) protocol, processes the EEG signals, and classifies the data using machine learning models, including a Transformer-based neural network.</p>
+<p>The application supports real-time classification. It includes tools for data collection, preprocessing, model training, and evaluation.</p>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>Real-Time EEG Data Acquisition:</strong> Connects to an EEG device via LSL for real-time data streaming.</li>
+<li><strong>Motor Imagery Classification:</strong> Classifies EEG data into three states: left hand movement, right hand movement, and neutral state.</li>
+<li><strong>Transformer Model:</strong> Implements a Transformer-based neural network for EEG signal classification.</li>
+<li><strong>Multiple Classifiers:</strong> Supports Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), Random Forest (RF), and the custom Transformer model.</li>
+<li><strong>Data Preprocessing:</strong> Includes bandpass filtering (mu and beta bands) and feature extraction (band power).</li>
+<li><strong>Model Training and Evaluation:</strong> Allows training and evaluation of multiple classifiers with visualization of results.</li>
+<li><strong>Real-Time BCI Operation:</strong> Runs in continuous mode for real-time classification and control.</li>
+</ul>
+<h3 id="requirements">Requirements</h3>
+<h4 id="hardware">Hardware</h4>
+<ul>
+<li>An Explore Pro device.</li>
+<li>A computer with sufficient processing power (GPU recommended for Transformer model training).</li>
+</ul>
+<h4 id="software">Software</h4>
+<ul>
+<li>
+<p>Python 3.10 or higher</p>
+</li>
+<li>
+<p>Required Python packages (install via pip):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pylsl numpy scipy scikit-learn torch matplotlib seaborn pandas
+</span></span></code></pre></div></li>
+</ul>
+<p>Ensure your EEG device is set up and streaming data via LSL.</p>
+<h3 id="usage">Usage</h3>
+<h4 id="1-collect-calibration-data">1. Collect Calibration Data</h4>
+<p>To train the classifiers, you need to collect calibration data. Run the following command and follow the on-screen instructions:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python main.py
+</span></span></code></pre></div><p>Choose option <strong>1</strong> to train and compare all classifiers. The system will prompt you to perform left hand, right hand, and neutral state tasks.</p>
+<h4 id="2-train-classifiers">2. Train Classifiers</h4>
+<p>The application will automatically preprocess the data, extract features, and train multiple classifiers (LDA, SVM, Random Forest, and Transformer). Training progress and results will be displayed in the console.</p>
+<h4 id="3-run-real-time-bci">3. Run Real-Time BCI</h4>
+<p>After training, you can run the BCI in real-time mode:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python main.py
+</span></span></code></pre></div><p>Choose option <strong>2</strong> to run the BCI with the best-performing classifier or option <strong>3</strong> to select a specific classifier.</p>
+<h3 id="file-structure">File Structure</h3>
+<pre tabindex="0"><code>motor-imagery-bci/
+├── models/                  # Saved classifier models
+├── dataset/                 # Saved calibration datasets
+├── main.py                  # Main application script
+├── README.md                # This file
+</code></pre><h3 id="classifiers">Classifiers</h3>
+<p>The application supports the following classifiers:</p>
+<ul>
+<li><strong>Linear Discriminant Analysis (LDA)</strong></li>
+<li><strong>Support Vector Machine (SVM)</strong></li>
+<li><strong>Random Forest (RF)</strong></li>
+<li><strong>Transformer Model</strong></li>
+</ul>
+<h3 id="customizing-the-transformer-model">Customizing the Transformer Model</h3>
+<p>The Transformer model is defined in the <code>EEGTransformer</code> class. You can customize the following parameters:</p>
+<ul>
+<li><code>input_dim</code>: Input feature dimension.</li>
+<li><code>num_classes</code>: Number of output classes (default: 3).</li>
+<li><code>d_model</code>: Dimension of the model (default: 64).</li>
+<li><code>nhead</code>: Number of attention heads (default: 8).</li>
+<li><code>num_layers</code>: Number of Transformer encoder layers (default: 4).</li>
+<li><code>dropout</code>: Dropout rate (default: 0.2).</li>
+</ul>
+<p>Example:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>model <span style="color:#f92672">=</span> EEGTransformer(input_dim<span style="color:#f92672">=</span><span style="color:#ae81ff">64</span>, num_classes<span style="color:#f92672">=</span><span style="color:#ae81ff">3</span>, d_model<span style="color:#f92672">=</span><span style="color:#ae81ff">128</span>, nhead<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, num_layers<span style="color:#f92672">=</span><span style="color:#ae81ff">6</span>, dropout<span style="color:#f92672">=</span><span style="color:#ae81ff">0.3</span>)
+</span></span></code></pre></div><h3 id="data-preprocessing">Data Preprocessing</h3>
+<p>The EEG data is preprocessed as follows:</p>
+<ul>
+<li><strong>Bandpass Filtering:</strong> Applied to extract mu (8-12 Hz) and beta (16-24 Hz) bands.</li>
+<li><strong>Feature Extraction:</strong> Band power is calculated for each frequency band.</li>
+<li><strong>Dataset Preparation:</strong> Features and labels are saved in a CSV file for training.</li>
+</ul>
+<h3 id="real-time-operation">Real-Time Operation</h3>
+<p>In real-time mode, the application:</p>
+<ol>
+<li>Continuously collects EEG data from the LSL stream.</li>
+<li>Applies preprocessing and feature extraction.</li>
+<li>Classifies the data using the selected model.</li>
+<li>Displays the detected state (left hand, right hand, or neutral) and certainty level.</li>
+</ol>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<h4 id="1-lsl-stream-not-found">1. LSL Stream Not Found</h4>
+<ul>
+<li>Ensure your device is properly connected and streaming data.</li>
+<li>Verify the stream name in the <code>MotorImageryBCI</code> class initialization.</li>
+</ul>
+<h4 id="2-poor-classification-accuracy">2. Poor Classification Accuracy</h4>
+<ul>
+<li>Collect more calibration data.</li>
+<li>Adjust the frequency bands (<code>mu_band</code> and <code>beta_band</code>) in the <code>MotorImageryBCI</code> class.</li>
+<li>Fine-tune the Transformer model parameters.</li>
+</ul>
+<h4 id="3-performance-issues">3. Performance Issues</h4>
+<ul>
+<li>Use a GPU for training the Transformer model.</li>
+<li>Reduce the window size or overlap in the <code>MotorImageryBCI</code> class.</li>
+</ul>
+<hr>
+<h2 id="future-improvements">Future Improvements</h2>
+<p>While the current system is functional, several enhancements can improve its accuracy, real-time performance, and adaptability:</p>
+<ol>
+<li>
+<p><strong>Advanced Deep Learning Models</strong></p>
+<ul>
+<li>Replace traditional classifiers (LDA, SVM, RF) with more powerful architectures like <strong>EEGNet, ConvLSTM, or Graph Neural Networks (GNNs)</strong>.</li>
+<li>Optimize the Transformer model by using <strong>EEG-specialized architectures</strong> such as <strong>TS-Transformer</strong> or <strong>EEGFormer</strong> for better time-series representation.</li>
+</ul>
+</li>
+<li>
+<p><strong>Enhanced Feature Extraction</strong></p>
+<ul>
+<li>Incorporate <strong>Common Spatial Patterns (CSP)</strong> to improve the separation of motor imagery classes.</li>
+<li>Use <strong>Riemannian geometry-based approaches</strong> to extract more robust spatial features.</li>
+</ul>
+</li>
+<li>
+<p><strong>Data Augmentation for EEG</strong></p>
+<ul>
+<li>Implement <strong>synthetic EEG data generation</strong> techniques like <strong>time-domain warping, frequency shifting, and GAN-based augmentation</strong> to improve model generalization.</li>
+</ul>
+</li>
+<li>
+<p><strong>Online &amp; Transfer Learning</strong></p>
+<ul>
+<li>Introduce <strong>adaptive learning</strong> to fine-tune the model based on user-specific EEG patterns.</li>
+<li>Use <strong>few-shot learning</strong> or <strong>domain adaptation techniques</strong> to improve performance across multiple users.</li>
+</ul>
+</li>
+</ol>
 
 
     
@@ -365,10 +466,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -376,7 +477,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
