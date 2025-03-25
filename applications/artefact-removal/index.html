@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://wiki.mentalab.com/explore-mobile-guide/index.xml" title="Wiki" />
-    <link rel="canonical" href="https://wiki.mentalab.com/explore-mobile-guide/">
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/artefact-removal/">
 
     <title>
         
-        Explore Mobile App | Wiki
+        Artefact removal | Wiki
         
     </title>
 
@@ -120,7 +119,7 @@
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -131,7 +130,7 @@
                     Motor Imagery BCI
                 </a>
         </li>
-        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1 active">
                 
                  <a href="/applications/artefact-removal/" class="nav-link p-0">
                     Artefact removal
@@ -272,7 +271,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 active haschildren
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
@@ -304,23 +303,85 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#steps-of-the-happilee-pipeline-covered-in-this-implementation">Steps of the HAPPILEE pipeline covered in this implementation:</a></li>
+    <li><a href="#example-result">Example Result</a></li>
+    <li><a href="#installation-and-setup">Installation and Setup</a></li>
+    <li><a href="#troubleshooting">Troubleshooting</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Explore Mobile App</h1>
+<h1>Artefact removal</h1>
 
-<h1 id="mentalab-explore-mobile-app">Mentalab Explore Mobile App</h1>
-<p>The Mentalab Explore Mobile App is a cross-platform application designed to interface seamlessly with Mentalab’s ExG devices, enabling users to record and visualize biosignals in real time.
-Developed with portability and accessibility in mind, the app supports both iOS and Android platforms, allowing researchers and professionals to connect to Mentalab ExG devices via latest Bluetooth technology (BLE).
-Users can monitor, manage, and export data from EEG, ECG, EMG, and other bioelectrical signals directly from their mobile devices, making it an ideal tool for applications in neurofeedback, clinical research, and mobile health monitoring.
-See our list of <a href="/explore-mobile-guide/testing/">tested devices</a> and the <a href="https://github.com/Mentalab-hub/explore-mobile-app-release">github page</a> for further resources.</p>
+<p>This is an implementation of the <a href="https://www.plasticityinneurodevelopmentlab.com/happilee-lowdensity-eeg">HAPPILEE pipeline</a> for the <a href="https://github.com/Mentalab-hub/explorepy">Explore system</a> from Mentalab. See our <a href="https://github.com/Mentalab-hub/explore-happilee.git">github page</a> for the code for this project.</p>
+<p>The HAPPILEE pipeline is applied to EEG data recorded by the Mentalab Explore Pro device in <code>happilee.py</code> and <code>happilee.ipynb</code>. <code>happilee.py</code> is the main script to apply HAPPILEE to an EXG dataset recorded by the Explore system. <code>happilee.ipynb</code> is a notebook to demonstrate and track steps of the HAPPILEE pipeline to a dataset recorded by the Explore system.</p>
+<p>A realtime example is available in <code>acquisition_example.py</code>.
+Further tests and trials on different artefacts are available in <code>testing.ipynb</code>.</p>
+<p>Noise removal is applied in real time to the data stream from the Explore device in <code>acquisition_example.py</code>.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreMobileGuide/Homepage.jpg" alt="Mentalab Explore Mobile App" width="50%"/>
+<img class="mobile" src="/img/Applications/artefactremoval_happilee_pipeline.png" alt="Happilee Pipeline" width="90%"/>
+<figcaption> Happilee Pipeline. Figure adapted from <a href="https://www.plasticityinneurodevelopmentlab.com/happilee-lowdensity-eeg">original</a>.</figcaption>
 </figure>
-<p><strong>Disclaimer:</strong> The Mentalab Explore Pro app and hardware are intended strictly for research and educational applications.</p>
+*Steps of the pipeline included in our implementation are marked in a red rectange in the figure above.*
+<h2 id="steps-of-the-happilee-pipeline-covered-in-this-implementation">Steps of the HAPPILEE pipeline covered in this implementation:</h2>
+<ol>
+<li><strong>Channel Selection</strong></li>
+<li><strong>Line Noise Processing</strong></li>
+<li><strong>Filtering</strong></li>
+<li><strong>Wavelet Thresholding</strong></li>
+</ol>
+<p>These steps and evaluation results covered in the <a href="https://github.com/Mentalab-hub/explore-happilee/blob/main/evaluation.md">evaluation.md</a> file.</p>
+<h2 id="example-result">Example Result</h2>
+<p><em>Figure below displays the results after applying wav thresholding.</em></p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/artefactremoval_wav-diff.png" alt="Example Result" width="90%"/>
+<figcaption>Example Result</figcaption>
+</figure>
+<h2 id="installation-and-setup">Installation and Setup</h2>
+<p>To use HAPPILEE with your Explore device, follow these steps:</p>
+<ol>
+<li>
+<p><strong>Install Requirements</strong></p>
+<p>Ensure you have Python installed on your system. You can check this by running:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python --version
+</span></span></code></pre></div><p>If Python is not installed, download and install it from the <a href="https://www.python.org/downloads/">official Python website</a>.</p>
+<p>Next, install the required Python packages using <code>pip</code>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install -r requirements.txt
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Run the Script</strong></p>
+<p>You can run the pipeline online or offline. Use the following commands:</p>
+<p><strong>Offline Mode</strong></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python happilee.py
+</span></span></code></pre></div><p>The script will prompt for the following inputs:</p>
+<ul>
+<li><strong>File Type</strong>: Select the file type to load (.csv or .edf).<br>
+Example input: <code>1</code></li>
+<li><strong>File Path</strong>: Enter the path to the file, including the file name.<br>
+Example input: <code>ExG_data/offline_exp_ExG-30s.csv</code></li>
+<li><strong>Channel Names</strong>: Input the channel names recorded (e.g., Fp1, Fp2, O1, etc.).<br>
+Example input: <code>POz</code>, <code>Oz</code>, <code>O1</code>, <code>O2</code></li>
+<li><strong>Line Frequency</strong>: Input the line frequency.<br>
+Example input: <code>50</code></li>
+</ul>
+<p><strong>Online Mode</strong></p>
+<p>Online mode example outputs a csv file (with the name <code>filtered_exg_data.csv</code>) containing the results of the HAPPILEE pipeline applied to the data stream from the Explore device.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python acquisition_example.py --name &lt;device_name&gt;
+</span></span></code></pre></div><p>Replace <code>&lt;device_name&gt;</code> with the appropriate device name if necessary.</p>
+</li>
+</ol>
+<h2 id="troubleshooting">Troubleshooting</h2>
+<ul>
+<li>Ensure all dependencies are installed correctly.</li>
+<li>Verify the file paths and names are correct.</li>
+<li>On macOS when running in online mode, you might encounter permission issues, so try running the scripts with sudo privileges.</li>
+</ul>
+<p>For more detailed information, please contact support.</p>
 
 
     

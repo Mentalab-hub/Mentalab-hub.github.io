@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Mar 2025 10:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 25 Mar 2025 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motor Imagery BCI</title>
@@ -28,6 +28,13 @@
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
       <description>&lt;p&gt;This list contains EEG analysis software that can import &lt;a href=&#34;https://mentalab.com/mobile-eeg/&#34;&gt;Mentalab Explore&lt;/a&gt; data.&lt;/p&gt;&#xA;&lt;p&gt;In general, many EEG analysis pipelines use &lt;a href=&#34;https://www.edfplus.info/&#34;&gt;EDF file formats&lt;/a&gt;. To convert your Mentalab Explore data to EDF, please use the &lt;a href=&#34;https://explorepy.readthedocs.io/en/latest/usage.html#bin2edf&#34;&gt;&lt;code&gt;bin2edf&lt;/code&gt;&lt;/a&gt; command available in our open source API &lt;code&gt;explorepy&lt;/code&gt;. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Artefact removal</title>
+      <link>https://wiki.mentalab.com/applications/artefact-removal/</link>
+      <pubDate>Tue, 25 Mar 2025 10:00:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/artefact-removal/</guid>
+      <description>&lt;p&gt;This is an implementation of the &lt;a href=&#34;https://www.plasticityinneurodevelopmentlab.com/happilee-lowdensity-eeg&#34;&gt;HAPPILEE pipeline&lt;/a&gt; for the &lt;a href=&#34;https://github.com/Mentalab-hub/explorepy&#34;&gt;Explore system&lt;/a&gt; from Mentalab. See our &lt;a href=&#34;https://github.com/Mentalab-hub/explore-happilee.git&#34;&gt;github page&lt;/a&gt; for the code for this project.&lt;/p&gt;&#xA;&lt;p&gt;The HAPPILEE pipeline is applied to EEG data recorded by the Mentalab Explore Pro device in &lt;code&gt;happilee.py&lt;/code&gt; and &lt;code&gt;happilee.ipynb&lt;/code&gt;. &lt;code&gt;happilee.py&lt;/code&gt; is the main script to apply HAPPILEE to an EXG dataset recorded by the Explore system. &lt;code&gt;happilee.ipynb&lt;/code&gt; is a notebook to demonstrate and track steps of the HAPPILEE pipeline to a dataset recorded by the Explore system.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Usage</title>
