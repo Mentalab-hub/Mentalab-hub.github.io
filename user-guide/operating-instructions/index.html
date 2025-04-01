@@ -323,7 +323,7 @@
 <h2 id="operating-modes">Operating modes</h2>
 <ul>
 <li>Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.</li>
-<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>, <code>explorepy</code>, or <code>exploreAndroid</code>. In online mode, the Explore amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
+<li>In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>, <code>explorepy</code>, or <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile</a>). In online mode, the Explore amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.</li>
 <li>We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery (&gt; 60% charge). After charging, unplug your amplifier from the power source.</li>
 </ul>
 <h2 id="pre-experiment-checklist">Pre-experiment checklist</h2>
@@ -331,17 +331,17 @@
 <h2 id="1-install-software">1. Install software</h2>
 <ol>
 <li>Install the software appropriate for your needs. An overview of our open-source APIs can be found on the <a href="https://mentalab.com/?page_id=935">software page</a> of our website or in our <a href="https://github.com/Mentalab-hub">GitHub Repo</a>.</li>
-<li>To verify impedances, you will need <code>explorepy</code> or <code>explore-android</code>. To download <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a>, or download our <a href="https://github.com/Mentalab-hub/explorepy/releases/latest">Windows installer</a>. To download <code>explore-android</code>, please consult the <a href="https://github.com/Mentalab-hub/explore-android"><code>explore-android</code> GitHub repository</a>. Alternatively, use our user-friendly application: <a href="https://wiki.mentalab.com/explore-desktop-guide/" title="Explore Desktop Guide">Explore Desktop</a>.</li>
+<li>To verify impedances, you will need <code>explorepy</code>, <code>Explore Desktop</code> or <code>Explore Mobile</code>. To download <code>explorepy</code>, please consult our <a href="https://explorepy.readthedocs.io/en/latest/installation.html"><code>explorepy</code> Installation Guide</a>. Alternatively, you can use our user-friendly mobile app <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile</a> or desktop application <a href="https://wiki.mentalab.com/explore-desktop-guide/" title="Explore Desktop Guide">Explore Desktop</a>.</li>
 </ol>
 <h2 id="2-set-up-equipment">2. Set-up equipment</h2>
 <ol>
 <li>Place the measurement electrodes on your subject in your preferred configuration. Each channel (1 – 8; 1 – 16; 1 – 32) is recorded against the reference electrode. For convenience, channel names are marked with tags.</li>
-<li>Push the button to turn on your Explore system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining). Use <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> or <a href="https://explorepy.readthedocs.io/en/latest/"><code>explorepy</code></a> to check the exact battery charge.</li>
+<li>Push the button to turn on your Explore system. At system start, the LED will illuminate blue. This indicates the amplifier is booting up. After boot up, the LED will present battery information (green: &gt; 60%, yellow: 30 – 60%, red: &lt; 30% charge remaining). Use <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>, <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile</a> or <a href="https://explorepy.readthedocs.io/en/latest/"><code>explorepy</code></a> to check the exact battery charge.</li>
 <li>Upon normal start up, the amplifier begins to record to flash memory immediately. It starts advertising and waits for a Bluetooth connection to a host machine. During advertising mode, the LED blinks blue twice per second. If no connection is established within four minutes, the amplifier will automatically change to offline mode. In this state, the LED blinks green once every 3 seconds. Explore will keep recording data to internal memory.</li>
 </ol>
 
 <div class="alert alert-danger" role="alert">
-    Remember to remove all other Bluetooth devices from your Windows menu if you are using Windows OS. Disconnecting is not enough, they must be completely removed. Corded accessories, like mouse and keyboard, even if they have a Bluetooth adaptor, are fine.
+    Remember to remove all other Bluetooth devices from your Windows menu if you are using Windows. Disconnecting is not enough, they must be completely removed. Corded accessories, like mouse and keyboard, even if they have a Bluetooth adaptor, are fine.
 </div>
 
 
@@ -375,7 +375,7 @@
 </div>
 
 <ol start="2">
-<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. For detailed information on the impedance measurement, please watch our <a href="https://www.youtube.com/watch?v=3nCB0MYXMx0">video guide</a>, and see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-measurement"><code>explorepy</code> documentation</a>.</li>
+<li>The lower the impedances, the higher the signal quality. Verify good impedances <em>before</em> recording. You can visualise impedances by using <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> or <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile</a> To learn how to stream impedance data via explorepy, see our <a href="https://explorepy.readthedocs.io/en/latest/usage.html#impedance-data-acquisition-in-real-time"><code>explorepy</code> documentation</a>.</li>
 </ol>
 <p>
 <div class="alert alert-info" role="alert">
@@ -398,7 +398,7 @@
     On the lower left corner of the Explore Desktop application, black text will indicate if the connection is stable during your impedance measurement. If not, consider the impedance measurement incorrect.
 </div>
 
-<p>You are now ready to start recording EEG data. For information on how to visualize and record data using <code>explorepy</code> see our <a href="https://explorepy.readthedocs.io/en/latest/">documentation</a> and <a href="https://www.youtube.com/watch?v=K3ZD1WwE140&amp;list=PLa3JycsGtkBiwTe02KE-UPoF3wmB2RHZU">videos</a>.</p>
+<p>You are now ready to start recording EEG data. For information on how to visualize and record data using <code>explorepy</code> see our <a href="https://explorepy.readthedocs.io/en/latest/">documentation</a>.</p>
 
 
     

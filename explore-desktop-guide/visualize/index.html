@@ -310,6 +310,7 @@
     <li><a href="#indication-of-samples-lost-in-seconds">Indication of samples lost in seconds</a></li>
     <li><a href="#motion-sensor-example">Motion sensor example</a></li>
     <li><a href="#spectral-analysis-example">Spectral analysis example</a></li>
+    <li><a href="#bandpower-over-time-example">Bandpower over time example</a></li>
     <li><a href="#filters">Filters</a></li>
   </ul>
 </nav>
@@ -320,7 +321,7 @@
 
 <h1>Visualization</h1>
 
-<p>Visualize ExG, orientation and spectral analysis data in real-time by navigating to the Visualization page.</p>
+<p>Visualize ExG, orientation, spectral analysis and relative bandpower data in real-time by navigating to the Visualization page.</p>
 <p>You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.</p>
 <p>Settings include:</p>
 <ul>
@@ -346,7 +347,7 @@
 </figure>
 
 <div class="alert alert-info" role="alert">
-    It is also possible to scroll back in time in visualizer
+    It is also possible to scroll back in time when visualising signals. Please note that changing the sampling rate during the visualisation may lead to odd behaviour when scrolling back in time.
 </div>
 
 <h2 id="real-time-packet-loss-visualization">Real-time packet loss visualization</h2>
@@ -369,6 +370,11 @@
 <img class="mobile" src="/img/Desktop/spectral.PNG" alt="Example of Explore Desktop's spectral analysis plot" width="90%"/>
 <figcaption> Example of an Explore Desktop spectral analysis plot. </figcaption>
 </figure>
+<h2 id="bandpower-over-time-example">Bandpower over time example</h2>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Desktop/bandpower.PNG" alt="Example of Explore Desktop's bandpower over time plot" width="90%"/>
+<figcaption> Example of an Explore Desktop relative bandpower over time plot. </figcaption>
+</figure>
 <h2 id="filters">Filters</h2>
 <p>The Visualization page will prompt you to define your visualization filters. Explore Desktop will begin streaming data once you have selected your filters.</p>
 <figure style="float:right;">
@@ -378,7 +384,6 @@
 <p>You will still be able to filter signals while the device is streaming. To do so, select ‘Filters’.</p>
 <p>The following filters are available:</p>
 <ul>
-<li>Baseline correction – removes the signal’s DC offset, based on a moving average.</li>
 <li>Notch filter (band stop filter) – attenuates the power line noise at 50 or 60 Hz.</li>
 <li>Low cutoff frequency – rejects signals with frequencies below this threshold.</li>
 <li>High cutoff frequency – rejects signals with frequencies above this threshold.</li>
