@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://localhost:1313/applications/spectrogram/">
+
+    <title>
+        
+        Real-time Spectrogram | Wiki
+        
+    </title>
+
+    
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
+                
+                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
+                    Motor Imagery BCI
+                </a>
+        </li>
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+                
+                 <a href="/applications/artefact-removal/" class="nav-link p-0">
+                    Artefact removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/spectrogram/" class="nav-item my-1 active">
+                
+                 <a href="/applications/spectrogram/" class="nav-link p-0">
+                    Real-time Spectrogram
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLAB
+                </a>
+        </li>
+        <li data-nav-id="/integrations/mne-python/" class="nav-item my-1">
+                
+                 <a href="/integrations/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#setting-up-the-environment-and-dependencies">Setting up the environment and dependencies</a></li>
+    <li><a href="#running-the-example">Running the example</a>
+      <ul>
+        <li><a href="#adapting-the-script-to-your-needs">Adapting the script to your needs</a></li>
+        <li><a href="#drawing-modes">Drawing modes</a></li>
+        <li><a href="#keyboard-interactions">Keyboard interactions</a></li>
+        <li><a href="#mouse-interactions">Mouse interactions</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Real-time Spectrogram</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>The spectrogram of a signal contains the magnitude of the frequencies of the signal over time, meaning it contains three dimensions: time, frequency and magnitude. This data can be plotted as an image that is essentially a heatmap of frequencies over time.</p>
+<p>This example application shows how this can be achieved with real-time updates using the Mentalab Explore device, explorepy and a few other dependencies.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Mentalab Explore</li>
+<li>A Python 3 installation, we strongly recommend using <a href="https://www.anaconda.com/">Anaconda</a> to install Python and using version 3.12</li>
+</ul>
+<h2 id="setting-up-the-environment-and-dependencies">Setting up the environment and dependencies</h2>
+<ol>
+<li>Set up an environment with Python version 3.12 with conda and activate it:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda create <span style="color:#f92672">-</span>n spectrogram python<span style="color:#f92672">=</span><span style="color:#ae81ff">3.12</span>
+</span></span><span style="display:flex;"><span>conda activate spectrogram
+</span></span></code></pre></div><ol start="2">
+<li>Install liblsl, which is required by explorepy, via conda-forge:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda install <span style="color:#f92672">-</span>c conda<span style="color:#f92672">-</span>forge liblsl
+</span></span></code></pre></div><ol start="3">
+<li>Install the other dependencies via pip:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install explorepy glfw vispy scipy numpy
+</span></span></code></pre></div>
+<div class="alert alert-info" role="alert">
+    glfw is used as a backend for vispy to display images. <a href="https://vispy.org/installation.html">Alternatively Qt, PySide6 and multiple other libraries equipped for drawing and displaying windows can be used</a>.
+</div>
+
+<h2 id="running-the-example">Running the example</h2>
+<h3 id="adapting-the-script-to-your-needs">Adapting the script to your needs</h3>
+<p>The code for this example (<code>real_time_spectrogram.py</code>) can be found in the <code>examples</code> folder of the GitHub repository for explorepy: <a href="https://github.com/Mentalab-hub/explorepy/">https://github.com/Mentalab-hub/explorepy/</a></p>
+<p>You can run the script in the environment you&rsquo;ve set up by calling <code>python -m real_time_spectrogram</code> and supplying command line arguments according to your needs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>argument</th>
+          <th>description</th>
+          <th>required</th>
+          <th>default</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-n, --device_name</code></td>
+          <td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
+          <td>yes</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td><code>-sr, --sampling_rate</code></td>
+          <td>The sampling rate to set the device to</td>
+          <td>no</td>
+          <td><code>None</code> / current device sampling rate</td>
+      </tr>
+      <tr>
+          <td><code>-uw, --update_window</code></td>
+          <td>The time between updates of the plot (in seconds)</td>
+          <td>no</td>
+          <td><code>0.1s</code> for mode <code>overlapping</code>, <code>0.5</code>s otherwise</td>
+      </tr>
+      <tr>
+          <td><code>-tw, --time_window</code></td>
+          <td>The total time window displayed in the plot (in seconds)</td>
+          <td>no</td>
+          <td><code>10</code>s</td>
+      </tr>
+      <tr>
+          <td><code>-usb</code></td>
+          <td>Whether to connect via USB</td>
+          <td>no</td>
+          <td><code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>-fn, --notch</code></td>
+          <td>The frequency to use for the notch filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-fbp, --bandpass</code></td>
+          <td>The frequencies to use for the bandpass filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-m, --drawing_mode</code></td>
+          <td>The mode used for drawing the plot (options: <code>moving_fft</code>, <code>moving_stft</code>, <code>overlapping</code>)</td>
+          <td>no</td>
+          <td><code>moving_fft</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>For example, to run the script with default values for the device <strong>Explore_ABCD</strong>:</p>
+<p><code>python -m real_time_spectrogram -n Explore_ABCD</code></p>
+<p>An example that uses every option:</p>
+<p><code>python -m real_time_spectrogram -n Explore_ABCD -sr 500 -uw 0.5 -tw 20 -usb -fn 50.0 -fbp 3.0 30.0 -m overlapping</code></p>
+<p>This call will&hellip;</p>
+<ul>
+<li>set the sampling rate to 500Hz</li>
+<li>set the update window to 0.5s</li>
+<li>set the time window to 20s</li>
+<li>tell the script to connect via USB</li>
+<li>add a Notch filter for the frequency 50Hz</li>
+<li>add a Bandpass filter with the low cutoff frequency 3.0Hz and high cutoff frequency 30.0</li>
+<li>use the drawing mode <code>overlapping</code></li>
+</ul>
+<p>In addition to the command line arguments, a configuration dictionary is defined in the code and can be adapted (in <code>if __name__ == '__main__'</code>).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>config <span style="color:#f92672">=</span> {<span style="color:#e6db74">&#34;window&#34;</span>: <span style="color:#e6db74">&#34;hann&#34;</span>, <span style="color:#e6db74">&#34;nperseg&#34;</span>: <span style="color:#ae81ff">128</span>, <span style="color:#e6db74">&#34;noverlap&#34;</span>: <span style="color:#ae81ff">0</span>}
+</span></span></code></pre></div><p>The values in this dictionary are passed to <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.stft.html">scipy&rsquo;s stft method</a> to fine-tune how the STFT (<a href="https://en.wikipedia.org/wiki/Short-time_Fourier_transform">Short-time Fourier Transform</a>) is calculated. The config can be set to None (<code>config = None</code>) to use scipy&rsquo;s default values for the STFT.</p>
+<p>The plot will only show up after the buffer has been filled up once, meaning the window will only appear after <code>update_window</code> seconds for the modes <code>moving_fft</code> and <code>moving_stft</code> or after <code>time_window</code> seconds for the mode <code>overlapping</code>.</p>
+<p>Depending on the chosen parameters, the result of the STFT (or joined together results) may lead to a stretched out plot. For example, if the sampling rate is set to 1000Hz, the drawing mode is <code>moving_fft</code>, the update window 1s and the time window 10s, the plot will hold 10 pixels on the x-axis (10/1 = 10) but 500 on the y-axis (1000/2 = 500). In order to mitigate this, the plot&rsquo;s camera is manipulated in the script to make the plot appear square instead of stretched out:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>self<span style="color:#f92672">.</span>plot<span style="color:#f92672">.</span>camera<span style="color:#f92672">.</span>aspect <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>img<span style="color:#f92672">.</span>shape[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">/</span> self<span style="color:#f92672">.</span>time_window
+</span></span></code></pre></div><p>Commenting out this line will show the original aspect ratio of the plot.</p>
+<p>Additionally, a frequency cut-off for the y-axis can be supplied to the plot (<code>f_cutoff</code>):</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>rt_spectrogram <span style="color:#f92672">=</span> SpectrogramPlot(device_sr<span style="color:#f92672">=</span>dev_sr,
+</span></span><span style="display:flex;"><span>                                 update_window<span style="color:#f92672">=</span>uw,
+</span></span><span style="display:flex;"><span>                                 time_window<span style="color:#f92672">=</span>tw,
+</span></span><span style="display:flex;"><span>                                 mode<span style="color:#f92672">=</span>args<span style="color:#f92672">.</span>drawing_mode[<span style="color:#ae81ff">0</span>],
+</span></span><span style="display:flex;"><span>                                 colormap<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;viridis&#34;</span>,
+</span></span><span style="display:flex;"><span>                                 config<span style="color:#f92672">=</span>config,
+</span></span><span style="display:flex;"><span>                                 f_cutoff<span style="color:#f92672">=</span><span style="color:#ae81ff">70</span>)
+</span></span></code></pre></div><p>The default cut-off value if nothing is supplied is <code>70</code>, this value determines how many rows of the image should be plotted.</p>
+<h3 id="drawing-modes">Drawing modes</h3>
+<p>The logic for all drawing modes is the same, either the STFT or the FFT (<a href="https://en.wikipedia.org/wiki/Fast_Fourier_transform">Fast Fourier Transform</a>) is calculated on a buffer containing channel values and its result is used to update a numpy array that is then interpreted as an image to be plotted.</p>
+<h4 id="overlapping"><code>overlapping</code></h4>
+<p>In this mode, the STFT is calculated for the entire <code>time_window</code>. The STFT is recalculated every <code>update_window</code> seconds on the last <code>time_window</code> seconds of data. In order to do this, the first <code>update_window * device_sr</code> many samples are dropped from the buffer every update. The result of the STFT is used to overwrite the entire numpy array that makes up the plot.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/overlapping.gif" alt="A gif showcasing the overlapping mode, the plot updates in-place and moves continuously to the left" width=30%/>
+<figcaption>Using the drawing mode "overlapping"</figcaption>
+</figure>
+<h4 id="moving_fft"><code>moving_fft</code></h4>
+<p>In this mode, the FFT is calculated on the <code>update_window</code>. Afterwards, the buffer is cleared and fills up until <code>update_window * device_sr</code> many values are inside before the FFT is recalculated. Every result is treated as a column of pixels for the resulting plot and updates the column of values in the numpy to the right of the last updated column, building up the plot slice by slice. Additionally, a rudimentary swiping line is drawn to the right of the latest pixel column. When right edge of the plot is reached, it starts updating from the left edge again.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/moving_fft.gif" alt="A gif showcasing the moving_fft mode, the plot updates by adding a single pixel column to the right of the current point in time. After reaching the right edge of the plot, the plot starts updating from the left side again." width=30%/>
+<figcaption>Using the drawing mode "moving_fft"</figcaption>
+</figure>
+<h4 id="moving_stft"><code>moving_stft</code></h4>
+<p>This mode can be seen as a hybrid of the other two modes. It calculates the STFT on the <code>update_window</code> and updates multiple columns in the numpy array with its result, updating the plot chunk by chunk.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/moving_stft.gif" alt="A gif showcasing the moving_stft mode, the plot updates by adding multiple pixel columns to the right of the current point in time. After reaching the right edge of the plot, the plot starts updating from the left side again." width=30%/>
+<figcaption>Using the drawing mode "moving_stft"</figcaption>
+</figure>
+
+<div class="alert alert-info" role="alert">
+    The exact number of values considered for the STFT and FFT is not exactly however many values have arrived in the given time window. Instead, the number of values is always slightly more in order to be a power of 2 as this is the most efficient for the FFT.
+</div>
+
+<h3 id="keyboard-interactions">Keyboard interactions</h3>
+<p>The cut-off value for the plot can be increased or decreased by pressing the up or down key on the keyboard. This value corresponds to the colour at the top of the colourmap to the right, any values coming from the STFT or FFT that are higher than this value will be displayed with the same colour as values at the cut-off.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/changing_cutoff.gif" alt="A gif of the pixels in the plot increasing in colour intensity as the cut-off decreases" width=30%/>
+<figcaption>Lowering the cut-off value using the "Down" key while in "moving_stft" mode</figcaption>
+</figure>
+<p>The colourmap for the plot can be changed in code and by default is set to &ldquo;viridis&rdquo;. All available colourmaps can be cycled through by pressing the C key. The colourmap maps values from the STFT or FFT to a colour.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/colour_cycling.gif" alt="A gif of the colour theme of the plot changing" width=30%/>
+<figcaption>Cycling through the available colour maps using the "C" key</figcaption>
+</figure>
+
+<div class="alert alert-info" role="alert">
+    <p>The drawing mode, maximum time window, update window and sampling rate all influence the frequency and time resolution of the plot.</p>
+<p>Higher frequency resolution is achieved with longer buffers, which in turn can be achieved by increasing the time between updates for the modes <code>moving_fft</code> and <code>moving_stft</code> (since these modes calculate the STFT or FFT with <code>update_window * device_sr</code> many samples). For <code>overlapping</code>, this means increasing the time window (since the STFT is calculated every <code>update_window</code> seconds on <code>time_window * device_sr</code> many samples). This also means the frequency resolution can be improved with higher device sampling rates.</p>
+<p>Higher temporal resolution is achieved with higher update rates. This can be achieved by reducing the time between calculations. For the modes <code>moving_fft</code> and <code>moving_stft</code> this corresponds to decreasing the <code>update_window</code>, for the mode <code>overlapping</code> this corresponds to decreasing the <code>time_window</code>. Increasing the sampling rate of the device can thus improve the temporal resolution without sacrificing resolution in the frequency axis.</p>
+
+</div>
+
+<h3 id="mouse-interactions">Mouse interactions</h3>
+<p>The example uses <a href="https://vispy.org/gallery/plotting/index.html">vispy&rsquo;s powerful plotting module</a> to plot the spectrogram as an image. The plot uses a <a href="https://vispy.org/api/vispy.scene.cameras.panzoom.html#vispy.scene.cameras.panzoom.PanZoomCamera"><code>PanZoomCamera</code></a> by default which - as the name suggests - allows the user to pan the plot using the click-and-drag gestures and zoom the plot using the scroll wheel.</p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
+
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "http:\/\/localhost:1313\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
