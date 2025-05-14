@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</loc>
+    <lastmod>2025-05-13T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/applications/motor-imagery-bci/</loc>
     <lastmod>2025-03-24T10:00:00+01:00</lastmod>
   </url><url>
@@ -13,6 +16,9 @@
   </url><url>
     <loc>https://wiki.mentalab.com/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</loc>
+    <lastmod>2025-05-13T10:10:00+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/artefact-removal/</loc>
     <lastmod>2025-03-25T10:00:00+01:00</lastmod>
@@ -116,6 +122,9 @@
     <loc>https://wiki.mentalab.com/applications/p300/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/explore-signals-guide/</loc>
+    <lastmod>2025-05-13T10:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/applications/sleep-recording-protocol/</loc>
     <lastmod>2023-01-26T10:25:19+00:00</lastmod>
   </url><url>
@@ -132,7 +141,7 @@
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/</loc>
-    <lastmod>2025-05-08T12:54:00+01:00</lastmod>
+    <lastmod>2025-05-13T10:10:00+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/categories/</loc>
   </url><url>
