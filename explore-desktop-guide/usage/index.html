@@ -356,20 +356,28 @@
 <p>Ensure that your device is in advertising mode. You can verify with the <a href="https://wiki.mentalab.com/user-guide/led-light-guide/" title="User Guide/LED Light Guide">LED Light Guide</a>. Simply write the device ID in the dropdown input line and press connect. The device will connect within a few seconds.</p>
 <p>Once your device is connected, the status bar will change.</p>
 <p>If your device is not found, you will receive an error.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreDesktopGuide/connection_screen_fullscreen.png" alt="The Explore Desktop Connection page" width="75%"/>
+<figcaption>The Connection page lets you connect to a device via Bluetooth or USB (Explore Pro only).</figcaption>
+</figure>
 <h2 id="configuration">Configuration</h2>
 <p>Once your Mentalab Explore device is connected, the Settings page will become accessible. This page will display the name of your connected device and a set of configuration options for that device.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/settingspage.PNG" alt="The Explore Desktop Settings page" width="90%"/>
-<figcaption> Use the Settings page to configure your Mentalab Explore device. </figcaption>
+<img class="mobile" src="/img/ExploreDesktopGuide/settings_screen_fullscreen.png" alt="The Explore Desktop Settings page" width="75%"/>
+<figcaption>Use the Settings page to configure your Mentalab Explore device.</figcaption>
 </figure>
 <h3 id="active-channels">Active channels</h3>
-<p>To enable and disable ExG channels on your Mentalab Explore device, select and deselect the channel’s associated checkbox under the <em>Enable</em> column and click ‘Apply changes’.</p>
+<p>To enable and disable ExG channels on your Mentalab Explore device, select and deselect the channel’s associated checkbox under the <em><strong>Enable</strong></em> column and click <strong>Apply</strong>. You can also use the buttons <strong>Select none</strong> and <strong>Select all</strong> to quickly disable or enable all channels regardless of their current state.</p>
 <p>Only active channels, i.e. those whose checkbox is selected, will be shown in the Visualization and Impedance Measurement pages.</p>
 <h3 id="channels-names">Channels&rsquo; names</h3>
-<p>To change the name of a channel, change the name under the column <em>Name</em> and click &lsquo;Apply changes&rsquo;. You can change names by either clicking on the name and entering your own or by clicking on the drop-down arrow and selecting a standard position from the dropdown list.</p>
+<p>To change the name of a channel, change the name under the column <em><strong>Name</strong></em> and click <strong>Apply</strong>. You can change names by either clicking on the name and entering your own or by clicking on the drop-down arrow and selecting a standard position from the dropdown list.</p>
 <p>This name will be used in the Visualization and Impedance Measurement pages, as well as in the recorded files.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreDesktopGuide/settings_screen_name_dropdown_focus.png" alt="The channel name dropdown menu showing standard position names" width="25%"/>
+<figcaption>Click on the arrow next to a channel name to open the drop-down menu and select a standard position name.</figcaption>
+</figure>
 <h3 id="sampling-rate-online-and-offline">Sampling rate: online and offline</h3>
-<p>To set the sampling rate of your Mentalab Explore device, select your desired sampling rate from the sampling rate drop-down menu. The sampling rates available in this menu depend on your device type and are measured in Hertz. Click ‘Apply changes’ to confirm.
+<p>To set the sampling rate of your Mentalab Explore device, select your desired sampling rate from the sampling rate drop-down menu. The sampling rates available in this menu depend on your device type and are measured in Hertz. Click <strong>Apply</strong> to confirm.
 
 <div class="alert alert-info" role="alert">
     Explore desktop allows selecting online and offline sampling rates! Offline sampling rates are marked with an asterisk (*). When selecting an offline sampling rate, visualization of ExG data is not possible. However, you can change device settings when an offline sampling rate is active.
@@ -380,16 +388,20 @@
     You can change the sampling rate and active channels of your device simultaneously.
 </div>
 </p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreDesktopGuide/settings_screen_sr_dropdown_focus.png" alt="The sampling rate dropdown menu showing online and offline only (*) sampling rates" width="25%"/>
+<figcaption>Sampling rates that are offline-only are marked with an asterisk (*), switching to these will disable streaming channel data. In this mode, the device still records to its internal memory.</figcaption>
+</figure>
 <h3 id="export-settings">Export settings</h3>
-<p>In the Menu Bar, click on &lsquo;File&rsquo; &gt; &lsquo;Export&rsquo; &gt; &lsquo;Device Settings&rsquo;. Select the name and location where to save the settings file and click on &lsquo;Save&rsquo;.</p>
-<p>Device settings will be saved using the .yaml format</p>
+<p>In the Menu Bar, click on <strong>File &gt; Export &gt; Device Settings</strong>. Select the name and location where to save the settings file and click on <strong>Save</strong>.</p>
+<p>Device settings will be saved using the .yaml format.</p>
 <h3 id="import-settings">Import settings</h3>
-<p>In the Menu Bar, click on &lsquo;File&rsquo; &gt; &lsquo;Import&rsquo; &gt; &lsquo;Device Settings&rsquo;. Select the file to import and click on &lsquo;Open&rsquo;. The settings from the selected file will be imported and applied. Alternatively, the settings from the latest session can also be imported by clicking on &lsquo;File&rsquo; &gt; &lsquo;Import&rsquo; &gt; &lsquo;Last Session Settings&rsquo;.</p>
+<p>In the Menu Bar, click on <strong>File &gt; Import &gt; Device Settings</strong>. Select the file to import and click on <strong>Open</strong>. The settings from the selected file will be imported and applied. Alternatively, the settings from the latest session can also be imported by clicking on <strong>File &gt; Import &gt; Last Session Settings</strong>.</p>
 <h3 id="format-memory">Format memory</h3>
-<p>To format the memory of your Mentalab Explore device, select ‘Format Memory‘. A confirmation pop-up will appear.</p>
+<p>To format the memory of your Mentalab Explore device, select <strong>Format Memory</strong>. A confirmation pop-up will appear.</p>
 <p>Please note that after confirming you want to format the memory of your device, all binary files stored on that device will be deleted and cannot be recovered.</p>
 <h3 id="reset-settings">Reset settings</h3>
-<p>To reset the settings of your Mentalab Explore device, select ‘Reset settings’. The device will disconnect, and all settings will return to their default values:</p>
+<p>To reset the settings of your Mentalab Explore device, select <strong>Restore Default Settings</strong>. The device will disconnect, and all settings will return to their default values:</p>
 <ul>
 <li>250 Hz sampling rate</li>
 <li>All channels active</li>

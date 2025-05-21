@@ -330,12 +330,12 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#exg-example">ExG example</a></li>
+    <li><a href="#exg">ExG</a></li>
     <li><a href="#real-time-packet-loss-visualization">Real-time packet loss visualization</a></li>
     <li><a href="#indication-of-samples-lost-in-seconds">Indication of samples lost in seconds</a></li>
-    <li><a href="#motion-sensor-example">Motion sensor example</a></li>
-    <li><a href="#spectral-analysis-example">Spectral analysis example</a></li>
-    <li><a href="#bandpower-over-time-example">Bandpower over time example</a></li>
+    <li><a href="#motion-sensors">Motion sensors</a></li>
+    <li><a href="#spectral-analysis">Spectral analysis</a></li>
+    <li><a href="#bandpower-over-time">Bandpower over time</a></li>
     <li><a href="#filters">Filters</a></li>
   </ul>
 </nav>
@@ -347,7 +347,7 @@
 <h1>Visualization</h1>
 
 <p>Visualize ExG, orientation, spectral analysis and relative bandpower data in real-time by navigating to the Visualization page.</p>
-<p>You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting ‘Filters’.</p>
+<p>You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting <strong>Filters</strong>.</p>
 <p>Settings include:</p>
 <ul>
 <li>Y-axis scale – change the range of the y-axis.
@@ -363,12 +363,12 @@
 <li>Record (see Recording Section).</li>
 <li>Event markers (see Event Markers).</li>
 <li>Filters.</li>
-<li>LSL push button</li>
+<li>LSL push button.</li>
 </ul>
-<h2 id="exg-example">ExG example</h2>
+<h2 id="exg">ExG</h2>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/exg.PNG" alt="Example of Explore Desktop's ExG plot" width="90%"/>
-<figcaption> Example of an Explore Desktop ExG plot. </figcaption>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_8_channels_fullscreen.png" alt="Example of Explore Desktop's ExG plot" width="90%"/>
+<figcaption>Example of an Explore Desktop ExG plot.</figcaption>
 </figure>
 
 <div class="alert alert-info" role="alert">
@@ -377,27 +377,33 @@
 
 <h2 id="real-time-packet-loss-visualization">Real-time packet loss visualization</h2>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/unstable_bt_real_time.PNG" alt="Packet loss visualization" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_packet_loss_warning.png" alt="Packet loss visualization" width="90%"/>
 <figcaption> Real time packet loss display </figcaption>
 </figure>
 <h2 id="indication-of-samples-lost-in-seconds">Indication of samples lost in seconds</h2>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/bt_loss_time.PNG" alt="Bluetooth samples lost in seconds in footer" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_packet_loss_duration.png" alt="Bluetooth samples lost in seconds in footer" width="90%"/>
 <figcaption> Packet loss quantization. </figcaption>
 </figure>
-<h2 id="motion-sensor-example">Motion sensor example</h2>
+<h2 id="motion-sensors">Motion sensors</h2>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/orn.PNG" alt="Example of Explore Desktop's motion sensor plot" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_orn_fullscreen.png" alt="Example of Explore Desktop's motion sensor plot" width="90%"/>
 <figcaption> Example of an Explore Desktop motion sensor plot. </figcaption>
 </figure>
-<h2 id="spectral-analysis-example">Spectral analysis example</h2>
+<h2 id="spectral-analysis">Spectral analysis</h2>
+<p>The spectral analysis plot is calculated using the FFT (Fast Fourier Transform). The colours of the channel lines map to positions on the head if standard positions are selected (using the 10-10 system). If a channel has no standard position name assigned, it uses a colour from a default colour scheme.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/spectral.PNG" alt="Example of Explore Desktop's spectral analysis plot" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_fft_fullscreen.png" alt="Example of Explore Desktop's spectral analysis plot" width="90%"/>
 <figcaption> Example of an Explore Desktop spectral analysis plot. </figcaption>
 </figure>
-<h2 id="bandpower-over-time-example">Bandpower over time example</h2>
+The colour map for the standard positions can be shown by clicking the ? button above the plot.
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Desktop/bandpower.PNG" alt="Example of Explore Desktop's bandpower over time plot" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_fft_with_head_overlay_fullscreen.png" alt="Example of Explore Desktop's spectral analysis plot with an image of the colour map overlayed" width="90%"/>
+<figcaption> Example of an Explore Desktop spectral analysis plot with a pop-up showing the colour map for standard positions. </figcaption>
+</figure>
+<h2 id="bandpower-over-time">Bandpower over time</h2>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_bandpower_fullscreen.png" alt="Example of Explore Desktop's bandpower over time plot" width="90%"/>
 <figcaption> Example of an Explore Desktop relative bandpower over time plot. </figcaption>
 </figure>
 <h2 id="filters">Filters</h2>
@@ -406,7 +412,7 @@
 <img class="mobile" src="/img/Desktop/vissettings.PNG" alt="The visualization filters of Explore Desktop" width="350"/>
 <figcaption> Set the visualization filters using the pop-up. </figcaption>
 </figure>
-<p>You will still be able to filter signals while the device is streaming. To do so, select ‘Filters’.</p>
+<p>You will still be able to filter signals while the device is streaming. To do so, select <strong>Filters</strong>.</p>
 <p>The following filters are available:</p>
 <ul>
 <li>Notch filter (band stop filter) – attenuates the power line noise at 50 or 60 Hz.</li>
