@@ -342,17 +342,25 @@
 
 <h1>MNE Python</h1>
 
-<h1 id="loading-mentalab-data-into-mne">Loading Mentalab data into MNE</h1>
 <p><a href="https://mne.tools/stable/index.html">MNE Python</a> is an excellent, open-source choice for EEG (and MEG) data visualization and analysis.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/MNE/AvgPSDAlpha_32chanResting.png" alt="Power spectrum density in the alpha band" width="80%"/>
+<figcaption> Power spectrum density in the alpha band</figcaption>
+</figure>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/MNE/TopoAlpha_32chanResting.png" alt="Topographic distribution of the alpha band" width="40%"/>
+<figcaption> Topographic distribution of the alpha band</figcaption>
+</figure>
+<h1 id="loading-mentalab-data-into-mne">Loading Mentalab data into MNE</h1>
 <h2 id="csv-and-bdf-files">CSV and BDF files</h2>
 <p>The below script can be used to create an mne raw data object from a .csv or .bdf file recorded with Explore Desktop. For CSV, the mne object is created from a simple pandas data_frame. Reading bdf files uses the <a href="https://mne.tools/stable/generated/mne.io.read_raw_bdf.html#mne.io.read_raw_bdf">bdf file loader</a> provided by mne.</p>
 <h2 id="xdf-files">XDF files</h2>
 <p>The function can also be used to read in an xdf file recorded with LabRecorder (relying on the <a href="https://github.com/xdf-modules/pyxdf">pyxdf</a> library).
 Loading xdf files selects the first stream in the file by default.
 Change it by adjusting the stream_num variable.
-Make sure to select the correct ExG stream, as there may be several ExG, ORN, and Marker streams in one xdf file.</p>
+<strong>Make sure to select the correct ExG stream, as there may be several ExG, ORN, and Marker streams in one xdf file.</strong></p>
 <h2 id="bin-files">BIN files</h2>
-<p>To load a Mentalab binary (*.BIN) taken from the amplifiers flash memory, convert it to csv or bdf using Explore Dekstop (File &gt; Convert BIN) first and then continue with the below function.</p>
+<p>To load a Mentalab binary (*.BIN) taken from the amplifiers flash memory, convert it to csv or bdf using Explore Dekstop (<code>File &gt; Convert BIN</code>) first and then continue with the below function.</p>
 <hr>
 <p>In all cases, the function will automatically determine the number of channels, channel names, and sampling rate for you.</p>
 <p>Do note that Mentalab ExG data is always recorded raw, meaning that after creating the mne raw object, you have free choice of processing in terms of filtering, artefact rejection, and so on.</p>
@@ -439,6 +447,11 @@ Make sure to select the correct ExG stream, as there may be several ExG, ORN, an
 </span></span><span style="display:flex;"><span>raw_data <span style="color:#f92672">=</span> mne_load_mentalab(<span style="color:#e6db74">&#34;data/16channel_ExG.bdf&#34;</span>)
 </span></span><span style="display:flex;"><span>raw_data <span style="color:#f92672">=</span> mne_load_mentalab(<span style="color:#e6db74">&#34;data/32channel_ExG.xdf&#34;</span>)
 </span></span></code></pre></div><p><br><br></p>
+<p>Having loaded your data, you can now filter your data to taste and use <code>raw_data.plot()</code> to inspect your recording.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/MNE/AlphaSignals_32chanResting.png" alt="MNE data inspection" width="95%"/>
+<figcaption> MNE data inspection</figcaption>
+</figure>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
