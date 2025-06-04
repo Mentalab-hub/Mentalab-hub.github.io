@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://localhost:1313/applications/eeg-to-lamp/">
+
+    <title>
+        
+        EEG to lamp brightness | Wiki
+        
+    </title>
+
+    
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
+                
+                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
+                    Motor Imagery BCI
+                </a>
+        </li>
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+                
+                 <a href="/applications/artefact-removal/" class="nav-link p-0">
+                    Artefact removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1 active">
+                
+                 <a href="/applications/eeg-to-lamp/" class="nav-link p-0">
+                    EEG to lamp brightness
+                </a>
+        </li>
+        <li data-nav-id="/applications/spectrogram/" class="nav-item my-1">
+                
+                 <a href="/applications/spectrogram/" class="nav-link p-0">
+                    Real-time Spectrogram
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLAB
+                </a>
+        </li>
+        <li data-nav-id="/integrations/mne-python/" class="nav-item my-1">
+                
+                 <a href="/integrations/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-signals-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-signals-guide/"><h6>Explore Signals Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-signals-guide/explore-signals-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-installation/" class="nav-link p-0">
+                    Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-signals-guide/explore-signals-usage/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#introduction">Introduction</a></li>
+    <li><a href="#requirements">Requirements</a></li>
+    <li><a href="#setting-up-the-environment-and-dependencies">Setting up the environment and dependencies</a></li>
+    <li><a href="#running-the-example">Running the example</a>
+      <ul>
+        <li><a href="#adapting-the-python-script-to-your-needs">Adapting the Python script to your needs</a></li>
+        <li><a href="#adapting-the-arduino-sketch-to-your-needs">Adapting the Arduino sketch to your needs</a></li>
+        <li><a href="#running-the-python-script-and-the-arduino-sketch">Running the Python script and the Arduino sketch</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>EEG to lamp brightness</h1>
+
+<h2 id="introduction">Introduction</h2>
+<p>An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (8Hz - 13Hz) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject&rsquo;s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow. If the power in the alpha band decreases, the LEDs dim and turn turquoise.</p>
+<p>This application is intended to showcase how scientific concepts can be explored and applied in non-scientific contexts and particularly how data extracted from EEG can be used for individualised biofeedback in a novel and fun way.</p>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Mentalab Explore</li>
+<li>Arduino board</li>
+<li>LED strip (<a href="https://github.com/FastLED/FastLED/wiki/Overview#supported-chipsets">that is supported by FastLED</a>)</li>
+<li>A Python 3 installation, we strongly recommend using <a href="https://www.anaconda.com/">Anaconda</a> to install Python and using version 3.12</li>
+</ul>
+<h2 id="setting-up-the-environment-and-dependencies">Setting up the environment and dependencies</h2>
+<ol>
+<li>Set up an environment with Python version 3.12 with conda and activate it:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda create <span style="color:#f92672">-</span>n eeg2lamp python<span style="color:#f92672">=</span><span style="color:#ae81ff">3.12</span>
+</span></span><span style="display:flex;"><span>conda activate eeg2lamp
+</span></span></code></pre></div><ol start="2">
+<li>Install liblsl, which is required by explorepy, via conda-forge:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>conda install <span style="color:#f92672">-</span>c conda<span style="color:#f92672">-</span>forge liblsl
+</span></span></code></pre></div><ol start="3">
+<li>Install the dependencies via pip:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install explorepy matplotlib mne pyserial numpy scipy
+</span></span></code></pre></div><h2 id="running-the-example">Running the example</h2>
+<p>The code for this example (<code>eeg2lamp.py</code> for the Python script and <code>EEG_LAMP_ARDUINO.ino</code> for the Arduino sketch) can be found in <code>examples/eeg2lamp</code> inside the GitHub repository for explorepy: <a href="https://github.com/Mentalab-hub/explorepy/">https://github.com/Mentalab-hub/explorepy/</a></p>
+<h3 id="adapting-the-python-script-to-your-needs">Adapting the Python script to your needs</h3>
+<p>You can run the Python script in the environment you&rsquo;ve set up by calling <code>python -m eeg2lamp</code> and supplying command line arguments according to your needs:</p>
+<table>
+  <thead>
+      <tr>
+          <th>argument</th>
+          <th>description</th>
+          <th>required</th>
+          <th>default</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-n, --name</code></td>
+          <td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
+          <td>yes</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td><code>-sr, --sampling_rate</code></td>
+          <td>The sampling rate to set the device to</td>
+          <td>no</td>
+          <td><code>None</code> / current device sampling rate</td>
+      </tr>
+      <tr>
+          <td><code>-p, --port</code></td>
+          <td>The port that the Arduino is connected to, i.e. <strong>/dev/cu.usbserial-1234</strong></td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-fn, --notch</code></td>
+          <td>The frequency to use for the notch filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-fbp, --bandpass</code></td>
+          <td>The frequencies to use for the bandpass filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>--simulate_lamp</code></td>
+          <td>Whether to add a second plot to the window that simulates the brightness and colour change</td>
+          <td>no</td>
+          <td><code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>-f, --from_file</code></td>
+          <td>A file path to a .bdf recording to as input to the script and Arduino (instead of a real device connection)</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-l, --loop</code></td>
+          <td>Whether to loop the .bdf file once the end is reached (if <code>-f</code> is supplied)</td>
+          <td>no</td>
+          <td><code>False</code></td>
+      </tr>
+  </tbody>
+</table>
+<p>For example, to run the script with default values for the device <strong>Explore_ABCD</strong> and not connect to an Arduino or simulate a lamp:</p>
+<p><code>python -m eeg2lamp -n Explore_ABCD</code></p>
+<p>An example that additionally sets a Notch filter at 50.0Hz, a bandpass filter with a low cutoff of 3.0Hz and a high cutoff of 40.0Hz, connects to an Arduino on port <code>/dev/cu.usbserial-1234</code> and also simulates a lamp in the plot:</p>
+<p><code>python -m eeg2lamp -n Explore_ABCD -fn 50.0 -fbp 3.0 40.0 -p /dev/cu.usbserial-1234 --simulate-lamp</code></p>
+<p>An example that runs from a pre-recorded file <code>sample/file.bdf</code> instead and loops it when its end is reached:</p>
+<p><code>python -m eeg2lamp -n Explore_ABCD -p /dev/cu.usbserial-1234 --simulate-lamp -f sample/file.bdf --loop</code></p>
+<p>Note that the script still expects a device name to be passed. This name is ignored later when the <code>-f</code> parameter is supplied.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/lampsim.gif" alt="A gif showing two plots. On the left is a bar plot that updates regularly with new bandpower values for the delta, theta, alpha, beta and gamma bands. On the right is a simple plot that only shows a single colour that reacts to the alpha bandpower changing, becoming more yellow and bright with increasing or stable and high alpha bandpower and becoming more turquoise and darker with falling alpha bandpower." width=50%/>
+<figcaption>The plot containing current bandpowers as bar plots and the expected lamp colour next to it.</figcaption>
+</figure>
+<h3 id="adapting-the-arduino-sketch-to-your-needs">Adapting the Arduino sketch to your needs</h3>
+<p>The supplied Arduino sketch was written with a specific LED strip in mind. In order to run the example for your setup, you need to know your LED strip type, how many LEDs it has and which data pin (on the Arduino) it is connected to. You need to change lines 4-6 to fit your needs:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#define LED_PIN     3
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define NUM_LEDS    80
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define LED_TYPE    WS2811
+</span></span></span></code></pre></div><p>You can find the possible LED types for clockless LEDs in <a href="https://fastled.io/docs/d7/d6f/group___clockless_chipsets.html">this documentation page</a>. If you are using an LED with a clock, please refer to the FastLED documentation for how to properly connect and address it.</p>
+<p>In our example, the colour ordering of the chipset was not RGB but GRB instead, hence line 7:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#define COLOR_ORDER GRB
+</span></span></span></code></pre></div><p>If your LED strip&rsquo;s chipset uses RGB ordering, you can remove this line. If it uses another kind of ordering, you can change this line to fit what your chipset uses. You can refer to <a href="https://fastled.io/docs/db/d07/eorder_8h_a3c26d076773aa0f331d3066b46dbc6a4.html#a3c26d076773aa0f331d3066b46dbc6a4aa94cf1760393e10a753b8edba4ca1c98">this documentation page</a> for the possible enum values. If you don&rsquo;t know what ordering your LED strip&rsquo;s chipset uses, you can either figure it out using trial and error or you can run <a href="https://github.com/FastLED/FastLED/wiki/Rgb-calibration">FastLED&rsquo;s calibration example</a> to find out what ordering your chipset uses.</p>
+<p>The colours the Arduino transitions between are defined in lines 16 and 17:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>CRGB color_low  <span style="color:#f92672">=</span> CRGB(<span style="color:#ae81ff">0</span>, <span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">180</span>);   <span style="color:#75715e">// turqouise
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>CRGB color_high <span style="color:#f92672">=</span> CRGB(<span style="color:#ae81ff">255</span>, <span style="color:#ae81ff">200</span>, <span style="color:#ae81ff">0</span>);   <span style="color:#75715e">// yellow
+</span></span></span></code></pre></div><p>You can change these to any two colours you want to transition between.</p>
+<h3 id="running-the-python-script-and-the-arduino-sketch">Running the Python script and the Arduino sketch</h3>
+<p>The easiest way to run the Arduino sketch is by using the <a href="https://www.arduino.cc/en/software/">Arduino IDE 2</a>. Connect your Arduino (with the LED strip&rsquo;s data in pin connected to the Arduino&rsquo;s data pin) to your computer with a USB cable. Then, open the Arduino IDE, open the <code>EEG_LAMP_ARDUINO.ino</code> sketch and select your board from the drop-down menu at the top. Click on the library manager symbol in the left menu, search for <code>FastLED</code> and install it. Finally, upload the sketch to the connected Arduino by clicking on the arrow button in the top menu.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/arduino_ide.png" alt="A screenshot of the Arduino IDE with a red rectangle around the relevant top menu items and another red rectangle around the library manager button on the left. The top menu items in the rectangle are the verify button (a checkmark), the upload button (and arrow to the right) and a drop-down menu. The library manager button on the left looks like some books next to each other." width=50%/>
+<figcaption>The Arduino IDE with the relevant top menu items and library manager button on the left marked in red.</figcaption>
+</figure>
+<p>To launch the Python script, simply run it as outlined above and supply the port the Arduino is connected to with the <code>-p</code> parameter. The port is also listed in the drop-down menu in the Arduino IDE.</p>
+<p>That&rsquo;s it! If everything is connected properly, the LED strip is addressed correctly and your Explore device gets a good EEG signal from your head, you will see the LEDs react to your alpha bandpower in real-time. If you need help with getting a good signal, please refer to the <a href="http://localhost:1313/user-guide/improving-impedances/" title="User Guide/Improving Impedences">Improving Impedances</a> page.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/lamp_rl.gif" alt="A gif showing a lamp on a desk on the left, a man in the middle behind the desk and a laptop on the right on the desk. On the laptop screen, a window with bar plots that increase and decrease over time is shown while the lamp on the left increases and decreases in brightness accordingly." width=50%/>
+<figcaption>The lamp, connected via Arduino to the PC running the Python script, increasing and decreasing its brightness according to increasing and decreasing alpha bandpower. The alpha bandpower corresponds to the green bar plot.</figcaption>
+</figure>
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
+
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "http:\/\/localhost:1313\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
