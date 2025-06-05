@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jun 2025 12:54:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 05 Jun 2025 14:00:00 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
@@ -35,6 +35,13 @@
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
       <description>&lt;p&gt;This list contains EEG analysis software that can import &lt;a href=&#34;https://mentalab.com/mobile-eeg/&#34;&gt;Mentalab Explore&lt;/a&gt; data.&lt;/p&gt;&#xA;&lt;p&gt;In general, many EEG analysis pipelines use &lt;a href=&#34;https://www.edfplus.info/&#34;&gt;EDF file formats&lt;/a&gt;. To convert your Mentalab Explore data to EDF, please use the &lt;a href=&#34;https://explorepy.readthedocs.io/en/latest/usage.html#bin2edf&#34;&gt;&lt;code&gt;bin2edf&lt;/code&gt;&lt;/a&gt; command available in our open source API &lt;code&gt;explorepy&lt;/code&gt;. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NeuroPype</title>
+      <link>https://wiki.mentalab.com/integrations/neuropype/</link>
+      <pubDate>Thu, 05 Jun 2025 14:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/neuropype/</guid>
+      <description>&lt;p&gt;Mentalab&amp;rsquo;s mobile EEG amplifiers integrate seamlessly with NeuroPype, a powerful and flexible platform for real-time brain data processing and analysis. This page provides an introduction to using your Mentalab data with NeuroPype, highlighting key capabilities and recommended practices for both offline analysis and real-time streaming.&lt;/p&gt;&#xA;&lt;figure style=&#34;display: block; text-align:center; width: 50%; margin: 0 auto;&#34;&gt;&#xD;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/Integrations/NeuroPype/SourceLocalisation-NeuroPype_32channel.gif&#34; alt=&#34;View of the NeuroPype Source localisation result&#34; width=&#34;100%&#34;/&gt;&#xD;&#xA;&lt;/figure&gt;&#xD;&#xA;&lt;div style=&#34;text-align: center;&#34;&gt;Example: Outcome of the Mentalab Source Localisation pipeline. ExG data on the left, source mapping on the right.&lt;/div&gt;&#xD;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;how-to-use-mentalab-data-with-neuropype&#34;&gt;How to Use Mentalab Data with NeuroPype&lt;/h3&gt;&#xA;&lt;p&gt;You have two primary methods for getting Mentalab data into NeuroPype:&lt;/p&gt;</description>
     </item>
     <item>
       <title>Usage</title>
@@ -273,6 +280,13 @@
       <pubDate>Tue, 03 Jun 2025 12:54:00 +0100</pubDate>
       <guid>https://wiki.mentalab.com/applications/eeg-to-lamp/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (8Hz - 13Hz) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject&amp;rsquo;s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow. If the power in the alpha band decreases, the LEDs dim and turn turquoise.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title></title>
+      <link>https://wiki.mentalab.com/integrations/11-besa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/11-besa/</guid>
+      <description>&lt;!-- ---&#xD;&#xA;title: &#34;BESA&#34;&#xD;&#xA;date: 2025-06-05T14:00:00+00:00&#xD;&#xA;weight: 2&#xD;&#xA;description: Description to BESA&#xD;&#xA;slug: BESA&#xD;&#xA;--- --&gt;&#xD;&#xA;&lt;p&gt;Mentalab&amp;rsquo;s mobile EEG amplifiers are designed for seamless integration with powerful neuroscience software. This page outlines the steps and considerations for working with your Mentalab data in BESA, a widely used software suite for MEG and EEG analysis.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h2 id=&#34;direct-data-read-in-with-bdf-format&#34;&gt;Direct Data Read-in with .bdf Format&lt;/h2&gt;&#xA;&lt;p&gt;Mentalab devices record data in the .bdf (BioSemi Data Format) file type, an open and widely supported file format. It is the 24-bit version of the common 16-bit .edf (European Data Format). This significantly streamlines your workflow when using BESA:&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
