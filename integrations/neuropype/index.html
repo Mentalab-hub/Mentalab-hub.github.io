@@ -365,6 +365,10 @@
 <h1>NeuroPype</h1>
 
 <p>Mentalab&rsquo;s mobile EEG amplifiers integrate seamlessly with NeuroPype, a powerful and flexible platform for real-time brain data processing and analysis. This page provides an introduction to using your Mentalab data with NeuroPype, highlighting key capabilities and recommended practices for both offline analysis and real-time streaming.</p>
+<figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/NeuroPype/SourceLocalisation-NeuroPype_32channel.gif" alt="View of the NeuroPype Source localisation result" width="100%"/>
+<figcaption> Example: Outcome of the Mentalab Source Localisation pipeline. ExG data on the left, source mapping on the right.</figcaption>
+</figure>
 <hr>
 <h3 id="how-to-use-mentalab-data-with-neuropype">How to Use Mentalab Data with NeuroPype</h3>
 <p>You have two primary methods for getting Mentalab data into NeuroPype:</p>
@@ -416,26 +420,34 @@ Mentalab devices record data in the <strong>.bdf (BioSemi Data Format)</strong> 
 <p>Leveraging NeuroPype&rsquo;s robust signal processing capabilities, our pipelines simplify the process of identifying and removing unwanted artefacts from your Mentalab EEG data. This ensures cleaner signals for more accurate analysis.</p>
 <figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
 <img class="mobile" src="/img/Integrations/NeuroPype/Artefact_Removal.png" alt="View of the NeuroPype Artefact removal pipeline" width="100%"/>
+<figcaption>Mentalab Artefact Removal pipeline</figcaption>
 </figure>
-<div style="text-align: center;">Mentalab Artefact Removal pipeline</div>
+<figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/NeuroPype/ArtifactRemoval-Neuropype-32channel.gif" alt="View of the NeuroPype Artefact removal result" width="100%"/>
+<figcaption>Outcome of the Mentalab Artefact Removal pipeline. Raw data on the left, cleaned data on the right.</figcaption>
+</figure>
 <p><em>For general NeuroPype artefact removal examples, refer to:</em> <a href="https://www.neuropype.io/docs/select_examples/index.html#event-related-potential-erp-classification">NeuroPype ERP Classification Example</a></p>
 <h4 id="2-source-localisation">2. Source Localisation</h4>
 <p>Gain insights into the neural generators of your Mentalab EEG signals. Our NeuroPype integration facilitates source localisation, allowing you to estimate the intracranial origin of electrical activity. We recommend using data files with</p>
 <figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
 <img class="mobile" src="/img/Integrations/NeuroPype/Source_Localisation.png" alt="View of the NeuroPype Source localisation pipeline" width="100%"/>
+<figcaption>Mentalab Source Localisation pipeline</figcaption>
 </figure>
-<div style="text-align: center;">Mentalab Source Localisation pipeline</div>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/NeuroPype/Source_Localisation.png" alt="Power spectrum density in the alpha band" width="80%"/>
-<figcaption> Power spectrum density in the alpha band</figcaption>
+<figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/NeuroPype/SourceLocalisation-NeuroPype_32channel.gif" alt="View of the NeuroPype Source localisation result" width="100%"/>
+<figcaption>Outcome of the Mentalab Source Localisation pipeline. ExG data on the left, source mapping on the right.</figcaption>
 </figure>
 <p><em>For general NeuroPype source localisation examples, refer to:</em> <a href="https://www.neuropype.io/docs/select_examples/index.html#source-localization-sloreta">NeuroPype sLORETA Example</a></p>
 <h4 id="3-connectivity-estimation">3. Connectivity Estimation</h4>
 <p>Explore functional relationships between different brain regions. Our pipelines support connectivity estimation using your Mentalab data, providing a deeper understanding of brain networks.</p>
 <figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
 <img class="mobile" src="/img/Integrations/NeuroPype/Connectivity_estimation.png" alt="View of the NeuroPype Connectivity Estimation pipeline" width="100%"/>
+<figcaption>Mentalab Connectivity Estimation pipeline</figcaption>
 </figure>
-<div style="text-align: center;">Mentalab Connectivity Estimation pipeline</div>
+<figure style="display: block; text-align:center; width: 50%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/NeuroPype/BrainConnectivity-NeuroPype_32channel.gif" alt="View of the NeuroPype Connectivity Estimation result" width="100%"/>
+<figcaption>Outcome of the Mentalab Connectivity Estimation pipeline. Data on the left, connection graph on the right.</figcaption>
+</figure>
 <p><em>For general NeuroPype connectivity estimation examples, refer to:</em> <a href="https://www.neuropype.io/docs/select_examples/index.html#connectivity-estimation">NeuroPype Connectivity Estimation Example</a></p>
 <hr>
 <p>For comprehensive documentation on NeuroPype&rsquo;s functionalities and detailed instructions on building and running pipelines, please refer to the official <a href="https://www.neuropype.io/docs/index.html">NeuroPype Documentation</a>.</p>
