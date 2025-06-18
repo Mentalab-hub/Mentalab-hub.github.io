@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://wiki.mentalab.com/integrations/stimulation/psychopy/</loc>
+    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</loc>
     <lastmod>2025-05-13T10:00:00+00:00</lastmod>
   </url><url>
@@ -11,20 +14,26 @@
     <loc>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/eeglab/</loc>
+    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/integrations/supported-software/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/neuropype/</loc>
-    <lastmod>2025-06-05T14:00:00+00:00</lastmod>
+    <loc>https://wiki.mentalab.com/integrations/stimulation/</loc>
+    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</loc>
     <lastmod>2025-05-13T10:10:00+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/artefact-removal/</loc>
     <lastmod>2025-03-25T10:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/mne-python/</loc>
+    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/explore-mobile-guide/usage/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
@@ -41,6 +50,9 @@
     <loc>https://wiki.mentalab.com/applications/sleep-actigraphy/</loc>
     <lastmod>2025-06-12T10:00:00+01:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/</loc>
+    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/explore-mobile-guide/testing/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
@@ -53,6 +65,9 @@
     <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/neuropype/</loc>
+    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/applications/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
@@ -64,6 +79,9 @@
   </url><url>
     <loc>https://wiki.mentalab.com/user-guide/led-light-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/besa-research/</loc>
+    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/power-bands/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
@@ -86,9 +104,6 @@
     <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/eeglab/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
     <loc>https://wiki.mentalab.com/explore-desktop-guide/lsl/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
@@ -100,9 +115,6 @@
   </url><url>
     <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/mne-python/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
@@ -152,7 +164,15 @@
     <loc>https://wiki.mentalab.com/</loc>
     <lastmod>2025-06-12T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/11-besa/</loc>
+    <loc>https://wiki.mentalab.com/integrations/analysis/3-fieldtrip/</loc>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</loc>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/stimulation/2-opensesame/</loc>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</loc>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</loc>
   </url><url>
     <loc>https://wiki.mentalab.com/categories/</loc>
   </url><url>

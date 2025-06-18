@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="http://localhost:1313/integrations/stimulus-presentation/psychopy/">
+
+    <title>
+        
+        PsychoPy | Wiki
+        
+    </title>
+
+    
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
+                
+                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
+                    Motor Imagery BCI
+                </a>
+        </li>
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+                
+                 <a href="/applications/artefact-removal/" class="nav-link p-0">
+                    Artefact removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-actigraphy/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-actigraphy/" class="nav-link p-0">
+                    Sleep Actigraphy
+                </a>
+        </li>
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        <li data-nav-id="/applications/spectrogram/" class="nav-item my-1">
+                
+                 <a href="/applications/spectrogram/" class="nav-link p-0">
+                    Real-time Spectrogram
+                </a>
+        </li>
+        <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
+                
+                 <a href="/applications/eeg-to-lamp/" class="nav-link p-0">
+                    EEG to lamp brightness
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/analysis/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/eeglab/" class="nav-link p-0">
+                    EEGLAB
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/mne-python/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/fieldtrip/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/fieldtrip/" class="nav-link p-0">
+                    FieldTrip
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/neuropype/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/neuropype/" class="nav-link p-0">
+                    NeuroPype
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/besa-research/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/besa-research/" class="nav-link p-0">
+                    BESA Research
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/stimulus-presentation/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/stimulus-presentation/"><h6>Stimulus Presentation</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/stimulus-presentation/psychopy/" class="nav-item my-1 active">
+                
+                 <a href="/integrations/stimulus-presentation/psychopy/" class="nav-link p-0">
+                    PsychoPy
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulus-presentation/opensesame/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulus-presentation/opensesame/" class="nav-link p-0">
+                    OpenSesame
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulus-presentation/e-prime/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulus-presentation/e-prime/" class="nav-link p-0">
+                    E-Prime®
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulus-presentation/presentation/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulus-presentation/presentation/" class="nav-link p-0">
+                    Presentation®
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-signals-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-signals-guide/"><h6>Explore Signals Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-signals-guide/explore-signals-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-installation/" class="nav-link p-0">
+                    Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-signals-guide/explore-signals-usage/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#setting-up-mentalab-hypersync">Setting up Mentalab Hypersync</a></li>
+        <li><a href="#integrating-lsl-markers-into-your-psychopy-experiment">Integrating LSL Markers into your PsychoPy Experiment</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#using-explorepy-api">Using explorepy API</a></li>
+    <li><a href="#using-direct-serial-port-communication">Using Direct Serial Port Communication</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>PsychoPy</h1>
+
+<p>This guide details how to integrate your Mentalab Explore device with PsychoPy experiments, focusing on high-precision synchronization of event markers using <strong>LabStreamingLayer (LSL)</strong> in combination with *<em>Mentalab Hypersync</em>. This is the recommended approach for robust and accurate data alignment.</p>
+<p>Alternative legacy wired trigger methods are listed at the bottom.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before starting, ensure you have the following hardware and software:</p>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li><strong>Mentalab Explore Pro Device</strong>: Any model of the Explore biosignal acquisition system.</li>
+<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from PsychoPy with the Explore device&rsquo;s data stream.</li>
+<li><strong>Computer</strong>: To run PsychoPy, LSL, and data recording software.</li>
+</ul>
+<h3 id="software">Software</h3>
+<ul>
+<li><strong>PsychoPy</strong>: A recent version of PsychoPy.</li>
+<li><strong>Python</strong>: PsychoPy&rsquo;s scripting language.</li>
+<li><strong>PyLSL (<code>pylsl</code>)</strong>: The Python library for LabStreamingLayer. Install via pip:
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install pylsl
+</span></span></code></pre></div></li>
+<li><strong>Mentalab Mobile App or <code>explorepy</code></strong>: For Hypersync configuration and/or data recording from the Explore device.</li>
+<li><strong>(Optional, for wired methods) <code>explorepy</code></strong>: Mentalab&rsquo;s Python API for Explore devices.</li>
+<li><strong>(Optional, for wired methods) <code>pyserial</code></strong>: Python library for serial port communication.</li>
+</ul>
+<h1 id="recommended-method-synchronization-via-pylsl-and-mentalab-hypersync">Recommended Method: Synchronization via PyLSL and Mentalab Hypersync</h1>
+<p>This method uses LSL to transmit event markers from your PsychoPy experiment. The Mentalab Hypersync module captures these LSL markers and precisely embeds them into the data stream recorded by the Mentalab Explore device.</p>
+<h3 id="how-it-works">How it Works</h3>
+<ol>
+<li><strong>PsychoPy Experiment</strong>: Your PsychoPy script generates experimental events (e.g., stimulus onset, response).</li>
+<li><strong>PyLSL Markers</strong>: At each event, PsychoPy sends an integer marker via an LSL stream.</li>
+<li><strong>Mentalab Hypersync</strong>: The Hypersync hardware, connected to your computer, subscribes to this LSL marker stream.</li>
+<li><strong>Wireless Synchronization</strong>: Hypersync receives the LSL markers and wirelessly forwards them with high precision to the connected Mentalab Explore device.</li>
+<li><strong>Data Integration</strong>: The Explore device embeds these markers directly into its physiological data stream (EEG, EMG, ECG, etc.).</li>
+<li><strong>Recording</strong>: Record the combined data (physiological signals + LSL markers) using Mentalab&rsquo;s software (Mobile App, <code>explorepy</code>) or other LSL-compatible tools like LabRecorder.</li>
+</ol>
+<h3 id="setting-up-mentalab-hypersync">Setting up Mentalab Hypersync</h3>
+<p>For comprehensive instructions on setting up your Hypersync add-on, including hardware connections and configuration, please refer to the official Mentalab Hypersync documentation.</p>
+<ul>
+<li><strong>Mentalab Hypersync - High Precision Wireless Synchronisation for ExG</strong>: <a href="https://mentalab.com/mentalab-hypersync-high-precision-wireless-synchronisation-for-exg/">https://mentalab.com/mentalab-hypersync-high-precision-wireless-synchronisation-for-exg/</a></li>
+</ul>
+<p>Ensure Hypersync is configured to listen to the LSL marker stream that your PsychoPy script will create.</p>
+<h3 id="integrating-lsl-markers-into-your-psychopy-experiment">Integrating LSL Markers into your PsychoPy Experiment</h3>
+<p>Add Python code to your PsychoPy script to establish an LSL outlet and dispatch markers. The provided <code>experiment.py</code> serves as an excellent reference.</p>
+<h4 id="key-python-code-snippets-for-lsl">Key Python Code Snippets for LSL</h4>
+<ol>
+<li>
+<p><strong>Import necessary LSL classes</strong>:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInfo, StreamOutlet <span style="color:#75715e"># Import LSL libraries</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Define Stream Information (<code>StreamInfo</code>)</strong>:
+This object describes your marker stream so Hypersync can find it.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Define the stream information for markers</span>
+</span></span><span style="display:flex;"><span>marker_stream_info <span style="color:#f92672">=</span> StreamInfo(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;PsychopyExperimentMarkers&#39;</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Markers&#39;</span>, channel_count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>                               nominal_srate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int32&#39;</span>,
+</span></span><span style="display:flex;"><span>                               source_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;YourExperimentUniqueID&#39;</span>) <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># name: A recognizable name (e.g., &#39;PsychopyExperimentMarkers&#39;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># type: Conventionally &#39;Markers&#39;</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># channel_count: 1 for single integer markers</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># nominal_srate: 0.0 for irregular events</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># channel_format: &#39;int32&#39; for integer markers</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># source_id: A unique ID for this stream source</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Create an LSL Outlet (<code>StreamOutlet</code>)</strong>:
+This object sends markers into the LSL network.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Create the LSL outlet</span>
+</span></span><span style="display:flex;"><span>marker_outlet <span style="color:#f92672">=</span> StreamOutlet(marker_stream_info) <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;LSL Marker Outlet created. Stream Name: PsychopyExperimentMarkers&#34;</span>) <span style="color:#75715e">#</span>
+</span></span></code></pre></div></li>
+<li>
+<p><strong>Pushing a Marker (<code>marker_outlet.push_sample()</code>)</strong>:
+Send a marker when an event occurs. The argument must be a list or tuple.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: Sending marker for stimulus onset</span>
+</span></span><span style="display:flex;"><span>label_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span> <span style="color:#75715e"># Example: 11 for a target stimulus</span>
+</span></span><span style="display:flex;"><span>marker_outlet<span style="color:#f92672">.</span>push_sample([label_value]) <span style="color:#75715e"># Send LSL marker for stimulus onset</span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;LSL Marker Sent: </span><span style="color:#e6db74">{</span>label_value<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#75715e">#</span>
+</span></span></code></pre></div><p>It&rsquo;s critical to send the marker as close as possible to the event&rsquo;s actual occurrence (e.g., immediately after <code>win.flip()</code> for visual stimuli).</p>
+</li>
+</ol>
+<h4 id="example-from-experimentpy">Example from <code>experiment.py</code></h4>
+<p>The <code>experiment.py</code> script (which you provided) demonstrates a visual oddball task:</p>
+<ul>
+<li><strong>LSL Setup</strong>: Initializes <code>StreamInfo</code> and <code>StreamOutlet</code> at the beginning.</li>
+<li><strong>Marker Sending</strong>:
+<ul>
+<li>Sends <code>10</code> for non-target stimulus and <code>11</code> for target stimulus onset.</li>
+<li>Sends <code>20</code> upon a spacebar press (participant response).</li>
+<li>Sends <code>8</code> when a block starts after the participant presses space to continue.
+These markers are sent using <code>marker_outlet.push_sample([marker_value])</code>.</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># --- LSL Setup from experiment.py ---</span>
+</span></span><span style="display:flex;"><span>marker_stream_info <span style="color:#f92672">=</span> StreamInfo(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;PsychopyExperimentMarkers&#39;</span>, type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Markers&#39;</span>, channel_count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
+</span></span><span style="display:flex;"><span>                               nominal_srate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int32&#39;</span>,
+</span></span><span style="display:flex;"><span>                               source_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;VisualOddballExp_PsychoPy_Markers_UID12345&#39;</span>) <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>marker_outlet <span style="color:#f92672">=</span> StreamOutlet(marker_stream_info) <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Sending a marker during a trial in experiment.py ---</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> label <span style="color:#f92672">==</span> <span style="color:#ae81ff">10</span>: <span style="color:#75715e"># nontarget</span>
+</span></span><span style="display:flex;"><span>    nontarget<span style="color:#f92672">.</span>draw() <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>: <span style="color:#75715e"># target</span>
+</span></span><span style="display:flex;"><span>    target<span style="color:#f92672">.</span>draw() <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>win<span style="color:#f92672">.</span>flip() <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>marker_outlet<span style="color:#f92672">.</span>push_sample([label]) <span style="color:#75715e"># Send LSL marker for stimulus onset</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># --- Sending response marker in experiment.py ---</span>
+</span></span><span style="display:flex;"><span>keys <span style="color:#f92672">=</span> event<span style="color:#f92672">.</span>getKeys(keyList<span style="color:#f92672">=</span>[<span style="color:#e6db74">&#39;space&#39;</span>], timeStamped<span style="color:#f92672">=</span>clock) <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> keys: <span style="color:#75715e">#</span>
+</span></span><span style="display:flex;"><span>    marker_outlet<span style="color:#f92672">.</span>push_sample([<span style="color:#ae81ff">20</span>]) <span style="color:#75715e"># Send LSL marker for space press</span>
+</span></span></code></pre></div><p>Data Recording
+With Hypersync and PsychoPy&rsquo;s LSL stream active:</p>
+<p>Connect Hypersync: Ensure it&rsquo;s powered and linked to your LSL marker stream.
+Connect Explore Device: Pair your Mentalab Explore device.
+Start Recording:
+Mentalab Mobile App: When used with Hypersync, it should automatically integrate LSL markers into the EDF+ or BDF+ recording.
+explorepy: Use explorepy to stream and record. Markers from Hypersync will be embedded.
+LabRecorder: This LSL tool can record multiple streams: your PsychoPy markers and the Explore data stream (if also streamed via LSL, potentially through explorepy).
+Hypersync is key to ensuring markers are accurately timestamped and embedded in the Explore device&rsquo;s data.</p>
+<h1 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h1>
+<p>While LSL with Hypersync is preferred, direct wired connections are also possible.</p>
+<h2 id="using-explorepy-api">Using explorepy API</h2>
+<p>Mentalab&rsquo;s explorepy SDK can send markers to the Explore device via a wired USB-serial connection, if supported by device and firmware.</p>
+<p>How it works: Your Python script uses explorepy functions to send an 8-bit marker to the device.
+Example: See the explorepy example for sending 8-bit markers independently: send_8_bit_marker_independently.py.
+Documentation: explorepy Readthedocs.</p>
+<h2 id="using-direct-serial-port-communication">Using Direct Serial Port Communication</h2>
+<p>For custom setups, you might send trigger signals by writing to the serial (COM) port connected to the Explore device or an intermediary interface. This typically involves using a library like pyserial.</p>
+<p>How it works: Your PsychoPy script would use a library like pyserial to open the serial port and write byte patterns that the Explore device interprets as markers.
+Implementation: This is advanced and depends on device firmware and specific trigger hardware.
+Python</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>Conceptual example using pyserial
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> serial
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Port and settings are device-specific</span>
+</span></span><span style="display:flex;"><span>    ser <span style="color:#f92672">=</span> serial<span style="color:#f92672">.</span>Serial(<span style="color:#e6db74">&#39;/dev/ttyUSB0&#39;</span>, baudrate<span style="color:#f92672">=</span><span style="color:#ae81ff">9600</span>, timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>) <span style="color:#75715e"># Or &#39;COMx&#39; on Windows</span>
+</span></span><span style="display:flex;"><span>    marker_byte_stimulus_A <span style="color:#f92672">=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\x01</span><span style="color:#e6db74">&#39;</span> <span style="color:#75715e"># Example: 00000001</span>
+</span></span><span style="display:flex;"><span>    ser<span style="color:#f92672">.</span>write(marker_byte_stimulus_A)
+</span></span><span style="display:flex;"><span>    ser<span style="color:#f92672">.</span>close()
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> serial<span style="color:#f92672">.</span>SerialException <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Serial port error: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><p>This requires careful configuration of the serial port parameters (port name, baud rate, etc.) and knowledge of the marker values expected by the device.
+Summary
+For the most accurate and convenient synchronization of PsychoPy events with Mentalab Explore data, the PyLSL and Mentalab Hypersync method is strongly recommended. It offers wireless, high-precision marker integration directly into the physiological data stream. Wired methods using explorepy or direct serial communication are available as alternatives but are generally considered legacy options.</p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
+
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "http:\/\/localhost:1313\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
