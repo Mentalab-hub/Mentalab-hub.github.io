@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://wiki.mentalab.com/applications/sleep-actigraphy/">
+
+    <title>
+        
+        Sleep Actigraphy | Wiki
+        
+    </title>
+
+    
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
+                
+                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
+                    Motor Imagery BCI
+                </a>
+        </li>
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+                
+                 <a href="/applications/artefact-removal/" class="nav-link p-0">
+                    Artefact removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-actigraphy/" class="nav-item my-1 active">
+                
+                 <a href="/applications/sleep-actigraphy/" class="nav-link p-0">
+                    Sleep Actigraphy
+                </a>
+        </li>
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        <li data-nav-id="/applications/spectrogram/" class="nav-item my-1">
+                
+                 <a href="/applications/spectrogram/" class="nav-link p-0">
+                    Real-time Spectrogram
+                </a>
+        </li>
+        <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
+                
+                 <a href="/applications/eeg-to-lamp/" class="nav-link p-0">
+                    EEG to lamp brightness
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+        <li data-nav-id="/integrations/neuropype/" class="nav-item my-1">
+                
+                 <a href="/integrations/neuropype/" class="nav-link p-0">
+                    NeuroPype
+                </a>
+        </li>
+        <li data-nav-id="/integrations/eeglab/" class="nav-item my-1">
+                
+                 <a href="/integrations/eeglab/" class="nav-link p-0">
+                    EEGLAB
+                </a>
+        </li>
+        <li data-nav-id="/integrations/mne-python/" class="nav-item my-1">
+                
+                 <a href="/integrations/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        <li data-nav-id="/integrations/11-besa/" class="nav-item my-1">
+                
+                 <a href="/integrations/11-besa/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-signals-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-signals-guide/"><h6>Explore Signals Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-signals-guide/explore-signals-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-installation/" class="nav-link p-0">
+                    Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-signals-guide/explore-signals-usage/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a></li>
+    <li><a href="#input-data">Input Data</a></li>
+    <li><a href="#pipeline-steps">Pipeline Steps</a>
+      <ul>
+        <li><a href="#1-data-preprocessing-preprocesspy">1. Data Preprocessing (<code>preprocess.py</code>)</a></li>
+        <li><a href="#2-sleep-stage-detection-sleep_stagingpy">2. Sleep Stage Detection (<code>sleep_staging.py</code>)</a></li>
+        <li><a href="#3-accelerometer-processing-preprocess_accpy">3. Accelerometer Processing (<code>preprocess_acc.py</code>)</a></li>
+        <li><a href="#4-activity-analysis-analyze_activitypy">4. Activity Analysis (<code>analyze_activity.py</code>)</a></li>
+        <li><a href="#5-integrated-visualization-visualizationpy">5. Integrated Visualization (<code>visualization.py</code>)</a></li>
+      </ul>
+    </li>
+    <li><a href="#results-and-interpretation">Results and Interpretation</a>
+      <ul>
+        <li><a href="#sleep-activity-correlation-analysis">Sleep-Activity Correlation Analysis</a></li>
+        <li><a href="#statistical-summary">Statistical Summary</a></li>
+      </ul>
+    </li>
+    <li><a href="#key-libraries-used">Key Libraries Used</a></li>
+    <li><a href="#final-outputs">Final Outputs</a>
+      <ul>
+        <li><a href="#data-files">Data Files</a></li>
+        <li><a href="#visualizations">Visualizations</a></li>
+      </ul>
+    </li>
+    <li><a href="#quick-start">Quick Start</a></li>
+    <li><a href="#dependencies">Dependencies</a></li>
+    <li><a href="#broadening-horizons-applications-and-future-directions">Broadening Horizons: Applications and Future Directions</a></li>
+  </ul>
+</nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>Sleep Actigraphy</h1>
+
+<h1 id="sleep-activity-pipeline-with-pyactigraphy-accelerometer-and-yasa">Sleep Activity Pipeline (with PyActigraphy, Accelerometer and YASA)</h1>
+<p>Here&rsquo;s a more polished version of your text, with fewer bullet points and a smoother flow:</p>
+<p>Sleep Activity Analysis with PyActigraphy, Accelerometer, and YASA
+This guide demonstrates a comprehensive pipeline for analyzing sleep stages and activity patterns using EEG and accelerometer data acquired from a Mentalab Explore device. For those specifically interested in sleep staging, our <a href="https://wiki.mentalab.com/applications/sleep-analysis/">Sleep EEG Analysis</a> application example offers further insights.</p>
+<h2 id="overview">Overview</h2>
+<p>This pipeline processes raw EEG and orientation data to achieve three main objectives:</p>
+<ol>
+<li><strong>Detect sleep stages</strong> using YASA (Yet Another Spindle Algorithm)</li>
+<li><strong>Analyze movement patterns</strong> using accelerometer and pyActigraphy</li>
+<li><strong>Visualize sleep-activity relationships</strong></li>
+</ol>
+<h2 id="input-data">Input Data</h2>
+<p>The pipeline utilizes the following input files:</p>
+<ul>
+<li><code>data/Mentalab-sleep-analysis_ExG.csv</code> - Contains the EEG data.</li>
+<li><code>data/Mentalab-sleep-analysis_ORN.csv</code> - Contains the orientation and accelerometer data.</li>
+</ul>
+<h2 id="pipeline-steps">Pipeline Steps</h2>
+<h3 id="1-data-preprocessing-preprocesspy">1. Data Preprocessing (<code>preprocess.py</code>)</h3>
+<p>The initial step involves data preprocessing, which can be executed using the following command:
+This script is crucial for synchronizing EEG and orientation data and extracting key accelerometer features. It aligns timestamps between the two data streams, calculates movement magnitudes, applies necessary filtering, and then segments the data into 30-second epochs for consistent analysis.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python preprocess/preprocess.py
+</span></span></code></pre></div><p><strong>Outputs</strong>:</p>
+<ul>
+<li><code>processed_data/eeg_synchronized.csv</code> - Synchronized EEG data</li>
+<li><code>processed_data/accelerometer_data.csv</code> - Formatted accelerometer data</li>
+<li><code>processed_data/movement_epochs.csv</code> - 30-second movement summaries</li>
+</ul>
+<h3 id="2-sleep-stage-detection-sleep_stagingpy">2. Sleep Stage Detection (<code>sleep_staging.py</code>)</h3>
+<p>This step focuses on analyzing the EEG data to detect sleep stages using YASA. It leverages MNE-Python for essential EEG preprocessing, including filtering (0.1-40 Hz bandpass) and resampling to 100 Hz for compatibility with YASA. YASA then automates sleep staging, classifying periods into Wake, N1, N2, N3, and REM, and calculates various sleep statistics and events.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python sleep_staging/sleep_staging.py
+</span></span></code></pre></div><p><strong>Libraries</strong>:</p>
+<ul>
+<li><strong>MNE-Python</strong> for EEG preprocessing (filtering, resampling)</li>
+<li><strong>YASA</strong> for automated sleep staging using machine learning</li>
+</ul>
+<p><strong>Outputs</strong>:</p>
+<ul>
+<li><code>sleep_staging_results/hypnogram.csv</code> - A time-series representation of detected sleep stages.</li>
+<li><code>sleep_staging_results/sleep_statistics.csv</code> - Key sleep quality metrics</li>
+<li><code>sleep_staging_results/bandpower_by_stage.csv</code> - Results of frequency analysis for each sleep stage</li>
+</ul>
+<h3 id="3-accelerometer-processing-preprocess_accpy">3. Accelerometer Processing (<code>preprocess_acc.py</code>)</h3>
+<p>This script processes the raw accelerometer data using the specialized Oxford Accelerometer Library, which is automatically installed. It extracts activity counts and movement patterns, providing detailed epoch-level summaries (30-second windows).</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python preprocess/preprocess_acc.py
+</span></span></code></pre></div><p><strong>Purpose</strong>: Process accelerometer data using accelerometer library</p>
+<p><strong>Library</strong>:</p>
+<ul>
+<li><strong>Accelerometer Library</strong> for activity classification</li>
+<li>Automatically installs via <code>pip install accelerometer</code></li>
+</ul>
+<p><strong>Process</strong>:</p>
+<ul>
+<li>Processes raw accelerometer CSV using <code>accProcess</code> command</li>
+<li>Extracts activity counts and movement patterns</li>
+<li>Creates epoch-level summaries (30-second windows)</li>
+</ul>
+<p><strong>Outputs</strong>:</p>
+<ul>
+<li><code>accelerometer_results/acc_data-timeSeries.csv.gz</code> - High-resolution activity data</li>
+<li><code>accelerometer_results/acc_data-epoch.csv</code> - 30-second epoch summaries</li>
+<li><code>accelerometer_results/acc_data-summary.json</code> - Processing metadata</li>
+</ul>
+<h3 id="4-activity-analysis-analyze_activitypy">4. Activity Analysis (<code>analyze_activity.py</code>)</h3>
+<p>Here, the processed accelerometer data is converted into a pyActigraphy-compatible format for in-depth activity pattern analysis. This step applies activity classification based on configurable cut-points: Sedentary (≤8 mg), Light (8-20 mg), Moderate (20-60 mg), Vigorous (60-120 mg), and Very Vigorous (&gt;120 mg), generating comprehensive activity reports and visualizations.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python analyze/analyze_activity.py
+</span></span></code></pre></div><p><strong>Library</strong>:</p>
+<ul>
+<li><strong>pyActigraphy</strong> for activity pattern analysis</li>
+<li>Activity classification with configurable cut-points</li>
+</ul>
+<p><strong>Outputs</strong>:</p>
+<ul>
+<li><code>categorized_activity_data.csv</code> - Categorized activity levels over time</li>
+<li><code>activity_report.csv</code> - Summary statistics</li>
+<li><code>activity_pattern_over_time.png</code> - Visualization</li>
+</ul>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/sleep-actigraphy-activity_pattern_over_time.png" alt="Sleep activity over time" width="90%"/>
+<figcaption> Sleep activity pattern over time.</figcaption>
+</figure>
+<h3 id="5-integrated-visualization-visualizationpy">5. Integrated Visualization (<code>visualization.py</code>)</h3>
+<p>The final step in the pipeline generates insightful visualizations that integrate sleep stages and activity data. It produces:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>python visualize.py
+</span></span></code></pre></div><p><strong>Generates</strong>:</p>
+<ol>
+<li><strong>Activity Over Time</strong> - Movement patterns with trend analysis</li>
+<li><strong>Sleep Hypnogram</strong> - Clinical-style sleep stage visualization</li>
+<li><strong>Overlay Plot</strong> - Combined sleep-activity relationships</li>
+</ol>
+<h2 id="results-and-interpretation">Results and Interpretation</h2>
+<h3 id="sleep-activity-correlation-analysis">Sleep-Activity Correlation Analysis</h3>
+<p>This pipeline reveals interesting correlations between EEG-derived sleep stages and accelerometer-detected movement patterns. The overlay visualization is particularly insightful, illustrating how activity levels correspond with different sleep phases.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Applications/sleep-actigraphy_overlayed_sleep_activity.png" alt="Sleep Stages & Sleep Activity Graph" width="90%"/>
+<figcaption> Sleep stages and aleep activiy overlayed in one graph.</figcaption>
+</figure>
+<h4 id="sleep-architecture-pattern">Sleep Architecture Pattern</h4>
+<p>The analysis of a truncated 8.5-hour recording showed sleep onset approximately 30 minutes after recording began. Sleep stages were distributed as follows:</p>
+<ul>
+<li><strong>Total Recording Duration (truncated)</strong>: ~8.5 hours</li>
+<li><strong>Sleep Onset</strong>: Approximately 30 minutes after recording start</li>
+<li><strong>Sleep Stages Distribution</strong>:
+<ul>
+<li>Wake periods: Brief awakenings throughout the night</li>
+<li>Light Sleep (N1/N2): Predominant in early and late sleep periods</li>
+<li>Deep Sleep (N3): Concentrated in first half of sleep (hours 1-4, 6-7)</li>
+<li>REM Sleep: Distributed across sleep period with longer episodes in later hours</li>
+</ul>
+</li>
+</ul>
+<h4 id="movement-sleep-stage-relationships">Movement-Sleep Stage Relationships</h4>
+<p>Understanding how movement aligns with sleep stages provides deeper insights:</p>
+<p><strong>1. Wake Periods (Pink/Red regions)</strong>
+Unsurprisingly, high activity spikes (50-95 acceleration units) occur exclusively during wake periods, characterized by vigorous activity (orange dots). Multiple brief awakenings during sleep indicate normal sleep fragmentation.</p>
+<p><strong>2. Deep Sleep (N3 - Dark Gray regions)</strong>
+Movement drops to near-zero, demonstrating effective muscle atonia. The longest continuous deep sleep periods were observed in the first sleep cycle, indicating good sleep consolidation.</p>
+<p><strong>3. Light Sleep and REM (Light Blue regions)</strong>
+Moderate activity is detected during sleep stage transitions, and some movement during REM sleep is consistent with incomplete muscle atonia (the &ldquo;REM paradox&rdquo;). Small activity spikes at stage boundaries signify natural sleep transitions.</p>
+<p><strong>Accelerometer Validation</strong> &amp; <strong>Methodological Strengths</strong>:</p>
+<p>The accelerometer data showed strong concordance with EEG-derived sleep stages, objectively validating the accuracy of sleep scoring. This multi-modal approach, combining EEG and accelerometer analysis with standardized libraries like YASA and pyActigraphy, ensures reproducible results and holds significant clinical utility for accelerometer-based sleep monitoring. Its real-time potential makes it suitable for longitudinal sleep monitoring applications.</p>
+<h3 id="statistical-summary">Statistical Summary</h3>
+<p>Based on the analyzed data:</p>
+<ul>
+<li><strong>Sleep Latency</strong>: ~30 minutes (normal range)</li>
+<li><strong>Sleep Efficiency</strong>: High (minimal wake periods during sleep)</li>
+<li><strong>Movement-Sleep Correlation</strong>: Strong negative correlation between activity and sleep depth</li>
+<li><strong>Sleep Stage Transitions</strong>: Well-defined boundaries with appropriate movement patterns</li>
+</ul>
+<h2 id="key-libraries-used">Key Libraries Used</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Library</th>
+          <th>Purpose</th>
+          <th>Usage</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>YASA</strong></td>
+          <td>Sleep staging</td>
+          <td>Automated EEG-based sleep detection</td>
+      </tr>
+      <tr>
+          <td><strong>MNE-Python</strong></td>
+          <td>EEG processing</td>
+          <td>Signal filtering, epoching, preprocessing</td>
+      </tr>
+      <tr>
+          <td><strong>Oxford Accelerometer</strong></td>
+          <td>Activity processing</td>
+          <td>Raw accelerometer data analysis</td>
+      </tr>
+      <tr>
+          <td><strong>pyActigraphy</strong></td>
+          <td>Activity analysis</td>
+          <td>Research-standard activity metrics</td>
+      </tr>
+      <tr>
+          <td><strong>Pandas/NumPy</strong></td>
+          <td>Data processing</td>
+          <td>Data manipulation and analysis</td>
+      </tr>
+      <tr>
+          <td><strong>Matplotlib</strong></td>
+          <td>Visualization</td>
+          <td>Plot generation and formatting</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="final-outputs">Final Outputs</h2>
+<h3 id="data-files">Data Files</h3>
+<ul>
+<li><code>hypnogram.csv</code> - Sleep stages (30-second epochs)</li>
+<li><code>categorized_activity_data.csv</code> - Activity classifications</li>
+<li><code>sleep_statistics.csv</code> - Sleep quality metrics</li>
+<li><code>sleep_actigraphy_merged.csv</code> - Combined sleep-activity dataset</li>
+</ul>
+<h3 id="visualizations">Visualizations</h3>
+<ul>
+<li><code>1_activity_over_time.png</code> - Activity patterns</li>
+<li><code>2_sleep_stages_over_time.png</code> - Sleep hypnogram</li>
+<li><code>3_overlayed_sleep_activity.png</code> - Combined analysis</li>
+</ul>
+<h2 id="quick-start">Quick Start</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># 1. Ensure you have the input files</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mentalab-sleep-analysis_ExG.csv</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Mentalab-sleep-analysis_ORN.csv</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 2. Run the complete pipeline</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># !!!important: rename files and relocate files accordingly</span>
+</span></span><span style="display:flex;"><span>python <span style="color:#f92672">[</span>name_of_program.py<span style="color:#f92672">]</span>
+</span></span></code></pre></div><h2 id="dependencies">Dependencies</h2>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e">### may require setting up different environments for yasa and accelerometer library</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pip install pandas numpy matplotlib seaborn
+</span></span><span style="display:flex;"><span>pip install mne yasa
+</span></span><span style="display:flex;"><span>pip install accelerometer
+</span></span><span style="display:flex;"><span>pip install pyActigraphy
+</span></span><span style="display:flex;"><span>pip install scikit-learn  <span style="color:#75715e"># for classification metrics</span>
+</span></span></code></pre></div><h2 id="broadening-horizons-applications-and-future-directions">Broadening Horizons: Applications and Future Directions</h2>
+<p>This pipeline offers a robust foundation for both research and clinical applications. Researchers can delve into detailed sleep architecture studies, explore circadian rhythms, identify sleep disorders, and assess the impact of interventions on sleep quality. Clinically, it provides objective sleep quality assessment, supports home sleep monitoring, helps track treatment efficacy, and offers valuable diagnostic support. On the technical side, it&rsquo;s a powerful tool for algorithm validation, sensor fusion, generating data for machine learning models, and ensuring quality control in sleep analysis.</p>
+<p>Looking ahead, we&rsquo;re excited about the potential for future enhancements. We aim to enable real-time processing for live sleep monitoring, integrate machine learning for automated sleep quality scoring, and even incorporate environmental data like light, temperature, and sound for a more holistic understanding of sleep.</p>
+<p>This comprehensive sleep activity pipeline, leveraging the power of PyActigraphy, accelerometer data, and YASA, provides an in-depth and versatile tool for understanding the intricate relationship between sleep stages and activity patterns. Whether for advancing scientific research or supporting clinical practice, we believe this solution will pave the way for more precise and accessible sleep analysis.</p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>

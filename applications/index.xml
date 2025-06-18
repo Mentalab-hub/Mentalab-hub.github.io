@@ -6,7 +6,7 @@
     <description>Recent content in Applications on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jun 2025 12:54:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motor Imagery BCI</title>
@@ -21,6 +21,13 @@
       <pubDate>Tue, 25 Mar 2025 10:00:00 +0100</pubDate>
       <guid>https://wiki.mentalab.com/applications/artefact-removal/</guid>
       <description>&lt;p&gt;This is an implementation of the &lt;a href=&#34;https://www.plasticityinneurodevelopmentlab.com/happilee-lowdensity-eeg&#34;&gt;HAPPILEE pipeline&lt;/a&gt; for the &lt;a href=&#34;https://github.com/Mentalab-hub/explorepy&#34;&gt;Explore system&lt;/a&gt; from Mentalab. See our &lt;a href=&#34;https://github.com/Mentalab-hub/explore-happilee.git&#34;&gt;github page&lt;/a&gt; for the code for this project.&lt;/p&gt;&#xA;&lt;p&gt;The HAPPILEE pipeline is applied to EEG data recorded by the Mentalab Explore Pro device in &lt;code&gt;happilee.py&lt;/code&gt; and &lt;code&gt;happilee.ipynb&lt;/code&gt;. &lt;code&gt;happilee.py&lt;/code&gt; is the main script to apply HAPPILEE to an EXG dataset recorded by the Explore system. &lt;code&gt;happilee.ipynb&lt;/code&gt; is a notebook to demonstrate and track steps of the HAPPILEE pipeline to a dataset recorded by the Explore system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sleep Actigraphy</title>
+      <link>https://wiki.mentalab.com/applications/sleep-actigraphy/</link>
+      <pubDate>Thu, 12 Jun 2025 10:00:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/sleep-actigraphy/</guid>
+      <description>&lt;h1 id=&#34;sleep-activity-pipeline-with-pyactigraphy-accelerometer-and-yasa&#34;&gt;Sleep Activity Pipeline (with PyActigraphy, Accelerometer and YASA)&lt;/h1&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a more polished version of your text, with fewer bullet points and a smoother flow:&lt;/p&gt;&#xA;&lt;p&gt;Sleep Activity Analysis with PyActigraphy, Accelerometer, and YASA&#xA;This guide demonstrates a comprehensive pipeline for analyzing sleep stages and activity patterns using EEG and accelerometer data acquired from a Mentalab Explore device. For those specifically interested in sleep staging, our &lt;a href=&#34;https://wiki.mentalab.com/applications/sleep-analysis/&#34;&gt;Sleep EEG Analysis&lt;/a&gt; application example offers further insights.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Photodiode Event Triggers</title>

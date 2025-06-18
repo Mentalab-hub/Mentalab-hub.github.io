@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Jun 2025 14:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0100</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
@@ -77,6 +77,13 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/user-guide/operating-instructions/</guid>
       <description>&lt;h2 id=&#34;operating-modes&#34;&gt;Operating modes&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording.&lt;/li&gt;&#xA;&lt;li&gt;In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with &lt;a href=&#34;https://wiki.mentalab.com/explore-desktop-guide/&#34;&gt;Explore Desktop&lt;/a&gt;, &lt;code&gt;explorepy&lt;/code&gt;, or &lt;a href=&#34;https://wiki.mentalab.com/explore-mobile-guide/&#34;&gt;Explore Mobile&lt;/a&gt;). In online mode, the Explore amplifier sends signal data to the host machine. It also sends meta-data when the amplifier’s settings change.&lt;/li&gt;&#xA;&lt;li&gt;We recommend charging the amplifier  for at least one hour before first use. To charge the amplifier, connect the USB-C cable to a compliant source. A green LED indicates sufficient battery (&amp;gt; 60% charge). After charging, unplug your amplifier from the power source.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h2 id=&#34;pre-experiment-checklist&#34;&gt;Pre-experiment checklist&lt;/h2&gt;&#xA;&lt;p&gt;We strongly recommend completing this checklist before you start collecting EEG data. This will ensure you get the best out of your Explore system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sleep Actigraphy</title>
+      <link>https://wiki.mentalab.com/applications/sleep-actigraphy/</link>
+      <pubDate>Thu, 12 Jun 2025 10:00:00 +0100</pubDate>
+      <guid>https://wiki.mentalab.com/applications/sleep-actigraphy/</guid>
+      <description>&lt;h1 id=&#34;sleep-activity-pipeline-with-pyactigraphy-accelerometer-and-yasa&#34;&gt;Sleep Activity Pipeline (with PyActigraphy, Accelerometer and YASA)&lt;/h1&gt;&#xA;&lt;p&gt;Here&amp;rsquo;s a more polished version of your text, with fewer bullet points and a smoother flow:&lt;/p&gt;&#xA;&lt;p&gt;Sleep Activity Analysis with PyActigraphy, Accelerometer, and YASA&#xA;This guide demonstrates a comprehensive pipeline for analyzing sleep stages and activity patterns using EEG and accelerometer data acquired from a Mentalab Explore device. For those specifically interested in sleep staging, our &lt;a href=&#34;https://wiki.mentalab.com/applications/sleep-analysis/&#34;&gt;Sleep EEG Analysis&lt;/a&gt; application example offers further insights.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tests</title>
