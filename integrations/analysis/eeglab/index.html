@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html><head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/eeglab/">
+
+    <title>
+        
+        EEGLAB | Wiki
+        
+    </title>
+
+    
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+
+    
+
+</head>
+<body><nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top" id="navbarMain">
+    <div class="container">
+        <div>
+            <a class="navbar-brand" href="/">
+                <img style="padding:10px 10px 15px 10px;" src="https://mentalab.com/wp-content/uploads/2024/05/mentalab-logo.svg" />
+                Wiki
+            </a>
+        </div>
+        
+    </div>
+    <a class="nav-link" href="https://mentalab.com">
+		<button class="btn btn-secondary mt-n1" style="margin: 0px 100px 0px 0px; ">mentalab.com</button>
+	</a>
+</nav>
+<div class="container-fluid">
+            <div class="row">
+
+                <div class="docs-sidenav order-0 col-12 col-md-3 col-lg-2 col-xl-2 position-sticky border-right"><nav class="navbar navbar-expand-md navbar-light pl-0">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-toggle="collapse" data-target="#sidenav-left-collapse" aria-controls="sidenav-left-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+     <div class="collapse navbar-collapse align-items-start flex-column" id="sidenav-left-collapse">
+         <ul class="navbar-nav flex-column pt-3">
+    <li data-nav-id="/quick-links/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/quick-links/"><h6>Quick Links</h6></a>
+    </li>
+    <li data-nav-id="/user-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/user-guide/"><h6>User Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/user-guide/operating-instructions/" class="nav-item my-1">
+                
+                 <a href="/user-guide/operating-instructions/" class="nav-link p-0">
+                    Operating Instructions
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/dry-electrode-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/dry-electrode-guide/" class="nav-link p-0">
+                    Dry Electrode Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/led-light-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/led-light-guide/" class="nav-link p-0">
+                    LED Light Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/button-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/button-guide/" class="nav-link p-0">
+                    Button Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cap-size-guide/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cap-size-guide/" class="nav-link p-0">
+                    Cap Size Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/improving-impedances/" class="nav-item my-1">
+                
+                 <a href="/user-guide/improving-impedances/" class="nav-link p-0">
+                    Improving Impedances
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/explorepy-commands/" class="nav-item my-1">
+                
+                 <a href="/user-guide/explorepy-commands/" class="nav-link p-0">
+                    explorepy Command Guide
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/cleaning-disinfection-storage/" class="nav-item my-1">
+                
+                 <a href="/user-guide/cleaning-disinfection-storage/" class="nav-link p-0">
+                    Cleaning, Disinfecting and Storing Mentalab Hardware
+                </a>
+        </li>
+        <li data-nav-id="/user-guide/safety-recommendations/" class="nav-item my-1">
+                
+                 <a href="/user-guide/safety-recommendations/" class="nav-link p-0">
+                    Safety Recommendations
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/event-triggers/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
+    </li>
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/applications/motor-imagery-bci/" class="nav-item my-1">
+                
+                 <a href="/applications/motor-imagery-bci/" class="nav-link p-0">
+                    Motor Imagery BCI
+                </a>
+        </li>
+        <li data-nav-id="/applications/artefact-removal/" class="nav-item my-1">
+                
+                 <a href="/applications/artefact-removal/" class="nav-link p-0">
+                    Artefact removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-actigraphy/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-actigraphy/" class="nav-link p-0">
+                    Sleep Actigraphy
+                </a>
+        </li>
+        <li data-nav-id="/applications/power-bands/" class="nav-item my-1">
+                
+                 <a href="/applications/power-bands/" class="nav-link p-0">
+                    EOG Artifact Removal
+                </a>
+        </li>
+        <li data-nav-id="/applications/ssvep/" class="nav-item my-1">
+                
+                 <a href="/applications/ssvep/" class="nav-link p-0">
+                    SSVEP Experiments
+                </a>
+        </li>
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
+                
+                 <a href="/applications/easi-ecg/" class="nav-link p-0">
+                    EASI ECG
+                </a>
+        </li>
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
+                
+                 <a href="/applications/p300/" class="nav-link p-0">
+                    P300 Experiment
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-recording-protocol/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-recording-protocol/" class="nav-link p-0">
+                    Sleep Recording Protocol
+                </a>
+        </li>
+        <li data-nav-id="/applications/sleep-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/sleep-analysis/" class="nav-link p-0">
+                    Sleep EEG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/ecg-analysis/" class="nav-item my-1">
+                
+                 <a href="/applications/ecg-analysis/" class="nav-link p-0">
+                    ECG Analysis
+                </a>
+        </li>
+        <li data-nav-id="/applications/eegsynth/" class="nav-item my-1">
+                
+                 <a href="/applications/eegsynth/" class="nav-link p-0">
+                    EEGSynth
+                </a>
+        </li>
+        <li data-nav-id="/applications/spectrogram/" class="nav-item my-1">
+                
+                 <a href="/applications/spectrogram/" class="nav-link p-0">
+                    Real-time Spectrogram
+                </a>
+        </li>
+        <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
+                
+                 <a href="/applications/eeg-to-lamp/" class="nav-link p-0">
+                    EEG to lamp brightness
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/supported-software/" class="nav-item my-1">
+                
+                 <a href="/integrations/supported-software/" class="nav-link p-0">
+                    Supported Software
+                </a>
+        </li>
+    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/stimulation/"><h6>Stimulation</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/stimulation/psychopy/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/psychopy/" class="nav-link p-0">
+                    PsychoPy
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/2-opensesame/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/2-opensesame/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/3-e-prime/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/3-e-prime/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/4-presentation/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/4-presentation/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 parent haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/analysis/eeglab/" class="nav-item my-1 active">
+                
+                 <a href="/integrations/analysis/eeglab/" class="nav-link p-0">
+                    EEGLAB
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/mne-python/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/mne-python/" class="nav-link p-0">
+                    MNE Python
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/fieldtrip/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/fieldtrip/" class="nav-link p-0">
+                    Fieldtrip
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/neuropype/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/neuropype/" class="nav-link p-0">
+                    NeuroPype
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/besa-research/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/besa-research/" class="nav-link p-0">
+                    BESA Research
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/3-fieldtrip/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/3-fieldtrip/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li data-nav-id="/faqs/" class="nav-item my-1
+        ">
+        
+        <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
+    </li>
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-desktop-guide/getting-started/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/getting-started/" class="nav-link p-0">
+                    Getting Started
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
+                    Visualization
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/record/" class="nav-link p-0">
+                    Recording
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/impedance/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/impedance/" class="nav-link p-0">
+                    Impedance
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/lsl/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/lsl/" class="nav-link p-0">
+                    Lab Streaming Layer
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/other/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/other/" class="nav-link p-0">
+                    Other
+                </a>
+        </li>
+        <li data-nav-id="/explore-desktop-guide/troubleshooting/" class="nav-item my-1">
+                
+                 <a href="/explore-desktop-guide/troubleshooting/" class="nav-link p-0">
+                    Troubleshooting
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-mobile-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-mobile-guide/"><h6>Explore Mobile App</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-mobile-guide/download-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/download-installation/" class="nav-link p-0">
+                    Download and Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/usage/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        <li data-nav-id="/explore-mobile-guide/testing/" class="nav-item my-1">
+                
+                 <a href="/explore-mobile-guide/testing/" class="nav-link p-0">
+                    Tests
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/explore-signals-guide/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/explore-signals-guide/"><h6>Explore Signals Guide</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/explore-signals-guide/explore-signals-installation/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-installation/" class="nav-link p-0">
+                    Installation
+                </a>
+        </li>
+        <li data-nav-id="/explore-signals-guide/explore-signals-usage/" class="nav-item my-1">
+                
+                 <a href="/explore-signals-guide/explore-signals-usage/" class="nav-link p-0">
+                    Usage
+                </a>
+        </li>
+        </ul>
+    </li>
+        </ul>
+    </div>
+</nav>
+
+
+</div>
+                <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
+	<nav id="TableOfContents"></nav>
+</div>
+</div>
+                <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
+                
+
+<h1>EEGLAB</h1>
+
+<p>This is a guide to converting <a href="https://mentalab.com/products/">Mentalab Explore</a> CSV, BDF, and BIN files into an <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> dataset using <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>.</p>
+<p>Start Explore Desktop and do not connect to a device. From top menu, select <code>File&gt;Export&gt;EEGLAB Dataset</code>.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB1.png" alt="EEGLAB Dataset export" width="40%"/>
+<figcaption> EEGLAB Dataset export</figcaption>
+</figure>
+<p>After this, select the folder with the ExG data to be converted. A new <code>datasets</code> folder will be generated in the selected folder, containing the EEGLAB datasets.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB2.png" alt="Destination folder" width="80%"/>
+<figcaption> Select destination folder</figcaption>
+</figure>
+<p>In EEGLAB, select the dataset from <code>File &gt; Load existing dataset</code>.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB3.png" alt="EEGLAB dataset export" width="80%"/>
+<figcaption> EEGLAB dataset import</figcaption>
+</figure>
+<p>You can now process your data. Click on <code>Plot &gt; Channel data (Scroll)</code> to inspect your recording.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB4.png" alt="EEGLAB dataset inspection" width="80%"/>
+<figcaption> EEGLAB dataset inspection</figcaption>
+</figure>
+<p><br><br></p>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+
+
+    
+
+
+                </div>
+
+            </div> 
+
+        </div> 
+<p style="text-align: center;">Copyright © 2025 Mentalab</p>
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+
+
+<script type="text/javascript" src="/plugins/lunr.min.js"></script>
+<script type="text/javascript" src="/plugins/auto-complete.js"></script>
+<link href="/plugins/auto-complete.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
+</script>
+<script type="text/javascript" src="/plugins/search.js"></script>
+
+
+<script type="text/javascript" src="/plugins/clipboard.js"></script>
+<script>
+  new ClipboardJS('.btn');
+</script>
+</body>
+</html>
