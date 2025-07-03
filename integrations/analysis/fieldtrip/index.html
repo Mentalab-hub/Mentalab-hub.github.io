@@ -437,7 +437,6 @@
 <li>A Mentalab Explore device</li>
 <li>ExplorePy installed and configured</li>
 <li>MATLAB with FieldTrip toolbox installed</li>
-<li>The provided <code>fieldtrip_loader.m</code> script</li>
 </ol>
 <h2 id="step-1-recording-data-with-mentalab">Step 1: Recording Data with Mentalab</h2>
 <p>Record your EEG data using ExplorePy CLI, Explore Desktop, or Explore Mobile.</p>
@@ -460,16 +459,67 @@
 <p>In order to load ExG data to FieldTrip we will use <code>*_ExG.csv</code> and <code>*_Meta.csv</code> files.</p>
 <h2 id="step-4-loading-and-visualizing-data">Step 4: Loading and Visualizing Data</h2>
 <h3 id="using-the-provided-matlab-script">Using the Provided MATLAB Script</h3>
-<p>Use the included <code>fieldtrip_loader.m</code> script:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% Run the script</span>
-</span></span><span style="display:flex;"><span>mentalabcsv
+<p>Run the script:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% --- CSV FILE LOADING ---</span>
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% When prompted, enter your ExG CSV filename (e.g., &#39;my_recording_ExG.csv&#39;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Prompt user for CSV file name</span>
+</span></span><span style="display:flex;"><span>filename = input(<span style="color:#e6db74">&#39;Enter CSV filename: &#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% When prompted, enter your Meta CSV filename (e.g., &#39;my_recording_Meta.csv&#39;)</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Prompt user for metadata file name</span>
+</span></span><span style="display:flex;"><span>meta_filename = input(<span style="color:#e6db74">&#39;Enter metadata filename: &#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% When prompted, enter your Marker CSV filename (e.g., &#39;my_recording_Marker.csv&#39;)</span>
-</span></span></code></pre></div><p>The script will:</p>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Prompt user for marker file name</span>
+</span></span><span style="display:flex;"><span>marker_filename = input(<span style="color:#e6db74">&#39;Enter marker filename: &#39;</span>, <span style="color:#e6db74">&#39;s&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Load CSV</span>
+</span></span><span style="display:flex;"><span>csv_data = readmatrix(filename);
+</span></span><span style="display:flex;"><span>time = csv_data(:,<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>eeg  = csv_data(:,<span style="color:#ae81ff">2</span>:<span style="color:#66d9ef">end</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Load meta data and get sampling rate</span>
+</span></span><span style="display:flex;"><span>meta_data = readtable(meta_filename);
+</span></span><span style="display:flex;"><span>sampling_rate = meta_data.sr(<span style="color:#ae81ff">1</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Load marker file</span>
+</span></span><span style="display:flex;"><span>marker_table = readtable(marker_filename);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Convert marker timestamps to sample indices</span>
+</span></span><span style="display:flex;"><span>marker_samples = round((marker_table.TimeStamp <span style="color:#f92672">-</span> time(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">*</span> sampling_rate) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Build event structure</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">events</span> = struct(<span style="color:#e6db74">&#39;type&#39;</span>, {}, <span style="color:#e6db74">&#39;sample&#39;</span>, {}, <span style="color:#e6db74">&#39;value&#39;</span>, {}, <span style="color:#e6db74">&#39;duration&#39;</span>, {}, <span style="color:#e6db74">&#39;offset&#39;</span>, {});
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i = <span style="color:#ae81ff">1</span>:height(marker_table)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).type = <span style="color:#e6db74">&#39;trigger&#39;</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).sample = marker_samples(i);
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).value = marker_table.Code{i};
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).duration = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).offset = <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Build FieldTrip data structure</span>
+</span></span><span style="display:flex;"><span>data_csv = [];
+</span></span><span style="display:flex;"><span>data_csv.fsample = sampling_rate;
+</span></span><span style="display:flex;"><span>data_csv.time = {time<span style="color:#f92672">&#39;</span> <span style="color:#f92672">-</span> time(<span style="color:#ae81ff">1</span>)};
+</span></span><span style="display:flex;"><span>data_csv.trial = {eeg<span style="color:#f92672">&#39;</span>};
+</span></span><span style="display:flex;"><span>data_csv.label = arrayfun(@(x) sprintf(<span style="color:#e6db74">&#39;ch%d&#39;</span>, x), <span style="color:#ae81ff">1</span>:size(eeg,<span style="color:#ae81ff">2</span>), <span style="color:#e6db74">&#39;UniformOutput&#39;</span>, false);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Add events to FieldTrip data structure</span>
+</span></span><span style="display:flex;"><span>data_csv.cfg = [];
+</span></span><span style="display:flex;"><span>data_csv.cfg.event = <span style="color:#66d9ef">events</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fprintf(<span style="color:#e6db74">&#39;Sampling rate (fsample): %.2f Hz\n&#39;</span>, data_csv.fsample);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Visualize</span>
+</span></span><span style="display:flex;"><span>cfg = [];
+</span></span><span style="display:flex;"><span>cfg.viewmode = <span style="color:#e6db74">&#39;vertical&#39;</span>;
+</span></span><span style="display:flex;"><span>ft_databrowser(cfg, data_csv);
+</span></span></code></pre></div><ul>
+<li>Run the script</li>
+<li>When prompted, enter your ExG CSV filename (e.g., &lsquo;my_recording_ExG.csv&rsquo;)</li>
+<li>When prompted, enter your Meta CSV filename (e.g., &lsquo;my_recording_Meta.csv&rsquo;)</li>
+<li>When prompted, enter your Marker CSV filename (e.g., &lsquo;my_recording_Marker.csv&rsquo;)</li>
+</ul>
+<p>The script will:</p>
 <ol>
 <li>Load the CSV data</li>
 <li>Create a FieldTrip-compatible data structure</li>
