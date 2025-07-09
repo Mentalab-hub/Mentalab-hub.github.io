@@ -410,16 +410,15 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#step-1-recording-data-with-mentalab">Step 1: Recording Data with Mentalab</a></li>
-    <li><a href="#step-2-setting-up-fieldtrip">Step 2: Setting Up FieldTrip</a></li>
-    <li><a href="#step-3-prepare-your-data-files">Step 3: Prepare Your Data Files</a></li>
-    <li><a href="#step-4-loading-and-visualizing-data">Step 4: Loading and Visualizing Data</a>
+    <li><a href="#prerequisites">Prerequisites</a>
       <ul>
-        <li><a href="#using-the-provided-matlab-script">Using the Provided MATLAB Script</a></li>
+        <li><a href="#step-1-recording-data-with-mentalab">Step 1: Recording Data with Mentalab</a></li>
+        <li><a href="#step-2-setting-up-fieldtrip">Step 2: Setting Up FieldTrip</a></li>
+        <li><a href="#step-3-prepare-your-data-files">Step 3: Prepare Your Data Files</a></li>
+        <li><a href="#step-4-loading-and-visualizing-data">Step 4: Loading and Visualizing Data</a></li>
+        <li><a href="#references">References</a></li>
       </ul>
     </li>
-    <li><a href="#references">References</a></li>
   </ul>
 </nav>
 </div>
@@ -429,7 +428,6 @@
 
 <h1>Fieldtrip</h1>
 
-<h1 id="loading-mentalab-recordings-to-fieldtrip">Loading Mentalab Recordings to FieldTrip</h1>
 <p>This document provides a simple guide for loading Mentalab Explore device recordings into FieldTrip for ExG analysis and visualization.</p>
 <h2 id="prerequisites">Prerequisites</h2>
 <p>Before using this guide, you need:</p>
@@ -438,9 +436,9 @@
 <li>ExplorePy installed and configured</li>
 <li>MATLAB with FieldTrip toolbox installed</li>
 </ol>
-<h2 id="step-1-recording-data-with-mentalab">Step 1: Recording Data with Mentalab</h2>
+<h3 id="step-1-recording-data-with-mentalab">Step 1: Recording Data with Mentalab</h3>
 <p>Record your EEG data using ExplorePy CLI, Explore Desktop, or Explore Mobile.</p>
-<h2 id="step-2-setting-up-fieldtrip">Step 2: Setting Up FieldTrip</h2>
+<h3 id="step-2-setting-up-fieldtrip">Step 2: Setting Up FieldTrip</h3>
 <ol>
 <li>Download FieldTrip from <a href="https://www.fieldtriptoolbox.org/download/">fieldtriptoolbox.org</a></li>
 <li>Add FieldTrip to your MATLAB path:</li>
@@ -448,17 +446,16 @@
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% Add FieldTrip to your MATLAB path</span>
 </span></span><span style="display:flex;"><span>addpath(<span style="color:#e6db74">&#39;/path/to/fieldtrip&#39;</span>);  <span style="color:#75715e">% Replace with your FieldTrip path</span>
 </span></span><span style="display:flex;"><span>ft_defaults;  <span style="color:#75715e">% Initialize FieldTrip</span>
-</span></span></code></pre></div><h2 id="step-3-prepare-your-data-files">Step 3: Prepare Your Data Files</h2>
+</span></span></code></pre></div><h3 id="step-3-prepare-your-data-files">Step 3: Prepare Your Data Files</h3>
 <p>After recording, you should have these files in your working directory:</p>
 <ul>
 <li><code>my_recording_ExG.csv</code> - EEG data</li>
 <li><code>my_recording_Meta.csv</code> - Recording metadata</li>
-<li><code>my_recording_ORN.csv</code> - Orientation data</li>
 <li><code>my_recording_Marker.csv</code> - Event markers</li>
 </ul>
 <p>In order to load ExG data to FieldTrip we will use <code>*_ExG.csv</code> and <code>*_Meta.csv</code> files.</p>
-<h2 id="step-4-loading-and-visualizing-data">Step 4: Loading and Visualizing Data</h2>
-<h3 id="using-the-provided-matlab-script">Using the Provided MATLAB Script</h3>
+<h3 id="step-4-loading-and-visualizing-data">Step 4: Loading and Visualizing Data</h3>
+<h4 id="using-the-provided-matlab-script">Using the Provided MATLAB Script</h4>
 <p>Run the script:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% --- CSV FILE LOADING ---</span>
 </span></span><span style="display:flex;"><span>
@@ -484,14 +481,14 @@
 </span></span><span style="display:flex;"><span>marker_table = readtable(marker_filename);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">% Convert marker timestamps to sample indices</span>
-</span></span><span style="display:flex;"><span>marker_samples = round((marker_table.TimeStamp <span style="color:#f92672">-</span> time(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">*</span> sampling_rate) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>marker_samples = round((marker_table.Timestamp <span style="color:#f92672">-</span> time(<span style="color:#ae81ff">1</span>)) <span style="color:#f92672">*</span> sampling_rate) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">% Build event structure</span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">events</span> = struct(<span style="color:#e6db74">&#39;type&#39;</span>, {}, <span style="color:#e6db74">&#39;sample&#39;</span>, {}, <span style="color:#e6db74">&#39;value&#39;</span>, {}, <span style="color:#e6db74">&#39;duration&#39;</span>, {}, <span style="color:#e6db74">&#39;offset&#39;</span>, {});
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">for</span> i = <span style="color:#ae81ff">1</span>:height(marker_table)
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).type = <span style="color:#e6db74">&#39;trigger&#39;</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).sample = marker_samples(i);
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).value = marker_table.Code{i};
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).value = marker_table.Code(i);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).duration = <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">events</span>(i).offset = <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">end</span>
@@ -509,10 +506,32 @@
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>fprintf(<span style="color:#e6db74">&#39;Sampling rate (fsample): %.2f Hz\n&#39;</span>, data_csv.fsample);
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% Visualize</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% --- APPLY FILTERS ---</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 1. Bandpass filter (0.5-35 Hz)</span>
+</span></span><span style="display:flex;"><span>cfg_bp = [];
+</span></span><span style="display:flex;"><span>cfg_bp.bpfilter = <span style="color:#e6db74">&#39;yes&#39;</span>;
+</span></span><span style="display:flex;"><span>cfg_bp.bpfreq = [<span style="color:#ae81ff">0.5</span> <span style="color:#ae81ff">35</span>];
+</span></span><span style="display:flex;"><span>cfg_bp.bpfiltertype = <span style="color:#e6db74">&#39;but&#39;</span>;
+</span></span><span style="display:flex;"><span>cfg_bp.bpfiltord = <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>cfg_bp.bpfiltdir = <span style="color:#e6db74">&#39;twopass&#39;</span>;
+</span></span><span style="display:flex;"><span>data_filtered = ft_preprocessing(cfg_bp, data_csv);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% 2. Notch filter (50 Hz)</span>
+</span></span><span style="display:flex;"><span>cfg_notch = [];
+</span></span><span style="display:flex;"><span>cfg_notch.bsfilter = <span style="color:#e6db74">&#39;yes&#39;</span>;
+</span></span><span style="display:flex;"><span>cfg_notch.bsfreq = [<span style="color:#ae81ff">49</span> <span style="color:#ae81ff">51</span>];
+</span></span><span style="display:flex;"><span>cfg_notch.bsfiltertype = <span style="color:#e6db74">&#39;but&#39;</span>;
+</span></span><span style="display:flex;"><span>cfg_notch.bsfiltord = <span style="color:#ae81ff">4</span>;
+</span></span><span style="display:flex;"><span>cfg_notch.bsfiltdir = <span style="color:#e6db74">&#39;twopass&#39;</span>;
+</span></span><span style="display:flex;"><span>data_filtered = ft_preprocessing(cfg_notch, data_filtered);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>fprintf(<span style="color:#e6db74">&#39;Applied filters: 0.5-35 Hz bandpass and 50 Hz notch\n&#39;</span>);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% Visualize filtered data</span>
 </span></span><span style="display:flex;"><span>cfg = [];
 </span></span><span style="display:flex;"><span>cfg.viewmode = <span style="color:#e6db74">&#39;vertical&#39;</span>;
-</span></span><span style="display:flex;"><span>ft_databrowser(cfg, data_csv);
+</span></span><span style="display:flex;"><span>ft_databrowser(cfg, data_filtered);
 </span></span></code></pre></div><ul>
 <li>Run the script</li>
 <li>When prompted, enter your ExG CSV filename (e.g., &lsquo;my_recording_ExG.csv&rsquo;)</li>
@@ -523,12 +542,18 @@
 <ol>
 <li>Load the CSV data</li>
 <li>Create a FieldTrip-compatible data structure</li>
-<li>Display the data using <code>ft_databrowser</code></li>
+<li><strong>Apply preprocessing filters:</strong>
+<ul>
+<li><strong>Bandpass filter (0.5-35 Hz)</strong></li>
+<li><strong>Notch filter (50 Hz)</strong></li>
+</ul>
+</li>
+<li>Display the filtered data using <code>ft_databrowser</code></li>
 </ol>
 <figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
 <img class="mobile" src="/img/Integrations/Fieldtrip/fieldtrip_viz.png" alt="Fieldtrip vizualization example" width="100%"/>
 </figure>
-<h2 id="references">References</h2>
+<h3 id="references">References</h3>
 <ul>
 <li><a href="https://www.fieldtriptoolbox.org/">FieldTrip Documentation</a></li>
 <li><a href="https://explorepy.readthedocs.io/">ExplorePy Documentation</a></li>
