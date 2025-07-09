@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 02 Jul 2025 10:25:19 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PsychoPy</title>
@@ -119,6 +119,13 @@
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
       <description>&lt;h2 id=&#34;connect&#34;&gt;Connect&lt;/h2&gt;&#xA;&lt;p&gt;Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device.&lt;/p&gt;&#xA;&lt;p&gt;Ensure that your device is in advertising mode. You can verify with the &lt;a href=&#34;https://wiki.mentalab.com/user-guide/led-light-guide/&#34; title=&#34;User Guide/LED Light Guide&#34;&gt;LED Light Guide&lt;/a&gt;. Simply write the device ID in the dropdown input line and press connect. The device will connect within a few seconds.&lt;/p&gt;&#xA;&lt;p&gt;Once your device is connected, the status bar will change.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Fieldtrip</title>
+      <link>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</link>
+      <pubDate>Wed, 02 Jul 2025 10:25:19 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</guid>
+      <description>&lt;p&gt;This document provides a simple guide for loading Mentalab Explore device recordings into FieldTrip for ExG analysis and visualization.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before using this guide, you need:&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;A Mentalab Explore device&lt;/li&gt;&#xA;&lt;li&gt;ExplorePy installed and configured&lt;/li&gt;&#xA;&lt;li&gt;MATLAB with FieldTrip toolbox installed&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h3 id=&#34;step-1-recording-data-with-mentalab&#34;&gt;Step 1: Recording Data with Mentalab&lt;/h3&gt;&#xA;&lt;p&gt;Record your EEG data using ExplorePy CLI, Explore Desktop, or Explore Mobile.&lt;/p&gt;&#xA;&lt;h3 id=&#34;step-2-setting-up-fieldtrip&#34;&gt;Step 2: Setting Up FieldTrip&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Download FieldTrip from &lt;a href=&#34;https://www.fieldtriptoolbox.org/download/&#34;&gt;fieldtriptoolbox.org&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;Add FieldTrip to your MATLAB path:&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-matlab&#34; data-lang=&#34;matlab&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;% Add FieldTrip to your MATLAB path&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;addpath(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;/path/to/fieldtrip&amp;#39;&lt;/span&gt;);  &lt;span style=&#34;color:#75715e&#34;&gt;% Replace with your FieldTrip path&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ft_defaults;  &lt;span style=&#34;color:#75715e&#34;&gt;% Initialize FieldTrip&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;step-3-prepare-your-data-files&#34;&gt;Step 3: Prepare Your Data Files&lt;/h3&gt;&#xA;&lt;p&gt;After recording, you should have these files in your working directory:&lt;/p&gt;</description>
     </item>
     <item>
       <title>NeuroPype</title>
