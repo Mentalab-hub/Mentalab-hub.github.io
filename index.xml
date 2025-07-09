@@ -121,7 +121,7 @@
       <description>&lt;h2 id=&#34;connect&#34;&gt;Connect&lt;/h2&gt;&#xA;&lt;p&gt;Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device.&lt;/p&gt;&#xA;&lt;p&gt;Ensure that your device is in advertising mode. You can verify with the &lt;a href=&#34;https://wiki.mentalab.com/user-guide/led-light-guide/&#34; title=&#34;User Guide/LED Light Guide&#34;&gt;LED Light Guide&lt;/a&gt;. Simply write the device ID in the dropdown input line and press connect. The device will connect within a few seconds.&lt;/p&gt;&#xA;&lt;p&gt;Once your device is connected, the status bar will change.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Fieldtrip</title>
+      <title>FieldTrip</title>
       <link>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</link>
       <pubDate>Wed, 02 Jul 2025 10:25:19 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</guid>
@@ -308,13 +308,6 @@
       <pubDate>Tue, 03 Jun 2025 12:54:00 +0100</pubDate>
       <guid>https://wiki.mentalab.com/applications/eeg-to-lamp/</guid>
       <description>&lt;h2 id=&#34;introduction&#34;&gt;Introduction&lt;/h2&gt;&#xA;&lt;p&gt;An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (8Hz - 13Hz) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject&amp;rsquo;s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow. If the power in the alpha band decreases, the LEDs dim and turn turquoise.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://wiki.mentalab.com/integrations/analysis/3-fieldtrip/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/integrations/analysis/3-fieldtrip/</guid>
-      <description>&lt;!--&#xA;---&#xA;title: &#34;FieldTrip&#34;&#xA;date: 2022-06-02T10:25:19+00:00&#xA;weight: 3&#xA;description: Integrating Mentalab hardware with FieldTrip for offline and real-time processing&#xA;slug: FieldTrip&#xA;---&#xA;--&gt;&#xA;&lt;p&gt;Offline Analysis:&lt;/p&gt;&#xA;&lt;p&gt;Real-time processing:&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.fieldtriptoolbox.org/development/realtime/&#34;&gt;https://www.fieldtriptoolbox.org/development/realtime/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title></title>
