@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/applications/p300/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/interfaces/brainflow/">
 
     <title>
         
-        P300 Experiment | Wiki
+        BrainFlow | Wiki
         
     </title>
 
@@ -119,7 +119,7 @@
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Triggers</h6></a>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -160,7 +160,7 @@
                     EASI ECG
                 </a>
         </li>
-        <li data-nav-id="/applications/p300/" class="nav-item my-1 active">
+        <li data-nav-id="/applications/p300/" class="nav-item my-1">
                 
                  <a href="/applications/p300/" class="nav-link p-0">
                     P300 Experiment
@@ -204,7 +204,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -289,12 +289,12 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/integrations/interfaces/brainflow/" class="nav-item my-1">
+        <li data-nav-id="/integrations/interfaces/brainflow/" class="nav-item my-1 active">
                 
                  <a href="/integrations/interfaces/brainflow/" class="nav-link p-0">
                     BrainFlow
@@ -417,14 +417,9 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#preparation">Preparation</a>
-      <ul>
-        <li><a href="#software">Software</a></li>
-        <li><a href="#hardware">Hardware</a></li>
-      </ul>
-    </li>
-    <li><a href="#p300-experiment">P300 Experiment</a></li>
-    <li><a href="#results">Results</a></li>
+    <li><a href="#what-is-brainflow">What is BrainFlow?</a></li>
+    <li><a href="#brainflow-support-for-mentalab-devices">BrainFlow Support for Mentalab Devices</a></li>
+    <li><a href="#helpful-links">Helpful Links</a></li>
   </ul>
 </nav>
 </div>
@@ -432,55 +427,35 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>P300 Experiment</h1>
+<h1>BrainFlow</h1>
 
-<p>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.</p>
-<p>Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available <a href="https://github.com/Mentalab-hub/explorepy/tree/master/examples/p300_demo">here</a>. You can run it as is or use it to build your own P300 based applications.</p>
-<div class="video-container">
-<iframe src="https://www.youtube-nocookie.com/embed/ncVuE96Chck" title="SSVEP Experiment" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-<br>
-In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval. The red oval is the so-called "oddball". The participant must press `space` whenever the red stimulus appears.
-<br><br>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Applications/p300-stimuli.jpg" alt="P300 visual stimuli" width="90%"/>
-<figcaption> A blue rectangle is the standard stimulus. The red oval is the "oddball". When presented with the oddball, participants must press <code>space</code>.</figcaption>
-</figure>
-<h2 id="preparation">Preparation</h2>
-<h3 id="software">Software</h3>
-<ol>
-<li>Install <code><a href="https://explorepy.readthedocs.io/">explorepy</a></code>. Choose Option 2 (Python) if you are installing <code>explorepy</code> on a Windows system.</li>
-<li>Download the <a href="https://github.com/Mentalab-hub/explorepy"><code>explorepy</code> code</a> directly from GitHub. To do this, click on the green <code>Code</code> button, and &ldquo;Download ZIP&rdquo;. Remember where you extract the files, you will need this location later.</li>
-<li>Activate your Anaconda virtual environment: <code>conda activate myenv</code></li>
-<li>Install the required packages: <code>pip install scikit-learn matplotlib psychopy mne</code></li>
-<li>In the Conda terminal, navigate to the <code>p300_demo</code> folder in the <code>examples</code> directory of <code>explorepy</code>.</li>
-</ol>
-<h3 id="hardware">Hardware</h3>
-<ol start="6">
-<li>Setup the cap and electrodes. Place EEG electrodes in the desired locations (e.g. Cz, Pz, CP1, CP2, P3, P4, Oz, etc.) and the ground electrode on mastoid (or any other location far enough from other electrodes).</li>
-</ol>
-<h2 id="p300-experiment">P300 Experiment</h2>
-<ol start="7">
-<li>
-<p>Turn on the device, ensure it is advertising, and then run the following command in your terminal (replace #### with your device ID, e.g. Explore_1438):</p>
-<pre tabindex="0"><code>python experiment.py -n Explore_#### -f rec_file_name
-</code></pre><p>The experiment has 10 blocks and there are 5 trials in each block (50 trials in total). You can change this in the <code>experiment.py</code> script. Just look out variables: <code>n_blocks</code> and <code>n_trials_per_block variables</code>.</p>
-<p>The experiment produces three csv files in the working directory; one for ExG data, one for motion data, and one for markers.</p>
-</li>
-</ol>
-<h2 id="results">Results</h2>
-<ol start="8">
-<li>
-<p>To analyse the recorded data and generate plots, run the command in your terminal:</p>
-<pre tabindex="0"><code>python analysis_csv.py -f rec_file_name
-</code></pre><p>This analysis will generate P300 waveform plots that look similar to those shown below.</p>
-</li>
-</ol>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Applications/p300-waveforms.jpg" alt="P300 wave forms" width="90%"/>
-<figcaption> Waveforms produced from the P300 oddball experiment using the Mentalab Explore device and <code>explorepy</code>.</figcaption>
-</figure>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h1 id="brainflow-integration">BrainFlow Integration</h1>
+<p><a href="https://brainflow.readthedocs.io/en/stable/">BrainFlow</a> is an open-source library that provides a unified interface for biosignal acquisition across a variety of hardware platforms. It simplifies the process of working with physiological signals such as EEG, EMG, and ECG by offering a consistent API in multiple programming languages including Python, C++, Java, and MATLAB.</p>
+<h2 id="what-is-brainflow">What is BrainFlow?</h2>
+<p>BrainFlow enables:</p>
+<ul>
+<li>Seamless data access across supported biosignal devices</li>
+<li>Real-time signal processing tools (e.g., filtering, feature extraction)</li>
+<li>Integration into research workflows and custom applications</li>
+<li>Cross-platform development using high-level APIs</li>
+</ul>
+<p>For a deeper overview, visit the <a href="https://brainflow.readthedocs.io/en/stable/">official BrainFlow documentation</a>.</p>
+<h2 id="brainflow-support-for-mentalab-devices">BrainFlow Support for Mentalab Devices</h2>
+<p>We maintain a <strong>dedicated fork of BrainFlow</strong> that includes support for Mentalab Explore devices. This version ensures reliable integration and tailored compatibility with our hardware.</p>
+<p>If you&rsquo;re interested in using BrainFlow with your Mentalab device, please reach out to us directly. We’ll provide:</p>
+<ul>
+<li>Access to the latest Mentalab-compatible BrainFlow version</li>
+<li>Setup instructions for your operating system and programming language</li>
+<li>Ongoing support for integration and development</li>
+</ul>
+<blockquote>
+<p>ℹ️ This integration is currently not available in the public BrainFlow repository but is maintained and provided by the Mentalab team upon request.</p>
+</blockquote>
+<h2 id="helpful-links">Helpful Links</h2>
+<ul>
+<li><a href="https://brainflow.readthedocs.io/en/stable/Examples.html#c-read-data-from-a-board">BrainFlow C# example</a></li>
+<li><a href="https://www.mentalab.com/contact">Contact Mentalab</a></li>
+</ul>
 
 
     
