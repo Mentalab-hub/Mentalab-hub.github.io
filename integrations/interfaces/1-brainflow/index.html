@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="alternate" type="application/rss+xml" href="https://wiki.mentalab.com/integrations/stimulation/index.xml" title="Wiki" />
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/stimulation/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/interfaces/1-brainflow/">
 
     <title>
         
-        Stimulation | Wiki
+         | Wiki
         
     </title>
 
@@ -216,7 +215,7 @@
                     Supported Software
                 </a>
         </li>
-    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 active haschildren
+    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/stimulation/"><h6>Stimulation</h6></a>
@@ -290,12 +289,12 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/integrations/interfaces/1-brainflow/" class="nav-item my-1">
+        <li data-nav-id="/integrations/interfaces/1-brainflow/" class="nav-item my-1 active">
                 
                  <a href="/integrations/interfaces/1-brainflow/" class="nav-link p-0">
                     
@@ -418,11 +417,9 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#compatible-software">Compatible Software</a></li>
-      </ul>
-    </li>
+    <li><a href="#what-is-brainflow">What is BrainFlow?</a></li>
+    <li><a href="#brainflow-support-for-mentalab-devices">BrainFlow Support for Mentalab Devices</a></li>
+    <li><a href="#helpful-links">Helpful Links</a></li>
   </ul>
 </nav>
 </div>
@@ -430,18 +427,36 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Stimulation</h1>
+<h1></h1>
 
-<p>Mentalab Hardware can communicate with all common Stimulus Presentation suites.</p>
-<p>As of 2025, the preferred method for event marker synchronisation and neurofeedback scenarios is to work with <a href="https://mentalab.com/mentalab-hypersync-high-precision-wireless-synchronisation-for-exg/">Hypersync</a> in combination with <a href="https://labstreaminglayer.readthedocs.io/">Lab Streaming Layer</a>. This requires minimal setup on the side of the stimulus presentation software and allows for sub-millisecond timing accuracy in an entirely wireless setup.</p>
-<p>There are also options for sending <a href="https://wiki.mentalab.com/event-triggers/">wired triggers</a> (8-bit &amp; 1-bit TTL) directly to the Explore amplifier.</p>
-<h3 id="compatible-software">Compatible Software</h3>
-<p>This section lists software that was tested for compatibility.</p>
-<p><a href="https://wiki.mentalab.com/integrations/stimulation/psychopy/" title="Integrations/stimulus-presentation/PsychoPy">PsychoPy</a><br></p>
-<!-- [OpenSesame](https://wiki.mentalab.com/integrations/stimulation/2-opensesame/ "Integrations/stimulus-presentation/OpenSesame")<br>
-[E-Prime®](https://wiki.mentalab.com/integrations/stimulation/3-e-prime/ "Integrations/stimulus-presentation/E-Prime")<br>
-[Presentation®](https://wiki.mentalab.com/integrations/stimulation/4-presentation/ "Integrations/stimulus-presentation/Presentation")<br>
--->
+<h1 id="brainflow-integration">BrainFlow Integration</h1>
+<p><a href="https://brainflow.readthedocs.io/en/stable/">BrainFlow</a> is an open-source library that provides a unified interface for biosignal acquisition across a variety of hardware platforms. It simplifies the process of working with physiological signals such as EEG, EMG, and ECG by offering a consistent API in multiple programming languages including Python, C++, Java, and MATLAB.</p>
+<h2 id="what-is-brainflow">What is BrainFlow?</h2>
+<p>BrainFlow enables:</p>
+<ul>
+<li>Seamless data access across supported biosignal devices</li>
+<li>Real-time signal processing tools (e.g., filtering, feature extraction)</li>
+<li>Integration into research workflows and custom applications</li>
+<li>Cross-platform development using high-level APIs</li>
+</ul>
+<p>For a deeper overview, visit the <a href="https://brainflow.readthedocs.io/en/stable/">official BrainFlow documentation</a>.</p>
+<h2 id="brainflow-support-for-mentalab-devices">BrainFlow Support for Mentalab Devices</h2>
+<p>We maintain a <strong>dedicated fork of BrainFlow</strong> that includes support for Mentalab Explore devices. This version ensures reliable integration and tailored compatibility with our hardware.</p>
+<p>If you&rsquo;re interested in using BrainFlow with your Mentalab device, please reach out to us directly. We’ll provide:</p>
+<ul>
+<li>Access to the latest Mentalab-compatible BrainFlow version</li>
+<li>Setup instructions for your operating system and programming language</li>
+<li>Ongoing support for integration and development</li>
+</ul>
+<blockquote>
+<p>ℹ️ This integration is currently not available in the public BrainFlow repository but is maintained and provided by the Mentalab team upon request.</p>
+</blockquote>
+<h2 id="helpful-links">Helpful Links</h2>
+<ul>
+<li><a href="https://brainflow.readthedocs.io/en/stable/Examples.html#c-read-data-from-a-board">BrainFlow C# example</a></li>
+<li><a href="https://www.mentalab.com/contact">Contact Mentalab</a></li>
+</ul>
+
 
     
 
