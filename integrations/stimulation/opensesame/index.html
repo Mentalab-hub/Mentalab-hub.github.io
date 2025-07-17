@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="http://localhost:1313/integrations/stimulation/opensesame/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/stimulation/opensesame/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
 
     
 
@@ -263,6 +263,12 @@
                     MNE Python
                 </a>
         </li>
+        <li data-nav-id="/integrations/analysis/fieldtrip/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/fieldtrip/" class="nav-link p-0">
+                    FieldTrip
+                </a>
+        </li>
         <li data-nav-id="/integrations/analysis/neuropype/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/neuropype/" class="nav-link p-0">
@@ -275,16 +281,23 @@
                     BESA Research
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/3-fieldtrip/" class="nav-item my-1">
-                
-                 <a href="/integrations/analysis/3-fieldtrip/" class="nav-link p-0">
-                    
-                </a>
-        </li>
         <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
                     
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/interfaces/brainflow/" class="nav-item my-1">
+                
+                 <a href="/integrations/interfaces/brainflow/" class="nav-link p-0">
+                    BrainFlow
                 </a>
         </li>
         </ul>
@@ -408,13 +421,29 @@
       <ul>
         <li><a href="#hardware">Hardware</a></li>
         <li><a href="#software">Software</a></li>
-      </ul>
-    </li>
-    <li><a href="#recommended-method-synchronization-via-pylsl-and-mentalab-hypersync">Recommended Method: Synchronization via PyLSL and Mentalab Hypersync</a>
-      <ul>
         <li><a href="#how-it-works">How it Works</a></li>
       </ul>
     </li>
+    <li><a href="#opensesame-experiment-structure">OpenSesame Experiment Structure</a></li>
+    <li><a href="#step-by-step-setup">Step-by-Step Setup</a>
+      <ul>
+        <li><a href="#1-create-the-experiment-structure">1. Create the Experiment Structure</a></li>
+        <li><a href="#2-configure-the-lsl-initialization-script">2. Configure the LSL Initialization Script</a></li>
+        <li><a href="#3-configure-the-loop">3. Configure the Loop</a></li>
+        <li><a href="#4-configure-the-stimulus-presentation">4. Configure the Stimulus Presentation</a></li>
+        <li><a href="#5-configure-response-collection">5. Configure Response Collection</a></li>
+        <li><a href="#6-configure-marker-transmission-script">6. Configure Marker Transmission Script</a></li>
+      </ul>
+    </li>
+    <li><a href="#running-the-experiment">Running the Experiment</a>
+      <ul>
+        <li><a href="#step-1-start-lsl-monitoring">Step 1: Start LSL Monitoring</a></li>
+        <li><a href="#step-2-start-streaming-with-hypersync-suit">Step 2: Start streaming with hypersync suit</a></li>
+        <li><a href="#step-3-run-the-experiment-in-opensesame">Step 3: Run the Experiment in OpenSesame</a></li>
+        <li><a href="#step-4-check-the-received-values-in-lsl-monitoring">Step 4: Check the received values in LSL monitoring</a></li>
+      </ul>
+    </li>
+    <li><a href="#optional-python-script-for-listening-to-lsl-stream">Optional: Python Script for Listening to LSL Stream</a></li>
     <li><a href="#alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</a></li>
   </ul>
 </nav>
@@ -428,61 +457,150 @@
 <p>This guide details how to synchronize your Mentalab Explore device with OpenSesame experiments, focusing on high-precision synchronization of event markers using LabStreamingLayer (LSL) in combination with Mentalab Hypersync. This is the recommended approach for robust and accurate data alignment.</p>
 <p>Legacy wired trigger methods are listed at the bottom.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before starting, ensure you have the following hardware and software:</p>
 <h3 id="hardware">Hardware</h3>
-<p>Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system.
-Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from OpenSesame with the Explore device&rsquo;s data stream.
-Computer: To run OpenSesame, LSL, and data recording software.</p>
+<ul>
+<li><strong>Mentalab Explore Pro Device</strong>: An Explore Pro biosignal acquisition system.</li>
+<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from OpenSesame with the Explore device&rsquo;s data stream.</li>
+<li><strong>Computer</strong>: To run OpenSesame, LSL, and data recording script.</li>
+</ul>
 <h3 id="software">Software</h3>
-<p>OpenSesame: A recent version of OpenSesame.
-Python: OpenSesame&rsquo;s scripting language.
-PyLSL (pylsl): The Python library for LabStreamingLayer. Install via pip:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>pip install pylsl
-</span></span></code></pre></div><h2 id="recommended-method-synchronization-via-pylsl-and-mentalab-hypersync">Recommended Method: Synchronization via PyLSL and Mentalab Hypersync</h2>
-<p>This method uses LSL to transmit event markers from your OpenSesame experiment. This guide contains instructions for sending LSL markers from your OpenSesame experiment. For all following steps, please refer to the Hypersync instructions delivered to you with your Hypersync hardware.</p>
+<ul>
+<li>OpenSesame (recent version)</li>
+<li>Python with PyLSL: <code>pip install pylsl</code></li>
+</ul>
 <h3 id="how-it-works">How it Works</h3>
-<p><strong>OpenSesame Experiment</strong>: Your OpenSesame script generates experimental events (e.g., stimulus onset, response).<br>
-<strong>PyLSL Markers</strong>: At each event, Python sends an event marker via an LSL stream.<br>
-<strong>Mentalab Hypersync</strong>: The Mentalab Hypersync suite is used to merge ExG data with the event markers via LSL. Please follow the instructions delivered to you with your Hypersync hardware.</p>
-<p><strong>Python Code Snippets for LSL</strong>
-You will typically use two inline_script items: one at the beginning of your experiment for setup, and others throughout your experiment to send markers.</p>
-<p><strong>1. Setup inline_script (at the beginning of the experiment)</strong></p>
-<p>Place an inline_script item (e.g., named lsl_setup) at the very beginning of your experiment sequence.</p>
-<p>In the Prepare phase of this inline_script, add the following Python code to import necessary pylsl classes and define your stream information:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Import necessary pylsl classes</span>
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInfo, StreamOutlet
+<ol>
+<li><strong>OpenSesame Experiment</strong>: Generates event markers during stimulus presentation and response collection</li>
+<li><strong>LSL Monitoring</strong>: LabStreamingLayer provides real-time streaming of these markers with precise timestamps</li>
+<li><strong>Mentalab Hypersync</strong>: Merges ExG data with event markers via LSL for wireless, high-precision synchronization</li>
+</ol>
+<h2 id="opensesame-experiment-structure">OpenSesame Experiment Structure</h2>
+<p>Based on the tree view shown, your experiment should follow this structure:</p>
+<pre tabindex="0"><code>New experiment
+├── experiment
+    ├── init_lsl_script (Python script for LSL setup)
+    └── loop
+        └── sequence
+            ├── sketchpad (stimulus presentation)
+            ├── keyboard_response (response collection)
+            └── push_to_lsl_script (marker transmission)
+</code></pre><h2 id="step-by-step-setup">Step-by-Step Setup</h2>
+<h3 id="1-create-the-experiment-structure">1. Create the Experiment Structure</h3>
+<ol>
+<li><strong>New experiment</strong>: Start with a new OpenSesame experiment</li>
+<li><strong>experiment</strong>: This is your main experiment block (currently selected in the tree)</li>
+<li><strong>init_lsl_script</strong>: Add an inline_script item for LSL stream initialization</li>
+<li><strong>loop</strong>: Add a loop item for trial repetition - Set its repeat value to some value higher than 1 (e.g. 10).</li>
+<li><strong>sequence</strong>: Inside the loop, add a sequence item</li>
+<li><strong>sketchpad</strong>: Add a sketchpad for stimulus presentation</li>
+<li><strong>keyboard_response</strong>: Add a keyboard_response item for collecting keystrokes to initiate markers</li>
+<li><strong>push_to_lsl_script</strong>: Add another inline_script for sending markers to the LSL stream</li>
+</ol>
+<h3 id="2-configure-the-lsl-initialization-script">2. Configure the LSL Initialization Script</h3>
+<p><strong>Item Name</strong>: <code>init_lsl_script</code><br>
+<strong>Item Type</strong>: inline_script<br>
+<strong>Phase</strong>: Prepare</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInfo, StreamOutlet
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define the stream information for markers</span>
-</span></span><span style="display:flex;"><span>marker_stream_info <span style="color:#f92672">=</span> StreamInfo(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;OpenSesameExperimentMarkers&#39;</span>, <span style="color:#75715e"># A recognizable name (e.g., &#39;OpenSesameExperimentMarkers&#39;)</span>
-</span></span><span style="display:flex;"><span>                                type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Markers&#39;</span>,                     <span style="color:#75715e"># Conventionally &#39;Markers&#39;</span>
-</span></span><span style="display:flex;"><span>                                channel_count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,                    <span style="color:#75715e"># 1 for single integer markers</span>
-</span></span><span style="display:flex;"><span>                                nominal_srate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>,                  <span style="color:#75715e"># 0.0 for irregular events</span>
-</span></span><span style="display:flex;"><span>                                channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int32&#39;</span>,             <span style="color:#75715e"># &#39;int32&#39; for integer markers</span>
-</span></span><span style="display:flex;"><span>                                source_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;YourExperimentUniqueID&#39;</span>) <span style="color:#75715e"># A unique ID for this stream source</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create stream information</span>
+</span></span><span style="display:flex;"><span>info <span style="color:#f92672">=</span> StreamInfo(<span style="color:#e6db74">&#39;opensesame_markers&#39;</span>, <span style="color:#e6db74">&#39;Markers&#39;</span>, <span style="color:#ae81ff">1</span>, <span style="color:#ae81ff">0</span>, <span style="color:#e6db74">&#39;string&#39;</span>, <span style="color:#e6db74">&#39;os_marker_id&#39;</span>)
+</span></span><span style="display:flex;"><span>outlet <span style="color:#f92672">=</span> StreamOutlet(info)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Create the LSL outlet and store it in the experiment object for later access</span>
-</span></span><span style="display:flex;"><span>exp<span style="color:#f92672">.</span>marker_outlet <span style="color:#f92672">=</span> StreamOutlet(marker_stream_info)
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;LSL Marker Outlet created. Stream Name: OpenSesameExperimentMarkers&#34;</span>)
-</span></span></code></pre></div><p><strong>2. Sending Markers inline_script (during trials/events)</strong></p>
-<p>Place an inline_script item at the exact point in your trial sequence where you want to send a marker (e.g., immediately before a stimulus presentation or after a response).</p>
-<p>In the Run phase of this inline_script, add the following Python code:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Access the LSL outlet stored in the experiment object</span>
-</span></span><span style="display:flex;"><span>marker_outlet <span style="color:#f92672">=</span> exp<span style="color:#f92672">.</span>marker_outlet
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Store outlet globally for access in other scripts</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">global</span> lsl_outlet
+</span></span><span style="display:flex;"><span>lsl_outlet <span style="color:#f92672">=</span> outlet
+</span></span></code></pre></div><h3 id="3-configure-the-loop">3. Configure the Loop</h3>
+<p><strong>Item Name</strong>: <code>loop</code><br>
+<strong>Item Type</strong>: loop</p>
+<ul>
+<li>This controls how many times your sequence runs</li>
+<li>Set the number of trials e.g. 10</li>
+<li>Configure any experimental variables for your use</li>
+</ul>
+<h3 id="4-configure-the-stimulus-presentation">4. Configure the Stimulus Presentation</h3>
+<p><strong>Item Name</strong>: <code>sketchpad</code><br>
+<strong>Item Type</strong>: sketchpad</p>
+<ul>
+<li>Design your stimulus (text, images, etc.)</li>
+<li>Set the duration to 0</li>
+<li>This is where your experimental stimuli will be presented</li>
+</ul>
+<h3 id="5-configure-response-collection">5. Configure Response Collection</h3>
+<p><strong>Item Name</strong>: <code>keyboard_response</code><br>
+<strong>Item Type</strong>: keyboard_response</p>
+<ul>
+<li>Configure it as you wish</li>
+</ul>
+<h3 id="6-configure-marker-transmission-script">6. Configure Marker Transmission Script</h3>
+<p><strong>Item Name</strong>: <code>push_to_lsl_script</code><br>
+<strong>Item Type</strong>: inline_script<br>
+<strong>Phase</strong>: Run</p>
+<p>This script pushes keystrokes to the LSL stream.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">global</span> lsl_outlet
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Define your marker value</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># This can be a fixed integer, an OpenSesame variable, or a combination</span>
-</span></span><span style="display:flex;"><span>label_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span> <span style="color:#75715e"># Example: 11 for a target stimulus</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># or, if you have an OpenSesame variable named &#39;stim_type&#39;:</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># label_value = var.stim_type</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Check if response was collected</span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">if</span> hasattr(var, <span style="color:#e6db74">&#39;response&#39;</span>):
+</span></span><span style="display:flex;"><span>    lsl_outlet<span style="color:#f92672">.</span>push_sample([str(var<span style="color:#f92672">.</span>response)])
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Sent marker: </span><span style="color:#e6db74">{</span>var<span style="color:#f92672">.</span>response<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;Invalid action.&#34;</span>)
+</span></span></code></pre></div><h2 id="running-the-experiment">Running the Experiment</h2>
+<h3 id="step-1-start-lsl-monitoring">Step 1: Start LSL Monitoring</h3>
+<ul>
+<li>Run your LSL listener script</li>
+<li>Ensure it&rsquo;s waiting for the stream</li>
+</ul>
+<h3 id="step-2-start-streaming-with-hypersync-suit">Step 2: Start streaming with hypersync suit</h3>
+<ul>
+<li>For synchronising your Mentalab Explore hardware with the stimulus presentation computer, please refer to the Hypersync instructions delivered to you with your Hypersync hardware.</li>
+</ul>
+<h3 id="step-3-run-the-experiment-in-opensesame">Step 3: Run the Experiment in OpenSesame</h3>
+<ul>
+<li>Open your OpenSesame experiment</li>
+<li>Run the experiment</li>
+</ul>
+<h3 id="step-4-check-the-received-values-in-lsl-monitoring">Step 4: Check the received values in LSL monitoring</h3>
+<ul>
+<li>Use <a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> and select both the OpenSesame marker stream and your ExG data stream.</li>
+<li>Optional: Use our LSL listener python script (see below) to check the received values in real-time.</li>
+</ul>
+<h2 id="optional-python-script-for-listening-to-lsl-stream">Optional: Python Script for Listening to LSL Stream</h2>
+<p>Create a separate Python script to monitor the LSL stream:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInlet, resolve_streams
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># Push the marker to the LSL stream</span>
-</span></span><span style="display:flex;"><span>marker_outlet<span style="color:#f92672">.</span>push_sample([label_value]) <span style="color:#75715e"># Send LSL marker for stimulus onset (argument must be a list or tuple)</span>
-</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;LSL Marker Sent: </span><span style="color:#e6db74">{</span>label_value<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
-</span></span></code></pre></div><p>It&rsquo;s critical to send the marker as close as possible to the event&rsquo;s actual occurrence (e.g., immediately after the sketchpad or sampler item that presents the stimulus).</p>
-<p>These steps will create an LSL Marker stream that can be recorded using LabRecorder.<br>
-<strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
-<h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our Event Triggers page for further information.</p>
+</span></span><span style="display:flex;"><span>stream_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;opensesame_markers&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Waiting for LSL stream &#39;</span><span style="color:#e6db74">{</span>stream_name<span style="color:#e6db74">}</span><span style="color:#e6db74">&#39;...&#34;</span>)
+</span></span><span style="display:flex;"><span>streams <span style="color:#f92672">=</span> []
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">while</span> <span style="color:#f92672">not</span> streams:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>        all_streams <span style="color:#f92672">=</span> resolve_streams()
+</span></span><span style="display:flex;"><span>        streams <span style="color:#f92672">=</span> [stream <span style="color:#66d9ef">for</span> stream <span style="color:#f92672">in</span> all_streams <span style="color:#66d9ef">if</span> stream<span style="color:#f92672">.</span>name() <span style="color:#f92672">==</span> stream_name]
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> streams:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;No streams found, retrying...&#34;</span>)
+</span></span><span style="display:flex;"><span>        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>        print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error resolving stream: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        time<span style="color:#f92672">.</span>sleep(<span style="color:#ae81ff">0.1</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Stream found. Connecting...&#34;</span>)
+</span></span><span style="display:flex;"><span>inlet <span style="color:#f92672">=</span> StreamInlet(streams[<span style="color:#ae81ff">0</span>])
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">&#34;Listening for markers:&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>:
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        sample, timestamp <span style="color:#f92672">=</span> inlet<span style="color:#f92672">.</span>pull_sample(timeout<span style="color:#f92672">=</span><span style="color:#ae81ff">5.0</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> sample:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[</span><span style="color:#e6db74">{</span>timestamp<span style="color:#e6db74">:</span><span style="color:#e6db74">.3f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">] Marker received: </span><span style="color:#e6db74">{</span>sample[<span style="color:#ae81ff">0</span>]<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>            print(<span style="color:#e6db74">&#34;Timeout — no marker received.&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">KeyboardInterrupt</span>:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\n</span><span style="color:#e6db74">Stopping listener...&#34;</span>)
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error receiving data: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span></code></pre></div><h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
+<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="http://localhost:1313/event-triggers/">Event Triggers</a> page for further information.</p>
 
 
     
@@ -494,10 +612,10 @@ You will typically use two inline_script items: one at the beginning of your exp
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="http://localhost:1313/lib/jquery.min.js"></script> 
-<script src="http://localhost:1313/lib/popper.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 
-<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -505,7 +623,7 @@ You will typically use two inline_script items: one at the beginning of your exp
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "http:\/\/localhost:1313\/";
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
