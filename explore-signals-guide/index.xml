@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Explore Signals Guide on Wiki</title>
-    <link>http://localhost:1313/explore-signals-guide/</link>
+    <link>https://wiki.mentalab.com/explore-signals-guide/</link>
     <description>Recent content in Explore Signals Guide on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 May 2025 10:10:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/explore-signals-guide/explore-signals-installation/</link>
+      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</link>
       <pubDate>Tue, 13 May 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-signals-guide/explore-signals-installation/</guid>
+      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</guid>
       <description>Installation Explore Signals is available for Windows, macOS, and Linux. No setup is required — download and run the appropriate file for your operating system.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-signals-guide/explore-signals-usage/</link>
+      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</link>
       <pubDate>Tue, 13 May 2025 10:10:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-signals-guide/explore-signals-usage/</guid>
+      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</guid>
       <description>Loading EEG/ExG Data Launch the application. Go to the File menu and select one or more EEG files (.csv, .bdf) to load. The selected files will appear under Loaded Files in the left panel. Explore Signals file loading.&#xD;Applying Filters Navigate to the Filters menu to apply:&#xA;High-pass / Low-pass filters Notch filter (e.g., to remove 50/60 Hz line noise) Re-referencing options DC offset correction Explore Signals filter options.&#xD;Channel Selection In the Channels section, select or deselect specific channels.</description>
     </item>
   </channel>

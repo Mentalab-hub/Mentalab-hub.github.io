@@ -2,108 +2,108 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Applications on Wiki</title>
-    <link>http://localhost:1313/applications/</link>
+    <link>https://wiki.mentalab.com/applications/</link>
     <description>Recent content in Applications on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 12 Jun 2025 10:00:00 +0100</lastBuildDate>
-    <atom:link href="http://localhost:1313/applications/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/applications/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Motor Imagery BCI</title>
-      <link>http://localhost:1313/applications/motor-imagery-bci/</link>
+      <link>https://wiki.mentalab.com/applications/motor-imagery-bci/</link>
       <pubDate>Mon, 24 Mar 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/motor-imagery-bci/</guid>
+      <guid>https://wiki.mentalab.com/applications/motor-imagery-bci/</guid>
       <description>Overview This application is a Brain-Computer Interface (BCI) system designed to classify motor imagery tasks (left hand, right hand, and neutral state) using EEG data. The system connects to Explore Pro device via the Lab Streaming Layer (LSL) protocol, processes the EEG signals, and classifies the data using machine learning models, including a Transformer-based neural network.&#xA;The application supports real-time classification. It includes tools for data collection, preprocessing, model training, and evaluation.</description>
     </item>
     <item>
       <title>Artefact removal</title>
-      <link>http://localhost:1313/applications/artefact-removal/</link>
+      <link>https://wiki.mentalab.com/applications/artefact-removal/</link>
       <pubDate>Tue, 25 Mar 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/artefact-removal/</guid>
+      <guid>https://wiki.mentalab.com/applications/artefact-removal/</guid>
       <description>This is an implementation of the HAPPILEE pipeline for the Explore system from Mentalab. See our github page for the code for this project.&#xA;The HAPPILEE pipeline is applied to EEG data recorded by the Mentalab Explore Pro device in happilee.py and happilee.ipynb. happilee.py is the main script to apply HAPPILEE to an EXG dataset recorded by the Explore system. happilee.ipynb is a notebook to demonstrate and track steps of the HAPPILEE pipeline to a dataset recorded by the Explore system.</description>
     </item>
     <item>
       <title>Sleep Actigraphy</title>
-      <link>http://localhost:1313/applications/sleep-actigraphy/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-actigraphy/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/sleep-actigraphy/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-actigraphy/</guid>
       <description>Sleep Activity Pipeline (with PyActigraphy, Accelerometer and YASA) Here&amp;rsquo;s a more polished version of your text, with fewer bullet points and a smoother flow:&#xA;Sleep Activity Analysis with PyActigraphy, Accelerometer, and YASA This guide demonstrates a comprehensive pipeline for analyzing sleep stages and activity patterns using EEG and accelerometer data acquired from a Mentalab Explore device. For those specifically interested in sleep staging, our Sleep EEG Analysis application example offers further insights.</description>
     </item>
     <item>
       <title>Photodiode Event Triggers</title>
-      <link>http://localhost:1313/applications/photodiode-event-trigger/</link>
+      <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/photodiode-event-trigger/</guid>
+      <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.&#xA;Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.&#xA;Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
     </item>
     <item>
       <title>EOG Artifact Removal</title>
-      <link>http://localhost:1313/applications/power-bands/</link>
+      <link>https://wiki.mentalab.com/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/power-bands/</guid>
+      <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.&#xA;Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.&#xA;Set-up Install Explorepy using Explorepy installation guide. Install Explore Desktop from Explore Desktop Github page. Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.</description>
     </item>
     <item>
       <title>SSVEP Experiments</title>
-      <link>http://localhost:1313/applications/ssvep/</link>
+      <link>https://wiki.mentalab.com/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/ssvep/</guid>
+      <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
       <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.&#xA;SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.&#xA;Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
     <item>
       <title>EASI ECG</title>
-      <link>http://localhost:1313/applications/easi-ecg/</link>
+      <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/easi-ecg/</guid>
+      <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
       <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).&#xA;Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.&#xA;Summary of 12-lead ECG drawbacks:</description>
     </item>
     <item>
       <title>P300 Experiment</title>
-      <link>http://localhost:1313/applications/p300/</link>
+      <link>https://wiki.mentalab.com/applications/p300/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/p300/</guid>
+      <guid>https://wiki.mentalab.com/applications/p300/</guid>
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.&#xA;Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.&#xA;In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     <item>
       <title>Sleep Recording Protocol</title>
-      <link>http://localhost:1313/applications/sleep-recording-protocol/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/sleep-recording-protocol/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
       <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
     <item>
       <title>Sleep EEG Analysis</title>
-      <link>http://localhost:1313/applications/sleep-analysis/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-analysis/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/sleep-analysis/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
       <description>Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&#xA;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source yasa toolbox. We will perform automatic sleep staging by applying the yasa classifier [1] to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles.</description>
     </item>
     <item>
       <title>ECG Analysis</title>
-      <link>http://localhost:1313/applications/ecg-analysis/</link>
+      <link>https://wiki.mentalab.com/applications/ecg-analysis/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/ecg-analysis/</guid>
+      <guid>https://wiki.mentalab.com/applications/ecg-analysis/</guid>
       <description>Mentalab Explore is designed to record all kinds of ExG data. In this guide, we demonstrate how to use the Neurokit2 toolbox to analyse electrocardiography (ECG) data [1]. See the list of neurokit examples on which this tutorial is based for further resources.&#xA;Data acquisition We used two medical adhesive single-use electrodes to record the ECG. One electrode was placed on the left mastoid bone, whereas the second electrode was placed close to the heart on our volunteer&amp;rsquo;s chest.</description>
     </item>
     <item>
       <title>EEGSynth</title>
-      <link>http://localhost:1313/applications/eegsynth/</link>
+      <link>https://wiki.mentalab.com/applications/eegsynth/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/eegsynth/</guid>
+      <guid>https://wiki.mentalab.com/applications/eegsynth/</guid>
       <description>EEGSynth is a software project aiming at connecting brain signals to electronic music instruments. EEGSynth is taking inspiration from modular synthesizers. In a modular synth, each module performs a specific function (generating sound, modulating sound, generating control voltages, etc.) and outputs from one module can be connected to the inputs of another module using patch cables. The entirety of the connected modules is referred to as a patch. Similarly, EEGSynth modules can, among many other things, take in real-time EEG signals, process them and extract useful information such as bandpower, and use these to send instruction messages to electronic music instruments using the MIDI standard.</description>
     </item>
     <item>
       <title>Real-time Spectrogram</title>
-      <link>http://localhost:1313/applications/spectrogram/</link>
+      <link>https://wiki.mentalab.com/applications/spectrogram/</link>
       <pubDate>Thu, 08 May 2025 12:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/spectrogram/</guid>
+      <guid>https://wiki.mentalab.com/applications/spectrogram/</guid>
       <description>Introduction The spectrogram of a signal contains the magnitude of the frequencies of the signal over time, meaning it contains three dimensions: time, frequency and magnitude. This data can be plotted as an image that is essentially a heatmap of frequencies over time.&#xA;This example application shows how this can be achieved with real-time updates using the Mentalab Explore device, explorepy and a few other dependencies.&#xA;Requirements Mentalab Explore A Python 3 installation, we strongly recommend using Anaconda to install Python and using version 3.</description>
     </item>
     <item>
       <title>EEG to lamp brightness</title>
-      <link>http://localhost:1313/applications/eeg-to-lamp/</link>
+      <link>https://wiki.mentalab.com/applications/eeg-to-lamp/</link>
       <pubDate>Tue, 03 Jun 2025 12:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/eeg-to-lamp/</guid>
+      <guid>https://wiki.mentalab.com/applications/eeg-to-lamp/</guid>
       <description>Introduction An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (8Hz - 13Hz) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject&amp;rsquo;s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow.</description>
     </item>
   </channel>

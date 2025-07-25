@@ -2,52 +2,52 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Analysis on Wiki</title>
-    <link>http://localhost:1313/integrations/analysis/</link>
+    <link>https://wiki.mentalab.com/integrations/analysis/</link>
     <description>Recent content in Analysis on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 02 Jul 2025 10:25:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/integrations/analysis/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/integrations/analysis/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>EEGLAB</title>
-      <link>http://localhost:1313/integrations/analysis/eeglab/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/eeglab/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/eeglab/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/eeglab/</guid>
       <description>This is a guide to converting Mentalab Explore CSV, BDF, and BIN files into an EEGLAB dataset using Explore Desktop.&#xA;Start Explore Desktop and do not connect to a device. From top menu, select File&amp;gt;Export&amp;gt;EEGLAB Dataset.&#xA;EEGLAB Dataset export&#xD;After this, select the folder with the ExG data to be converted. A new datasets folder will be generated in the selected folder, containing the EEGLAB datasets.&#xA;Select destination folder&#xD;In EEGLAB, select the dataset from File &amp;gt; Load existing dataset.</description>
     </item>
     <item>
       <title>MNE Python</title>
-      <link>http://localhost:1313/integrations/analysis/mne-python/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/mne-python/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/mne-python/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/mne-python/</guid>
       <description>MNE Python is an excellent, open-source choice for EEG (and MEG) data visualization and analysis.&#xA;Power spectrum density in the alpha band&#xD;Topographic distribution of the alpha band&#xD;Loading Mentalab data into MNE CSV and BDF files The below script can be used to create an mne raw data object from a .csv or .bdf file recorded with Explore Desktop. For CSV, the mne object is created from a simple pandas data_frame.</description>
     </item>
     <item>
       <title>FieldTrip</title>
-      <link>http://localhost:1313/integrations/analysis/fieldtrip/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</link>
       <pubDate>Wed, 02 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/fieldtrip/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</guid>
       <description>This document provides a simple guide for loading Mentalab Explore device recordings into FieldTrip for ExG analysis and visualization.&#xA;Prerequisites Before using this guide, you need:&#xA;A Mentalab Explore device ExplorePy installed and configured MATLAB with FieldTrip toolbox installed Step 1: Recording Data with Mentalab Record your EEG data using ExplorePy CLI, Explore Desktop, or Explore Mobile.&#xA;Step 2: Setting Up FieldTrip Download FieldTrip from fieldtriptoolbox.org Add FieldTrip to your MATLAB path: % Add FieldTrip to your MATLAB path addpath(&amp;#39;/path/to/fieldtrip&amp;#39;); % Replace with your FieldTrip path ft_defaults; % Initialize FieldTrip Step 3: Prepare Your Data Files After recording, you should have these files in your working directory:</description>
     </item>
     <item>
       <title>NeuroPype</title>
-      <link>http://localhost:1313/integrations/analysis/neuropype/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/neuropype/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/neuropype/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/neuropype/</guid>
       <description>Mentalab&amp;rsquo;s mobile EEG amplifiers integrate seamlessly with NeuroPype, a powerful and flexible platform for real-time brain data processing and analysis. This page provides an introduction to using your Mentalab data with NeuroPype, highlighting key capabilities and recommended practices for both offline analysis and real-time streaming.&#xA;Example: Outcome of the Mentalab Source Localisation pipeline. ExG data on the left, source mapping on the right.&#xD;How to Use Mentalab Data with NeuroPype You have two primary methods for getting Mentalab data into NeuroPype:</description>
     </item>
     <item>
       <title>BESA Research</title>
-      <link>http://localhost:1313/integrations/analysis/besa-research/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/besa-research/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/besa-research/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/besa-research/</guid>
       <description>How to Import Mentalab Data into BESA Record your data: Conduct your EEG recording using your Mentalab device and ensure the data is saved in the .bdf format. Open BESA Research: Launch the BESA Research software on your computer. Open file: Navigate to the import function within BESA (typically File &amp;gt; Open or Import). Select your .bdf file: In the File Open dialog, select the file type “ERP files” from the dropdown menu.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/analysis/6-brainstorm/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/6-brainstorm/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</guid>
       <description>https://neuroimage.usc.edu/brainstorm/</description>
     </item>
   </channel>

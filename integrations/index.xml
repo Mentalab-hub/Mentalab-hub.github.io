@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Integrations on Wiki</title>
-    <link>http://localhost:1313/integrations/</link>
+    <link>https://wiki.mentalab.com/integrations/</link>
     <description>Recent content in Integrations on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 02 Jun 2022 10:25:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/integrations/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/integrations/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Supported Software</title>
-      <link>http://localhost:1313/integrations/supported-software/</link>
+      <link>https://wiki.mentalab.com/integrations/supported-software/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/supported-software/</guid>
+      <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
       <description>This list contains EEG analysis software that can import Mentalab Explore data.&#xA;In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
     </item>
   </channel>

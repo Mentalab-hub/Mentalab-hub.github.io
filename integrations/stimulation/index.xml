@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Stimulation on Wiki</title>
-    <link>http://localhost:1313/integrations/stimulation/</link>
+    <link>https://wiki.mentalab.com/integrations/stimulation/</link>
     <description>Recent content in Stimulation on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Jul 2025 10:25:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/integrations/stimulation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/integrations/stimulation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>PsychoPy</title>
-      <link>http://localhost:1313/integrations/stimulation/psychopy/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/psychopy/</link>
       <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/psychopy/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/psychopy/</guid>
       <description>This guide details how to synchronise your Mentalab Explore device with PsychoPy experiments, focusing on high-precision synchronization of event markers using LabStreamingLayer (LSL) in combination with Mentalab Hypersync. This is the recommended approach for robust and accurate data alignment.&#xA;Legacy wired trigger methods are listed at the bottom.&#xA;Prerequisites Before starting, ensure you have the following hardware and software:&#xA;Hardware Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system. Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from PsychoPy with the Explore device&amp;rsquo;s data stream.</description>
     </item>
     <item>
       <title>OpenSesame</title>
-      <link>http://localhost:1313/integrations/stimulation/opensesame/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/opensesame/</link>
       <pubDate>Thu, 17 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/opensesame/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/opensesame/</guid>
       <description>This guide details how to synchronize your Mentalab Explore device with OpenSesame experiments, focusing on high-precision synchronization of event markers using LabStreamingLayer (LSL) in combination with Mentalab Hypersync. This is the recommended approach for robust and accurate data alignment.&#xA;Legacy wired trigger methods are listed at the bottom.&#xA;Prerequisites Hardware Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system. Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from OpenSesame with the Explore device&amp;rsquo;s data stream.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/stimulation/3-e-prime/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/3-e-prime/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</guid>
       <description>Commercial software&#xA;Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.&#xA;Then follow the E-Prime® guidelines on sending markers via LSL.&#xA;https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955&#xA;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/stimulation/4-presentation/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/4-presentation/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</guid>
       <description>Commercial software.&#xA;Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.&#xA;Then follow the Presentation® guidelines on sending markers via LSL.&#xA;https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm</description>
     </item>
   </channel>

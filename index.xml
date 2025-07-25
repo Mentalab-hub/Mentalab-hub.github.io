@@ -2,360 +2,360 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Welcome on Wiki</title>
-    <link>http://localhost:1313/</link>
+    <link>https://wiki.mentalab.com/</link>
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 17 Jul 2025 10:25:19 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BrainFlow</title>
-      <link>http://localhost:1313/integrations/interfaces/brainflow/</link>
+      <link>https://wiki.mentalab.com/integrations/interfaces/brainflow/</link>
       <pubDate>Tue, 15 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/interfaces/brainflow/</guid>
+      <guid>https://wiki.mentalab.com/integrations/interfaces/brainflow/</guid>
       <description>BrainFlow Integration BrainFlow is an open-source library that provides a unified interface for biosignal acquisition across a variety of hardware platforms. It simplifies the process of working with physiological signals such as EEG, EMG, and ECG by offering a consistent API in multiple programming languages including Python, C++, Java, and MATLAB.&#xA;What is BrainFlow? BrainFlow enables:&#xA;Seamless data access across supported biosignal devices Real-time signal processing tools (e.g., filtering, feature extraction) Integration into research workflows and custom applications Cross-platform development using high-level APIs For a deeper overview, visit the official BrainFlow documentation.</description>
     </item>
     <item>
       <title>PsychoPy</title>
-      <link>http://localhost:1313/integrations/stimulation/psychopy/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/psychopy/</link>
       <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/psychopy/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/psychopy/</guid>
       <description>This guide details how to synchronise your Mentalab Explore device with PsychoPy experiments, focusing on high-precision synchronization of event markers using LabStreamingLayer (LSL) in combination with Mentalab Hypersync. This is the recommended approach for robust and accurate data alignment.&#xA;Legacy wired trigger methods are listed at the bottom.&#xA;Prerequisites Before starting, ensure you have the following hardware and software:&#xA;Hardware Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system. Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from PsychoPy with the Explore device&amp;rsquo;s data stream.</description>
     </item>
     <item>
       <title>Installation</title>
-      <link>http://localhost:1313/explore-signals-guide/explore-signals-installation/</link>
+      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</link>
       <pubDate>Tue, 13 May 2025 10:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-signals-guide/explore-signals-installation/</guid>
+      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</guid>
       <description>Installation Explore Signals is available for Windows, macOS, and Linux. No setup is required — download and run the appropriate file for your operating system.</description>
     </item>
     <item>
       <title>Motor Imagery BCI</title>
-      <link>http://localhost:1313/applications/motor-imagery-bci/</link>
+      <link>https://wiki.mentalab.com/applications/motor-imagery-bci/</link>
       <pubDate>Mon, 24 Mar 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/motor-imagery-bci/</guid>
+      <guid>https://wiki.mentalab.com/applications/motor-imagery-bci/</guid>
       <description>Overview This application is a Brain-Computer Interface (BCI) system designed to classify motor imagery tasks (left hand, right hand, and neutral state) using EEG data. The system connects to Explore Pro device via the Lab Streaming Layer (LSL) protocol, processes the EEG signals, and classifies the data using machine learning models, including a Transformer-based neural network.&#xA;The application supports real-time classification. It includes tools for data collection, preprocessing, model training, and evaluation.</description>
     </item>
     <item>
       <title>Download and Installation</title>
-      <link>http://localhost:1313/explore-mobile-guide/download-installation/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/download-installation/</guid>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</guid>
       <description>For Android, you can download the app from:&#xA;Google Play Store Direct APK download For iOS/iPadOS, the app can be downloaded from the App Store.&#xA;For any information or assistance, please contact support@mentalab.com and we will assist you further.</description>
     </item>
     <item>
       <title>EEGLAB</title>
-      <link>http://localhost:1313/integrations/analysis/eeglab/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/eeglab/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/eeglab/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/eeglab/</guid>
       <description>This is a guide to converting Mentalab Explore CSV, BDF, and BIN files into an EEGLAB dataset using Explore Desktop.&#xA;Start Explore Desktop and do not connect to a device. From top menu, select File&amp;gt;Export&amp;gt;EEGLAB Dataset.&#xA;EEGLAB Dataset export&#xD;After this, select the folder with the ExG data to be converted. A new datasets folder will be generated in the selected folder, containing the EEGLAB datasets.&#xA;Select destination folder&#xD;In EEGLAB, select the dataset from File &amp;gt; Load existing dataset.</description>
     </item>
     <item>
       <title>Supported Software</title>
-      <link>http://localhost:1313/integrations/supported-software/</link>
+      <link>https://wiki.mentalab.com/integrations/supported-software/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/supported-software/</guid>
+      <guid>https://wiki.mentalab.com/integrations/supported-software/</guid>
       <description>This list contains EEG analysis software that can import Mentalab Explore data.&#xA;In general, many EEG analysis pipelines use EDF file formats. To convert your Mentalab Explore data to EDF, please use the bin2edf command available in our open source API explorepy. If your device has internal memory, it will automatically save data to BIN. If you are using the Bluetooth feature of your Mentalab Explore device, be sure to record to BIN and not CSV on the connected device.</description>
     </item>
     <item>
       <title>OpenSesame</title>
-      <link>http://localhost:1313/integrations/stimulation/opensesame/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/opensesame/</link>
       <pubDate>Thu, 17 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/opensesame/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/opensesame/</guid>
       <description>This guide details how to synchronize your Mentalab Explore device with OpenSesame experiments, focusing on high-precision synchronization of event markers using LabStreamingLayer (LSL) in combination with Mentalab Hypersync. This is the recommended approach for robust and accurate data alignment.&#xA;Legacy wired trigger methods are listed at the bottom.&#xA;Prerequisites Hardware Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system. Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from OpenSesame with the Explore device&amp;rsquo;s data stream.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-signals-guide/explore-signals-usage/</link>
+      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</link>
       <pubDate>Tue, 13 May 2025 10:10:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-signals-guide/explore-signals-usage/</guid>
+      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</guid>
       <description>Loading EEG/ExG Data Launch the application. Go to the File menu and select one or more EEG files (.csv, .bdf) to load. The selected files will appear under Loaded Files in the left panel. Explore Signals file loading.&#xD;Applying Filters Navigate to the Filters menu to apply:&#xA;High-pass / Low-pass filters Notch filter (e.g., to remove 50/60 Hz line noise) Re-referencing options DC offset correction Explore Signals filter options.&#xD;Channel Selection In the Channels section, select or deselect specific channels.</description>
     </item>
     <item>
       <title>Artefact removal</title>
-      <link>http://localhost:1313/applications/artefact-removal/</link>
+      <link>https://wiki.mentalab.com/applications/artefact-removal/</link>
       <pubDate>Tue, 25 Mar 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/artefact-removal/</guid>
+      <guid>https://wiki.mentalab.com/applications/artefact-removal/</guid>
       <description>This is an implementation of the HAPPILEE pipeline for the Explore system from Mentalab. See our github page for the code for this project.&#xA;The HAPPILEE pipeline is applied to EEG data recorded by the Mentalab Explore Pro device in happilee.py and happilee.ipynb. happilee.py is the main script to apply HAPPILEE to an EXG dataset recorded by the Explore system. happilee.ipynb is a notebook to demonstrate and track steps of the HAPPILEE pipeline to a dataset recorded by the Explore system.</description>
     </item>
     <item>
       <title>MNE Python</title>
-      <link>http://localhost:1313/integrations/analysis/mne-python/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/mne-python/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/mne-python/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/mne-python/</guid>
       <description>MNE Python is an excellent, open-source choice for EEG (and MEG) data visualization and analysis.&#xA;Power spectrum density in the alpha band&#xD;Topographic distribution of the alpha band&#xD;Loading Mentalab data into MNE CSV and BDF files The below script can be used to create an mne raw data object from a .csv or .bdf file recorded with Explore Desktop. For CSV, the mne object is created from a simple pandas data_frame.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-mobile-guide/usage/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/usage/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/usage/</guid>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/usage/</guid>
       <description>Please note that currently the app only supports Mentalab Explore Pro 8-channel devices at 250Hz.&#xA;Homepage&#xA;Scan and connect to nearby Explore Devices. Impedance tab&#xA;Inspect impedance values. Assign channel positions. EXG tab&#xA;Visualize ExG data. Dot menu: Adapt visulization settings (y-axis scaling &amp;amp; time window). Record raw ExG data in CSV format. Settings&#xA;See device settings Adjust visualization filters Change sampling rate Disconnect Bottom bar&#xA;Inspect device name, temperature, battery charge </description>
     </item>
     <item>
       <title>Getting Started</title>
-      <link>http://localhost:1313/explore-desktop-guide/getting-started/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/getting-started/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</guid>
       <description>Installation Download the Explore Desktop installer. Windows If you haven&amp;rsquo;t already, download the latest Explore Desktop version or Explore Desktop Legacy version 0.7.4 from GitHub. Select the file ending in _windows.zip.&#xA;Double-click on the installer and follow the on-screen instructions.&#xA;Once installed, Explore Desktop will reside in the Explore Desktop folder in your installation directory.&#xA;On Windows, we recommend using Explore Desktop with the 100% scale. If you change the resolution, content can appear blurry or pixelated.</description>
     </item>
     <item>
       <title>Operating Instructions</title>
-      <link>http://localhost:1313/user-guide/operating-instructions/</link>
+      <link>https://wiki.mentalab.com/user-guide/operating-instructions/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/user-guide/operating-instructions/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/operating-instructions/</guid>
       <description>Operating modes Mentalab Explore has two main operating modes: offline and online. When in offline mode, the amplifier collects data and stores it in internal flash memory. Users can extract the recordings from the memory using a USB-C cable after recording. In online mode, data is transmitted via Bluetooth in real-time to a host machine, enabling the user to collect, monitor, and visualize data. In this mode, you can also measure impedances, and configure the amplifier with Explore Desktop, explorepy, or Explore Mobile).</description>
     </item>
     <item>
       <title>Sleep Actigraphy</title>
-      <link>http://localhost:1313/applications/sleep-actigraphy/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-actigraphy/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/sleep-actigraphy/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-actigraphy/</guid>
       <description>Sleep Activity Pipeline (with PyActigraphy, Accelerometer and YASA) Here&amp;rsquo;s a more polished version of your text, with fewer bullet points and a smoother flow:&#xA;Sleep Activity Analysis with PyActigraphy, Accelerometer, and YASA This guide demonstrates a comprehensive pipeline for analyzing sleep stages and activity patterns using EEG and accelerometer data acquired from a Mentalab Explore device. For those specifically interested in sleep staging, our Sleep EEG Analysis application example offers further insights.</description>
     </item>
     <item>
       <title>Tests</title>
-      <link>http://localhost:1313/explore-mobile-guide/testing/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/testing/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/testing/</guid>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/testing/</guid>
       <description>Following are the devices we used to testing:&#xA;Device OS version Lenovo Tab M9 Android 13 Samsung S23 Ultra Android 14 Zenfone 10 Android 14 Pixel 7 Pro Android 15 iPhone 13 iOS 18 Recording Tests The following tests were performed to ensure the recording functionality is working as expected.&#xA;Conducted on Lenovo Tab M9 (Android 13) for 2 hours: 16 channels at 500 Hz sampling rate 16 channels at 250 Hz sampling rate Known bugs No known bugs at the moment.</description>
     </item>
     <item>
       <title>Dry Electrode Guide</title>
-      <link>http://localhost:1313/user-guide/dry-electrode-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/user-guide/dry-electrode-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</guid>
       <description>Dry electrodes types Mentalab currently offers three types of dry electrodes.&#xA;Flat electrodes For electrode positions not covered by hair (e.g. on the forehead, mastoid…), our flat electrodes ensure optimal skin contact and comfort.&#xA;Brush electrodes Dry brush electrodes.&#xD;For areas covered in hair, we recommend using brush electrodes. Their flexible pins penetrate most hair types and establish good contact with the scalp. XL brush electrodes For very dense and curly hair types, we recommend using our XL brush electrodes for increased hair penetration.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-desktop-guide/usage/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/usage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/usage/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/usage/</guid>
       <description>Connect Under normal usage, Explore Dekstop will open to the Connect page. Use this page to connect to your Mentalab Explore device.&#xA;Ensure that your device is in advertising mode. You can verify with the LED Light Guide. Simply write the device ID in the dropdown input line and press connect. The device will connect within a few seconds.&#xA;Once your device is connected, the status bar will change.&#xA;If your device is not found, you will receive an error.</description>
     </item>
     <item>
       <title>FieldTrip</title>
-      <link>http://localhost:1313/integrations/analysis/fieldtrip/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</link>
       <pubDate>Wed, 02 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/fieldtrip/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</guid>
       <description>This document provides a simple guide for loading Mentalab Explore device recordings into FieldTrip for ExG analysis and visualization.&#xA;Prerequisites Before using this guide, you need:&#xA;A Mentalab Explore device ExplorePy installed and configured MATLAB with FieldTrip toolbox installed Step 1: Recording Data with Mentalab Record your EEG data using ExplorePy CLI, Explore Desktop, or Explore Mobile.&#xA;Step 2: Setting Up FieldTrip Download FieldTrip from fieldtriptoolbox.org Add FieldTrip to your MATLAB path: % Add FieldTrip to your MATLAB path addpath(&amp;#39;/path/to/fieldtrip&amp;#39;); % Replace with your FieldTrip path ft_defaults; % Initialize FieldTrip Step 3: Prepare Your Data Files After recording, you should have these files in your working directory:</description>
     </item>
     <item>
       <title>NeuroPype</title>
-      <link>http://localhost:1313/integrations/analysis/neuropype/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/neuropype/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/neuropype/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/neuropype/</guid>
       <description>Mentalab&amp;rsquo;s mobile EEG amplifiers integrate seamlessly with NeuroPype, a powerful and flexible platform for real-time brain data processing and analysis. This page provides an introduction to using your Mentalab data with NeuroPype, highlighting key capabilities and recommended practices for both offline analysis and real-time streaming.&#xA;Example: Outcome of the Mentalab Source Localisation pipeline. ExG data on the left, source mapping on the right.&#xD;How to Use Mentalab Data with NeuroPype You have two primary methods for getting Mentalab data into NeuroPype:</description>
     </item>
     <item>
       <title>Photodiode Event Triggers</title>
-      <link>http://localhost:1313/applications/photodiode-event-trigger/</link>
+      <link>https://wiki.mentalab.com/applications/photodiode-event-trigger/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/photodiode-event-trigger/</guid>
+      <guid>https://wiki.mentalab.com/applications/photodiode-event-trigger/</guid>
       <description>Synchronizing ExG signals with stimuli is critical to many research paradigms. There are two main approaches to synchronizing data: software event markers and hardware triggers.&#xA;Although software event markers are easy to use, they are not as precise as hardware triggers. This is because the data is sent via Bluetooth, which has some inherent delays.&#xA;Meanwhile, hardware triggers are much more precise but involve connecting a wire between devices (e.g. a computer and an Explore device).</description>
     </item>
     <item>
       <title>Visualization</title>
-      <link>http://localhost:1313/explore-desktop-guide/visualize/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/visualize/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/visualize/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/visualize/</guid>
       <description>Visualize ExG, orientation, spectral analysis and relative bandpower data in real-time by navigating to the Visualization page.&#xA;You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting Filters.&#xA;Settings include:&#xA;Y-axis scale – change the range of the y-axis. 1 uV to 100 mV range. Time window – change the time interval of the x-axis. 5, 10, or 20 second range. Record (see Recording Section).</description>
     </item>
     <item>
       <title>LED Light Guide</title>
-      <link>http://localhost:1313/user-guide/led-light-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/led-light-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>http://localhost:1313/user-guide/led-light-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/led-light-guide/</guid>
       <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.&#xA;LED Light Blinking Pattern Description Example Red / Yellow / Green Solid at amplifier start-up. Flashes for 3 secs Start-up in progress. Colour indicates battery status (green &amp;gt; 90%; yellow &amp;gt; 50%; red &amp;lt; 50%). Blue Blinks four times a second Bluetooth visible and advertising.</description>
     </item>
     <item>
       <title>BESA Research</title>
-      <link>http://localhost:1313/integrations/analysis/besa-research/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/besa-research/</link>
       <pubDate>Thu, 02 Jun 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/besa-research/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/besa-research/</guid>
       <description>How to Import Mentalab Data into BESA Record your data: Conduct your EEG recording using your Mentalab device and ensure the data is saved in the .bdf format. Open BESA Research: Launch the BESA Research software on your computer. Open file: Navigate to the import function within BESA (typically File &amp;gt; Open or Import). Select your .bdf file: In the File Open dialog, select the file type “ERP files” from the dropdown menu.</description>
     </item>
     <item>
       <title>EOG Artifact Removal</title>
-      <link>http://localhost:1313/applications/power-bands/</link>
+      <link>https://wiki.mentalab.com/applications/power-bands/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/power-bands/</guid>
+      <guid>https://wiki.mentalab.com/applications/power-bands/</guid>
       <description>Many EEG applications analyse EEG signals for frequencies that are associated with specific activities.&#xA;Here, is an OpenViBE pipeline that breaks down raw EEG signals into frequency bands and removes blinking artifacts in real-time.&#xA;Set-up Install Explorepy using Explorepy installation guide. Install Explore Desktop from Explore Desktop Github page. Prepare an 8-channel Mentalab Explore system using the following configuration. You can use wet or dry electrodes for this, and modify as needed.</description>
     </item>
     <item>
       <title>Recording</title>
-      <link>http://localhost:1313/explore-desktop-guide/record/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/record/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/record/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/record/</guid>
       <description>Record data in real time to EDF (BDF+) or CSV by selecting Record on the Visualization page.&#xA;A pop-up will allow you to configure your recording.&#xA;Settings include:&#xA;File format – select the output file type (EDF or CSV): CSV mode generates an extra file for the marker events BDF mode records data in BDF+ format (in 24-bit resolution) Folder and name prefix – select where to store files and the file prefix.</description>
     </item>
     <item>
       <title>Button Command Guide</title>
-      <link>http://localhost:1313/user-guide/button-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/button-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>http://localhost:1313/user-guide/button-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/button-guide/</guid>
       <description>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the user can communicate with the amplifier using the button.&#xA;Action State Effect Single click Amplifier off Amplifier will turn on Double click Memory full (LED blinking pink) Delete flash memory.&#xA;Return to advertising mode. Double click Amplifier in startup Skip advertising.&#xA;Go to offline mode. Single click Amplifier recording (online or offline) Generate marker timestamped at button press.</description>
     </item>
     <item>
       <title>Impedance</title>
-      <link>http://localhost:1313/explore-desktop-guide/impedance/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/impedance/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/impedance/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/impedance/</guid>
       <description>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.&#xA;Select which type of electrodes you are using from the drop-down menu. Then, click on Measure Impedances. For wet electrodes, channel impedances will display their value and corresponding color code as in the table below. Good dry electrode impedances are less than 100kΩ for flat electrodes placed on bare skin, and less than 300kΩ for brush electrodes placed on hair.</description>
     </item>
     <item>
       <title>Cap Size Guide</title>
-      <link>http://localhost:1313/user-guide/cap-size-guide/</link>
+      <link>https://wiki.mentalab.com/user-guide/cap-size-guide/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>http://localhost:1313/user-guide/cap-size-guide/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/cap-size-guide/</guid>
       <description>The Mentalab Explore system was designed to meet the needs of any researcher. As such, we provide a range of caps that can fit on large adults and babies. Here is our size guide.&#xA;Cap Size Head Circumference XS 36-42 cm S/XS 39-45 cm S 42-48 cm M 48-54 cm L 54-60 cm XL 60-66 cm Please note that the measurements presented here do not account for thick hair and the additional distance needed to accommodate XL brush electrodes.</description>
     </item>
     <item>
       <title>Lab Streaming Layer</title>
-      <link>http://localhost:1313/explore-desktop-guide/lsl/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/lsl/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/lsl/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/lsl/</guid>
       <description>You can push data to LSL by navigating to the Visualization page and clicking on the LSL button. To stop streaming to LSL, click on LSL again. If your device loses connection, Explore Desktop will try to reconnect automatically.&#xA;When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.&#xA;Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++.</description>
     </item>
     <item>
       <title>Other</title>
-      <link>http://localhost:1313/explore-desktop-guide/other/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/other/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/other/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/other/</guid>
       <description>Export EEGLAB dataset .edf and .bdf files can be exported to .set files compatible with Matlab&amp;rsquo;s EEGLab plugin. In the Menu Bar select File &amp;gt; Export &amp;gt; EEGLab Dataset. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called datasets placed in the selected directory.&#xA;Convert BIN You can convert the binary files into CSV or EDF files.</description>
     </item>
     <item>
       <title>SSVEP Experiments</title>
-      <link>http://localhost:1313/applications/ssvep/</link>
+      <link>https://wiki.mentalab.com/applications/ssvep/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/ssvep/</guid>
+      <guid>https://wiki.mentalab.com/applications/ssvep/</guid>
       <description>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.&#xA;SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency (typically 3-75 Hz). A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.&#xA;Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here.</description>
     </item>
     <item>
       <title>Improving Impedances</title>
-      <link>http://localhost:1313/user-guide/improving-impedances/</link>
+      <link>https://wiki.mentalab.com/user-guide/improving-impedances/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>http://localhost:1313/user-guide/improving-impedances/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/improving-impedances/</guid>
       <description>Since the impedance at the REF electrode affects signal quality for all EEG channels, we recommend starting with the REF electrode.&#xA;General Always verify that there is good contact between electrode and scalp. Ensure all electrodes are being pulled onto the scalp by the cap and there are no creases in the cap causing electrodes to “float&amp;quot;.&#xA;A thin, elastic cap placed over the electrode cap can further reduce impedances. It presses gently on all electrodes, particularly in occipital positions.</description>
     </item>
     <item>
       <title>EASI ECG</title>
-      <link>http://localhost:1313/applications/easi-ecg/</link>
+      <link>https://wiki.mentalab.com/applications/easi-ecg/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/easi-ecg/</guid>
+      <guid>https://wiki.mentalab.com/applications/easi-ecg/</guid>
       <description>The 12 lead electrode configuration. Source: CardioSecur Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&amp;rsquo; extremities).&#xA;Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.&#xA;Summary of 12-lead ECG drawbacks:</description>
     </item>
     <item>
       <title>Troubleshooting</title>
-      <link>http://localhost:1313/explore-desktop-guide/troubleshooting/</link>
+      <link>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/explore-desktop-guide/troubleshooting/</guid>
+      <guid>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</guid>
       <description>Unstable Bluetooth connection Possible causes are:&#xA;If the computer is connected to other Bluetooth devices that have a high data transfer rate, like a headset, connections can become unstable. The device is at the limit of its range. No device found with name Ensure your device is on and in advertising mode. Consult with LED Light Guide.&#xA;For more information or support, do not hesitate to get in contact at: support@mentalab.</description>
     </item>
     <item>
       <title>explorepy Command Guide</title>
-      <link>http://localhost:1313/user-guide/explorepy-commands/</link>
+      <link>https://wiki.mentalab.com/user-guide/explorepy-commands/</link>
       <pubDate>Tue, 25 Jan 2022 16:17:02 +0100</pubDate>
-      <guid>http://localhost:1313/user-guide/explorepy-commands/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/explorepy-commands/</guid>
       <description>Mentalab’s flagship API, explorepy, is written in Python and is the most direct way to communicate with your Explore amplifier. It can be installed from the Python Packaging Index (PyPI) using pip and offers a range of commands that can be called from the command line, like setting the sampling rate or streaming data to the console.&#xA;For more information on explorepy, like how to install it, a detailed list of commands or how it can be used in your own Python scripts, please refer to the docs.</description>
     </item>
     <item>
       <title>Cleaning, Disinfecting and Storing Mentalab Hardware</title>
-      <link>http://localhost:1313/user-guide/cleaning-disinfection-storage/</link>
+      <link>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/user-guide/cleaning-disinfection-storage/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</guid>
       <description>While regularly disinfecting materials prevents contamination, please bear in mind that frequent disinfection will damage your equipment. If your equipment does not require immediate disinfection, consider using water-based cleaning.&#xA;Cleaning electrodes and caps Please clean caps and electrodes immediately after every use to prevent conductive gel residue from drying into the material.&#xA;Electrodes Clean electrodes with warm water and a soft material such as cotton or cotton swabs. Ensure that the connector always remains dry.</description>
     </item>
     <item>
       <title>P300 Experiment</title>
-      <link>http://localhost:1313/applications/p300/</link>
+      <link>https://wiki.mentalab.com/applications/p300/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/p300/</guid>
+      <guid>https://wiki.mentalab.com/applications/p300/</guid>
       <description>P300 signals are brain signals that occur in response to a visual stimulus. They tend to occur approximately 300 ms after the stimulus appears.&#xA;Here, we show you how to use Mentalab Explore and an oddball experiment to elicit P300 signals. The code is open-source and available here. You can run it as is or use it to build your own P300 based applications.&#xA;In this experiment, the oddball experiment has two visual stimuli: a blue rectangle and a red oval.</description>
     </item>
     <item>
       <title>Sleep Recording Protocol</title>
-      <link>http://localhost:1313/applications/sleep-recording-protocol/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-recording-protocol/</link>
       <pubDate>Thu, 26 Jan 2023 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/applications/sleep-recording-protocol/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-recording-protocol/</guid>
       <description>This is a step-by-step guide describing how you can get the most out of your EEG sleep recording using Mentalab Explore.&#xA;Battery life is affected by sampling rate and Bluetooth connection. To maximize your recording time, we recommend offline recording at 250Hz.&#xD;Setting up your Mentalab system Fully charge your amplifier then disconnect it from the USB port. Set up your participant&amp;rsquo;s cap and electrodes. Open Explore Desktop and connect your amplifier to your computer via Bluetooth.</description>
     </item>
     <item>
       <title>Safety Recommendations</title>
-      <link>http://localhost:1313/user-guide/safety-recommendations/</link>
+      <link>https://wiki.mentalab.com/user-guide/safety-recommendations/</link>
       <pubDate>Wed, 26 Jan 2022 10:25:19 +0000</pubDate>
-      <guid>http://localhost:1313/user-guide/safety-recommendations/</guid>
+      <guid>https://wiki.mentalab.com/user-guide/safety-recommendations/</guid>
       <description>Intended use Mentalab Explore is a biosignal acquisition amplifier developed for research, development, and educational purposes. It is not intended nor certified for medical use. Mentalab Explore is used by scientists, developers, innovators, and students around the world in custom applications.&#xA;Product certification The Mentalab Explore amplifier is in accordance with the requirements and relevant provisions of EU directives:&#xA;RED 2104/53/EU RoHS WEEE PPW In the conformity assessment procedure, the following standards were used:</description>
     </item>
     <item>
       <title>Sleep EEG Analysis</title>
-      <link>http://localhost:1313/applications/sleep-analysis/</link>
+      <link>https://wiki.mentalab.com/applications/sleep-analysis/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/sleep-analysis/</guid>
+      <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
       <description>Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&#xA;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source yasa toolbox. We will perform automatic sleep staging by applying the yasa classifier [1] to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles.</description>
     </item>
     <item>
       <title>ECG Analysis</title>
-      <link>http://localhost:1313/applications/ecg-analysis/</link>
+      <link>https://wiki.mentalab.com/applications/ecg-analysis/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/ecg-analysis/</guid>
+      <guid>https://wiki.mentalab.com/applications/ecg-analysis/</guid>
       <description>Mentalab Explore is designed to record all kinds of ExG data. In this guide, we demonstrate how to use the Neurokit2 toolbox to analyse electrocardiography (ECG) data [1]. See the list of neurokit examples on which this tutorial is based for further resources.&#xA;Data acquisition We used two medical adhesive single-use electrodes to record the ECG. One electrode was placed on the left mastoid bone, whereas the second electrode was placed close to the heart on our volunteer&amp;rsquo;s chest.</description>
     </item>
     <item>
       <title>EEGSynth</title>
-      <link>http://localhost:1313/applications/eegsynth/</link>
+      <link>https://wiki.mentalab.com/applications/eegsynth/</link>
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/eegsynth/</guid>
+      <guid>https://wiki.mentalab.com/applications/eegsynth/</guid>
       <description>EEGSynth is a software project aiming at connecting brain signals to electronic music instruments. EEGSynth is taking inspiration from modular synthesizers. In a modular synth, each module performs a specific function (generating sound, modulating sound, generating control voltages, etc.) and outputs from one module can be connected to the inputs of another module using patch cables. The entirety of the connected modules is referred to as a patch. Similarly, EEGSynth modules can, among many other things, take in real-time EEG signals, process them and extract useful information such as bandpower, and use these to send instruction messages to electronic music instruments using the MIDI standard.</description>
     </item>
     <item>
       <title>Real-time Spectrogram</title>
-      <link>http://localhost:1313/applications/spectrogram/</link>
+      <link>https://wiki.mentalab.com/applications/spectrogram/</link>
       <pubDate>Thu, 08 May 2025 12:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/spectrogram/</guid>
+      <guid>https://wiki.mentalab.com/applications/spectrogram/</guid>
       <description>Introduction The spectrogram of a signal contains the magnitude of the frequencies of the signal over time, meaning it contains three dimensions: time, frequency and magnitude. This data can be plotted as an image that is essentially a heatmap of frequencies over time.&#xA;This example application shows how this can be achieved with real-time updates using the Mentalab Explore device, explorepy and a few other dependencies.&#xA;Requirements Mentalab Explore A Python 3 installation, we strongly recommend using Anaconda to install Python and using version 3.</description>
     </item>
     <item>
       <title>EEG to lamp brightness</title>
-      <link>http://localhost:1313/applications/eeg-to-lamp/</link>
+      <link>https://wiki.mentalab.com/applications/eeg-to-lamp/</link>
       <pubDate>Tue, 03 Jun 2025 12:54:00 +0100</pubDate>
-      <guid>http://localhost:1313/applications/eeg-to-lamp/</guid>
+      <guid>https://wiki.mentalab.com/applications/eeg-to-lamp/</guid>
       <description>Introduction An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (8Hz - 13Hz) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject&amp;rsquo;s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow.</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/analysis/6-brainstorm/</link>
+      <link>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/analysis/6-brainstorm/</guid>
+      <guid>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</guid>
       <description>https://neuroimage.usc.edu/brainstorm/</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/hardware/1-labbench/</link>
+      <link>https://wiki.mentalab.com/integrations/hardware/1-labbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/hardware/1-labbench/</guid>
+      <guid>https://wiki.mentalab.com/integrations/hardware/1-labbench/</guid>
       <description>&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/hardware/2-plux-biosignals/</link>
+      <link>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/hardware/2-plux-biosignals/</guid>
+      <guid>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</guid>
       <description>&#xD;</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/stimulation/3-e-prime/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/3-e-prime/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</guid>
       <description>Commercial software&#xA;Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.&#xA;Then follow the E-Prime® guidelines on sending markers via LSL.&#xA;https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955&#xA;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file</description>
     </item>
     <item>
       <title></title>
-      <link>http://localhost:1313/integrations/stimulation/4-presentation/</link>
+      <link>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/integrations/stimulation/4-presentation/</guid>
+      <guid>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</guid>
       <description>Commercial software.&#xA;Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.&#xA;Then follow the Presentation® guidelines on sending markers via LSL.&#xA;https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm</description>
     </item>
   </channel>
