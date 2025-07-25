@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/applications/spectrogram/">
+    <link rel="canonical" href="http://localhost:1313/applications/spectrogram/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -488,64 +488,64 @@
 <p>The code for this example (<code>real_time_spectrogram.py</code>) can be found in the <code>examples</code> folder of the GitHub repository for explorepy: <a href="https://github.com/Mentalab-hub/explorepy/">https://github.com/Mentalab-hub/explorepy/</a></p>
 <p>You can run the script in the environment you&rsquo;ve set up by calling <code>python -m real_time_spectrogram</code> and supplying command line arguments according to your needs:</p>
 <table>
-  <thead>
-      <tr>
-          <th>argument</th>
-          <th>description</th>
-          <th>required</th>
-          <th>default</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td><code>-n, --device_name</code></td>
-          <td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
-          <td>yes</td>
-          <td>-</td>
-      </tr>
-      <tr>
-          <td><code>-sr, --sampling_rate</code></td>
-          <td>The sampling rate to set the device to</td>
-          <td>no</td>
-          <td><code>None</code> / current device sampling rate</td>
-      </tr>
-      <tr>
-          <td><code>-uw, --update_window</code></td>
-          <td>The time between updates of the plot (in seconds)</td>
-          <td>no</td>
-          <td><code>0.1s</code> for mode <code>overlapping</code>, <code>0.5</code>s otherwise</td>
-      </tr>
-      <tr>
-          <td><code>-tw, --time_window</code></td>
-          <td>The total time window displayed in the plot (in seconds)</td>
-          <td>no</td>
-          <td><code>10</code>s</td>
-      </tr>
-      <tr>
-          <td><code>-usb</code></td>
-          <td>Whether to connect via USB</td>
-          <td>no</td>
-          <td><code>False</code></td>
-      </tr>
-      <tr>
-          <td><code>-fn, --notch</code></td>
-          <td>The frequency to use for the notch filter</td>
-          <td>no</td>
-          <td><code>None</code></td>
-      </tr>
-      <tr>
-          <td><code>-fbp, --bandpass</code></td>
-          <td>The frequencies to use for the bandpass filter</td>
-          <td>no</td>
-          <td><code>None</code></td>
-      </tr>
-      <tr>
-          <td><code>-m, --drawing_mode</code></td>
-          <td>The mode used for drawing the plot (options: <code>moving_fft</code>, <code>moving_stft</code>, <code>overlapping</code>)</td>
-          <td>no</td>
-          <td><code>moving_fft</code></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>argument</th>
+<th>description</th>
+<th>required</th>
+<th>default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-n, --device_name</code></td>
+<td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
+<td>yes</td>
+<td>-</td>
+</tr>
+<tr>
+<td><code>-sr, --sampling_rate</code></td>
+<td>The sampling rate to set the device to</td>
+<td>no</td>
+<td><code>None</code> / current device sampling rate</td>
+</tr>
+<tr>
+<td><code>-uw, --update_window</code></td>
+<td>The time between updates of the plot (in seconds)</td>
+<td>no</td>
+<td><code>0.1s</code> for mode <code>overlapping</code>, <code>0.5</code>s otherwise</td>
+</tr>
+<tr>
+<td><code>-tw, --time_window</code></td>
+<td>The total time window displayed in the plot (in seconds)</td>
+<td>no</td>
+<td><code>10</code>s</td>
+</tr>
+<tr>
+<td><code>-usb</code></td>
+<td>Whether to connect via USB</td>
+<td>no</td>
+<td><code>False</code></td>
+</tr>
+<tr>
+<td><code>-fn, --notch</code></td>
+<td>The frequency to use for the notch filter</td>
+<td>no</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>-fbp, --bandpass</code></td>
+<td>The frequencies to use for the bandpass filter</td>
+<td>no</td>
+<td><code>None</code></td>
+</tr>
+<tr>
+<td><code>-m, --drawing_mode</code></td>
+<td>The mode used for drawing the plot (options: <code>moving_fft</code>, <code>moving_stft</code>, <code>overlapping</code>)</td>
+<td>no</td>
+<td><code>moving_fft</code></td>
+</tr>
+</tbody>
 </table>
 <p>For example, to run the script with default values for the device <strong>Explore_ABCD</strong>:</p>
 <p><code>python -m real_time_spectrogram -n Explore_ABCD</code></p>
@@ -634,10 +634,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -645,7 +645,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 

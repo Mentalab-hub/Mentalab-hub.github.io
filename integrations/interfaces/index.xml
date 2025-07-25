@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Interfaces on Wiki</title>
-    <link>https://wiki.mentalab.com/integrations/interfaces/</link>
+    <link>http://localhost:1313/integrations/interfaces/</link>
     <description>Recent content in Interfaces on Wiki</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 15 Jul 2025 10:25:19 +0000</lastBuildDate>
-    <atom:link href="https://wiki.mentalab.com/integrations/interfaces/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/integrations/interfaces/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>BrainFlow</title>
-      <link>https://wiki.mentalab.com/integrations/interfaces/brainflow/</link>
+      <link>http://localhost:1313/integrations/interfaces/brainflow/</link>
       <pubDate>Tue, 15 Jul 2025 10:25:19 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/integrations/interfaces/brainflow/</guid>
-      <description>&lt;h1 id=&#34;brainflow-integration&#34;&gt;BrainFlow Integration&lt;/h1&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://brainflow.readthedocs.io/en/stable/&#34;&gt;BrainFlow&lt;/a&gt; is an open-source library that provides a unified interface for biosignal acquisition across a variety of hardware platforms. It simplifies the process of working with physiological signals such as EEG, EMG, and ECG by offering a consistent API in multiple programming languages including Python, C++, Java, and MATLAB.&lt;/p&gt;&#xA;&lt;h2 id=&#34;what-is-brainflow&#34;&gt;What is BrainFlow?&lt;/h2&gt;&#xA;&lt;p&gt;BrainFlow enables:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Seamless data access across supported biosignal devices&lt;/li&gt;&#xA;&lt;li&gt;Real-time signal processing tools (e.g., filtering, feature extraction)&lt;/li&gt;&#xA;&lt;li&gt;Integration into research workflows and custom applications&lt;/li&gt;&#xA;&lt;li&gt;Cross-platform development using high-level APIs&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;For a deeper overview, visit the &lt;a href=&#34;https://brainflow.readthedocs.io/en/stable/&#34;&gt;official BrainFlow documentation&lt;/a&gt;.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/integrations/interfaces/brainflow/</guid>
+      <description>BrainFlow Integration BrainFlow is an open-source library that provides a unified interface for biosignal acquisition across a variety of hardware platforms. It simplifies the process of working with physiological signals such as EEG, EMG, and ECG by offering a consistent API in multiple programming languages including Python, C++, Java, and MATLAB.&#xA;What is BrainFlow? BrainFlow enables:&#xA;Seamless data access across supported biosignal devices Real-time signal processing tools (e.g., filtering, feature extraction) Integration into research workflows and custom applications Cross-platform development using high-level APIs For a deeper overview, visit the official BrainFlow documentation.</description>
     </item>
   </channel>
 </rss>

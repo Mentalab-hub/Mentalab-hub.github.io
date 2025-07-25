@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Explore Signals Guide on Wiki</title>
-    <link>https://wiki.mentalab.com/explore-signals-guide/</link>
+    <link>http://localhost:1313/explore-signals-guide/</link>
     <description>Recent content in Explore Signals Guide on Wiki</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 May 2025 10:10:00 +0000</lastBuildDate>
-    <atom:link href="https://wiki.mentalab.com/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
-      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</link>
+      <link>http://localhost:1313/explore-signals-guide/explore-signals-installation/</link>
       <pubDate>Tue, 13 May 2025 10:00:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</guid>
-      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Explore Signals is available for Windows, macOS, and Linux.&#xA;No setup is required — download and run the appropriate file for your operating system.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;column&#34;&gt;&#xA;    &lt;a href=&#34;https://github.com/Mentalab-hub/explore-signals-release/releases/latest&#34;&gt;&#xA;&#x9;&#x9;&lt;img style=&#34;padding: 20px; width: 90%;&#34; src=&#34;https://wiki.mentalab.com/img/ExploreSignalsGuide/download-explore-signals-from-github.svg&#34; alt=&#34;Download Explore Signals&#34;&gt;&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/explore-signals-guide/explore-signals-installation/</guid>
+      <description>Installation Explore Signals is available for Windows, macOS, and Linux. No setup is required — download and run the appropriate file for your operating system.</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</link>
+      <link>http://localhost:1313/explore-signals-guide/explore-signals-usage/</link>
       <pubDate>Tue, 13 May 2025 10:10:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</guid>
-      <description>&lt;h2 id=&#34;loading-eegexg-data&#34;&gt;Loading EEG/ExG Data&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;Launch the application.&lt;/li&gt;&#xA;&lt;li&gt;Go to the &lt;strong&gt;File&lt;/strong&gt; menu and select one or more EEG files (&lt;code&gt;.csv&lt;/code&gt;, &lt;code&gt;.bdf&lt;/code&gt;) to load.&lt;/li&gt;&#xA;&lt;li&gt;The selected files will appear under &lt;strong&gt;Loaded Files&lt;/strong&gt; in the left panel.&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;figure style=&#34;text-align:center;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreSignalsGuide/File.png&#34; alt=&#34;Explore Signals file loading&#34; width=&#34;50%&#34;/&gt;&#xA;&lt;figcaption&gt; Explore Signals file loading.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;applying-filters&#34;&gt;Applying Filters&lt;/h2&gt;&#xA;&lt;p&gt;Navigate to the &lt;strong&gt;Filters&lt;/strong&gt; menu to apply:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;High-pass / Low-pass filters&lt;/li&gt;&#xA;&lt;li&gt;Notch filter (e.g., to remove 50/60 Hz line noise)&lt;/li&gt;&#xA;&lt;li&gt;Re-referencing options&lt;/li&gt;&#xA;&lt;li&gt;DC offset correction&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;text-align:center;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreSignalsGuide/Filter.png&#34; alt=&#34;Explore Signals filter options&#34; width=&#34;90%&#34;/&gt;&#xA;&lt;figcaption&gt; Explore Signals filter options.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;channel-selection&#34;&gt;Channel Selection&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;In the &lt;strong&gt;Channels&lt;/strong&gt; section, select or deselect specific channels.&lt;/li&gt;&#xA;&lt;li&gt;Use &lt;strong&gt;Select All&lt;/strong&gt; or &lt;strong&gt;Clear All&lt;/strong&gt; for quick selection.&lt;/li&gt;&#xA;&lt;li&gt;Only selected channels will be used for visualisation.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;text-align:center;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreSignalsGuide/Channels.png&#34; alt=&#34;Explore Signals channel selection&#34; width=&#34;50%&#34;/&gt;&#xA;&lt;figcaption&gt; Explore Signals channel selection.&lt;/figcaption&gt;&#xA;&lt;/figure&gt;&#xA;&lt;h2 id=&#34;visualization-options&#34;&gt;Visualization Options&lt;/h2&gt;&#xA;&lt;p&gt;Click the corresponding button to visualize the selected data. You can export plots as image files from the toolbar above each visualization.&lt;/p&gt;</description>
+      <guid>http://localhost:1313/explore-signals-guide/explore-signals-usage/</guid>
+      <description>Loading EEG/ExG Data Launch the application. Go to the File menu and select one or more EEG files (.csv, .bdf) to load. The selected files will appear under Loaded Files in the left panel. Explore Signals file loading.&#xD;Applying Filters Navigate to the Filters menu to apply:&#xA;High-pass / Low-pass filters Notch filter (e.g., to remove 50/60 Hz line noise) Re-referencing options DC offset correction Explore Signals filter options.&#xD;Channel Selection In the Channels section, select or deselect specific channels.</description>
     </item>
   </channel>
 </rss>

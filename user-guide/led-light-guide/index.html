@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/user-guide/led-light-guide/">
+    <link rel="canonical" href="http://localhost:1313/user-guide/led-light-guide/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -444,52 +444,52 @@
 
 <p>The Mentalab Explore amplifier was designed to provide maximum flexibility, with minimal size. This page lists how the amplifier communicates with the user via the LED diode.</p>
 <table>
-  <thead>
-      <tr>
-          <th>  LED Light</th>
-          <th>  Blinking Pattern</th>
-          <th>  Description</th>
-          <th>Example</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Red / Yellow / Green</td>
-          <td>Solid at amplifier start-up. <br> Flashes for 3 secs</td>
-          <td>Start-up in progress. <br>Colour indicates battery status (green &gt; 90%; yellow &gt; 50%; red &lt; 50%).</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#fcc203" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Blue</td>
-          <td>Blinks four times a second</td>
-          <td>Bluetooth visible and advertising.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="0.25s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Blue</td>
-          <td>Blinks once a second</td>
-          <td>Bluetooth visible and connected. <br>Online mode.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Pink</td>
-          <td>Blinks once a second</td>
-          <td>Insufficient memory.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#fc03d2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Light pink</td>
-          <td>One-time flash</td>
-          <td>Button pressed, and marker set.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="#ff8ff6" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
-      </tr>
-      <tr>
-          <td>Red</td>
-          <td>Flashes three times</td>
-          <td>Button pressed and held. <br>Turn off.</td>
-          <td><svg version="1.1" width="60" height="40"><circle fill="red" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.9;1" dur="3s" values="0;1;0;1;0;1;1;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
-      </tr>
-  </tbody>
+<thead>
+<tr>
+<th>  LED Light</th>
+<th>  Blinking Pattern</th>
+<th>  Description</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Red / Yellow / Green</td>
+<td>Solid at amplifier start-up. <br> Flashes for 3 secs</td>
+<td>Start-up in progress. <br>Colour indicates battery status (green &gt; 90%; yellow &gt; 50%; red &lt; 50%).</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="#fcc203" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Blinks four times a second</td>
+<td>Bluetooth visible and advertising.</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="0.25s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
+</tr>
+<tr>
+<td>Blue</td>
+<td>Blinks once a second</td>
+<td>Bluetooth visible and connected. <br>Online mode.</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="#0f07f2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
+</tr>
+<tr>
+<td>Pink</td>
+<td>Blinks once a second</td>
+<td>Insufficient memory.</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="#fc03d2" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.5;0.6;1" dur="1.5s" values="0;1;1;0;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
+</tr>
+<tr>
+<td>Light pink</td>
+<td>One-time flash</td>
+<td>Button pressed, and marker set.</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="#ff8ff6" stroke="none" cx="30" cy="25" r="6"></circle></svg></td>
+</tr>
+<tr>
+<td>Red</td>
+<td>Flashes three times</td>
+<td>Button pressed and held. <br>Turn off.</td>
+<td><svg version="1.1" width="60" height="40"><circle fill="red" stroke="none" cx="30" cy="25" r="6"><animate attributeName="opacity" keyTimes="0;0.1;0.2;0.3;0.4;0.5;0.9;1" dur="3s" values="0;1;0;1;0;1;1;0" repeatCount="indefinite" begin="0.1" /></circle></svg></td>
+</tr>
+</tbody>
 </table>
 
 
@@ -502,10 +502,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -513,7 +513,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 

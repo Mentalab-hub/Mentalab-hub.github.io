@@ -2,194 +2,194 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wiki.mentalab.com/integrations/interfaces/brainflow/</loc>
+    <loc>http://localhost:1313/integrations/interfaces/brainflow/</loc>
     <lastmod>2025-07-15T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/psychopy/</loc>
+    <loc>http://localhost:1313/integrations/stimulation/psychopy/</loc>
     <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</loc>
+    <loc>http://localhost:1313/explore-signals-guide/explore-signals-installation/</loc>
     <lastmod>2025-05-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/motor-imagery-bci/</loc>
+    <loc>http://localhost:1313/applications/motor-imagery-bci/</loc>
     <lastmod>2025-03-24T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</loc>
+    <loc>http://localhost:1313/explore-mobile-guide/download-installation/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/eeglab/</loc>
+    <loc>http://localhost:1313/integrations/analysis/eeglab/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/supported-software/</loc>
+    <loc>http://localhost:1313/integrations/supported-software/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/quick-links/</loc>
+    <loc>http://localhost:1313/quick-links/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/opensesame/</loc>
+    <loc>http://localhost:1313/integrations/stimulation/opensesame/</loc>
     <lastmod>2025-07-17T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/</loc>
+    <loc>http://localhost:1313/integrations/stimulation/</loc>
     <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</loc>
+    <loc>http://localhost:1313/explore-signals-guide/explore-signals-usage/</loc>
     <lastmod>2025-05-13T10:10:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/artefact-removal/</loc>
+    <loc>http://localhost:1313/applications/artefact-removal/</loc>
     <lastmod>2025-03-25T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/mne-python/</loc>
+    <loc>http://localhost:1313/integrations/analysis/mne-python/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/usage/</loc>
+    <loc>http://localhost:1313/explore-mobile-guide/usage/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/getting-started/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/operating-instructions/</loc>
+    <loc>http://localhost:1313/user-guide/operating-instructions/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/</loc>
+    <loc>http://localhost:1313/user-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-actigraphy/</loc>
+    <loc>http://localhost:1313/applications/sleep-actigraphy/</loc>
     <lastmod>2025-06-12T10:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/</loc>
+    <loc>http://localhost:1313/integrations/analysis/</loc>
     <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/interfaces/</loc>
+    <loc>http://localhost:1313/integrations/interfaces/</loc>
     <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/testing/</loc>
+    <loc>http://localhost:1313/explore-mobile-guide/testing/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/event-triggers/</loc>
+    <loc>http://localhost:1313/event-triggers/</loc>
     <lastmod>2023-02-28T13:00:19+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</loc>
+    <loc>http://localhost:1313/user-guide/dry-electrode-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/usage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</loc>
+    <loc>http://localhost:1313/integrations/analysis/fieldtrip/</loc>
     <lastmod>2025-07-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/neuropype/</loc>
+    <loc>http://localhost:1313/integrations/analysis/neuropype/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/</loc>
+    <loc>http://localhost:1313/applications/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/photodiode-event-trigger/</loc>
+    <loc>http://localhost:1313/applications/photodiode-event-trigger/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/visualize/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/visualize/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/led-light-guide/</loc>
+    <loc>http://localhost:1313/user-guide/led-light-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/besa-research/</loc>
+    <loc>http://localhost:1313/integrations/analysis/besa-research/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/power-bands/</loc>
+    <loc>http://localhost:1313/applications/power-bands/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/</loc>
+    <loc>http://localhost:1313/integrations/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/record/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/record/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/button-guide/</loc>
+    <loc>http://localhost:1313/user-guide/button-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/faqs/</loc>
+    <loc>http://localhost:1313/faqs/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/impedance/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/impedance/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
+    <loc>http://localhost:1313/user-guide/cap-size-guide/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/lsl/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/lsl/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/other/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/other/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/ssvep/</loc>
+    <loc>http://localhost:1313/applications/ssvep/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
+    <loc>http://localhost:1313/user-guide/improving-impedances/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
+    <loc>http://localhost:1313/applications/easi-ecg/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</loc>
+    <loc>http://localhost:1313/explore-desktop-guide/troubleshooting/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/explorepy-commands/</loc>
+    <loc>http://localhost:1313/user-guide/explorepy-commands/</loc>
     <lastmod>2022-01-25T16:17:02+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/</loc>
+    <loc>http://localhost:1313/explore-mobile-guide/</loc>
     <lastmod>2024-11-12T14:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</loc>
+    <loc>http://localhost:1313/user-guide/cleaning-disinfection-storage/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/p300/</loc>
+    <loc>http://localhost:1313/applications/p300/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/</loc>
+    <loc>http://localhost:1313/explore-signals-guide/</loc>
     <lastmod>2025-05-13T10:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-recording-protocol/</loc>
+    <loc>http://localhost:1313/applications/sleep-recording-protocol/</loc>
     <lastmod>2023-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/safety-recommendations/</loc>
+    <loc>http://localhost:1313/user-guide/safety-recommendations/</loc>
     <lastmod>2022-01-26T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-analysis/</loc>
+    <loc>http://localhost:1313/applications/sleep-analysis/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/ecg-analysis/</loc>
+    <loc>http://localhost:1313/applications/ecg-analysis/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/eegsynth/</loc>
+    <loc>http://localhost:1313/applications/eegsynth/</loc>
     <lastmod>2024-08-22T14:29:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/spectrogram/</loc>
+    <loc>http://localhost:1313/applications/spectrogram/</loc>
     <lastmod>2025-05-08T12:54:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/applications/eeg-to-lamp/</loc>
+    <loc>http://localhost:1313/applications/eeg-to-lamp/</loc>
     <lastmod>2025-06-03T12:54:00+01:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/</loc>
+    <loc>http://localhost:1313/</loc>
     <lastmod>2025-07-17T10:25:19+00:00</lastmod>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</loc>
+    <loc>http://localhost:1313/integrations/analysis/6-brainstorm/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/1-labbench/</loc>
+    <loc>http://localhost:1313/integrations/hardware/1-labbench/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</loc>
+    <loc>http://localhost:1313/integrations/hardware/2-plux-biosignals/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/</loc>
+    <loc>http://localhost:1313/integrations/hardware/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/3-e-prime/</loc>
+    <loc>http://localhost:1313/integrations/stimulation/3-e-prime/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/4-presentation/</loc>
+    <loc>http://localhost:1313/integrations/stimulation/4-presentation/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/categories/</loc>
+    <loc>http://localhost:1313/categories/</loc>
   </url><url>
-    <loc>https://wiki.mentalab.com/tags/</loc>
+    <loc>http://localhost:1313/tags/</loc>
   </url>
 </urlset>
