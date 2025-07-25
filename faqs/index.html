@@ -544,11 +544,11 @@
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_7c3a5c70ee" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_9b4b598282" aria-expanded="false">
     What hardware signal filters are used in the Explore system?
 </button>
 
-<div class="collapse" id="collapse_7c3a5c70ee">
+<div class="collapse" id="collapse_9b4b598282">
   <div class="card card-body">
      
 Our hardware applies a first order differential low-pass filter as an anti-aliasing filter with a cut-off frequency of 3.6kHz. The noise-shaping converter includes a digital third-order, low-pass, sinc filter with variable-decimation rate depending on the data rate. Its -3dB-Bandwidth is roughly a quarter of the output data rate. ExG data are always recorded as raw data, giving you full flexibility for applying further filters in post- or real-time processing.
@@ -558,11 +558,11 @@ Our hardware applies a first order differential low-pass filter as an anti-alias
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_c2c0b6bc69" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_a9bf3dcee4" aria-expanded="false">
     How do the orientation sensors work?
 </button>
 
-<div class="collapse" id="collapse_c2c0b6bc69">
+<div class="collapse" id="collapse_a9bf3dcee4">
   <div class="card card-body">
      <p>
 Mentalab Explore devices have a built in IMU (inertial measurement unit) containing an accelerometer, a gyroscope, and a magnetometer with three axes each. Additionally, the Explore devices calculate and stream quaternions based on the accelerometer and gyroscope data.<br><br>
@@ -683,11 +683,11 @@ Try moving and turning the device while visualizing the orientation data in <a h
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_e40bed36b4" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_2fd81040eb" aria-expanded="false">
     Is there a way to measure impedances?
 </button>
 
-<div class="collapse" id="collapse_e40bed36b4">
+<div class="collapse" id="collapse_2fd81040eb">
   <div class="card card-body">
      <p> Impedance measurement is supported through our graphical user software
 <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>,
@@ -820,11 +820,11 @@ our open-source Python API <a href="https://explorepy.readthedocs.io">explorepy<
 <br>
 
 
-<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_1b4c8983e4" aria-expanded="false">
+<button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapse_79a30f1c0d" aria-expanded="false">
     Can one channel act as a reference for a subset of other channels?
 </button>
 
-<div class="collapse" id="collapse_1b4c8983e4">
+<div class="collapse" id="collapse_79a30f1c0d">
   <div class="card card-body">
      <p>This cannot be done in <a href="https://explorepy.readthedocs.io"><code>explorepy</code></a> and <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a> directly, but it can be achieved with basic post-processing. Simply subtract the signal of the second reference channel from the subset of other channels. As a result, the values for these other channels will look as if they were recorded against the second reference.
 A real-time visualization can be achieved using <a href="https://www.adinstruments.com/products/labchart/lightning">LabChart Lightning</a>. </p> 
