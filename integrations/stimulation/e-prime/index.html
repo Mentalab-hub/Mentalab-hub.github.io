@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+<html><head>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="http://localhost:1313/integrations/stimulation/e-prime/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/stimulation/e-prime/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
+    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
+    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
 
     
 
@@ -238,10 +238,10 @@
                     E-Prime®
                 </a>
         </li>
-        <li data-nav-id="/integrations/stimulation/presentation/" class="nav-item my-1">
+        <li data-nav-id="/integrations/stimulation/4-presentation/" class="nav-item my-1">
                 
-                 <a href="/integrations/stimulation/presentation/" class="nav-link p-0">
-                    Presentation®
+                 <a href="/integrations/stimulation/4-presentation/" class="nav-link p-0">
+                    
                 </a>
         </li>
         </ul>
@@ -284,6 +284,38 @@
         <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/interfaces/brainflow/" class="nav-item my-1">
+                
+                 <a href="/integrations/interfaces/brainflow/" class="nav-link p-0">
+                    BrainFlow
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/hardware/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/hardware/"><h6></h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/hardware/1-labbench/" class="nav-item my-1">
+                
+                 <a href="/integrations/hardware/1-labbench/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        <li data-nav-id="/integrations/hardware/2-plux-biosignals/" class="nav-item my-1">
+                
+                 <a href="/integrations/hardware/2-plux-biosignals/" class="nav-link p-0">
                     
                 </a>
         </li>
@@ -402,7 +434,18 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+      </ul>
+    </li>
+    <li><a href="#integrating-with-e-prime-via-lsl">Integrating with E-Prime® via LSL</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
@@ -410,9 +453,35 @@
 
 <h1>E-Prime®</h1>
 
-<p>Commercial software</p>
-<p><a href="https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955">https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955</a></p>
-<p><a href="https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file">https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file</a></p>
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li><strong>Mentalab Explore Pro Device</strong>: An Explore Pro biosignal acquisition system.</li>
+<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from E-Prime with the Explore device&rsquo;s data stream.</li>
+<li><strong>Computer</strong>: To run E-Prime, LSL, and data recording software for the Explore device.</li>
+</ul>
+<h3 id="software">Software</h3>
+<ul>
+<li>E-Prime® 3</li>
+<li>E-Prime® 3 LSL package file</li>
+<li>E-Prime® 3 LSL samples</li>
+</ul>
+<h3 id="how-it-works">How it Works</h3>
+<ol>
+<li><strong>E-Prime</strong>: Runs experiments and can generate event markers during an experiment at onset time, response time or current time</li>
+<li><strong>LSL package file</strong>: The LabStreamingLayer package file provides real-time streaming of data (including markers) with precise timestamps for E-Prime</li>
+<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
+</ol>
+<h2 id="integrating-with-e-prime-via-lsl">Integrating with E-Prime® via LSL</h2>
+<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>To integrate with E-Prime® via LSL, follow the information published for E-Prime® on the PST website and the ReadMe on the GitHub repository for the LSL package file to add LSL functionality to your experiment set-ups:</p>
+<ul>
+<li><a href="https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955">LSL info page on the PST website</a></li>
+<li><a href="https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file">GitHub repository containing LSL package file for E-Prime®</a></li>
+</ul>
+<p>The installation ReadMe and the LSL samples in the GitHub repository contain information on how to send markers via LSL at an object&rsquo;s OnsetTime, Stimulus response time and at the current time. The markers can be used to synchronize with the Explore device if the device itself is synchronized using the HyperSync suite.</p>
+<p>Follow the installation ReadMe to add LSL markers to your experiment set-up according to your needs. The markers will be available as an LSL stream from any other script or software that makes use of LSL, like LabRecorder or custom scripts using LSL.</p>
+<p>You can record the markers via LabRecorder (via the &ldquo;E-Prime&rdquo; stream as explained in the installation ReadMe) alongside the EXG datastream (named after the Explore device) from the synchronized Explore amplifier to record synchronized markers from an experiment and EXG data.</p>
 
 
     
@@ -424,10 +493,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="http://localhost:1313/lib/jquery.min.js"></script> 
-<script src="http://localhost:1313/lib/popper.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
+<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
 
-<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
+<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -435,7 +504,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "http:\/\/localhost:1313\/";
+    var baseurl = "https:\/\/wiki.mentalab.com\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
