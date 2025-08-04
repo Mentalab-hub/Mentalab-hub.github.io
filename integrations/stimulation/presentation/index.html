@@ -244,6 +244,18 @@
                     Presentation®
                 </a>
         </li>
+        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/psychtoolbox/" class="nav-link p-0">
+                    Psychtoolbox
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/5-neuropype-experiment-recorder/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/5-neuropype-experiment-recorder/" class="nav-link p-0">
+                    
+                </a>
+        </li>
         </ul>
     </li>
     <li data-nav-id="/integrations/analysis/" class="nav-item my-1 haschildren
@@ -284,6 +296,38 @@
         <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/interfaces/brainflow/" class="nav-item my-1">
+                
+                 <a href="/integrations/interfaces/brainflow/" class="nav-link p-0">
+                    BrainFlow
+                </a>
+        </li>
+        </ul>
+    </li>
+    <li data-nav-id="/integrations/hardware/" class="nav-item my-1 haschildren
+        ">
+        
+        <a class="nav-link p-0" href="/integrations/hardware/"><h6></h6></a>
+        <ul class="list-unstyled ml-2">
+        <li data-nav-id="/integrations/hardware/1-labbench/" class="nav-item my-1">
+                
+                 <a href="/integrations/hardware/1-labbench/" class="nav-link p-0">
+                    
+                </a>
+        </li>
+        <li data-nav-id="/integrations/hardware/2-plux-biosignals/" class="nav-item my-1">
+                
+                 <a href="/integrations/hardware/2-plux-biosignals/" class="nav-link p-0">
                     
                 </a>
         </li>
@@ -402,7 +446,19 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+      </ul>
+    </li>
+    <li><a href="#integrating-with-presentation-via-lsl">Integrating with Presentation® via LSL</a></li>
+    <li><a href="#alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
@@ -410,11 +466,40 @@
 
 <h1>Presentation®</h1>
 
-<p>Commercial software.</p>
-<p>Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.</p>
-<p>Then follow the Presentation® guidelines on sending markers via LSL.</p>
-<p><a href="https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm">https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm</a></p>
-
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="hardware">Hardware</h3>
+<ul>
+<li><strong>Mentalab Explore Pro Device</strong>: An Explore Pro biosignal acquisition system.</li>
+<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from Presentation® with the Explore device&rsquo;s data stream.</li>
+<li><strong>Computer</strong>: To run Presentation®, LSL, and data recording software for the Explore device.</li>
+</ul>
+<h3 id="software">Software</h3>
+<ul>
+<li><a href="https://www.neurobs.com/menu_presentation/menu_features/features_overview">Presentation®</a></li>
+<li><a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> or alternative software that lets you record LSL streams</li>
+</ul>
+<h3 id="how-it-works">How it Works</h3>
+<ol>
+<li><strong>Presentation®</strong>: Runs experiments and can send event information as a Marker stream via LSL (including information about event type, the event code and uncertainty for the event)</li>
+<li><strong>Built-in LSL integration</strong>: The built-in LabStreamingLayer integration provides real-time streaming of event data with precise timestamps for Presentation®</li>
+<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivered to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
+</ol>
+<h2 id="integrating-with-presentation-via-lsl">Integrating with Presentation® via LSL</h2>
+<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>To use LSL with Presentation®, you can enable sending event data to LSL in the <strong>Settings</strong> in the Presentation® GUI. The option is listed under the <strong>General</strong> section. Use the <strong>Properties</strong> to set options for the LSL integration like stream name and what event data to send. When you run an experiment, make sure to open the LSL stream manually (by clicking <strong>Open</strong>) or enable the option to open the stream outlet when an experiment is loaded in the LSL settings!</p>
+<p>The event data will be available as an LSL Marker stream to any other script or software that makes use of LSL, like LabRecorder or custom scripts using LSL.</p>
+<p>You can view available LSL streams and record the Marker stream via LabRecorder (using the stream name set in the LSL properties as described above) alongside the EXG datastream (named after the Explore device) from the synchronized Explore amplifier to record synchronized markers from an experiment and EXG data.</p>
+<p>For more information on LSL usage with Presentation®, consult the extensive online manual for Presentation®:</p>
+<ul>
+<li><a href="https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm">Information on the LSL settings in Presentation®</a></li>
+<li><a href="https://www.neurobs.com/pres_docs/html/index.html">Overview of the Presentation® Help Guide</a></li>
+</ul>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
+<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="http://localhost:1313/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<br>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<br>
 
     
 

@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="http://localhost:1313/explore-desktop-guide/record/">
+    <link rel="canonical" href="http://localhost:1313/integrations/stimulation/psychtoolbox/">
 
     <title>
         
-        Recording | Wiki
+        Psychtoolbox | Wiki
         
     </title>
 
@@ -204,7 +204,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -215,7 +215,7 @@
                     Supported Software
                 </a>
         </li>
-    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/stimulation/"><h6>Stimulation</h6></a>
@@ -244,7 +244,7 @@
                     Presentation®
                 </a>
         </li>
-        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1">
+        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1 active">
                 
                  <a href="/integrations/stimulation/psychtoolbox/" class="nav-link p-0">
                     Psychtoolbox
@@ -340,7 +340,7 @@
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
     </li>
-    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
@@ -363,7 +363,7 @@
                     Visualization
                 </a>
         </li>
-        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1 active">
+        <li data-nav-id="/explore-desktop-guide/record/" class="nav-item my-1">
                 
                  <a href="/explore-desktop-guide/record/" class="nav-link p-0">
                     Recording
@@ -448,7 +448,15 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#event-markers">Event markers</a></li>
+    <li><a href="#prerequisites">Prerequisites</a>
+      <ul>
+        <li><a href="#hardware">Hardware</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#how-it-works">How it Works</a></li>
+      </ul>
+    </li>
+    <li><a href="#integrating-with-psychtoolbox-via-lsl">Integrating with Psychtoolbox via LSL</a></li>
+    <li><a href="#alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</a></li>
   </ul>
 </nav>
 </div>
@@ -456,45 +464,58 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Recording</h1>
+<h1>Psychtoolbox</h1>
 
-<p>Record data in real time to EDF (BDF+) or CSV by selecting <strong>Record</strong> on the Visualization page.</p>
-<p>A pop-up will allow you to configure your recording.</p>
-<p>Settings include:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<h3 id="hardware">Hardware</h3>
 <ul>
-<li>File format – select the output file type (EDF or CSV):
+<li><strong>Mentalab Explore Pro Device</strong>: An Explore Pro biosignal acquisition system.</li>
+<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from Presentation® with the Explore device&rsquo;s data stream.</li>
+<li><strong>Computer</strong>: To run Psychtoolbox, LSL, and data recording software for the Explore device.</li>
+</ul>
+<h3 id="software">Software</h3>
 <ul>
-<li>CSV mode generates an extra file for the marker events</li>
-<li>BDF mode records data in BDF+ format (in 24-bit resolution)</li>
+<li><a href="http://psychtoolbox.org/">Psychtoolbox</a></li>
+<li><a href="https://de.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">Matlab</a></li>
+<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab/tree/master">LSL for Matlab</a></li>
+<li><a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> or alternative software that lets you record LSL streams</li>
 </ul>
-</li>
-<li>Folder and name prefix – select where to store files and the file prefix.	For example, if the prefix is <code>test</code>, data will record in three separate files: <code>test_ExG.csv</code>, <code>test_ORN.csv</code>, and <code>test_Marker.csv</code>. These files will contain ExG data, orientation data, and event markers.</li>
-<li>Recording time (in seconds) – set the duration of the recording. You can stop recording at any time by clicking <strong>Stop</strong>.- Filters.</li>
+<h3 id="how-it-works">How it Works</h3>
+<ol>
+<li><strong>Psychtoolbox</strong>: Runs experiments from user-written Matlab code and provides access to low-level hardware features to ensure very precise timing (sub-millisecond) and versatile usage</li>
+<li><strong>Matlab</strong>: Psychtoolbox requires Matlab to run</li>
+<li><strong>LSL for Matlab</strong>: The Matlab release for LSL allows users to open and view LSL streams to pull or push data (like Markers) from within Matlab scripts</li>
+<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
+</ol>
+<h2 id="integrating-with-psychtoolbox-via-lsl">Integrating with Psychtoolbox via LSL</h2>
+<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>In order to synchronize ExG data from the Explore amplifier with event marker data from Psychtoolbox, you can open an LSL stream in your Matlab script to push the event marker data to. Make sure to add the path to the liblsl-Matlab directory containing the Matlab interface for LSL if your script is running in any other directory.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% add path to liblsl-Matlab (necessary if the current working directory is not the liblsl-Matlab directory)</span>
+</span></span><span style="display:flex;"><span>addpath(genpath(<span style="color:#e6db74">&#39;path/to/liblsl-Matlab&#39;</span>));
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% load the library</span>
+</span></span><span style="display:flex;"><span>lib = lsl_loadlib();
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">% create a stream info and outlet based on the stream info</span>
+</span></span><span style="display:flex;"><span>stream_name = <span style="color:#e6db74">&#39;MyMarkerStream&#39;</span>;  <span style="color:#75715e">% set the marker stream name according to your needs</span>
+</span></span><span style="display:flex;"><span>info = lsl_streaminfo(lib,stream_name,<span style="color:#e6db74">&#39;Markers&#39;</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#39;cf_string&#39;</span>,<span style="color:#e6db74">&#39;myuniquesourceid23443&#39;</span>);
+</span></span><span style="display:flex;"><span>marker_outlet = lsl_outlet(info);
+</span></span></code></pre></div><p>This outlet can and should be reused in your experiments. When an event marker needs to be created, push the sample using your previously created outlet. Note that LSL will timestamp the sample when you push it so <code>push_sample</code> should be called as close to the event (temporally and in code) as possible.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% push a marker to the marker_outlet with the current LSL time</span>
+</span></span><span style="display:flex;"><span>marker_string = <span style="color:#e6db74">&#39;TestMarker&#39;</span>;  <span style="color:#75715e">% set the marker string value according to your needs</span>
+</span></span><span style="display:flex;"><span>marker_outlet.push_sample({marker_string});
+</span></span></code></pre></div><p>You can view and record the marker stream (named according to your given <code>stream_name</code>) using LabRecorder alongside the EXG datastream (named after the Explore device) from the synchronized Explore amplifier to record synchronized markers from an experiment and EXG data.</p>
+<p>If you need more information on how to use LSL in Matlab, please refer to the GitHub repository for LSL for Matlab and their examples:</p>
+<ul>
+<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab">LSL for Matlab repository containing installation instructions</a></li>
+<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab/tree/master/examples">Examples showcasing how to use LSL in Matlab</a></li>
 </ul>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/recording_popup.png" alt="The recording settings of Explore Desktop" width="400"/>
-<figcaption> Configure your recording using the pop-up. </figcaption>
-</figure>
-
-<div class="alert alert-info" role="alert">
-    You can inspect ongoing recording while recording. Go to Tools-&gt; Inspect ongoing recording. Then zoom in/out with mouse hover on X or Y axis
-</div>
-
-
-<div class="alert alert-info" role="alert">
-    Because environmental factors, like temperature, can affect your sampling rate, we recommend computing the sampling rate of your recorded data. If you find a deviation between the sampling rate you calculate and Explore Desktop’s sampling rate, resample your signal to correct for drifts. The timestamps in the CSV/EDF file can be used to compute the resampling factor.
-</div>
-
-
-<div class="alert alert-info" role="alert">
-    If you are setting markers in your recording, record to CSV. Alternatively, push data to LSL and record with LabRecorder. EDF cannot guarantee precise marker timings.
-</div>
-
-<h2 id="event-markers">Event markers</h2>
-<p>One method to generate a marker event is to press the button on your Mentalab Explore device. Alternatively, you can set event markers using the <strong>Set Marker</strong> button.</p>
-<p>Marker events display as red vertical lines in the visualization page. A corresponding event code will be shown next to the line.</p>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
+<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="http://localhost:1313/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
-
+<br>
 
     
 

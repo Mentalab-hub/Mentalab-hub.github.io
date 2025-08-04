@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/stimulation/opensesame/">
+    <link rel="canonical" href="http://localhost:1313/integrations/stimulation/opensesame/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -238,9 +238,21 @@
                     E-Prime®
                 </a>
         </li>
-        <li data-nav-id="/integrations/stimulation/4-presentation/" class="nav-item my-1">
+        <li data-nav-id="/integrations/stimulation/presentation/" class="nav-item my-1">
                 
-                 <a href="/integrations/stimulation/4-presentation/" class="nav-link p-0">
+                 <a href="/integrations/stimulation/presentation/" class="nav-link p-0">
+                    Presentation®
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/psychtoolbox/" class="nav-link p-0">
+                    Psychtoolbox
+                </a>
+        </li>
+        <li data-nav-id="/integrations/stimulation/5-neuropype-experiment-recorder/" class="nav-item my-1">
+                
+                 <a href="/integrations/stimulation/5-neuropype-experiment-recorder/" class="nav-link p-0">
                     
                 </a>
         </li>
@@ -583,6 +595,7 @@
 <li>Use <a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> and select both the OpenSesame marker stream and your ExG data stream.</li>
 <li>Optional: Use our LSL listener python script (see below) to check the received values in real-time.</li>
 </ul>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
 <h2 id="optional-python-script-for-listening-to-lsl-stream">Optional: Python Script for Listening to LSL Stream</h2>
 <p>Create a separate Python script to monitor the LSL stream:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInlet, resolve_streams
@@ -619,8 +632,10 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error receiving data: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span></code></pre></div><h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="http://localhost:1313/event-triggers/">Event Triggers</a> page for further information.</p>
-
+<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="http://localhost:1313/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<br>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<br>
 
     
 
@@ -631,10 +646,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -642,7 +657,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 
