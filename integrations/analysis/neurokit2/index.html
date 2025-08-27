@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/stimulation/psychtoolbox/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/neurokit2/">
 
     <title>
         
-        Psychtoolbox | Wiki
+        NeuroKit2 | Wiki
         
     </title>
 
@@ -215,7 +215,7 @@
                     Supported Software
                 </a>
         </li>
-    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/integrations/stimulation/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/stimulation/"><h6>Stimulation</h6></a>
@@ -244,7 +244,7 @@
                     Presentation®
                 </a>
         </li>
-        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/stimulation/psychtoolbox/" class="nav-item my-1">
                 
                  <a href="/integrations/stimulation/psychtoolbox/" class="nav-link p-0">
                     Psychtoolbox
@@ -258,7 +258,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
@@ -293,7 +293,7 @@
                     BESA Research
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/neurokit2/" class="nav-item my-1">
+        <li data-nav-id="/integrations/analysis/neurokit2/" class="nav-item my-1 active">
                 
                  <a href="/integrations/analysis/neurokit2/" class="nav-link p-0">
                     NeuroKit2
@@ -454,15 +454,14 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#prerequisites">Prerequisites</a>
+    <li>
       <ul>
-        <li><a href="#hardware">Hardware</a></li>
-        <li><a href="#software">Software</a></li>
-        <li><a href="#how-it-works">How it Works</a></li>
+        <li><a href="#1-mentalab-csv-data-import">1. Mentalab CSV Data Import</a></li>
+        <li><a href="#2-eeg-preprocessing">2. EEG Preprocessing</a></li>
+        <li><a href="#4-eeg-frequency-band-extraction">4. EEG Frequency Band Extraction</a></li>
+        <li><a href="#4-power-spectral-density-analysis">4. Power Spectral Density Analysis</a></li>
       </ul>
     </li>
-    <li><a href="#integrating-with-psychtoolbox-via-lsl">Integrating with Psychtoolbox via LSL</a></li>
-    <li><a href="#alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</a></li>
   </ul>
 </nav>
 </div>
@@ -470,58 +469,67 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Psychtoolbox</h1>
+<h1>NeuroKit2</h1>
 
-<h2 id="prerequisites">Prerequisites</h2>
-<h3 id="hardware">Hardware</h3>
-<ul>
-<li><strong>Mentalab Explore Pro Device</strong>: An Explore Pro biosignal acquisition system.</li>
-<li><strong>Mentalab Hypersync Add-on</strong>: This hardware is essential for accurately synchronizing LSL markers from Presentation® with the Explore device&rsquo;s data stream.</li>
-<li><strong>Computer</strong>: To run Psychtoolbox, LSL, and data recording software for the Explore device.</li>
-</ul>
-<h3 id="software">Software</h3>
-<ul>
-<li><a href="http://psychtoolbox.org/">Psychtoolbox</a></li>
-<li><a href="https://de.mathworks.com/products/matlab.html?s_tid=hp_products_matlab">Matlab</a></li>
-<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab/tree/master">LSL for Matlab</a></li>
-<li><a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> or alternative software that lets you record LSL streams</li>
-</ul>
-<h3 id="how-it-works">How it Works</h3>
-<ol>
-<li><strong>Psychtoolbox</strong>: Runs experiments from user-written Matlab code and provides access to low-level hardware features to ensure very precise timing (sub-millisecond) and versatile usage</li>
-<li><strong>Matlab</strong>: Psychtoolbox requires Matlab to run</li>
-<li><strong>LSL for Matlab</strong>: The Matlab release for LSL allows users to open and view LSL streams to pull or push data (like Markers) from within Matlab scripts</li>
-<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
-</ol>
-<h2 id="integrating-with-psychtoolbox-via-lsl">Integrating with Psychtoolbox via LSL</h2>
-<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
-<p>In order to synchronize ExG data from the Explore amplifier with event marker data from Psychtoolbox, you can open an LSL stream in your Matlab script to push the event marker data to. Make sure to add the path to the liblsl-Matlab directory containing the Matlab interface for LSL if your script is running in any other directory.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% add path to liblsl-Matlab (necessary if the current working directory is not the liblsl-Matlab directory)</span>
-</span></span><span style="display:flex;"><span>addpath(genpath(<span style="color:#e6db74">&#39;path/to/liblsl-Matlab&#39;</span>));
+<p>This document provides a simple guide for analyzing and visualizing Mentalab Explore ExG recordings using NeuroKit2.</p>
+<h3 id="1-mentalab-csv-data-import">1. Mentalab CSV Data Import</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">load_exg_data</span>(csv_path, channels<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>, fs<span style="color:#f92672">=</span><span style="color:#66d9ef">None</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Load and prepare ExG data from Mentalab Explore CSV file.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Load CSV file</span>
+</span></span><span style="display:flex;"><span>    df <span style="color:#f92672">=</span> pd<span style="color:#f92672">.</span>read_csv(csv_path)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Validate required columns</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#e6db74">&#34;TimeStamp&#34;</span> <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">&#34;CSV must contain a &#39;TimeStamp&#39; column in seconds.&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Calculate relative time</span>
+</span></span><span style="display:flex;"><span>    time <span style="color:#f92672">=</span> df[<span style="color:#e6db74">&#34;TimeStamp&#34;</span>] <span style="color:#f92672">-</span> df[<span style="color:#e6db74">&#34;TimeStamp&#34;</span>]<span style="color:#f92672">.</span>iloc[<span style="color:#ae81ff">0</span>]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Get channels to analyze</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> channels <span style="color:#f92672">is</span> <span style="color:#66d9ef">None</span>:
+</span></span><span style="display:flex;"><span>        chans <span style="color:#f92672">=</span> [c <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns <span style="color:#66d9ef">if</span> c <span style="color:#f92672">!=</span> <span style="color:#e6db74">&#34;TimeStamp&#34;</span>]
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">else</span>:
+</span></span><span style="display:flex;"><span>        chans <span style="color:#f92672">=</span> [c <span style="color:#66d9ef">for</span> c <span style="color:#f92672">in</span> channels <span style="color:#66d9ef">if</span> c <span style="color:#f92672">in</span> df<span style="color:#f92672">.</span>columns]
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> chans:
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">raise</span> <span style="color:#a6e22e">ValueError</span>(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;No channels found. Available: </span><span style="color:#e6db74">{</span>list(df<span style="color:#f92672">.</span>columns)<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;[INFO] Analyzing </span><span style="color:#e6db74">{</span>len(chans)<span style="color:#e6db74">}</span><span style="color:#e6db74"> channels: </span><span style="color:#e6db74">{</span>chans<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> df, time, chans
+</span></span></code></pre></div><h3 id="2-eeg-preprocessing">2. EEG Preprocessing</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">filter_eeg_signal</span>(signal, sampling_rate, lowcut<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, highcut<span style="color:#f92672">=</span><span style="color:#ae81ff">35.0</span>, notch_freq<span style="color:#f92672">=</span><span style="color:#ae81ff">50.0</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Apply standard EEG preprocessing using NeuroKit2.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Bandpass filter (0.5-35 Hz) - removes drift and high-freq noise</span>
+</span></span><span style="display:flex;"><span>    signal_bandpass <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(signal, sampling_rate<span style="color:#f92672">=</span>sampling_rate,
+</span></span><span style="display:flex;"><span>                                      lowcut<span style="color:#f92672">=</span>lowcut, highcut<span style="color:#f92672">=</span>highcut,
+</span></span><span style="display:flex;"><span>                                      method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>, order<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e"># Notch filter (50 Hz) - removes power line interference using NeuroKit2</span>
+</span></span><span style="display:flex;"><span>    signal_filtered <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(signal_bandpass, sampling_rate<span style="color:#f92672">=</span>sampling_rate,
+</span></span><span style="display:flex;"><span>                                      lowcut<span style="color:#f92672">=</span>notch_freq<span style="color:#f92672">-</span><span style="color:#ae81ff">2</span>, highcut<span style="color:#f92672">=</span>notch_freq<span style="color:#f92672">+</span><span style="color:#ae81ff">2</span>,
+</span></span><span style="display:flex;"><span>                                      method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>, order<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>)
+</span></span><span style="display:flex;"><span>    
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> signal_filtered
+</span></span></code></pre></div><h3 id="4-eeg-frequency-band-extraction">4. EEG Frequency Band Extraction</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Extract frequency bands using NeuroKit2</span>
+</span></span><span style="display:flex;"><span>delta <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(ch0_signal, sampling_rate<span style="color:#f92672">=</span>fs, lowcut<span style="color:#f92672">=</span><span style="color:#ae81ff">0.5</span>, highcut<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>)
+</span></span><span style="display:flex;"><span>theta <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(ch0_signal, sampling_rate<span style="color:#f92672">=</span>fs, lowcut<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, highcut<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>)
+</span></span><span style="display:flex;"><span>alpha <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(ch0_signal, sampling_rate<span style="color:#f92672">=</span>fs, lowcut<span style="color:#f92672">=</span><span style="color:#ae81ff">8</span>, highcut<span style="color:#f92672">=</span><span style="color:#ae81ff">13</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>)
+</span></span><span style="display:flex;"><span>beta <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_filter(ch0_signal, sampling_rate<span style="color:#f92672">=</span>fs, lowcut<span style="color:#f92672">=</span><span style="color:#ae81ff">13</span>, highcut<span style="color:#f92672">=</span><span style="color:#ae81ff">30</span>, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;butterworth&#34;</span>)
+</span></span></code></pre></div><figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/neurokit2/demo_ExG_frequency_bands.png" alt="View of the Besa Research Signal view and source estimation" width="100%"/>
+</figure>
+<h3 id="4-power-spectral-density-analysis">4. Power Spectral Density Analysis</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># PSD using NeuroKit2 (Welch method)</span>
+</span></span><span style="display:flex;"><span>psd0 <span style="color:#f92672">=</span> nk<span style="color:#f92672">.</span>signal_psd(sig0, sampling_rate<span style="color:#f92672">=</span>fs, method<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;welch&#34;</span>, show<span style="color:#f92672">=</span><span style="color:#66d9ef">False</span>)
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% load the library</span>
-</span></span><span style="display:flex;"><span>lib = lsl_loadlib();
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e">% create a stream info and outlet based on the stream info</span>
-</span></span><span style="display:flex;"><span>stream_name = <span style="color:#e6db74">&#39;MyMarkerStream&#39;</span>;  <span style="color:#75715e">% set the marker stream name according to your needs</span>
-</span></span><span style="display:flex;"><span>info = lsl_streaminfo(lib,stream_name,<span style="color:#e6db74">&#39;Markers&#39;</span>,<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>,<span style="color:#e6db74">&#39;cf_string&#39;</span>,<span style="color:#e6db74">&#39;myuniquesourceid23443&#39;</span>);
-</span></span><span style="display:flex;"><span>marker_outlet = lsl_outlet(info);
-</span></span></code></pre></div><p>This outlet can and should be reused in your experiments. When an event marker needs to be created, push the sample using your previously created outlet. Note that LSL will timestamp the sample when you push it so <code>push_sample</code> should be called as close to the event (temporally and in code) as possible.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% push a marker to the marker_outlet with the current LSL time</span>
-</span></span><span style="display:flex;"><span>marker_string = <span style="color:#e6db74">&#39;TestMarker&#39;</span>;  <span style="color:#75715e">% set the marker string value according to your needs</span>
-</span></span><span style="display:flex;"><span>marker_outlet.push_sample({marker_string});
-</span></span></code></pre></div><p>You can view and record the marker stream (named according to your given <code>stream_name</code>) using LabRecorder alongside the EXG datastream (named after the Explore device) from the synchronized Explore amplifier to record synchronized markers from an experiment and EXG data.</p>
-<p>If you need more information on how to use LSL in Matlab, please refer to the GitHub repository for LSL for Matlab and their examples:</p>
-<ul>
-<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab">LSL for Matlab repository containing installation instructions</a></li>
-<li><a href="https://github.com/labstreaminglayer/liblsl-Matlab/tree/master/examples">Examples showcasing how to use LSL in Matlab</a></li>
-</ul>
-<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
-<h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
-<br>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
-<br>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># Plot PSD</span>
+</span></span><span style="display:flex;"><span>axes[<span style="color:#ae81ff">1</span>]<span style="color:#f92672">.</span>semilogy(psd0[<span style="color:#e6db74">&#34;Frequency&#34;</span>], psd0[<span style="color:#e6db74">&#34;Power&#34;</span>])
+</span></span></code></pre></div><figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/neurokit2/demo_ExG_multich_psd.png" alt="View of the Besa Research Signal view and source estimation" width="100%"/>
+</figure>
+
 
     
 
