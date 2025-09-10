@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/besa-research/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/interfaces/lsl/">
 
     <title>
         
-        BESA Research | Wiki
+        Lab Streaming Layer(LSL) | Wiki
         
     </title>
 
@@ -258,7 +258,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
@@ -287,7 +287,7 @@
                     NeuroPype
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/besa-research/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/analysis/besa-research/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/besa-research/" class="nav-link p-0">
                     BESA Research
@@ -307,12 +307,12 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/interfaces/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/interfaces/"><h6>Interfaces</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/integrations/interfaces/lsl/" class="nav-item my-1">
+        <li data-nav-id="/integrations/interfaces/lsl/" class="nav-item my-1 active">
                 
                  <a href="/integrations/interfaces/lsl/" class="nav-link p-0">
                     Lab Streaming Layer(LSL)
@@ -460,8 +460,9 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#how-to-import-mentalab-data-into-besa">How to Import Mentalab Data into BESA</a></li>
-    <li><a href="#considerations-for-analysis">Considerations for Analysis</a></li>
+    <li><a href="#lsl-with-mentalab-hypersync">LSL with Mentalab HyperSync</a></li>
+    <li><a href="#lsl-features-in-explore-desktop">LSL features in Explore Desktop</a></li>
+    <li><a href="#lsl-integration-with-third-party-softwares">LSL integration with third-party softwares</a></li>
   </ul>
 </nav>
 </div>
@@ -469,40 +470,29 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>BESA Research</h1>
+<h1>Lab Streaming Layer(LSL)</h1>
 
-<h2 id="how-to-import-mentalab-data-into-besa">How to Import Mentalab Data into BESA</h2>
-<ol>
-<li><strong>Record your data</strong>: Conduct your EEG recording using your Mentalab device and ensure the data is saved in the <code>.bdf</code> format.</li>
-<li><strong>Open BESA Research</strong>: Launch the BESA Research software on your computer.</li>
-<li><strong>Open file</strong>: Navigate to the import function within BESA (typically File &gt; Open or Import).</li>
-<li><strong>Select your .bdf file</strong>: In the File Open dialog, select the file type “ERP files” from the dropdown menu. Browse to the location where your Mentalab .bdf recording is saved and select the file. BESA will automatically recognise and import the data.</li>
-</ol>
-<hr>
-<h2 id="considerations-for-analysis">Considerations for Analysis</h2>
-<p><strong>Channel Layout</strong>: Familiarise yourself with how your chosen electrode numbering corresponds to BESA&rsquo;s channel mapping for accurate visualisation and analysis.<br>
-<strong>Sampling Rate</strong>: Ensure that BESA correctly interprets the sampling rate of your Mentalab recording for precise temporal analysis. In BESA Research, you can check the sampling rate in the dialog box <code>‘Filters / Edit Filter Settings’</code>.<br>
-<strong>Events/Triggers</strong>: If your Mentalab recording includes event markers or triggers, confirm that they are correctly imported and recognised by BESA for epoching and event-related analysis.</p>
-<!-- ---
-
-## Example view
-Your view should look along the lines of this:
-
-![View of BESA reseach with Mentalab recordings](Screenie.png) -->
-<figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
-<img class="mobile" src="/img/Integrations/BESA-Research/2025-Mentalab3.png" alt="View of the Besa Research Signal view and source estimation" width="100%"/>
-<figcaption>BESA Research signals view of resting state data recorded with Mentalab Explore Pro.</figcaption>
-</figure>
-<figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
-<img class="mobile" src="/img/Integrations/BESA-Research/2025-Mentalab2.png" alt="View of the Besa Research Signal view and source estimation" width="100%"/>
-<figcaption>BESA Research signals view, source estimation, and spectrogram of resting state data recorded with Mentalab Explore Pro.</figcaption>
-</figure>
-<figure style="display: block; text-align:center; width: 70%; margin: 0 auto;">
-<img class="mobile" src="/img/Integrations/BESA-Research/2025-Mentalab1.png" alt="View of the Besa Research Signal view and source estimation" width="100%"/>
-<figcaption>BESA Research signals view and source estimation of resting state data recorded with Mentalab Explore Pro.</figcaption>
-</figure>
-<hr>
-<p>For detailed guidance on specific BESA functionalities, please refer to the <a href="https://wiki.besa.de/index.php?title=Main_Page">BESA user manual</a> or their online resources.</p>
+<h2 id="lsl-with-mentalab-hypersync">LSL with Mentalab HyperSync</h2>
+<p>Lab Streaming Layer (LSL) is a protocol for the unified collection and synchronization of time-series data from multiple sensors and applications in
+real time. It provides precise timestamping and seamless network-based sharing of physiological, behavioral, and experimental data.
+By combining LSL with Mentalab HyperSync, users can acquire, visualize, and record data with sub-millisecond accuracy in just a few simple steps.</p>
+<h2 id="lsl-features-in-explore-desktop">LSL features in Explore Desktop</h2>
+<p>With Explore Desktop users can:</p>
+<ul>
+<li>Push data to LSL</li>
+<li>Plot External markers(i.e. Psychopy, E-Prime) in real-time in Desktop ExG, Orientation or Bandpower plot</li>
+<li>Record all the Explore(Exg, Orientation and Marker) and External marker streams() as CSV*</li>
+<li>LSL visualizer to visualize all LSL streams*</li>
+</ul>
+<h2 id="lsl-integration-with-third-party-softwares">LSL integration with third-party softwares</h2>
+<p>To integrate with party stimulation &amp; analysis software (e.g., E-Prime, NeuroPype) and third party hardware streams,
+users can push all the data to LSL and do one of the following:</p>
+<ul>
+<li>Record all the streams** with <a href="https://github.com/labstreaminglayer/App-LabRecorder/releases">Lab Recorder</a></li>
+<li>Record all the Explore(Exg, Orientation and Marker) and External marker streams() as CSV*</li>
+</ul>
+<p>* HyperSync-only feature</p>
+<p>** Also possible without hypersync with lower time-accuracy</p>
 
 
     
