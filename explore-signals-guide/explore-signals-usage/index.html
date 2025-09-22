@@ -460,11 +460,19 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#loading-eegexg-data">Loading EEG/ExG Data</a></li>
+    <li><a href="#load-file">Loading EEG/ExG Data</a></li>
     <li><a href="#applying-filters">Applying Filters</a></li>
     <li><a href="#channel-selection">Channel Selection</a></li>
     <li><a href="#visualization-options">Visualization Options</a></li>
     <li><a href="#exporting-data">Exporting Data</a></li>
+    <li><a href="#asr">Artifact Subspace Reconstruction (ASR)</a>
+      <ul>
+        <li><a href="#standard-deviation-cutoff">Standard deviation cutoff</a></li>
+        <li><a href="#calibration-window">Calibration Window</a></li>
+        <li><a href="#calibration-start">Calibration Start</a></li>
+        <li><a href="#applying-asr-to-a-loaded-file">Applying ASR to a loaded file</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 </div>
@@ -474,91 +482,125 @@
 
 <h1>Usage</h1>
 
-<h2 id="loading-eegexg-data">Loading EEG/ExG Data</h2>
-<ol>
-<li>Launch the application.</li>
-<li>Go to the <strong>File</strong> menu and select one or more EEG files (<code>.csv</code>, <code>.bdf</code>) to load.</li>
-<li>The selected files will appear under <strong>Loaded Files</strong> in the left panel.</li>
-</ol>
+<h2 id="load-file">Loading EEG/ExG Data</h2>
+<p>Files can be loaded using the <strong>File</strong> menu in the menu bar of ExploreSignals. Navigate to <strong>File</strong> -&gt; <strong>Open</strong> to open a file browser and select one or multiple ExG files (<code>.csv</code>, <code>.bdf</code>) to load them into the software. The loaded file(s) will appear in the <strong>Loaded Files</strong> section.</p>
+<p>If you are loading Mentalab Explore data from a <code>[...]_ExG.csv</code> file, make sure that the corresponding <code>[...]_Meta.csv</code> file is present in the same folder to ensure the data is loaded correctly. Additionally, if you want to visualize markers alongside the data, make sure that the corresponding <code>[...]_Marker.csv</code> file is present in the same folder.</p>
+<p>These files are matched to each other using the file name, so if you need to rename the files (i.e. by exporting filtered data with ExploreSignals), ensure that the file containing EXG data ends in <code>_ExG.csv</code>, the file containing markers ends in <code>_Marker.csv</code> and the file containing the metadata ends in <code>_Meta.csv</code>.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/File.png" alt="Explore Signals file loading" width="50%"/>
-<figcaption> Explore Signals file loading.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/File_v020.png" alt="An image showing a section of ExploreSignals with the menu bar visible. The File menu is selected with the submenu showing two actions: Open and Export." width="50%"/>
+<figcaption>Loading files in Explore Signals.</figcaption>
 </figure>
 <h2 id="applying-filters">Applying Filters</h2>
-<p>Navigate to the <strong>Filters</strong> menu to apply:</p>
+<p>Filters can be applied from the <strong>Filters</strong> menu in the menu bar. Select the file you want to filter in the <strong>Loaded Files</strong> section, then navigate to <strong>Filters</strong> -&gt; <strong>Apply Filters</strong> to open a pop-up, enter values for the filters you want to use and click on apply to filter the data. The following filters are available:</p>
 <ul>
 <li>High-pass / Low-pass filters</li>
 <li>Notch filter (e.g., to remove 50/60 Hz line noise)</li>
 <li>Re-referencing options</li>
 <li>DC offset correction</li>
 </ul>
+<p>The filtered data will be added in the <strong>Loaded Files</strong> section with its name being made up of the filename of the original file and metadata about the applied filters.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/Filter.png" alt="Explore Signals filter options" width="90%"/>
-<figcaption> Explore Signals filter options.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/Filter_v020.png" alt="An image showing a section of ExploreSignals with the menu bar visible. The Filters menu is selected with the submenu showing one action: Apply Filters. A pop-up can be seen in the image showing various filter settings and an Apply button." width="75%"/>
+<figcaption>Filtering data in Explore Signals.</figcaption>
 </figure>
 <h2 id="channel-selection">Channel Selection</h2>
-<ul>
-<li>In the <strong>Channels</strong> section, select or deselect specific channels.</li>
-<li>Use <strong>Select All</strong> or <strong>Clear All</strong> for quick selection.</li>
-<li>Only selected channels will be used for visualisation.</li>
-</ul>
+<p>To enable or disable channels for visualization, select a file in the <strong>Loaded Files</strong> section and check or uncheck channels in the <strong>Channels</strong> section below before using any of the visualization actions. To quickly enable or disable all channels, you can use the <strong>Select All</strong> and <strong>Clear All</strong> buttons above the <strong>Channels</strong> section.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/Channels.png" alt="Explore Signals channel selection" width="50%"/>
-<figcaption> Explore Signals channel selection.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/Channels.png" alt="An image showing the Channels section in the ExploreSignals UI. A channel list can be seen with checkmarks to the left of each channel, with some channels enabled and some disabled. Above the list are two buttons, Select All and Clear All." width="50%"/>
+<figcaption>Selecting channels in Explore Signals.</figcaption>
 </figure>
 <h2 id="visualization-options">Visualization Options</h2>
-<p>Click the corresponding button to visualize the selected data. You can export plots as image files from the toolbar above each visualization.</p>
+<p>Click the corresponding button to visualize the selected data.</p>
 <blockquote>
-<p>Tip: Use the interactive toolbar to zoom, pan, and explore plots in detail.</p>
-</blockquote>
+<p>Tip: Use the interactive toolbar above the plots to zoom, pan, and explore plots in detail.</p></blockquote>
 <ul>
 <li><strong>Plot Time Domain</strong> – View raw signal over time.</li>
 </ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/TimeDomain.png" alt="Explore Signals time domain view" width="90%"/>
-<figcaption> Explore Signals time domain view.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/TimeDomain_v020.png" alt="An image showing ExploreSignals visualizing a selected file in the Loaded Files list as signals over time." width="90%"/>
+<figcaption>Visualizing signals over time of loaded data in ExploreSignals.</figcaption>
 </figure>
 <ul>
 <li><strong>FFT Plot</strong> – Visualize frequency content using Fast Fourier Transform.</li>
 </ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/FFT.png" alt="Explore Signals FFT view" width="90%"/>
-<figcaption> Explore Signals FFT view.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/FFT_v020.png" alt="An image showing ExploreSignals visualizing the Fast Fourier Transform of a selected file in the Loaded Files list. The plot shows frequency magnitude on the y-axis and frequency on the x-axis. Some of the channels in the Channels list are disabled." width="90%"/>
+<figcaption>Visualizing the FFT of loaded data as a magnitude over frequency plot in ExploreSignals.</figcaption>
 </figure>
 <ul>
-<li><strong>Bandpower Visualization</strong> – Show power in defined frequency bands (delta, theta, alpha, beta). The plots show the average for the selected channels.</li>
-</ul>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/BandpowerTime.png" alt="Explore Signals bandpower over time view" width="90%"/>
-<figcaption> Explore Signals bandpower over time.</figcaption>
-</figure>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/BandpowerBars.png" alt="Explore Signals bandpower bar graph" width="90%"/>
-<figcaption> Explore Signals bandpower bar graph.</figcaption>
-</figure>
+<li>
+<p><strong>Bandpower Visualization</strong> – Show power in defined frequency bands (delta, theta, alpha, beta, gamma). The plots show the average for the selected channels. When clicking on the <strong>Bandpower Visualization</strong> button, you have two options to visualize the data.</p>
 <ul>
-<li><strong>Power Spectrum Density</strong> – Analyze power distribution over frequency. The plot shows the average for the selected channels.</li>
+<li>
+<p><strong>Time Domain</strong> - Visualize the power in the frequency bands over time. For this plot, the bandpower is calculated on one second windows with 0.1s between each calculated sample.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/Bandpower_Time_v020_occipital_alpha.png" alt="An image showing ExploreSignals visualizing the bandpower over time of a selected file in the Loaded Files list. Some of the channels in the Channels list are disabled." width="90%"/>
+<figcaption>Visualizing the power over time in the different frequency bands of a recording in ExploreSignals.</figcaption>
+</figure>
+</li>
+<li>
+<p><strong>Bars</strong> - Visualize the power in the frequency bands for the entire recording in a bar plot.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/BandpowerBars_v020.png" alt="An image showing ExploreSignals visualizing the power of different frequency bands of a selected file in the Loaded Files list in the form of a bar plot. Some of the channels in the Channels list are disabled." width="90%"/>
+<figcaption>Visualizing the power in the different frequency bands of a recording in a bar plot.</figcaption>
+</figure>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Power Spectrum Density</strong> – Analyze power distribution over frequency. The plot shows the average for the selected channels.</p>
+</li>
 </ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/PSD.png" alt="Explore Signals PSD" width="90%"/>
-<figcaption> Explore Signals PSD view.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/PSD_v020.png" alt="An image showing ExploreSignals visualizing the Power Spectrum Density of a selected file in the Loaded Files. The plot shows power spectral density on the y-axis and frequency on the x-axis. Some of the channels in the Channels list are disabled." width="90%"/>
+<figcaption>Visualizing the Power Spectrum Density of loaded data in ExploreSignals</figcaption>
 </figure>
 <ul>
 <li><strong>Spectrogram</strong> – Display power as a function of time and frequency. The plot shows the average for the selected channels.</li>
 </ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/Spectrogram.png" alt="Explore Signals bandpower over time view" width="90%"/>
-<figcaption> Explore Signals spectrogram.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/Spectrogram_v020.png" alt="An image showing ExploreSignals visualizing the spectrogram of a selected file in the Loaded Files. The plot shows frequency on the y-axis and time on the x-axis. A third dimension (power/frequency) is visualized using colored cells in the plot. A gradient is visualized to the right of the plot showing what values the colors correspond to. Some of the channels in the Channels list are disabled." width="90%"/>
+<figcaption>Visualizing the spectrogram of loaded data in ExploreSignals.</figcaption>
 </figure>
-<h2 id="exporting-data">Exporting Data</h2>
 <ul>
-<li>Go to the <strong>File</strong> menu and choose <strong>Export as CSV</strong> to save the current signal data.</li>
+<li><strong>ASR Cleaning</strong> - Apply ASR to the data and visualize the cleaned signal alongside the original signal afterwards. For more details, refer to <a href="#asr">the section on ASR</a>.</li>
 </ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/Export.png" alt="Explore Signals data export" width="50%"/>
-<figcaption> Explore Signals data export.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/ASR_popup_v020.png" alt="An image showing a section of ExploreSignals. A pop-up can be seen in the image showing various settings for ASR, a Load Preset button, an Apply ASR button and a Cancel button. A submenu can be seen below the Load Preset button showing three options, Conservative (cutoff=20), Standard (cutoff=5) and Aggressive (cutoff=3)." width="75%"/>
+<figcaption>Changing the settings before applying ASR.</figcaption>
 </figure>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/ASR_comparison_v020.png" alt="An image showing ExploreSignals visualizing cleaned data in blue and the corresponding original data in red in a plot. The plot is made up of multiple subplots, each visualizing one channel with red and blue lines. Additionally, some markers are visualized with green lines and labels at the top. A window of the data is shown where the result of ASR is especially drastic: jumping artifacts, marked with a green line and the label sw_jump, are dampened considerably in the blue line." width="90%"/>
+<figcaption>Comparing the original data (red) to the cleaned data (blue) after applying ASR with a cutoff of 20.0 and a calibration window of 60.0s.</figcaption>
+</figure>
+<h2 id="exporting-data">Exporting Data</h2>
+<p>Data (original and processed) can be exported from the <strong>File</strong> menu in the menu bar. Select the file you want to export in the <strong>Loaded Files</strong> section, then navigate to <strong>File</strong> -&gt; <strong>Export</strong> to open a file browser. In the file browser, you can change the file name and select the file format you want to save the data in (<code>.csv</code> or <code>.bdf</code>).</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/Export_v020.png" alt="An image showing a section of ExploreSignals with the menu bar visible. The File menu is selected with the submenu showing two actions: Open and Export. A section of the Loaded Files list is visible with a file selected for export." width="50%"/>
+<figcaption>Exporting data in ExploreSignals.</figcaption>
+</figure>
+<h2 id="asr">Artifact Subspace Reconstruction (ASR)</h2>
+<p>The implementation for ASR is based on (parts of) the open source <code>clean_rawdata</code> plugin for EEGLab (originally written in MATLAB), the code of which can be found <a href="https://github.com/sccn/clean_rawdata">in this public repository</a>. You can also find more about <strong>ASR</strong> by visiting the linked repository and referring to the <code>ReadMe</code>. An even more in-depth discussion on ASR (inlcuding the history of its development) and its validity for artifact removal for EEG data can be found <a href="https://github.com/sccn/clean_rawdata/wiki/Documentation#historical-background">in the wiki of the same repository</a>.</p>
+<p>Please make sure to read the linked pages if you are planning to apply ASR and work with the cleaned data, as ASR may come with a possible loss of signal together with removal of artifacts and will perform better on certain types of data.</p>
+<p>ASR requires a calibration window to clean the data, this should be a section of the data that has as few artifacts as possible - ideally none. Keep this in mind when selecting the calibration window length and the starting time of the calibration window. Additionally, the algorithm is recommended for EEG signals, the output for other types of biosignals may be a lot worse (i.e. by decreasing signal to noise ratio if more signal than artifacts is removed from the data). Another factor to consider when applying ASR is the number of channels considered. While ASR requires multiple channels to effectively clean signals, it is difficult to recommend a minimum number of channels to be used. Research, however, suggests that &ldquo;ASR could achieve effective artifact removal for standard 20-channel EEG&rdquo;<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup>.</p>
+<h3 id="standard-deviation-cutoff">Standard deviation cutoff</h3>
+<p>The <strong>cutoff</strong> field in the ASR pop-up refers to the standard deviation cutoff applied during cleaning. This cutoff determines the thresholds used (relative to the calibration data) for recognizing portions of the data as artifacts. A lower threshold will cause more of the data to be recognized as artifacts while a higher threshold will do the opposite. A cutoff of 3.0 is considered aggressive (and going lower is not recommended and thus blocked by ExploreSignals), 5.0 is the default cutoff in ExploreSignals and 20.0 is considered conservative (and also the <a href="https://github.com/sccn/clean_rawdata?tab=readme-ov-file#artifact-subspace-reconstruction">default in EEGLab&rsquo;s <code>clean_rawdata</code> plugin</a>).</p>
+<h3 id="calibration-window">Calibration Window</h3>
+<p>The <strong>Calibration Window</strong> determines how large the window of data for calibration should be, the default (and minimum!) is 30.0s. Note that the recommended window for a cutoff of 20.0 (the default in <code>clean_rawdata</code>) is 60.0s.</p>
+<h3 id="calibration-start">Calibration Start</h3>
+<p>The <strong>Calibration Start</strong> determines the beginning of the calibration window. The default is <strong>Auto</strong>, which automatically places the start of the window at 20% into the recording. As an example, if the recording is 120.0s, the calibration window is set to 30.0s and <strong>Auto</strong> is selected for the <strong>Calibration Start</strong>, the calibration window will be from 24.0s to 54.0s. Alternatively, it is also possible to manually choose the start of the calibration window by selecting <strong>Manual start time</strong> and changing the accompanying field to the starting second.</p>
+<h3 id="applying-asr-to-a-loaded-file">Applying ASR to a loaded file</h3>
+<p>In order to clean data using ASR, load a file (as outlined in <a href="#load-file">the section on loading data</a>), select it in the <strong>Loaded Files</strong> section and click on the <strong>ASR Cleaning</strong> button. A pop-up will be shown that allows changing the previously mentioned parameters for the algorithm. The button <strong>Load Preset</strong> can be used to bring up a menu to load recommended presets for the cutoff and accompanying calibration window, available presets are <strong>Aggressive</strong> (with a cutoff of 3.0 and a calibration window of 30s), <strong>Standard</strong> (with a cutoff of 5.0 and a calibration window of 30s) and lastly <strong>Conservative</strong> (with a cutoff of 20.0 and a calibration window of 60s).</p>
+<p>When you are finished with changing the parameters for the algorithm, clicking <strong>Apply ASR</strong> will clean the data and, once finished, bring up a comparison view of the cleaned data and the original data. Note that the implementation applies a high-pass filter internally to correct for drift and that the resulting cleaned signal will also be zero-mean as a result. If the original data is not filtered and / or zero-mean, the signal may not appear overlayed with / having the same baseline as the cleaned signal.</p>
+<p>The cleaned data is added to the list of <strong>Loaded Files</strong> and can be visualized (and analyzed) the same as other loaded data.</p>
+<div class="footnotes" role="doc-endnotes">
 <hr>
+<ol>
+<li id="fn:1">
+<p>Chang, Chi-Yuan, et al. &ldquo;Evaluation of artifact subspace reconstruction for automatic artifact components removal in multi-channel EEG recordings.&rdquo; <em>IEEE transactions on biomedical engineering</em> 67.4 (2019): 1114-1121.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
 
 
     

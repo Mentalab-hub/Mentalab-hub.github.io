@@ -508,64 +508,64 @@
 <h3 id="adapting-the-python-script-to-your-needs">Adapting the Python script to your needs</h3>
 <p>You can run the Python script in the environment you&rsquo;ve set up by calling <code>python -m eeg2lamp</code> and supplying command line arguments according to your needs:</p>
 <table>
-<thead>
-<tr>
-<th>argument</th>
-<th>description</th>
-<th>required</th>
-<th>default</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-n, --name</code></td>
-<td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
-<td>yes</td>
-<td>-</td>
-</tr>
-<tr>
-<td><code>-sr, --sampling_rate</code></td>
-<td>The sampling rate to set the device to</td>
-<td>no</td>
-<td><code>None</code> / current device sampling rate</td>
-</tr>
-<tr>
-<td><code>-p, --port</code></td>
-<td>The port that the Arduino is connected to, i.e. <strong>/dev/cu.usbserial-1234</strong></td>
-<td>no</td>
-<td><code>None</code></td>
-</tr>
-<tr>
-<td><code>-fn, --notch</code></td>
-<td>The frequency to use for the notch filter</td>
-<td>no</td>
-<td><code>None</code></td>
-</tr>
-<tr>
-<td><code>-fbp, --bandpass</code></td>
-<td>The frequencies to use for the bandpass filter</td>
-<td>no</td>
-<td><code>None</code></td>
-</tr>
-<tr>
-<td><code>--simulate_lamp</code></td>
-<td>Whether to add a second plot to the window that simulates the brightness and colour change</td>
-<td>no</td>
-<td><code>False</code></td>
-</tr>
-<tr>
-<td><code>-f, --from_file</code></td>
-<td>A file path to a .bdf recording to as input to the script and Arduino (instead of a real device connection)</td>
-<td>no</td>
-<td><code>None</code></td>
-</tr>
-<tr>
-<td><code>-l, --loop</code></td>
-<td>Whether to loop the .bdf file once the end is reached (if <code>-f</code> is supplied)</td>
-<td>no</td>
-<td><code>False</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>argument</th>
+          <th>description</th>
+          <th>required</th>
+          <th>default</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><code>-n, --name</code></td>
+          <td>The name of your device, i.e. <strong>Explore_ABCD</strong></td>
+          <td>yes</td>
+          <td>-</td>
+      </tr>
+      <tr>
+          <td><code>-sr, --sampling_rate</code></td>
+          <td>The sampling rate to set the device to</td>
+          <td>no</td>
+          <td><code>None</code> / current device sampling rate</td>
+      </tr>
+      <tr>
+          <td><code>-p, --port</code></td>
+          <td>The port that the Arduino is connected to, i.e. <strong>/dev/cu.usbserial-1234</strong></td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-fn, --notch</code></td>
+          <td>The frequency to use for the notch filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-fbp, --bandpass</code></td>
+          <td>The frequencies to use for the bandpass filter</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>--simulate_lamp</code></td>
+          <td>Whether to add a second plot to the window that simulates the brightness and colour change</td>
+          <td>no</td>
+          <td><code>False</code></td>
+      </tr>
+      <tr>
+          <td><code>-f, --from_file</code></td>
+          <td>A file path to a .bdf recording to as input to the script and Arduino (instead of a real device connection)</td>
+          <td>no</td>
+          <td><code>None</code></td>
+      </tr>
+      <tr>
+          <td><code>-l, --loop</code></td>
+          <td>Whether to loop the .bdf file once the end is reached (if <code>-f</code> is supplied)</td>
+          <td>no</td>
+          <td><code>False</code></td>
+      </tr>
+  </tbody>
 </table>
 <p>For example, to run the script with default values for the device <strong>Explore_ABCD</strong> and not connect to an Arduino or simulate a lamp:</p>
 <p><code>python -m eeg2lamp -n Explore_ABCD</code></p>

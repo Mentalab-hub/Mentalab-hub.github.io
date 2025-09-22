@@ -461,7 +461,7 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#offline-exg-data-visualization-tool">Offline ExG Data Visualization Tool</a></li>
+    <li><a href="#offline-exg-data-visualization-with-exploresignals">Offline ExG Data Visualization with ExploreSignals</a></li>
     <li><a href="#key-features">Key Features</a></li>
   </ul>
 </nav>
@@ -472,11 +472,11 @@
 
 <h1>Explore Signals Guide</h1>
 
-<h2 id="offline-exg-data-visualization-tool">Offline ExG Data Visualization Tool</h2>
-<p>Explore Signals is a graphical tool for ExG data visualization and analysis. It supports importing data from Mentalab&rsquo;s CSV and BDF files, applying common filters, visualizing signals in time and frequency domains, and exporting the processed data.</p>
+<h2 id="offline-exg-data-visualization-with-exploresignals">Offline ExG Data Visualization with ExploreSignals</h2>
+<p>Explore Signals is a graphical tool for ExG data visualization and analysis. It supports importing data from Mentalab Explore devices from <code>.csv</code> and <code>.bdf</code> files, visualizing signals in time and frequency domains, applying common filters, applying ASR and exporting the processed data.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreSignalsGuide/BandpowerTime.png" alt="Explore Signals Bandpower Over Time" width="90%"/>
-<figcaption> Explore Signals ExG data visualizer.</figcaption>
+<img class="mobile" src="/img/ExploreSignalsGuide/BandpowerTime_v020.png" alt="An image showing a screenshot of ExploreSignals visualizing bandpower over time." width="90%"/>
+<figcaption>Visualizing ExG data in ExploreSignals.</figcaption>
 </figure>
 <h2 id="key-features">Key Features</h2>
 <ul>
@@ -494,14 +494,15 @@
 <li>Time-domain plot</li>
 <li>FFT (Fast Fourier Transform) plot</li>
 <li>Bandpower visualization (time series &amp; bar chart)</li>
-<li>Power Spectral Density (PSD)</li>
+<li>Power Spectrum Density (PSD)</li>
 <li>Spectrogram (time-frequency plot)</li>
 </ul>
 </li>
-<li>Convert data between CSV and BDF formats</li>
+<li>Apply Artifact Subspace Reconstruction (ASR) to remove artifacts from EEG data</li>
+<li>Convert <code>.csv</code> data to <code>.bdf</code> and vice-versa</li>
+<li>Export processed data to <code>.csv</code> and <code>.bdf</code></li>
 <li>Multi-file session support</li>
-<li>Export processed files as <code>.csv</code> or <code>.bdf</code></li>
-<li>Export visualizations as images</li>
+<li>Export plots of processed data (FFT, bandpower etc.) as images</li>
 </ul>
 
 
