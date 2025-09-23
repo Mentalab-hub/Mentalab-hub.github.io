@@ -121,6 +121,13 @@
       <description>&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Explore Pro Device&lt;/strong&gt;: An Explore Pro biosignal acquisition system.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Hypersync Add-on&lt;/strong&gt;: This hardware is essential for accurately synchronizing LSL markers from E-Prime with the Explore device&amp;rsquo;s data stream.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Computer&lt;/strong&gt;: To run E-Prime, LSL, and data recording software for the Explore device.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://pstnet.com/products/e-prime/&#34;&gt;E-Prime® 3&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file/tree/main/LSL&#34;&gt;E-Prime® 3 LSL package file&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file/tree/main/LSL%20Samples&#34;&gt;E-Prime® 3 LSL samples&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/labstreaminglayer/App-LabRecorder&#34;&gt;LabRecorder&lt;/a&gt; or alternative software that lets you record LSL streams&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;how-it-works&#34;&gt;How it Works&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;E-Prime&lt;/strong&gt;: Runs experiments and can generate event markers during an experiment at onset time, response time or current time&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;LSL package file&lt;/strong&gt;: The LabStreamingLayer package file provides real-time streaming of data (including markers) with precise timestamps for E-Prime&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Hypersync&lt;/strong&gt;: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;integrating-with-e-prime-via-lsl&#34;&gt;Integrating with E-Prime® via LSL&lt;/h2&gt;&#xA;&lt;p&gt;Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.&lt;/p&gt;</description>
     </item>
     <item>
+      <title>PLUX Biosignals</title>
+      <link>https://wiki.mentalab.com/integrations/hardware/plux-biosignals/</link>
+      <pubDate>Fri, 18 Jul 2025 10:25:19 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/hardware/plux-biosignals/</guid>
+      <description>&lt;h1 id=&#34;integrating-mentalab-with-plux-biosignals-devices&#34;&gt;Integrating Mentalab with PLUX Biosignals devices&lt;/h1&gt;&#xA;&lt;p&gt;Mentalab is partnering with &lt;a href=&#34;https://www.pluxbiosignals.com/&#34;&gt;PLUX Biosignals&lt;/a&gt; to cover our user&amp;rsquo;s multimodal physiology needs.&lt;/p&gt;&#xA;&lt;p&gt;PLUX Biosignals &lt;a href=&#34;https://www.pluxbiosignals.com/collections/sensors&#34;&gt;sensor portfolio&lt;/a&gt; includes sensors for&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;electrodermal activity sensors (EDA)&lt;/li&gt;&#xA;&lt;li&gt;respiration sensor belts&lt;/li&gt;&#xA;&lt;li&gt;force sensors&lt;/li&gt;&#xA;&lt;li&gt;temperature sensors&lt;/li&gt;&#xA;&lt;li&gt;blood oxygen sensors (SpO2)&lt;/li&gt;&#xA;&lt;li&gt;and much more&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Any combination of these sensors can be connected to a central PLUX Biosignals recording unit, which transmits data wirelessly, just like the Mentalab Explore Pro.&lt;/p&gt;&#xA;&lt;!-- INSERT PHOTO OF SOMEBODY WEARING MENTALAB + PLUX DEVICE --&gt;&#xA;&lt;h1 id=&#34;guide&#34;&gt;Guide&lt;/h1&gt;&#xA;&lt;p&gt;In this guide, we walk you through how the measurement units can be combined in practice by using Lab Streaming Layer (LSL).&lt;/p&gt;</description>
+    </item>
+    <item>
       <title>Sleep Actigraphy</title>
       <link>https://wiki.mentalab.com/applications/sleep-actigraphy/</link>
       <pubDate>Thu, 12 Jun 2025 10:00:00 +0100</pubDate>
@@ -377,13 +384,6 @@
       <link>https://wiki.mentalab.com/integrations/hardware/1-labbench/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://wiki.mentalab.com/integrations/hardware/1-labbench/</guid>
-      <description>&lt;!--&#xA;---&#xA;title: &#34;E-Prime®&#34;&#xA;date: 2025-07-18T10:25:19+00:00&#xA;weight: 3&#xA;description: Synchronizing E-Prime® event markers with Mentalab Explore hardware&#xA;slug: E-Prime&#xA;---&#xA;&#xA;Dies das&#xA;--&gt;</description>
-    </item>
-    <item>
-      <title></title>
-      <link>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</guid>
       <description>&lt;!--&#xA;---&#xA;title: &#34;E-Prime®&#34;&#xA;date: 2025-07-18T10:25:19+00:00&#xA;weight: 3&#xA;description: Synchronizing E-Prime® event markers with Mentalab Explore hardware&#xA;slug: E-Prime&#xA;---&#xA;&#xA;Dies das&#xA;--&gt;</description>
     </item>
     <item>

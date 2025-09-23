@@ -59,6 +59,9 @@
     <loc>https://wiki.mentalab.com/integrations/stimulation/e-prime/</loc>
     <lastmod>2025-07-29T10:25:19+00:00</lastmod>
   </url><url>
+    <loc>https://wiki.mentalab.com/integrations/hardware/plux-biosignals/</loc>
+    <lastmod>2025-07-18T10:25:19+00:00</lastmod>
+  </url><url>
     <loc>https://wiki.mentalab.com/applications/sleep-actigraphy/</loc>
     <lastmod>2025-06-12T10:00:00+01:00</lastmod>
   </url><url>
@@ -88,6 +91,9 @@
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</loc>
     <lastmod>2025-07-02T10:25:19+00:00</lastmod>
+  </url><url>
+    <loc>https://wiki.mentalab.com/integrations/hardware/</loc>
+    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/analysis/neuropype/</loc>
     <lastmod>2022-06-02T10:25:19+00:00</lastmod>
@@ -197,10 +203,6 @@
     <loc>https://wiki.mentalab.com/integrations/analysis/6-brainstorm/</loc>
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/hardware/1-labbench/</loc>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/2-plux-biosignals/</loc>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/</loc>
   </url><url>
     <loc>https://wiki.mentalab.com/integrations/stimulation/5-neuropype-experiment-recorder/</loc>
   </url><url>
