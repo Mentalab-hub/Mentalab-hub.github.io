@@ -305,16 +305,16 @@
                     NeuroKit2
                 </a>
         </li>
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
+                    Brainstorm
+                </a>
+        </li>
         <li data-nav-id="/integrations/analysis/timeflux/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/timeflux/" class="nav-link p-0">
                     Timeflux
-                </a>
-        </li>
-        <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
-                
-                 <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
-                    
                 </a>
         </li>
         </ul>
@@ -478,48 +478,12 @@
 
 <h1>Lab Streaming Layer</h1>
 
-<p>You can access LSL features by navigating to the Visualization page and clicking on the <strong>LSL</strong> button. This will bring up a dialog that lets you push data from the Explore device via LSL and pull markers from available marker streams.</p>
+<p>You can push data to LSL by navigating to the Visualization page and clicking on the <strong>LSL</strong> button. To stop streaming to LSL, click on <strong>LSL</strong> again. If your device loses connection, Explore Desktop will try to reconnect automatically.</p>
+<p>When pushing to LSL, you will generate three LSL data streams. One for ExG data, motion data, and event markers.</p>
+<p>Using LSL, you can stream data from other data providers, like OpenVibe, MATLAB, Java, and C++. See the <a href="/integrations">Integrations section</a> for more.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_32_channels_fullscreen_LSL.png" alt="The ExG visualization page with a red arrow pointing to the LSL button and two indicator symbols (an arrow pointing down and an arrow pointing up) on the top right of the window." width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_8_channels_fullscreen_LSL.png" alt="The ExG visualization page with a red arrow pointing to the LSL button on the top right of the window" width="90%"/>
 <figcaption> Use the Visualization page to stream data from your Mentalab Explore device to Lab Streaming Layer. </figcaption>
-</figure>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_8_channels_fullscreen_LSL_popup.png" alt="A dialog is shown with two columns of elements. In the left column is general information on what the buttons below do, below this information are two buttons to start pushing or pulling data. In the right column there is a button at the top to find marker inlets and a white box below the button." width="40%"/>
-<figcaption> The LSL dialog offers features to push and pull data to and from LSL. </figcaption>
-</figure>
-<p>In order to push data via LSL, simply click the <strong>Push data to LSL</strong> button. This will generate three LSL data streams, one for ExG data, one for motion data and one for event markers. By using LSL, you can combine your data stream with other software supporting LSL.
-ExploreDesktop will generate three streams according to your device&rsquo;s name:</p>
-<ul>
-<li>Explore_&lt;DEVICE_ID&gt;_ORN (for motion data, containing accelerometer, gyroscope, magnetometer as well as quaternion data)</li>
-<li>Explore_&lt;DEVICE_ID&gt;_ExG (for ExG data)</li>
-<li>Explore_&lt;DEVICE_ID&gt;_Marker (for event markers received / set by ExploreDesktop)</li>
-</ul>
-<p>You can additionally pull markers from external software to visualize them in ExploreDesktop. To do so, click the <strong>Find marker stream inlets</strong> button to discover available marker streams in the network. To subscribe to a stream, click the checkbox next to the stream name and then click on <strong>Pull markers from LSL</strong>. This will cause markers in the stream to be placed at their accompanying timestamp as well as to be recorded alongside other event markers from ExploreDesktop. If you want to refresh what marker streams are available to pull from, you need to stop pulling markers first to start the stream discovery using the <strong>Find marker stream inlets</strong> button.</p>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_8_channels_fullscreen_LSL_marker_pulling.png" alt="The ExG visualization page can be seen in the background with some markers visible as vertical red lines in the plot. The LSL dialog is shown in front of the page. Next to the push and pull buttons are arrow symbols with blue backgrounds, indicating that pushing and pulling is active. The white box in the right column is greyed out and lists the name of one marker stream with a checked checkbox to the left of it. The button to find marker inlets is greyed out, a warning is shown below the box that finding inlets is only available when not pulling markers." width="90%"/>
-<figcaption> The LSL dialog shows information on whether ExploreDesktop is pulling and/or pushing data using LSL and what marker streams are being pulled form. </figcaption>
-</figure>
-<p>Best synchronisation accuracy with LSL is achieved through using Mentalab Explore in combination with <a href="https://mentalab.com/mentalab-hypersync-hyperscanning-multimodal-exg-eeg/">Hypersync</a>.</p>
-<p>Please refer to the <a href="/integrations">Integrations section</a> of the wiki for more information on possible integrations using LSL.</p>
-<p>You can quickly check if you are pushing data to LSL or still receiving markers from at least one marker stream by looking at the two arrows next to the LSL button.</p>
-<ul>
-<li>The arrow pointing up indicates the status of pushing to LSL
-<ul>
-<li>If the arrow and background are greyed out, you are not currently pushing data to LSL</li>
-</ul>
-</li>
-<li>The arrow pointing down indicates the status of pulling from LSL
-<ul>
-<li>If the arrow and background are greyed out, you are not currently pulling markers from LSL</li>
-<li>If the background is blue, you are currently pulling markers from at least one marker stream</li>
-<li>You can check the currently active marker streams in the LSL dialog</li>
-</ul>
-</li>
-</ul>
-<p>These symbols are also shown next to the respective <em><strong>push</strong></em> and <em><strong>pull</strong></em> buttons in the LSL dialog and exhibit the same behaviour.</p>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_LSL_symbols_focus.png" alt="A dialog showing LSL features can be seen in front of ExploreDesktop's visualization page. The screenshot is cut in such a way that only the dialog and the LSL button with two arrow symbols to the right of it are visible. A red box indicates where the arrow symbols are next to the LSL button and in the LSL dialog." width="75%"/>
-<figcaption> The LSL push and pull indicators help you quickly check which LSL feature is active. </figcaption>
 </figure>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 

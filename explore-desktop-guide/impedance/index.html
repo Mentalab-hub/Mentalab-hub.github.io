@@ -305,16 +305,16 @@
                     NeuroKit2
                 </a>
         </li>
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
+                    Brainstorm
+                </a>
+        </li>
         <li data-nav-id="/integrations/analysis/timeflux/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/timeflux/" class="nav-link p-0">
                     Timeflux
-                </a>
-        </li>
-        <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
-                
-                 <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
-                    
                 </a>
         </li>
         </ul>
@@ -481,59 +481,49 @@
 <p>To measure the impedances of your Mentalab Explore electrodes, navigate to the Impedance Measurement page.</p>
 <p>Select which type of electrodes you are using from the drop-down menu. Then, click on <strong>Measure Impedances</strong>. For wet electrodes, channel impedances will display their value and corresponding color code as in the table below. Good dry electrode impedances are less than 100kΩ for flat electrodes placed on bare skin, and less than 300kΩ for brush electrodes placed on hair. See our guidelines on <a href="https://wiki.mentalab.com/user-guide/improving-impedances/">improving impedances</a> for more information.</p>
 <div style="text-align:center;">
-<table style="margin: 0px auto;">
+<table>
     <thead>
         <tr>
-            <td colspan="2" style="font-weight: bold;">Color</td>
-            <td colspan="1" style="font-weight: bold;">Range (kΩ)</td>
+            <th>&nbsp; Color</th>
+            <td colspan="2" style="font-weight: bold;">Range (kΩ)</td>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td colspan="2"></td>
-			<td>Wet electrodes</td>
+            <td></td>
+            <td>Wet electrodes</td>
         </tr>
 		<tr>
 			<td>Green</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#00FFB2" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
 			<td> < 10</td>
 		</tr>
 		<tr>
 			<td>Yellow</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#FFE278" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
 			<td>10 – 20</td>
 		</tr>
 		<tr>
 			<td>Orange</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#FAAA6A" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
 			<td>20 – 30</td>
 		</tr>
 		<tr>
 			<td>Red</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#FF006B" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
 			<td>30 – 50</td>
 		</tr>
 		<tr>
-			<td>Dark gray</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#909090" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
+			<td>Black</td>
 			<td> > 50</td>
 		</tr>
 		<tr>
-			<td>Light gray</td>
-			<td><svg version="1.1" width="20" height="20"><circle fill="#D0D0D0" stroke="none" cx="10" cy="10" r="8"></circle></svg></td>
-			<td colspan="1">Inactive channel / Device not connected </td>
+			<td>Gray</td>
+			<td colspan="2">Inactive channel / Device not connected </td>
 		</tr>
     </tbody>
 </table>
 </div>
 <br>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/impedance_list_dry_fullscreen.png" alt="Channel impedance measurement list view" width="90%"/>
-<figcaption> Visualize impedance values in a scrollable list </figcaption>
-</figure>
 <p>You can also visualize impedances on an EEG montage. For this, make sure you assign all channels a name corresponding to a standardized location from the dropdown menu in the settings page. Then, switch to the impedance page and click the toggle button on the top right to switch to EEG view.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/impedance_head_montage_32_channels_dry_fullscreen.png" alt="EEG montage view" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/impedance_head_montage_32_channels_wet_fullscreen.png" alt="EEG montage view" width="90%"/>
 <figcaption> Visualize impedance values on an EEG montage </figcaption>
 </figure>
 <p>

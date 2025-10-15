@@ -305,16 +305,16 @@
                     NeuroKit2
                 </a>
         </li>
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
+                
+                 <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
+                    Brainstorm
+                </a>
+        </li>
         <li data-nav-id="/integrations/analysis/timeflux/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/timeflux/" class="nav-link p-0">
                     Timeflux
-                </a>
-        </li>
-        <li data-nav-id="/integrations/analysis/6-brainstorm/" class="nav-item my-1">
-                
-                 <a href="/integrations/analysis/6-brainstorm/" class="nav-link p-0">
-                    
                 </a>
         </li>
         </ul>
@@ -497,24 +497,19 @@
 <li>1 uV to 100 mV range.</li>
 </ul>
 </li>
-<li>Visible channel count - change how many channels should be visible in the plot.
-<ul>
-<li>1, 2, 4, 8, 16 and 32 channels (depending on the connected device)</li>
-</ul>
-</li>
 <li>Time window – change the time interval of the x-axis.
 <ul>
 <li>5, 10, or 20 second range.</li>
 </ul>
 </li>
-<li>Record (see the <a href="https://wiki.mentalab.com/explore-desktop-guide/record/" title="Explore Desktop Guide/Record">Recording</a> page).</li>
-<li>Event markers (see the software marker section in the <a href="https://wiki.mentalab.com/event-triggers/#software-markers" title="/Event Triggers/_index.md#software-markers">Event Markers</a> page).</li>
+<li>Record (see Recording Section).</li>
+<li>Event markers (see Event Markers).</li>
 <li>Filters.</li>
-<li>LSL integration (see the <a href="https://wiki.mentalab.com/explore-desktop-guide/lsl/" title="Explore Desktop Guide/Lab Streaming Layer">Lab Streaming Layer</a> page).</li>
+<li>LSL push button.</li>
 </ul>
 <h2 id="exg">ExG</h2>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_32_channels_fullscreen.png" alt="Example of Explore Desktop's ExG plot" width="90%"/>
+<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_8_channels_fullscreen.png" alt="Example of Explore Desktop's ExG plot" width="90%"/>
 <figcaption>Example of an Explore Desktop ExG plot.</figcaption>
 </figure>
 
@@ -554,19 +549,18 @@ The colour map for the standard positions can be shown by clicking the ? button 
 <figcaption> Example of an Explore Desktop relative bandpower over time plot. </figcaption>
 </figure>
 <h2 id="filters">Filters</h2>
+<p>The Visualization page will prompt you to define your visualization filters. Explore Desktop will begin streaming data once you have selected your filters.</p>
 <figure style="float:right;">
-<img class="mobile" src="/img/ExploreDesktopGuide/filters_popup.png" alt="The visualization filters of Explore Desktop" width="400"/>
+<img class="mobile" src="/img/Desktop/vissettings.PNG" alt="The visualization filters of Explore Desktop" width="350"/>
 <figcaption> Set the visualization filters using the pop-up. </figcaption>
 </figure>
-<p>The Visualization page will prompt you to define your visualization filters. Explore Desktop will begin streaming data once you have selected your filters.</p>
 <p>You will still be able to filter signals while the device is streaming. To do so, select <strong>Filters</strong>.</p>
 <p>The following filters are available:</p>
 <ul>
 <li>Notch filter (band stop filter) – attenuates the power line noise at 50 or 60 Hz.</li>
-<li>High-pass filter – rejects signals with frequencies below this threshold, use the field <strong>Low Cutoff Frequency</strong> to set a high-pass filter</li>
-<li>Low-pass filter – rejects signals with frequencies above this threshold, use the field <strong>High Cutoff Frequency</strong> to set a high-pass filter</li>
+<li>Low cutoff frequency – rejects signals with frequencies below this threshold.</li>
+<li>High cutoff frequency – rejects signals with frequencies above this threshold.</li>
 </ul>
-<p>You can leave the low cutoff frequency field or the high cutoff frequency field empty to use a highpass or lowpass filter instead of a bandpass filter that utilizes both cut-offs.</p>
 <p><br><br>
 <strong>Filters do not affect raw data, only what is visualised.</strong></p>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>

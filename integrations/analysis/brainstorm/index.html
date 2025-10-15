@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/eeglab/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/brainstorm/">
 
     <title>
         
-        EEGLAB | Wiki
+        Brainstorm | Wiki
         
     </title>
 
@@ -269,7 +269,7 @@
         
         <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
         <ul class="list-unstyled ml-2">
-        <li data-nav-id="/integrations/analysis/eeglab/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/analysis/eeglab/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/eeglab/" class="nav-link p-0">
                     EEGLAB
@@ -305,7 +305,7 @@
                     NeuroKit2
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1 active">
                 
                  <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
                     Brainstorm
@@ -470,37 +470,96 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents"></nav>
+	<nav id="TableOfContents">
+  <ul>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#step-by-step-process">Step-by-Step Process</a>
+      <ul>
+        <li><a href="#1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</a></li>
+        <li><a href="#2-set-up-brainstorm">2. Set Up Brainstorm</a></li>
+        <li><a href="#3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</a></li>
+        <li><a href="#4-data-visualization">4. Data Visualization</a></li>
+        <li><a href="#5-filtering">5. Filtering</a></li>
+      </ul>
+    </li>
+    <li><a href="#resources">Resources</a></li>
+  </ul>
+</nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>EEGLAB</h1>
+<h1>Brainstorm</h1>
 
-<p>This is a guide to converting <a href="https://mentalab.com/products/">Mentalab Explore</a> CSV, BDF, and BIN files into an <a href="https://sccn.ucsd.edu/eeglab/index.php">EEGLAB</a> dataset using <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a>.</p>
-<p>Start Explore Desktop and do not connect to a device. From top menu, select <code>File&gt;Export&gt;EEGLAB Dataset</code>.</p>
+<p><a href="https://neuroimage.usc.edu/brainstorm/Introduction">Brainstorm</a> is a collaborative, open-source application dedicated to the analysis of brain recordings (MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology). This guide is a simple guide for importing and visualizing your Mentalab Explore recordings in Brainstorm.</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<p>Before starting, ensure you have:</p>
+<ul>
+<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm</a> installed on your system</li>
+<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop</a> for recording</li>
+</ul>
+<h2 id="step-by-step-process">Step-by-Step Process</h2>
+<h3 id="1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</h3>
+<p>Record your EEG data using Mentalab Explore Desktop and save it in BDF format for Brainstorm compatibility. If you have recordings in other formats, you can convert them to BDF using <a href="https://wiki.mentalab.com/explore-signals-guide/">Explore Signals</a>.</p>
+<h3 id="2-set-up-brainstorm">2. Set Up Brainstorm</h3>
+<p>Follow the <a href="https://neuroimage.usc.edu/brainstorm/Installation">Brainstorm installation guide</a> to install and configure Brainstorm on your system.</p>
+<h3 id="3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</h3>
+<ol>
+<li>
+<p><strong>Create a New Protocol:</strong></p>
+<ul>
+<li>Launch Brainstorm</li>
+<li>Go to <code>File &gt; New protocol</code></li>
+<li>Enter a protocol name (e.g., &ldquo;Mentalab_EEG_Study&rdquo;)</li>
+</ul>
+</li>
+<li>
+<p><strong>Add a Subject:</strong></p>
+<ul>
+<li>Right-click on your protocol in the database explorer</li>
+<li>Select <code>New subject</code></li>
+<li>Enter subject name and identifier</li>
+</ul>
+</li>
+<li>
+<p><strong>Import BDF Data:</strong></p>
+<ul>
+<li>Right-click on the session node</li>
+<li>Select <code>Import MEG/EEG</code></li>
+<li>Select your BDF recording file</li>
+<li>Brainstorm will automatically detect channel information and events</li>
+</ul>
+</li>
+</ol>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB1.png" alt="EEGLAB Dataset export" width="40%"/>
-<figcaption> EEGLAB Dataset export</figcaption>
+<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_import.png" alt="Brainstorm import dialog" width="25%"/>
+<figcaption> Brainstorm bdf file import dialog</figcaption>
 </figure>
-<p>After this, select the folder with the ExG data to be converted. A new <code>datasets</code> folder will be generated in the selected folder, containing the EEGLAB datasets.</p>
+<h3 id="4-data-visualization">4. Data Visualization</h3>
+<ul>
+<li>Double-click on the imported BDF data in Brainstorm UI</li>
+<li>The raw data viewer will open with your recording</li>
+</ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB2.png" alt="Destination folder" width="80%"/>
-<figcaption> Select destination folder</figcaption>
+<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_viz.png" alt="Brainstorm raw data viewer" width="95%"/>
+<figcaption> Brainstorm raw data viewer showing Mentalab EEG data</figcaption>
 </figure>
-<p>In EEGLAB, select the dataset from <code>File &gt; Load existing dataset</code>.</p>
+<h3 id="5-filtering">5. Filtering</h3>
+<ul>
+<li>On the right side of the screen open the Filter tab</li>
+<li>Set appropriate filters for your usecase</li>
+</ul>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB3.png" alt="EEGLAB dataset export" width="80%"/>
-<figcaption> EEGLAB dataset import</figcaption>
+<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_filter.png" alt="Brainstorm raw data viewer" width="25%"/>
+<figcaption> Filtering</figcaption>
 </figure>
-<p>You can now process your data. Click on <code>Plot &gt; Channel data (Scroll)</code> to inspect your recording.</p>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/EEGLAB/EEGLAB4.png" alt="EEGLAB dataset inspection" width="80%"/>
-<figcaption> EEGLAB dataset inspection</figcaption>
-</figure>
-<p><br><br></p>
-<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h2 id="resources">Resources</h2>
+<ul>
+<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm Documentation</a></li>
+<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop Guide</a></li>
+</ul>
+<p>For more information or support please contact: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
