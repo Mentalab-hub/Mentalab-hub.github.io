@@ -512,7 +512,7 @@ One the command line, use the first command to start the server. Using the secon
 </span></span><span style="display:flex;"><span>redis-cli monitor
 </span></span></code></pre></div><h3 id="push-exg-data-to-lsl">Push ExG data to LSL</h3>
 <p>We have set up an 8-channel Explore Pro device with channel 1 on Oz, suitable for recording alpha waves, and channel 2 on Fz, suitable for recording frontal theta and beta activity.
-Next, will use <a href="https://labstreaminglayer.readthedocs.io/">lab streaming layer</a> to make the stream of EEG data available for further processing in EEGSynth. You can either use the <code>LSL</code> button in Explore Desktop, or use the following lines of python code to push to lsl using explorepy.</p>
+Next, we will use <a href="https://labstreaminglayer.readthedocs.io/">lab streaming layer</a> to make the stream of EEG data available for further processing in EEGSynth. You can either use the <code>LSL</code> button in Explore Desktop, or use the following lines of python code to push to lsl using explorepy.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> explorepy
 </span></span><span style="display:flex;"><span>expdev <span style="color:#f92672">=</span> explorepy<span style="color:#f92672">.</span>Explore()
 </span></span><span style="display:flex;"><span>expdev<span style="color:#f92672">.</span>connect(<span style="color:#e6db74">&#34;Explore_XXXX&#34;</span>) <span style="color:#75715e"># REPLACE STRING WITH YOUR DEVICE NAME</span>
@@ -520,7 +520,7 @@ Next, will use <a href="https://labstreaminglayer.readthedocs.io/">lab streaming
 </span></span></code></pre></div><h2 id="setting-up-midi-loopback">Setting up MIDI loopback</h2>
 <p>In our example, we are going to use MIDI loopback, meaning that eegsynth will send out MIDI commands and another software (VCV Rack) running on the same computer uses these messages as input.</p>
 <p>On MacOS, start the Audio MIDI Setup application, which is installed by default on your system. In the top menu, click Window &gt; Show MIDI Studio. Double click the IAC Driver module and check the &ldquo;Device is online&rdquo; box. Add a bus to the ports section using the + icon if needed.
-You should not have a MIDI loopback device that can receive input from an EEGSynth outputmidi module and send the midi messages to a VCV Rack MIDI&gt;CV module.</p>
+You should now have a MIDI loopback device that can receive input from an EEGSynth outputmidi module and send the midi messages to a VCV Rack MIDI&gt;CV module.</p>
 <h3 id="start-your-eegsynth-patch">Start your EEGSynth patch</h3>
 <p>The general workflow is to run a module from the <code>src/modules</code> folder and provide it with an <code>.ini</code> file that contains your own configuration parameters. Generally, you should only need to edit the <code>.ini</code> files but not the modules themselves. Below is one example that assumes a <code>buffer.ini</code> file has been placed in the new <code>mypatches/MentalabExplore</code> directory. Hint: each module directory contains an example .ini file that you can copy to your own patch directory and edit there.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir mypatches
@@ -545,7 +545,7 @@ Next, load up the provided example patch from the file menu.</p>
 <figcaption> Our VCV Rack patch, controlling oscillator pitch and filter cutoff using EEG bandpower features.</figcaption>
 </figure>
 <p>In the two <b>MIDI&gt;CV</b> modules, select the <code>IAC Driver Bus 1</code> and <code>IAC Driver Bus 2</code> as MIDI input devices.
-In the <b>AUDIO module</b>, select our desired sound output device.</p>
+In the <b>AUDIO module</b>, select your desired sound output device.</p>
 <p>The patch is using note pitch (V/OCT) from MIDI Bus 1 (alpha power on Oz) to control the pitch of two sound generators (VCO).
 In this patch, we have different oscilators on the left and right audio channel, which get slightly different pitch information leading to cool stereo effects.
 The sound is then passed through a low pass filter (VCF), whose cutoff frequency is controlled by theta/beta power on Fz.
