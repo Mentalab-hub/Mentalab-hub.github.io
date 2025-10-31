@@ -476,13 +476,21 @@
     <li><a href="#applying-filters">Applying Filters</a></li>
     <li><a href="#channel-selection">Channel Selection</a></li>
     <li><a href="#visualization-options">Visualization Options</a></li>
-    <li><a href="#exporting-data">Exporting Data</a></li>
+    <li><a href="#export-data">Exporting Data</a></li>
     <li><a href="#asr">Artifact Subspace Reconstruction (ASR)</a>
       <ul>
         <li><a href="#standard-deviation-cutoff">Standard deviation cutoff</a></li>
         <li><a href="#calibration-window">Calibration Window</a></li>
         <li><a href="#calibration-start">Calibration Start</a></li>
         <li><a href="#applying-asr-to-a-loaded-file">Applying ASR to a loaded file</a></li>
+      </ul>
+    </li>
+    <li><a href="#recording-conversions">Converting and repairing recordings</a>
+      <ul>
+        <li><a href="#converting-to-and-from-csv-and-bdf">Converting to and from <code>.csv</code> and <code>.bdf</code></a></li>
+        <li><a href="#converting-to-eeglab-dataset-set">Converting to EEGLab dataset (.set)</a></li>
+        <li><a href="#convert-bin">Converting from .BIN</a></li>
+        <li><a href="#repairing-csv-recordings">Repairing .csv recordings</a></li>
       </ul>
     </li>
   </ul>
@@ -585,7 +593,7 @@
 <img class="mobile" src="/img/ExploreSignalsGuide/ASR_comparison_v020.png" alt="An image showing ExploreSignals visualizing cleaned data in blue and the corresponding original data in red in a plot. The plot is made up of multiple subplots, each visualizing one channel with red and blue lines. Additionally, some markers are visualized with green lines and labels at the top. A window of the data is shown where the result of ASR is especially drastic: jumping artifacts, marked with a green line and the label sw_jump, are dampened considerably in the blue line." width="90%"/>
 <figcaption>Comparing the original data (red) to the cleaned data (blue) after applying ASR with a cutoff of 20.0 and a calibration window of 60.0s.</figcaption>
 </figure>
-<h2 id="exporting-data">Exporting Data</h2>
+<h2 id="export-data">Exporting Data</h2>
 <p>Data (original and processed) can be exported from the <strong>File</strong> menu in the menu bar. Select the file you want to export in the <strong>Loaded Files</strong> section, then navigate to <strong>File</strong> -&gt; <strong>Export</strong> to open a file browser. In the file browser, you can change the file name and select the file format you want to save the data in (<code>.csv</code> or <code>.bdf</code>).</p>
 <figure style="text-align:center;">
 <img class="mobile" src="/img/ExploreSignalsGuide/Export_v020.png" alt="An image showing a section of ExploreSignals with the menu bar visible. The File menu is selected with the submenu showing two actions: Open and Export. A section of the Loaded Files list is visible with a file selected for export." width="50%"/>
@@ -605,6 +613,35 @@
 <p>In order to clean data using ASR, load a file (as outlined in <a href="#load-file">the section on loading data</a>), select it in the <strong>Loaded Files</strong> section and click on the <strong>ASR Cleaning</strong> button. A pop-up will be shown that allows changing the previously mentioned parameters for the algorithm. The button <strong>Load Preset</strong> can be used to bring up a menu to load recommended presets for the cutoff and accompanying calibration window, available presets are <strong>Aggressive</strong> (with a cutoff of 3.0 and a calibration window of 30s), <strong>Standard</strong> (with a cutoff of 5.0 and a calibration window of 30s) and lastly <strong>Conservative</strong> (with a cutoff of 20.0 and a calibration window of 60s).</p>
 <p>When you are finished with changing the parameters for the algorithm, clicking <strong>Apply ASR</strong> will clean the data and, once finished, bring up a comparison view of the cleaned data and the original data. Note that the implementation applies a high-pass filter internally to correct for drift and that the resulting cleaned signal will also be zero-mean as a result. If the original data is not filtered and / or zero-mean, the signal may not appear overlayed with / having the same baseline as the cleaned signal.</p>
 <p>The cleaned data is added to the list of <strong>Loaded Files</strong> and can be visualized (and analyzed) the same as other loaded data.</p>
+<h2 id="recording-conversions">Converting and repairing recordings</h2>
+<h3 id="converting-to-and-from-csv-and-bdf">Converting to and from <code>.csv</code> and <code>.bdf</code></h3>
+<p>To convert an existing recording from <code>.csv</code> to <code>.bdf</code> and vice-versa, you can load the file you want to convert as <a href="#load-file">explained in this section</a> and simply export it to the other format as <a href="#export-data">explained in this section</a>.</p>
+<h3 id="converting-to-eeglab-dataset-set">Converting to EEGLab dataset (.set)</h3>
+<p>Recordings in <code>.csv</code> and <code>.edf</code>/<code>.bdf</code> format can be converted to <code>.set</code> files compatible with Matlab&rsquo;s EEGLab plugin. You can use this feature by selecting <strong>File -&gt; Convert -&gt; Convert files to EEGLab</strong>. A pop-up will open to select the folder containing the <code>.edf</code>/<code>.bdf</code> files to convert. The <code>.set</code> files will be created in a subfolder called <strong>datasets</strong> placed in the selected directory. To convert recordings from <code>.csv</code> format, the respective <code>_Meta.csv</code> file needs to be present in same folder.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/Convert_to_EEGLab.png" alt="A pop-up showing an empty field with a Browse button next to it. Below it is a text asking users to select a folder and to make sure _Meta files are available when converting from .csv. Two buttons are in the lower right corner, Cancel and Convert, the latter is greyed out." width="75%"/>
+<figcaption>Recordings in .csv and .bdf format can be converted to EEGLab .set file.</figcaption>
+</figure>
+<h3 id="convert-bin">Converting from .BIN</h3>
+<p>You can convert the binary files from the Explore device&rsquo;s internal memory (<code>.BIN</code>) to <code>.csv</code> or <code>.bdf</code> files. To do so, select <strong>File -&gt; Convert -&gt; Convert .BIN to .csv or .bdf</strong>. This will open a pop-up to select the file to convert, the folder to save the converted files to and the output file format.</p>
+<p>Converting to <code>.csv</code> generates four files: ExG, orientation, marker and metadata (<code>[...]_ExG.csv</code>, <code>[...]_ORN.csv</code>, <code>[...]_Marker.csv</code> and <code>[...]_Meta.csv</code>).</p>
+<p>Converting to <code>.bdf</code> generates two files: ExG and orientation (<code>[...]_ExG.bdf</code> and <code>[...]_ORN.bdf</code>) - markers will be written to the ExG file. Note that the data is written in BDF+ format (using 24-bit resolution, as opposed to EDF/EDF+)</p>
+
+<div class="alert alert-info" role="alert">
+    If you change your device’s sampling rate or channel mask during recording, the conversion will create a new <code>.csv</code>/<code>.bdf</code> file for the ExG data with the given file name plus the time the setting changed.
+</div>
+
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/Convert_BIN.png" alt="A pop-up showing three sections for different options. The first section has an empty field with a Browse button next to it and a text asking the user to select a binary. The second section has an empty field with a Browse button next to it and a text asking the user to select an output folder. The third section has two radio buttons for .csv and .bdf and a text asking the user to pick an output format. Two buttons are in the lower right corner, Cancel and Convert, the latter is greyed out." width="75%"/>
+<figcaption>Recordings from the Explore device's internal memory can be converted from the original binary representation to .csv or .bdf files.</figcaption>
+</figure>
+<h3 id="repairing-csv-recordings">Repairing .csv recordings</h3>
+<p>If some packets are dropped during recording with explorepy or Explore Desktop, the binary file from the Explore device can be used to repair the recorded <code>.csv</code> file. To repair a recorded <code>.csv</code> file, select <strong>Tools -&gt; Repair ExG .csv with .BIN</strong>. This will open a pop-up that lets you select a <code>.csv</code> file to repair. To repair the selected file, make sure it is located in the same folder as the respective <code>.BIN</code> file that should be used to repair it before clicking on the <strong>Repair</strong> button. The repaired file will be place inside the same folder as the file that was selected. It will be named like the selected file but with <code>_recovered_ExG</code> added to the file name.</p>
+<figure style="text-align:center;">
+<img class="mobile" src="/img/ExploreSignalsGuide/Repair_csv.png" alt="A pop-up with an empty field and a Browse button next to it. A text below it asks the user to place a binary file and .csv recording in the same folder for repair. Two buttons are in the lower right corner, Cancel and Repair, the latter is greyed out." width="75%"/>
+<figcaption>Recordings made with explorepy or Explore Desktop that may have missing samples can be repaired using a matchin binary file from the Explore device's internal memory.</figcaption>
+</figure>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 <div class="footnotes" role="doc-endnotes">
 <hr>
 <ol>

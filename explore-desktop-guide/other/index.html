@@ -472,13 +472,7 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#export-eeglab-dataset">Export EEGLAB dataset</a></li>
-        <li><a href="#convert-bin">Convert BIN</a></li>
-        <li><a href="#data-repair">Data repair</a></li>
-      </ul>
-    </li>
+    <li><a href="#other-features">Other features</a></li>
   </ul>
 </nav>
 </div>
@@ -488,21 +482,32 @@
 
 <h1>Other</h1>
 
-<h3 id="export-eeglab-dataset">Export EEGLAB dataset</h3>
-<p>.edf and .bdf files can be exported to .set files compatible with Matlab&rsquo;s EEGLab plugin. In the Menu Bar select <strong>File &gt; Export &gt; EEGLab Dataset</strong>. A pop-up will open to select the folder containing the .edf/.bdf files to convert. The .set files will be created in a subfolder called <strong>datasets</strong> placed in the selected directory.</p>
-<h3 id="convert-bin">Convert BIN</h3>
-<p>You can convert the binary files into CSV or EDF files.
-In the Menu Bar select <strong>File &gt; Convert BIN</strong>. This will open a pop-up to select the file to convert, the output file format and the folder to save the converted files.</p>
-<p>Converting to CSV generates four files: ExG, orientation, marker files and metadata.</p>
-<p>Converting to EDF generates two files: ExG and orientation - markers will be written in ExG file. The data is actually recorded in BDF+ format (in 24-bit resolution)</p>
+<h2 id="other-features">Other features</h2>
+<p>Explore Desktop additionally offers functionality to convert recordings from and to select formats. These features can be found in the menu bar.</p>
+<p>You can use ExploreDesktop to&hellip;</p>
+<ol>
+<li>&hellip;convert recordings from the device&rsquo;s memory (in <code>.BIN</code> format) to <code>.csv</code> or <code>.bdf</code>
+<ul>
+<li>File -&gt; Convert BIN</li>
+</ul>
+</li>
+<li>&hellip;convert recordings from <code>.csv</code> or <code>.bdf</code> to EEGLab datasets
+<ul>
+<li>File -&gt; Export -&gt; EEGLAB Dataset</li>
+</ul>
+</li>
+<li>&hellip;repair recordings in <code>.csv</code> format from ExploreDesktop using the respective recording from the Explore device&rsquo;s memory
+<ul>
+<li>Tools -&gt; Data Repair</li>
+</ul>
+</li>
+</ol>
+<p>These features are being moved to our offline visualization tool, Explore Signals. For more information on these features, refer to <a href="https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/#recording-conversions">the respective section in the Explore Signals Guide</a>.</p>
 
-<div class="alert alert-info" role="alert">
-    If you change your device’s sampling rate or channel mask during recording, the conversion will create a new CSV/EDF file for ExG data with the given file name plus the time the setting changed.
+<div class="alert alert-warning" role="alert">
+    The features mentioned on this page will be removed from Explore Desktop in a future update. You can continue using them through ExploreSignals, our free offline visualization software. Click <a href="https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/">here</a> to get Explore Signals.
 </div>
 
-<h3 id="data-repair">Data repair</h3>
-<p>If some packets are dropped during recording, the binary file can be used to repair the recorded csv file. For this purpose, both the recorded csv and the .BIN file must be located at the same folder.</p>
-<p>In the Menu Bar select <strong>Tools &gt; Data Repair</strong>. A pop-up will open to select the file to repair. The repaired file will be stored in the same folder containing the file selected, adding _recovered_ExG to the original name.</p>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
