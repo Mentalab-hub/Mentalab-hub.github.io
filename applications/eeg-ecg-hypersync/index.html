@@ -8,7 +8,7 @@
 
     <title>
         
-        Synchronized EEG &amp; ECG with HyperSync and LSL | Wiki
+        Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL | Wiki
         
     </title>
 
@@ -199,7 +199,7 @@
         <li data-nav-id="/applications/eeg-ecg-hypersync/" class="nav-item my-1 active">
                 
                  <a href="/applications/eeg-ecg-hypersync/" class="nav-link p-0">
-                    Synchronized EEG &amp; ECG with HyperSync and LSL
+                    Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL
                 </a>
         </li>
         <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
@@ -474,7 +474,7 @@
   <ul>
     <li><a href="#introduction">Introduction</a></li>
     <li><a href="#requirements">Requirements</a></li>
-    <li><a href="#setting-up-and-visualizing-the-hypersync-streams">Setting up and visualizing the HyperSync streams</a></li>
+    <li><a href="#setting-up-and-visualizing-the-mentalab-hypersync-streams">Setting up and visualizing the Mentalab Hypersync streams</a></li>
   </ul>
 </nav>
 </div>
@@ -482,23 +482,23 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Synchronized EEG &amp; ECG with HyperSync and LSL</h1>
+<h1>Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</h1>
 
 <h2 id="introduction">Introduction</h2>
-<p>With our HyperSync set-up, it is possible to synchronize two or more Explore Pro devices and get the data in real-time using LSL. This example aims to showcase one application for multiple synchronized Explore Pro devices in the form of synchronized EEG and ECG streams pulled from LSL and visualised in real-time in a separate process.</p>
+<p>With our Mentalab Hypersync set-up, it is possible to synchronize two or more Explore Pro devices and get the data in real-time using LSL. This example aims to showcase one application for multiple synchronized Explore Pro devices in the form of synchronized EEG and ECG streams pulled from LSL and visualised in real-time in a separate process.</p>
 <h2 id="requirements">Requirements</h2>
 <ul>
 <li><strong>2 Mentalab Explore Pro Devices and a cap, cables and electrodes for ECG and EEG recording</strong>: This hardware is necessary to record and stream biosignal data, in this case ECG and EEG</li>
 <li><strong>Mentalab Hypersync Add-on</strong>: This hardware is necessary to establish time synchronisation between multiple Explore Pro devices</li>
 <li><strong>2 PCs, Laptops or Raspberry Pis capable of running our free software</strong>: Our free software can connect to one device at a time so one recording / streaming PC per Explore Pro is needed</li>
-<li><strong>Custom LSL visualiser</strong>: Please contact us at <a href="mailto:support@mentalab.com">support@mentalab.com</a> if you are interested in visualising HyperSync streams in real-time as this software is in active development</li>
+<li><strong>Custom LSL visualiser</strong>: Please contact us at <a href="mailto:support@mentalab.com">support@mentalab.com</a> if you are interested in visualising Mentalab Hypersync streams in real-time as this software is in active development</li>
 </ul>
-<h2 id="setting-up-and-visualizing-the-hypersync-streams">Setting up and visualizing the HyperSync streams</h2>
-<p>Refer to the instructions and software you have received alongside the HyperSync hardware to install and set up the software necessary to synchronize and connect to Explore Pro devices. If you are synchronizing two or more Explore Pro devices, as we do in this example, you will need a PC for every device that you want to stream data from. Please don&rsquo;t hesitate to contact us at <a href="mailto:support@mentalab.com">support@mentalab.com</a> if you need help with the set-up or have any questions about it. In our example, we are using two stick&rsquo;n&rsquo;peel electrodes (plus one for reference) to stream ECG and four dry electrodes (plus one for reference) to stream EEG (refer to our <a href="https://wiki.mentalab.com/user-guide/dry-electrode-guide/" title="User Guide/Dry Electrode Guide">Dry Electrode Guide</a> for more information).</p>
-<p>After setting up the synchronization of the Explore devices and pushing to LSL from our software, the time synchronized LSL streams can be subscribed to and processed from other software that can subscribe to LSL streams. For this example, we have written software that subscribes to Explore Pro HyperSync LSL streams, pulls data from the streams periodically and visualises the retrieved data as it comes in with individual scaling for each channel and customizable colours.</p>
+<h2 id="setting-up-and-visualizing-the-mentalab-hypersync-streams">Setting up and visualizing the Mentalab Hypersync streams</h2>
+<p>Refer to the instructions and software you have received alongside the Mentalab Hypersync hardware to install and set up the software necessary to synchronize and connect to Explore Pro devices. If you are synchronizing two or more Explore Pro devices, as we do in this example, you will need a PC for every device that you want to stream data from. Please don&rsquo;t hesitate to contact us at <a href="mailto:support@mentalab.com">support@mentalab.com</a> if you need help with the set-up or have any questions about it. In our example, we are using two stick&rsquo;n&rsquo;peel electrodes (plus one for reference) to stream ECG and four dry electrodes (plus one for reference) to stream EEG (refer to our <a href="https://wiki.mentalab.com/user-guide/dry-electrode-guide/" title="User Guide/Dry Electrode Guide">Dry Electrode Guide</a> for more information).</p>
+<p>After setting up the synchronization of the Explore devices and pushing to LSL from our software, the time synchronized LSL streams can be subscribed to and processed from other software that can subscribe to LSL streams. For this example, we have written software that subscribes to Explore Pro Mentalab Hypersync LSL streams, pulls data from the streams periodically and visualises the retrieved data as it comes in with individual scaling for each channel and customizable colours.</p>
 <figure style="text-align:center;">
 <img class="mobile" src="/img/Applications/eeg_ecg_hypersync.gif" alt="A gif of two Explore Pro streams of EEG and ECG data visualised in real-time." width=75%/>
-<figcaption>Real-time HyperSync LSL stream visualiser showing time-synchronized EEG (blue) and ECG (orange) data. The incoming EEG data showcases an increase in alpha waves while the heartbeat seen in the ECG slows.</figcaption>
+<figcaption>Real-time Mentalab Hypersync LSL stream visualiser showing time-synchronized EEG (blue) and ECG (orange) data. The incoming EEG data showcases an increase in alpha waves while the heartbeat seen in the ECG slows.</figcaption>
 </figure>
 
     

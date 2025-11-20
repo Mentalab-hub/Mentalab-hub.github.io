@@ -199,7 +199,7 @@
         <li data-nav-id="/applications/eeg-ecg-hypersync/" class="nav-item my-1">
                 
                  <a href="/applications/eeg-ecg-hypersync/" class="nav-link p-0">
-                    Synchronized EEG &amp; ECG with HyperSync and LSL
+                    Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL
                 </a>
         </li>
         <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
@@ -508,21 +508,21 @@
 <ol>
 <li><strong>E-Prime</strong>: Runs experiments and can generate event markers during an experiment at onset time, response time or current time</li>
 <li><strong>LSL package file</strong>: The LabStreamingLayer package file provides real-time streaming of data (including markers) with precise timestamps for E-Prime</li>
-<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
+<li><strong>Mentalab Hypersync</strong>: The Mentalab Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
 </ol>
 <h2 id="integrating-with-e-prime-via-lsl">Integrating with E-Prime® via LSL</h2>
-<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>Consult the Mentalab Hypersync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
 <p>To integrate with E-Prime® via LSL, follow the information published for E-Prime® on the PST website and the ReadMe on the GitHub repository for the LSL package file to add LSL functionality to your experiment set-ups:</p>
 <ul>
 <li><a href="https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955">LSL info page on the PST website</a></li>
 <li><a href="https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file">GitHub repository containing LSL package file for E-Prime®</a></li>
 </ul>
-<p>The installation ReadMe and the LSL samples in the GitHub repository contain information on how to send markers via LSL at an object&rsquo;s OnsetTime, Stimulus response time and at the current time. The markers can be used to synchronize with the Explore device if the device itself is synchronized using the HyperSync suite.</p>
+<p>The installation ReadMe and the LSL samples in the GitHub repository contain information on how to send markers via LSL at an object&rsquo;s OnsetTime, Stimulus response time and at the current time. The markers can be used to synchronize with the Explore device if the device itself is synchronized using the Mentalab Hypersync suite.</p>
 <p>Follow the installation ReadMe to add LSL markers to your experiment set-up according to your needs. The markers will be available as an LSL stream from any other script or software that makes use of LSL, like LabRecorder or custom scripts using LSL.</p>
 <p>You can record the markers via LabRecorder (via the &ldquo;E-Prime&rdquo; stream as explained in the installation ReadMe) alongside the EXG datastream (named after the Explore device) from the synchronized Explore amplifier to record synchronized markers from an experiment and EXG data.</p>
-<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Mentalab Hypersync hardware.</strong></p>
 <h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<p>While LSL with Mentalab Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
 <br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 <br>

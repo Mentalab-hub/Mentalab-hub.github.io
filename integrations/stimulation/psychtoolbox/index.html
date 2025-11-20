@@ -199,7 +199,7 @@
         <li data-nav-id="/applications/eeg-ecg-hypersync/" class="nav-item my-1">
                 
                  <a href="/applications/eeg-ecg-hypersync/" class="nav-link p-0">
-                    Synchronized EEG &amp; ECG with HyperSync and LSL
+                    Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL
                 </a>
         </li>
         <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
@@ -509,10 +509,10 @@
 <li><strong>Psychtoolbox</strong>: Runs experiments from user-written Matlab code and provides access to low-level hardware features to ensure very precise timing (sub-millisecond) and versatile usage</li>
 <li><strong>Matlab</strong>: Psychtoolbox requires Matlab to run</li>
 <li><strong>LSL for Matlab</strong>: The Matlab release for LSL allows users to open and view LSL streams to pull or push data (like Markers) from within Matlab scripts</li>
-<li><strong>Mentalab Hypersync</strong>: The Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Hypersync hardware to achieve wireless, high-precision synchronization</li>
+<li><strong>Mentalab Hypersync</strong>: The Mentalab Hypersync suite is used to merge ExG data with event markers via LSL. Please follow the instructions delivere to you with you Mentalab Hypersync hardware to achieve wireless, high-precision synchronization</li>
 </ol>
 <h2 id="integrating-with-psychtoolbox-via-lsl">Integrating with Psychtoolbox via LSL</h2>
-<p>Consult the HyperSync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>Consult the Mentalab Hypersync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
 <p>In order to synchronize ExG data from the Explore amplifier with event marker data from Psychtoolbox, you can open an LSL stream in your Matlab script to push the event marker data to. Make sure to add the path to the liblsl-Matlab directory containing the Matlab interface for LSL if your script is running in any other directory.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-matlab" data-lang="matlab"><span style="display:flex;"><span><span style="color:#75715e">% add path to liblsl-Matlab (necessary if the current working directory is not the liblsl-Matlab directory)</span>
 </span></span><span style="display:flex;"><span>addpath(genpath(<span style="color:#e6db74">&#39;path/to/liblsl-Matlab&#39;</span>));
@@ -534,9 +534,9 @@
 <li><a href="https://github.com/labstreaminglayer/liblsl-Matlab">LSL for Matlab repository containing installation instructions</a></li>
 <li><a href="https://github.com/labstreaminglayer/liblsl-Matlab/tree/master/examples">Examples showcasing how to use LSL in Matlab</a></li>
 </ul>
-<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Mentalab Hypersync hardware.</strong></p>
 <h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<p>While LSL with Mentalab Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
 <br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 <br>

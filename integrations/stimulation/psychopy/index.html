@@ -199,7 +199,7 @@
         <li data-nav-id="/applications/eeg-ecg-hypersync/" class="nav-item my-1">
                 
                  <a href="/applications/eeg-ecg-hypersync/" class="nav-link p-0">
-                    Synchronized EEG &amp; ECG with HyperSync and LSL
+                    Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL
                 </a>
         </li>
         <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
@@ -518,7 +518,7 @@
 <ol>
 <li><strong>PsychoPy Experiment</strong>: Your PsychoPy script generates experimental events (e.g., stimulus onset, response).</li>
 <li><strong>PyLSL Markers</strong>: At each event, Python sends an event marker via an LSL stream.</li>
-<li><strong>Mentalab Hypersync</strong>: The Mentalab Hypersync suite is used to merge ExG data with the event markers via LSL. Please follow the instructions delivered to you with your Hypersync hardware.</li>
+<li><strong>Mentalab Hypersync</strong>: The Mentalab Hypersync suite is used to merge ExG data with the event markers via LSL. Please follow the instructions delivered to you with your Mentalab Hypersync hardware.</li>
 </ol>
 <h3 id="integrating-lsl-markers-into-your-psychopy-experiment">Integrating LSL Markers into your PsychoPy Experiment</h3>
 <p>Add Python code to your PsychoPy script to establish an LSL outlet and dispatch markers. We are happy to provide an example P300 experiment as reference.</p>
@@ -530,19 +530,19 @@
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Define Stream Information (<code>StreamInfo</code>)</strong>:
-This object describes your marker stream so Hypersync can find it.</p>
+This object describes your marker stream so Mentalab Hypersync can find it.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Define the stream information for markers</span>
 </span></span><span style="display:flex;"><span>marker_stream_info <span style="color:#f92672">=</span> StreamInfo(name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;PsychopyExperimentMarkers&#39;</span>, 
 </span></span><span style="display:flex;"><span>                                type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;Markers&#39;</span>, 
 </span></span><span style="display:flex;"><span>                                channel_count<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span>,
 </span></span><span style="display:flex;"><span>                                nominal_srate<span style="color:#f92672">=</span><span style="color:#ae81ff">0.0</span>, 
-</span></span><span style="display:flex;"><span>                                channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;int32&#39;</span>,
+</span></span><span style="display:flex;"><span>                                channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;string&#39;</span>,
 </span></span><span style="display:flex;"><span>                                source_id<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;YourExperimentUniqueID&#39;</span>) <span style="color:#75715e">#</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># name: A recognizable name (e.g., &#39;PsychopyExperimentMarkers&#39;)</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># type: Conventionally &#39;Markers&#39;</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># channel_count: 1 for single integer markers</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># nominal_srate: 0.0 for irregular events</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># channel_format: &#39;int32&#39; for integer markers</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># channel_format: &#39;string&#39; for string markers</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># source_id: A unique ID for this stream source</span>
 </span></span></code></pre></div></li>
 <li>
@@ -554,15 +554,15 @@ This object sends markers into the LSL network.</p>
 </span></span></code></pre></div></li>
 <li>
 <p><strong>Pushing a Marker (<code>marker_outlet.push_sample()</code>)</strong>:
-Send a marker when an event occurs. The argument must be a list or tuple.</p>
+Send a marker when an event occurs. The argument must be a list or tuple. Note that non-string labels have to be cast to string before they can be pushed using the created outlet (<code>str(label_value)</code>).</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># Example: Sending marker for stimulus onset</span>
 </span></span><span style="display:flex;"><span>label_value <span style="color:#f92672">=</span> <span style="color:#ae81ff">11</span> <span style="color:#75715e"># Example: 11 for a target stimulus</span>
-</span></span><span style="display:flex;"><span>marker_outlet<span style="color:#f92672">.</span>push_sample([label_value]) <span style="color:#75715e"># Send LSL marker for stimulus onset</span>
+</span></span><span style="display:flex;"><span>marker_outlet<span style="color:#f92672">.</span>push_sample([str(label_value)]) <span style="color:#75715e"># Send LSL marker for stimulus onset</span>
 </span></span><span style="display:flex;"><span>print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;LSL Marker Sent: </span><span style="color:#e6db74">{</span>label_value<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>) <span style="color:#75715e">#</span>
 </span></span></code></pre></div><p>It&rsquo;s critical to send the marker as close as possible to the event&rsquo;s actual occurrence (e.g., immediately after <code>win.flip()</code> for visual stimuli).</p>
 </li>
 </ol>
-<p>These steps will create an LSL Marker stream, that can be recorded using <a href="https://labstreaminglayer.readthedocs.io/info/getting_started.html">LabRecorder</a>. <strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<p>These steps will create an LSL Marker stream that can be recorded using <a href="https://labstreaminglayer.readthedocs.io/info/getting_started.html">LabRecorder</a>. <strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
 <h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
 <p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
 <br>

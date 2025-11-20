@@ -199,7 +199,7 @@
         <li data-nav-id="/applications/eeg-ecg-hypersync/" class="nav-item my-1">
                 
                  <a href="/applications/eeg-ecg-hypersync/" class="nav-link p-0">
-                    Synchronized EEG &amp; ECG with HyperSync and LSL
+                    Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL
                 </a>
         </li>
         <li data-nav-id="/applications/eeg-to-lamp/" class="nav-item my-1">
@@ -607,7 +607,7 @@
 </ul>
 <h3 id="step-2-start-streaming-with-hypersync-suit">Step 2: Start streaming with hypersync suit</h3>
 <ul>
-<li>For synchronising your Mentalab Explore hardware with the stimulus presentation computer, please refer to the Hypersync instructions delivered to you with your Hypersync hardware.</li>
+<li>For synchronising your Mentalab Explore hardware with the stimulus presentation computer, please refer to the Mentalab Hypersync instructions delivered to you with your Mentalab Hypersync hardware.</li>
 </ul>
 <h3 id="step-3-run-the-experiment-in-opensesame">Step 3: Run the Experiment in OpenSesame</h3>
 <ul>
@@ -619,7 +619,7 @@
 <li>Use <a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> and select both the OpenSesame marker stream and your ExG data stream.</li>
 <li>Optional: Use our LSL listener python script (see below) to check the received values in real-time.</li>
 </ul>
-<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Hypersync hardware.</strong></p>
+<p><strong>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Mentalab Hypersync hardware.</strong></p>
 <h2 id="optional-python-script-for-listening-to-lsl-stream">Optional: Python Script for Listening to LSL Stream</h2>
 <p>Create a separate Python script to monitor the LSL stream:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> pylsl <span style="color:#f92672">import</span> StreamInlet, resolve_streams
@@ -656,7 +656,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">except</span> <span style="color:#a6e22e">Exception</span> <span style="color:#66d9ef">as</span> e:
 </span></span><span style="display:flex;"><span>    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#34;Error receiving data: </span><span style="color:#e6db74">{</span>e<span style="color:#e6db74">}</span><span style="color:#e6db74">&#34;</span>)
 </span></span></code></pre></div><h2 id="alternative-legacy-methods-wired-triggers">Alternative (Legacy) Methods: Wired Triggers</h2>
-<p>While LSL with Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
+<p>While LSL with Mentalab Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible. Please refer to our <a href="https://wiki.mentalab.com/event-triggers/" title="Event Triggers/event-triggers">Event Triggers</a> page for further information.</p>
 <br>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 <br>
