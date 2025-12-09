@@ -501,7 +501,15 @@ To use Mentalab Hypersync, please follow the instructions provided to you with y
 <h2 id="wired-trigger">Wired trigger</h2>
 <h3 id="8-bit-trigger">8-bit trigger</h3>
 <p>Explore device can receive 8-bit triggers, which  allows sub-ms precise synchronization via a USB cable. This can be used to encode different trials in numerical format. The trigger information is readily available in recordings in CSV, BDF and XDF format.</p>
-<p>Conenction is very straightforward. Simply turn on your amplifier, connect via Bluetooth to the recording computer, connect via USB cable to the presentation PC, and send trigger information on demand. This trigger can be used in both Bluetooth streaming and offline recording mode. We are providing a simple <a href="https://github.com/Mentalab-hub/explorepy/blob/master/examples/markers_examples/send_8_bit_marker_independently.py">Python script</a> that demonstrates the usage.</p>
+<p>To connect, follow the steps below.</p>
+<ol>
+<li>Simply turn on your amplifier</li>
+<li>Connect via Bluetooth to the recording computer</li>
+<li>Connect the trigger isolator (labeled TI) to the amplifier</li>
+<li>Connect a USB cable to the presentation PC and the trigger isolator</li>
+<li>Send trigger information on demand</li>
+</ol>
+<p>This trigger can be used in both Bluetooth streaming and offline recording mode. We are providing a simple <a href="https://github.com/Mentalab-hub/explorepy/blob/master/examples/markers_examples/send_8_bit_marker_independently.py">Python script</a> that demonstrates the usage.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-Python" data-lang="Python"><span style="display:flex;"><span><span style="color:#f92672">import</span> explorepy
 </span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> time
 </span></span><span style="display:flex;"><span>
