@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html><head>
+<html><head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/explore-mobile-guide/testing/">
+    <link rel="canonical" href="http://localhost:1313/explore-mobile-guide/testing/">
 
     <title>
         
@@ -13,13 +13,13 @@
     </title>
 
     
-    <link href="https://wiki.mentalab.com/css/fontawesome.min.css" rel="stylesheet">
+    <link href="http://localhost:1313/css/fontawesome.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     
-    <link rel="stylesheet" href="https://wiki.mentalab.com/css/ace.min.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/ace.min.css">
 
     
 
@@ -472,12 +472,10 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#recording-tests">Recording Tests</a></li>
-      </ul>
-    </li>
-    <li><a href="#known-bugs">Known bugs</a></li>
+    <li><a href="#tested-device">Tested Device</a></li>
+    <li><a href="#recording-tests">Recording Tests</a></li>
+    <li><a href="#lsl-streaming-tests">LSL Streaming Tests</a></li>
+    <li><a href="#known-issues">Known Issues</a></li>
   </ul>
 </nav>
 </div>
@@ -487,48 +485,31 @@
 
 <h1>Tests</h1>
 
-<p>Following are the devices we used to testing:</p>
-<table>
-  <thead>
-      <tr>
-          <th>Device</th>
-          <th>OS version</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>Lenovo Tab M9</td>
-          <td>Android 13</td>
-      </tr>
-      <tr>
-          <td>Samsung S23 Ultra</td>
-          <td>Android 14</td>
-      </tr>
-      <tr>
-          <td>Zenfone 10</td>
-          <td>Android 14</td>
-      </tr>
-      <tr>
-          <td>Pixel 7 Pro</td>
-          <td>Android 15</td>
-      </tr>
-      <tr>
-          <td>iPhone 13</td>
-          <td>iOS 18</td>
-      </tr>
-  </tbody>
-</table>
-<h3 id="recording-tests">Recording Tests</h3>
-<p>The following tests were performed to ensure the recording functionality is working as expected.</p>
+<h2 id="tested-device">Tested Device</h2>
+<p>The App is optimized for use with our official study phone. All functionality has been verified on this device.</p>
+<h2 id="recording-tests">Recording Tests</h2>
+<p>The following tests were performed to ensure the recording functionality is working as expected:</p>
 <ul>
-<li>Conducted on Lenovo Tab M9 (Android 13) for 2 hours:
+<li><strong>Long-duration recording test</strong>: Conducted on the official study phone for 8 hours
 <ul>
-<li>16 channels at 500 Hz sampling rate</li>
-<li>16 channels at 250 Hz sampling rate</li>
+<li>32 channels at 250 Hz sampling rate (with LSL streaming active)</li>
+<li>32 channels at 250 Hz sampling rate (without LSL streaming)</li>
 </ul>
 </li>
 </ul>
-<h2 id="known-bugs">Known bugs</h2>
+<p><strong>Result</strong>: All recordings completed successfully with no data loss or interruptions.</p>
+<h2 id="lsl-streaming-tests">LSL Streaming Tests</h2>
+<p>The following tests were performed to ensure the LSL streaming functionality is working as expected:</p>
+<ul>
+<li><strong>Long-duration streaming test</strong>: Conducted on the official study phone for 8 hours
+<ul>
+<li>32 channels at 250 Hz sampling rate (with recording active)</li>
+<li>32 channels at 250 Hz sampling rate (without recording active)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Result</strong>: LSL streams maintained stable connections with consistent data flow throughout the test period.</p>
+<h2 id="known-issues">Known Issues</h2>
 <p>No known bugs at the moment.</p>
 
 
@@ -541,10 +522,10 @@
 
         </div> 
 <p style="text-align: center;">Copyright © 2025 Mentalab</p>
-<script src="https://wiki.mentalab.com/lib/jquery.min.js"></script> 
-<script src="https://wiki.mentalab.com/lib/popper.min.js"></script> 
+<script src="http://localhost:1313/lib/jquery.min.js"></script> 
+<script src="http://localhost:1313/lib/popper.min.js"></script> 
 
-<script src="https://wiki.mentalab.com/js/bootstrap.min.js"></script> 
+<script src="http://localhost:1313/js/bootstrap.min.js"></script> 
 
 
 <script type="text/javascript" src="/plugins/lunr.min.js"></script>
@@ -552,7 +533,7 @@
 <link href="/plugins/auto-complete.css" rel="stylesheet">
 
 <script type="text/javascript">
-    var baseurl = "https:\/\/wiki.mentalab.com\/";
+    var baseurl = "http:\/\/localhost:1313\/";
 </script>
 <script type="text/javascript" src="/plugins/search.js"></script>
 

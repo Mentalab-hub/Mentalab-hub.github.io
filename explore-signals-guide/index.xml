@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Explore Signals Guide on Wiki</title>
-    <link>https://wiki.mentalab.com/explore-signals-guide/</link>
+    <link>http://localhost:1313/explore-signals-guide/</link>
     <description>Recent content in Explore Signals Guide on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 13 May 2025 10:10:00 +0000</lastBuildDate>
-    <atom:link href="https://wiki.mentalab.com/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/explore-signals-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Installation</title>
-      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</link>
+      <link>http://localhost:1313/explore-signals-guide/explore-signals-installation/</link>
       <pubDate>Tue, 13 May 2025 10:00:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</guid>
-      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Explore Signals is available for Windows, macOS, and Linux.&#xA;No setup is required — download and run the appropriate file for your operating system.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;column&#34;&gt;&#xA;    &lt;a href=&#34;https://github.com/Mentalab-hub/explore-signals-release/releases/latest&#34;&gt;&#xA;&#x9;&#x9;&lt;img style=&#34;padding: 20px; width: 90%;&#34; src=&#34;https://wiki.mentalab.com/img/ExploreSignalsGuide/download-explore-signals-from-github.svg&#34; alt=&#34;Download Explore Signals&#34;&gt;&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;/figure&gt;</description>
+      <guid>http://localhost:1313/explore-signals-guide/explore-signals-installation/</guid>
+      <description>&lt;h2 id=&#34;installation&#34;&gt;Installation&lt;/h2&gt;&#xA;&lt;p&gt;Explore Signals is available for Windows, macOS, and Linux.&#xA;No setup is required — download and run the appropriate file for your operating system.&lt;/p&gt;&#xA;&lt;figure&gt;&#xA;  &lt;div class=&#34;column&#34;&gt;&#xA;    &lt;a href=&#34;https://github.com/Mentalab-hub/explore-signals-release/releases/latest&#34;&gt;&#xA;&#x9;&#x9;&lt;img style=&#34;padding: 20px; width: 90%;&#34; src=&#34;http://localhost:1313/img/ExploreSignalsGuide/download-explore-signals-from-github.svg&#34; alt=&#34;Download Explore Signals&#34;&gt;&#xA;&#x9;&lt;/a&gt;&#xA;&lt;/div&gt;&#xA;&lt;/figure&gt;</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</link>
+      <link>http://localhost:1313/explore-signals-guide/explore-signals-usage/</link>
       <pubDate>Tue, 13 May 2025 10:10:00 +0000</pubDate>
-      <guid>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</guid>
+      <guid>http://localhost:1313/explore-signals-guide/explore-signals-usage/</guid>
       <description>&lt;h2 id=&#34;load-file&#34;&gt;Loading EEG/ExG Data&lt;/h2&gt;&#xA;&lt;p&gt;Files can be loaded using the &lt;strong&gt;File&lt;/strong&gt; menu in the menu bar of ExploreSignals. Navigate to &lt;strong&gt;File&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Open&lt;/strong&gt; to open a file browser and select one or multiple ExG files (&lt;code&gt;.csv&lt;/code&gt;, &lt;code&gt;.bdf&lt;/code&gt;) to load them into the software. The loaded file(s) will appear in the &lt;strong&gt;Loaded Files&lt;/strong&gt; section.&lt;/p&gt;&#xA;&lt;p&gt;If you are loading Mentalab Explore data from a &lt;code&gt;[...]_ExG.csv&lt;/code&gt; file, make sure that the corresponding &lt;code&gt;[...]_Meta.csv&lt;/code&gt; file is present in the same folder to ensure the data is loaded correctly. Additionally, if you want to visualize markers alongside the data, make sure that the corresponding &lt;code&gt;[...]_Marker.csv&lt;/code&gt; file is present in the same folder.&lt;/p&gt;</description>
     </item>
   </channel>
