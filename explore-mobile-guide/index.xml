@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Explore Mobile App on Wiki</title>
-    <link>http://localhost:1313/explore-mobile-guide/</link>
+    <link>https://wiki.mentalab.com/explore-mobile-guide/</link>
     <description>Recent content in Explore Mobile App on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Nov 2024 14:00:00 +0000</lastBuildDate>
-    <atom:link href="http://localhost:1313/explore-mobile-guide/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://wiki.mentalab.com/explore-mobile-guide/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Download and Installation</title>
-      <link>http://localhost:1313/explore-mobile-guide/download-installation/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/download-installation/</guid>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</guid>
       <description>&lt;p&gt;For any information or assistance regarding installation instructions, please contact &lt;a href=&#34;mailto:support@mentalab.com&#34;&gt;support@mentalab.com&lt;/a&gt; and we will assist you further.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Usage</title>
-      <link>http://localhost:1313/explore-mobile-guide/usage/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/usage/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/usage/</guid>
-      <description>&lt;p&gt;&lt;strong&gt;Homepage&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Scan and connect to nearby Explore Devices.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;http://localhost:1313/img/ExploreMobileGuide/Scan.jpg&#34; alt=&#34;ExG visualization tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;Impedance tab&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Inspect impedance values.&lt;/li&gt;&#xA;&lt;li&gt;Assign channel positions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;http://localhost:1313/img/ExploreMobileGuide/Impedance.jpg&#34; alt=&#34;Impedance tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;EXG tab&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Visualize ExG data.&lt;/li&gt;&#xA;&lt;li&gt;Visualize markers.&lt;/li&gt;&#xA;&lt;li&gt;Dot menu:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Adapt visulization settings (y-axis scaling &amp;amp; time window).&lt;/li&gt;&#xA;&lt;li&gt;Record raw ExG data in CSV format.&lt;/li&gt;&#xA;&lt;li&gt;Stream via LSL.&lt;/li&gt;&#xA;&lt;li&gt;Lock Screen.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;http://localhost:1313/img/ExploreMobileGuide/ExG.jpg&#34; alt=&#34;ExG visualization tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;http://localhost:1313/img/ExploreMobileGuide/ExGVizSet.jpg&#34; alt=&#34;ExG visualization Settings&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt;&lt;/p&gt;</description>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/usage/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Homepage&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Scan and connect to nearby Explore Devices.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreMobileGuide/Scan.jpg&#34; alt=&#34;ExG visualization tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;Impedance tab&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Inspect impedance values.&lt;/li&gt;&#xA;&lt;li&gt;Assign channel positions.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreMobileGuide/Impedance.jpg&#34; alt=&#34;Impedance tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;EXG tab&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Visualize ExG data.&lt;/li&gt;&#xA;&lt;li&gt;Visualize markers.&lt;/li&gt;&#xA;&lt;li&gt;Dot menu:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Adapt visulization settings (y-axis scaling &amp;amp; time window).&lt;/li&gt;&#xA;&lt;li&gt;Record raw ExG data in CSV format.&lt;/li&gt;&#xA;&lt;li&gt;Stream via LSL.&lt;/li&gt;&#xA;&lt;li&gt;Lock Screen.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreMobileGuide/ExG.jpg&#34; alt=&#34;ExG visualization tab&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;figure style=&#34;display: inline-block; text-align:center; width: 25%; margin: 0;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/ExploreMobileGuide/ExGVizSet.jpg&#34; alt=&#34;ExG visualization Settings&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;&lt;strong&gt;Settings&lt;/strong&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>Tests</title>
-      <link>http://localhost:1313/explore-mobile-guide/testing/</link>
+      <link>https://wiki.mentalab.com/explore-mobile-guide/testing/</link>
       <pubDate>Tue, 12 Nov 2024 14:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/explore-mobile-guide/testing/</guid>
+      <guid>https://wiki.mentalab.com/explore-mobile-guide/testing/</guid>
       <description>&lt;h2 id=&#34;tested-device&#34;&gt;Tested Device&lt;/h2&gt;&#xA;&lt;p&gt;The App is optimized for use with our official study phone. All functionality has been verified on this device.&lt;/p&gt;&#xA;&lt;h2 id=&#34;recording-tests&#34;&gt;Recording Tests&lt;/h2&gt;&#xA;&lt;p&gt;The following tests were performed to ensure the recording functionality is working as expected:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Long-duration recording test&lt;/strong&gt;: Conducted on the official study phone for 8 hours&#xA;&lt;ul&gt;&#xA;&lt;li&gt;32 channels at 250 Hz sampling rate (with LSL streaming active)&lt;/li&gt;&#xA;&lt;li&gt;32 channels at 250 Hz sampling rate (without LSL streaming)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Result&lt;/strong&gt;: All recordings completed successfully with no data loss or interruptions.&lt;/p&gt;</description>
     </item>
   </channel>
