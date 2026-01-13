@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/brainstorm/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/openvibe/">
 
     <title>
         
-        Brainstorm | Wiki
+        OpenViBE | Wiki
         
     </title>
 
@@ -305,7 +305,7 @@
                     NeuroKit2
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
                     Brainstorm
@@ -323,7 +323,7 @@
                     BCI2000
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/openvibe/" class="nav-item my-1">
+        <li data-nav-id="/integrations/analysis/openvibe/" class="nav-item my-1 active">
                 
                  <a href="/integrations/analysis/openvibe/" class="nav-link p-0">
                     OpenViBE
@@ -485,16 +485,7 @@
 	<nav id="TableOfContents">
   <ul>
     <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#step-by-step-process">Step-by-Step Process</a>
-      <ul>
-        <li><a href="#1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</a></li>
-        <li><a href="#2-set-up-brainstorm">2. Set Up Brainstorm</a></li>
-        <li><a href="#3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</a></li>
-        <li><a href="#4-data-visualization">4. Data Visualization</a></li>
-        <li><a href="#5-filtering">5. Filtering</a></li>
-      </ul>
-    </li>
-    <li><a href="#resources">Resources</a></li>
+    <li><a href="#how-to-acquire-data-from-explore-devices-with-openvibe">How to acquire data from Explore devices with OpenViBE</a></li>
   </ul>
 </nav>
 </div>
@@ -502,76 +493,55 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Brainstorm</h1>
+<h1>OpenViBE</h1>
 
-<p><a href="https://neuroimage.usc.edu/brainstorm/Introduction">Brainstorm</a> is a collaborative, open-source application dedicated to the analysis of brain recordings (MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology). This guide is a simple guide for importing and visualizing your Mentalab Explore recordings in Brainstorm.</p>
+<p>This page provides information on how to acquire data from Explore devices using OpenViBE.</p>
 <h2 id="prerequisites">Prerequisites</h2>
-<p>Before starting, ensure you have:</p>
-<ul>
-<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm</a> installed on your system</li>
-<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop</a> for recording</li>
-</ul>
-<h2 id="step-by-step-process">Step-by-Step Process</h2>
-<h3 id="1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</h3>
-<p>Record your EEG data using Mentalab Explore Desktop and save it in BDF format for Brainstorm compatibility. If you have recordings in other formats, you can convert them to BDF using <a href="https://wiki.mentalab.com/explore-signals-guide/">Explore Signals</a>.</p>
-<h3 id="2-set-up-brainstorm">2. Set Up Brainstorm</h3>
-<p>Follow the <a href="https://neuroimage.usc.edu/brainstorm/Installation">Brainstorm installation guide</a> to install and configure Brainstorm on your system.</p>
-<h3 id="3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</h3>
 <ol>
-<li>
-<p><strong>Create a New Protocol:</strong></p>
-<ul>
-<li>Launch Brainstorm</li>
-<li>Go to <code>File &gt; New protocol</code></li>
-<li>Enter a protocol name (e.g., &ldquo;Mentalab_EEG_Study&rdquo;)</li>
-</ul>
-</li>
-<li>
-<p><strong>Add a Subject:</strong></p>
-<ul>
-<li>Right-click on your protocol in the database explorer</li>
-<li>Select <code>New subject</code></li>
-<li>Enter subject name and identifier</li>
-</ul>
-</li>
-<li>
-<p><strong>Import BDF Data:</strong></p>
-<ul>
-<li>Right-click on the session node</li>
-<li>Select <code>Import MEG/EEG</code></li>
-<li>Select your BDF recording file</li>
-<li>Brainstorm will automatically detect channel information and events</li>
-</ul>
-</li>
+<li><b>Windows</b> (OpenViBE is not compatible with <b>macOS</b>, to run OpenViBE on <b>Linux</b>, you need to build it yourself)</li>
+<li>An <b>Explore device</b></li>
+<li><b><a href="https://openvibe.inria.fr/downloads/">OpenViBE</a></b></li>
+<li><b><a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop</a></b></li>
 </ol>
+<p>You can also use <b><a href="https://explorepy.readthedocs.io/en/latest/installation.html">Explorepy</a></b> instead of <b>ExploreDesktop</b> to push data for acquisition with <b>OpenViBE</b>. We recommend using <b>Explore Desktop</b> as it is easier to set up and allows visualizing incoming data.</p>
+<h2 id="how-to-acquire-data-from-explore-devices-with-openvibe">How to acquire data from Explore devices with OpenViBE</h2>
+<p>Data acquisiton from the Explore device is not supported directly in OpenViBE, instead, data can be acquired using the <a href="https://labstreaminglayer.org">Lab Streaming Layer (LSL)</a>.</p>
+<p>If you want to use <b>Explorepy</b> instead of <b>Explore Desktop</b>, skip steps 1 and 2. Instead, use <b>Explorepy</b>&rsquo;s <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code> command</a> to connect to your device and push data from it to LSL.</p>
+<ol>
+<li>Launch Explore Desktop, connect to your device and go to the visualization screen.</li>
+<li>Click on the <b>LSL</b> button to launch the <b>LSL menu</b> and click on <b>Push data to LSL</b>. This will make your data available as streams on the network.</li>
+<li>Launch the <b>OpenViBE Acquisition Server</b> that comes with the <b>OpenViBE</b> installation.</li>
+<li>In the <b>OpenViBE Acqusition Server</b>, select the <b>LabStreamingLayer</b> driver from the <b>Driver</b> drop-down menu.</li>
+<li>Click on <b>Driver Properties</b> and select the Explore device&rsquo;s ExG stream in the <b>Signal stream</b> drop-down menu.</li>
+</ol>
+
+<div class="alert alert-info" role="alert">
+    Please note that the marker stream coming from <b>Explore Desktop</b> or <b>Explorepy</b> is of type <code>string</code> whereas <b>OpenViBE</b> only supports the type <code>cf_int32</code>, thus the marker stream from the device cannot be acquired with <b>OpenViBE</b>. If you need markers coming from <b>Explore Desktop</b> or <b>Explorepy</b> in <b>OpenViBE</b>, please reach out to us.
+</div>
+
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_import.png" alt="Brainstorm import dialog" width="25%"/>
-<figcaption> Brainstorm bdf file import dialog</figcaption>
+<img class="mobile" src="/img/Integrations/OpenViBE/openvibe-acquisition-exg.png" alt="A screenshot showing three windows, one terminal in the background, one window showing settings for the OpenViBE Acquisition Server in the middle and one window showing the device configuration for the LSL driver in the foreground. The middle window shows LabStreamingLayer as the selected driver. The foreground window shows a few options for the LSL input, one of which is the Signal stream drop-down. The screenshot shows the drop-down menu listing two streams, Explore_AABF_ORN / Explore_AABF_Orn and Explore_AABF_ExG / Explore_AABF_ExG. The latter is marked with a red box." width="80%"/>
+<figcaption> Select the ExG LSL stream from your device in the OpenViBE Acquisition server's driver properties to use as input for OpenViBE. </figcaption>
 </figure>
-<h3 id="4-data-visualization">4. Data Visualization</h3>
-<ul>
-<li>Double-click on the imported BDF data in Brainstorm UI</li>
-<li>The raw data viewer will open with your recording</li>
-</ul>
+<ol start="6">
+<li>Click on <b>Connect</b> to connect the server to the LSL stream and then on <b>Play</b> to start streaming from the server.</li>
+<li>Launch the <b>OpenViBE Designer</b>.</li>
+<li>Add an <b>Acquisition client</b> node in the designer window. You can search and find nodes in the menu on the right side of the application.</li>
+<li>You can now use this <b>Acquisition client</b> as-is to acquire and pass along data from the <b>LSL Acquisition server</b> that you have started in step 6.</li>
+</ol>
+<p>You can now feed the <b>Signal stream</b> output from the <b>Acquisition client</b> node to other nodes in <b>OpenViBE Designer</b>. For example, you can test the pipeline by connecting the client to the <b>Signal display</b> node to visualize the incoming channels.</p>
+<ol>
+<li>Search for <b>Signal display</b> in the menu on the right of <b>OpenViBE Designer</b>.</li>
+<li>Add a <b>Signal display</b> node in the designer.</li>
+<li>Connect the <b>Signal stream</b> output (symbolised as a pink, upside-down triangle) of the <b>Acquisition client</b> to the <b>Data</b> input (also symbolised as a pink, upside-down triangle) of the <b>Signal display</b> node.</li>
+<li>Start the execution of your pipeline by pressing the play button in the toolbar of <b>OpenViBE Designer</b>.</li>
+</ol>
+<p>You should now see the data streamed from your Explore device show up in a new window.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_viz.png" alt="Brainstorm raw data viewer" width="95%"/>
-<figcaption> Brainstorm raw data viewer showing Mentalab EEG data</figcaption>
+<img class="mobile" src="/img/Integrations/OpenViBE/openvibe-lsl-visualization.png" alt="A screenshot showing three windows, one terminal in the background, one window for the OpenViBE Designer in the middle and one window for the Signal display in the foreground. The middle window shows two nodes connected to each other, at the top an Acquisition client node and at the bottom a Signal display node. The foreground window shows eight channels displayed, some of which showing real signals. A green vertical line marks the current time in the plot." width="80%"/>
+<figcaption> You can visually test that the pipeline works by visualizing the incoming data using a Signal display node in OpenViBE. In this example, only channels 5 to 8 were making contact with skin.</figcaption>
 </figure>
-<h3 id="5-filtering">5. Filtering</h3>
-<ul>
-<li>On the right side of the screen open the Filter tab</li>
-<li>Set appropriate filters for your usecase</li>
-</ul>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_filter.png" alt="Brainstorm raw data viewer" width="25%"/>
-<figcaption> Filtering</figcaption>
-</figure>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm Documentation</a></li>
-<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop Guide</a></li>
-</ul>
-<p>For more information or support please contact: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     

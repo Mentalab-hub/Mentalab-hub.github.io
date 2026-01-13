@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/brainstorm/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/bci2000/">
 
     <title>
         
-        Brainstorm | Wiki
+        BCI2000 | Wiki
         
     </title>
 
@@ -305,7 +305,7 @@
                     NeuroKit2
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1 active">
+        <li data-nav-id="/integrations/analysis/brainstorm/" class="nav-item my-1">
                 
                  <a href="/integrations/analysis/brainstorm/" class="nav-link p-0">
                     Brainstorm
@@ -317,7 +317,7 @@
                     Timeflux
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/bci2000/" class="nav-item my-1">
+        <li data-nav-id="/integrations/analysis/bci2000/" class="nav-item my-1 active">
                 
                  <a href="/integrations/analysis/bci2000/" class="nav-link p-0">
                     BCI2000
@@ -482,96 +482,75 @@
 
 </div>
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
-	<nav id="TableOfContents">
-  <ul>
-    <li><a href="#prerequisites">Prerequisites</a></li>
-    <li><a href="#step-by-step-process">Step-by-Step Process</a>
-      <ul>
-        <li><a href="#1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</a></li>
-        <li><a href="#2-set-up-brainstorm">2. Set Up Brainstorm</a></li>
-        <li><a href="#3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</a></li>
-        <li><a href="#4-data-visualization">4. Data Visualization</a></li>
-        <li><a href="#5-filtering">5. Filtering</a></li>
-      </ul>
-    </li>
-    <li><a href="#resources">Resources</a></li>
-  </ul>
-</nav>
+	<nav id="TableOfContents"></nav>
 </div>
 </div>
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Brainstorm</h1>
+<h1>BCI2000</h1>
 
-<p><a href="https://neuroimage.usc.edu/brainstorm/Introduction">Brainstorm</a> is a collaborative, open-source application dedicated to the analysis of brain recordings (MEG, EEG, fNIRS, ECoG, depth electrodes and multiunit electrophysiology). This guide is a simple guide for importing and visualizing your Mentalab Explore recordings in Brainstorm.</p>
-<h2 id="prerequisites">Prerequisites</h2>
-<p>Before starting, ensure you have:</p>
-<ul>
-<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm</a> installed on your system</li>
-<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop</a> for recording</li>
-</ul>
-<h2 id="step-by-step-process">Step-by-Step Process</h2>
-<h3 id="1-record-using-mentalab-explore-desktop">1. Record using Mentalab Explore Desktop</h3>
-<p>Record your EEG data using Mentalab Explore Desktop and save it in BDF format for Brainstorm compatibility. If you have recordings in other formats, you can convert them to BDF using <a href="https://wiki.mentalab.com/explore-signals-guide/">Explore Signals</a>.</p>
-<h3 id="2-set-up-brainstorm">2. Set Up Brainstorm</h3>
-<p>Follow the <a href="https://neuroimage.usc.edu/brainstorm/Installation">Brainstorm installation guide</a> to install and configure Brainstorm on your system.</p>
-<h3 id="3-import-mentalab-data-into-brainstorm">3. Import Mentalab Data into Brainstorm</h3>
+<h1 id="introduction">Introduction</h1>
+<p>The contributions package for BCI2000 contains an LSL source module that can be used to acquire data from the LabStreamingLayer (LSL) to use in BCI2000. It is currently not possible to subscribe to an LSL stream from the Explore device without making changes to the source code of <b>Explorepy</b> or building BCI2000 yourself. This is due to the LSL node resolving streams by data type, the <a href="https://www.bci2000.org/mediawiki/index.php/BCI2000_Binaries#Contributed_Code">last released installer for BCI2000 with Contributions</a> does not contain changes to filter by a custom property. As the LSL node filters out any type that isn&rsquo;t <code>EEG</code> and <b>Explorepy</b> and <b>Explore Desktop</b> push the data with the type <code>ExG</code>, the stream cannot be discovered in this version.</p>
+<p>This page aims to give an overview of the options advanced users have to get a data stream from the Explore device as input to BCI2000.</p>
+
+<div class="alert alert-info" role="alert">
+    If you want to integrate data from the Explore device into your BCI2000 set up and require help to do so, please don&rsquo;t hesitate to contact us.
+</div>
+
+<h1 id="option-1-building-bci2000-locally-from-the-latest-code-revision">Option 1: Building BCI2000 locally from the latest code revision</h1>
+<p>The source code for BCI2000 is available after making a free account on the BCI2000 website. Their wiki contains an <a href="https://www.bci2000.org/mediawiki/index.php/Programming_Howto:Building_and_Customizing_BCI2000">in-depth guide to building the software locally</a>. The <a href="https://www.bci2000.org/mediawiki/index.php/Contributions:LSLSource">LSL source node available in the contributions to BCI2000</a> contains fields to set the LSL stream property (<code>StreamSelectionProperty</code>) and value (<code>StreamSelectionPropertyValue</code>) to filter for.</p>
+<p>If you have built BCI2000 locally with the latest version of the LSL source node, follow these steps to stream data from your Explore device to BCI2000:</p>
 <ol>
-<li>
-<p><strong>Create a New Protocol:</strong></p>
-<ul>
-<li>Launch Brainstorm</li>
-<li>Go to <code>File &gt; New protocol</code></li>
-<li>Enter a protocol name (e.g., &ldquo;Mentalab_EEG_Study&rdquo;)</li>
-</ul>
-</li>
-<li>
-<p><strong>Add a Subject:</strong></p>
-<ul>
-<li>Right-click on your protocol in the database explorer</li>
-<li>Select <code>New subject</code></li>
-<li>Enter subject name and identifier</li>
-</ul>
-</li>
-<li>
-<p><strong>Import BDF Data:</strong></p>
-<ul>
-<li>Right-click on the session node</li>
-<li>Select <code>Import MEG/EEG</code></li>
-<li>Select your BDF recording file</li>
-<li>Brainstorm will automatically detect channel information and events</li>
-</ul>
+<li>Install <b><a href="https://explorepy.readthedocs.io/en/latest/installation.html">Explorepy</a></b> or <b><a href="https://github.com/Mentalab-hub/explore-desktop-release/releases/latest">Explore Desktop</a></b>.</li>
+<li>If using <b>Explorepy</b>, use the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code> command</a> to connect to a device and push data from it to LSL. If using <b>Explore Desktop</b>, connect to a device, navigate to the signal visualisation, open the <b>LSL menu</b> by clicking on the <code>LSL</code> button and click on <code>Push data to LSL</code>.</li>
+<li>Open the <b>BCI2000 Launcher</b> or launch a batch script from the <code>batch</code> directory of your BCI2000 installation that uses <code>LSLSource</code> as the acquisition module. If you are using the <b>BCI2000 Launcher</b>, select <code>LSLSource</code> as the <b>Signal Source</b> module and choose the other modules as needed (for example, <code>DummySignalProcessing</code> and <code>DummyApplication</code>), then click on <code>Launch</code>.</li>
+<li>Click on <code>Config</code> in the newly launched <b>Operator</b> to open the configuration for your set-up, navigate to the <code>Source</code> tab and change the fields according to the device stream.
+<ol>
+<li>SourceCh: The number of channels your device has, i.e. 8, 16 or 32.</li>
+<li>SamplingRate: The sampling rate the device is set to, i.e. 250Hz, 500Hz, 1000Hz.</li>
+<li>SourceChGain: The gain for the signals, default is <code>auto</code>. You can alternatively set this to 1uV per channel (i.e. <code>1 1 1 1 1 1 1 1</code> for an 8 channel device).</li>
+<li>StreamSelectionProperty: The property of the stream to filter for, you can use i.e. <code>type</code> or <code>name</code>.</li>
+<li>StreamSelectionPropertyValue: The value of the stream property to filter for, if using <code>type</code>, this should be <code>ExG</code>, if using <code>name</code> this should be <code>Explore_XXXX_ExG</code> (with <code>XXXX</code> replaced with your device&rsquo;s ID).</li>
+</ol>
 </li>
 </ol>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_import.png" alt="Brainstorm import dialog" width="25%"/>
-<figcaption> Brainstorm bdf file import dialog</figcaption>
+<img class="mobile" src="/img/Integrations/BCI2000/bci2000-config.png" alt="Lorem ipsum" width="80%"/>
+<figcaption> The configuration for the LSL source node needs to be adapted to fit the properties of the Explore device's LSL stream. In this example, an 8 channel device is pushing to LSL with a sampling rate of 250Hz. </figcaption>
 </figure>
-<h3 id="4-data-visualization">4. Data Visualization</h3>
-<ul>
-<li>Double-click on the imported BDF data in Brainstorm UI</li>
-<li>The raw data viewer will open with your recording</li>
-</ul>
+<ol start="5">
+<li>To ensure that your configuration is correct, click on <code>Set Config</code>. This will launch a signal visualizer that will show your signals as they are coming in via the LSL stream.</li>
+</ol>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_viz.png" alt="Brainstorm raw data viewer" width="95%"/>
-<figcaption> Brainstorm raw data viewer showing Mentalab EEG data</figcaption>
+<img class="mobile" src="/img/Integrations/BCI2000/bci2000-signals.png" alt="Lorem ipsum" width="80%"/>
+<figcaption> If BCI2000 finds the correct stream, either by changing the type to EEG in Explorepy or by using a locally built version of BCI2000, the signals coming in can be visualized when clicking on Set Config. In this example, only channels 5 to 8 made contact with the skin. </figcaption>
 </figure>
-<h3 id="5-filtering">5. Filtering</h3>
-<ul>
-<li>On the right side of the screen open the Filter tab</li>
-<li>Set appropriate filters for your usecase</li>
-</ul>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/Integrations/Brainstorm/brainstorm_demo_filter.png" alt="Brainstorm raw data viewer" width="25%"/>
-<figcaption> Filtering</figcaption>
-</figure>
-<h2 id="resources">Resources</h2>
-<ul>
-<li><a href="https://neuroimage.usc.edu/brainstorm/">Brainstorm Documentation</a></li>
-<li><a href="https://wiki.mentalab.com/explore-desktop-guide/">Mentalab Explore Desktop Guide</a></li>
-</ul>
-<p>For more information or support please contact: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
+<h1 id="option-2-adapting-explorepy">Option 2: Adapting Explorepy</h1>
+<p><b>Explorepy</b> and <b>Explore Desktop</b> push signals to LSL using the type <code>ExG</code> as the Explore device can be used to gather various types of biosignals. The last binary release of BCI2000 with contributions (which the <code>LSLSource</code> module is a part of) does not allow filtering for a specific property and value. Instead, it filters for the type <code>EEG</code>. To push data from the Explore device with the type <code>EEG</code> you can adapt the source code of <b>Explorepy</b> yourself. <b>Explorepy</b> is fully open source and can be forked from our <a href="https://github.com/Mentalab-hub/explorepy">public GitHub repository</a>. To adapt <b>Explorepy</b> for your needs, you can follow these steps:</p>
+<ol>
+<li>Create a fork of <b>Explorepy</b>.</li>
+<li>Pull your newly created fork to have it locally.</li>
+<li>In the pulled repository, navigate to <code>src</code> &ndash;&gt; <code>explorepy</code> and open <code>tools.py</code>.</li>
+<li>Find the method <code>initialize_outlets</code> in the class <code>LslServer</code>.</li>
+<li>Change the line <code>type='ExG'</code> to <code>type='EEG'</code> where the <code>StreamInfo</code> object is created for the ExG stream:</li>
+</ol>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">initialize_outlets</span>(self):
+</span></span><span style="display:flex;"><span>        info_exg <span style="color:#f92672">=</span> StreamInfo(name<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>device_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_ExG&#34;</span>,
+</span></span><span style="display:flex;"><span>                              type<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;EEG&#39;</span>,
+</span></span><span style="display:flex;"><span>                              channel_count<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>n_chan,
+</span></span><span style="display:flex;"><span>                              nominal_srate<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>exg_fs,
+</span></span><span style="display:flex;"><span>                              channel_format<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;float32&#39;</span>,
+</span></span><span style="display:flex;"><span>                              source_id<span style="color:#f92672">=</span>self<span style="color:#f92672">.</span>device_name <span style="color:#f92672">+</span> <span style="color:#e6db74">&#34;_ExG&#34;</span>)
+</span></span><span style="display:flex;"><span>        info_exg<span style="color:#f92672">.</span>desc()<span style="color:#f92672">.</span>append_child_value(<span style="color:#e6db74">&#34;manufacturer&#34;</span>, <span style="color:#e6db74">&#34;Mentalab&#34;</span>)
+</span></span><span style="display:flex;"><span>        [<span style="color:#f92672">...</span>]
+</span></span></code></pre></div><ol start="6">
+<li>Create a new environment with dependencies as described in <a href="https://explorepy.readthedocs.io/en/latest/installation.html#how-to-install"><b>Explorepy</b>&rsquo;s documentation</a>.</li>
+<li>Intead of installing explorepy in your environment from PyPI (<code>pip install explorepy</code>), navigate to the root folder of your <b>Explorepy</b> fork and install the local repository (<code>pip install .</code>).</li>
+<li>Use the <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>push2lsl</code> command</a> to push data from the device to LSL.</li>
+<li>From here, you can follow steps 3 - 5 from <b>Option 1</b> to subscribe to the data in BCI2000 (skipping steps 4.4 and 4.5).</li>
+</ol>
+<p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 
     
