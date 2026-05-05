@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/explore-desktop-guide/visualize/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/analysis/imotions/">
 
     <title>
         
-        Visualization | Wiki
+        iMotions | Wiki
         
     </title>
 
@@ -210,7 +210,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -264,7 +264,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/analysis/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/analysis/"><h6>Analysis</h6></a>
@@ -335,7 +335,7 @@
                     MNE‑LSL
                 </a>
         </li>
-        <li data-nav-id="/integrations/analysis/imotions/" class="nav-item my-1">
+        <li data-nav-id="/integrations/analysis/imotions/" class="nav-item my-1 active">
                 
                  <a href="/integrations/analysis/imotions/" class="nav-link p-0">
                     iMotions
@@ -388,7 +388,7 @@
         
         <a class="nav-link p-0" href="/faqs/"><h6>FAQs</h6></a>
     </li>
-    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/explore-desktop-guide/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/explore-desktop-guide/"><h6>Explore Desktop Guide</h6></a>
@@ -405,7 +405,7 @@
                     Usage
                 </a>
         </li>
-        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1 active">
+        <li data-nav-id="/explore-desktop-guide/visualize/" class="nav-item my-1">
                 
                  <a href="/explore-desktop-guide/visualize/" class="nav-link p-0">
                     Visualization
@@ -496,13 +496,8 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#exg">ExG</a></li>
-    <li><a href="#real-time-packet-loss-visualization">Real-time packet loss visualization</a></li>
-    <li><a href="#indication-of-samples-lost-in-seconds">Indication of samples lost in seconds</a></li>
-    <li><a href="#motion-sensors">Motion sensors</a></li>
-    <li><a href="#spectral-analysis">Spectral analysis</a></li>
-    <li><a href="#bandpower-over-time">Bandpower over time</a></li>
-    <li><a href="#filters">Filters</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#how-to-stream-explore-data-into-imotions-lab">How to stream Explore data into iMotions Lab</a></li>
   </ul>
 </nav>
 </div>
@@ -510,89 +505,54 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>Visualization</h1>
+<h1>iMotions</h1>
 
-<p>Visualize ExG, orientation, spectral analysis and relative bandpower data in real-time by navigating to the Visualization page.</p>
-<p>You can configure the visualization via the drop-down menus at the top of the Visualization page or by selecting <strong>Filters</strong>.</p>
-<p>Settings include:</p>
-<ul>
-<li>Y-axis scale – change the range of the y-axis.
-<ul>
-<li>1 uV to 100 mV range.</li>
-</ul>
-</li>
-<li>Visible channel count - change how many channels should be visible in the plot.
-<ul>
-<li>1, 2, 4, 8, 16 and 32 channels (depending on the connected device)</li>
-</ul>
-</li>
-<li>Time window – change the time interval of the x-axis.
-<ul>
-<li>5, 10, or 20 second range.</li>
-</ul>
-</li>
-<li>Record (see the <a href="https://wiki.mentalab.com/explore-desktop-guide/record/" title="Explore Desktop Guide/Record">Recording</a> page).</li>
-<li>Event markers (see the software marker section in the <a href="https://wiki.mentalab.com/event-triggers/#software-markers" title="/Event Triggers/_index.md#software-markers">Event Markers</a> page).</li>
-<li>Filters.</li>
-<li>LSL integration (see the <a href="https://wiki.mentalab.com/explore-desktop-guide/lsl/" title="Explore Desktop Guide/Lab Streaming Layer">Lab Streaming Layer</a> page).</li>
-</ul>
-<h2 id="exg">ExG</h2>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_32_channels_fullscreen.png" alt="Example of Explore Desktop's ExG plot" width="90%"/>
-<figcaption>Example of an Explore Desktop ExG plot.</figcaption>
+<figure style="display: block; text-align:center; width: 40%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations/iMotion/iMotions_logo.png" alt="iMotions logo" width="100%"/>
 </figure>
+<p>This page shows how to use Mentalab Explore with the <strong>iMotions Biometric Research Platform</strong>. <a href="https://imotions.com/products/imotions-lab/">iMotions Lab</a> is a software platform that collects, synchronizes, and analyzes data from multiple sensors (including EEG) in one place, so you can run multimodal human behavior research in a single environment.</p>
+<p>Mentalab Explore integrates with iMotions Lab as an ExG source over <a href="https://labstreaminglayer.org">Lab Streaming Layer</a> (LSL).</p>
 
 <div class="alert alert-info" role="alert">
-    It is also possible to scroll back in time when visualising signals. Please note that changing the sampling rate during the visualisation may lead to odd behaviour when scrolling back in time.
+    For highest synchronsiation accuracy, use the Mentalab Explore Pro in combination with Mentalab Hypersync.
 </div>
 
-<h2 id="real-time-packet-loss-visualization">Real-time packet loss visualization</h2>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_packet_loss_warning.png" alt="Packet loss visualization" width="90%"/>
-<figcaption> Real time packet loss display </figcaption>
-</figure>
-<h2 id="indication-of-samples-lost-in-seconds">Indication of samples lost in seconds</h2>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_exg_packet_loss_duration.png" alt="Bluetooth samples lost in seconds in footer" width="90%"/>
-<figcaption> Packet loss quantization. </figcaption>
-</figure>
-<h2 id="motion-sensors">Motion sensors</h2>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_orn_fullscreen.png" alt="Example of Explore Desktop's motion sensor plot" width="90%"/>
-<figcaption> Example of an Explore Desktop motion sensor plot. </figcaption>
-</figure>
-<h2 id="spectral-analysis">Spectral analysis</h2>
-<p>The spectral analysis plot is calculated using the FFT (Fast Fourier Transform). The colours of the channel lines map to positions on the head if standard positions are selected (using the 10-10 system). If a channel has no standard position name assigned, it uses a colour from a default colour scheme.</p>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_fft_fullscreen.png" alt="Example of Explore Desktop's spectral analysis plot" width="90%"/>
-<figcaption> Example of an Explore Desktop spectral analysis plot. </figcaption>
-</figure>
-The colour map for the standard positions can be shown by clicking the ? button above the plot.
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_fft_with_head_overlay_fullscreen.png" alt="Example of Explore Desktop's spectral analysis plot with an image of the colour map overlayed" width="90%"/>
-<figcaption> Example of an Explore Desktop spectral analysis plot with a pop-up showing the colour map for standard positions. </figcaption>
-</figure>
-<h2 id="bandpower-over-time">Bandpower over time</h2>
-<figure style="text-align:center;">
-<img class="mobile" src="/img/ExploreDesktopGuide/visualization_bandpower_fullscreen.png" alt="Example of Explore Desktop's bandpower over time plot" width="90%"/>
-<figcaption> Example of an Explore Desktop relative bandpower over time plot. </figcaption>
-</figure>
-<h2 id="filters">Filters</h2>
-<figure style="float:right;">
-<img class="mobile" src="/img/ExploreDesktopGuide/filters_popup.png" alt="The visualization filters of Explore Desktop" width="400"/>
-<figcaption> Set the visualization filters using the pop-up. </figcaption>
-</figure>
-<p>The Visualization page will prompt you to define your visualization filters. Explore Desktop will begin streaming data once you have selected your filters.</p>
-<p>You will still be able to filter signals while the device is streaming. To do so, select <strong>Filters</strong>.</p>
-<p>The following filters are available:</p>
+<h2 id="prerequisites">Prerequisites</h2>
+<ol>
+<li>An <strong>Explore device</strong></li>
+<li><strong>iMotions Lab</strong> installed</li>
+<li>A way to publish your Explore data to LSL. You can use any of these:
 <ul>
-<li>Notch filter (band stop filter) – attenuates the power line noise at 50 or 60 Hz.</li>
-<li>High-pass filter – rejects signals with frequencies below this threshold, use the field <strong>Low Cutoff Frequency</strong> to set a high-pass filter</li>
-<li>Low-pass filter – rejects signals with frequencies above this threshold, use the field <strong>High Cutoff Frequency</strong> to set a high-pass filter</li>
+<li><strong><a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a></strong></li>
+<li><strong><a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile App</a></strong></li>
+<li><strong><a href="https://explorepy.readthedocs.io/en/latest/installation.html">explorepy</a></strong></li>
 </ul>
-<p>You can leave the low cutoff frequency field or the high cutoff frequency field empty to use a highpass or lowpass filter instead of a bandpass filter that utilizes both cut-offs.</p>
-<p><br><br>
-<strong>Filters do not affect raw data, only what is visualised.</strong></p>
+</li>
+</ol>
+<h2 id="how-to-stream-explore-data-into-imotions-lab">How to stream Explore data into iMotions Lab</h2>
+<ol>
+<li>
+<p>Push your Explore device&rsquo;s ExG stream to LSL. You can do this in three different ways, pick whichever fits your setup:</p>
+<ul>
+<li>In <strong>Explore Desktop</strong>, open the <strong>LSL</strong> menu and click <strong>Push data to LSL</strong>. See the <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop guide</a> for details.</li>
+<li>In the <strong>Explore Mobile App</strong>, open the <strong>ExG</strong> tab, tap the dot menu and choose <strong>Stream via LSL</strong>. See the <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile guide</a> for details.</li>
+<li>With <strong>explorepy</strong>, run <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>explorepy push2lsl</code></a> from the command line.</li>
+</ul>
+<p>The stream shows up on the network as <code>Explore_XXXX_ExG</code>, where <code>XXXX</code> is your device ID. For more on LSL in our system, see our <a href="/integrations/interfaces/lsl/">LSL guide</a>.</p>
+</li>
+<li>
+<p>In <strong>iMotions Lab</strong>, add an <strong>LSL</strong> sensor to your study and discover the available streams on the network.</p>
+</li>
+<li>
+<p>Select the Explore ExG stream and start your recording.</p>
+</li>
+</ol>
+<p>For everything on the iMotions side, please refer to the official <a href="https://imotions.com/products/imotions-lab/modules/eeg-electroencephalography/">iMotions Lab documentation</a>.</p>
+
+<div class="alert alert-info" role="alert">
+    Make sure Explore and iMotions Lab run on the same network and that LSL discovery is allowed by your firewall.
+</div>
+
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
 

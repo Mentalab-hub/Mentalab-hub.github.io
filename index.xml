@@ -6,7 +6,7 @@
     <description>Recent content in Welcome on Wiki</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Apr 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://wiki.mentalab.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Lab Streaming Layer(LSL)</title>
@@ -371,6 +371,13 @@
       <pubDate>Thu, 22 Aug 2024 14:29:00 +0100</pubDate>
       <guid>https://wiki.mentalab.com/applications/sleep-analysis/</guid>
       <description>&lt;p&gt;Modern sleep science is fundamentally informed by ExG biosensors recording brain activity (electroencephalography, EEG), eye-movement activity (electrooculography, EOG), and muscle activity (electromyography, EMG) to characterize the physiology of sleep.&lt;/p&gt;&#xA;&lt;p&gt;Here, we demonstrate how EEG data recorded during a full night&amp;rsquo;s sleep using Mentalab Explore can be analysed with the free and open source &lt;a href=&#34;https://raphaelvallat.com/yasa/build/html/index.html&#34;&gt;yasa toolbox&lt;/a&gt;. We will perform automatic sleep staging by applying the yasa classifier &lt;a href=&#34;#references&#34;&gt;[1]&lt;/a&gt; to EEG data, inspect band power in the EEG signal, and detect slow waves and sleep spindles. The application example follows the excellent &lt;a href=&#34;https://github.com/raphaelvallat/yasa/tree/master/notebooks&#34;&gt;yasa notebooks&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>iMotions</title>
+      <link>https://wiki.mentalab.com/integrations/analysis/imotions/</link>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>https://wiki.mentalab.com/integrations/analysis/imotions/</guid>
+      <description>&lt;figure style=&#34;display: block; text-align:center; width: 40%; margin: 0 auto;&#34;&gt;&#xA;&lt;img class=&#34;mobile&#34; src=&#34;https://wiki.mentalab.com/img/Integrations/iMotion/iMotions_logo.png&#34; alt=&#34;iMotions logo&#34; width=&#34;100%&#34;/&gt;&#xA;&lt;/figure&gt;&#xA;&lt;p&gt;This page shows how to use Mentalab Explore with the &lt;strong&gt;iMotions Biometric Research Platform&lt;/strong&gt;. &lt;a href=&#34;https://imotions.com/products/imotions-lab/&#34;&gt;iMotions Lab&lt;/a&gt; is a software platform that collects, synchronizes, and analyzes data from multiple sensors (including EEG) in one place, so you can run multimodal human behavior research in a single environment.&lt;/p&gt;&#xA;&lt;p&gt;Mentalab Explore integrates with iMotions Lab as an ExG source over &lt;a href=&#34;https://labstreaminglayer.org&#34;&gt;Lab Streaming Layer&lt;/a&gt; (LSL).&lt;/p&gt;&#xA;&#xA;&lt;div class=&#34;alert alert-info&#34; role=&#34;alert&#34;&gt;&#xA;    For highest synchronsiation accuracy, use the Mentalab Explore Pro in combination with Mentalab Hypersync.&#xA;&lt;/div&gt;&#xA;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;An &lt;strong&gt;Explore device&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;iMotions Lab&lt;/strong&gt; installed&lt;/li&gt;&#xA;&lt;li&gt;A way to publish your Explore data to LSL. You can use any of these:&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://wiki.mentalab.com/explore-desktop-guide/&#34;&gt;Explore Desktop&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://wiki.mentalab.com/explore-mobile-guide/&#34;&gt;Explore Mobile App&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;&lt;a href=&#34;https://explorepy.readthedocs.io/en/latest/installation.html&#34;&gt;explorepy&lt;/a&gt;&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;how-to-stream-explore-data-into-imotions-lab&#34;&gt;How to stream Explore data into iMotions Lab&lt;/h2&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Push your Explore device&amp;rsquo;s ExG stream to LSL. You can do this in three different ways, pick whichever fits your setup:&lt;/p&gt;</description>
     </item>
     <item>
       <title>ECG Analysis</title>
