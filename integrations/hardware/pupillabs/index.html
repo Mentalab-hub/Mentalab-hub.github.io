@@ -4,11 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="canonical" href="https://wiki.mentalab.com/applications/easi-ecg/">
+    <link rel="canonical" href="https://wiki.mentalab.com/integrations/hardware/pupillabs/">
 
     <title>
         
-        EASI ECG | Wiki
+        Pupil Labs | Wiki
         
     </title>
 
@@ -119,7 +119,7 @@
         
         <a class="nav-link p-0" href="/event-triggers/"><h6>Event Markers</h6></a>
     </li>
-    <li data-nav-id="/applications/" class="nav-item my-1 parent haschildren
+    <li data-nav-id="/applications/" class="nav-item my-1 haschildren
         ">
         
         <a class="nav-link p-0" href="/applications/"><h6>Applications</h6></a>
@@ -154,7 +154,7 @@
                     SSVEP Experiments
                 </a>
         </li>
-        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1 active">
+        <li data-nav-id="/applications/easi-ecg/" class="nav-item my-1">
                 
                  <a href="/applications/easi-ecg/" class="nav-link p-0">
                     EASI ECG
@@ -210,7 +210,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/"><h6>Integrations</h6></a>
@@ -362,7 +362,7 @@
         </li>
         </ul>
     </li>
-    <li data-nav-id="/integrations/hardware/" class="nav-item my-1 haschildren
+    <li data-nav-id="/integrations/hardware/" class="nav-item my-1 parent haschildren
         ">
         
         <a class="nav-link p-0" href="/integrations/hardware/"><h6>Hardware</h6></a>
@@ -373,7 +373,7 @@
                     PLUX Biosignals
                 </a>
         </li>
-        <li data-nav-id="/integrations/hardware/pupillabs/" class="nav-item my-1">
+        <li data-nav-id="/integrations/hardware/pupillabs/" class="nav-item my-1 active">
                 
                  <a href="/integrations/hardware/pupillabs/" class="nav-link p-0">
                     Pupil Labs
@@ -502,8 +502,8 @@
                 <div class="docs-toc large order-lg-2 order-md-0 order-xs-1 col-12 col-lg-2 col-xl-2 position-sticky border-left"><div class="docs-toc">
 	<nav id="TableOfContents">
   <ul>
-    <li><a href="#introduction">Introduction</a></li>
-    <li><a href="#set-up">Set-up</a></li>
+    <li><a href="#prerequisites">Prerequisites</a></li>
+    <li><a href="#how-to-co-register-mentalab-explore-pro-and-pupil-labs-data">How to co-register Mentalab Explore Pro and Pupil Labs data</a></li>
   </ul>
 </nav>
 </div>
@@ -511,55 +511,58 @@
                 <div class="main col-12 order-1 col-md-9 col-lg-10 col-xl-8 py-3">
                 
 
-<h1>EASI ECG</h1>
+<h1>Pupil Labs</h1>
 
-<figure style="float:right;text-align:center;">
-<img class="mobile" src="/img/Applications/ECG_Placement_of_Electrodes.png" alt="12 lead configuration" width="200"/>
-<figcaption> The 12 lead electrode configuration. <br>Source: <a href="https://www.cardiosecur.com/magazine/specialist-articles-on-the-heart/lead-systems-how-an-ecg-works">CardioSecur</a> </figcaption>
+<figure style="display: block; text-align:center; width: 40%; margin: 0 auto;">
+<img class="mobile" src="/img/Integrations//PupilLabs/pupil-labs-logo.png" alt="Pupil Labs logo" width="100%"/>
 </figure>
-<p>Conventional 12-lead ECG uses 10 electrodes (6 electrodes on the chest and 4 electrodes on the limbs&rsquo; extremities).</p>
-<p>Although it provides comprehensive information about electrical processes inside the heart, the number of electrodes and the long distance between them makes 12-lead ECG impractical and uncomfortable. This is especially true if the participant must remain still for a lengthy recording sessions.</p>
-<p>Summary of 12-lead ECG drawbacks:</p>
-<ul>
-<li>Large number of electrodes required</li>
-<li>Complicated configuration</li>
-<li>Prone to noise</li>
-<li>Not suitable for long-term use</li>
-</ul>
-<h2 id="introduction">Introduction</h2>
-<p>Because of these challenges, <a href="https://doi.org/10.1016/0022-0736(88)90090-8">Dower et al., 1988</a> proposed a modified set-up that can derive 12-lead ECG signals from only 5 ECG channels. This set-up is called the EASI method.</p>
-<p>The EASI method benefits from:</p>
-<ul>
-<li>High reproducibility (because landmarks for electrode placement are easy to identify)</li>
-<li>High signal-to-noise ratios (less movement artefacts)</li>
-<li>High sensitivity to electrical events in lateral, anteroposterior and vertical directions</li>
-<li>Increased patient comfort</li>
-<li>Increased technical convenience</li>
-</ul>
-<p>The only true drawback of EASI ECG is that two of the electrodes are difficult to place as they sit in an awkward location on the chest. With a little practice, however, it is possible for patient&rsquo;s to place this electrode themselves.</p>
-<p>Although the FDA approved the EASI method for use in the assessment of normal, abnormal, and paced cardiac rhythms, the method is not often used in clinical practice. As such, this article serves as an example of data processing, rather than a clinical ECG protocol.</p>
-<h2 id="set-up">Set-up</h2>
-<figure style="float:right;text-align:center;">
-<img class="mobile" src="/img/Applications/easipositions.jpg" alt="EASI configuration" width="250"/>
-<figcaption> The EASI electrode configuration. <br>Source: <a href="https://www.routledgehandbooks.com/doi/10.1201/b17831-4">The Physiological Measurement Handbook</a> </figcaption>
-</figure>
-<p>Mentalab Explore is well suited to EASI ECG recordings. To record ECG data using the EASI method:</p>
+<p>This page shows how to use the Mentalab Explore Pro with the <strong>Pupil Labs Neon eye tracking glasses</strong>. <a href="https://pupil-labs.com/products/neon">Neon</a> powers scientific research and next-generation applications with a comprehensive set of signals: gaze, fixations, blinks, pupil diameter, eyeball position and orientation, eyelid opening angle, and more.</p>
+<p>Mentalab Explore integrates with the Neon eye tracker as an ExG acquisition unit over <a href="https://labstreaminglayer.org">Lab Streaming Layer</a> (LSL).</p>
+
+<div class="alert alert-info" role="alert">
+    For sub-ms synchronization accuracy between LSL and Mentalab Explore Pro, use the Mentalab Explore Pro in combination with Mentalab Hypersync
+</div>
+
+<h2 id="prerequisites">Prerequisites</h2>
 <ol>
-<li>Attach your Mentalab Explore device to a velcro strap on or around your participant&rsquo;s chest.</li>
-<li>Attach the electrodes in the following configuration.
+<li>A <strong>Mentalab Explore Pro</strong> device</li>
+<li>A way to push your Explore Pro data to LSL. You can use any of these:
 <ul>
-<li><strong>E</strong>: On lower sternum at level of 5th intercostal space</li>
-<li><strong>A</strong>: On the same level as E, on left midaxillary line</li>
-<li><strong>S</strong>: On upper sternum</li>
-<li><strong>I</strong>: Same level as E and A, on right midaxillary line</li>
-<li><strong>G</strong>: Ground anywhere below 6th rib</li>
+<li><strong><a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop</a></strong></li>
+<li><strong><a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile App</a></strong></li>
+<li><strong><a href="https://explorepy.readthedocs.io/en/latest/installation.html">explorepy</a></strong></li>
 </ul>
 </li>
-<li>Transform the EASI channels to 12-lead channels using the table below, which lists the coefficients of a linear transform.</li>
+<li><strong>Pupil Labs Neon</strong> eye tracking glasses</li>
+<li>Pupil Labs&rsquo; <strong>Neon companion app</strong></li>
 </ol>
+<h2 id="how-to-co-register-mentalab-explore-pro-and-pupil-labs-data">How to co-register Mentalab Explore Pro and Pupil Labs data</h2>
+
+<div class="alert alert-info" role="alert">
+    Make sure Explore Pro and Pupil Labs phone run on the same network and that LSL discovery is allowed by your firewall.
+</div>
+
+<ol>
+<li>
+<p>Push your Explore device&rsquo;s ExG stream to LSL. You can do this in three different ways, pick whichever fits your setup:</p>
+<ul>
+<li>In <strong>Explore Desktop</strong>, open the <strong>LSL</strong> menu and click <strong>Push data to LSL</strong>. See the <a href="https://wiki.mentalab.com/explore-desktop-guide/">Explore Desktop guide</a> for details.</li>
+<li>In the <strong>Explore Mobile App</strong>, open the <strong>ExG</strong> tab, tap the dot menu and choose <strong>Stream via LSL</strong>. See the <a href="https://wiki.mentalab.com/explore-mobile-guide/">Explore Mobile guide</a> for details.</li>
+<li>With <strong>explorepy</strong>, run <a href="https://explorepy.readthedocs.io/en/latest/usage.html#push2lsl"><code>explorepy push2lsl</code></a> from the command line or use the corrsponding python command.</li>
+</ul>
+</li>
+<li>
+<p>Neon Companion App: Enable &ldquo;Stream over LSL&rdquo; in the settings. The phone will broadcast data (including gaze coordinates, pupil diameter, and 3D eye states) and an event stream, each marked with the phone’s clock.</p>
+</li>
+<li>
+<p>Lab Recorder: LabRecorder is free software that is used to record one or several LSL streams into a single file (in .xdf file format).
+<a href="https://github.com/labstreaminglayer/App-LabRecorder/releases/latest">Download and install LabRecorder</a>. Open the software and refresh the streams. You should see the Explore Pro stream and the two Neon streams (Gaze - including gaze data, pupil diameter, 3D eye states - and Events). Events can be sent to Neon either via the Neon Monitor App or programmatically using our Real-Time API (see here). Select the streams of interest and hit &ldquo;Start&rdquo; in Lab Recorder. It captures all streams and the synchronization metadata simultaneously into a single .xdf file.</p>
+</li>
+</ol>
+<p>To extract more information (e.g., saccades), you can export the recording from the Neon companion app to a PC and visualize your data with <a href="https://docs.pupil-labs.com/neon/neon-player/">Neon Player</a>.</p>
 <figure style="text-align:center;">
-<img class="mobile" src="/img/Applications/EASI5to12conversion.png" alt="EASI coefficients table" width="90%"/>
-<figcaption> EASI coefficients for standard limb leads. </figcaption>
+<img class="mobile" src="/img/Integrations/PupilLabs/neon_player.png" alt="Neon Player" width="95%"/>
+<figcaption> Visualize fixations and saccades with eye scanpath in Neon Player</figcaption>
 </figure>
 <p>For more information or support, do not hesitate to get in contact at: <a href="mailto:support@mentalab.com">support@mentalab.com</a></p>
 
