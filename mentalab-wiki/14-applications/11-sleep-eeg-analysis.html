@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sleep EEG Analysis :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/14-applications/11-sleep-eeg-analysis.html">
+    <link rel="prev" href="10-sleep-actigraphy.html">
+    <link rel="next" href="12-sleep-recording-protocol.html">
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the wiki">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Mentalab Wiki</a></li>
+    <li>Applications</li>
+    <li><a href="11-sleep-eeg-analysis.html">Sleep EEG Analysis</a></li>
+  </ul>
+</nav>
+<!--<div class="edit-this-page"><a href="file:///Users/sonjastefani/Documents/dev/mentalab-wiki-antora/modules/ROOT/pages/14-applications/11-sleep-eeg-analysis.adoc">Edit this Page</a></div>
+-->
+</div>
+<div class="body">
+<div class="nav-container" data-component="mentalab-wiki" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Mentalab Wiki</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introduction</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/1-purpose.html">Purpose of this User Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/2-about.html">About the document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety, Intended Use and Product Information</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/1-intended-use.html">Intended Use</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/2-manufacturer-information.html">Manufacturer Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/3-identification-and-labels.html">Identification and Labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/4-safety-classification.html">Safety Classification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/5-environmental-requirements.html">Environmental Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/6-regulatory-compliance.html">Regulatory Compliance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/7-warranty-and-service.html">Warranty and Service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/8-electrical-safety-and-isolation.html">Electrical Safety and Isolation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">System Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/1-mentalab-explore-pro.html">Mentalab Explore Pro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/2-hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/3-software.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/4-integrated-workflows.html">Integrated Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../4-scope-of-delivery/index.html">Scope of Delivery</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/1-standard-components.html">Standard Components</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/2-consumables-and-accessories.html">Consumables and Accessories</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/3-documentation.html">Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../5-quick-start/index.html">Quick Start (Unboxing &amp; Setup)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/1-first-steps.html">First Steps: charging, turning on, pairing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/2-quick-example-workflows.html">Quick Example Workflows: recording and wireless streaming</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preparing for a Recording</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/1-charging-and-battery-check.html">Charging and battery check</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/2-led-light-signals.html">LED Light Signals and Their Meanings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/3-button-commands.html">Button Commands and Functions (marker, shutdown, reset)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/4-summary-table.html">Summary Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/5-pre-recording-checklist.html">Pre-Recording Checklist</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Recording Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/1-operating-modes.html">Operating modes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/2-triggers-and-event-markers.html">Triggers and event markers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/3-hypersync.html">Hypersync</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ending a Recording and After-Use Tasks</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/1-proper-shutdown-procedure.html">Proper Shutdown Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/2-data-transfer-from-memory.html">Data Transfer from Device Memory (USB-C)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/3-cleaning-disinfecting-storing.html">Cleaning, Disinfecting, Storing Hardware</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Electrodes &amp; Impedance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/1-dry-vs-gel-electrodes.html">Dry vs. Gel Electrodes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/2-comparison-table.html">Comparison Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/3-cap-size-guide.html">Cap Size Guide (Choosing the Right Fit)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/4-placement-of-ref-electrode.html">Placement of Reference Electrodes (dry vs. gel)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/5-lowering-impedance.html">Lowering Impedance</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Software &amp; Apps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/1-system-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/2-software-overview.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/6-explorepy-command-guide.html">explorepy Command Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../11-explore-desktop-guide/index.html">Explore Desktop Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/1-getting-started.html">Explore Desktop Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/2-usage.html">Explore Desktop Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/3-visualization.html">Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/4-recording.html">Explore Desktop Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/5-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/7-other.html">Other features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/8-troubleshooting.html">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../12-explore-mobile-app/index.html">Explore Mobile App</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/1-download-and-installation.html">Download and Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/2-explore-mobile-app-guide.html">Explore Mobile App Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/4-tests.html">Tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Explore Signals Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/1-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/2-installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/3-usage.html">Usage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Applications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1-artefact-removal.html">Artefact removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2-easi-ecg.html">EASI ECG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3-ecg-analysis.html">ECG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="4-eeg-to-lamp-brightness.html">EEG to lamp brightness</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-eegsynth.html">EEGSynth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-eog-artifact-removal.html">EOG Artifact Removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="7-motor-imagery-bci.html">Motor Imagery BCI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-p300-experiment.html">P300 Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-real-time-spectrogram.html">Real-time Spectrogram</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-sleep-actigraphy.html">Sleep Actigraphy</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="11-sleep-eeg-analysis.html">Sleep EEG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="13-ssvep-experiments.html">SSVEP Experiments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integrations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../15-integrations/1-supported-software.html">Supported Software</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/index.html">Stimulation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/1-open-sesame.html">OpenSesame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/2-e-prime.html">E-Prime®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/3-presentation.html">Presentation®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/4-psycho-py.html">PsychoPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/5-psychtoolbox.html">Psychtoolbox</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Analysis</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/1-eeglab.html">EEGLAB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/2-mne-python.html">MNE Python</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/3-field-trip.html">FieldTrip</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/4-neuro-pipe.html">NeuroPype</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/5-besa-research.html">BESA Research</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/6-neuro-kit-2.html">NeuroKit2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/7-brainstorm.html">Brainstorm</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/8-timeflux.html">Timeflux</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/9-bci2000.html">BCI2000</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/10-open-vibe.html">OpenViBE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/11-mne-lsl.html">MNE-LSL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/13-imotions.html">iMotions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/index.html">Interfaces</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/1-lab-streaming.html">Lab Streaming Layer(LSL)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/2-brain-flow.html">BrainFlow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/index.html">Hardware</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/1-plux-biosignals.html">PLUX Biosignals</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/2-pupil-labs.html">Pupil Labs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../16-faqs/index.html">FAQs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Troubleshooting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../17-troubleshooting/1-macos-installation-developer-could-not-be-verified.html">Troubleshoot macOs installation developer-could-not-be-verified</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Mentalab Wiki</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Mentalab Wiki</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="On this page" data-levels="1">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Sleep EEG Analysis</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Modern sleep science is strongly informed by ExG biosensors that record brain activity, eye-movement activity, and muscle activity. These modalities are usually referred to as electroencephalography (EEG), electrooculography (EOG), and electromyography (EMG).</p>
+</div>
+<div class="paragraph">
+<p>This guide demonstrates how EEG data recorded during a full night of sleep with Mentalab Explore can be analysed with the free and open-source <a href="https://yasa-sleep.org/build/html/index.html">YASA toolbox</a>. The workflow includes automatic sleep staging with the YASA classifier <a href="#ref-1">[1]</a>, EEG band-power inspection, slow-wave detection, and sleep-spindle detection. The application example follows the <a href="https://github.com/raphaelvallat/yasa/tree/master/notebooks">YASA notebooks</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_acquisition"><a class="anchor" href="#_data_acquisition"></a>Data acquisition</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>A volunteer recorded sleep with an 8-channel Mentalab Explore device. The following montage was used:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 20%;">
+<col style="width: 40%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Channel</th>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-left valign-top">Electrode</th>
+<th class="tableblock halign-left valign-top">Position</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">REF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adhesive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TP10, right mastoid</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EOG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adhesive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Above right eye</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EOG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adhesive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Outer canthus, right eye</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adhesive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Submental, below chin</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EEG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EEG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EEG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">F2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EEG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adhesive</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EEG</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">wet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fc1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Clip cables were used to connect to adhesive and dry electrodes. Dry electrodes use flexible brushes to establish contact.</p>
+</div>
+<div class="paragraph">
+<p>Impedances were not lowered after positioning the electrodes. Refer to the
+<a href="12-sleep-recording-protocol.html" class="xref page">Sleep Recording Protocol</a>
+for detailed recommendations on preparation, data transfer, and conversion of the recorded <code>BIN</code> file to <code>.csv</code> or <code>.bdf</code> files.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_sleep_data_analysis"><a class="anchor" href="#_sleep_data_analysis"></a>Sleep data analysis</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_software_preparation"><a class="anchor" href="#_software_preparation"></a>Software preparation</h3>
+<div class="paragraph">
+<p>First, prepare a conda virtual Python environment for the project.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install Anaconda:</p>
+<div class="paragraph">
+<p><a href="https://www.anaconda.com/docs/getting-started/anaconda/install/overview">Anaconda installation documentation</a></p>
+</div>
+</li>
+<li>
+<p>Create a virtual Python environment using conda:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda create -n myenv python=3.10</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Activate the conda environment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda activate myenv</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Install the required packages:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install numpy mne yasa</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_processing"><a class="anchor" href="#_data_processing"></a>Data processing</h3>
+<div class="paragraph">
+<p>Load the required Python packages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">import mne
+import yasa
+import numpy as np
+import matplotlib.pyplot as plt</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Next, load the <code>.csv</code> file containing the sleep data recorded with Mentalab Explore and convert it to an <a href="https://mne.tools/stable/index.html">MNE</a> raw data object.</p>
+</div>
+<div class="paragraph">
+<p>The example expects data recorded at <code>250 Hz</code> with an 8-channel device. Note that MNE expects data in volts (<code>V</code>), whereas Mentalab Explore stores data in microvolts (<code>µV</code>).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">ch_names = ['EOG-above', 'EOG-canthus', 'EMG-chin', 'Dry-O2', 'Dry-C2', 'Dry-F2', 'Sticky-C1', 'Wet-Fc1']
+data = np.loadtxt("./data/wiki-sleep-analysis-data/Mentalab-sleep-analysis_ExG.csv", skiprows=1, delimiter=',').transpose()[1:9]
+sf = 250
+ch_types = ["eog", "eog", "emg", "eeg", "eeg", "eeg", "eeg", "eeg"]
+info = mne.create_info(ch_names=ch_names, sfreq=sf, ch_types=ch_types)
+raw = mne.io.RawArray(data, info)
+raw.apply_function(lambda x: x * 1e-6) # scale muV to V</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Apply a band-pass filter with a low cutoff of <code>0.1 Hz</code> and a high cutoff of <code>40 Hz</code>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">raw.filter(0.1, 40) # Apply a bandpass filter from 0.1 to 40 Hz</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_detecting_sleep_stages"><a class="anchor" href="#_detecting_sleep_stages"></a>Detecting sleep stages</h3>
+<div class="paragraph">
+<p>Next, apply the YASA sleep stage classification algorithm <a href="#ref-1">[1]</a>. The only required input is one EEG channel. The algorithm can also receive one EOG channel, one EMG channel, participant age, and participant sex, but these inputs are optional. The EEG channel accounts for most of the classifier performance <a href="#ref-1">[1]</a>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sls = yasa.SleepStaging(raw, eeg_name="Sticky-C1")
+y_pred = sls.predict() # Get the predicted sleep stages
+
+hypno = yasa.Hypnogram(y_pred) # Getting a hypnogram for later
+hypno_int = yasa.hypno_str_to_int(y_pred)
+hypno_up = yasa.hypno_upsample_to_data(hypno=hypno_int, sf_hypno=(1/30), data=data, sf_data=sf)</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_inspecting_band_power"><a class="anchor" href="#_inspecting_band_power"></a>Inspecting band power</h3>
+<div class="paragraph">
+<p>Sleep stages are typically associated with activity in specific EEG frequency bands. N3 sleep is defined by slow waves in the delta band, while REM sleep is associated with increased alpha-frequency power.</p>
+</div>
+<div class="paragraph">
+<p>The following code computes relative power for the sleep stages Wake, N1, N2, N3, and REM across common frequency bands.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">data_filt = raw.get_data() * 1e6
+data_c1_uV = data_filt[6]
+bandpower_stages = yasa.bandpower(data_c1_uV, sf=100, win_sec=4, relative=True, hypno=hypno_up, include=(0, 1, 2, 3, 4))
+bandpower_avg = bandpower_stages.groupby('Stage')[['Delta', 'Theta', 'Alpha', 'Sigma', 'Beta', 'Gamma']].mean()
+bandpower_avg.index = ['Wake', 'N1', 'N2', 'N3', 'REM']</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Inspecting the relative band power shows increased delta and decreased theta activity in N3 sleep compared with wakefulness. Alpha activity is increased in N1 and REM sleep compared with deeper N2 and N3 sleep stages.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">print(bandpower_avg)</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">      Delta     Theta     Alpha     Sigma     Beta      Gamma
+Wake  0.689047  0.252754  0.041008  0.013561  0.003619  0.000011
+N1    0.805558  0.156776  0.026298  0.008975  0.002385  0.000009
+N2    0.860466  0.122272  0.011644  0.004467  0.001142  0.000010
+N3    0.934785  0.058335  0.004424  0.001922  0.000521  0.000014
+REM   0.848217  0.115585  0.025746  0.008503  0.001937  0.000010</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_spectrogram_and_hypnogram"><a class="anchor" href="#_spectrogram_and_hypnogram"></a>Spectrogram and hypnogram</h3>
+<div class="paragraph">
+<p>A hypnogram is a visual representation of sleep stages over the course of the night. In Figure 1, the hypnogram is combined with a spectrogram showing frequency content over time.</p>
+</div>
+<div class="paragraph">
+<p>The hypnogram shows a typical pattern, with deeper sleep stages in the first half of the night and longer REM stages in the second half. The spectrogram shows power in frequency bands associated with the corresponding sleep stages.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Clinical sleep recordings are usually scored by trained professionals according to the AASM guidelines. The hypnogram shown here is based on automatic sleep detection from the classifier.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">fig = yasa.plot_spectrogram(data_c1_uV, sf, hypno=hypno_up, fmax=30, cmap='Spectral_r', trimperc=5)
+fig.show()</code></pre>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/Sleep-Analysis-hypno-spectro-stickyC1-only.png" alt="Spectrogram and hypnogram" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 1. Hypnogram derived from sleep stage classification with the YASA classifier. The spectrogram shows the frequency content of the corresponding electrode over time. Data were recorded using Mentalab Explore.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_slow_wave_and_sleep_spindles_detection"><a class="anchor" href="#_slow_wave_and_sleep_spindles_detection"></a>Slow wave and sleep spindles detection</h3>
+<div class="paragraph">
+<p>Slow waves are a hallmark of N3 sleep, also known as slow-wave sleep. With frequencies between <code>0.5 Hz</code> and <code>3 Hz</code>, they are part of the delta frequency band.</p>
+</div>
+<div class="paragraph">
+<p>The YASA toolbox provides a <a href="https://yasa-sleep.org/build/html/generated/yasa.sw_detect.html">slow wave detection algorithm</a>, based on previous work <a href="#ref-2">[2]</a> <a href="#ref-3">[3]</a>, that can be used to inspect individual and averaged slow waves.</p>
+</div>
+<div class="paragraph">
+<p>Calling the slow wave summary function provides an overview of the timing and properties of the detected slow waves.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sw = yasa.sw_detect(data_c1_uV, sf, hypno=hypno_up)
+sw.summary()</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">        Start    NegPeak  MidCrossing    PosPeak        End  Duration  ValNegPeak  ValPosPeak         PTP       Slope  Frequency  Stage  Channel  IdxChannel
+0     1579.324   1579.600     1579.860   1580.076   1580.400     1.076 -110.009728   70.868551  180.878280  695.685692   0.929368      2  CHAN000           0
+1     1833.080   1833.328     1833.560   1833.844   1834.144     1.064  -43.119826   50.537236   93.657062  403.694232   0.939850      2  CHAN000           0
+2     1834.144   1834.452     1834.736   1834.896   1835.060     0.916  -64.484388   26.909410   91.393798  321.809148   1.091703      2  CHAN000           0
+3     1895.844   1896.224     1896.560   1896.808   1897.060     1.216  -55.624535   42.378489   98.003024  291.675667   0.822368      2  CHAN000           0
+4     1935.872   1936.280     1936.700   1936.832   1936.984     1.112  -83.590539   10.574031   94.164569  224.201355   0.899281      2  CHAN000           0
+..         ...        ...          ...        ...        ...       ...         ...         ...         ...         ...        ...    ...      ...         ...
+966  29275.144  29275.496    29275.784  29276.000  29276.756     1.612 -123.916814   68.232216  192.149031  667.184134   0.620347      2  CHAN000           0
+967  29276.756  29277.024    29277.292  29277.484  29277.780     1.024  -80.189417   37.322052  117.511469  438.475632   0.976562      2  CHAN000           0
+968  29351.656  29351.996    29352.252  29352.468  29352.712     1.056  -80.538877   63.521518  144.060395  562.735919   0.946970      2  CHAN000           0
+969  29353.720  29354.168    29354.448  29354.660  29354.980     1.260  -60.494303   36.531033   97.025336  346.519058   0.793651      2  CHAN000           0
+970  29444.048  29444.400    29444.704  29444.924  29445.248     1.200 -166.011564   85.047673  251.059236  825.852751   0.833333      2  CHAN000           0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 2 shows the average slow wave, computed from <code>971</code> detected slow wave events.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sw.plot_average(time_before=0.4, time_after=0.8, center="NegPeak");
+plt.legend(['C1'])
+plt.show()</code></pre>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/Sleep-Analysis-average_SW.png" alt="Average slow wave" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 2. Average of the slow waves detected by the YASA toolbox. Data were recorded using Mentalab Explore.</p>
+</div>
+<div class="paragraph">
+<p>Sleep spindles are short oscillatory bursts that typically occur during N2 sleep and fall in the frequency range between <code>11 Hz</code> and <code>16 Hz</code>.</p>
+</div>
+<div class="paragraph">
+<p>Using the same workflow as before, run the <a href="https://yasa-sleep.org/build/html/generated/yasa.spindles_detect.html">spindle detection algorithm</a>, based on previous work <a href="#ref-4">[4]</a>. Calling the sleep spindle summary function provides an overview of the timing and properties of the detected sleep spindles.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sp = yasa.spindles_detect(data_c1_uV, sf)
+sp.summary()</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">        Start       Peak        End  Duration   Amplitude        RMS  AbsPower  RelPower  Frequency  Oscillations  Symmetry  Channel  IdxChannel
+0        8.720      8.864      9.396     0.676   56.961351  11.090094  2.100221  0.322695  11.315217           8.0  0.211765  CHAN000           0
+1       53.476     53.532     54.152     0.676  147.736709  28.034810  2.648341  0.305501  12.936249           8.0  0.082353  CHAN000           0
+2     1399.952   1400.424   1400.636     0.684   58.795353  11.988885  1.960096  0.266393  13.047958           8.0  0.686047  CHAN000           0
+3     1444.672   1444.860   1445.176     0.504   49.023655  11.592732  2.043340  0.243198  13.838615           7.0  0.370079  CHAN000           0
+4     1496.024   1496.072   1496.672     0.648   37.978448  10.030894  1.689857  0.238392  13.444519           8.0  0.073620  CHAN000           0
+..         ...        ...        ...       ...         ...        ...       ...       ...        ...           ...       ...      ...         ...
+519  29412.916  29413.096  29413.660     0.744   37.617005   8.592611  1.851378  0.323409  12.606909           8.0  0.240642  CHAN000           0
+520  29418.196  29419.088  29419.892     1.696   73.779483  14.525022  2.380002  0.519697  12.552197          21.0  0.524706  CHAN000           0
+521  29423.800  29425.016  29425.484     1.684   58.250863  11.203151  1.982496  0.389862  12.449155          21.0  0.720379  CHAN000           0
+522  29451.216  29452.136  29452.268     1.052   46.337193  10.750559  2.002255  0.438899  12.765855          13.0  0.871212  CHAN000           0
+523  29467.156  29467.684  29468.148     0.992   49.976640   9.770195  1.971178  0.429425  12.662866          12.0  0.530120  CHAN000           0</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 3 shows the average sleep spindle, computed from <code>524</code> detected spindle events.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">sp.plot_average(time_before=0.6, time_after=0.6);
+plt.legend(['C1'])
+plt.show()</code></pre>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/Sleep-Analysis-average_Spindle.png" alt="Average sleep spindle" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Figure 3. Average of the sleep spindles detected by the YASA toolbox. Data were recorded using Mentalab Explore.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_closing_words"><a class="anchor" href="#_closing_words"></a>Closing words</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Whether used for controlled laboratory research, in-home sleep studies, or sleep monitoring applications, Mentalab Explore can provide research-grade ExG data and an efficient workflow for extracting sleep-related insights.</p>
+</div>
+<div class="paragraph">
+<p>For previous applications of Mentalab Explore in sleep science, see Biller et al. <a href="#ref-5">[5]</a>, who conducted a longitudinal sleep study, and Hainke et al. <a href="#ref-6">[6]</a>, who investigated gamma oscillations and consciousness during sleep using steady-state visually evoked potentials (SSVEPs).</p>
+</div>
+<div class="paragraph">
+<p>For more information or support, contact <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_references"><a class="anchor" href="#_references"></a>References</h2>
+<div class="sectionbody">
+<div class="ulist bibliography">
+<ul class="bibliography">
+<li>
+<p><a id="ref-1"></a>[1] Vallat, R., &amp; Walker, M. P. (2021). An open-source, high-performance tool for automated sleep staging. <strong>eLife</strong>, 10, e70092. <a href="https://doi.org/10.7554/eLife.70092">https://doi.org/10.7554/eLife.70092</a></p>
+</li>
+<li>
+<p><a id="ref-2"></a>[2] Carrier, J., Viens, I., Poirier, G., Robillard, R., Lafortune, M., Vandewalle, G., Martin, N., Barakat, M., Paquet, J., &amp; Filipini, D. (2011). Sleep slow wave changes during the middle years of life. <strong>European Journal of Neuroscience</strong>, 33(4), 758–766. <a href="https://doi.org/10.1111/j.1460-9568.2010.07543.x">https://doi.org/10.1111/j.1460-9568.2010.07543.x</a></p>
+</li>
+<li>
+<p><a id="ref-3"></a>[3] Massimini, M., Huber, R., Ferrarelli, F., Hill, S., &amp; Tononi, G. (2004). The Sleep Slow Oscillation as a Traveling Wave. <strong>Journal of Neuroscience</strong>, 24(31), 6862–6870. <a href="https://doi.org/10.1523/JNEUROSCI.1318-04.2004">https://doi.org/10.1523/JNEUROSCI.1318-04.2004</a></p>
+</li>
+<li>
+<p><a id="ref-4"></a>[4] Lacourse, K., Delfrate, J., Beaudry, J., Peppard, P., &amp; Warby, S. C. (2019). A sleep spindle detection algorithm that emulates human expert spindle scoring. <strong>Journal of Neuroscience Methods</strong>, 316, 3–11. <a href="https://doi.org/10.1016/j.jneumeth.2018.08.014">https://doi.org/10.1016/j.jneumeth.2018.08.014</a></p>
+</li>
+<li>
+<p><a id="ref-5"></a>[5] Biller, A. M., Fatima, N., Hamberger, C., Hainke, L., Plankl, V., Nadeem, A., Kramer, A., Hecht, M., &amp; Spitschan, M. (2024). The Ecology of Human Sleep (EcoSleep) Project: Protocol for a longitudinal cohort repeated-measurement-burst study to assess the relationship between sleep determinants and sleep outcomes under real-world conditions across time of year. <strong>medRxiv</strong>. <a href="https://doi.org/10.1101/2024.02.09.24302573">https://doi.org/10.1101/2024.02.09.24302573</a></p>
+</li>
+<li>
+<p><a id="ref-6"></a>[6] Hainke, L., Herberger, S., Taylor, P., &amp; Dowsett, J. (2022). Studying Gamma oscillations and consciousness during sleep using SSVEPs. <a href="https://doi.org/10.13140/RG.2.2.35554.81609">https://doi.org/10.13140/RG.2.2.35554.81609</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="10-sleep-actigraphy.html">Sleep Actigraphy</a></span>
+  <span class="next"><a href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using a modified version of the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Motor Imagery BCI :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/14-applications/7-motor-imagery-bci.html">
+    <link rel="prev" href="6-eog-artifact-removal.html">
+    <link rel="next" href="8-p300-experiment.html">
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the wiki">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Mentalab Wiki</a></li>
+    <li>Applications</li>
+    <li><a href="7-motor-imagery-bci.html">Motor Imagery BCI</a></li>
+  </ul>
+</nav>
+<!--<div class="edit-this-page"><a href="file:///Users/sonjastefani/Documents/dev/mentalab-wiki-antora/modules/ROOT/pages/14-applications/7-motor-imagery-bci.adoc">Edit this Page</a></div>
+-->
+</div>
+<div class="body">
+<div class="nav-container" data-component="mentalab-wiki" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Mentalab Wiki</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introduction</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/1-purpose.html">Purpose of this User Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/2-about.html">About the document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety, Intended Use and Product Information</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/1-intended-use.html">Intended Use</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/2-manufacturer-information.html">Manufacturer Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/3-identification-and-labels.html">Identification and Labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/4-safety-classification.html">Safety Classification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/5-environmental-requirements.html">Environmental Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/6-regulatory-compliance.html">Regulatory Compliance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/7-warranty-and-service.html">Warranty and Service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/8-electrical-safety-and-isolation.html">Electrical Safety and Isolation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">System Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/1-mentalab-explore-pro.html">Mentalab Explore Pro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/2-hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/3-software.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/4-integrated-workflows.html">Integrated Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../4-scope-of-delivery/index.html">Scope of Delivery</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/1-standard-components.html">Standard Components</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/2-consumables-and-accessories.html">Consumables and Accessories</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/3-documentation.html">Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../5-quick-start/index.html">Quick Start (Unboxing &amp; Setup)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/1-first-steps.html">First Steps: charging, turning on, pairing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/2-quick-example-workflows.html">Quick Example Workflows: recording and wireless streaming</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preparing for a Recording</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/1-charging-and-battery-check.html">Charging and battery check</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/2-led-light-signals.html">LED Light Signals and Their Meanings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/3-button-commands.html">Button Commands and Functions (marker, shutdown, reset)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/4-summary-table.html">Summary Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/5-pre-recording-checklist.html">Pre-Recording Checklist</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Recording Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/1-operating-modes.html">Operating modes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/2-triggers-and-event-markers.html">Triggers and event markers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/3-hypersync.html">Hypersync</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ending a Recording and After-Use Tasks</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/1-proper-shutdown-procedure.html">Proper Shutdown Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/2-data-transfer-from-memory.html">Data Transfer from Device Memory (USB-C)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/3-cleaning-disinfecting-storing.html">Cleaning, Disinfecting, Storing Hardware</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Electrodes &amp; Impedance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/1-dry-vs-gel-electrodes.html">Dry vs. Gel Electrodes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/2-comparison-table.html">Comparison Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/3-cap-size-guide.html">Cap Size Guide (Choosing the Right Fit)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/4-placement-of-ref-electrode.html">Placement of Reference Electrodes (dry vs. gel)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/5-lowering-impedance.html">Lowering Impedance</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Software &amp; Apps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/1-system-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/2-software-overview.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/6-explorepy-command-guide.html">explorepy Command Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../11-explore-desktop-guide/index.html">Explore Desktop Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/1-getting-started.html">Explore Desktop Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/2-usage.html">Explore Desktop Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/3-visualization.html">Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/4-recording.html">Explore Desktop Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/5-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/7-other.html">Other features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/8-troubleshooting.html">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../12-explore-mobile-app/index.html">Explore Mobile App</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/1-download-and-installation.html">Download and Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/2-explore-mobile-app-guide.html">Explore Mobile App Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/4-tests.html">Tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Explore Signals Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/1-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/2-installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/3-usage.html">Usage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Applications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1-artefact-removal.html">Artefact removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2-easi-ecg.html">EASI ECG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3-ecg-analysis.html">ECG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="4-eeg-to-lamp-brightness.html">EEG to lamp brightness</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-eegsynth.html">EEGSynth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-eog-artifact-removal.html">EOG Artifact Removal</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="7-motor-imagery-bci.html">Motor Imagery BCI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-p300-experiment.html">P300 Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-real-time-spectrogram.html">Real-time Spectrogram</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-sleep-actigraphy.html">Sleep Actigraphy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="11-sleep-eeg-analysis.html">Sleep EEG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="13-ssvep-experiments.html">SSVEP Experiments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integrations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../15-integrations/1-supported-software.html">Supported Software</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/index.html">Stimulation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/1-open-sesame.html">OpenSesame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/2-e-prime.html">E-Prime®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/3-presentation.html">Presentation®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/4-psycho-py.html">PsychoPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/5-psychtoolbox.html">Psychtoolbox</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Analysis</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/1-eeglab.html">EEGLAB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/2-mne-python.html">MNE Python</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/3-field-trip.html">FieldTrip</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/4-neuro-pipe.html">NeuroPype</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/5-besa-research.html">BESA Research</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/6-neuro-kit-2.html">NeuroKit2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/7-brainstorm.html">Brainstorm</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/8-timeflux.html">Timeflux</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/9-bci2000.html">BCI2000</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/10-open-vibe.html">OpenViBE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/11-mne-lsl.html">MNE-LSL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/13-imotions.html">iMotions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/index.html">Interfaces</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/1-lab-streaming.html">Lab Streaming Layer(LSL)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/2-brain-flow.html">BrainFlow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/index.html">Hardware</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/1-plux-biosignals.html">PLUX Biosignals</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/2-pupil-labs.html">Pupil Labs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../16-faqs/index.html">FAQs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Troubleshooting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../17-troubleshooting/1-macos-installation-developer-could-not-be-verified.html">Troubleshoot macOs installation developer-could-not-be-verified</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Mentalab Wiki</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Mentalab Wiki</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="On this page" data-levels="1">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Motor Imagery BCI</h1>
+<div class="sect1">
+<h2 id="_overview"><a class="anchor" href="#_overview"></a>Overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>This application is a Brain-Computer Interface (BCI) system designed to classify motor imagery tasks, including left hand, right hand, and neutral state, using EEG data. The system connects to Explore Pro device via the Lab Streaming Layer (LSL) protocol, processes the EEG signals, and classifies the data using machine learning models, including a Transformer-based neural network.</p>
+</div>
+<div class="paragraph">
+<p>The application supports real-time classification. It includes tools for data collection, preprocessing, model training, and evaluation. The code for the application can be found in our <a href="https://github.com/Mentalab-hub/explorepy/tree/master/examples/motor-imagery-bci">explorepy/examples section on github</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_features"><a class="anchor" href="#_features"></a>Features</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Real-Time EEG Data Acquisition: Connects to an EEG device via LSL for real-time data streaming.</p>
+</li>
+<li>
+<p>Motor Imagery Classification: Classifies EEG data into three states: left hand movement, right hand movement, and neutral state.</p>
+</li>
+<li>
+<p>Transformer Model: Implements a Transformer-based neural network for EEG signal classification.</p>
+</li>
+<li>
+<p>Multiple Classifiers: Supports Linear Discriminant Analysis (LDA), Support Vector Machines (SVM), Random Forest (RF), and the custom Transformer model.</p>
+</li>
+<li>
+<p>Data Preprocessing: Includes bandpass filtering for mu and beta bands and feature extraction using band power.</p>
+</li>
+<li>
+<p>Model Training and Evaluation: Allows training and evaluation of multiple classifiers with visualization of results.</p>
+</li>
+<li>
+<p>Real-Time BCI Operation: Runs in continuous mode for real-time classification and control.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_hardware"><a class="anchor" href="#_hardware"></a>Hardware</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>An Explore Pro device.</p>
+</li>
+<li>
+<p>A computer with sufficient processing power.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+A GPU is recommended for Transformer model training.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_software"><a class="anchor" href="#_software"></a>Software</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Python <code>3.10</code> or higher.</p>
+</li>
+<li>
+<p>Required Python packages.</p>
+<div class="paragraph">
+<p>Install them via <code>pip</code>:</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install pylsl numpy scipy scikit-learn torch matplotlib seaborn pandas</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ensure your EEG device is set up and streaming data via LSL.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_usage"><a class="anchor" href="#_usage"></a>Usage</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_collect_calibration_data"><a class="anchor" href="#_collect_calibration_data"></a>Collect Calibration Data</h3>
+<div class="paragraph">
+<p>To train the classifiers, you need to collect calibration data. Run the following command and follow the on-screen instructions:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python main.py</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Choose option <code>1</code> to train and compare all classifiers.</p>
+</div>
+<div class="paragraph">
+<p>The system will prompt you to perform left hand, right hand, and neutral state tasks.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_train_classifiers"><a class="anchor" href="#_train_classifiers"></a>Train Classifiers</h3>
+<div class="paragraph">
+<p>The application will automatically preprocess the data, extract features, and train multiple classifiers, including LDA, SVM, Random Forest, and Transformer.</p>
+</div>
+<div class="paragraph">
+<p>Training progress and results will be displayed in the console.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_run_real_time_bci"><a class="anchor" href="#_run_real_time_bci"></a>Run Real-Time BCI</h3>
+<div class="paragraph">
+<p>After training, you can run the BCI in real-time mode:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python main.py</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Choose option <code>2</code> to run the BCI with the best-performing classifier or option <code>3</code> to select a specific classifier.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_file_structure"><a class="anchor" href="#_file_structure"></a>File Structure</h2>
+<div class="sectionbody">
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-text hljs" data-lang="text">motor-imagery-bci/
+├── models/                  # Saved classifier models
+├── dataset/                 # Saved calibration datasets
+├── main.py                  # Main application script
+├── README.md                # This file</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_classifiers"><a class="anchor" href="#_classifiers"></a>Classifiers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The application supports the following classifiers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Linear Discriminant Analysis (LDA)</p>
+</li>
+<li>
+<p>Support Vector Machine (SVM)</p>
+</li>
+<li>
+<p>Random Forest (RF)</p>
+</li>
+<li>
+<p>Transformer Model</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_customizing_the_transformer_model"><a class="anchor" href="#_customizing_the_transformer_model"></a>Customizing the Transformer Model</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Transformer model is defined in the <code>EEGTransformer</code> class. You can customize the following parameters:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>input_dim</code>: Input feature dimension.</p>
+</li>
+<li>
+<p><code>num_classes</code>: Number of output classes.</p>
+<div class="paragraph">
+<p>Default: <code>3</code></p>
+</div>
+</li>
+<li>
+<p><code>d_model</code>: Dimension of the model.</p>
+<div class="paragraph">
+<p>Default: <code>64</code></p>
+</div>
+</li>
+<li>
+<p><code>nhead</code>: Number of attention heads.</p>
+<div class="paragraph">
+<p>Default: <code>8</code></p>
+</div>
+</li>
+<li>
+<p><code>num_layers</code>: Number of Transformer encoder layers.</p>
+<div class="paragraph">
+<p>Default: <code>4</code></p>
+</div>
+</li>
+<li>
+<p><code>dropout</code>: Dropout rate.</p>
+<div class="paragraph">
+<p>Default: <code>0.2</code></p>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Example:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-python hljs" data-lang="python">model = EEGTransformer(input_dim=64, num_classes=3, d_model=128, nhead=8, num_layers=6, dropout=0.3)</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_data_preprocessing"><a class="anchor" href="#_data_preprocessing"></a>Data Preprocessing</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The EEG data is preprocessed as follows:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bandpass Filtering: Applied to extract mu (<code>8-12 Hz</code>) and beta (<code>16-24 Hz</code>) bands.</p>
+</li>
+<li>
+<p>Feature Extraction: Band power is calculated for each frequency band.</p>
+</li>
+<li>
+<p>Dataset Preparation: Features and labels are saved in a CSV file for training.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_real_time_operation"><a class="anchor" href="#_real_time_operation"></a>Real-Time Operation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In real-time mode, the application:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Continuously collects EEG data from the LSL stream.</p>
+</li>
+<li>
+<p>Applies preprocessing and feature extraction.</p>
+</li>
+<li>
+<p>Classifies the data using the selected model.</p>
+</li>
+<li>
+<p>Displays the detected state, either left hand, right hand, or neutral, and the certainty level.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_troubleshooting"><a class="anchor" href="#_troubleshooting"></a>Troubleshooting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_lsl_stream_not_found"><a class="anchor" href="#_lsl_stream_not_found"></a>LSL Stream Not Found</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Ensure your device is properly connected and streaming data.</p>
+</li>
+<li>
+<p>Verify the stream name in the <code>MotorImageryBCI</code> class initialization.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_poor_classification_accuracy"><a class="anchor" href="#_poor_classification_accuracy"></a>Poor Classification Accuracy</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Collect more calibration data.</p>
+</li>
+<li>
+<p>Adjust the frequency bands, <code>mu_band</code> and <code>beta_band</code>, in the <code>MotorImageryBCI</code> class.</p>
+</li>
+<li>
+<p>Fine-tune the Transformer model parameters.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_performance_issues"><a class="anchor" href="#_performance_issues"></a>Performance Issues</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Use a GPU for training the Transformer model.</p>
+</li>
+<li>
+<p>Reduce the window size or overlap in the <code>MotorImageryBCI</code> class.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_future_improvements"><a class="anchor" href="#_future_improvements"></a>Future Improvements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>While the current system is functional, several enhancements can improve its accuracy, real-time performance, and adaptability.</p>
+</div>
+<div class="sect2">
+<h3 id="_advanced_deep_learning_models"><a class="anchor" href="#_advanced_deep_learning_models"></a>Advanced Deep Learning Models</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Replace traditional classifiers, including LDA, SVM, and RF, with more powerful architectures like EEGNet, ConvLSTM, or Graph Neural Networks (GNNs).</p>
+</li>
+<li>
+<p>Optimize the Transformer model by using EEG-specialized architectures such as TS-Transformer or EEGFormer for better time-series representation.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_enhanced_feature_extraction"><a class="anchor" href="#_enhanced_feature_extraction"></a>Enhanced Feature Extraction</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Incorporate Common Spatial Patterns (CSP) to improve the separation of motor imagery classes.</p>
+</li>
+<li>
+<p>Use Riemannian geometry-based approaches to extract more robust spatial features.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_data_augmentation_for_eeg"><a class="anchor" href="#_data_augmentation_for_eeg"></a>Data Augmentation for EEG</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Implement synthetic EEG data generation techniques like time-domain warping, frequency shifting, and GAN-based augmentation to improve model generalization.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_online_and_transfer_learning"><a class="anchor" href="#_online_and_transfer_learning"></a>Online and Transfer Learning</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduce adaptive learning to fine-tune the model based on user-specific EEG patterns.</p>
+</li>
+<li>
+<p>Use few-shot learning or domain adaptation techniques to improve performance across multiple users.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="6-eog-artifact-removal.html">EOG Artifact Removal</a></span>
+  <span class="next"><a href="8-p300-experiment.html">P300 Experiment</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using a modified version of the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+  </body>
+</html>

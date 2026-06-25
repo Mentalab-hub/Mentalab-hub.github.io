@@ -1,232 +1,451 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url>
-    <loc>https://wiki.mentalab.com/integrations/interfaces/lsl/</loc>
-    <lastmod>2025-09-10T14:55:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/interfaces/brainflow/</loc>
-    <lastmod>2025-07-15T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/psychopy/</loc>
-    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-installation/</loc>
-    <lastmod>2025-05-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/motor-imagery-bci/</loc>
-    <lastmod>2025-03-24T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/download-installation/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/eeglab/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/supported-software/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/quick-links/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/plux-biosignals/</loc>
-    <lastmod>2025-07-18T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/opensesame/</loc>
-    <lastmod>2025-07-17T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/</loc>
-    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/explore-signals-usage/</loc>
-    <lastmod>2025-05-13T10:10:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/artefact-removal/</loc>
-    <lastmod>2025-03-25T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/mne-python/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/usage/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/getting-started/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/operating-instructions/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/pupillabs/</loc>
-    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/e-prime/</loc>
-    <lastmod>2025-07-29T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-actigraphy/</loc>
-    <lastmod>2025-06-12T10:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/</loc>
-    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/interfaces/</loc>
-    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/testing/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/event-triggers/</loc>
-    <lastmod>2023-02-28T13:00:19+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/dry-electrode-guide/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/usage/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/presentation/</loc>
-    <lastmod>2025-07-18T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/psychtoolbox/</loc>
-    <lastmod>2025-07-18T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/fieldtrip/</loc>
-    <lastmod>2025-07-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/</loc>
-    <lastmod>2025-06-04T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/neuropype/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/photodiode-event-trigger/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/visualize/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/led-light-guide/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/besa-research/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/neurokit2/</loc>
-    <lastmod>2022-06-02T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/power-bands/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/record/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/button-guide/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/brainstorm/</loc>
-    <lastmod>2024-12-19T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/faqs/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/impedance/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cap-size-guide/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/lsl/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/other/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/ssvep/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/improving-impedances/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/timeflux/</loc>
-    <lastmod>2025-01-27T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/bci2000/</loc>
-    <lastmod>2025-01-13T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/openvibe/</loc>
-    <lastmod>2025-01-12T15:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/easi-ecg/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-desktop-guide/troubleshooting/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/explorepy-commands/</loc>
-    <lastmod>2022-01-25T16:17:02+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-mobile-guide/</loc>
-    <lastmod>2024-11-12T14:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/cleaning-disinfection-storage/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/p300/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/explore-signals-guide/</loc>
-    <lastmod>2025-05-13T10:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-recording-protocol/</loc>
-    <lastmod>2023-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/user-guide/safety-recommendations/</loc>
-    <lastmod>2022-01-26T10:25:19+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/mne-lsl/</loc>
-    <lastmod>2026-03-06T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/sleep-analysis/</loc>
-    <lastmod>2024-08-22T14:29:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/analysis/imotions/</loc>
-    <lastmod>2026-04-24T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/ecg-analysis/</loc>
-    <lastmod>2024-08-22T14:29:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/eegsynth/</loc>
-    <lastmod>2024-08-22T14:29:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/spectrogram/</loc>
-    <lastmod>2025-05-08T12:54:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/eeg-ecg-hypersync/</loc>
-    <lastmod>2025-09-12T13:54:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/applications/eeg-to-lamp/</loc>
-    <lastmod>2025-06-03T12:54:00+01:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/</loc>
-    <lastmod>2026-05-07T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/hardware/1-labbench/</loc>
-  </url><url>
-    <loc>https://wiki.mentalab.com/integrations/stimulation/5-neuropype-experiment-recorder/</loc>
-  </url><url>
-    <loc>https://wiki.mentalab.com/categories/</loc>
-  </url><url>
-    <loc>https://wiki.mentalab.com/tags/</loc>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/1-introduction/1-purpose.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/1-introduction/2-about.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/1-introduction/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/10-software-and-apps/1-system-requirements.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/10-software-and-apps/2-software-overview.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/10-software-and-apps/6-explorepy-command-guide.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/10-software-and-apps/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/1-getting-started.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/2-usage.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/3-visualization.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/4-recording.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/5-impedance.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/6-lab-streaming-layer.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/7-other.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/8-troubleshooting.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/1-download-and-installation.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/2-explore-mobile-app-guide.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/3-usage.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/4-tests.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/1-overview.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/2-installation.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/3-usage.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/1-artefact-removal.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/10-sleep-actigraphy.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/11-sleep-eeg-analysis.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/12-sleep-recording-protocol.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/13-ssvep-experiments.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/2-easi-ecg.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/3-ecg-analysis.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/4-eeg-to-lamp-brightness.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/5-eegsynth.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/6-eog-artifact-removal.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/7-motor-imagery-bci.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/8-p300-experiment.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/9-real-time-spectrogram.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/14-applications/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/1-open-sesame.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/2-e-prime.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/3-presentation.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/4-psycho-py.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/5-psychtoolbox.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-supported-software.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/1-eeglab.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/10-open-vibe.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/11-mne-lsl.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/13-imotions.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/2-mne-python.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/3-field-trip.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/4-neuro-pipe.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/5-besa-research.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/6-neuro-kit-2.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/7-brainstorm.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/8-timeflux.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/9-bci2000.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/2-integrations-analysis/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/3-integrations-interfaces/1-lab-streaming.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/3-integrations-interfaces/2-brain-flow.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/3-integrations-interfaces/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/4-integrations-hardware/1-plux-biosignals.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/4-integrations-hardware/2-pupil-labs.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/4-integrations-hardware/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/15-integrations/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/16-faqs/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/17-troubleshooting/1-macos-installation-developer-could-not-be-verified.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/17-troubleshooting/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/1-intended-use.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/2-manufacturer-information.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/3-identification-and-labels.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/4-safety-classification.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/5-environmental-requirements.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/6-regulatory-compliance.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/7-warranty-and-service.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/8-electrical-safety-and-isolation.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/2-safety-use-product-info/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/3-system-overview/1-mentalab-explore-pro.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/3-system-overview/2-hardware.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/3-system-overview/3-software.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/3-system-overview/4-integrated-workflows.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/3-system-overview/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/4-scope-of-delivery/1-standard-components.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/4-scope-of-delivery/2-consumables-and-accessories.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/4-scope-of-delivery/3-documentation.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/4-scope-of-delivery/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/5-quick-start/1-first-steps.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/5-quick-start/2-quick-example-workflows.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/5-quick-start/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/1-charging-and-battery-check.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/2-led-light-signals.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/3-button-commands.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/4-summary-table.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/5-pre-recording-checklist.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/6-prepare-for-recording/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/7-recording-operation/1-operating-modes.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/7-recording-operation/2-triggers-and-event-markers.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/7-recording-operation/3-hypersync.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/7-recording-operation/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/8-ending-recording/1-proper-shutdown-procedure.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/8-ending-recording/2-data-transfer-from-memory.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/8-ending-recording/3-cleaning-disinfecting-storing.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/8-ending-recording/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/1-dry-vs-gel-electrodes.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/2-comparison-table.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/3-cap-size-guide.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/4-placement-of-ref-electrode.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/5-lowering-impedance.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/9-electrodes-and-impedance/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
+<url>
+<loc>https://wiki.mentalab.com/mentalab-wiki/index.html</loc>
+<lastmod>2026-06-25T10:24:31.032Z</lastmod>
+</url>
 </urlset>

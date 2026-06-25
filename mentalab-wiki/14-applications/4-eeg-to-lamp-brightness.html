@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>EEG to lamp brightness :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/14-applications/4-eeg-to-lamp-brightness.html">
+    <link rel="prev" href="3-ecg-analysis.html">
+    <link rel="next" href="5-eegsynth.html">
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the wiki">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Mentalab Wiki</a></li>
+    <li>Applications</li>
+    <li><a href="4-eeg-to-lamp-brightness.html">EEG to lamp brightness</a></li>
+  </ul>
+</nav>
+<!--<div class="edit-this-page"><a href="file:///Users/sonjastefani/Documents/dev/mentalab-wiki-antora/modules/ROOT/pages/14-applications/4-eeg-to-lamp-brightness.adoc">Edit this Page</a></div>
+-->
+</div>
+<div class="body">
+<div class="nav-container" data-component="mentalab-wiki" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Mentalab Wiki</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introduction</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/1-purpose.html">Purpose of this User Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/2-about.html">About the document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety, Intended Use and Product Information</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/1-intended-use.html">Intended Use</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/2-manufacturer-information.html">Manufacturer Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/3-identification-and-labels.html">Identification and Labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/4-safety-classification.html">Safety Classification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/5-environmental-requirements.html">Environmental Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/6-regulatory-compliance.html">Regulatory Compliance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/7-warranty-and-service.html">Warranty and Service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/8-electrical-safety-and-isolation.html">Electrical Safety and Isolation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">System Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/1-mentalab-explore-pro.html">Mentalab Explore Pro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/2-hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/3-software.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/4-integrated-workflows.html">Integrated Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../4-scope-of-delivery/index.html">Scope of Delivery</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/1-standard-components.html">Standard Components</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/2-consumables-and-accessories.html">Consumables and Accessories</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/3-documentation.html">Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../5-quick-start/index.html">Quick Start (Unboxing &amp; Setup)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/1-first-steps.html">First Steps: charging, turning on, pairing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/2-quick-example-workflows.html">Quick Example Workflows: recording and wireless streaming</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preparing for a Recording</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/1-charging-and-battery-check.html">Charging and battery check</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/2-led-light-signals.html">LED Light Signals and Their Meanings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/3-button-commands.html">Button Commands and Functions (marker, shutdown, reset)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/4-summary-table.html">Summary Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/5-pre-recording-checklist.html">Pre-Recording Checklist</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Recording Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/1-operating-modes.html">Operating modes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/2-triggers-and-event-markers.html">Triggers and event markers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/3-hypersync.html">Hypersync</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ending a Recording and After-Use Tasks</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/1-proper-shutdown-procedure.html">Proper Shutdown Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/2-data-transfer-from-memory.html">Data Transfer from Device Memory (USB-C)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/3-cleaning-disinfecting-storing.html">Cleaning, Disinfecting, Storing Hardware</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Electrodes &amp; Impedance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/1-dry-vs-gel-electrodes.html">Dry vs. Gel Electrodes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/2-comparison-table.html">Comparison Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/3-cap-size-guide.html">Cap Size Guide (Choosing the Right Fit)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/4-placement-of-ref-electrode.html">Placement of Reference Electrodes (dry vs. gel)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/5-lowering-impedance.html">Lowering Impedance</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Software &amp; Apps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/1-system-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/2-software-overview.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/6-explorepy-command-guide.html">explorepy Command Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../11-explore-desktop-guide/index.html">Explore Desktop Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/1-getting-started.html">Explore Desktop Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/2-usage.html">Explore Desktop Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/3-visualization.html">Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/4-recording.html">Explore Desktop Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/5-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/7-other.html">Other features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/8-troubleshooting.html">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../12-explore-mobile-app/index.html">Explore Mobile App</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/1-download-and-installation.html">Download and Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/2-explore-mobile-app-guide.html">Explore Mobile App Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/4-tests.html">Tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Explore Signals Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/1-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/2-installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/3-usage.html">Usage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Applications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1-artefact-removal.html">Artefact removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2-easi-ecg.html">EASI ECG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3-ecg-analysis.html">ECG Analysis</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="4-eeg-to-lamp-brightness.html">EEG to lamp brightness</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-eegsynth.html">EEGSynth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-eog-artifact-removal.html">EOG Artifact Removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="7-motor-imagery-bci.html">Motor Imagery BCI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-p300-experiment.html">P300 Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-real-time-spectrogram.html">Real-time Spectrogram</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-sleep-actigraphy.html">Sleep Actigraphy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="11-sleep-eeg-analysis.html">Sleep EEG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="13-ssvep-experiments.html">SSVEP Experiments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integrations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../15-integrations/1-supported-software.html">Supported Software</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/index.html">Stimulation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/1-open-sesame.html">OpenSesame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/2-e-prime.html">E-Prime®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/3-presentation.html">Presentation®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/4-psycho-py.html">PsychoPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/5-psychtoolbox.html">Psychtoolbox</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Analysis</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/1-eeglab.html">EEGLAB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/2-mne-python.html">MNE Python</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/3-field-trip.html">FieldTrip</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/4-neuro-pipe.html">NeuroPype</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/5-besa-research.html">BESA Research</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/6-neuro-kit-2.html">NeuroKit2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/7-brainstorm.html">Brainstorm</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/8-timeflux.html">Timeflux</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/9-bci2000.html">BCI2000</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/10-open-vibe.html">OpenViBE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/11-mne-lsl.html">MNE-LSL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/13-imotions.html">iMotions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/index.html">Interfaces</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/1-lab-streaming.html">Lab Streaming Layer(LSL)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/2-brain-flow.html">BrainFlow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/index.html">Hardware</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/1-plux-biosignals.html">PLUX Biosignals</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/2-pupil-labs.html">Pupil Labs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../16-faqs/index.html">FAQs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Troubleshooting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../17-troubleshooting/1-macos-installation-developer-could-not-be-verified.html">Troubleshoot macOs installation developer-could-not-be-verified</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Mentalab Wiki</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Mentalab Wiki</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="On this page" data-levels="1">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">EEG to lamp brightness</h1>
+<div class="sect1">
+<h2 id="_introduction"><a class="anchor" href="#_introduction"></a>Introduction</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An EEG signal contains a multitude of frequencies which can give us an idea of what state the subject is in. For example, frequencies in the alpha range (<code>8Hz - 13Hz</code>) can indicate that the subject is relaxed and has their eyes closed. In this code example, the aforementioned phenomenon is creatively applied to control a lamp based on the subject’s relaxedness. If the subject relaxes and power in the alpha band increases, the LEDs increase in brightness and turn yellow.</p>
+</div>
+<div class="paragraph">
+<p>If the power in the alpha band decreases, the LEDs dim and turn turquoise.</p>
+</div>
+<div class="paragraph">
+<p>This application is intended to showcase how scientific concepts can be explored and applied in non-scientific contexts and particularly how data extracted from EEG can be used for individualised biofeedback in a novel and fun way.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements"><a class="anchor" href="#_requirements"></a>Requirements</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Mentalab Explore</p>
+</li>
+<li>
+<p>Arduino board</p>
+</li>
+<li>
+<p>LED strip that is supported by <a href="https://github.com/FastLED/FastLED/wiki/Overview">FastLED</a></p>
+</li>
+<li>
+<p>A Python 3 installation.</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+We strongly recommend using <a href="https://www.anaconda.com/">Anaconda</a> to install Python and using version <code>3.12</code>.
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_setting_up_the_environment_and_dependencies"><a class="anchor" href="#_setting_up_the_environment_and_dependencies"></a>Setting up the environment and dependencies</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Set up an environment with Python version <code>3.12</code> with conda and activate it:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda create -n eeg2lamp python=3.12
+conda activate eeg2lamp</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Install <code>liblsl</code>, which is required by <code>explorepy</code>, via conda-forge:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda install -c conda-forge liblsl</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Install the dependencies via <code>pip</code>:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install explorepy matplotlib mne pyserial numpy scipy</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_running_the_example"><a class="anchor" href="#_running_the_example"></a>Running the example</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The code for this example, <code>eeg2lamp.py</code> for the Python script and <code>EEG_LAMP_ARDUINO.ino</code> for the Arduino sketch, can be found in <code>examples/eeg2lamp</code> inside the GitHub repository for <code>explorepy</code>:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/Mentalab-hub/explorepy/">https://github.com/Mentalab-hub/explorepy/</a></p>
+</div>
+<div class="sect2">
+<h3 id="_adapting_the_python_script_to_your_needs"><a class="anchor" href="#_adapting_the_python_script_to_your_needs"></a>Adapting the Python script to your needs</h3>
+<div class="paragraph">
+<p>You can run the Python script in the environment you’ve set up by calling <code>python -m eeg2lamp</code> and supplying command line arguments according to your needs:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 14.2857%;">
+<col style="width: 42.8571%;">
+<col style="width: 14.2857%;">
+<col style="width: 28.5715%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Argument</th>
+<th class="tableblock halign-left valign-top">Description</th>
+<th class="tableblock halign-left valign-top">Required</th>
+<th class="tableblock halign-left valign-top">Default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-n, --name</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The name of your device, i.e. <code>Explore_ABCD</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-sr, --sampling_rate</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The sampling rate to set the device to</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>None</code> / current device sampling rate</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-p, --port</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The port that the Arduino is connected to, i.e. <code>/dev/cu.usbserial-1234</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>None</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-fn, --notch</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The frequency to use for the notch filter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>None</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-fbp, --bandpass</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The frequencies to use for the bandpass filter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>None</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>--simulate_lamp</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether to add a second plot to the window that simulates the brightness and colour change</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>False</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-f, --from_file</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A file path to a <code>.bdf</code> recording to use as input to the script and Arduino instead of a real device connection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>None</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>-l, --loop</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Whether to loop the <code>.bdf</code> file once the end is reached, if <code>-f</code> is supplied</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">no</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>False</code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>For example, to run the script with default values for the device <code>Explore_ABCD</code> and not connect to an Arduino or simulate a lamp:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python -m eeg2lamp -n Explore_ABCD</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An example that additionally sets a Notch filter at <code>50.0Hz</code>, a bandpass filter with a low cutoff of <code>3.0Hz</code> and a high cutoff of <code>40.0Hz</code>, connects to an Arduino on port <code>/dev/cu.usbserial-1234</code> and also simulates a lamp in the plot:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python -m eeg2lamp -n Explore_ABCD -fn 50.0 -fbp 3.0 40.0 -p /dev/cu.usbserial-1234 --simulate-lamp</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>An example that runs from a pre-recorded file <code>sample/file.bdf</code> instead and loops it when its end is reached:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python -m eeg2lamp -n Explore_ABCD -p /dev/cu.usbserial-1234 --simulate-lamp -f sample/file.bdf --loop</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+The script still expects a device name to be passed. This name is ignored later when the <code>-f</code> parameter is supplied.
+</td>
+</tr>
+</table>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/lampsim.gif" alt="EEG to lamp simulation" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>The plot containing current bandpowers as bar plots and the expected lamp colour next to it.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_adapting_the_arduino_sketch_to_your_needs"><a class="anchor" href="#_adapting_the_arduino_sketch_to_your_needs"></a>Adapting the Arduino sketch to your needs</h3>
+<div class="paragraph">
+<p>The supplied Arduino sketch was written with a specific LED strip in mind. In order to run the example for your setup, you need to know your LED strip type, how many LEDs it has and which data pin on the Arduino it is connected to. You need to change lines <code>4-6</code> to fit your needs:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cpp hljs" data-lang="cpp">#define LED_PIN     3
+#define NUM_LEDS    80
+#define LED_TYPE    WS2811</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can find the possible LED types for clockless LEDs in <a href="https://fastled.io/docs/d7/d6f/group___clockless_chipsets.html">this documentation page</a>. If you are using an LED with a clock, please refer to the FastLED documentation for how to properly connect and address it.</p>
+</div>
+<div class="paragraph">
+<p>In our example, the colour ordering of the chipset was not <code>RGB</code> but <code>GRB</code> instead, hence line <code>7</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cpp hljs" data-lang="cpp">#define COLOR_ORDER GRB</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>If your LED strip’s chipset uses <code>RGB</code> ordering, you can remove this line. If it uses another kind of ordering, you can change this line to fit what your chipset uses. You can refer to <a href="https://fastled.io/docs/d4/d36/namespacefl_ab289ace8bd149d39b87ebd778e9abe23.html">this documentation page</a> for the possible enum values. If you don’t know what ordering your LED strip’s chipset uses, you can either figure it out using trial and error or you can run <a href="https://github.com/FastLED/FastLED/wiki/Rgb-calibration">FastLED’s calibration example</a> to find out what ordering your chipset uses.</p>
+</div>
+<div class="paragraph">
+<p>The colours the Arduino transitions between are defined in lines <code>16</code> and <code>17</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-cpp hljs" data-lang="cpp">CRGB color_low  = CRGB(0, 255, 180);   // turqouise
+CRGB color_high = CRGB(255, 200, 0);   // yellow</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>You can change these to any two colours you want to transition between.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_running_the_python_script_and_the_arduino_sketch"><a class="anchor" href="#_running_the_python_script_and_the_arduino_sketch"></a>Running the Python script and the Arduino sketch</h3>
+<div class="paragraph">
+<p>The easiest way to run the Arduino sketch is by using <a href="https://www.arduino.cc/en/software/">Arduino IDE 2</a>.</p>
+</div>
+<div class="paragraph">
+<p>Connect your Arduino, with the LED strip’s data-in pin connected to the Arduino’s data pin, to your computer with a USB cable. Then, open the Arduino IDE, open the <code>EEG_LAMP_ARDUINO.ino</code> sketch and select your board from the drop-down menu at the top.</p>
+</div>
+<div class="paragraph">
+<p>Click on the library manager symbol in the left menu, search for <code>FastLED</code> and install it.</p>
+</div>
+<div class="paragraph">
+<p>Finally, upload the sketch to the connected Arduino by clicking on the arrow button in the top menu.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/arduino_ide.png" alt="Arduino IDE" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>The Arduino IDE with the relevant top menu items and library manager button on the left marked in red.</p>
+</div>
+<div class="paragraph">
+<p>To launch the Python script, simply run it as outlined above and supply the port the Arduino is connected to with the <code>-p</code> parameter. The port is also listed in the drop-down menu in the Arduino IDE.</p>
+</div>
+<div class="paragraph">
+<p>That’s it. If everything is connected properly, the LED strip is addressed correctly and your Explore device gets a good EEG signal from your head, you will see the LEDs react to your alpha bandpower in real-time.</p>
+</div>
+<div class="paragraph">
+<p>If you need help with getting a good signal, please refer to the
+<a href="../9-electrodes-and-impedance/5-lowering-impedance.html" class="xref page">Lowering Impedance</a>
+page.</p>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/lamp_rl.gif" alt="EEG-controlled lamp" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>The lamp, connected via Arduino to the PC running the Python script, increasing and decreasing its brightness according to increasing and decreasing alpha bandpower.</p>
+</div>
+<div class="paragraph">
+<p>The alpha bandpower corresponds to the green bar plot.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="3-ecg-analysis.html">ECG Analysis</a></span>
+  <span class="next"><a href="5-eegsynth.html">EEGSynth</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using a modified version of the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+  </body>
+</html>

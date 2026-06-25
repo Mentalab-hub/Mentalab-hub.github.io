@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>SSVEP Experiments :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/14-applications/13-ssvep-experiments.html">
+    <link rel="prev" href="12-sleep-recording-protocol.html">
+    <link rel="next" href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">
+    <meta name="generator" content="Antora 3.1.14">
+    <link rel="stylesheet" href="../../_/css/site.css">
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
+      <div class="navbar-item search hide-for-print">
+        <div id="search-field" class="field">
+          <input id="search-input" type="text" placeholder="Search the wiki">
+        </div>
+      </div>
+      <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div id="topbar-nav" class="navbar-menu">
+      <div class="navbar-end">
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Mentalab Wiki</a></li>
+    <li>Applications</li>
+    <li><a href="13-ssvep-experiments.html">SSVEP Experiments</a></li>
+  </ul>
+</nav>
+<!--<div class="edit-this-page"><a href="file:///Users/sonjastefani/Documents/dev/mentalab-wiki-antora/modules/ROOT/pages/14-applications/13-ssvep-experiments.adoc">Edit this Page</a></div>
+-->
+</div>
+<div class="body">
+<div class="nav-container" data-component="mentalab-wiki" data-version="">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <button class="nav-menu-toggle" aria-label="Toggle expand/collapse all" style="display: none"></button>
+    <h3 class="title"><a href="../index.html">Mentalab Wiki</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Introduction</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/1-purpose.html">Purpose of this User Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../1-introduction/2-about.html">About the document</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Safety, Intended Use and Product Information</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/1-intended-use.html">Intended Use</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/2-manufacturer-information.html">Manufacturer Information</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/3-identification-and-labels.html">Identification and Labels</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/4-safety-classification.html">Safety Classification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/5-environmental-requirements.html">Environmental Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/6-regulatory-compliance.html">Regulatory Compliance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/7-warranty-and-service.html">Warranty and Service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../2-safety-use-product-info/8-electrical-safety-and-isolation.html">Electrical Safety and Isolation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">System Overview</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/1-mentalab-explore-pro.html">Mentalab Explore Pro</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/2-hardware.html">Hardware</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/3-software.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../3-system-overview/4-integrated-workflows.html">Integrated Workflows</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../4-scope-of-delivery/index.html">Scope of Delivery</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/1-standard-components.html">Standard Components</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/2-consumables-and-accessories.html">Consumables and Accessories</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../4-scope-of-delivery/3-documentation.html">Documentation</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../5-quick-start/index.html">Quick Start (Unboxing &amp; Setup)</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/1-first-steps.html">First Steps: charging, turning on, pairing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../5-quick-start/2-quick-example-workflows.html">Quick Example Workflows: recording and wireless streaming</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Preparing for a Recording</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/1-charging-and-battery-check.html">Charging and battery check</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/2-led-light-signals.html">LED Light Signals and Their Meanings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/3-button-commands.html">Button Commands and Functions (marker, shutdown, reset)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/4-summary-table.html">Summary Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../6-prepare-for-recording/5-pre-recording-checklist.html">Pre-Recording Checklist</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Recording Operation</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/1-operating-modes.html">Operating modes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/2-triggers-and-event-markers.html">Triggers and event markers</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../7-recording-operation/3-hypersync.html">Hypersync</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Ending a Recording and After-Use Tasks</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/1-proper-shutdown-procedure.html">Proper Shutdown Procedure</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/2-data-transfer-from-memory.html">Data Transfer from Device Memory (USB-C)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../8-ending-recording/3-cleaning-disinfecting-storing.html">Cleaning, Disinfecting, Storing Hardware</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Electrodes &amp; Impedance</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/1-dry-vs-gel-electrodes.html">Dry vs. Gel Electrodes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/2-comparison-table.html">Comparison Table</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/3-cap-size-guide.html">Cap Size Guide (Choosing the Right Fit)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/4-placement-of-ref-electrode.html">Placement of Reference Electrodes (dry vs. gel)</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../9-electrodes-and-impedance/5-lowering-impedance.html">Lowering Impedance</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Software &amp; Apps</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/1-system-requirements.html">System Requirements</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/2-software-overview.html">Software Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../10-software-and-apps/6-explorepy-command-guide.html">explorepy Command Guide</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../11-explore-desktop-guide/index.html">Explore Desktop Guide</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/1-getting-started.html">Explore Desktop Getting Started</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/2-usage.html">Explore Desktop Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/3-visualization.html">Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/4-recording.html">Explore Desktop Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/5-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/7-other.html">Other features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../11-explore-desktop-guide/8-troubleshooting.html">Troubleshooting</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../12-explore-mobile-app/index.html">Explore Mobile App</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/1-download-and-installation.html">Download and Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/2-explore-mobile-app-guide.html">Explore Mobile App Guide</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../12-explore-mobile-app/4-tests.html">Tests</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Explore Signals Guide</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/1-overview.html">Overview</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/2-installation.html">Installation</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/3-usage.html">Usage</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Applications</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="1-artefact-removal.html">Artefact removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="2-easi-ecg.html">EASI ECG</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="3-ecg-analysis.html">ECG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="4-eeg-to-lamp-brightness.html">EEG to lamp brightness</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-eegsynth.html">EEGSynth</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-eog-artifact-removal.html">EOG Artifact Removal</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="7-motor-imagery-bci.html">Motor Imagery BCI</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-p300-experiment.html">P300 Experiment</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-real-time-spectrogram.html">Real-time Spectrogram</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-sleep-actigraphy.html">Sleep Actigraphy</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="11-sleep-eeg-analysis.html">Sleep EEG Analysis</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="13-ssvep-experiments.html">SSVEP Experiments</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Integrations</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../15-integrations/1-supported-software.html">Supported Software</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/index.html">Stimulation</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/1-open-sesame.html">OpenSesame</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/2-e-prime.html">E-Prime®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/3-presentation.html">Presentation®</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/4-psycho-py.html">PsychoPy</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/1-integrations-stimulation/5-psychtoolbox.html">Psychtoolbox</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Analysis</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/1-eeglab.html">EEGLAB</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/2-mne-python.html">MNE Python</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/3-field-trip.html">FieldTrip</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/4-neuro-pipe.html">NeuroPype</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/5-besa-research.html">BESA Research</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/6-neuro-kit-2.html">NeuroKit2</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/7-brainstorm.html">Brainstorm</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/8-timeflux.html">Timeflux</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/9-bci2000.html">BCI2000</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/10-open-vibe.html">OpenViBE</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/11-mne-lsl.html">MNE-LSL</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/2-integrations-analysis/13-imotions.html">iMotions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/index.html">Interfaces</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/1-lab-streaming.html">Lab Streaming Layer(LSL)</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/3-integrations-interfaces/2-brain-flow.html">BrainFlow</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/index.html">Hardware</a>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/1-plux-biosignals.html">PLUX Biosignals</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../15-integrations/4-integrations-hardware/2-pupil-labs.html">Pupil Labs</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../16-faqs/index.html">FAQs</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Troubleshooting</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../17-troubleshooting/1-macos-installation-developer-could-not-be-verified.html">Troubleshoot macOs installation developer-could-not-be-verified</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Mentalab Wiki</span>
+    <span class="version"></span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <div class="title"><a href="../index.html">Mentalab Wiki</a></div>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+  <div class="content">
+<aside class="toc sidebar" data-title="On this page" data-levels="1">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">SSVEP Experiments</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Steady state visually evoked potentials (SSVEPs) are commonly used in neuroscience and BCI research.</p>
+</div>
+<div class="paragraph">
+<p>SSVEPs are brain signals that occur in response to a visual stimulus flickering at a fixed frequency, typically <code>3-75 Hz</code>. A rhythmic stimulus can entrain brain activity in the occipital lobe, which is commonly associated with the visual cortex.</p>
+</div>
+<div class="paragraph">
+<p>Here, we show you how to use Mentalab Explore with SSVEP-based classification tasks. The code is open-source and available here:</p>
+</div>
+<div class="paragraph">
+<p><a href="https://github.com/Mentalab-hub/explorepy/tree/master/examples/ssvep_demo">SSVEP demo code</a></p>
+</div>
+<div class="paragraph">
+<p>You can run it as is or use it to build your own SSVEP-based applications.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://youtu.be/k4rQK9F9Y34">YoutubeVideo</a></p>
+</div>
+<div class="paragraph">
+<p>There are two classifiers:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>A real-time, online SSVEP classifier</p>
+</li>
+<li>
+<p>An offline classifier</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>In both cases, the classifier determines which stimulus a participant is looking at by analyzing EEG signals. The stimulus whose frequency most closely matches the frequency of EEG signals is considered the target stimulus, and the one the participant is looking at.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_preparation"><a class="anchor" href="#_preparation"></a>Preparation</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_software"><a class="anchor" href="#_software"></a>Software</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Install <code>explorepy</code>.</p>
+<div class="paragraph">
+<p><a href="https://explorepy.readthedocs.io/">explorepy documentation</a></p>
+</div>
+<div class="paragraph">
+<p>Choose Option 2 (Python) if you are installing <code>explorepy</code> on a Windows system.</p>
+</div>
+</li>
+<li>
+<p>Download the <code>explorepy</code> code directly from GitHub:</p>
+<div class="paragraph">
+<p><a href="https://github.com/Mentalab-hub/explorepy">explorepy GitHub repository</a></p>
+</div>
+<div class="paragraph">
+<p>To do this, click on the green <b class="button">Code</b> button and then <b class="button">Download ZIP</b>.</p>
+</div>
+<div class="paragraph">
+<p>Remember where you extract the files. You will need this location later.</p>
+</div>
+</li>
+<li>
+<p>Activate your Anaconda virtual environment:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">conda activate myenv</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Install the required packages:</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">pip install scikit-learn matplotlib psychopy mne</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_hardware"><a class="anchor" href="#_hardware"></a>Hardware</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Set up the cap and electrodes.</p>
+<div class="paragraph">
+<p>Place EEG electrodes on the occipital visual cortex, for example <code>Oz</code>, <code>O1</code>, <code>O2</code>, <code>POz</code>, etc.</p>
+</div>
+<div class="paragraph">
+<p>Place the ground electrode on <code>Fpz</code>, the mastoid, or any other location far enough from the other electrodes.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The analysis presented here is based on this configuration. The channel numbers are hardcoded. If you would like to use a different setup, modify the channel positions in line <code>70</code> of the <code>offline_analysis.py</code> file.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Run an impedance check to verify that you will produce instructive signals.</p>
+<div class="paragraph">
+<p><a href="https://youtu.be/Q237Ny20SDI?si=g-e5j_K3likP7-Xo&amp;t=152">Explore Desktop impedance check video</a></p>
+</div>
+<div class="paragraph">
+<p>For more information on achieving low impedances, see the
+<a href="../9-electrodes-and-impedance/5-lowering-impedance.html" class="xref page">Lowering Impedance</a>
+page.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_online_ssvep_classifier"><a class="anchor" href="#_online_ssvep_classifier"></a>Online SSVEP classifier</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to the folder in which you extracted the files in step 2.</p>
+<div class="paragraph">
+<p>There will be a sub-directory called <code>/examples/ssvep_demo</code>.</p>
+</div>
+<div class="paragraph">
+<p>Move into this path from your Python console:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">cd &lt;PATH-TO-SSVEP&gt;</code></pre>
+</div>
+</div>
+</li>
+<li>
+<p>Turn on the device and run the following command in your terminal.</p>
+<div class="paragraph">
+<p>Replace <code><mark>#</mark>#</code> with your device ID, for example <code>Explore_1438</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python online_ssvep.py --name Explore_#### --duration 100</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/ssvep-stimuli.png" alt="SSVEP experiment stimuli" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>SSVEP experiment stimuli.</p>
+</div>
+<div class="paragraph">
+<p>A new browser window will open. In it, four flickering stimuli will display. The stimuli are flickering at the following frequencies:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Bottom-left: <code>12 Hz</code></p>
+</li>
+<li>
+<p>Top-left: <code>10 Hz</code></p>
+</li>
+<li>
+<p>Bottom-right: <code>7.5 Hz</code></p>
+</li>
+<li>
+<p>Top-right: <code>8.6 Hz</code></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Based on the subject’s real-time EEG, the arrow in the center will point to one of the 4 circles. The quicker the arrow points to the target stimulus, the higher the accuracy of the EEG signal.</p>
+</div>
+<div class="paragraph">
+<p>Once the experiment has run, navigate back to your Python console and press <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>C</kbd></span> to exit.</p>
+</div>
+<div class="paragraph">
+<p>The experiment is set to run for <code>100</code> seconds. You can modify this by changing the number after <code>--duration</code>.</p>
+</div>
+<div class="sect2">
+<h3 id="_interpret_the_results"><a class="anchor" href="#_interpret_the_results"></a>Interpret the results</h3>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SSVEP-frame-duration.png" alt="Frame durations for the SSVEP experiment stimuli" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Frame durations for the SSVEP experiment stimuli.</p>
+</div>
+<div class="paragraph">
+<p>The key takeaway is that the quicker the arrow follows the participant’s focus, the more efficient and accurate the classifier.</p>
+</div>
+<div class="paragraph">
+<p>All screens have a different refresh rate, which can cause frames to drop, reducing the classifier’s performance. The experiment script auto-generates stimuli by calculating frame duration over experiment time.</p>
+</div>
+<div class="paragraph">
+<p>In the figure below, longer vertical lines indicate longer frame displays. We can see that one frame dropped early in the experiment, and a few frames displayed longer than others. Overall, however, the classifier was successful.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_offline_ssvep_classifier"><a class="anchor" href="#_offline_ssvep_classifier"></a>Offline SSVEP classifier</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>An offline SSVEP classifier can be used to measure the accuracy of your EEG set-up.</p>
+</div>
+<div class="paragraph">
+<p>In this experiment, EEG data is recorded while the participant looks at specified target stimuli. An offline analysis of the recorded data is then run to compute system accuracy. Finally, the time-frequency representations (TFR) of the recorded EEG signal are visualized.</p>
+</div>
+<div class="paragraph">
+<p>To undertake offline SSVEP analysis:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Prepare the cap and electrodes as in the online SSVEP experiment.</p>
+</li>
+<li>
+<p>Turn on the device and run the following command in your terminal.</p>
+<div class="paragraph">
+<p>Replace <code><mark>#</mark>#</code> with your device ID, for example <code>Explore_1438</code>:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python offline_experiment.py --name Explore_#### --filename test_rec</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>The experiment runs <code>100</code> trials in <code>20</code> blocks of <code>5</code>. You can change the number of runs by navigating to <code>offline_experiment.py</code> and altering the values assigned to the variables <code>n_blocks</code> and <code>trials_per_block</code>, in lines <code>16</code> and <code>17</code>.</p>
+</div>
+<div class="paragraph">
+<p>At the beginning of each trial, an arrow will indicate where the participant should look. Shortly after its appearance, a flickering stimulus will appear in the indicated position.</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Once the experiment is complete, the recorded data can be analyzed.</p>
+<div class="paragraph">
+<p>To do this, run <code>offline_analysis.py</code>.</p>
+</div>
+<div class="paragraph">
+<p>Ensure you use the same filename here as you did in step 2:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-bash hljs" data-lang="bash">python offline_analysis.py --filename test_rec</code></pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_interpret_the_results_2"><a class="anchor" href="#_interpret_the_results_2"></a>Interpret the results</h2>
+<div class="sectionbody">
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SSVEPoff1results.png" alt="Accuracy over trial duration" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Accuracy over trial duration.</p>
+</div>
+<div class="paragraph">
+<p>The offline SSVEP experiment will automatically generate two plots.</p>
+</div>
+<div class="sect2">
+<h3 id="_system_accuracy"><a class="anchor" href="#_system_accuracy"></a>System accuracy</h3>
+<div class="paragraph">
+<p>The first figure indicates that within approximately <code>0.8</code> seconds, the system can differentiate between stimulus response signals approximately <code>90%</code> of the time. After <code>1</code> second, the system is <code>98%</code> accurate. Within <code>1.2</code> seconds, it is <code>100%</code> accurate.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_time_frequency_representation"><a class="anchor" href="#_time_frequency_representation"></a>Time-frequency representation</h3>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/SSVEPTFREDsep24.png" alt="Time-frequency representation for each channel" width="80%" height="80%">
+</div>
+</div>
+<div class="paragraph">
+<p>Time-frequency representation for each channel.</p>
+</div>
+<div class="paragraph">
+<p>In the second plot, we see the time-frequency representations for each channel. These representations clearly show the entrainment of the EEG signal for the two target frequencies.</p>
+</div>
+<div class="paragraph">
+<p>The left-most plots correspond to the stimulus flickering at <code>10 Hz</code>, and the right-most plots correspond to the stimulus flickering at <code>7.5 Hz</code>.</p>
+</div>
+<div class="paragraph">
+<p>For more information or support, contact <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
+</div>
+</div>
+</div>
+</div>
+<nav class="pagination">
+  <span class="prev"><a href="12-sleep-recording-protocol.html">Sleep Recording Protocol</a></span>
+  <span class="next"><a href="14-synchronized-eeg-ecg-with-mentalab-hypersync-and-lsl.html">Synchronized EEG &amp; ECG with Mentalab Hypersync and LSL</a></span>
+</nav>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using a modified version of the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../_/js/site.js" data-ui-root-path="../../_"></script>
+<script async src="../../_/js/vendor/highlight.js"></script>
+<script src="../../_/js/vendor/lunr.js"></script>
+<script src="../../_/js/search-ui.js" id="search-ui-script" data-site-root-path="../.." data-snippet-length="100" data-stylesheet="../../_/css/search.css"></script>
+<script async src="../../search-index.js"></script>
+  </body>
+</html>
