@@ -3,22 +3,25 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Troubleshooting :: Mentalab Wiki</title>
-    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/8-troubleshooting.html">
-    <link rel="prev" href="7-other.html">
-    <link rel="next" href="../12-explore-mobile-app/index.html">
+    <title>Other features :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/11-explore-desktop-guide/8-other.html">
+    <link rel="prev" href="7-artifact-subspace-reconstruction.html">
+    <link rel="next" href="9-troubleshooting.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -46,10 +54,10 @@
   <ul>
     <li><a href="../index.html">Mentalab Wiki</a></li>
     <li><a href="index.html">Explore Desktop Guide</a></li>
-    <li><a href="8-troubleshooting.html">Troubleshooting</a></li>
+    <li><a href="8-other.html">Other features</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/11-explore-desktop-guide/8-troubleshooting.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///C:/Users/nayan/Documents/dev/mentalab/wiki/mentalab-wiki-antora/modules/ROOT/pages/11-explore-desktop-guide/8-other.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -260,10 +268,13 @@
     <a class="nav-link" href="6-lab-streaming-layer.html">Lab Streaming Layer</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="7-other.html">Other features</a>
+    <a class="nav-link" href="7-artifact-subspace-reconstruction.html">Artifact Subspace Reconstruction</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="8-troubleshooting.html">Troubleshooting</a>
+    <a class="nav-link" href="8-other.html">Other features</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-troubleshooting.html">Troubleshooting</a>
   </li>
 </ul>
   </li>
@@ -297,6 +308,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../13-explore-signals-guide/3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../13-explore-signals-guide/4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a>
   </li>
 </ul>
   </li>
@@ -481,42 +495,71 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Troubleshooting</h1>
-<div class="sect1">
-<h2 id="_unstable_bluetooth_connection"><a class="anchor" href="#_unstable_bluetooth_connection"></a>Unstable Bluetooth connection</h2>
-<div class="sectionbody">
+<h1 class="page">Other features</h1>
 <div class="paragraph">
-<p>Possible causes include:</p>
+<p>Explore Desktop additionally offers functionality to convert recordings from and to selected formats. These features can be found in the menu bar.</p>
+</div>
+<div class="paragraph">
+<p>You can use Explore Desktop to:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>The computer is connected to other Bluetooth devices with a high data transfer rate, such as a headset. <strong>This can make Bluetooth connections unstable.</strong></p>
+<p>convert recordings from the device memory in <code>.BIN</code> format to <code>.csv</code> or <code>.bdf</code></p>
+<div class="listingblock">
+<div class="content">
+<pre>File &gt; Convert BIN</pre>
+</div>
+</div>
 </li>
 <li>
-<p>The device is at the limit of its range.</p>
+<p>convert recordings from <code>.csv</code> or <code>.bdf</code> to EEGLAB datasets</p>
+<div class="listingblock">
+<div class="content">
+<pre>File &gt; Export &gt; EEGLAB Dataset</pre>
+</div>
+</div>
+</li>
+<li>
+<p>repair recordings in <code>.csv</code> format from Explore Desktop using the respective recording from the Explore device memory</p>
+<div class="listingblock">
+<div class="content">
+<pre>Tools &gt; Data Repair</pre>
+</div>
+</div>
 </li>
 </ul>
 </div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+These features are being moved to the offline visualization tool Explore Signals. For more information about these features, refer to the respective section in the Explore Signals Guide.
+</td>
+</tr>
+</table>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_no_device_found_with_name"><a class="anchor" href="#_no_device_found_with_name"></a>No device found with name</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Ensure that your device is turned on and in advertising mode.</p>
-</div>
-<div class="paragraph">
-<p>Consult the LED Light Guide for more information.</p>
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="WARNING ⚠️"></i>
+</td>
+<td class="content">
+The features mentioned on this page will be removed from Explore Desktop in a future update. You can continue using them through Explore Signals, the free offline visualization software.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>For more information or support, contact <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
 </div>
-</div>
-</div>
 <nav class="pagination">
-  <span class="prev"><a href="7-other.html">Other features</a></span>
-  <span class="next"><a href="../12-explore-mobile-app/index.html">Explore Mobile App</a></span>
+  <span class="prev"><a href="7-artifact-subspace-reconstruction.html">Artifact Subspace Reconstruction</a></span>
+  <span class="next"><a href="9-troubleshooting.html">Troubleshooting</a></span>
 </nav>
 </article>
   </div>
