@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Presentation® :: Mentalab Wiki</title>
-    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/3-presentation.html">
-    <link rel="prev" href="2-e-prime.html">
-    <link rel="next" href="4-psycho-py.html">
+    <title>Cedrus SuperLab X6 :: Mentalab Wiki</title>
+    <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/15-integrations/1-integrations-stimulation/6-superlab-x6.html">
+    <link rel="prev" href="5-psychtoolbox.html">
+    <link rel="next" href="../2-integrations-analysis/1-eeglab.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -47,10 +47,10 @@
     <li><a href="../../index.html">Mentalab Wiki</a></li>
     <li>Integrations</li>
     <li><a href="index.html">Stimulation</a></li>
-    <li><a href="3-presentation.html">Presentation®</a></li>
+    <li><a href="6-superlab-x6.html">Cedrus SuperLab X6</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/15-integrations/1-integrations-stimulation/3-presentation.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/15-integrations/1-integrations-stimulation/6-superlab-x6.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -372,7 +372,7 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="2-e-prime.html">E-Prime®</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="3-presentation.html">Presentation®</a>
   </li>
   <li class="nav-item" data-depth="3">
@@ -381,7 +381,7 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="5-psychtoolbox.html">Psychtoolbox</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item is-current-page" data-depth="3">
     <a class="nav-link" href="6-superlab-x6.html">Cedrus SuperLab X6</a>
   </li>
 </ul>
@@ -491,7 +491,34 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Presentation®</h1>
+<h1 class="page">Cedrus SuperLab X6</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>This guide shows how to send time-stamped event markers from <a href="https://cedrus.com/superlab/x/index.htm">Cedrus SuperLab X6</a> to Mentalab Explore Desktop over <a href="https://labstreaminglayer.org/">Lab Streaming Layer</a> (LSL).</p>
+</div>
+<div class="paragraph">
+<p>SuperLab X6 publishes markers on the LSL network. Mentalab Explore Desktop discovers that marker stream and pulls the markers so they appear alongside your Explore recording and visualization.</p>
+</div>
+<div class="paragraph">
+<p>For more detail on LSL push and pull in Mentalab Explore Desktop, see the
+<a href="../../11-explore-desktop-guide/6-lab-streaming-layer.html" class="xref page">Lab Streaming Layer</a>
+page.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Best synchronization accuracy with LSL is achieved by using Mentalab Explore in combination with Mentalab Hypersync.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_prerequisites"><a class="anchor" href="#_prerequisites"></a>Prerequisites</h2>
 <div class="sectionbody">
@@ -500,13 +527,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Mentalab Explore Pro Device: An Explore Pro biosignal acquisition system.</p>
+<p>Mentalab Explore device</p>
 </li>
 <li>
-<p>Mentalab Hypersync Add-on: This hardware is essential for accurately synchronizing LSL markers from Presentation® with the Explore device’s data stream.</p>
+<p>Computer running SuperLab X6</p>
 </li>
 <li>
-<p>Computer: To run Presentation®, LSL, and data recording software for the Explore device.</p>
+<p>Computer running Mentalab Explore Desktop (this can be the same machine, or another machine on the same network)</p>
 </li>
 </ul>
 </div>
@@ -516,84 +543,140 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.neurobs.com/">Presentation®</a></p>
+<p><a href="https://cedrus.com/superlab/x/index.htm">SuperLab X6</a> version 6.5.2 or later (LSL support)</p>
 </li>
 <li>
-<p><a href="https://github.com/labstreaminglayer/App-LabRecorder">LabRecorder</a> or alternative software that lets you record LSL streams</p>
+<p>Mentalab Explore Desktop</p>
 </li>
 </ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_how_it_works"><a class="anchor" href="#_how_it_works"></a>How it Works</h3>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Presentation®: Runs experiments and can send event information as a Marker stream via LSL, including information about event type, event code, and uncertainty for the event.</p>
-</li>
-<li>
-<p>Built-in LSL integration: The built-in LabStreamingLayer integration provides real-time streaming of event data with precise timestamps for Presentation®.</p>
-</li>
-<li>
-<p>Mentalab Hypersync: The Mentalab Hypersync suite is used to merge ExG data with event markers via LSL.</p>
-<div class="paragraph">
-<p>Please follow the instructions delivered to you with your Mentalab Hypersync hardware to achieve wireless, high-precision synchronization.</p>
-</div>
-</li>
-</ol>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_integrating_with_presentation_via_lsl"><a class="anchor" href="#_integrating_with_presentation_via_lsl"></a>Integrating with Presentation® via LSL</h2>
+<h2 id="_step_1_enable_lsl_in_superlab_x6"><a class="anchor" href="#_step_1_enable_lsl_in_superlab_x6"></a>Step 1: Enable LSL in SuperLab X6</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Consult the Mentalab Hypersync manual for achieving synchronisation between the Mentalab Explore amplifier and LSL.</p>
+<p>In SuperLab X6:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Open your experiment.</p>
+</li>
+<li>
+<p>Go to <span class="menuseq"><b class="menu">Experiment</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="submenu">Event Marking</b>&#160;<i class="fa fa-angle-right caret"></i> <b class="menuitem">Lab Streaming Layer (LSL)</b></span>.</p>
+</li>
+<li>
+<p>In the dialog that appears, turn on the switch in the upper left corner.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../../_images/superlab-x6-lsl-1186.png" alt="" width="60%">
+</div>
+<div class="title">Event Markers to LSL dialog in SuperLab X6</div>
 </div>
 <div class="paragraph">
-<p>To use LSL with Presentation®, you can enable sending event data to LSL in the Settings in the Presentation® GUI. The option is listed under the General section.</p>
+<p>Enable LSL in SuperLab X6 by turning on the switch in the Event Markers to LSL dialog.</p>
 </div>
 <div class="paragraph">
-<p>Use the Properties to set options for the LSL integration, such as stream name and what event data to send.</p>
-</div>
-<div class="paragraph">
-<p>When you run an experiment, make sure to open the LSL stream manually by clicking <b class="button">Open</b> or enable the option to open the stream outlet when an experiment is loaded in the LSL settings.</p>
-</div>
-<div class="paragraph">
-<p>The event data will be available as an LSL Marker stream to any other script or software that makes use of LSL, such as LabRecorder or custom scripts using LSL.</p>
-</div>
-<div class="paragraph">
-<p>You can view available LSL streams and record the Marker stream via LabRecorder, using the stream name set in the LSL properties as described above, alongside the ExG datastream, named after the Explore device, from the synchronized Explore amplifier to record synchronized markers from an experiment and ExG data.</p>
-</div>
-<div class="paragraph">
-<p>For more information on LSL usage with Presentation®, consult the extensive online manual for Presentation®:</p>
+<p>For Cedrus documentation, see:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm">Information on the LSL settings in Presentation®</a></p>
+<p><a href="https://cedrus.com/support/superlab/tn1542_labstreaminglayer.htm">Using SuperLab X6 with LSL</a></p>
 </li>
 <li>
-<p><a href="https://www.neurobs.com/pres_docs/html/index.html">Overview of the Presentation® Help Guide</a></p>
+<p><a href="https://cedrus.com/blog/lsl-integration.htm">New in X6: LSL Support</a></p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>To ensure accurate synchronisation, you must use Mentalab Hypersync and follow the instructions provided alongside your Mentalab Hypersync hardware.</p>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_alternative_legacy_methods_wired_triggers"><a class="anchor" href="#_alternative_legacy_methods_wired_triggers"></a>Alternative (Legacy) Methods: Wired Triggers</h2>
+<h2 id="_step_2_pull_superlab_markers_into_mentalab_explore_desktop"><a class="anchor" href="#_step_2_pull_superlab_markers_into_mentalab_explore_desktop"></a>Step 2: Pull SuperLab markers into Mentalab Explore Desktop</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>While LSL with Mentalab Hypersync is preferred as it enables fully wireless and highly accurate event marking, direct wired connections are also possible.</p>
+<p>With SuperLab LSL already enabled:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Connect your Explore device in Mentalab Explore Desktop.</p>
+</li>
+<li>
+<p>Go to the Visualization page and click <b class="button">LSL</b> to open the LSL dialog.</p>
+</li>
+<li>
+<p>Click <b class="button">Find marker stream inlets</b> to discover available marker streams on the network.</p>
+</li>
+<li>
+<p>Select the checkbox next to the SuperLab marker stream.</p>
+</li>
+<li>
+<p>Click <b class="button">Pull markers from LSL</b>.</p>
+</li>
+</ol>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../../_images/visualization_exg_8_channels_fullscreen_LSL_marker_pulling.png" alt="" width="80%">
+</div>
+<div class="title">Pulling LSL markers in Mentalab Explore Desktop</div>
 </div>
 <div class="paragraph">
-<p>Please refer to our
-<a href="../../7-recording-operation/2-triggers-and-event-markers.html" class="xref page">Triggers and event markers</a>
-page for further information.</p>
+<p>In Mentalab Explore Desktop, discover the SuperLab marker stream, select it, and click <b class="button">Pull markers from LSL</b>. Pulled markers should appear on the visualization.</p>
+</div>
+<div class="paragraph">
+<p>Markers from SuperLab are placed at their accompanying timestamps in Mentalab Explore Desktop.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+To refresh the list of available marker streams, stop pulling markers first. Then start stream discovery again using <b class="button">Find marker stream inlets</b>.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>You can confirm that Mentalab Explore Desktop is pulling markers by checking the down arrow next to the <b class="button">LSL</b> button. When the background is blue, Mentalab Explore Desktop is pulling markers from at least one marker stream.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_step_3_run_the_experiment"><a class="anchor" href="#_step_3_run_the_experiment"></a>Step 3: Run the experiment</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Start or continue your recording and visualization in Mentalab Explore Desktop as needed.</p>
+</li>
+<li>
+<p>Run the experiment in SuperLab X6.</p>
+</li>
+<li>
+<p>Event markers from SuperLab should appear in Mentalab Explore Desktop as they are sent.</p>
+</li>
+</ol>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Make sure both applications can discover LSL streams. They must be on the same network, and firewall rules must allow LSL discovery and streaming.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>For more information or support, contact <a href="mailto:support@mentalab.com">support@mentalab.com</a>.</p>
@@ -601,8 +684,8 @@ page for further information.</p>
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="2-e-prime.html">E-Prime®</a></span>
-  <span class="next"><a href="4-psycho-py.html">PsychoPy</a></span>
+  <span class="prev"><a href="5-psychtoolbox.html">Psychtoolbox</a></span>
+  <span class="next"><a href="../2-integrations-analysis/1-eeglab.html">EEGLAB</a></span>
 </nav>
 </article>
   </div>
