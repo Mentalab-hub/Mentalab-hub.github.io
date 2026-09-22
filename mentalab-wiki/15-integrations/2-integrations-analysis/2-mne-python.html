@@ -601,6 +601,10 @@ def mne_load_mentalab(file_name):
         sampling_freq = pd.read_csv(file_name_root + '_Meta.csv', delimiter=',')['sr'][0]
 
         data_frame = pd.read_csv(file_name, delimiter=',')
+
+        # Save the first timestamp to align markers before dropping the column
+        t0 = data_frame['TimeStamp'].iloc[0]
+
         data_frame = data_frame.drop('TimeStamp', axis = 1)
         n_channels = len(data_frame.columns)
         ch_types = ["eeg"] * n_channels
@@ -613,6 +617,19 @@ def mne_load_mentalab(file_name):
         data_frame = data_frame.div(1e6)
         data_frame = data_frame.transpose()
         raw_data = mne.io.RawArray(data_frame, info)
+
+        marker_file = file_name_root + '_Marker.csv'
+        if os.path.exists(marker_file):
+            markers = pd.read_csv(marker_file, delimiter=',')
+
+            # MNE expects relative onset times in seconds starting from 0
+            onsets = (markers['TimeStamp'] - t0).values
+            descriptions = markers['Code'].astype(str).tolist()
+
+            # Default duration is 0 for point-in-time event markers
+            annotations = mne.Annotations(onset=onsets, duration=0, description=descriptions)
+            raw_data.set_annotations(annotations)
+            print(f"Loaded {len(descriptions)} markers from {marker_file}.")
 
         return raw_data
 
