@@ -6,19 +6,22 @@
     <title>Usage :: Mentalab Wiki</title>
     <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/3-usage.html">
     <link rel="prev" href="2-installation.html">
-    <link rel="next" href="4-merging-two-32-channel-devices.html">
+    <link rel="next" href="5-convert-process-wizard.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -49,7 +57,7 @@
     <li><a href="3-usage.html">Usage</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/3-usage.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///C:/Users/nayan/Documents/dev/mentalab/wiki/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/3-usage.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -302,6 +310,9 @@
     <a class="nav-link" href="3-usage.html">Usage</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-convert-process-wizard.html">Converting recordings with the Convert / Process wizard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a>
   </li>
 </ul>
@@ -500,12 +511,31 @@
 </aside>
 <article class="doc">
 <h1 class="page">Usage</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>The Explore Signals window has two areas:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The <strong>side panel</strong> on the left contains the <code>Loaded Files</code> list, the <code>Channels</code> list, and the buttons for each tool.</p>
+</li>
+<li>
+<p>The <strong>plot area</strong> on the right shows the current visualization.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>The typical workflow is: load a file, select it in <code>Loaded Files</code>, choose channels, then filter, visualize, clean, or export it.</p>
+</div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_loading_eegexg_data"><a class="anchor" href="#_loading_eegexg_data"></a>Loading EEG/ExG data</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Files can be loaded using the File menu in the Explore Signals menu bar.</p>
-</div>
+<div class="sect2">
+<h3 id="_opening_files"><a class="anchor" href="#_opening_files"></a>Opening files</h3>
 <div class="paragraph">
 <p>To load data:</p>
 </div>
@@ -520,62 +550,152 @@
 </div>
 </li>
 <li>
-<p>Select one or multiple ExG files to load.</p>
-<div class="paragraph">
-<p>Supported file formats include:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>.csv</code></p>
-</li>
-<li>
-<p><code>.bdf</code></p>
-</li>
-</ul>
-</div>
+<p>Select one or more files. Supported formats are <code>.csv</code> and <code>.bdf</code>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>The loaded files appear in the <code>Loaded Files</code> section.</p>
-</div>
-<div class="paragraph">
-<p>If you are loading Mentalab Explore data from an <code>_ExG.csv</code> file, make sure that the corresponding <code>_Meta.csv</code> file is present in the same folder. This ensures that the data is loaded correctly.</p>
-</div>
-<div class="paragraph">
-<p>If you want to visualize markers alongside the data, make sure that the corresponding <code>_Marker.csv</code> file is also present in the same folder.</p>
-</div>
-<div class="paragraph">
-<p>These files are matched using the file name. If you need to rename the files, for example after exporting filtered data with Explore Signals, make sure that:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>the file containing ExG data ends in <code>_ExG.csv</code></p>
-</li>
-<li>
-<p>the file containing markers ends in <code>_Marker.csv</code></p>
-</li>
-<li>
-<p>the file containing metadata ends in <code>_Meta.csv</code></p>
-</li>
-</ul>
+<p>Each file is added to the <code>Loaded Files</code> section. While a file is being read, it is shown with the label <code>(loading…)</code> and cannot be selected. Large recordings load in the background, so you can keep working while they load.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/File_v020.png" alt="Example of loading files in Explore Signals." width="80%">
+<img src="../_images/explore-signals-file-menu.png" alt="The File menu with the entries Open, Import BIDS, Export, and Convert / Process." width="50%">
 </div>
-<div class="title">Loading files in Explore Signals</div>
+<div class="title">The File menu</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_companion_files_for_csv_recordings"><a class="anchor" href="#_companion_files_for_csv_recordings"></a>Companion files for CSV recordings</h3>
+<div class="paragraph">
+<p>Explore <code>.csv</code> recordings consist of several files that are matched by file name. Keep them together in the same folder.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 25%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">File</th>
+<th class="tableblock halign-left valign-top">Required</th>
+<th class="tableblock halign-left valign-top">Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;name&gt;_ExG.csv</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The ExG signal. This is the file you open.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;name&gt;_Meta.csv</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Recommended</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sampling rate and channel information. Without it, the data may not load correctly.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>&lt;name&gt;_Marker.csv</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Optional</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Event markers, shown on the time-domain plot.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If you rename the files, for example after exporting filtered data, keep the <code>_ExG.csv</code>, <code>_Meta.csv</code>, and <code>_Marker.csv</code> endings so that the files are still matched.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_importing_from_a_bids_dataset"><a class="anchor" href="#_importing_from_a_bids_dataset"></a>Importing from a BIDS dataset</h3>
+<div class="paragraph">
+<p>To load a recording from a BIDS dataset:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Navigate to:</p>
+<div class="listingblock">
+<div class="content">
+<pre>File &gt; Import BIDS</pre>
+</div>
+</div>
+</li>
+<li>
+<p>Click <b class="button">Browse BIDS Root</b> and select the root folder of the dataset.</p>
+</li>
+<li>
+<p>Select the <code>Subject</code>, <code>Session</code>, <code>Task</code>, and <code>Device</code>. The <code>Recording Info</code> box shows details of the selected recording.</p>
+</li>
+<li>
+<p>Click <b class="button">Import to File List</b>.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>Both the standard BIDS layout written for <code>.bdf</code> and <code>.edf</code> files and the CSV layout under <code>derivatives/csv/</code> written by Explore Signals can be imported. Events from the dataset are loaded as markers.</p>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../_images/explore-signals-import-bids.png" alt="The Import BIDS dialog with a BIDS root selected and subject, session, task, and device chosen." width="60%">
+</div>
+<div class="title">Importing a recording from a BIDS dataset</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_removing_files"><a class="anchor" href="#_removing_files"></a>Removing files</h3>
+<div class="paragraph">
+<p>To remove files from the list, select them in <code>Loaded Files</code> and click <b class="button">Delete Files</b>. You can select several files with <kbd>Ctrl</kbd> or <kbd>Shift</kbd>.</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<b class="button">Delete Files</b> only removes the files from the current session. Nothing is deleted from your disk.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_channel_selection"><a class="anchor" href="#_channel_selection"></a>Channel selection</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To choose which channels are used:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Select a file in the <code>Loaded Files</code> section.</p>
+</li>
+<li>
+<p>Check or uncheck channels in the <code>Channels</code> section.</p>
+</li>
+<li>
+<p>Use one of the visualization, cleaning, or export actions.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>To quickly enable or disable all channels, use the <b class="button">Select All</b> and <b class="button">Clear All</b> buttons above the <code>Channels</code> section.</p>
+</div>
+<div class="paragraph">
+<p>Only the checked channels are plotted, cleaned with ASR, and exported.</p>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../_images/explore-signals-channels.png" alt="The side panel with loaded files and four of eight channels checked." width="35%">
+</div>
+<div class="title">Choosing channels in the side panel</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_applying_filters"><a class="anchor" href="#_applying_filters"></a>Applying filters</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Filters can be applied from the <code>Filters</code> menu in the menu bar.</p>
-</div>
 <div class="paragraph">
 <p>To apply filters:</p>
 </div>
@@ -593,285 +713,417 @@
 </div>
 </li>
 <li>
-<p>Enter values for the filters you want to use.</p>
+<p>Fill in the filters you want to use. Leave a field empty to skip that filter.</p>
 </li>
 <li>
-<p>Click <b class="button">Apply</b> to filter the data.</p>
+<p>Click <b class="button">Apply</b>.</p>
 </li>
 </ol>
 </div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Field</th>
+<th class="tableblock halign-left valign-top">Effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Low Cutoff Frequency (Hz)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High-pass filter. Removes slow drift below this frequency.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>High Cutoff Frequency (Hz)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Low-pass filter. Removes content above this frequency.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Notch Filter Frequency (Hz)</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes line noise at this frequency, typically <code>50 Hz</code> or <code>60 Hz</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Average Re-referencing</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Re-references every channel to the average of all channels.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>DC Offset Correction</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Removes the constant offset from each channel.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>The following filters are available:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>High-pass filter</p>
-</li>
-<li>
-<p>Low-pass filter</p>
-</li>
-<li>
-<p>Notch filter, for example to remove <code>50 Hz</code> or <code>60 Hz</code> line noise</p>
-</li>
-<li>
-<p>Re-referencing options</p>
-</li>
-<li>
-<p>DC offset correction</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>The filtered data is added to the <code>Loaded Files</code> section. Its name is based on the original file name and metadata about the applied filters.</p>
+<p>The filtered data is added to the <code>Loaded Files</code> section as a new entry. Its name is based on the original file name and the filters that were applied. The original file is not changed.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Filter_v020.png" alt="Example of filtering data in Explore Signals." width="80%">
+<img src="../_images/explore-signals-filters.png" alt="The Apply Filters dialog with a 1 Hz high-pass, 40 Hz low-pass, and 50 Hz notch filter, and DC offset correction selected." width="45%">
 </div>
-<div class="title">Filtering data in Explore Signals</div>
+<div class="title">The Apply Filters dialog</div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_channel_selection"><a class="anchor" href="#_channel_selection"></a>Channel selection</h2>
+<h2 id="time-domain-viewer"><a class="anchor" href="#time-domain-viewer"></a>The time-domain viewer</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To enable or disable channels for visualization:</p>
+<p>Click <b class="button">Plot Time Domain</b> to show the checked channels stacked above each other over time. Markers from the recording are drawn as vertical lines.</p>
+</div>
+<div class="paragraph">
+<p>The viewer opens on the first <code>10 s</code> of the recording, or on the whole recording if it is shorter. For recordings with many channels, it shows eight channels at a time. Scroll vertically or use the <code>Channels</code> control to see the rest.</p>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../_images/explore-signals-fullscreen.png" alt="The time-domain viewer in full screen, showing 16 channels of a 32-channel recording with the complete toolbar." width="80%">
+</div>
+<div class="title">The time-domain viewer in full-screen mode, with the complete toolbar visible</div>
+</div>
+<div class="sect2">
+<h3 id="_toolbar"><a class="anchor" href="#_toolbar"></a>Toolbar</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Control</th>
+<th class="tableblock halign-left valign-top">What it does</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Window</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the visible time span. Choose <code>Fit</code> to show the whole recording, or a span from <code>0.5 s</code> to <code>120 s</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">＋</b> / <b class="button">－</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zooms in or out in time.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">◀</b> / <b class="button">▶</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pages backward or forward in time by one window.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Sensitivity</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets the amplitude scale in µV per channel row. <code>Auto</code> fits the signals to the rows.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">Amp ＋</b> / <b class="button">Amp －</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Makes the traces taller or shorter.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Channels</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sets how many channels fit on screen at once: <code>4</code>, <code>8</code>, <code>16</code>, <code>32</code>, <code>64</code>, or <code>All</code>. The default is <code>8</code>. Use <b class="button">▲</b> and <b class="button">▼</b> to page through the channels. This control appears only for recordings with more than four channels.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">Annotate</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Turns on annotate mode. Drag on the plot to mark a time span.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">Annotations</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows or hides the list of markers and annotations.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">⋯</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opens a menu with <code>Clear channel highlight</code>, <code>Reset view</code>, <code>Save as PNG…</code>, and <code>File / view info…</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><b class="button">?</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Shows a summary of all mouse and keyboard controls.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full-screen button</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Switches to full-screen mode.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>If the window is too narrow for the whole toolbar, the groups that do not fit move into a <b class="button">»</b> menu at the right.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_mouse_and_keyboard_controls"><a class="anchor" href="#_mouse_and_keyboard_controls"></a>Mouse and keyboard controls</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 66.6667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Action</th>
+<th class="tableblock halign-left valign-top">Control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pan through time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click and drag left or right.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scroll through time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scroll horizontally, or swipe with two fingers.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Zoom in or out in time</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>Ctrl</kbd> + scroll, or <kbd>⌘</kbd> + scroll on macOS. You can also pinch on a trackpad.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Change amplitude</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>Shift</kbd> + scroll, or the <kbd>+</kbd> and <kbd>-</kbd> keys. <kbd>0</kbd> resets the amplitude.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scroll through channels</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scroll vertically.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Highlight a channel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Click its trace. Click again to remove the highlight.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Align events across channels</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hover over the plot. A vertical time cursor follows the mouse.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delete the selected annotation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>Del</kbd></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Full screen</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><kbd>F11</kbd> switches full screen on or off. <kbd>Esc</kbd> exits.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hide or show the side panel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><span class="keyseq"><kbd>Ctrl</kbd>+<kbd>B</kbd></span>, or <span class="keyseq"><kbd>⌘</kbd>+<kbd>B</kbd></span> on macOS. You can also click the narrow strip to the left of the plot.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_full_screen_and_focus_mode"><a class="anchor" href="#_full_screen_and_focus_mode"></a>Full screen and focus mode</h3>
+<div class="paragraph">
+<p>Full-screen mode hides the menu bar and side panel so the plot fills the screen. Use it to review long recordings or many channels. Full screen is available for the time-domain plot. When you switch to another visualization, Explore Signals leaves full screen automatically.</p>
+</div>
+<div class="paragraph">
+<p>To keep the menu bar but give the plot more room, hide only the side panel with <span class="keyseq"><kbd>Ctrl</kbd>+<kbd>B</kbd></span>.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_annotations"><a class="anchor" href="#_annotations"></a>Annotations</h3>
+<div class="paragraph">
+<p>Annotations let you mark spans of the recording while you review it:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select a file in the <code>Loaded Files</code> section.</p>
+<p>Click <b class="button">Annotate</b>.</p>
 </li>
 <li>
-<p>Check or uncheck channels in the <code>Channels</code> section.</p>
+<p>Drag across the plot to mark a span. Click an existing annotation to select it.</p>
 </li>
 <li>
-<p>Use one of the visualization actions.</p>
+<p>Click <b class="button">Annotations</b> to open the list next to the plot. The list contains both the markers from the recording and your own annotations, which are marked with ✎.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>To quickly enable or disable all channels, use the <b class="button">Select All</b> and <b class="button">Clear All</b> buttons above the <code>Channels</code> section.</p>
+<p>In the list you can:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Search by label.</p>
+</li>
+<li>
+<p>Click an entry to jump to it.</p>
+</li>
+<li>
+<p>Double-click one of your annotations, or select it and click <b class="button">Rename</b>, to change its label.</p>
+</li>
+<li>
+<p>Click <b class="button">Delete</b>, or press <kbd>Del</kbd>, to remove the selected annotation.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Markers from the recording are read-only. Markers with timestamps outside the recording are hidden, and the list shows how many were hidden.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Channels.png" alt="Example of selecting channels in Explore Signals." width="80%">
+<img src="../_images/explore-signals-time-domain-annotations.png" alt="The time-domain viewer with a user annotation labelled double blink selected and the annotation list open on the right." width="80%">
 </div>
-<div class="title">Selecting channels in Explore Signals</div>
+<div class="title">A user annotation (pink span) and the annotation list</div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_visualization_options"><a class="anchor" href="#_visualization_options"></a>Visualization options</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Click the corresponding button to visualize the selected data.</p>
-</div>
-<div class="admonitionblock tip">
+<div class="admonitionblock note">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-Use the interactive toolbar above the plots to zoom, pan, and explore plots in detail.
+Annotations you create in the viewer are only kept while the plot is open. They are not saved when you export the file. Markers from the recording are always kept.
 </td>
 </tr>
 </table>
 </div>
+</div>
 <div class="sect2">
-<h3 id="_time_domain_plot"><a class="anchor" href="#_time_domain_plot"></a>Time-domain plot</h3>
+<h3 id="_file_and_view_information"><a class="anchor" href="#_file_and_view_information"></a>File and view information</h3>
 <div class="paragraph">
-<p>Use <b class="button">Plot Time Domain</b> to view the raw signal over time.</p>
+<p>Select <code>File / view info…</code> from the <b class="button">⋯</b> menu to see:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The file format, file size, original start time, and sampling rate.</p>
+</li>
+<li>
+<p>The total duration and the currently visible window.</p>
+</li>
+<li>
+<p>The number of samples and annotations in view.</p>
+</li>
+<li>
+<p>The minimum, maximum, and peak-to-peak value of each channel in µV.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>By default, the channel values are calculated for the visible window. Select <code>Whole recording</code> to calculate them for the entire recording.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/TimeDomain_v020.png" alt="Example of visualizing signals over time in Explore Signals." width="80%">
+<img src="../_images/explore-signals-file-view-info.png" alt="The File / view info dialog showing format, sampling rate, duration, and per-channel min, max, and peak-to-peak values." width="45%">
 </div>
-<div class="title">Time-domain visualization in Explore Signals</div>
+<div class="title">File and view information</div>
 </div>
+</div>
+<div class="sect2">
+<h3 id="_saving_the_plot"><a class="anchor" href="#_saving_the_plot"></a>Saving the plot</h3>
+<div class="paragraph">
+<p>Select <code>Save as PNG…</code> from the <b class="button">⋯</b> menu to save the current view as an image.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_other_visualizations"><a class="anchor" href="#_other_visualizations"></a>Other visualizations</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>These plots use the checked channels. Each one has a toolbar above it for zooming, panning, and saving the figure as an image.</p>
 </div>
 <div class="sect2">
 <h3 id="_fft_plot"><a class="anchor" href="#_fft_plot"></a>FFT plot</h3>
 <div class="paragraph">
-<p>Use <b class="button">FFT Plot</b> to visualize frequency content using the Fast Fourier Transform.</p>
+<p>Click <b class="button">FFT Plot</b> to show the magnitude spectrum of each channel, calculated with the Fast Fourier Transform. The y-axis uses a logarithmic scale and the x-axis runs up to the Nyquist frequency.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/FFT_v020.png" alt="Example of an FFT plot of loaded data." width="80%">
+<img src="../_images/explore-signals-fft.png" alt="FFT plot of four channels of a filtered 8-channel recording on a logarithmic scale." width="80%">
 </div>
-<div class="title">Visualizing the FFT of loaded data as a magnitude-over-frequency plot</div>
+<div class="title">FFT of the checked channels</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_bandpower_visualization"><a class="anchor" href="#_bandpower_visualization"></a>Bandpower visualization</h3>
 <div class="paragraph">
-<p>Use <b class="button">Bandpower Visualization</b> to show power in defined frequency bands:</p>
+<p>Click <b class="button">Bandpower Visualization</b> to show the power in the standard EEG frequency bands, averaged over the checked channels.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Delta</p>
-</li>
-<li>
-<p>Theta</p>
-</li>
-<li>
-<p>Alpha</p>
-</li>
-<li>
-<p>Beta</p>
-</li>
-<li>
-<p>Gamma</p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Band</th>
+<th class="tableblock halign-left valign-top">Range</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>0.5–4 Hz</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Theta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>4–8 Hz</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alpha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>8–13 Hz</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>13–30 Hz</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gamma</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30–50 Hz</code></p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p>The plots show the average for the selected channels.</p>
-</div>
-<div class="paragraph">
-<p>When clicking <b class="button">Bandpower Visualization</b>, two visualization options are available.</p>
+<p>Clicking the button shows two options.</p>
 </div>
 <div class="sect3">
 <h4 id="_time_domain"><a class="anchor" href="#_time_domain"></a>Time domain</h4>
 <div class="paragraph">
-<p>The time-domain bandpower plot visualizes power in the frequency bands over time.</p>
-</div>
-<div class="paragraph">
-<p>For this plot, bandpower is calculated on <code>1 s</code> windows with <code>0.1 s</code> between each calculated sample.</p>
+<p>Shows the relative power in each band over time. Bandpower is calculated on <code>1 s</code> windows, with <code>0.1 s</code> between consecutive windows. The plot shows a <code>10 s</code> section at a time, and you can move through the recording with the slider below it.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Bandpower_Time_v020_occipital_alpha.png" alt="Example of a bandpower over time plot in Explore Signals." width="80%">
+<img src="../_images/explore-signals-bandpower-time.png" alt="Relative bandpower over time." width="80%">
 </div>
-<div class="title">Visualizing power over time in the different frequency bands of a recording</div>
+<div class="title">Relative bandpower over time.</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_bars"><a class="anchor" href="#_bars"></a>Bars</h4>
 <div class="paragraph">
-<p>The bar plot visualizes power in the frequency bands for the entire recording.</p>
+<p>Shows the power in each band for the whole recording as a bar plot.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/BandpowerBars_v020.png" alt="Example of a bandpower bar plot in Explore Signals." width="80%">
+<img src="../_images/explore-signals-bandpower-bars.png" alt="Bar plot of absolute and relative power per frequency band for the whole recording." width="80%">
 </div>
-<div class="title">Visualizing power in the different frequency bands of a recording as a bar plot</div>
+<div class="title">Bandpower per frequency band for the whole recording</div>
 </div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_power_spectrum_density"><a class="anchor" href="#_power_spectrum_density"></a>Power Spectrum Density</h3>
 <div class="paragraph">
-<p>Use <b class="button">Power Spectrum Density</b> to analyze power distribution over frequency.</p>
-</div>
-<div class="paragraph">
-<p>The plot shows the average for the selected channels.</p>
+<p>Click <b class="button">Power Spectrum Density</b> to show how power is distributed over frequency. The PSD is calculated with Welch&#8217;s method and averaged over the checked channels. Below the plot, Explore Signals lists which channels were included and which were excluded.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/PSD_v020.png" alt="Example of a Power Spectrum Density plot in Explore Signals." width="80%">
+<img src="../_images/explore-signals-psd.png" alt="Power Spectral Density averaged over Oz and Pz, with a clear peak at 10 Hz." width="80%">
 </div>
-<div class="title">Visualizing the Power Spectrum Density of loaded data</div>
+<div class="title">Power Spectral Density.</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_spectrogram"><a class="anchor" href="#_spectrogram"></a>Spectrogram</h3>
 <div class="paragraph">
-<p>Use <b class="button">Spectrogram</b> to display power as a function of time and frequency.</p>
-</div>
-<div class="paragraph">
-<p>The plot shows the average for the selected channels.</p>
+<p>Click <b class="button">Spectrogram</b> to show power as a function of time and frequency, in <code>dB/Hz</code>, averaged over the checked channels. As with the PSD, the included and excluded channels are listed below the plot.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Spectrogram_v020.png" alt="Example of a spectrogram plot in Explore Signals." width="80%">
+<img src="../_images/explore-signals-spectrogram.png" alt="Spectrogram." width="80%">
 </div>
-<div class="title">Visualizing the spectrogram of loaded data</div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_asr_cleaning"><a class="anchor" href="#_asr_cleaning"></a>ASR cleaning</h3>
-<div class="paragraph">
-<p>Use <b class="button">ASR Cleaning</b> to apply Artifact Subspace Reconstruction to the data and visualize the cleaned signal alongside the original signal.</p>
-</div>
-<div class="paragraph">
-<p>For more details, refer to the section on ASR.</p>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/ASR_popup_v020.png" alt="ASR settings in Explore Signals" width="80%">
-</div>
-<div class="title">Changing the settings before applying ASR</div>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/ASR_comparison_v020.png" alt="ASR comparison in Explore Signals" width="80%">
-</div>
-<div class="title">Comparing original data to cleaned data after applying ASR</div>
+<div class="title">Spectrogram.</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_exporting_data"><a class="anchor" href="#_exporting_data"></a>Exporting data</h2>
+<h2 id="explore-signals-asr"><a class="anchor" href="#explore-signals-asr"></a>Artifact Subspace Reconstruction</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Original and processed data can be exported from the <code>File</code> menu in the menu bar.</p>
-</div>
-<div class="paragraph">
-<p>To export data:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Select the file you want to export in the <code>Loaded Files</code> section.</p>
-</li>
-<li>
-<p>Navigate to:</p>
-<div class="listingblock">
-<div class="content">
-<pre>File &gt; Export</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Choose the file name.</p>
-</li>
-<li>
-<p>Select the output file format.</p>
-<div class="paragraph">
-<p>Supported export formats include:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>.csv</code></p>
-</li>
-<li>
-<p><code>.bdf</code></p>
-</li>
-</ul>
-</div>
-</li>
-</ol>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Export_v020.png" alt="Exporting data in Explore Signals." width="80%">
-</div>
-<div class="title">Exporting data in Explore Signals</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_artifact_subspace_reconstruction"><a class="anchor" href="#_artifact_subspace_reconstruction"></a>Artifact Subspace Reconstruction</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Artifact Subspace Reconstruction, or ASR, is used to remove artifacts from EEG data.</p>
+<p>Artifact Subspace Reconstruction, or ASR, removes high-amplitude, transient artifacts from multi-channel EEG. It learns what clean data looks like from a calibration window, then reconstructs the sections of the recording that deviate too far from it.</p>
 </div>
 <div class="paragraph">
 <p>The ASR implementation in Explore Signals is based on parts of the open-source <code>clean_rawdata</code> plugin for EEGLAB.</p>
@@ -891,35 +1143,26 @@ If you plan to apply ASR and work with cleaned data, make sure you understand th
 </tr>
 </table>
 </div>
-<div class="paragraph">
-<p>ASR requires a calibration window. This should be a section of the data with as few artifacts as possible, ideally none.</p>
-</div>
-<div class="paragraph">
-<p>Keep this in mind when selecting:</p>
-</div>
+<div class="sect2">
+<h3 id="_before_you_apply_asr"><a class="anchor" href="#_before_you_apply_asr"></a>Before you apply ASR</h3>
 <div class="ulist">
 <ul>
 <li>
-<p>calibration window length</p>
+<p><strong>Calibration data.</strong> ASR needs a calibration window. This should be a section of the data with as few artifacts as possible, ideally none.</p>
 </li>
 <li>
-<p>calibration start time</p>
+<p><strong>Signal type.</strong> ASR is recommended for EEG signals. Output for other biosignals may be worse, for example if more signal than artifact is removed.</p>
+</li>
+<li>
+<p><strong>Number of channels.</strong> ASR requires multiple channels to clean signals effectively. Research suggests that ASR can achieve effective artifact removal for standard <code>20-channel EEG</code><a href="#chang2019">[1]</a>.</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>The algorithm is recommended for EEG signals. Output for other biosignals may be worse, for example if more signal than artifact is removed from the data.</p>
-</div>
-<div class="paragraph">
-<p>Another factor to consider is the number of channels. ASR requires multiple channels to clean signals effectively. Research suggests that ASR can achieve effective artifact removal for standard <code>20-channel EEG</code><a href="#chang2019">[1]</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="_standard_deviation_cutoff"><a class="anchor" href="#_standard_deviation_cutoff"></a>Standard deviation cutoff</h3>
 <div class="paragraph">
-<p>The <code>Cutoff</code> field in the ASR pop-up refers to the standard deviation cutoff applied during cleaning.</p>
-</div>
-<div class="paragraph">
-<p>This cutoff determines the thresholds used, relative to the calibration data, for recognizing portions of the data as artifacts.</p>
+<p>The <code>Cutoff</code> field in the ASR pop-up is the standard deviation cutoff applied during cleaning. It sets the thresholds, relative to the calibration data, that decide which portions of the data are artifacts.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -932,7 +1175,7 @@ If you plan to apply ASR and work with cleaned data, make sure you understand th
 </ul>
 </div>
 <div class="paragraph">
-<p>The available presets are:</p>
+<p>Typical values are:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -940,10 +1183,10 @@ If you plan to apply ASR and work with cleaned data, make sure you understand th
 <p><code>3.0</code>&#8201;&#8212;&#8201;aggressive</p>
 </li>
 <li>
-<p><code>5.0</code>&#8201;&#8212;&#8201;standard and default in Explore Signals</p>
+<p><code>5.0</code>&#8201;&#8212;&#8201;standard, and the default in Explore Signals</p>
 </li>
 <li>
-<p><code>20.0</code>&#8201;&#8212;&#8201;conservative and default in EEGLAB&#8217;s <code>clean_rawdata</code> plugin</p>
+<p><code>20.0</code>&#8201;&#8212;&#8201;conservative, and the default in EEGLAB&#8217;s <code>clean_rawdata</code> plugin</p>
 </li>
 </ul>
 </div>
@@ -963,54 +1206,19 @@ Going below a cutoff of <code>3.0</code> is not recommended and is blocked by Ex
 <div class="sect2">
 <h3 id="_calibration_window"><a class="anchor" href="#_calibration_window"></a>Calibration window</h3>
 <div class="paragraph">
-<p>The <code>Calibration Window</code> determines the size of the data window used for calibration.</p>
-</div>
-<div class="paragraph">
-<p>The default and minimum value is:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>30.0 s</pre>
-</div>
-</div>
-<div class="paragraph">
-<p>For a cutoff of <code>20.0</code>, the recommended calibration window is:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>60.0 s</pre>
-</div>
+<p>The <code>Calibration Window</code> sets the length of the data used for calibration. The default and minimum value is <code>30.0 s</code>. For a cutoff of <code>20.0</code>, the recommended calibration window is <code>60.0 s</code>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="_calibration_start"><a class="anchor" href="#_calibration_start"></a>Calibration start</h3>
 <div class="paragraph">
-<p>The <code>Calibration Start</code> determines the beginning of the calibration window.</p>
+<p>The <code>Calibration Start</code> sets the beginning of the calibration window.</p>
 </div>
 <div class="paragraph">
-<p>The default setting is <code>Auto</code>. This automatically places the start of the calibration window at <code>20%</code> into the recording.</p>
+<p>The default setting is <code>Auto</code>, which places the start of the calibration window <code>20%</code> into the recording. For example, if the recording is <code>120.0 s</code> long and the calibration window is <code>30.0 s</code>, the calibration window runs from <code>24.0 s</code> to <code>54.0 s</code>.</p>
 </div>
 <div class="paragraph">
-<p>For example, if:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>the recording is <code>120.0 s</code></p>
-</li>
-<li>
-<p>the calibration window is <code>30.0 s</code></p>
-</li>
-<li>
-<p><code>Auto</code> is selected for <code>Calibration Start</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>then the calibration window is placed from <code>24.0 s</code> to <code>54.0 s</code>.</p>
-</div>
-<div class="paragraph">
-<p>Alternatively, you can manually choose the start of the calibration window by selecting <code>Manual start time</code> and changing the corresponding field to the desired starting second.</p>
+<p>To choose the start yourself, select <code>Manual start time</code> and enter the starting second.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1021,10 +1229,7 @@ Going below a cutoff of <code>3.0</code> is not recommended and is blocked by Ex
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Load a file.</p>
-</li>
-<li>
-<p>Select it in the <code>Loaded Files</code> section.</p>
+<p>Select the file in the <code>Loaded Files</code> section and check the channels to clean.</p>
 </li>
 <li>
 <p>Click <b class="button">ASR Cleaning</b>.</p>
@@ -1034,60 +1239,70 @@ Going below a cutoff of <code>3.0</code> is not recommended and is blocked by Ex
 </li>
 <li>
 <p>Optional: click <b class="button">Load Preset</b> to load a recommended preset.</p>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Preset</th>
+<th class="tableblock halign-left valign-top">Cutoff</th>
+<th class="tableblock halign-left valign-top">Calibration window</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Aggressive</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>3.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30 s</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Standard</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>5.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>30 s</code></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Conservative</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>20.0</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>60 s</code></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Click <b class="button">Apply ASR</b>.</p>
 </li>
 </ol>
 </div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../_images/explore-signals-asr-settings.png" alt="The ASR settings dialog with cutoff 5, a 30 second calibration window, and automatic calibration start." width="45%">
+</div>
+<div class="title">ASR settings before cleaning</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_comparing_the_cleaned_and_original_data"><a class="anchor" href="#_comparing_the_cleaned_and_original_data"></a>Comparing the cleaned and original data</h3>
 <div class="paragraph">
-<p>Available presets are:</p>
+<p>When cleaning is finished, Explore Signals opens a comparison view with the cleaned data drawn over the original data. The comparison view has the same <code>Window</code>, zoom, paging, and <code>Sensitivity</code> controls as the time-domain viewer. In addition, use <code>Show</code> to choose between:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>Aggressive</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Cutoff: <code>3.0</code></p>
+<p><code>Both</code></p>
 </li>
 <li>
-<p>Calibration window: <code>30 s</code></p>
-</li>
-</ul>
-</div>
+<p><code>Cleaned only</code></p>
 </li>
 <li>
-<p><code>Standard</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Cutoff: <code>5.0</code></p>
-</li>
-<li>
-<p>Calibration window: <code>30 s</code></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><code>Conservative</code></p>
-<div class="ulist">
-<ul>
-<li>
-<p>Cutoff: <code>20.0</code></p>
-</li>
-<li>
-<p>Calibration window: <code>60 s</code></p>
-</li>
-</ul>
-</div>
+<p><code>Original only</code></p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>When you are finished changing the parameters, click <b class="button">Apply ASR</b>.</p>
-</div>
-<div class="paragraph">
-<p>Explore Signals cleans the data and then opens a comparison view showing the cleaned data and the original data.</p>
+<p>Select <code>Save as PNG…</code> from the <b class="button">⋯</b> menu to save the comparison as an image.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1096,138 +1311,65 @@ Going below a cutoff of <code>3.0</code> is not recommended and is blocked by Ex
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The ASR implementation applies a high-pass filter internally to correct for drift. The resulting cleaned signal is also zero-mean. If the original data is not filtered or zero-mean, the cleaned signal may not appear overlaid with the same baseline as the original signal.
+The ASR implementation applies a high-pass filter internally to correct for drift, so the cleaned signal is also zero-mean. If the original data is not filtered or not zero-mean, the two signals may not share the same baseline in the comparison view.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>The cleaned data is added to the <code>Loaded Files</code> section and can be visualized and analyzed like other loaded data.</p>
+<p>The cleaned data is added to the <code>Loaded Files</code> section and can be visualized, processed, and exported like any other file.</p>
+</div>
+<div class="imageblock text-center text-center">
+<div class="content">
+<img src="../_images/explore-signals-asr-comparison.png" alt="ASR comparison view with original traces in blue and cleaned traces in orange around a head-movement artifact." width="80%">
+</div>
+<div class="title">Original (blue) and cleaned (orange) data around a head-movement artifact</div>
 </div>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_converting_and_repairing_recordings"><a class="anchor" href="#_converting_and_repairing_recordings"></a>Converting and repairing recordings</h2>
+<h2 id="_exporting_data"><a class="anchor" href="#_exporting_data"></a>Exporting data</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_converting_to_and_from_csv_and_bdf"><a class="anchor" href="#_converting_to_and_from_csv_and_bdf"></a>Converting to and from CSV and BDF</h3>
 <div class="paragraph">
-<p>To convert an existing recording from <code>.csv</code> to <code>.bdf</code> or from <code>.bdf</code> to <code>.csv</code>:</p>
+<p>Original and processed data can be exported from the <code>File</code> menu.</p>
+</div>
+<div class="paragraph">
+<p>To export data:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Load the file you want to convert.</p>
+<p>Select the file you want to export in the <code>Loaded Files</code> section.</p>
 </li>
 <li>
-<p>Export it to the other format.</p>
+<p>Check the channels you want to export. Only the checked channels are written.</p>
 </li>
-</ol>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_converting_to_eeglab_dataset"><a class="anchor" href="#_converting_to_eeglab_dataset"></a>Converting to EEGLAB dataset</h3>
-<div class="paragraph">
-<p>Recordings in <code>.csv</code>, <code>.edf</code>, or <code>.bdf</code> format can be converted to <code>.set</code> files compatible with MATLAB&#8217;s EEGLAB plugin.</p>
-</div>
-<div class="paragraph">
-<p>To convert recordings to EEGLAB datasets:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
 <li>
 <p>Navigate to:</p>
 <div class="listingblock">
 <div class="content">
-<pre>File &gt; Convert &gt; Convert files to EEGLab</pre>
+<pre>File &gt; Export</pre>
 </div>
 </div>
 </li>
 <li>
-<p>Select the folder containing the <code>.edf</code> or <code>.bdf</code> files to convert.</p>
+<p>Choose the file name and select <code>.csv</code> or <code>.bdf</code> as the format.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>The <code>.set</code> files are created in a subfolder named <code>datasets</code> inside the selected directory.</p>
-</div>
-<div class="paragraph">
-<p>To convert recordings from <code>.csv</code> format, the respective <code>_Meta.csv</code> file must be present in the same folder.</p>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Convert_to_EEGLab.png" alt="" width="80%">
-</div>
-<div class="title">Convert recordings to EEGLAB datasets</div>
-</div>
-<div class="paragraph">
-<p>Recordings in <code>.csv</code> and <code>.bdf</code> format can be converted to EEGLAB <code>.set</code> files.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_converting_from_bin"><a class="anchor" href="#_converting_from_bin"></a>Converting from BIN</h3>
-<div class="paragraph">
-<p>You can convert binary files from the Explore device internal memory, in <code>.BIN</code> format, to <code>.csv</code> or <code>.bdf</code> files.</p>
-</div>
-<div class="paragraph">
-<p>To convert a <code>.BIN</code> file:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>Navigate to:</p>
-<div class="listingblock">
-<div class="content">
-<pre>File &gt; Convert &gt; Convert .BIN to .csv or .bdf</pre>
-</div>
-</div>
-</li>
-<li>
-<p>Select the binary file to convert.</p>
-</li>
-<li>
-<p>Select the folder where the converted files should be saved.</p>
-</li>
-<li>
-<p>Select the output file format.</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p>Converting to <code>.csv</code> generates four files:</p>
+<p>Explore Signals adds <code>_ExG</code> to the file name if it is not already there.</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>_ExG.csv</code></p>
+<p>When exporting to <code>.csv</code>, markers are written to a matching <code>_Marker.csv</code> file.</p>
 </li>
 <li>
-<p><code>_ORN.csv</code></p>
-</li>
-<li>
-<p><code>_Marker.csv</code></p>
-</li>
-<li>
-<p><code>_Meta.csv</code></p>
+<p>When exporting to <code>.bdf</code>, markers are stored inside the file. The data is written in BDF+ format using 24-bit resolution.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Converting to <code>.bdf</code> generates two files:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>_ExG.bdf</code></p>
-</li>
-<li>
-<p><code>_ORN.bdf</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Markers are written to the ExG file.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1236,28 +1378,27 @@ The ASR implementation applies a high-pass filter internally to correct for drif
 <i class="fa icon-note" title="Note"></i>
 </td>
 <td class="content">
-The data is written in BDF+ format using <code>24-bit</code> resolution, as opposed to EDF or EDF+.
+<div class="paragraph">
+<p>Exporting to <code>.bdf</code> may cause a loss of precision of less than <code>0.1 µV</code> for Mentalab recordings. Very small or very large values produced by filtering may be truncated or rounded.</p>
+</div>
+<div class="paragraph">
+<p>When exporting to <code>.bdf</code> from a <code>.csv</code> file, the physical range of the signal is calculated from its minimum and maximum values. The signal looks as expected, but its values may be shifted and rescaled compared with the original.</p>
+</div>
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p>If you change the device sampling rate or channel mask during recording, conversion creates a new <code>.csv</code> or <code>.bdf</code> file for the ExG data. The file name includes the selected file name plus the time at which the setting changed.</p>
+<p>To convert whole recordings or folders between formats without loading them, use the Convert / Process wizard.
+See <a href="5-convert-process-wizard.html" class="xref page">Convert / Process wizard</a>.</p>
 </div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Convert_BIN.png" alt="" width="80%">
 </div>
-<div class="title">Convert BIN recordings in Explore Signals</div>
 </div>
+<div class="sect1">
+<h2 id="_repairing_csv_recordings"><a class="anchor" href="#_repairing_csv_recordings"></a>Repairing CSV recordings</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>Recordings from the Explore device internal memory can be converted from binary format to <code>.csv</code> or <code>.bdf</code>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_repairing_csv_recordings"><a class="anchor" href="#_repairing_csv_recordings"></a>Repairing CSV recordings</h3>
-<div class="paragraph">
-<p>If packets are dropped during recording with explorepy or Explore Desktop, the binary file from the Explore device can be used to repair the recorded <code>.csv</code> file.</p>
+<p>If packets are dropped while recording with explorepy or Explore Desktop, the binary file from the Explore device memory can be used to repair the recorded <code>.csv</code> file.</p>
 </div>
 <div class="paragraph">
 <p>To repair a recorded <code>.csv</code> file:</p>
@@ -1284,17 +1425,13 @@ The data is written in BDF+ format using <code>24-bit</code> resolution, as oppo
 </ol>
 </div>
 <div class="paragraph">
-<p>The repaired file is placed in the same folder as the selected file. It is named like the selected file, but with <code>_recovered_ExG</code> added to the file name.</p>
+<p>The repaired file is saved in the same folder as the selected file. It has the same name, with <code>_recovered_ExG</code> added.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Repair_csv.png" alt="" width="80%">
+<img src="../_images/explore-signals-repair.png" alt="The Repair ExG .csv with .BIN dialog with a recording selected." width="60%">
 </div>
-<div class="title">Repair CSV recording in Explore Signals</div>
-</div>
-<div class="paragraph">
-<p>Recordings made with explorepy or Explore Desktop that may have missing samples can be repaired using a matching binary file from the Explore device internal memory.</p>
-</div>
+<div class="title">Repairing a CSV recording</div>
 </div>
 </div>
 </div>
@@ -1320,7 +1457,7 @@ The data is written in BDF+ format using <code>24-bit</code> resolution, as oppo
 </div>
 <nav class="pagination">
   <span class="prev"><a href="2-installation.html">Installation</a></span>
-  <span class="next"><a href="4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a></span>
+  <span class="next"><a href="5-convert-process-wizard.html">Converting recordings with the Convert / Process wizard</a></span>
 </nav>
 </article>
   </div>
