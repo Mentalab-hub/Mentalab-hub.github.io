@@ -9,16 +9,19 @@
     <link rel="next" href="2-installation.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -49,7 +57,7 @@
     <li><a href="1-overview.html">Overview</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/1-overview.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///C:/Users/nayan/Documents/dev/mentalab/wiki/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/1-overview.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -302,6 +310,9 @@
     <a class="nav-link" href="3-usage.html">Usage</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-convert-process-wizard.html">Converting recordings with the Convert / Process wizard</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a>
   </li>
 </ul>
@@ -501,112 +512,74 @@
 <article class="doc">
 <h1 class="page">Overview</h1>
 <div class="sect1">
-<h2 id="_offline_exg_data_visualization_with_explore_signals"><a class="anchor" href="#_offline_exg_data_visualization_with_explore_signals"></a>Offline ExG Data Visualization with Explore Signals</h2>
+<h2 id="_offline_exg_data_visualization_with_explore_signals"><a class="anchor" href="#_offline_exg_data_visualization_with_explore_signals"></a>Offline ExG data visualization with Explore Signals</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Explore Signals is a graphical tool for ExG data visualization and analysis.</p>
+<p>Explore Signals is Mentalab&#8217;s desktop application for working with Explore recordings after a session.</p>
 </div>
 <div class="paragraph">
-<p>It supports importing data from Mentalab Explore devices from <code>.csv</code> and <code>.bdf</code> files, visualizing signals in time and frequency domains, applying common filters, applying Artifact Subspace Reconstruction (ASR), and exporting processed data.</p>
+<p>You can load a recording, inspect it in the time and frequency domain, filter it, clean it with Artifact Subspace Reconstruction (ASR), and export the result. Explore Signals also converts between the formats used across an Explore workflow: binary <code>.BIN</code> files from the device memory, <code>.csv</code>, <code>.bdf</code>, <code>.xdf</code>, BIDS datasets, and EEGLAB datasets.</p>
 </div>
 <div class="paragraph">
-<p>Explore Signals also offers functionality to convert binary recordings from Explore devices, repair <code>.csv</code> recordings from Explore Desktop, and convert recordings to EEGLAB datasets.</p>
+<p>The current version is <strong>0.4.0</strong>.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/BandpowerTime_v020.png" alt="" width="80%">
+<img src="../_images/explore-signals-main-window.png" alt="The Explore Signals main window with a filtered 32-channel recording in the time-domain viewer." width="80%">
 </div>
-<div class="title">Explore Signals bandpower visualization</div>
-</div>
-<div class="paragraph">
-<p>Visualizing ExG data in Explore Signals.</p>
+<div class="title">Explore Signals 0.4.0 with a 32-channel recording open in the time-domain viewer</div>
 </div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_key_features"><a class="anchor" href="#_key_features"></a>Key features</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p>Explore Signals provides the following key features:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Load EEG/ExG data from <code>.csv</code> and <code>.bdf</code> files</p>
-</li>
-<li>
-<p>Apply standard EEG filters:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>High-pass filter</p>
-</li>
-<li>
-<p>Low-pass filter</p>
-</li>
-<li>
-<p>Notch filter</p>
-</li>
-<li>
-<p>Re-referencing</p>
-</li>
-<li>
-<p>DC offset correction</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Use multiple visualization modes:</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Time-domain plot</p>
-</li>
-<li>
-<p>FFT, meaning Fast Fourier Transform, plot</p>
-</li>
-<li>
-<p>Bandpower visualization as time series or bar chart</p>
-</li>
-<li>
-<p>Power Spectrum Density, or PSD</p>
-</li>
-<li>
-<p>Spectrogram, meaning time-frequency plot</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Apply Artifact Subspace Reconstruction, or ASR, to remove artifacts from EEG data</p>
-</li>
-<li>
-<p>Merge recordings from two synchronized devices into one recording, for example two 32-channel devices into a 64-channel recording</p>
-</li>
-<li>
-<p>Convert <code>.csv</code> data to <code>.bdf</code> and vice versa</p>
-</li>
-<li>
-<p>Export processed data to <code>.csv</code> and <code>.bdf</code></p>
-</li>
-<li>
-<p>Use multi-file session support</p>
-</li>
-<li>
-<p>Export plots of processed data, such as FFT or bandpower plots, as images</p>
-</li>
-<li>
-<p>Convert binary recordings from Explore devices to <code>.csv</code> or <code>.bdf</code></p>
-</li>
-<li>
-<p>Convert recordings from Explore devices to EEGLAB datasets</p>
-</li>
-<li>
-<p>Repair Explore Desktop recordings with binary files</p>
-</li>
-</ul>
-</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Area</th>
+<th class="tableblock halign-left valign-top">What you can do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Load</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Open <code>.csv</code> and <code>.bdf</code> recordings, several at once. Import recordings from a BIDS dataset.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High-pass, low-pass, and notch filtering, average re-referencing, and DC offset correction.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Visualize</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Time-domain plot, FFT, Power Spectrum Density (PSD), spectrogram, and bandpower over time or as bars.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Clean</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Artifact Subspace Reconstruction with presets and a before-and-after comparison.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Export the selected channels to <code>.csv</code> or <code>.bdf</code>. Save plots as images.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Convert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>.BIN</code> to <code>.csv</code>, <code>.bdf</code>, or BIDS. <code>.xdf</code> to BIDS. <code>.csv</code> to <code>.bdf</code>. <code>.csv</code>, <code>.bdf</code>, or <code>.edf</code> to EEGLAB <code>.set</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Combine two recordings from Hypersync-synchronized devices, for example two 32-channel devices into one 64-channel recording.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Repair</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fill dropped packets in a <code>.csv</code> recording from Explore Desktop or explorepy using the <code>.BIN</code> file from the device.</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <nav class="pagination">

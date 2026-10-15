@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Merging two 32-channel devices into a 64-channel recording :: Mentalab Wiki</title>
     <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/13-explore-signals-guide/4-merging-two-32-channel-devices.html">
-    <link rel="prev" href="3-usage.html">
+    <link rel="prev" href="5-convert-process-wizard.html">
     <link rel="next" href="../14-applications/1-artefact-removal.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -49,7 +57,7 @@
     <li><a href="4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/4-merging-two-32-channel-devices.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///C:/Users/nayan/Documents/dev/mentalab/wiki/mentalab-wiki-antora/modules/ROOT/pages/13-explore-signals-guide/4-merging-two-32-channel-devices.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -300,6 +308,9 @@
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="3-usage.html">Usage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-convert-process-wizard.html">Converting recordings with the Convert / Process wizard</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="4-merging-two-32-channel-devices.html">Merging two 32-channel devices into a 64-channel recording</a>
@@ -587,6 +598,9 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <h2 id="_merging_two_csv_recordings"><a class="anchor" href="#_merging_two_csv_recordings"></a>Merging two CSV recordings</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p>Merging is done in the Convert / Process wizard.</p>
+</div>
+<div class="paragraph">
 <p>To merge two <code>_ExG.csv</code> recordings:</p>
 </div>
 <div class="olist arabic">
@@ -595,44 +609,59 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <p>Navigate to:</p>
 <div class="listingblock">
 <div class="content">
-<pre>File &gt; Convert &gt; Merge Recordings</pre>
+<pre>File &gt; Convert / Process…</pre>
 </div>
 </div>
 </li>
 <li>
-<p>Under <code>Input format</code>, select <code>CSV (two files)</code>.</p>
+<p>Select <code>.csv</code>, then <code>Multiple devices</code>, then <code>Merge into one recording</code>.</p>
 </li>
 <li>
-<p>Click <b class="button">Browse</b> next to <code>File A</code> and select the first <code>_ExG.csv</code> file.</p>
+<p>Click <b class="button">Browse…</b> next to <code>Recording A</code> and select the first <code>_ExG.csv</code> file.</p>
 </li>
 <li>
-<p>Click <b class="button">Browse</b> next to <code>File B</code> and select the second <code>_ExG.csv</code> file.</p>
+<p>Click <b class="button">Browse…</b> next to <code>Recording B</code> and select the second <code>_ExG.csv</code> file.</p>
 </li>
 <li>
-<p>Click <b class="button">Browse</b> next to <code>Output folder</code> and choose where the merged files should be written.</p>
+<p>Click <b class="button">Browse…</b> next to <code>Output folder</code> and choose where the merged files should be written.</p>
 </li>
 <li>
-<p>Enter an <code>Output base name</code>. This is the name the merged files are built from. If you leave it empty, <code>Merged</code> is used.</p>
+<p>Enter an <code>Output name</code>. This is the name the merged files are built from. The default is <code>Merged</code>.</p>
 </li>
 <li>
-<p>Leave <code>Merging strategy</code> set to <code>Nearest sample</code>.</p>
+<p>Optional: add sync-status markers. See the section below.</p>
 </li>
 <li>
-<p>Optionally add sync-status markers. See the section below.</p>
+<p>Click <b class="button">Review</b>. The <code>Review</code> page lists the files that will be read and created.</p>
 </li>
 <li>
-<p>Click <b class="button">Merge</b>.</p>
+<p>Click <b class="button">Run merge</b>.</p>
 </li>
 </ol>
 </div>
 <div class="paragraph">
-<p>The <b class="button">Merge</b> button stays disabled until the required fields are filled in. If a setting is not valid, the dialog shows the reason in red above the buttons.</p>
+<p>If a required field is empty, the wizard tells you what is missing when you click <b class="button">Review</b>.</p>
+</div>
+<div class="paragraph">
+<p>Recordings are always merged by nearest sample. See <a href="#_how_the_merge_works">How the merge works</a>.</p>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Merge_Recordings.png" alt="The Merge Recordings dialog in CSV mode with both input files, an output folder, and an output base name set." width="80%">
+<img src="../_images/explore-signals-wizard-merge.png" alt="The Configure step of the Convert / Process wizard set up to merge two CSV recordings with sync-status markers." width="70%">
 </div>
-<div class="title">The Merge Recordings dialog, set up to merge two CSV recordings</div>
+<div class="title">The wizard set up to merge two CSV recordings</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+The wizard includes a <code>Merge two CSVs</code> preset with sync-status markers turned on. Select it on the first page of the wizard to skip straight to the file selection.
+</td>
+</tr>
+</table>
 </div>
 <div class="sect2">
 <h3 id="_file_requirements"><a class="anchor" href="#_file_requirements"></a>File requirements</h3>
@@ -665,7 +694,7 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <h2 id="_merging_from_an_xdf_recording"><a class="anchor" href="#_merging_from_an_xdf_recording"></a>Merging from an XDF recording</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>If you recorded both devices into a single <code>.xdf</code> file through LSL, select <code>XDF (single file)</code> under <code>Input format</code>. The dialog then asks for one <code>XDF file</code> instead of the two CSV files.</p>
+<p>If you recorded both devices into a single <code>.xdf</code> file through LSL, select <code>.xdf</code> instead of <code>.csv</code> on the first page of the wizard, then <code>Multiple devices</code> and <code>Merge into one recording</code>. The wizard then asks for one <code>Input .xdf</code> file instead of two recordings.</p>
 </div>
 <div class="paragraph">
 <p>The file must contain exactly two Explore ExG streams. If it contains a different number, Explore Signals reports how many it found and stops.</p>
@@ -673,19 +702,13 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <div class="paragraph">
 <p>The remaining settings work the same way, and the output is written as CSV files exactly as in the CSV workflow.</p>
 </div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Merge_Recordings_XDF.png" alt="The Merge Recordings dialog in XDF mode, showing a single XDF file field." width="80%">
-</div>
-<div class="title">The same dialog in XDF mode, asking for one file instead of two</div>
-</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="_what_the_merge_produces"><a class="anchor" href="#_what_the_merge_produces"></a>What the merge produces</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Using the default output base name <code>Merged</code>, the merge writes:</p>
+<p>Using the default output name <code>Merged</code>, the merge writes:</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -738,18 +761,18 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <p>Mentalab Hypersync records a Session Status file describing when your devices were synchronized during the session. Attaching it to the merge adds markers showing where the synchronization held and where it did not.</p>
 </div>
 <div class="paragraph">
-<p>To add them, in the <code>Session Status (Optional)</code> section of the dialog:</p>
+<p>To add them:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Select the checkbox for adding sync status markers. The fields below it become available.</p>
+<p>In the <code>Session health (optional)</code> section of the wizard, select <code>Attach a Session Status file or folder</code>.</p>
 </li>
 <li>
-<p>Choose <code>Single File</code> if you want to select the Session Status file directly, or <code>Folder</code> to point at the folder containing it.</p>
+<p>Click <b class="button">File…</b> to select the Session Status file directly, or <b class="button">Folder…</b> to select the folder containing it.</p>
 </li>
 <li>
-<p>Click <b class="button">Browse</b> and select the file or folder.</p>
+<p>In the <code>Processing</code> section, select <code>Add sync-status markers</code>.</p>
 </li>
 </ol>
 </div>
@@ -773,7 +796,7 @@ The two devices must be time-synchronized with Mentalab Hypersync during recordi
 <p>Use these markers to find and exclude stretches where the two devices were not reliably aligned. This matters for a merged recording: if the devices drifted apart, channels from the two devices no longer describe the same moment in time.</p>
 </div>
 <div class="paragraph">
-<p>Session Status files are named <code>SessionStatus&lt;date&gt;_&lt;time&gt;.csv</code>, or <code>session_status_&lt;date&gt;_&lt;time&gt;.csv</code> in older versions.</p>
+<p>Session Status files are named <code>SessionStatus&lt;date&gt;_&lt;time&gt;.csv</code> or <code>session_status_&lt;date&gt;_&lt;time&gt;.csv</code>.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -797,12 +820,12 @@ If the Session Status file cannot be read, or contains no transitions inside the
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
-<img src="../_images/Merged_64_channels.png" alt="A merged 64-channel recording loaded in Explore Signals, scrolled to the point where the channels of the first device end and those of the second begin." width="80%">
+<img src="../_images/explore-signals-merged-64.png" alt="A merged 64-channel recording, scrolled to where the channels of device 8C2E end and those of device 8C31 begin." width="80%">
 </div>
-<div class="title">A merged 64-channel recording, scrolled to the point where one device&#8217;s channels end and the other&#8217;s begin</div>
+<div class="title">A merged 64-channel recording at the boundary between the two devices</div>
 </div>
 <div class="paragraph">
-<p>To work with the recording in other software, export it to <code>.bdf</code> or convert it to an EEGLAB dataset. See the Usage page for both.</p>
+<p>To work with the recording in other software, export it to <code>.bdf</code> with <code>File &gt; Export</code>, or convert it with the Convert / Process wizard.</p>
 </div>
 </div>
 </div>
@@ -846,8 +869,8 @@ If the Session Status file cannot be read, or contains no transitions inside the
 <td class="tableblock halign-left valign-top"><p class="tableblock">Motion data is merged only when both recordings have an <code>_ORN.csv</code> file. If either is missing, the rest of the merge still completes.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">The <b class="button">Merge</b> button stays greyed out</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">A required field is still empty. Check that both input files, the output folder, and the output base name are set. If sync-status markers are enabled, a Session Status file or folder is required too.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The wizard shows <code>Incomplete</code> when you click <b class="button">Review</b></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">A required field is still empty. Check that both input files, the output folder, and the output name are set. If a Session Status file is attached, its path must be set too.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The merged file is shorter than either recording</p></td>
@@ -882,7 +905,7 @@ If the Session Status file cannot be read, or contains no transitions inside the
 </div>
 </div>
 <nav class="pagination">
-  <span class="prev"><a href="3-usage.html">Usage</a></span>
+  <span class="prev"><a href="5-convert-process-wizard.html">Converting recordings with the Convert / Process wizard</a></span>
   <span class="next"><a href="../14-applications/1-artefact-removal.html">Artefact removal</a></span>
 </nav>
 </article>
