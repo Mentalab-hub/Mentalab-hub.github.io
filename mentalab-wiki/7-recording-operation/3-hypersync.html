@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Hypersync :: Mentalab Wiki</title>
+    <title>Mentalab Hypersync :: Mentalab Wiki</title>
     <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/7-recording-operation/3-hypersync.html">
     <link rel="prev" href="2-triggers-and-event-markers.html">
     <link rel="next" href="../8-ending-recording/1-proper-shutdown-procedure.html">
@@ -46,7 +46,7 @@
   <ul>
     <li><a href="../index.html">Mentalab Wiki</a></li>
     <li>Recording Operation</li>
-    <li><a href="3-hypersync.html">Hypersync</a></li>
+    <li><a href="3-hypersync.html">Mentalab Hypersync</a></li>
   </ul>
 </nav>
 <!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/7-recording-operation/3-hypersync.adoc">Edit this Page</a></div>
@@ -182,7 +182,7 @@
     <a class="nav-link" href="2-triggers-and-event-markers.html">Triggers and event markers</a>
   </li>
   <li class="nav-item is-current-page" data-depth="2">
-    <a class="nav-link" href="3-hypersync.html">Hypersync</a>
+    <a class="nav-link" href="3-hypersync.html">Mentalab Hypersync</a>
   </li>
 </ul>
   </li>
@@ -502,7 +502,7 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Hypersync</h1>
+<h1 class="page">Mentalab Hypersync</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
@@ -511,10 +511,11 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_what_is_hypersync"><a class="anchor" href="#_what_is_hypersync"></a>What is Hypersync?</h2>
+<h2 id="_what_is_mentalabhypersync"><a class="anchor" href="#_what_is_mentalabhypersync"></a>What is MentalabHypersync?</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Hypersync is Mentalab’s implementation of a wireless synchronization protocol built on the Lab Streaming Layer (LSL) framework. It ensures that EEG/ExG recordings from Explore devices are aligned in time with external data sources, such as:</p>
+<p>Mentalab Hypersync is our implementation of a wireless synchronization protocol built on the Lab Streaming Layer (LSL) framework. It ensures that EEG/ExG recordings from Explore devices are aligned in time with a computer network.
+This ensures tight temporal alignment to an LSL network for improved timing accuracy when syncing with:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -530,7 +531,7 @@
 </ul>
 </div>
 <div class="paragraph">
-<p>Unlike manual triggers alone, Hypersync guarantees that all participating devices share a common clock, reducing temporal drift.</p>
+<p>Unlike manual triggers alone, MentalabHypersync guarantees that all participating Explore devices share a common clock, reducing temporal drift.</p>
 </div>
 </div>
 </div>
@@ -539,7 +540,7 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Each Explore amplifier publishes its data to the LSL stream on the host computer.
- Hypersync continuously aligns these streams to a global timeline, correcting for jitter and drift.
+ Mentalab Hypersync continuously aligns these streams to a global timeline, correcting for jitter and drift.
  Triggers sent via software or hardware are timestamped against the same synchronized clock, allowing precise alignment across modalities.</p>
 </div>
 </div>
@@ -550,13 +551,13 @@
 <div class="ulist">
 <ul>
 <li>
-<p>Multimodal studies: combining EEG with motion capture, eye tracking, or physiological signals.</p>
-</li>
-<li>
 <p>Stimulus-locked protocols: experiments where reaction time or ERP analysis requires millisecond precision.</p>
 </li>
 <li>
 <p>Multi-amplifier setups: recording from more than one Explore unit simultaneously.</p>
+</li>
+<li>
+<p>Multimodal studies: combining EEG with motion capture, eye tracking, or physiological signals to reduce total jitter and delay.</p>
 </li>
 </ul>
 </div>
@@ -571,7 +572,7 @@
 <p>High temporal precision compared to manual synchronization.</p>
 </li>
 <li>
-<p>Fully compatible with Mentalab software (Explore Desktop, explorepy) and third-party tools supporting LSL.</p>
+<p>Fully compatible with Mentalab software (Explore Desktop, Explore Mobile, explorepy, Flutter API) and third-party tools supporting LSL.</p>
 </li>
 <li>
 <p>Works wirelessly, no additional cabling required between devices.</p>
@@ -581,10 +582,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="_what_you_need_for_hypersync"><a class="anchor" href="#_what_you_need_for_hypersync"></a>What you need for Hypersync</h2>
+<h2 id="_what_you_need_for_mentalab_hypersync"><a class="anchor" href="#_what_you_need_for_mentalab_hypersync"></a>What you need for Mentalab Hypersync</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To ensure Hypersync operates correctly, each Mentalab device must be equipped with a Hypersync receiver dongle. A single Hypersync sender dongle is required at the host computer. Each device requires its own data collection system for streaming. We provide dedicated smartphones (“study phones”) and mentioned dongles for this purpose.</p>
+<p>To ensure Mentalab Hypersync operates correctly, each Mentalab device must be equipped with a Mentalab Hypersync receiver dongle. A single Hypersync sender dongle is required at the host computer. Each device requires its own data collection system for streaming. We provide dedicated smartphones (“study phones”) and the required hardware for this purpose.</p>
 </div>
 </div>
 </div>
