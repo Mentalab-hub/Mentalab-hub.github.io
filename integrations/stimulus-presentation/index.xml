@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Stimulus Presentation on Wiki</title>
+    <link>http://localhost:1313/integrations/stimulus-presentation/</link>
+    <description>Recent content in Stimulus Presentation on Wiki</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jun 2025 10:25:19 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/integrations/stimulus-presentation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PsychoPy</title>
+      <link>http://localhost:1313/integrations/stimulus-presentation/psychopy/</link>
+      <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
+      <guid>http://localhost:1313/integrations/stimulus-presentation/psychopy/</guid>
+      <description>&lt;p&gt;This guide details how to integrate your Mentalab Explore device with PsychoPy experiments, focusing on high-precision synchronization of event markers using &lt;strong&gt;LabStreamingLayer (LSL)&lt;/strong&gt; in combination with *&lt;em&gt;Mentalab Hypersync&lt;/em&gt;. This is the recommended approach for robust and accurate data alignment.&lt;/p&gt;&#xA;&lt;p&gt;Alternative legacy wired trigger methods are listed at the bottom.&lt;/p&gt;&#xA;&lt;h2 id=&#34;prerequisites&#34;&gt;Prerequisites&lt;/h2&gt;&#xA;&lt;p&gt;Before starting, ensure you have the following hardware and software:&lt;/p&gt;&#xA;&lt;h3 id=&#34;hardware&#34;&gt;Hardware&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Explore Pro Device&lt;/strong&gt;: Any model of the Explore biosignal acquisition system.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Hypersync Add-on&lt;/strong&gt;: This hardware is essential for accurately synchronizing LSL markers from PsychoPy with the Explore device&amp;rsquo;s data stream.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Computer&lt;/strong&gt;: To run PsychoPy, LSL, and data recording software.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;software&#34;&gt;Software&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;strong&gt;PsychoPy&lt;/strong&gt;: A recent version of PsychoPy.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Python&lt;/strong&gt;: PsychoPy&amp;rsquo;s scripting language.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;PyLSL (&lt;code&gt;pylsl&lt;/code&gt;)&lt;/strong&gt;: The Python library for LabStreamingLayer. Install via pip:&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install pylsl&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Mentalab Mobile App or &lt;code&gt;explorepy&lt;/code&gt;&lt;/strong&gt;: For Hypersync configuration and/or data recording from the Explore device.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;(Optional, for wired methods) &lt;code&gt;explorepy&lt;/code&gt;&lt;/strong&gt;: Mentalab&amp;rsquo;s Python API for Explore devices.&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;(Optional, for wired methods) &lt;code&gt;pyserial&lt;/code&gt;&lt;/strong&gt;: Python library for serial port communication.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h1 id=&#34;recommended-method-synchronization-via-pylsl-and-mentalab-hypersync&#34;&gt;Recommended Method: Synchronization via PyLSL and Mentalab Hypersync&lt;/h1&gt;&#xA;&lt;p&gt;This method uses LSL to transmit event markers from your PsychoPy experiment. The Mentalab Hypersync module captures these LSL markers and precisely embeds them into the data stream recorded by the Mentalab Explore device.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>OpenSesame</title>
+      <link>http://localhost:1313/integrations/stimulus-presentation/opensesame/</link>
+      <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
+      <guid>http://localhost:1313/integrations/stimulus-presentation/opensesame/</guid>
+      <description>&lt;p&gt;Free, open-source software.&lt;/p&gt;&#xA;&lt;p&gt;Basically the same as for PsychoPy:&lt;/p&gt;&#xA;&lt;p&gt;Reccomended: Use PyLSL + Hypersync.&lt;/p&gt;&#xA;&lt;p&gt;Alternative: Send wired triggers using explorepy or by writing to serial port.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>E-Prime®</title>
+      <link>http://localhost:1313/integrations/stimulus-presentation/e-prime/</link>
+      <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
+      <guid>http://localhost:1313/integrations/stimulus-presentation/e-prime/</guid>
+      <description>&lt;p&gt;Commercial software&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955&#34;&gt;https://support.pstnet.com/hc/en-us/articles/4411440563479-INFO-Lab-Streaming-Layer-LSL-38955&lt;/a&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file&#34;&gt;https://github.com/PsychologySoftwareTools/eprime3-lsl-package-file&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Presentation®</title>
+      <link>http://localhost:1313/integrations/stimulus-presentation/presentation/</link>
+      <pubDate>Wed, 04 Jun 2025 10:25:19 +0000</pubDate>
+      <guid>http://localhost:1313/integrations/stimulus-presentation/presentation/</guid>
+      <description>&lt;p&gt;Commercial software.&lt;/p&gt;&#xA;&lt;p&gt;Consult HyperSync manual for achieving synchronisation between Explore amplifier and LSL.&lt;/p&gt;&#xA;&lt;p&gt;Then follow the Presentation® guidelines on sending markers via LSL.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm&#34;&gt;https://www.neurobs.com/pres_docs/html/03_presentation/06_hardware_interfacing/02_lab_streaming_layer.htm&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

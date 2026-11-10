@@ -1,0 +1,57 @@
+---
+title: "Safety Recommendations"
+date: 2022-01-26T10:25:19+00:00
+weight: 9
+description: Here are a set of safety recommendations for users of the Mentalab Explore device
+slug: safety-recommendations
+---
+
+## Intended Use
+Mentalab Explore is a bio-signal acquisition device developed for research, development, and educational purposes. It is not intended for medical use.
+
+## Product Certification
+The Mentalab Explore device is in accordance with the requirements and relevant provisions of EU directives:
+- 2014/30/EU
+- 2014/53/EU
+- 2015/863/EU
+
+## Preventing Misuse
+- Any operator of a Mentalab Explore device should read the instructions specific to the device and the documentation for relevant APIs. The device should only be operated according to the instructions available on this website.
+- Mentalab Explore is not intended for medical use, including any diagnostic or therapeutic applications.
+- Mentalab Explore tolerates continuous exposure of [-2.7V, +2.7V] without electrical damage and has a built-in ESD protection that protects it against burst exposure:
+    - IEC 61000-4-2 Level 4 ESD Protection – ±12-kV Contact Discharge – ±15-kV Air Gap Discharge
+    - IEC 61000-4-4 EFT Protection – 80 A (5/50 ns)
+    - IEC 61000-4-5 Surge Protection – 2.5 A (8/20 μs)
+- When using the Explore system with other hardware, or with implanted electrical cardiac or neural stimulators (pacemaker, tDCS, tACS, DBS, etc), the electrical values specficied above should not be exceeded Using a Mentalab Explore device with additional hardware can affect the accuracy of the recorded signals.
+- Mentalab Explore is not protected against electrical defibrillation. The device and electrodes must be detached from the subject’s skin beforehand.
+- Before use, inspect the device and accessories thoroughly for damage to connectors, sockets, and cables. In particular, ensure that the electrode cables are intact. Any part of the equipment must be replaced immediately if it is damaged or malfunctioning.
+- The device and its accessories must not be exposed to increased mechanical stress. Do not open or modify the device, it will void the warranty.
+- Using controls, adjustments, procedures, connections, or signal types other than those specified in the Explore documentation may result in electrical and mechanical hazards.
+- Only use Mentalab approved accessories with this device. If an accessory is not listed, please contact us for technical support <support@mentalab.com>
+
+## Battery
+- If the Mentalab Explore device is charging, or is connected to a PC / tablet, it should not be connected to any subject.
+- The external power supply must fulfill the IEC/EN 60950-1 and SELV requirements to be used safely with the device. Do not charge your device with anything other than the USB port of a certified laptop / PC or a certified mini USB charger. Using a non-certified power supply can lead to electrical and fire hazards.
+- Users should not attempt to replace or disconnect the Explore’s battery.
+
+## Environment Precautions
+- The Explore system is not designed for use in flammable or explosive environments. It should be used at room temperature. Exposure to conducting material, liquid, fire or heat above 45°C can cause electrical discharge or overheating.
+- The Mentalab Explore system is not designed for use in wet environments. Liquid intrusion can cause electrical hazards. When applying electrodes on the subject’s head, the cap and the subject’s hair should be dry.
+- Protect the device and electrodes from electrostatic discharge and take all precautions regarding electromagnetic compatibility.
+
+## Signal Transmission
+- The operation of the movement sensors and wireless transmission can be compromised within shielded rooms. It is not possible to communicate with the device from outside of the shield.
+- Mentalab Explore uses the 2.4 GHz band for wireless transmission, so nearby Bluetooth and wireless devices can cause interference. Therefore, ensure that enough transmission bandwidth is available in your environment. We recommend working in environments with low wireless and noise interference for better performance.
+- If the Mentalab Explore system is not installed correctly, it may interfere with nearby devices. If it does, which can be determined by turning the Mentalab Explore device off and on, try the following:
+    - Reorient or relocate the receiving Mentalab Explore device.
+    - Increase the space between the Explore system and other wireless devices.
+    - Use the Mentalab Explore system with proper shielding, especially if a device with high wattage is nearby.
+    - Consult the Explore technical support at <support@mentalab.com>
+
+## Equipment Maintenance
+Mentalab Explore uses lightweight, highly flexible cables to provide comfort and easy cap mounting. These cables are sensitive and must be treated with care. Following these guidelines will prolong the life of ExG electrodes:
+- Do not pull on the electrodes’ cables and avoid knots. Do not cut, kink or pinch electrode cables; light bending is safe.
+- Avoid exposure to direct sunlight and chemicals.
+- Clean the cables and electrodes of gel, disinfectant, paste and residue. Do not use detergents with chlorine or other corrosive agents to clean the equipment.
+- Protect the Mentalab Explore device from liquid contamination. Ensure that the entire Mentalab Explore system is dry before storing.
+
