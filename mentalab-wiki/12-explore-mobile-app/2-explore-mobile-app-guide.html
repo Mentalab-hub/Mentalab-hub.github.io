@@ -9,16 +9,19 @@
     <link rel="next" href="3-usage.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -49,7 +57,7 @@
     <li><a href="2-explore-mobile-app-guide.html">Explore Mobile App Guide</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/12-explore-mobile-app/2-explore-mobile-app-guide.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///Users/deniztoprak/development/mentalab-wiki-antora/modules/ROOT/pages/12-explore-mobile-app/2-explore-mobile-app-guide.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -284,7 +292,31 @@
     <a class="nav-link" href="3-usage.html">Usage</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="4-tests.html">Tests</a>
+    <a class="nav-link" href="4-exg-visualization.html">ExG Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-recording.html">Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="7-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-settings.html">Settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-tests.html">Tests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="98-explore-app-eula.html">End User License Agreement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="99-explore-app-privacy-policy.html">Privacy Policy</a>
   </li>
 </ul>
   </li>
@@ -504,15 +536,6 @@
 <article class="doc">
 <h1 class="page">Explore Mobile App Guide</h1>
 <div class="sect1">
-<h2 id="_download_installation"><a class="anchor" href="#_download_installation"></a>Download &amp; Installation</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>See chapter
-<a href="1-download-and-installation.html" class="xref page">Download and Installation</a></p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_usage_overview"><a class="anchor" href="#_usage_overview"></a>Usage Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -524,7 +547,7 @@
 <p>Device Discovery: Scan and select your amplifier from the list using its Bluetooth ID (e.g., Explore_XXXX).</p>
 </li>
 <li>
-<p>Cog Menu: Offers quick settings for visualization filters, app version, and device disconnect.
+<p>Settings (Cog) Menu: Offers quick settings for visualization filters, app version, and device disconnect.
 (Based on mobile usage info)</p>
 </li>
 </ul>
@@ -552,7 +575,7 @@ CSV Recording: Tap the menu to record data in CSV format.</p>
 <div class="sect2">
 <h3 id="_bottom_bar"><a class="anchor" href="#_bottom_bar"></a>Bottom Bar</h3>
 <div class="paragraph">
-<p>Shows critical device information:</p>
+<p>Shows device information:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -563,30 +586,10 @@ CSV Recording: Tap the menu to record data in CSV format.</p>
 <p>Battery level</p>
 </li>
 <li>
-<p>Temperature
-(wiki.mentalab.com)</p>
+<p>Temperature</p>
 </li>
 </ul>
 </div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_tested_devices_compatibility"><a class="anchor" href="#_tested_devices_compatibility"></a>Tested Devices &amp; Compatibility</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The Explore Mobile App has been validated on a range of devices, including:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Android: Lenovo Tab M9 (Android 13), Samsung S23 Ultra, Zenfone 10 (Android 14), Pixel 7 Pro (Android 15)</p>
-</li>
-<li>
-<p>iOS: iPhone 13 with iOS 18
-(wiki.mentalab.com)</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
@@ -594,7 +597,7 @@ CSV Recording: Tap the menu to record data in CSV format.</p>
 <h2 id="_usage_notes_limitations"><a class="anchor" href="#_usage_notes_limitations"></a>Usage Notes &amp; Limitations</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Sampling Rates (Android only):</p>
+<p>Sampling Rates:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -605,28 +608,24 @@ CSV Recording: Tap the menu to record data in CSV format.</p>
 <p>16-channel: up to 500 Hz</p>
 </li>
 <li>
-<p>32-channel: up to 250 Hz
- (github.com)
-Known Issues:</p>
-</li>
-<li>
-<p>Channel mapping may persist even after disconnect/reconnect.</p>
-</li>
-<li>
-<p>ExG visualization time window may not match new sampling rates.
-(From test results on GitHub)
-(github.com)</p>
+<p>32-channel: up to 250 Hz</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Limitations:</p>
+<p>Offline Sampling Rates:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>iOS sampling limits not specified.
-*Feature set may vary across platform versions.</p>
+<p>Higher sampling rates of up to 8000 Hz, depending on the device, are available as offline sampling rates. They are marked <code>(Offline)</code> in the sampling rate list on the Settings page.</p>
+</li>
+<li>
+<p>At an offline sampling rate, the device records to its internal memory only. Live visualization, recording in the app, and LSL streaming are not available.</p>
+</li>
+<li>
+<p>See
+<a href="8-settings.html#mobile-app-offline-sampling-rates" class="xref page">Offline sampling rates</a>.</p>
 </li>
 </ul>
 </div>
@@ -638,16 +637,13 @@ Known Issues:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Prefer scanning device from within the app rather than system BLE menus.</p>
+<p>Disconnect other Bluetooth accessories, such as headphones, while using the app. They might affect connection stability with the explore device.</p>
 </li>
 <li>
-<p>Validate electrode impedance before data collection to ensure signal quality.</p>
+<p>Check electrode impedance before you start recording, so that the signal quality is good.</p>
 </li>
 <li>
-<p>Use CSV recordings if you plan to process signals with external analysis tools.</p>
-</li>
-<li>
-<p>Keep firmware and mobile app versions synced with Explore Desktop to avoid compatibility issues.</p>
+<p>Keep the device firmware and the mobile app up to date.</p>
 </li>
 </ul>
 </div>
