@@ -6,19 +6,22 @@
     <title>Usage :: Mentalab Wiki</title>
     <link rel="canonical" href="https://wiki.mentalab.com/mentalab-wiki/12-explore-mobile-app/3-usage.html">
     <link rel="prev" href="2-explore-mobile-app-guide.html">
-    <link rel="next" href="4-tests.html">
+    <link rel="next" href="4-exg-visualization.html">
     <meta name="generator" content="Antora 3.1.14">
     <link rel="stylesheet" href="../../_/css/site.css">
+    <link rel="icon" href="../../favicon.png" type="image/png">
   </head>
   <body class="article">
 <header class="header">
   <nav class="navbar">
     <div class="navbar-brand">
-      <img class="navbar-brand-logo"/>
-      <a class="navbar-item" href="#">Mentalab Explore Wiki</a>
+      <a class="navbar-item logo" href="https://wiki.mentalab.com">
+        <img class="navbar-brand-logo"/>
+      </a>
+      <a class="navbar-item title" href="https://wiki.mentalab.com">Mentalab Wiki</a>
       <div class="navbar-item search hide-for-print">
         <div id="search-field" class="field">
-          <input id="search-input" type="text" placeholder="Search the docs">
+          <input id="search-input" type="text" placeholder="Search the wiki">
         </div>
       </div>
       <button class="navbar-burger" aria-controls="topbar-nav" aria-expanded="false" aria-label="Toggle main menu">
@@ -29,7 +32,12 @@
     </div>
     <div id="topbar-nav" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">Home</a>
+        <div class="navbar-item">
+          <span class="control">
+            <a class="button is-primary" href="mailto:support@mentalab.com">Contact Support</a>
+          </span>
+        </div>
+        <a class="navbar-item" href="https://wiki.mentalab.com">Wiki Home</a>
         <div class="navbar-item">
           <span class="control">
             <a class="button is-primary" href="https://mentalab.com">Mentalab.com</a>
@@ -49,7 +57,7 @@
     <li><a href="3-usage.html">Usage</a></li>
   </ul>
 </nav>
-<!--<div class="edit-this-page"><a href="file:///Users/christoph/Mentalab/github/mentalab-wiki-antora/modules/ROOT/pages/12-explore-mobile-app/3-usage.adoc">Edit this Page</a></div>
+<!--<div class="edit-this-page"><a href="file:///Users/deniztoprak/development/mentalab-wiki-antora/modules/ROOT/pages/12-explore-mobile-app/3-usage.adoc">Edit this Page</a></div>
 -->
 </div>
 <div class="body">
@@ -284,7 +292,31 @@
     <a class="nav-link" href="3-usage.html">Usage</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="4-tests.html">Tests</a>
+    <a class="nav-link" href="4-exg-visualization.html">ExG Visualization</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="5-recording.html">Recording</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="6-lab-streaming-layer.html">Lab Streaming Layer</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="7-impedance.html">Impedance</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="8-settings.html">Settings</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="9-troubleshooting.html">Troubleshooting</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="10-tests.html">Tests</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="98-explore-app-eula.html">End User License Agreement</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="99-explore-app-privacy-policy.html">Privacy Policy</a>
   </li>
 </ul>
   </li>
@@ -503,11 +535,58 @@
 </aside>
 <article class="doc">
 <h1 class="page">Usage</h1>
-<div class="sect1">
-<h2 id="_homepage"><a class="anchor" href="#_homepage"></a>Homepage</h2>
+<div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Use the homepage to scan for nearby Explore devices and connect to your device.</p>
+<p>This page describes how to connect the app to your Explore device and how the app is organized.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_app_overview"><a class="anchor" href="#_app_overview"></a>App overview</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On the homepage, you scan for nearby Explore devices and connect to one.</p>
+</div>
+<div class="paragraph">
+<p>After you connect, the app shows two tabs. The ExG tab shows live ExG data. From here, you can record data and stream data via LSL. See
+<a href="4-exg-visualization.html" class="xref page">ExG Visualization</a>.
+The IMPEDANCE tab shows impedance values and lets you assign electrode positions to channels. See
+<a href="7-impedance.html" class="xref page">Impedance</a>.</p>
+</div>
+<div class="paragraph">
+<p>To open the Settings page, tap the gear icon in the top left corner of the ExG tab. See
+<a href="8-settings.html" class="xref page">Settings</a>.</p>
+</div>
+<div class="paragraph">
+<p>The bottom bar shows the status of the connected device.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mobile-app-connect"><a class="anchor" href="#mobile-app-connect"></a>Connect to a device</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Turn on your Explore device.</p>
+</li>
+<li>
+<p>Make sure Bluetooth is turned on on your phone.</p>
+</li>
+<li>
+<p>On the homepage, tap <b class="button">Scan</b>.</p>
+<div class="paragraph">
+<p>The app scans for about 4 seconds and lists all nearby devices that have <code>Explore</code> in their name, for example <code>Explore_AAXX</code>.</p>
+</div>
+</li>
+<li>
+<p>Tap <b class="button">CONNECT</b> next to your device.</p>
+<div class="paragraph">
+<p>When the connection is established, the app shows <code>Connected to &lt;device name&gt;</code> and opens the ExG tab.</p>
+</div>
+</li>
+</ol>
 </div>
 <div class="imageblock text-center text-center">
 <div class="content">
@@ -518,144 +597,48 @@
 <div class="paragraph">
 <p>The homepage lets you scan for and connect to nearby Explore devices.</p>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_impedance_tab"><a class="anchor" href="#_impedance_tab"></a>Impedance tab</h2>
-<div class="sectionbody">
 <div class="paragraph">
-<p>Use the Impedance tab to inspect impedance values and assign channel positions.</p>
+<p>If no device is found, the app shows <strong>No Devices Found</strong>. Check that the device is turned on and within range. Then tap the search icon in the bottom left corner to scan again.</p>
 </div>
-<div class="paragraph">
-<p>The Impedance tab allows you to:</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Channel names that you assigned on the IMPEDANCE tab are reset each time you connect. To restore the channel names and sampling rate from your last session, use <strong>Import last session settings</strong> on the Settings page. See
+<a href="8-settings.html#mobile-app-import-export" class="xref page">Import and export device settings</a>.
+</td>
+</tr>
+</table>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>inspect impedance values</p>
-</li>
-<li>
-<p>assign channel positions</p>
-</li>
-</ul>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Impedance.jpg" alt="" width="60%">
-</div>
-<div class="title">Impedance tab</div>
-</div>
-<div class="paragraph">
-<p>The Impedance tab shows impedance values for the connected device.</p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_exg_tab"><a class="anchor" href="#_exg_tab"></a>ExG tab</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Use the ExG tab to visualize ExG data and markers.</p>
-</div>
-<div class="paragraph">
-<p>The ExG tab allows you to:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>visualize ExG data</p>
-</li>
-<li>
-<p>visualize markers</p>
-</li>
-</ul>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/ExG.jpg" alt="" width="60%">
-</div>
-<div class="title">ExG visualization tab</div>
-</div>
-<div class="paragraph">
-<p>The ExG visualization tab displays ExG data in real time.</p>
-</div>
-<div class="sect2">
-<h3 id="_exg_visualization_settings"><a class="anchor" href="#_exg_visualization_settings"></a>ExG visualization settings</h3>
-<div class="paragraph">
-<p>Open the dot menu on the ExG tab to access additional visualization and recording options.</p>
-</div>
-<div class="paragraph">
-<p>The dot menu allows you to:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>adapt visualization settings, including y-axis scaling and time window</p>
-</li>
-<li>
-<p>record raw ExG data in CSV format</p>
-</li>
-<li>
-<p>stream data via LSL</p>
-</li>
-<li>
-<p>lock the screen</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Use the ExG visualization settings to adjust how ExG data is displayed.</p>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/mobile-exg-visualization-settings.jpg" alt="" width="60%">
-</div>
-<div class="title">ExG visualization settings</div>
-</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+If your device is set to an offline sampling rate, the app opens the Settings page instead of the ExG tab. See
+<a href="8-settings.html#mobile-app-offline-sampling-rates" class="xref page">Offline sampling rates</a>.
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_settings"><a class="anchor" href="#_settings"></a>Settings</h2>
+<h2 id="_disconnect"><a class="anchor" href="#_disconnect"></a>Disconnect</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Use the Settings page to inspect and configure your connected Explore device.</p>
+<p>To disconnect from your device, open Settings and tap <b class="button">DISCONNECT</b>.</p>
 </div>
 <div class="paragraph">
-<p>The Settings page allows you to:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>see device settings</p>
-</li>
-<li>
-<p>adjust visualization filters</p>
-</li>
-<li>
-<p>change the sampling rate</p>
-</li>
-<li>
-<p>disconnect from the device</p>
-</li>
-<li>
-<p>import and export device settings</p>
-</li>
-<li>
-<p>format device memory</p>
-</li>
-<li>
-<p>perform a soft reset</p>
-</li>
-</ul>
-</div>
-<div class="imageblock text-center text-center">
-<div class="content">
-<img src="../_images/Settings.jpg" alt="" width="60%">
-</div>
-<div class="title">Settings page</div>
+<p>If the connection to the device is lost, for example because the device was turned off or is out of range, the app shows the <strong>Device Disconnected</strong> dialog. Tap <b class="button">OK</b> to return to the homepage.</p>
 </div>
 <div class="paragraph">
-<p>The Settings page provides device configuration options.</p>
+<p>When the device disconnects, a running recording is stopped and saved, and LSL streaming stops. Recording and LSL streaming do not restart when you reconnect.</p>
 </div>
 </div>
 </div>
@@ -663,10 +646,7 @@
 <h2 id="_bottom_bar"><a class="anchor" href="#_bottom_bar"></a>Bottom bar</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Use the bottom bar to inspect basic device status information.</p>
-</div>
-<div class="paragraph">
-<p>The bottom bar shows:</p>
+<p>The bottom bar shows the status of the connected device:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -674,7 +654,7 @@
 <p>device name</p>
 </li>
 <li>
-<p>temperature</p>
+<p>device temperature</p>
 </li>
 <li>
 <p>battery charge</p>
@@ -687,14 +667,40 @@
 </div>
 <div class="title">Bottom bar</div>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="mobile-app-connection-status"><a class="anchor" href="#mobile-app-connection-status"></a>Connection status</h2>
+<div class="sectionbody">
 <div class="paragraph">
-<p>The bottom bar displays the connected device name, temperature, and battery charge.</p>
+<p>If data packets from the device are lost, the app shows an indicator at the top of the screen.</p>
+</div>
+<div class="paragraph">
+<p>Lost packets are usually caused by a large distance or obstacles between the phone and the device, or by other Bluetooth use on the phone, such as headphones. Keep the phone close to the device, and disconnect other Bluetooth accessories.</p>
+</div>
+<div class="paragraph">
+<p>Data that is lost while the connection is unstable is missing from recordings and LSL streams made with the app. The device also records to its internal memory, independently of the app.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_screen_and_background_operation"><a class="anchor" href="#_screen_and_background_operation"></a>Screen and background operation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The screen stays on while the app is connected to a device.</p>
+</div>
+<div class="paragraph">
+<p>Recording and LSL streaming continue when the app runs in the background. On Android, the notification <strong>Data streaming active</strong> is shown while the app records or streams in the background.</p>
+</div>
+<div class="paragraph">
+<p>To prevent accidental touches while the app is open, use the lock function on the ExG tab. See
+<a href="4-exg-visualization.html#mobile-app-lock-screen" class="xref page">Lock the screen</a>.</p>
 </div>
 </div>
 </div>
 <nav class="pagination">
   <span class="prev"><a href="2-explore-mobile-app-guide.html">Explore Mobile App Guide</a></span>
-  <span class="next"><a href="4-tests.html">Tests</a></span>
+  <span class="next"><a href="4-exg-visualization.html">ExG Visualization</a></span>
 </nav>
 </article>
   </div>
